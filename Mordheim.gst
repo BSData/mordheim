@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" revision="14" battleScribeVersion="1.14b" name="Mordheim" authorName="James" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" revision="14" battleScribeVersion="1.15" name="Mordheim" authorName="James" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <forceTypes>
     <forceType id="7451d7da-3cc0-0299-775b-2f48162a731d" name="Warband" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
       <categories>
