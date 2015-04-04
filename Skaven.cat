@@ -504,7 +504,7 @@
         </link>
       </links>
     </entry>
-    <entry id="889151de-4826-5f00-5dbb-fcf546ebedbb" name="Giant Rats" points="25.0" categoryId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="5" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="889151de-4826-5f00-5dbb-fcf546ebedbb" name="Giant Rats" points="15.0" categoryId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="5" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
         <entry id="ffab3949-b7e7-0463-5c47-b05ae207fdbd" name=" Characteristic Increases" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -903,7 +903,7 @@
         </link>
       </links>
     </entry>
-    <entry id="16763088-15c1-4f72-fdfe-153003be4a24" name="Swordsmen" points="35.0" categoryId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="16763088-15c1-4f72-fdfe-153003be4a24" name="Rat Ogre" points="210.0" categoryId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Mordheim Official" page="32">
       <entries>
         <entry id="579963c2-b42f-2254-f6e0-c4746cd13fc4" name="Equipment" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -972,17 +972,17 @@
       <modifiers/>
       <rules/>
       <profiles>
-        <profile id="c28d122f-8919-90c6-7469-fc97ffa650c7" profileTypeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" name="Swordsmen" hidden="false" page="0">
+        <profile id="c28d122f-8919-90c6-7469-fc97ffa650c7" profileTypeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" name="Rat Ogre" hidden="false" page="0">
           <characteristics>
-            <characteristic characteristicId="2a0bcc4c-8266-418f-13d6-a6b44def5e92" name="M" value="4"/>
-            <characteristic characteristicId="d5aca8ba-0204-b324-b976-c2b536e09924" name="WS" value="4"/>
+            <characteristic characteristicId="2a0bcc4c-8266-418f-13d6-a6b44def5e92" name="M" value="6"/>
+            <characteristic characteristicId="d5aca8ba-0204-b324-b976-c2b536e09924" name="WS" value="3"/>
             <characteristic characteristicId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" name="BS" value="3"/>
-            <characteristic characteristicId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" name="S" value="3"/>
-            <characteristic characteristicId="54f4796b-dedb-c296-8b1a-ff7f8043293a" name="T" value="3"/>
-            <characteristic characteristicId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" name="W" value="1"/>
-            <characteristic characteristicId="a6fd52b0-be0a-655e-6314-87b392c9c90e" name="I" value="3"/>
-            <characteristic characteristicId="bf393c37-9d10-fc85-c147-62b1c01a89fe" name="A" value="1"/>
-            <characteristic characteristicId="e234eaea-a02a-2fb7-3e1f-605392aabb89" name="LD" value="7"/>
+            <characteristic characteristicId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" name="S" value="5"/>
+            <characteristic characteristicId="54f4796b-dedb-c296-8b1a-ff7f8043293a" name="T" value="5"/>
+            <characteristic characteristicId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" name="W" value="3"/>
+            <characteristic characteristicId="a6fd52b0-be0a-655e-6314-87b392c9c90e" name="I" value="4"/>
+            <characteristic characteristicId="bf393c37-9d10-fc85-c147-62b1c01a89fe" name="A" value="4"/>
+            <characteristic characteristicId="e234eaea-a02a-2fb7-3e1f-605392aabb89" name="LD" value="4"/>
           </characteristics>
           <modifiers>
             <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1" repeat="true" numRepeats="1" incrementParentId="16763088-15c1-4f72-fdfe-153003be4a24" incrementChildId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" incrementField="selections" incrementValue="1.0">
@@ -1057,15 +1057,18 @@
         </profile>
       </profiles>
       <links>
-        <link id="ead51f82-ca51-5519-9a8a-b462449cf11d" targetId="0f2c78d6-e019-6b88-136a-9e00031645e5" linkType="entry">
+        <link id="bc56-6b1d-e1c3-5cab" targetId="cd0edb82-a80c-4679-2376-f34a11dc840e" linkType="rule">
           <modifiers/>
         </link>
-        <link id="3ace7cec-b98a-8120-c6ce-caf458afb673" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" linkType="entry">
+        <link id="ab29-26af-158b-7e4b" targetId="4390265d-0892-5427-fe46-78054de59a7e" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="e8f6-5bdd-0e63-b853" targetId="a01e-d581-3551-8397" linkType="rule">
           <modifiers/>
         </link>
       </links>
     </entry>
-    <entry id="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" name="Verminkin" points="25.0" categoryId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" name="Verminkin" points="20.0" categoryId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
         <entry id="38f17f5d-5cb6-91b3-1e1a-97d8f3eb211e" name="Equipment" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -4289,6 +4292,10 @@ combat, roll a D6.
     </rule>
     <rule id="379ad661-b836-65ae-9597-ad7a1a45f44d" name="Venomous" hidden="false">
       <description>The venom of Weeping Blades will enter the blood of the victim and ravage his organs and muscles. These weapons count as being permanently coated in black lotus (see the Equipment section). No additional poison may be applied to Weeping Blades.</description>
+      <modifiers/>
+    </rule>
+    <rule id="a01e-d581-3551-8397" name="Large Target" hidden="false">
+      <description>Rat Ogre is a large target for the purposes of targeting.</description>
       <modifiers/>
     </rule>
   </sharedRules>
