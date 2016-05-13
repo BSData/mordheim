@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8315579e-b80d-5ed1-7a51-d85cdf59c06b" revision="17" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="4" battleScribeVersion="1.15" name="Dwarven Tresure Hunters" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8315579e-b80d-5ed1-7a51-d85cdf59c06b" revision="18" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="4" battleScribeVersion="1.15" name="Dwarf Treasure Hunters" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="2d1dabde-1182-a9db-6186-35bff94b4a69" name="Beardlings" points="25.0" categoryId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
@@ -2188,7 +2188,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
             <profile id="c419d855-1a49-a967-4b92-d910d59fd87b" profileTypeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" name="Free Dagger" hidden="false" page="0">
               <characteristics>
                 <characteristic characteristicId="f10cfcb7-b71e-4c27-9836-75d341e28f68" name="Str"/>
-                <characteristic characteristicId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e" name="Special" value="+1 enemey save"/>
+                <characteristic characteristicId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e" name="Special" value="+1 enemy armor save"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -3204,26 +3204,26 @@ with a bow or crossbow (but not a crossbow pistol).</description>
     </entryGroup>
     <entryGroup id="15a59018-e588-319b-6ce2-450c80998e97" name="Special Skils(Dwarven)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
-        <entry id="61178544-8d73-eba8-584b-6868a3abf64f" name="’eadbasher" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="61178544-8d73-eba8-584b-6868a3abf64f" name="Extra Tough" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules>
-            <rule id="1b5ca558-79e7-d748-8627-f96db94a25fc" name="’eadbasher" hidden="false" page="0">
-              <description>Any knocked down results which the Orc causes in hand-to-hand count as stunned results instead.</description>
+            <rule id="1b5ca558-79e7-d748-8627-f96db94a25fc" name="Extra Tough" hidden="false" page="0">
+              <description>Re-roll Heroes Serious Injury dice when taken out of action.</description>
               <modifiers/>
             </rule>
           </rules>
           <profiles/>
           <links/>
         </entry>
-        <entry id="685132a9-d703-650f-4482-c72f8e3c48ca" name="well ’ard" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="685132a9-d703-650f-4482-c72f8e3c48ca" name="Resource Hunter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules>
-            <rule id="92d945e4-b590-f9f7-9399-1fb91921c42f" name="well ’ard" hidden="false" page="0">
-              <description>Such is the toughness of the Orc that he may add +1 to any armour saves</description>
+            <rule id="92d945e4-b590-f9f7-9399-1fb91921c42f" name="Resource Hunter" hidden="false" page="0">
+              <description>When rolling on the Exploration chart, the Hero may modify one dice roll by +1/-1.</description>
               <modifiers/>
             </rule>
           </rules>
@@ -3244,39 +3244,26 @@ maximum of one. Note that if this Dwarf has two Dwarf axes he can reroll any fai
           <profiles/>
           <links/>
         </entry>
-        <entry id="d980d547-4f8d-1cf3-b2ef-20506a96c1f3" name="’ere we go!" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="d980d547-4f8d-1cf3-b2ef-20506a96c1f3" name="True Grit" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules>
-            <rule id="9133739a-a4bb-fb16-732f-1a092f0253ec" name="’ere we go!" hidden="false" page="0">
-              <description>The model may ignore Fear and Terror tests when charging.</description>
+            <rule id="9133739a-a4bb-fb16-732f-1a092f0253ec" name="True Grit" hidden="false" page="0">
+              <description>When rolling on the Injury Table for this Hero, a roll of 1-3 is treated as knocked down, 4-5 as stunned and 6 as out of action.</description>
               <modifiers/>
             </rule>
           </rules>
           <profiles/>
           <links/>
         </entry>
-        <entry id="41b6ce28-3ef1-9c3c-7440-419746bbe1f4" name="waaagh!" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="41b6ce28-3ef1-9c3c-7440-419746bbe1f4" name="Thick Skull" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules>
-            <rule id="fb488bed-aec0-b197-39ee-7440b68d6255" name="waaagh!" hidden="false" page="0">
-              <description>The warrior may add +D3&quot; to his charge range.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="1241a100-8956-455e-6b03-5ebe9cce2003" name="’ard ead" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="7e105a5c-7599-71bb-4e8c-714f00be9dc9" name="’ard ead" hidden="false" page="0">
-              <description>He has a special 3+ save on a D6 to avoid being stunned. If the save is made, treat a stunned result as knocked down instead. If the Orc also wears a helmet, this save is 2+ instead of 3+ (this takes the place of the normal helmet special rule).</description>
+            <rule id="fb488bed-aec0-b197-39ee-7440b68d6255" name="Thick Skull" hidden="false" page="0">
+              <description>3+ save on a D6 to avoid being stunned.  If save is made, stunned result becomes knocked down.  If the Dwarf also wears a helmet, this save is 2+ instead of 3+.</description>
               <modifiers/>
             </rule>
           </rules>
