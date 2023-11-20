@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen" revision="1" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen" revision="2" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="889151de-4826-5f00-5dbb-fcf546ebedbb" name="Kroxigor" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="5.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <profiles>
         <profile id="3c3321d3-a734-5b7d-2aa0-548348ab9115" name="Kroxigor" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -98,12 +98,12 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="0793-122c-d3bf-1559" hidden="false" targetId="f027-a940-e6cb-a1db" type="profile"/>
-        <infoLink id="61e8-e7d2-542e-aa0f" hidden="false" targetId="a139-901b-73c6-f54b" type="rule"/>
-        <infoLink id="f1df-3917-6cbe-48df" hidden="false" targetId="f645-fb39-4a21-57ec" type="rule"/>
-        <infoLink id="636e-9890-a748-78ba" hidden="false" targetId="4390265d-0892-5427-fe46-78054de59a7e" type="rule"/>
-        <infoLink id="d1a8-0fef-600a-5994" hidden="false" targetId="5d87-5760-f1f0-f0d0" type="rule"/>
-        <infoLink id="f53c-01e6-ceb9-68c6" hidden="false" targetId="a506-128b-d145-392d" type="rule"/>
+        <infoLink id="0793-122c-d3bf-1559" name="Skaly Skin (Kroxigor)" hidden="false" targetId="f027-a940-e6cb-a1db" type="profile"/>
+        <infoLink id="61e8-e7d2-542e-aa0f" name="Aquatic" hidden="false" targetId="a139-901b-73c6-f54b" type="rule"/>
+        <infoLink id="f1df-3917-6cbe-48df" name="Cold Blooded" hidden="false" targetId="f645-fb39-4a21-57ec" type="rule"/>
+        <infoLink id="636e-9890-a748-78ba" name="Fear" hidden="false" targetId="4390265d-0892-5427-fe46-78054de59a7e" type="rule"/>
+        <infoLink id="d1a8-0fef-600a-5994" name="Large" hidden="false" targetId="5d87-5760-f1f0-f0d0" type="rule"/>
+        <infoLink id="f53c-01e6-ceb9-68c6" name="Animal" hidden="false" targetId="a506-128b-d145-392d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="889151de-4826-5f00-5dbb-fcf546ebedbb-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
@@ -247,7 +247,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="04058374-6be1-5c6b-05d9-c5b9abf9f92c" hidden="false" collective="false" import="true" targetId="50dfad7a-35b1-bee6-657c-d603b181977d" type="selectionEntryGroup"/>
+            <entryLink id="04058374-6be1-5c6b-05d9-c5b9abf9f92c" name="Equipment" hidden="false" collective="false" import="true" targetId="50dfad7a-35b1-bee6-657c-d603b181977d" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -489,9 +489,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="93700e68-f80c-ad1c-b5cd-06fd3c7e7537" name="Skink Brave" page="0" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-      </constraints>
       <profiles>
         <profile id="67dc-8a78-dd2a-cb59" name="Skink Brave" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <modifiers>
