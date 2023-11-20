@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ac1721e2-653d-e279-11e3-ca8ba77b0637" name="Reikland Mercinaries" revision="6" battleScribeVersion="2.03" authorName="" authorContact="" authorUrl="https://github.com/BSData/mordheim/issues" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ac1721e2-653d-e279-11e3-ca8ba77b0637" name="Reikland Mercenaries" revision="7" battleScribeVersion="2.03" authorName="" authorContact="" authorUrl="https://github.com/BSData/mordheim/issues" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="83ab8692-01da-65c5-af52-a55d4800f012" name="Champion" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -348,8 +348,8 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="faa8d372-77d4-33a4-1a08-49fe27633c52" hidden="false" collective="false" import="true" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry"/>
-        <entryLink id="f57b6a1f-5d40-44cc-70b1-45f6d23525c3" hidden="false" collective="false" import="true" targetId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="selectionEntry"/>
+        <entryLink id="faa8d372-77d4-33a4-1a08-49fe27633c52" name="Experience" hidden="false" collective="false" import="true" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry"/>
+        <entryLink id="f57b6a1f-5d40-44cc-70b1-45f6d23525c3" name="Promoted" hidden="false" collective="false" import="true" targetId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="25.0"/>
@@ -570,11 +570,6 @@
             </modifier>
             <modifier type="increment" field="minSelections" value="5.0">
               <repeats>
-                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83ab8692-01da-65c5-af52-a55d4800f012" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="minSelections" value="5.0">
-              <repeats>
                 <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
@@ -591,11 +586,6 @@
             <modifier type="increment" field="maxSelections" value="5.0">
               <repeats>
                 <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="889151de-4826-5f00-5dbb-fcf546ebedbb" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="maxSelections" value="5.0">
-              <repeats>
-                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83ab8692-01da-65c5-af52-a55d4800f012" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="maxSelections" value="5.0">
@@ -634,8 +624,8 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="dad9014c-4be3-4cca-3345-5808f02cbcce" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
-        <entryLink id="6f878f2b-fa2b-6e2c-5bfe-a94012499470" hidden="false" collective="false" import="true" targetId="50dfad7a-35b1-bee6-657c-d603b181977d" type="selectionEntryGroup"/>
+        <entryLink id="dad9014c-4be3-4cca-3345-5808f02cbcce" name="Gold" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+        <entryLink id="6f878f2b-fa2b-6e2c-5bfe-a94012499470" name="Equipment" hidden="false" collective="false" import="true" targetId="50dfad7a-35b1-bee6-657c-d603b181977d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -1170,7 +1160,7 @@
     </rule>
   </rules>
   <infoLinks>
-    <infoLink id="bc6ab1b0-ad56-fcef-5ed7-968f231af91b" hidden="false" targetId="bd2100cc-65f9-2311-e4b9-d0e6830884c3" type="rule"/>
+    <infoLink id="bc6ab1b0-ad56-fcef-5ed7-968f231af91b" name="EXP advancement" hidden="false" targetId="bd2100cc-65f9-2311-e4b9-d0e6830884c3" type="rule"/>
   </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8acf5ee1-3430-be22-ec94-15b12e15e497" name="+1 A" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -3519,10 +3509,10 @@ Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes per
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="c03b3d4d-30bf-c3b6-4992-b0b5b5ef9617" name="+1 Enemy armour save:" page="0" hidden="false">
-      <description>An enemy wounded by a fist gains a +1 bonus to his armour save, and a 6+ armour save if he normally has none.</description>
+    <rule id="c03b3d4d-30bf-c3b6-4992-b0b5b5ef9617" name="+1 Enemy armour save" page="0" hidden="false">
+      <description>An enemy wounded by this weapon gains a +1 bonus to his armour save, and a 6+ armour save if he normally has none.</description>
     </rule>
-    <rule id="3207d292-6501-25cb-d869-63b0987c78f6" name="Avoid stun:" page="0" hidden="false">
+    <rule id="3207d292-6501-25cb-d869-63b0987c78f6" name="Avoid stun" page="0" hidden="false">
       <description>A model that is equipped with a helmet has a special 4+ save on a D6 against being stunned. If the save is made, treat the stunned
 result as knocked down instead. This save is not modified by the opponent’s Strength.</description>
     </rule>
@@ -3532,16 +3522,16 @@ result as knocked down instead. This save is not modified by the opponent’s St
     <rule id="3f6ce5a7-906d-b980-439f-9dd32ad84ed5" name="Cavalry Weapon" page="0" hidden="false">
       <description>A warrior must own a warhorse to use , as it can only be used whilst he is on horseback.</description>
     </rule>
-    <rule id="47cdbf9b-babf-aefa-1d8a-cac5b85bf281" name="ConCussion" page="0" hidden="false">
+    <rule id="47cdbf9b-babf-aefa-1d8a-cac5b85bf281" name="Concussion" page="0" hidden="false">
       <description>Hammers and other bludgeoning weapons are excellent to use for striking your enemy senseless. When using a hammer, club or mace, a roll of 2-4 is treated as stunned when rolling to see the extent of a model’s injuries.</description>
     </rule>
     <rule id="6118263e-03c4-68f7-694d-6ceebac4e80b" name="Cutting edge" page="0" hidden="false">
       <description> A Cutting edgee has an extra save modifier of -1, so a model with Strength 4 using an Cutting edge has a -2 save modifier when he hits an opponent in hand-to-hand combat.</description>
     </rule>
-    <rule id="140e74d1-bf16-356b-c7d1-08b3bb5052b5" name="Difficult To Use" page="0" hidden="false">
-      <description>A model with aDifficult To Use  may not use a second weapon or buckler in his other hand because it requires all his skill to wield it. He may carry a shield as normal though.</description>
+    <rule id="140e74d1-bf16-356b-c7d1-08b3bb5052b5" name="Difficult to use" page="0" hidden="false">
+      <description>A model with a Difficult to use weapon  may not use a second weapon or buckler in his other hand because it requires all his skill to wield it. He may carry a shield as normal though.</description>
     </rule>
-    <rule id="bd2100cc-65f9-2311-e4b9-d0e6830884c3" name="EXP Adancement" page="0" hidden="false">
+    <rule id="bd2100cc-65f9-2311-e4b9-d0e6830884c3" name="EXP advancement" page="0" hidden="false">
       <description>Heroes get new advances at 2, 4, 6, 8, 11, 14, 17, 20, 24, 28, 32, 36, 41, 46, 51, 57, 63, 69, 76, 83 and 90 experience.
 Henchmen and Hired Swords get new advances at 2, 5, 9 and 14 experience.</description>
     </rule>
@@ -3559,8 +3549,8 @@ no longer frenzied. He continues to fight as normal for the rest of the battle.<
     <rule id="6549136a-9a00-4d3a-b8fa-ecadf63e4744" name="Gromril weapon" page="0" hidden="false">
       <description>A gromril weapon has an extra -1 save modifier, and costs four times the price of a normal weapon of its kind. </description>
     </rule>
-    <rule id="a3327e94-8ff2-b189-9303-34c54c57373f" name="Gun Save modifier" page="0" hidden="false">
-      <description>even better at penetrating armour than their Strength  suggests. A warrior wounded by afirearm lmust make his armour save with a -2 modifier.</description>
+    <rule id="a3327e94-8ff2-b189-9303-34c54c57373f" name="Firearm save modifier" page="0" hidden="false">
+      <description>This weapon is even better at penetrating armour than its Strength suggests. A warrior wounded by a firearm must make his armour save with a -2 modifier.</description>
     </rule>
     <rule id="3ebe96a5-ad6a-b51d-0d99-f62dfb2a807c" name="Hatred" page="0" hidden="false">
       <description>Warriors who fight enemies they hate in hand-to-hand combat may re-roll any misses when they attack in the first turn of each hand-to-hand combat. This bonus applies only in the first turn of each combat</description>
@@ -3574,8 +3564,8 @@ no longer frenzied. He continues to fight as normal for the rest of the battle.<
     <rule id="e23bd4fb-c553-13cf-2ab8-252167663a44" name="Leader" page="0" hidden="false">
       <description>All Models within 6&quot; of leader can use the leaders leadership when taking leadership tests.</description>
     </rule>
-    <rule id="da91afee-2f0d-cbc1-78ff-c6bdec885712" name="Move Of Fire" page="0" hidden="false">
-      <description>You may not move and fire a  in the same turn,other than to pivot on the spot to face your target or stand up.</description>
+    <rule id="da91afee-2f0d-cbc1-78ff-c6bdec885712" name="Move or fire" page="0" hidden="false">
+      <description>You may not move and fire a  in the same turn, other than to pivot on the spot to face your target or stand up.</description>
     </rule>
     <rule id="f1630f42-6b8b-0d73-b6a6-d2626cd8839b" name="Parry" page="0" hidden="false">
       <description>A model equipped with a parry weapon may parry the first blow in each round of hand-to-hand combat. When his opponent scores a hit, a model with a may roll 1D6. If the score is greater than the highest to hit score of his opponent, the model has parried the blow, and that attack is discarded. A model may not parry attacks made with double or more its own Strength – they are simply too powerful to be stopped.</description>
@@ -3604,7 +3594,7 @@ combat, roll a D6.
     <rule id="58c7eaa3-75c5-8aad-7374-f0275b30848d" name="Two Handed" page="0" hidden="false">
       <description>model armed with a 2handed weapon may not use a shield, buckler or additional weapon in close combat. If the model has a shield he still gets a +1 bonus to his armour save against shooting.</description>
     </rule>
-    <rule id="be37b096-f38b-d3f0-0c72-f18572a56f1d" name="Unwieldy:" page="0" hidden="false">
+    <rule id="be37b096-f38b-d3f0-0c72-f18572a56f1d" name="Unwieldy" page="0" hidden="false">
       <description>A weapon with Unwieldy may only use a shield or a buckler in his other hand. He may not use a second weapon. </description>
     </rule>
   </sharedRules>
