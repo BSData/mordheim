@@ -37,6 +37,12 @@
         <characteristicType id="ff797ec4-8d7e-cab1-656e-896ae3ed005f" name="Special"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="d891-ee2b-b7dc-f545" name="Magic">
+      <characteristicTypes>
+        <characteristicType id="dd91-3f4d-8b72-7905" name="Difficulty"/>
+        <characteristicType id="0592-3510-8508-7263" name="Effect"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" name="Heroes" hidden="false"/>
