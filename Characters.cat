@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="83ab8692-01da-65c5-af52-a55d4800f012" name="Pit Fighter" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1067,6 +1067,10 @@ They are not very easy individuals to knock out!</description>
 He will suffer a -1 to hit penalty on that turn.</description>
                     </rule>
                   </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="1899-524d-b70c-dffb" name="Monster Slayer" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
@@ -1074,6 +1078,10 @@ He will suffer a -1 to hit penalty on that turn.</description>
                       <description>The Troll Slayer always wounds any opponent on a D6 roll of 4+, regardless of Toughness, unless his own Strength (with weapon modifiers) would mean that a lower result than this is needed.</description>
                     </rule>
                   </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="6d3b-25b0-a352-7060" name="Berserker" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
@@ -1081,6 +1089,10 @@ He will suffer a -1 to hit penalty on that turn.</description>
                       <description>The Dwarf may add +1 to his to hit rolls during the turn in which he charges.</description>
                     </rule>
                   </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1497,6 +1509,10 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
                       <description>Hostile magic spells will not affect the Elf on a D6 roll of 4+.</description>
                     </rule>
                   </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="b5ec-99f1-3fa3-ee15" name="Luck" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
@@ -1504,6 +1520,10 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
                       <description>The Elf Ranger is blessed by Lileath, the Elven goddess of luck. Once per game he may re-roll any dice roll he makes (but not one made by other members of the warband).</description>
                     </rule>
                   </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1527,13 +1547,8 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
       </costs>
     </selectionEntry>
   </selectionEntries>
-  <rules>
-    <rule id="9d7f34a4-0cad-8e35-558a-0a72b5066094" name="Great Traders" page="0" hidden="false">
-      <description>Marienurg warbands start with 100 Extra gold in campagns (20% extra in 1 off games), and gain +1 on thier trader chart rolls for rare items</description>
-    </rule>
-  </rules>
   <infoLinks>
-    <infoLink id="bc6ab1b0-ad56-fcef-5ed7-968f231af91b" hidden="false" targetId="bd2100cc-65f9-2311-e4b9-d0e6830884c3" type="rule"/>
+    <infoLink id="bc6ab1b0-ad56-fcef-5ed7-968f231af91b" name="EXP Adancement" hidden="false" targetId="bd2100cc-65f9-2311-e4b9-d0e6830884c3" type="rule"/>
   </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8acf5ee1-3430-be22-ec94-15b12e15e497" name="+1 A" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1826,6 +1841,7 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
       </profiles>
       <costs>
         <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aca5-c73e-f285-5bf6" name="Heavy Armor" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1839,6 +1855,7 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
       </profiles>
       <costs>
         <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="96ae-edec-6d11-9250" name="Lance" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1856,6 +1873,7 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
       </infoLinks>
       <costs>
         <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fffe-1c96-4cb5-d852" name="Elf Bow" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1870,6 +1888,7 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
       </profiles>
       <costs>
         <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e90-4772-2104-d236" name="Elven Cloak" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1880,6 +1899,7 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
       </rules>
       <costs>
         <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
