@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9fda-1198-8b84-972e" name="Gunnery School Of Nuln" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9fda-1198-8b84-972e" name="Gunnery School Of Nuln" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>The province of Nuln is respected across the Empire as the home to the finest handguns and war machines, save for those constructed by the Dwarfs.
 This makes them a desired commodity for any Imperial army using cannonry and as such graduates from the Imperial Gunnery School are highly prized for their skills in training artillery on vulnerable targets with unerring accuracy and maintaining the war machines.
 Perhaps the most surprising fact is that the Imperial Gunnery School does not create new weapons of war.
@@ -28,6 +28,98 @@ Their abilities vary from undeveloped to talented, but they are always very well
       </constraints>
       <profiles>
         <profile id="7f2f-94ee-5e70-f80a" name="Senior Gunnery Officer" publicationId="79c4-b7d0-8643-3ab1" page="5" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <modifiers>
+            <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3c87526-fae5-8945-97c3-057d97df69e7" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8acf5ee1-3430-be22-ec94-15b12e15e497" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e03b263-c206-09f3-f9d3-47c0c9294235" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="492ef626-87b8-7b39-378d-38fbd1ffb131" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cbce569-483e-fc61-9a46-75bb7f52573a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62be0dba-2c77-76b0-3da3-48c05611f170" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06c6e571-9da5-51a2-4053-aeca9035e1a2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abc4f440-9124-351f-831d-aaf5be4d3ae4" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="043d62b3-76f8-822e-3d67-9c3806889918" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf7c1f26-0442-54db-cacc-44dc499dcebc" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f1a-92b8-d83a-9ee4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbd9ff4c-4aa7-432d-a143-b786400cef79" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
             <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
@@ -255,6 +347,98 @@ with a bow or crossbow (but not a crossbow pistol).</description>
       </constraints>
       <profiles>
         <profile id="d294-0567-50b1-5cb6" name="Instructor" publicationId="79c4-b7d0-8643-3ab1" page="5" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <modifiers>
+            <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="492ef626-87b8-7b39-378d-38fbd1ffb131" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8acf5ee1-3430-be22-ec94-15b12e15e497" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3c87526-fae5-8945-97c3-057d97df69e7" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e03b263-c206-09f3-f9d3-47c0c9294235" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cbce569-483e-fc61-9a46-75bb7f52573a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62be0dba-2c77-76b0-3da3-48c05611f170" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abc4f440-9124-351f-831d-aaf5be4d3ae4" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="043d62b3-76f8-822e-3d67-9c3806889918" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf7c1f26-0442-54db-cacc-44dc499dcebc" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbd9ff4c-4aa7-432d-a143-b786400cef79" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06c6e571-9da5-51a2-4053-aeca9035e1a2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="0346-ca28-2660-5f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
             <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
@@ -351,6 +535,98 @@ While there is an Instructor in the warband all Pistol weapons receive a +3” r
       </constraints>
       <profiles>
         <profile id="6469-bb39-6d83-553a" name="Senior Student" publicationId="79c4-b7d0-8643-3ab1" page="5" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <modifiers>
+            <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3c87526-fae5-8945-97c3-057d97df69e7" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8acf5ee1-3430-be22-ec94-15b12e15e497" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cbce569-483e-fc61-9a46-75bb7f52573a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e03b263-c206-09f3-f9d3-47c0c9294235" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62be0dba-2c77-76b0-3da3-48c05611f170" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="492ef626-87b8-7b39-378d-38fbd1ffb131" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="043d62b3-76f8-822e-3d67-9c3806889918" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abc4f440-9124-351f-831d-aaf5be4d3ae4" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf7c1f26-0442-54db-cacc-44dc499dcebc" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbd9ff4c-4aa7-432d-a143-b786400cef79" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06c6e571-9da5-51a2-4053-aeca9035e1a2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="15f3-d871-3bef-07c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
             <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
@@ -364,9 +640,6 @@ While there is an Instructor in the warband all Pistol weapons receive a +3” r
           </characteristics>
         </profile>
       </profiles>
-      <categoryLinks>
-        <categoryLink id="6da2-a64a-0472-045b" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
-      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="64bb-dce3-4e36-4459" name="Serious Injury" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -442,6 +715,98 @@ While there is an Instructor in the warband all Pistol weapons receive a +3” r
       </constraints>
       <profiles>
         <profile id="7cef-2e4c-8f56-5111" name="Underclassmen" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <modifiers>
+            <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8acf5ee1-3430-be22-ec94-15b12e15e497" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="492ef626-87b8-7b39-378d-38fbd1ffb131" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e03b263-c206-09f3-f9d3-47c0c9294235" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cbce569-483e-fc61-9a46-75bb7f52573a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3c87526-fae5-8945-97c3-057d97df69e7" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62be0dba-2c77-76b0-3da3-48c05611f170" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbd9ff4c-4aa7-432d-a143-b786400cef79" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06c6e571-9da5-51a2-4053-aeca9035e1a2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf7c1f26-0442-54db-cacc-44dc499dcebc" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abc4f440-9124-351f-831d-aaf5be4d3ae4" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="043d62b3-76f8-822e-3d67-9c3806889918" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="a6dd-10cf-6557-19c3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
             <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
@@ -525,6 +890,98 @@ While there is an Instructor in the warband all Pistol weapons receive a +3” r
     <selectionEntry id="9688-a426-cf19-8b0f" name="Sons of the Guns" publicationId="79c4-b7d0-8643-3ab1" page="6" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="7150-2d4c-25d2-2932" name="Sons of the Guns" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <modifiers>
+            <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3c87526-fae5-8945-97c3-057d97df69e7" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="492ef626-87b8-7b39-378d-38fbd1ffb131" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62be0dba-2c77-76b0-3da3-48c05611f170" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8acf5ee1-3430-be22-ec94-15b12e15e497" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cbce569-483e-fc61-9a46-75bb7f52573a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e03b263-c206-09f3-f9d3-47c0c9294235" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="043d62b3-76f8-822e-3d67-9c3806889918" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06c6e571-9da5-51a2-4053-aeca9035e1a2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbd9ff4c-4aa7-432d-a143-b786400cef79" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abc4f440-9124-351f-831d-aaf5be4d3ae4" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf7c1f26-0442-54db-cacc-44dc499dcebc" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="9688-a426-cf19-8b0f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
             <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
@@ -798,6 +1255,98 @@ A Marksman who becomes a Hero gains no further effect from taking the Hunter ski
       </constraints>
       <profiles>
         <profile id="b5bb-2df6-fd0b-39bd" name="Pistoliers" publicationId="79c4-b7d0-8643-3ab1" page="6" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <modifiers>
+            <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3c87526-fae5-8945-97c3-057d97df69e7" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="492ef626-87b8-7b39-378d-38fbd1ffb131" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62be0dba-2c77-76b0-3da3-48c05611f170" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e03b263-c206-09f3-f9d3-47c0c9294235" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cbce569-483e-fc61-9a46-75bb7f52573a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8acf5ee1-3430-be22-ec94-15b12e15e497" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf7c1f26-0442-54db-cacc-44dc499dcebc" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06c6e571-9da5-51a2-4053-aeca9035e1a2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="043d62b3-76f8-822e-3d67-9c3806889918" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbd9ff4c-4aa7-432d-a143-b786400cef79" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abc4f440-9124-351f-831d-aaf5be4d3ae4" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="e8d5-5918-c900-382b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
             <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
@@ -894,7 +1443,12 @@ When using pistols in close combat, they may re-roll any missed to-hit rolls wit
         <categoryLink id="764b-b45e-0d5c-3efc" name="New CategoryLink" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="ee2b-d0d9-2db6-4574" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="ee2b-d0d9-2db6-4574" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="c208-7f39-d208-1fcf" name="Gold" hidden="false" collective="false" import="true" targetId="8937-b8a1-515d-cc2a" type="selectionEntry"/>
