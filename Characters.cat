@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="83ab8692-01da-65c5-af52-a55d4800f012" name="Pit Fighter" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1546,6 +1546,451 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
         <cost name="Warband Rating" typeId="wb-rating" value="12.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5a7d-3806-0782-7eaf" name="Arabian Merchant" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0db-bab4-5532-fcb6" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="7dcb-3579-3b5b-f8be" name="Arabian Merchant" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <modifiers>
+            <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="492ef626-87b8-7b39-378d-38fbd1ffb131" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3c87526-fae5-8945-97c3-057d97df69e7" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8acf5ee1-3430-be22-ec94-15b12e15e497" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62be0dba-2c77-76b0-3da3-48c05611f170" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0cbce569-483e-fc61-9a46-75bb7f52573a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e03b263-c206-09f3-f9d3-47c0c9294235" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf7c1f26-0442-54db-cacc-44dc499dcebc" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="043d62b3-76f8-822e-3d67-9c3806889918" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abc4f440-9124-351f-831d-aaf5be4d3ae4" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbd9ff4c-4aa7-432d-a143-b786400cef79" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
+              <repeats>
+                <repeat field="selections" scope="5a7d-3806-0782-7eaf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06c6e571-9da5-51a2-4053-aeca9035e1a2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">2</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">7</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="e0cd-628f-5ddf-b580" name="Arabian Merchant" hidden="false">
+          <description>May be Hired: Any good aligned warbands may hire an Arabian Merchant (ie, Mercenaries, Dwarfs, Witch Hunters, Tomb Raiders, etc)
+
+20 gold crowns to hire + 10 gold crowns upkeep.</description>
+        </rule>
+        <rule id="ccc1-b0f7-500d-f1a3" name="Pawnbroker" hidden="false">
+          <description>The Merchant is skilled in finding the best price for sold items and as such gains an extra 2D6 gold per item that the warband sells (up to its full value) if he was not taken out of action in the battle.</description>
+        </rule>
+        <rule id="13e0-abf2-470b-3f88" name="Marketeer" hidden="false">
+          <description>The Merchant has many useful contacts in the black market underworld and foreign traders to locate many special items.
+After each battle (if he wasn&apos;t taken out of action) the Merchant can visit one of three markets: the Black Market, Foreign Wares and the Fencer, in search of items for the warband.
+Roll a 1D6 on the relevant table to see what items are on offer.
+
+Black Market
+A den of thieves and underworld brigands the black markets of Mordheim sell and procure all manner of illicit substances and are regularly frequented by the infamous members of the Assassins guild...
+
+D6 Items
+ 1 - Nothing available.
+ 2 - Dark Venom or Black Lotus (D3 doses)
+ 3 - Crimson Shade (D3 doses)
+ 4 - Mandrake Root or Madcap Mushrooms (D3 doses)
+ 5 - Stiletto Blade (need &apos;Weapons Training’ to use) +1 attack per turn at -1 strength.
+ 6 - Blow Pipe (need ‘Weapons Training’ to use)
+
+
+Foreign Wares
+Traders from across the seas can be found in the shady taverns and street corners on the outskirts of Mordheim.
+They have many exotic and wondrous items for sale, but at a hefty price...
+
+D6 Items
+ 1 - Nothing available.
+ 2 - Venom Ring (see TC 18)
+ 3 - Lamp of the Djinn or Monkey’s Paw (see TC 17)
+ 4 - Magic Carpet or Tufenk (see TC 17)
+ 5 - Elven Cloak
+ 6 - Cathayan Silks
+
+
+Fencer
+Fencers have an eclectic range of items procured from sources best left unspoken.
+Offered at incredible prices, traders should be wary for their word is not their bond and such items are often flawed&apos;...
+
+D6 Items
+ 1 - Halfling Cook Book
+ 2 - Ithilmar Weapon
+ 3 - Gromril Weapon
+ 4 - Tome of Magic
+ 5 - Hunting Rifle or Elven Bow
+ 6 - Brace of Duelling Pistols
+
+
+All the items purchased through the Merchant’s market contacts are at their base price (ie, do not add the random gold modifier for items).
+All items bought from the Fencer are also at half price but after the item is used once roll a D6.
+On a roll of 1, the item breaks and is useless - an elaborate fake!</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="737b-0867-e694-08f0" name="New CategoryLink" hidden="false" targetId="71f7-5ee6-ab09-7fd9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4196-de81-9ae7-06e3" name=" Characteristic Increases" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b10e-31ed-4aef-7e39" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd27-e28c-5a5c-6bfb" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5a68-de39-5574-925a" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8ea5-82b9-4932-3750" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="308e-9134-1be8-53d6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fcba-6546-e10c-e2d2" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0e7f-f9d3-e4da-6b7f" name="Sword" hidden="false" collective="false" import="true" targetId="01c0-2847-74b6-2431" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Scimitar"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e34-c7eb-8ea1-2555" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d480-02c4-b3f9-2d54" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="495c-8e1e-8470-3df6" name="Skills" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0745-44a7-a360-64f2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7c7-1c7b-82d8-4abc" type="min"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9683-53c2-75a3-981a" name="Special" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="425d-7258-de3d-7e8e" name="Guardian" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c02-8952-dc43-316c" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="a3dd-8c9d-9e45-c799" name="Guardian" hidden="false">
+                      <description>Guardian: The Merchant has ‘acquired’ a bodyguard to protecting from harm in the coming battles.
+The bodyguard will only protect the Merchant and cannot fulfil warband objectives or search, loot or any function other than protecting the Merchant and as such will remain within 1&quot; of the Merchant at all times.
+
+The bodyguard doesn’t gain experience and isn’t paid (it is assumed he has been ‘gifted’ to the Merchant as a favour from one of his contacts).
+
+If the bodyguard dies the Merchant will have to hire another one by re-selecting the skill when he next acquires another skill point.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="77b2-7410-15f0-43d6" name="Stone Cutter" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fd4-c041-2dfe-58cc" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5303-1e9d-67b4-fa2f" name="Stone Cutter" hidden="false">
+                      <description>The Merchant has the skill to refine wyrdstone shards to increase their value.
+Whenever a warband sells its wyrdstone the Merchant may try to refine the source.
+Roll a D6 to discover how much additional gold the wyrdstone is worth.
+   D6 Gold
+      1-2 Lose 2D6 gold crowns.
+      3-5 Gain 2D6 gold crowns.
+        6 Gain 3D6 gold crowns.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a0d8-2e4c-0d90-9614" name="Academic Skills" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="5f62-144c-23d5-cdcd" name="Sorcery" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bdc1-9d55-5182-b2a9" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="33fd-df30-de77-57f0" name="Sorcery" page="0" hidden="false">
+                      <description>This skill may only be taken by Heroes capable of casting spells. A warrior with this skill gains +1 to his rolls to see whether he can cast spells successfully or not. Note that Sisters of Sigmar and Warrior-Priests may not use this skill.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3814-d9ab-bceb-404d" name="Battle Tongue" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f798-5e80-7877-d794" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="dc68-259d-e004-ebbb" name="Battle Tongue" page="0" hidden="false">
+                      <description>This skill may only be chosen by a leader. The warrior has drilled his warband to follow short barked commands. This increases the range of his Leader ability by 6&quot;. Note that Undead leaders may not use this skill.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8d47-90d6-e3e5-4f1f" name="Streetwise" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fcc2-0728-1e7b-3d54" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="ea2e-bc89-d1d6-65c5" name="Streetwise" page="0" hidden="false">
+                      <description>A warrior with this skill has good contacts and knows where to purchase rare items. He may add +2 to the roll that determines his chances of finding such items</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="27e4-d316-fc8e-307f" name="Haggle" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="902b-f60b-4f48-f37a" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acea-9232-81c4-d041" type="min"/>
+                  </constraints>
+                  <rules>
+                    <rule id="2690-5ab4-bdc1-e50c" name="Haggle" page="0" hidden="false">
+                      <description>He may deduct 2D6 gold crowns from the price of any single item (to a minimum cost of 1gc) once per post battle sequence</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="59a6-d8c9-7619-5740" name="Arcane Lore" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="51a6-d8d9-24f0-9a92" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="8840-e46c-a3b0-b592" name="Arcane Lore" page="0" hidden="false">
+                      <description>Witch Hunters, Sisters of Sigmar and Warrior-Priests may not have this skill. Any warriorwith this skill may learn Lesser Magic if he owns a Tome of Magic</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6b32-e628-5e1b-4487" name="Wyrdstone Hunter" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5d1-2029-be4c-a4b3" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="2749-d5b5-452a-2e37" name="Wyrdstone Hunter" page="0" hidden="false">
+                      <description>The warrior has an uncanny ability to find hidden shards of wyrdstone. If a Hero with this skill is searching the ruins in the exploration
+phase you may re-roll one dice when rolling on the Exploration chart. The second result stands.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="18f3-43a5-b11b-4084" name="Warrior Wizard" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8204-9738-ee88-566e" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="9478-9dd6-daad-7244" name="Warrior Wizard" page="0" hidden="false">
+                      <description>This skill may only be taken by spellcasters. The mental powers of the wizard allow him to wear armour and cast spells.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Warband Rating" typeId="wb-rating" value="10.0"/>
+        <cost name="pts" typeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="efa4-9e45-a19f-9039" name="Arabian Merchant Bodyguard" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="425d-7258-de3d-7e8e" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="eb7d-8b0e-5bb1-fc84" name="Bodyguard" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">2</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ad85-3054-842f-b619" name="Intercept" hidden="false">
+          <description>The bodyguard will intercept any model shooting at or charging the Merchant.
+
+Any attacks will be directed at him and if charged place the bodyguard in front of the Merchant to protect him.
+
+The bodyguard will not charge unless the Merchant also charges and cannot intercept an attack if already engaged in combat.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="be89-9a8d-c974-17e6" name="New CategoryLink" hidden="false" targetId="71f7-5ee6-ab09-7fd9" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1815-a5f5-01b7-879a" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ba8-9f19-067d-bbb8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b5bd-3331-4299-29d6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="bfab-a671-492b-12e1" name="Sword" hidden="false" collective="false" import="true" targetId="01c0-2847-74b6-2431" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8480-f161-5b2d-b87f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41de-7512-c092-6a82" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4e28-944c-d7f2-77e3" name="Light Armor" hidden="false" collective="false" import="true" targetId="0515-342a-52c0-7028" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10b8-0e54-4df8-587d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9d2-b728-d13d-56b2" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4141-7adb-12df-9a73" name="Helmet" hidden="false" collective="false" import="true" targetId="7e48-676e-a2ce-0e3f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0aee-ee34-60dd-2156" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d47-3566-20f5-7798" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9cd6-1b10-a1a2-ce34" name="Shield" hidden="false" collective="false" import="true" targetId="a47f-7872-7a95-683f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c51-2e98-8044-ad5b" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1ec-baab-12a3-5316" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </selectionEntries>
   <infoLinks>
     <infoLink id="bc6ab1b0-ad56-fcef-5ed7-968f231af91b" name="EXP Adancement" hidden="false" targetId="bd2100cc-65f9-2311-e4b9-d0e6830884c3" type="rule"/>
@@ -1961,6 +2406,7 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
         <selectionEntry id="a8550f60-6b54-e8b5-0404-edd81d0a94fd" name="Haggle" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c760-b170-762d-d33d" type="min"/>
           </constraints>
           <rules>
             <rule id="f24c33d6-eaba-c2f1-1489-17fcf5141a24" name="Haggle" page="0" hidden="false">
