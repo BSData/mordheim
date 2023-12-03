@@ -1265,6 +1265,24 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
         <cost name="Warband Rating" typeId="wb-rating" value="20.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="56a8-4dff-0049-0b65" name="Stash" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8885-28db-655e-ed20" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a8b-3514-841c-fcc8" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d8ea-09b6-df01-6a26" name="New CategoryLink" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="16b7-704b-249a-4199" name="Gold" hidden="false" collective="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink id="e743-b303-078d-580e" name="Wyrdstone" hidden="false" collective="false" import="true" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
+        <entryLink id="04c3-6648-7241-e5c1" name="Looted Equip" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <rules>
     <rule id="879d-152e-f85d-7ccd" name="Animals" hidden="false">

@@ -500,6 +500,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="25.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="35c5-e6ec-8ab4-8b55" name="Plague Bearers" hidden="false" collective="false" import="true" type="model">
@@ -895,6 +896,24 @@ The Plague Cart automatically passes any Leadership-based test it is required to
         <cost name="Warband Rating" typeId="wb-rating" value="5.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="57fb-2cb3-ea2a-04af" name="Stash" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a07-e78b-40ad-c192" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c29-4524-f502-b4ad" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="fb69-8dab-f6ab-3bf5" name="New CategoryLink" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d82b-a1d5-e7a1-0508" name="Gold" hidden="false" collective="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink id="b290-2b01-ae87-5ba5" name="Wyrdstone" hidden="false" collective="false" import="true" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
+        <entryLink id="4997-30f5-d77b-adc1" name="Looted Equip" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <rules>
     <rule id="267b-1607-e774-4e6c" name="Dangerous to Know" hidden="false">
@@ -906,6 +925,10 @@ The Plague Cart automatically passes any Leadership-based test it is required to
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2989-9ab5-afb7-baaf" type="max"/>
       </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -1108,6 +1131,7 @@ This is counted as a shooting attack with a range of 6&quot; and is resolved at 
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="90dc-0623-73eb-be6d" name="Nurgle’s Rot" hidden="false" collective="false" import="true" type="upgrade">
@@ -1149,6 +1173,7 @@ In addition, if a 6 is rolled for the Toughness test then he has unwittingly pas
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f485-1964-8b11-7336" name="Cloud of Flies" hidden="false" collective="false" import="true" type="upgrade">
@@ -1175,6 +1200,7 @@ The Tainted One’s close combat opponent suffers a -1 to hit modifier on all at
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fa7e-8600-feef-77e1" name="Bloated Foulness" hidden="false" collective="false" import="true" type="upgrade">
@@ -1218,6 +1244,7 @@ It gains +1 Wound and +1 Toughness but has its Movement reduced by -1.</descript
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2caa-3670-7d49-7247" name="Mark of Nurgle" hidden="false" collective="false" import="true" type="upgrade">
@@ -1249,6 +1276,7 @@ It gains +1 Wound and is immune to all poisons.</description>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="cb52-297d-4626-9989" name="Hideous" hidden="false" collective="false" import="true" type="upgrade">
@@ -1277,6 +1305,7 @@ It causes Fear.</description>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
