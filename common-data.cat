@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -1007,9 +1007,9 @@ a duelling pistol have a +1 bonus to hit.</description>
         <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="51ed-e371-76d2-d46b" name="Hochland long rifle" page="0" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="51ed-e371-76d2-d46b" name="Hochland Long Rifle" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="097d-efc0-36a2-8ff5" name="Hochland long rifle" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+        <profile id="097d-efc0-36a2-8ff5" name="Hochland Long Rifle" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
           <characteristics>
             <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">48</characteristic>
             <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
@@ -1067,6 +1067,9 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
           <description>Rarity 8</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="bcb2-4f05-6757-ad68" name="Firearm save modifier" hidden="false" targetId="5d21-2b30-4219-ec86" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="15.0"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
@@ -1701,6 +1704,61 @@ Only available to Humans.</description>
         <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b8bb-20cf-ae3a-693f" name="Double Barreled Pistol" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6235-ef83-cc2c-e691" name="Double Barreled Pistol" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">6</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Prepare shot, Save modifier, Hand-to-hand</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d4d7-e17d-1d2f-06c9" name="Hand-to-hand" page="0" hidden="false">
+          <description>Pistols can be used in hand-to-hand combat as well as for shooting. A model armed with a pistol and another close combat weapon gains +1 Attack, which is resolved at Strength 4 with a -2 save modifier. This bonus attack can be used only once per combat. If you are firing a brace of pistols, your model can fight with 2 Attacks in the first turn of close combat. These attacks are resolved with a model’s Weapon Skill like any normal close combat attack and likewise may be parried. Successful hits are resolved at Strength 4 and with
+a -2 save modifier, regardless of the firer’s Strength.</description>
+        </rule>
+        <rule id="0c3f-75f6-646f-71ad" name="Rarity" hidden="false">
+          <description>Rarity 10</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="a258-1c82-e6ba-25cf" name="Double-barrelled" hidden="false" targetId="54a8-cbd7-7ba5-6778" type="rule"/>
+        <infoLink id="2794-a9df-e85e-86aa" name="Firearm save modifier" hidden="false" targetId="5d21-2b30-4219-ec86" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="30.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5fd9-080e-10f1-9d52" name="Double Barreled Hochland Long Rifle" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="19b9-813d-1ffb-bb01" name="Double Barreled Hochland Long Rifle" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">48</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Move or fire, Prepare shot, Pick target, Save modifier, Double Barreled.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="871f-b6bf-32e2-af44" name="Rarity" hidden="false">
+          <description>Rarity 12</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="7330-62b5-68d2-fcf4" name="Move or fire" hidden="false" targetId="3984-543f-6873-12c0" type="rule"/>
+        <infoLink id="293b-35d9-3d06-b3e2" name="Prepare shot" hidden="false" targetId="4f7f-29ec-a9da-82fc" type="rule"/>
+        <infoLink id="fe2f-68ef-653e-ae0e" name="Firearm save modifier" hidden="false" targetId="5d21-2b30-4219-ec86" type="rule"/>
+        <infoLink id="fa53-e9e0-2627-7b45" name="Pick Target" hidden="false" targetId="f03e-1638-faca-49d7" type="rule"/>
+        <infoLink id="a0ac-9bee-206b-fac3" name="Double-barrelled" hidden="false" targetId="54a8-cbd7-7ba5-6778" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="300.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true">
@@ -2290,6 +2348,8 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="ec95-3895-9311-cdac" name="Shortbow" hidden="false" collective="false" import="true" targetId="3706-6421-53b4-940d" type="selectionEntry"/>
         <entryLink id="b99a-dc1c-d2d8-31c5" name="Sling" hidden="false" collective="false" import="true" targetId="87c7-49b5-f1e7-6662" type="selectionEntry"/>
         <entryLink id="dc4f-68e4-d582-55e6" name="Throwing Knives/stars" hidden="false" collective="false" import="true" targetId="23f5-19c3-5a6c-a8fb" type="selectionEntry"/>
+        <entryLink id="fede-5933-f805-838d" name="Double Barreled Pistol" hidden="false" collective="false" import="true" targetId="b8bb-20cf-ae3a-693f" type="selectionEntry"/>
+        <entryLink id="4487-21e7-e1de-ffc3" name="Double Barreled Hochland long rifle" hidden="false" collective="false" import="true" targetId="5fd9-080e-10f1-9d52" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="313b-a816-0a89-926c" name="Serious Injuries" hidden="false" collective="false" import="true">
@@ -2926,6 +2986,24 @@ They cannot be used in close combat.</description>
       <description>This model is considered a Large Targets as defined in the shooting rules.
 
 +1 to hit modifier and can be selected as target even if it is not the closest enemy.</description>
+    </rule>
+    <rule id="54a8-cbd7-7ba5-6778" name="Double-barrelled" hidden="false">
+      <description>A double-barrelled weapon is a tricky piece of engineering, but it’s a wonderful piece for combat.
+
+When firing such a weapon, the bearer must declare whether he is firing one or both barrels.
+If firing a single barrel, treat the shot as you would a normal weapon.
+
+However when firing both barrels, the method changes slightly:
+   To hit – roll a single dice as you would normally.
+   This allows for a narrow field of fire emanating from the weapon.
+
+   To wound – roll for each shot individually, as each shot can wound on it’s own.
+   Treat each shot that inflicts Critical Hits separately.
+
+Reloading: After firing both barrels, place 2 tokens on the model. In your next shooting phase remove 1 token to represent one barrel having been reloaded.
+Token removal should be the last thing done in your shooting phase and you cannot shoot in the same phase as your reload.
+Firing a Brace: If you fire both guns and barrels at the same time, place 4 tokens down, 2 each of different colours (one for each pistol in the brace).
+Remove one token of each colour every turn.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
