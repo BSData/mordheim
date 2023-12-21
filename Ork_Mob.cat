@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8b66f7c3-fdd7-fcea-eb91-086959d72140" name="Ork Mob" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8b66f7c3-fdd7-fcea-eb91-086959d72140" name="Ork Mob (1a)" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0094-a0e7-9fc9-5aa2" name="Ork Mob Rules" shortName="Broheim Rules (1a)" publisher="https://broheim.net/downloads/warbands/official/Orc%20Mob.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Orc%20Mob.pdf"/>
   </publications>
@@ -193,10 +193,30 @@
     </selectionEntry>
     <selectionEntry id="889151de-4826-5f00-5dbb-fcf546ebedbb" name="Cave Squig" page="0" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="increment" field="maxInRoster" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" repeats="1" roundUp="false"/>
-          </repeats>
+        <modifier type="set" field="maxInRoster" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="maxInRoster" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="maxInRoster" value="3.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="maxInRoster" value="4.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="maxInRoster" value="5.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" type="atLeast"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>

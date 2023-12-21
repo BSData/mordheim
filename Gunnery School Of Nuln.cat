@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9fda-1198-8b84-972e" name="Gunnery School Of Nuln" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9fda-1198-8b84-972e" name="Gunnery School Of Nuln (1b)" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>The province of Nuln is respected across the Empire as the home to the finest handguns and war machines, save for those constructed by the Dwarfs.
 This makes them a desired commodity for any Imperial army using cannonry and as such graduates from the Imperial Gunnery School are highly prized for their skills in training artillery on vulnerable targets with unerring accuracy and maintaining the war machines.
 Perhaps the most surprising fact is that the Imperial Gunnery School does not create new weapons of war.
@@ -138,6 +138,9 @@ Their abilities vary from undeveloped to talented, but they are always very well
           <description>Any models in the warband within 12” of the Senior Gunnery Officer may use his Leadership value when using Leadership tests.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="5698-fbe4-c7a6-b841" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="4cd9-d837-96d9-93c9" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
@@ -458,6 +461,9 @@ with a bow or crossbow (but not a crossbow pistol).</description>
 While there is an Instructor in the warband all Pistol weapons receive a +3” range bonus and all other black powder weapons receive a +6” range bonus.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="1e20-697e-b467-e234" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="ecd5-5f53-3a21-943b" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
@@ -640,6 +646,12 @@ While there is an Instructor in the warband all Pistol weapons receive a +3” r
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="8cd3-8db5-bbe7-a3c3" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="94ac-b5bd-324d-a425" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="64bb-dce3-4e36-4459" name="Serious Injury" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -820,6 +832,9 @@ While there is an Instructor in the warband all Pistol weapons receive a +3” r
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="16ac-760d-f514-bbb5" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="a56f-23a5-cf4e-8e6c" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
@@ -995,6 +1010,9 @@ While there is an Instructor in the warband all Pistol weapons receive a +3” r
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="7acb-2ee6-6853-fb94" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="6521-a578-8bfc-68a0" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
@@ -1181,6 +1199,9 @@ Marksmen have the Hunter skill from the Mordheimrulebook.
 A Marksman who becomes a Hero gains no further effect from taking the Hunter skill in additionto this.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="276c-409e-7c0d-0ec3" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="6034-b5d6-c3e9-a020" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
@@ -1366,6 +1387,9 @@ A Marksman who becomes a Hero gains no further effect from taking the Hunter ski
 When using pistols in close combat, they may re-roll any missed to-hit rolls with the pistol in the first round of combat.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="7bcb-2b27-bc41-fe0a" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="4ece-5e7c-60f3-b634" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
@@ -3606,4 +3630,7 @@ Its owner will not willingly discard it in a fight and so must fight on without 
       </characteristics>
     </profile>
   </sharedProfiles>
+  <catalogueLinks>
+    <catalogueLink id="5d7f-3a2f-8c44-04da" name="common-data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>

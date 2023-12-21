@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="3" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -1759,6 +1759,164 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1cad-3ea5-f379-1040" name="Rapier" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6731-8dce-da8e-84d5" name="Rapier" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Parry, Barrage, Armour save</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="8f8d-3945-f1c2-b6c5" name="Rarity" hidden="false">
+          <description>Rarity 5</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="b07e-21a6-8a2e-b8bb" name="Parry" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule"/>
+        <infoLink id="7629-46f2-3b74-b24f" name="Barrage" hidden="false" targetId="0932-8d1f-c8b5-ee8a" type="rule"/>
+        <infoLink id="9838-37ca-4a36-da16" name="+1 Enemy armour save" hidden="false" targetId="98ac-2376-00c1-4f65" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="15.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7c61-2104-517e-dfab" name="Horseman&apos;s Hammer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a354-5579-9e36-3daa" name="Horseman&apos;s Hammer" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+1</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Cavalry Charge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="0a18-4b15-b5f7-15cd" name="Rarity" hidden="false">
+          <description>Rarity 10</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="41df-8af6-5dc1-c9fd" name="Cavalry bonus" hidden="false" targetId="ef77-8d02-8707-afc4" type="rule"/>
+        <infoLink id="4fa1-902c-db5b-90ed" name="Two Handed" hidden="false" targetId="2fb3-525b-86c3-2cd6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="30.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="065e-ad0a-c227-a634" name="Torch" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="fd5e-b93a-5ef6-fad3" name="Torch" hidden="false">
+          <description>Warriors lacking the funds for a lantern may have to make do with torches.
+Torches act exactly as lanterns, adding +4&quot; to the range the model may spot hidden enemies, but has a few other special rules as well.
+A torch will only last one game.
+A model armed with a torch counts as causing Fear in Animals (Hunting Dogs, all riding steeds, Bears, Wolves, etc), and may use a torch as a makeshift club.
+When used in combat, a torch is treated as a normal dub, though with a -1 to hit modifier.
+Any models that have a Regeneration special rule (like Trolls) will not be able to regenerate wounds caused by a torch during the battle.
+
+(Torches may also cause buildings to catch fire —see &apos;Let the Damned Burn&apos; from Town Cryer 8).
+</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="2.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c9bb-a349-a1d0-79b7" name="Fighting Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b4d-211d-09b6-62db" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3527-2794-7012-9361" name="Fighting Claws" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Pair, Parry, Climb, Cumbersome</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9e6d-4858-6df5-4287" name="Climb" hidden="false" targetId="0bab-d885-3d89-4d70" type="rule"/>
+        <infoLink id="af61-7b5f-88da-66e7" name="Cumbersome" hidden="false" targetId="2185-cae1-51b5-3a0e" type="rule"/>
+        <infoLink id="7d3e-b6ec-8c12-2d9e" name="Pair" hidden="false" targetId="f053-2d68-666e-727a" type="rule"/>
+        <infoLink id="cb31-a8c7-6c39-c9ef" name="Parry" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="3e8b-5a2a-9a18-9976" name="Gromril Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c611-d517-ae82-a126" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="00a4-5e95-3013-149e" name="Gromril weapon" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="105.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5493-79c3-5d89-9a3c" name="Ithilmar Weapon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a764-a461-96f1-a48d" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c31f-d1fd-5c61-bc2d" name="Ithilmar weapon" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="70.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="35.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c51a-d060-7bf2-7ae3" name="Warplock Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ca09-3e89-0c7a-6755" name="Warplock Pistol" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">8</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">5</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Fire every other turn</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6a4f-2568-1dde-574c" name="-3 Save Modifier" hidden="false" targetId="f8a4-02ae-0f3c-3da0" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="35.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1478-15cf-1d4e-3e13" name="Sigmarite Warhammer (Sisters only)" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="fdf9-610c-e8fc-eaf8" name="Sigmarite Warhammer" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+1</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Concussion, Holy Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1f10-7bce-3349-758f" name="Holy Weapon" page="0" hidden="false">
+          <description>The warhammer has a +1 bonus on all to wound rolls against any Possessed or Undead models.
+Note that you will still need to score a 6 before any modifiers in order to cause a critical hit.
+
+Only Matriarchs and Sister Superiors may carry two Sigmarite  warhammers.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="d274-6e56-4bde-daeb" name="Concussion" hidden="false" targetId="f08e-fc7a-fca1-6a49" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="15.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true">
@@ -2327,6 +2485,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="b875-8164-dca6-2e7a" name="Spear" hidden="false" collective="false" import="true" targetId="005e-e397-8108-f198" type="selectionEntry"/>
         <entryLink id="003a-c940-fae4-0931" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
         <entryLink id="d0ac-18d9-8c39-2900" name="Squigg Prodder" hidden="false" collective="false" import="true" targetId="5dcd-265b-9fef-751d" type="selectionEntry"/>
+        <entryLink id="89c8-d069-f3b4-9387" name="Fighting Claws" hidden="false" collective="false" import="true" targetId="c9bb-a349-a1d0-79b7" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1937-df4f-3c68-e0be" name="Missile Weapons" hidden="false" collective="false" import="true">
@@ -2350,6 +2509,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="dc4f-68e4-d582-55e6" name="Throwing Knives/stars" hidden="false" collective="false" import="true" targetId="23f5-19c3-5a6c-a8fb" type="selectionEntry"/>
         <entryLink id="fede-5933-f805-838d" name="Double Barreled Pistol" hidden="false" collective="false" import="true" targetId="b8bb-20cf-ae3a-693f" type="selectionEntry"/>
         <entryLink id="4487-21e7-e1de-ffc3" name="Double Barreled Hochland long rifle" hidden="false" collective="false" import="true" targetId="5fd9-080e-10f1-9d52" type="selectionEntry"/>
+        <entryLink id="a418-11ed-3d56-23f3" name="Warplock Pistol" hidden="false" collective="false" import="true" targetId="c51a-d060-7bf2-7ae3" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="313b-a816-0a89-926c" name="Serious Injuries" hidden="false" collective="false" import="true">
@@ -2892,7 +3052,7 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
 result as knocked down instead. This save is not modified by the opponent’s Strength.</description>
     </rule>
     <rule id="ef77-8d02-8707-afc4" name="Cavalry bonus" page="0" hidden="false">
-      <description>If using the rules for mounted models, a mounted warrior armed with a spear receives a   Strength bonus when he charges. This bonus only applies for that turn.</description>
+      <description>If using the rules for mounted models, a mounted warrior armed with a &apos;cavalry weapon&apos; receives a +1 Strength bonus when he charges. This bonus only applies for that turn.</description>
     </rule>
     <rule id="033a-b64b-4bfc-e285" name="Cavalry Weapon" page="0" hidden="false">
       <description>A warrior must own a warhorse to use , as it can only be used whilst he is on horseback.</description>
@@ -3004,6 +3164,26 @@ Reloading: After firing both barrels, place 2 tokens on the model. In your next 
 Token removal should be the last thing done in your shooting phase and you cannot shoot in the same phase as your reload.
 Firing a Brace: If you fire both guns and barrels at the same time, place 4 tokens down, 2 each of different colours (one for each pistol in the brace).
 Remove one token of each colour every turn.</description>
+    </rule>
+    <rule id="0932-8d1f-c8b5-ee8a" name="Barrage" hidden="false">
+      <description>A weapon with this rule can be used to make a barrage of quick attacks before the opponent has time to react.
+A well trained swordsman could inflict a multitude of ligth wounds in mere seconds, often enough to incapacitate the hardiest of foes.
+
+A warrior armed with a barrage weapon rolls to hit and to wound as normal.
+However, if you manage to hit your opponent but fail to wound, you may attack again just as if you had another attack but at -1 to hit (down to a maximum of needing a 6 to hit).
+You may continue attacking as long as you hit and it is possible to strike your opponent many times, particularly if your warrior has more than one attack on his profile.</description>
+    </rule>
+    <rule id="0bab-d885-3d89-4d70" name="Climb" hidden="false">
+      <description>A Skaven equipped with Fighting Claws can add +1 to his Initiative when making Climbing tests.</description>
+    </rule>
+    <rule id="2185-cae1-51b5-3a0e" name="Cumbersome" hidden="false">
+      <description>A model armed with this weapon  may not use any other weapons in the entire battle.</description>
+    </rule>
+    <rule id="f053-2d68-666e-727a" name="Pair" hidden="false">
+      <description>This weapon is traditionally used in pairs, one in each hand. A warrior armed with it gets an additional attack.</description>
+    </rule>
+    <rule id="f8a4-02ae-0f3c-3da0" name="-3 Save Modifier" hidden="false">
+      <description>A warrior wounded by this weapon must make his armour save with a -3 modifier.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

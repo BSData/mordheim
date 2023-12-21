@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen" revision="3" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen (1b)" revision="4" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="889151de-4826-5f00-5dbb-fcf546ebedbb" name="Kroxigor" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1802,6 +1802,7 @@ If he rolls 4+ on a D6 he is freed and may move and fight normally.</characteris
       </profiles>
       <costs>
         <cost name="pts" typeId="points" value="5.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aea0-1785-a84a-3058" name="Javelins" hidden="false" collective="false" import="true" type="upgrade">
@@ -1817,6 +1818,7 @@ The Javelins are thrown weapons and the warrior suffer no penalty for moving and
       </profiles>
       <costs>
         <cost name="pts" typeId="points" value="10.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b8a4-72c3-3dc6-4f44" name="Throwing Knives/stars" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -3373,6 +3375,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="1401-78e2-fbea-e65c" name="Academic Skills" hidden="false" collective="false" import="true" targetId="f8cb9c64-fd91-ecfd-2e82-5ec10ec7ef53" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="f5e4-4d37-a4df-fb3a" name="Lizardmen Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3381,6 +3387,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="4384-4844-156d-f590" name="Lizardmen Skills" hidden="false" collective="false" import="true" targetId="0d5ab763-c126-029a-3da9-203abeafdb53" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="e416-01e8-7c2a-df74" name="Combat Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3389,6 +3399,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="ff41-4321-5967-09f5" name="Combat Skills" hidden="false" collective="false" import="true" targetId="bd8689c9-bc5c-df7b-87b9-aad34e27a295" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="1c1d-b92b-3b45-588a" name="Shooting Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3397,6 +3411,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="fc78-9c4a-cc27-3025" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="52007ee0-cc99-b312-3650-cfab391e476c" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="e9c7-1339-718d-4c4d" name="Speed Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3405,6 +3423,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="0379-837a-eb0f-35da" name="Speed Skills" hidden="false" collective="false" import="true" targetId="2a62fe9a-16ae-b087-f5a5-47f19da37c89" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="57b8-c3fc-ade1-5499" name="Strength Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3413,6 +3435,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="5636-3e33-a3f7-9b88" name="Strength Skills" hidden="false" collective="false" import="true" targetId="9e76820a-3a93-f94a-a7c7-d31889583e06" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

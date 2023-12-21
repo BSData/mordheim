@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a808d69a-88e2-9484-b24a-181ea44917e5" name="High Elf Shadow Warriors" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a808d69a-88e2-9484-b24a-181ea44917e5" name="Shadow Warriors (1b)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="83acbe09-ec66-c45c-0f5b-1a9e0017016e" name="Shadow Master" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1127,7 +1127,12 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <categoryLink id="83ade99f-e9ef-d25a-59ac-ca3f3def011c-a31acb39-8ce9-d6d7-bcc9-f3144d63db48" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="3c41-eda8-b9c5-2338" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="3c41-eda8-b9c5-2338" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="dad9014c-4be3-4cca-3345-5808f02cbcce" name="Gold" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
@@ -2994,6 +2999,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="a0de-558b-75dc-56ba" name="Academic Skills" hidden="false" collective="false" import="true" targetId="f8cb9c64-fd91-ecfd-2e82-5ec10ec7ef53" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="752b-03ea-be53-dda0" name="Combat Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3002,6 +3011,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="3c82-ec8e-0d9b-fded" name="Combat Skills" hidden="false" collective="false" import="true" targetId="bd8689c9-bc5c-df7b-87b9-aad34e27a295" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="5569-9bb7-0dd3-8286" name="Shooting Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3010,6 +3023,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="d9b8-be65-537c-8c8d" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="52007ee0-cc99-b312-3650-cfab391e476c" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a553-ef18-4928-c47c" name="Speed Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3018,6 +3035,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="4c4b-b3d1-b1a0-d064" name="Speed Skills" hidden="false" collective="false" import="true" targetId="2a62fe9a-16ae-b087-f5a5-47f19da37c89" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="b053-9bcf-0403-e200" name="Strength Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3026,6 +3047,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="fbb0-825a-6000-5cca" name="Strength Skills" hidden="false" collective="false" import="true" targetId="9e76820a-3a93-f94a-a7c7-d31889583e06" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="317a-177f-3c9b-9de1" name="Special Skills (Shadow Warrior)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3034,6 +3059,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="e77d-869c-f8df-a640" name="Special Skills (Shadow Warrior)" hidden="false" collective="false" import="true" targetId="285ebcd1-3b2e-4937-39bc-a88721067dca" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c6b6bbc1-2d97-0206-16d1-5845aabffac4" name="Sisters of Sigmar" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c6b6bbc1-2d97-0206-16d1-5845aabffac4" name="Sisters of Sigmar (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="83ab8692-01da-65c5-af52-a55d4800f012" name="Augur" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -976,7 +976,12 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
         <categoryLink id="83ade99f-e9ef-d25a-59ac-ca3f3def011c-a31acb39-8ce9-d6d7-bcc9-f3144d63db48" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="8953-7ec3-b19d-864f" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="8953-7ec3-b19d-864f" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="dad9014c-4be3-4cca-3345-5808f02cbcce" name="Gold" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
@@ -2899,6 +2904,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="591d-f4a6-ae8b-7755" name="Academic Skills" hidden="false" collective="false" import="true" targetId="f8cb9c64-fd91-ecfd-2e82-5ec10ec7ef53" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="9c76-9a8e-9c14-fc33" name="Combat Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2907,6 +2916,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="6695-656f-f6ac-7183" name="Combat Skills" hidden="false" collective="false" import="true" targetId="bd8689c9-bc5c-df7b-87b9-aad34e27a295" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="1a8c-a984-1775-3964" name="Shooting Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2915,6 +2928,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="8244-924a-3f8e-75d9" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="52007ee0-cc99-b312-3650-cfab391e476c" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="80b9-b4b4-a945-f47f" name="Speed Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2923,6 +2940,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="d6ec-0060-f4ba-2485" name="Speed Skills" hidden="false" collective="false" import="true" targetId="2a62fe9a-16ae-b087-f5a5-47f19da37c89" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="820a-2cdc-2576-02e6" name="Strength Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2931,6 +2952,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="c5b7-4be6-d762-5074" name="Strength Skills" hidden="false" collective="false" import="true" targetId="9e76820a-3a93-f94a-a7c7-d31889583e06" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="c729-d181-9be4-d321" name="Special Skills (sisters)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2939,6 +2964,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="8490-1b00-8d1a-88af" name="Special Skills (sisters)" hidden="false" collective="false" import="true" targetId="bf3da9bd-6711-12b2-2e23-5167d3c0d321" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

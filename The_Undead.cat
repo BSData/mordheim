@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0b05773f-a863-7a25-f872-588b804e2c75" name="The Undead" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0b05773f-a863-7a25-f872-588b804e2c75" name="Undead (1a)" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="888b0a33-7922-685c-49fc-591b3fb26358" name="Awakened Zombie" page="0" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -798,7 +798,12 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         <categoryLink id="83ade99f-e9ef-d25a-59ac-ca3f3def011c-a31acb39-8ce9-d6d7-bcc9-f3144d63db48" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="74cb-4266-baac-3ca5" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="74cb-4266-baac-3ca5" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="dad9014c-4be3-4cca-3345-5808f02cbcce" name="Gold" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
@@ -2872,6 +2877,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="9d37-173a-b5b3-c822" name="Academic Skills" hidden="false" collective="false" import="true" targetId="f8cb9c64-fd91-ecfd-2e82-5ec10ec7ef53" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="cac0-aace-3c14-c62a" name="Combat Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2880,6 +2889,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="e365-d8ca-45b5-a8a2" name="Combat Skills" hidden="false" collective="false" import="true" targetId="bd8689c9-bc5c-df7b-87b9-aad34e27a295" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="2875-b6c7-e956-38b8" name="Shooting Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2888,6 +2901,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="4cc9-9443-19fc-f9e2" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="52007ee0-cc99-b312-3650-cfab391e476c" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="d666-feb7-40dd-763c" name="Speed Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2896,6 +2913,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="a139-aa85-a54e-05ed" name="Speed Skills" hidden="false" collective="false" import="true" targetId="2a62fe9a-16ae-b087-f5a5-47f19da37c89" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="97f0-beff-79de-f996" name="Strength Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2904,6 +2925,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="a74a-898d-7ce5-6c07" name="Strength Skills" hidden="false" collective="false" import="true" targetId="9e76820a-3a93-f94a-a7c7-d31889583e06" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

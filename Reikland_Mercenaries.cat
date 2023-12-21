@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ac1721e2-653d-e279-11e3-ca8ba77b0637" name="Reikland Mercenaries" revision="8" battleScribeVersion="2.03" authorName="" authorContact="" authorUrl="https://github.com/BSData/mordheim/issues" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ac1721e2-653d-e279-11e3-ca8ba77b0637" name="Reiklanders (1a)" revision="9" battleScribeVersion="2.03" authorName="" authorContact="" authorUrl="https://github.com/BSData/mordheim/issues" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="83ab8692-01da-65c5-af52-a55d4800f012" name="Champion" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -574,7 +574,12 @@
         <categoryLink id="83ade99f-e9ef-d25a-59ac-ca3f3def011c-a31acb39-8ce9-d6d7-bcc9-f3144d63db48" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="9045-0d3c-9631-a916" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="9045-0d3c-9631-a916" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="dad9014c-4be3-4cca-3345-5808f02cbcce" name="Gold" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
@@ -2884,6 +2889,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="0d4c-6cb4-d3e6-adfd" name="Academic Skills" hidden="false" collective="false" import="true" targetId="f8cb9c64-fd91-ecfd-2e82-5ec10ec7ef53" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="c284-2f63-180e-050a" name="Combat Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2892,6 +2901,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="7cc9-0386-10ed-c990" name="Combat Skills" hidden="false" collective="false" import="true" targetId="bd8689c9-bc5c-df7b-87b9-aad34e27a295" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="eefd-8387-5f1c-0dd5" name="Shooting Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2900,6 +2913,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="25e4-c6cb-36e4-b416" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="52007ee0-cc99-b312-3650-cfab391e476c" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="d673-3854-b15b-b4ba" name="Speed Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2908,6 +2925,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="53dd-a9a1-d32b-2d13" name="Speed Skills" hidden="false" collective="false" import="true" targetId="2a62fe9a-16ae-b087-f5a5-47f19da37c89" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="f010-bc79-3293-d469" name="Strength Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2916,6 +2937,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
           <entryLinks>
             <entryLink id="aac9-3a0e-c654-9b1a" name="Strength Skills" hidden="false" collective="false" import="true" targetId="9e76820a-3a93-f94a-a7c7-d31889583e06" type="selectionEntryGroup"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
