@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="3" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="4" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -1086,13 +1086,13 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         </profile>
       </profiles>
       <rules>
-        <rule id="0bf3-216f-dda4-5608" name="Fire twice" hidden="false">
-          <description>A model armed with a repeater crossbow may choose to fire twice per turn with an extra -1 to hit penalty on both shots.</description>
-        </rule>
         <rule id="4ac8-3118-7800-516e" name="Rarity" hidden="false">
           <description>Rarity 8</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="e02e-52f5-dc0f-9cc0" name="Fire twice" hidden="false" targetId="07df-708f-f103-6b32" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="40.0"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
@@ -1917,6 +1917,108 @@ Only Matriarchs and Sister Superiors may carry two Sigmarite  warhammers.</descr
         <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="c3c1-acf0-6d76-fa15" name="Cathayan Longsword" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="500a-be39-3a90-f03b" name="Cathayan Longsword" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Parry Cutting Edge, Mastercrafted</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="cbb4-d9af-3cbf-dd8f" name="Price Modifier" hidden="false">
+          <description>+ 2D6</description>
+        </rule>
+        <rule id="97a3-f0b6-7162-1e56" name="Rarity" hidden="false">
+          <description>Rarity 12</description>
+        </rule>
+        <rule id="ebff-ed55-8fd4-2540" name="Mastercrafted" hidden="false">
+          <description>Attacks made with a Cathayan longsword give the bearer +1 Initiative and +1 Weapon Skill.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="a7d1-8c01-f986-f552" name="Parry" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule"/>
+        <infoLink id="6174-85b5-16ec-632c" name="Cutting edge" hidden="false" targetId="4b68-6905-29fd-e549" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="75.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="79b7-5cfb-549c-c973" name="Gnoblar Fighter" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="540e-e2c6-aea2-81b3" name="Gnoblar Fighter" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">3</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">2</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f528-0b2c-7fae-56d8" name="Price Modifier" hidden="false">
+          <description>+ 1D6</description>
+        </rule>
+        <rule id="ac81-2f8a-6a7f-b204" name="Rarity" hidden="false">
+          <description>Rarity 9 (Ogres and Chaos Dwarfs only)</description>
+        </rule>
+        <rule id="24d1-7dc4-2d83-8189" name="Largely Insignificant" hidden="false">
+          <description>Gnoblars count towards the number of warriors in a warband but are not considered for Rout tests - neither for determining the initial warband size nor as lost models.</description>
+        </rule>
+        <rule id="2a8e-6ccd-0884-358a" name="Bicker" hidden="false">
+          <description>Roll a D6 at the beginning of the turn for each Gnoblar within 2&quot; of another Gnoblar and not engaged in close combat.
+On a result of 1 the Gnoblar starts to bicker, insult and/or bully the other Gnoblar and may do nothing else this turn.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="4dcd-845d-803c-315d" name="Equipment" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6d1-b929-48aa-5ce5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cfb-c0a4-1f3f-6119" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ba53-d91b-f862-fa36" name="Sharp stuff" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f6f-76b1-2d9f-312a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ef2-a35b-9f9b-00b6" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="16c8-c27d-e872-e01c" name="Sharp stuff" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">8</characteristic>
+                    <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">2</characteristic>
+                    <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Fire Twice</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="5500-8b64-0148-ac53" name="Fire twice" hidden="false" targetId="07df-708f-f103-6b32" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="d74c-14f5-6520-a7a4" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="points" value="0.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cdd-462c-e46b-bc18" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a250-636c-f87b-1d11" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="15.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true">
@@ -2486,6 +2588,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="003a-c940-fae4-0931" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
         <entryLink id="d0ac-18d9-8c39-2900" name="Squigg Prodder" hidden="false" collective="false" import="true" targetId="5dcd-265b-9fef-751d" type="selectionEntry"/>
         <entryLink id="89c8-d069-f3b4-9387" name="Fighting Claws" hidden="false" collective="false" import="true" targetId="c9bb-a349-a1d0-79b7" type="selectionEntry"/>
+        <entryLink id="7e32-018b-fb3c-516d" name="Cathayan Longsword" hidden="false" collective="false" import="true" targetId="c3c1-acf0-6d76-fa15" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1937-df4f-3c68-e0be" name="Missile Weapons" hidden="false" collective="false" import="true">
@@ -3184,6 +3287,21 @@ You may continue attacking as long as you hit and it is possible to strike your 
     </rule>
     <rule id="f8a4-02ae-0f3c-3da0" name="-3 Save Modifier" hidden="false">
       <description>A warrior wounded by this weapon must make his armour save with a -3 modifier.</description>
+    </rule>
+    <rule id="0ebc-5e13-bdf5-8605" name="Scatter" hidden="false">
+      <description>If the warrior misses his roll to hit, the shot will land 2D6” in a random direction (determined using a Warhammer directional die, using the “clockface method” of scattering, or whatever other method the players can agree to).</description>
+    </rule>
+    <rule id="7c73-4655-4b8f-01ac" name="Experimental" hidden="false">
+      <description>This Blackpowder weapon is always subject to the optional Blackpowder Weapons rules from the Mordheim rulebook, even if they are not normally used in your campaign.
+On any result other than “BOOM!”, the weapon has jammed or run out of loaded barrels and must be reloaded.</description>
+    </rule>
+    <rule id="2849-7263-7081-cb4e" name="Explosive Radius 1-½" hidden="false">
+      <description>After determining the final landing spot, the explosion created by the bomb will cover a small area.
+
+The target and any models within 1 ½” of him each take a single S4 hit from the blast.</description>
+    </rule>
+    <rule id="07df-708f-f103-6b32" name="Fire twice" hidden="false">
+      <description>A model armed with this weapon may choose to fire twice per turn with an extra -1 to hit penalty on both shots.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

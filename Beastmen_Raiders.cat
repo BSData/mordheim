@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="b758-ee46-f27e-58dd" name="Beastman Rules" shortName="Beastman" publisher="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf" publisherUrl="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf"/>
   </publications>
@@ -1499,7 +1499,7 @@ See Mutants section on special rules.</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0c52-102d-1861-95da" name="Beastmen Special Skills" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0c52-102d-1861-95da" name="Special Skills (Beastmen)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0484-ec6d-505e-81bd" type="max"/>
           </constraints>
