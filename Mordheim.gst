@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" name="Mordheim" revision="15" battleScribeVersion="2.03" authorName="James" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" name="Mordheim" revision="15" battleScribeVersion="2.03" authorName="James" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
-    <costType id="points" name="pts" defaultCostLimit="0.0" hidden="false"/>
-    <costType id="wb-rating" name="Warband Rating" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="points" name="pts" defaultCostLimit="0" hidden="false"/>
+    <costType id="wb-rating" name="Warband Rating" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" name="Model">
@@ -57,14 +57,14 @@
       <categoryLinks>
         <categoryLink id="7451d7da-3cc0-0299-775b-2f48162a731d-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="7451d7da-3cc0-0299-775b-2f48162a731d-f9b08d8e-4922-78d5-78ad-2047bff52dc8" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="false"/>
         <categoryLink id="7451d7da-3cc0-0299-775b-2f48162a731d-1eb693ec-1f8e-b7c3-7ae8-0c1b23146dea" name="Hired swords" hidden="false" targetId="1eb693ec-1f8e-b7c3-7ae8-0c1b23146dea" primary="false"/>
         <categoryLink id="7451d7da-3cc0-0299-775b-2f48162a731d-a31acb39-8ce9-d6d7-bcc9-f3144d63db48" name="Stash" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -76,4 +76,7 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <publications>
+    <publication name="GitHub" hidden="false" id="ff7c-2cb8-2105-563f" publisherUrl="https://github.com/BSData/mordheim"/>
+  </publications>
 </gameSystem>
