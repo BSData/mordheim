@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="5" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2345,6 +2345,115 @@ Khemri setting</description>
         <infoLink name="Cutting edge" hidden="false" type="rule" id="7486-649e-62d-166c" targetId="4b68-6905-29fd-e549"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="5208-f70c-664-e36e" name="Dwarf Axe" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6915-9c71-88c8-6e14" name="Dwarf Axe" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Cutting edge, Parry</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="64ac-221e-35f1-5c3f" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="points" value="60"/>
+            <modifier type="set" value="45" field="points"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1213-7c57-fac5-647f" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="56c2-ba58-f5e1-7da1" name="Gromril weapon" hidden="false" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bc24-c66d-6b4e-466b" name="Ithilmar weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="points" value="45"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ffb-eaf3-c1b1-5d12" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a007-d2a6-bef0-7bea" name="Ithilmar weapon" hidden="false" targetId="2c05-eef1-5b96-cc14" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule id="7b79-5c78-baac-8735" name="Rarity" hidden="false">
+          <description>Rarity 8 (Dwarfs only)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Cutting edge" hidden="false" type="rule" id="84a8-ae0a-94d1-c16b" targetId="4b68-6905-29fd-e549"/>
+        <infoLink name="Parry" hidden="false" type="rule" id="d921-f56c-d92c-7cc4" targetId="17dc-9c49-08e1-af45"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Blowpipe" hidden="false" id="b6b-2ea5-1f65-a84b">
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule id="1988-7969-d1b9-2ec0" name="Rarity" hidden="false">
+          <description>Common (Goblins Only)</description>
+        </rule>
+        <rule name="Poison" hidden="false" id="f3bc-655c-bcda-b92">
+          <description>The needles fired by a blowpipe are coated in a venom very similar in its effects to the Black Lotus (if you roll a 6 on the To Hit roll, the victim is automatically wounded).
+
+
+A blowpipe cannot cause critical hits.</description>
+        </rule>
+        <rule name="Stealthy" hidden="false" id="e5fe-b70e-57ad-bee6">
+          <description>A Goblin armed with a blowpipe can fire while hidden without revealing his position to the enemy.
+
+
+The target model can take an Initiative test in order to try to spot the firing Goblin.
+If the test is successful, the Goblin no longer counts as hidden.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Blowpipe" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon" hidden="false" id="3a36-cb26-be28-e33d">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">8</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">1</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Poison, Stealthy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="+1 Enemy armour save" hidden="false" type="rule" id="e5af-5e66-444-147c" targetId="98ac-2376-00c1-4f65"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Magic Gubbinz" hidden="false" id="7c22-c5e9-cbc0-76a4">
+      <costs>
+        <cost name="pts" typeId="points" value="50"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule id="fbdd-dd74-cb40-cb7c" name="Rarity" hidden="false">
+          <description>Rarity 9 (Goblins Only)</description>
+        </rule>
+        <rule name="Magic Gubbinz" hidden="false" id="7324-1b99-a38d-16d2">
+          <description>These are odds and ends carried around by the Shaman to focus his powers.
+Most are bat feet, lizard lips, and the like, but still seem to provide benefits to their owner.
+
+The Shaman may re-roll a failed magic test on a D6 roll of 4+.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true">
@@ -2408,13 +2517,24 @@ Khemri setting</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6b4c-7445-150c-f972" name="Arcane Lore" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6b4c-7445-150c-f972" name="Scribe" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6067-1bb1-7edf-9ffa" type="max"/>
           </constraints>
           <rules>
-            <rule id="dca1-f3ce-a726-6228" name="Arcane Lore" page="0" hidden="false">
-              <description>Witch Hunters, Sisters of Sigmar and Warrior-Priests may not have this skill. Any warriorwith this skill may learn Lesser Magic if he owns a Tome of Magic</description>
+            <rule id="dca1-f3ce-a726-6228" name="Scribe" page="0" hidden="false">
+              <description>The warrior is a natural adept at writing and making scrolls.
+Any warrior with the ability to cast spells or use prayers may take this skill.
+It allows them to make a scroll before the battle and inscribe a single spell or prayer upon it that they are versed in.
+
+
+The scroll may be used just before they are about to cast the spell or prayer and allows the caster +2 to his difficulty roll.
+
+
+Once used the scroll will crumble to dust and is useless.
+
+
+Scrolls may not be saved up from battle to battle if they are not used.</description>
             </rule>
           </rules>
           <costs>
@@ -2450,6 +2570,118 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="1c42-3342-60f6-496b" name="Mind Focus" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="38ac-477-724d-2f03" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="7ef5-f086-91d6-7231" name="Mind Focus" page="0" hidden="false">
+              <description>The warrior possesses a great strength of mind which allows him to concentrate beyond the levels of most normal men.
+
+
+This skill may only be taken by a warrior capable of using prayers or casting spells.
+
+
+When using a spell or prayer the warrior with this skill may reroll one dice roll used in the difficulty roll.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bfa8-95bb-3748-581d" name="Tactician" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="99a3-2e38-5bfe-3edd" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="2533-ce12-def8-9bfc" name="Tactician" page="0" hidden="false">
+              <description>The warrior has a great tactical mind and can often find the best positions for his warriors to meet the oncoming attack.
+
+
+This skill may only be taken by a warband leader.
+
+
+In any scenario the warband leader may reposition his warriors after his opponent has set up and may even advance them up to 12 inch onto the board instead of 8 inch.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ff1-9084-e2af-ba7a" name="Hunch" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2fe-9cd3-66ec-2b9a" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="517-146-4e2b-c75a" name="Hunch" page="0" hidden="false">
+              <description>The warrior has an uncanny knack of placing his men in the right place at the right time, as if he senses danger through instinct alone.
+
+
+This skill may only be taken by the warband leader.
+
+
+In any scenario the warband leader may position up to 3 of his men capable of earning experience in any ruined building on the board that is at least 12 inch away from an enemy model and not in the enemy deployment zone.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="793-59f5-635-6faa" name="Magical Aptitude" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb90-66ae-6069-aede" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="19a-2e38-a80a-f9ab" name="Magical Aptitude" page="0" hidden="false">
+              <description>This skill may only be taken by a warrior capable of casting spells.
+
+
+It may not be used by Sisters of Sigmar or Warrior Priests.
+
+
+The warrior has a keen aptitude for magic and can push himself beyond normal limits to produce a storm of spells.
+
+
+The warrior may attempt to cast two spells each turn as long as he is not in hand-to-hand combat.
+After attempting the first spell, he must take a toughness test.
+
+
+
+If he passes he may attempt a second spell that turn or even cast the same spell twice.
+
+
+If he fails he must roll on the injury table immediately with no saves treating out of action results as stunned instead.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e6b7-7177-f4b0-f407" name="Arcane Lore" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="449a-cebc-fcf8-6359" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="98b7-609e-d393-d2f2" name="Arcane Lore" page="0" hidden="false">
+              <description>Witch Hunters, Sisters of Sigmar and Warrior-Priests may not have this skill. Any warriorwith this skill may learn Lesser Magic if he owns a Tome of Magic</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="1df8-a2ec-8d5c-c7b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -2949,6 +3181,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="b502-ec9d-da27-a5d7" name="Javelins/Harpoons" hidden="false" collective="false" import="true" targetId="ece5-fffa-8dd8-94dc" type="selectionEntry"/>
         <entryLink id="df96-d8af-9ab6-7afd" name="Sunstaff (Mordheim)" hidden="false" collective="false" import="true" targetId="d09f-94f6-1448-fe76" type="selectionEntry"/>
         <entryLink id="8658-3e0a-f535-9b01" name="Sun Gauntlet" hidden="false" collective="false" import="true" targetId="0ade-8ef6-1f30-29d0" type="selectionEntry"/>
+        <entryLink import="true" name="Blowpipe" hidden="false" type="selectionEntry" id="d749-27f8-1f1e-5f70" targetId="b6b-2ea5-1f65-a84b"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="313b-a816-0a89-926c" name="Serious Injuries" hidden="false" collective="false" import="true">
@@ -3852,6 +4085,19 @@ If the extra move takes the Orc or Goblin warrior within charge reach of an enem
         <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">5</characteristic>
         <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">4</characteristic>
         <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Goblin max" hidden="false" id="de0f-ab0b-13a4-cefc" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+      <characteristics>
+        <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+        <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">5</characteristic>
+        <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">6</characteristic>
+        <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+        <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">4</characteristic>
+        <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">3</characteristic>
+        <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">6</characteristic>
+        <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">4</characteristic>
+        <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">7</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
