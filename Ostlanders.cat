@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="05ad-b0d8-77a8-2572" name="Ostlanders (1a)" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="05ad-b0d8-77a8-2572" name="Ostlanders (1a)" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="42ce-e25d-7713-b46b" name="Ostlanders Rules" shortName="Ostlanders" publisher="https://broheim.net/downloads/warbands/official/Ostlanders.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Ostlanders.pdf"/>
   </publications>
@@ -147,7 +147,7 @@
             <entryLink id="49e8-6773-0a7a-b598" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
             <entryLink id="6d9e-211f-214d-54ba" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
             <entryLink id="3d3c-302b-5b72-fb95" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
-            <entryLink id="8458-0a89-2291-b0d8" name="Ostlander Special Skills" hidden="false" collective="false" import="true" targetId="a6fe-86d4-3dd2-8cce" type="selectionEntryGroup"/>
+            <entryLink id="8458-0a89-2291-b0d8" name="Special Skills (Ostlander)" hidden="false" collective="false" import="true" targetId="a6fe-86d4-3dd2-8cce" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -310,7 +310,7 @@
           <entryLinks>
             <entryLink id="09ee-12e9-698c-25e9" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
             <entryLink id="d1f9-7fe5-6753-b522" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
-            <entryLink id="b542-a5d1-335b-a7a2" name="Ostlander Special Skills" hidden="false" collective="false" import="true" targetId="a6fe-86d4-3dd2-8cce" type="selectionEntryGroup"/>
+            <entryLink id="b542-a5d1-335b-a7a2" name="Special Skills (Ostlander)" hidden="false" collective="false" import="true" targetId="a6fe-86d4-3dd2-8cce" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -482,7 +482,7 @@
             <entryLink id="f5c0-3c62-8d0a-22d7" name="Academic Skills" hidden="false" collective="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
             <entryLink id="3816-8952-8579-d26f" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
             <entryLink id="a912-91e6-9bfd-e37c" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
-            <entryLink id="bd79-c1b6-8bd6-4aa1" name="Ostlander Special Skills" hidden="false" collective="false" import="true" targetId="a6fe-86d4-3dd2-8cce" type="selectionEntryGroup"/>
+            <entryLink id="bd79-c1b6-8bd6-4aa1" name="Special Skills (Ostlander)" hidden="false" collective="false" import="true" targetId="a6fe-86d4-3dd2-8cce" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -499,7 +499,7 @@
         <entryLink id="5f91-abcd-9746-3af9" name="Ostlander Equipment" hidden="false" collective="false" import="true" targetId="88aa-cad7-c98a-a301" type="selectionEntryGroup"/>
         <entryLink id="0b48-be4c-0898-5e1d" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink id="454e-aacc-8c53-77b9" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink id="80f9-2f16-7149-92f6" name="Prayers of Taal" hidden="false" collective="false" import="true" targetId="fbe2-c653-ec43-b43a" type="selectionEntryGroup"/>
+        <entryLink id="80f9-2f16-7149-92f6" name="Prayers of Taal" hidden="false" collective="false" import="true" targetId="3905-cd06-b0b9-95d3" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="45"/>
@@ -648,7 +648,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="023a-2c3b-5375-8167" name="Skills" hidden="true" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
+        <entryLink id="023a-2c3b-5375-8167" name="Skills" hidden="true" collective="false" import="true" targetId="c6b3-1931-73f1-6ba3" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -809,7 +809,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="59f0-562d-2290-527d" name="Skills" hidden="true" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
+        <entryLink id="59f0-562d-2290-527d" name="Skills" hidden="true" collective="false" import="true" targetId="c6b3-1931-73f1-6ba3" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -980,7 +980,7 @@ As such, they automatically pass all Leadership based tests they are required to
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="7443-69ce-e123-9f8b" name="Skills" hidden="true" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
+        <entryLink id="7443-69ce-e123-9f8b" name="Skills" hidden="true" collective="false" import="true" targetId="c6b3-1931-73f1-6ba3" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1310,7 +1310,7 @@ As a result they can never hire any Mercenaries except for Ogres (who are not an
         <entryLink id="745a-ef87-f559-ca45" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a6fe-86d4-3dd2-8cce" name="Ostlander Special Skills" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="a6fe-86d4-3dd2-8cce" name="Special Skills (Ostlander)" hidden="false" collective="false" import="true">
       <selectionEntries>
         <selectionEntry id="0b53-602e-7566-ce6f" name="Bull Rush" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1408,116 +1408,79 @@ Only a warband&apos;s leader may have this skill, which allows him to re-roll a 
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="fbe2-c653-ec43-b43a" name="Prayers of Taal" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="c6b3-1931-73f1-6ba3" name="Skills" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d679-f905-a5d-5ec7" type="max"/>
+        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8574-d115-c5af-e367" type="min"/>
+      </constraints>
       <selectionEntries>
-        <selectionEntry id="28df-3115-6741-0429" name="1 - Stag&apos;s Leap" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="9b43-47a0-fe48-9d1f" name="Stag&apos;s Leap" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Many of Thal&apos;s priests wear a stag skull as a symbol of their devotion and the Forest Lord&apos;s power can be used to emulate the spe and beauty of this magniificent beast.
-The Priest, of Thal may immediately move am where within 9&quot;, including into base contact with the enemy.
-In which case he counts as Charging and gains a +1 Strength to his first round of attacks.
-
-If he engages a fleeing enemy, in the close combat phase he will score one automatic hit at +1 Strength and then his opponent will flee again (if he survives).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+        <selectionEntry id="97de-d269-1033-cd24" name="Academic Skills" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4833-4921-722-e4e0" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5170-7e0-f34e-2d7a" name="Academic Skills" hidden="false" collective="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fbce-b05c-d652-3e2d" name="2 - Blessed Ale" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="ee20-6f1e-e103-97e9" name="Blessed Ale" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">5</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Like his brother Ulric. Taal has a great appetite for the strong ales of the Northen Empire.
-During the surnmer equinox, each village in Ostland opens one keg of ale (at least!) in Taal&apos;s honour.
-
-Drinking a flask of Taal-blessed ale (the priest is assumed to carry as many flasks as are needed) may heal any one model within 2&quot; of the Priest (including himself).
-The warrior is restored to his full quota of Wounds.
-In addition, any living enemy models (not Undead or Possessed) within 2&quot; of the Priest will lose 1 Attack during the next round of combat due to the potent fumes of the ale.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+        <selectionEntry id="3106-4bf3-a4ee-3942" name="Combat Skills" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3731-a24-9ec0-b71" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e3cf-4580-2211-4ffc" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a6ab-5204-53a1-c845" name="3 - Bear&apos;s Paw" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="9fc5-8366-92aa-a356" name="Bear&apos;s Paw" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Many an armoured knight has been knocked to the ground by the surprising strength of the followers of Taal.
-A1though traditionally called Bear&apos;s Paw, this spell is sometimes referred to as &apos;Moose&apos;s Breath&apos; by those Ostlander&apos;s who have felt its Power
-
-The Priest invokes the blessing of Taal on himself or a single friendly model within 6&quot;.
-The target receives a bonus of +2 to his Strength until the Priest&apos;s next turn.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+        <selectionEntry id="572b-a9a6-310c-680f" name="Shooting Skills" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="211f-850d-58ba-f0cc" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a046-71a8-3433-a4e2" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7184-5eea-3bf4-4f86" name="4 - Earthshudder" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="c17e-e98e-71fc-2db4" name="Earthshudder" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Taal&apos;s domain includes both the earth and the skies, and his power can reach out even into the dark streets of Mordheim.
-When his name is invoked three times and the blood of an eagle is poured on the ground, the Lord of the Wild will cause thunder to rumble and the earth to shake.
-
-The spell is cast on a single building within 4&quot;.
-Any enemy models touching the building will suffer a single S3 hit.
-In addition, the building will collapse and any models on it will count as having fallen to the ground (for example a model falling 5&quot; to the tabletop must pass two Initiative tests to avoid taking D3 S5 hits).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+        <selectionEntry id="247f-f33a-9a57-6594" name="Speed Skills" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8103-1048-78e2-9e2" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3ecc-bd81-252a-d1c8" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d854-169d-7568-5ec9" name="5 - Tanglefoot" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="5a18-bbda-1661-fa8f" name="Tanglefoot" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">It is said that when Taal walked the earth, living things would spring up behind him as he passed.
-A portion of his power can be summoned by his followers to help regrow forests and aid in the return of the land to its natural state.
-
-Plants, vines and even small trees burst forth from the earth, hindering all those who attempt to move through them.
-
-All models (friend as well as foe) with the exception of Ostlander Jaeger within 12&quot; of the Priest can only move at l/2 speed until the next Shooting phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+        <selectionEntry id="a4c6-604f-59c0-292d" name="Strength Skills" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ede5-5398-dd9d-2dd4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e2a6-bba9-60d4-6c10" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ccf4-b9fb-909b-986e" name="6 - Summon Squirrels" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="119f-3193-70d5-cee2" name="Summon Squirrels" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
-              <characteristics>
-                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Thal is the master of all beasts both great and small.
-Those who anger him may be mauled by a mountain lion or drowned in a flood caused by an angry beaver.
-
-With this spell, the Priest invokes the wrath of the Lord of Beasts, summoning forth dozens upon dozens of enraged squirrels.
-The furious rodents assault one enemy within 12&quot; of the Priest, crawling inside the warrior&apos;s clothing and armour, pelting him with nuts and causing numerous tiny bites and welts.
-The target suffers 2D6 Strength 1 hits.
-No armour saves allowed.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+        <selectionEntry id="e31c-e47d-9700-48d9" name="Special Skills (Ostlander)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95b5-f7-cd58-1632" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="95be-be6b-5aca-3e9c" name="Special Skills (Ostlander)" hidden="false" collective="false" import="true" targetId="a6fe-86d4-3dd2-8cce" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>

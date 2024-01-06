@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="6" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="7" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2454,6 +2454,43 @@ The Shaman may re-roll a failed magic test on a D6 roll of 4+.</description>
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Blessed Stag Hide" hidden="false" id="aed9-7c38-1939-dd4d">
+      <costs>
+        <cost name="pts" typeId="points" value="40"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule id="d200-e865-7836-ea46" name="Rarity" hidden="false">
+          <description>Rarity 10</description>
+        </rule>
+        <rule name="Blessed Stag Hide" hidden="false" id="190f-b148-a865-2174">
+          <description>The animal skin is worn as a drape and is a symbol of honour once blessed by the hierarchs of Taal.
+A blessed hide bestows unchallenged grace to the wearer allowing the re-roll of a failed Initiative test once per turn.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Toughened Leathers" hidden="false" id="439f-1b4d-1579-14b">
+      <costs>
+        <cost name="pts" typeId="points" value="5"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Toughened Leathers" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor" hidden="false" id="d961-5c8b-37be-340f">
+          <characteristics>
+            <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">6+</characteristic>
+            <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">Toughened Leathers</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Toughened Leathers" hidden="false" id="5d68-1ea0-f4fb-cae6">
+          <description>Toughened leathers work exactly like light armor, giving the wearer a 6+ Armor save, but cannot be combined with the effects of any other armor except a helmet or buckler.
+
+
+Toughened leathers cannot be sold back at the Trading Posts; the stench alone is enough to drive away even the most desperate of buyers!</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true">
@@ -3127,6 +3164,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="0bfd-0a4a-05f7-b45a" name="Light Armor" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry"/>
         <entryLink id="913a-ac51-f072-18ec" name="Shield" hidden="false" collective="false" import="true" targetId="74fb-cc90-1361-df26" type="selectionEntry"/>
         <entryLink id="628c-aa5d-70e2-8ddf" name="Enchanted Skins" hidden="false" collective="false" import="true" targetId="b4b4-b4a8-dd8f-36a3" type="selectionEntry"/>
+        <entryLink import="true" name="Toughened Leathers" hidden="false" type="selectionEntry" id="bc00-e905-1ad2-3a16" targetId="439f-1b4d-1579-14b"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="073c-d5ce-dcc0-b820" name="Hand to Hand Weapons" hidden="false" collective="false" import="true">
@@ -3474,6 +3512,7 @@ must retire from the warband.</description>
         <entryLink id="8f22-c52a-52af-4d00" name="Wardog" hidden="false" collective="false" import="true" targetId="72d2-7ef9-066c-12e7" type="selectionEntry"/>
         <entryLink id="284f-49fe-9a67-0203" name="Warhorse" hidden="false" collective="false" import="true" targetId="7863-e620-5c6e-7eee" type="selectionEntry"/>
         <entryLink id="d800-8e58-281e-c0f3" name="Amulet of the Moon" hidden="false" collective="false" import="true" targetId="d737-92c2-4586-5b26" type="selectionEntry"/>
+        <entryLink import="true" name="Blessed Stag Hide" hidden="false" type="selectionEntry" id="c882-93a3-281a-f6e6" targetId="aed9-7c38-1939-dd4d"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="2247-1f56-bc59-0ead" name="Equipment" hidden="false" collective="false" import="true">
@@ -3705,6 +3744,123 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
               <characteristics>
                 <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
                 <characteristic name="Effect" typeId="0592-3510-8508-7263">All models within 3&quot; of the Chaos Mage, friend or foe, suffer one S3 hit. No armour saves are allowed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="3905-cd06-b0b9-95d3" name="Prayers of Taal" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="bc04-35b-654d-279a" name="1 - Stag&apos;s Leap" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="9ef-7493-92bb-d892" name="Stag&apos;s Leap" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Many of Thal&apos;s priests wear a stag skull as a symbol of their devotion and the Forest Lord&apos;s power can be used to emulate the spe and beauty of this magniificent beast.
+The Priest, of Thal may immediately move am where within 9&quot;, including into base contact with the enemy.
+In which case he counts as Charging and gains a +1 Strength to his first round of attacks.
+
+If he engages a fleeing enemy, in the close combat phase he will score one automatic hit at +1 Strength and then his opponent will flee again (if he survives).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="48b4-aef6-4b92-e732" name="2 - Blessed Ale" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="1e7-8357-d24a-7845" name="Blessed Ale" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">5</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Like his brother Ulric. Taal has a great appetite for the strong ales of the Northen Empire.
+During the surnmer equinox, each village in Ostland opens one keg of ale (at least!) in Taal&apos;s honour.
+
+Drinking a flask of Taal-blessed ale (the priest is assumed to carry as many flasks as are needed) may heal any one model within 2&quot; of the Priest (including himself).
+The warrior is restored to his full quota of Wounds.
+In addition, any living enemy models (not Undead or Possessed) within 2&quot; of the Priest will lose 1 Attack during the next round of combat due to the potent fumes of the ale.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d889-26f1-804b-7596" name="3 - Bear&apos;s Paw" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="7196-5163-5133-fbf7" name="Bear&apos;s Paw" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Many an armoured knight has been knocked to the ground by the surprising strength of the followers of Taal.
+A1though traditionally called Bear&apos;s Paw, this spell is sometimes referred to as &apos;Moose&apos;s Breath&apos; by those Ostlander&apos;s who have felt its Power
+
+The Priest invokes the blessing of Taal on himself or a single friendly model within 6&quot;.
+The target receives a bonus of +2 to his Strength until the Priest&apos;s next turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e0d3-91a4-fb69-cb3b" name="4 - Earthshudder" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="c8f3-8e1a-532d-f526" name="Earthshudder" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Taal&apos;s domain includes both the earth and the skies, and his power can reach out even into the dark streets of Mordheim.
+When his name is invoked three times and the blood of an eagle is poured on the ground, the Lord of the Wild will cause thunder to rumble and the earth to shake.
+
+The spell is cast on a single building within 4&quot;.
+Any enemy models touching the building will suffer a single S3 hit.
+In addition, the building will collapse and any models on it will count as having fallen to the ground (for example a model falling 5&quot; to the tabletop must pass two Initiative tests to avoid taking D3 S5 hits).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9263-eeac-5e84-de62" name="5 - Tanglefoot" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="5f29-86d9-6c8c-d0f0" name="Tanglefoot" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">It is said that when Taal walked the earth, living things would spring up behind him as he passed.
+A portion of his power can be summoned by his followers to help regrow forests and aid in the return of the land to its natural state.
+
+Plants, vines and even small trees burst forth from the earth, hindering all those who attempt to move through them.
+
+All models (friend as well as foe) with the exception of Ostlander Jaeger within 12&quot; of the Priest can only move at l/2 speed until the next Shooting phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="727f-887a-bbf1-6b62" name="6 - Summon Squirrels" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="1414-c09a-4b74-ebc4" name="Summon Squirrels" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+              <characteristics>
+                <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Thal is the master of all beasts both great and small.
+Those who anger him may be mauled by a mountain lion or drowned in a flood caused by an angry beaver.
+
+With this spell, the Priest invokes the wrath of the Lord of Beasts, summoning forth dozens upon dozens of enraged squirrels.
+The furious rodents assault one enemy within 12&quot; of the Priest, crawling inside the warrior&apos;s clothing and armour, pelting him with nuts and causing numerous tiny bites and welts.
+The target suffers 2D6 Strength 1 hits.
+No armour saves allowed.</characteristic>
               </characteristics>
             </profile>
           </profiles>
