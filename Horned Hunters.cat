@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e37c-460d-d517-b3b7" name="Horned Hunters (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e37c-460d-d517-b3b7" name="Horned Hunters (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="c32b-f67-ea0b-c818" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -163,7 +163,11 @@ Enemy models must halve their Initiative when attempting to find this warrior w
         </selectionEntryGroup>
         <selectionEntryGroup name="Miscellaneous" hidden="false" id="baea-1f80-6dfe-4d29">
           <entryLinks>
-            <entryLink import="true" name="Hunting Arrows" hidden="false" type="selectionEntry" id="65c2-d948-f401-f0fb" targetId="992a-7458-a3fa-52cb"/>
+            <entryLink import="true" name="Hunting Arrows" hidden="false" type="selectionEntry" id="65c2-d948-f401-f0fb" targetId="992a-7458-a3fa-52cb">
+              <modifiers>
+                <modifier type="set" value="20" field="points"/>
+              </modifiers>
+            </entryLink>
             <entryLink import="true" name="Blessed Stag Hide" hidden="false" type="selectionEntry" id="cf50-63ed-618b-e826" targetId="aed9-7c38-1939-dd4d"/>
             <entryLink import="true" name="Trip Wire" hidden="false" type="selectionEntry" id="fcd1-fb95-ca78-38f6" targetId="4d46-d157-f204-7ffa"/>
           </entryLinks>
