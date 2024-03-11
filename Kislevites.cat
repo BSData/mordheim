@@ -1,105 +1,105 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9632-7414-5d8a-43cd" name="Kislevites (1a)" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9632-7414-5d8a-43cd" name="Kislevites (1a)" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5164-95fd-8401-79b9" name="Kislevites Rules" shortName="Kislevites" publisher="https://broheim.net/downloads/warbands/official/Kislevites.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Kislevites.pdf"/>
   </publications>
   <selectionEntries>
     <selectionEntry id="cdc6-20c2-34ee-759a" name="Druzhina Captain" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6ac-c7bd-5fb7-362a" type="min"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f04e-8273-bd5a-03da" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6ac-c7bd-5fb7-362a" type="min"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f04e-8273-bd5a-03da" type="max"/>
       </constraints>
       <profiles>
         <profile id="411e-e757-5c65-132a" name="Druzhina Captain" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <modifiers>
             <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="cdc6-20c2-34ee-759a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -138,20 +138,20 @@ Until the item is replaced, the Captain suffers a -1 penalty to all tests and ro
       <selectionEntries>
         <selectionEntry id="1c7b-533d-00fe-f7a3" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f9f-fac9-651a-796d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f9f-fac9-651a-796d" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="d22f-1d0d-45aa-fd6b" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6317-a919-7059-25da" name="Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2306-34fe-7dc9-2f30" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c21-0374-1b52-c985" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2306-34fe-7dc9-2f30" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c21-0374-1b52-c985" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="78d8-e12f-4ef9-fa35" name="Academic Skills" hidden="false" collective="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
@@ -161,15 +161,15 @@ Until the item is replaced, the Captain suffers a -1 penalty to all tests and ro
             <entryLink id="1487-7984-17d5-67e0" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="74bf-c4a1-6d94-0b09" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0aac-55a6-f8e1-1c6b" type="min"/>
+            <constraint field="selections" scope="parent" value="20" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0aac-55a6-f8e1-1c6b" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="d018-5f35-85cc-68aa" name="Kislev Warrior Equipment" hidden="false" collective="false" import="true" targetId="efac-5efe-2447-4450" type="selectionEntryGroup"/>
@@ -177,105 +177,105 @@ Until the item is replaced, the Captain suffers a -1 penalty to all tests and ro
         <entryLink id="d44d-2c79-4a96-6d09" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Warband Rating" typeId="wb-rating" value="5.0"/>
-        <cost name="pts" typeId="points" value="60.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name="pts" typeId="points" value="60"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eac0-a988-e53b-a4b5" name="Bear Tamer" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97df-32c1-15e3-207f" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97df-32c1-15e3-207f" type="max"/>
       </constraints>
       <profiles>
         <profile id="87d2-1613-9d10-4005" name="Bear Tamer" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <modifiers>
             <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eac0-a988-e53b-a4b5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -307,8 +307,8 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
       <selectionEntries>
         <selectionEntry id="4199-ee98-4efe-e9db" name="Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f1b-a07c-9259-d720" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfc4-c45b-9b9a-3105" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f1b-a07c-9259-d720" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfc4-c45b-9b9a-3105" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="98cf-f8a7-b71d-6567" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
@@ -316,27 +316,27 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
             <entryLink id="aa67-70ec-5bdd-f3d6" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="63b7-ebba-8989-6533" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f78-db1e-b68f-4aff" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f78-db1e-b68f-4aff" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="d2a7-7bf5-11e0-6976" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="a730-2fe9-c150-db92" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da26-b569-2e57-2e0a" type="min"/>
+            <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da26-b569-2e57-2e0a" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="057d-f5e2-f4c1-995a" name="Kislev Warrior Equipment" hidden="false" collective="false" import="true" targetId="efac-5efe-2447-4450" type="selectionEntryGroup"/>
@@ -344,105 +344,105 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
         <entryLink id="8072-3a4e-270e-e20c" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="35.0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5.0"/>
+        <cost name="pts" typeId="points" value="35"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0deb-3485-789d-dc54" name="Esaul" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39dc-ca86-520a-52ed" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39dc-ca86-520a-52ed" type="max"/>
       </constraints>
       <profiles>
         <profile id="4f1d-3fa2-90f1-49d1" name="Esaul" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <modifiers>
             <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="0deb-3485-789d-dc54" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -468,8 +468,8 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
       <selectionEntries>
         <selectionEntry id="03be-623c-7293-d283" name="Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e42-2503-c239-36fd" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="622d-f4fa-ae63-0a7c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e42-2503-c239-36fd" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="622d-f4fa-ae63-0a7c" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="d888-9155-5145-ce74" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
@@ -477,27 +477,27 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
             <entryLink id="6535-6b26-faaf-6430" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ca76-e73e-9ca0-bdb8" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51f4-4e87-dffa-dd83" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51f4-4e87-dffa-dd83" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="1d0f-1def-9f39-855e" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="d21d-8851-bbe3-2659" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="220f-5c04-fd4d-b8df" type="min"/>
+            <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="220f-5c04-fd4d-b8df" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="3b4c-2e07-b000-e06a" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
@@ -505,105 +505,105 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
         <entryLink id="e9e2-4004-504e-1c0e" name="Kislev Warrior Equipment" hidden="false" collective="false" import="true" targetId="efac-5efe-2447-4450" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="35.0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5.0"/>
+        <cost name="pts" typeId="points" value="35"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2935-ff7c-a7fc-7f96" name="Youths" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0575-a1fd-63fe-c576" type="max"/>
+        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0575-a1fd-63fe-c576" type="max"/>
       </constraints>
       <profiles>
         <profile id="6be9-1823-aa7e-6a82" name="Youths" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <modifiers>
             <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2935-ff7c-a7fc-7f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -629,8 +629,8 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
       <selectionEntries>
         <selectionEntry id="04f8-5c8b-c774-b815" name="Skills" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d4f-78d0-0582-69b6" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b69-74b0-6a30-728f" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d4f-78d0-0582-69b6" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b69-74b0-6a30-728f" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="d5f2-ea56-c7f3-c36b" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
@@ -638,20 +638,20 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
             <entryLink id="f93c-8169-8b8d-a105" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0798-58a6-9386-cb4b" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ef0-ee9c-3ef3-1e9e" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ef0-ee9c-3ef3-1e9e" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="7209-f9b1-b194-e611" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -662,8 +662,8 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
         <entryLink id="c88f-5118-ee7c-3ace" name="Kislev Warrior Equipment" hidden="false" collective="false" import="true" targetId="efac-5efe-2447-4450" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Warband Rating" typeId="wb-rating" value="5.0"/>
-        <cost name="pts" typeId="points" value="15.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name="pts" typeId="points" value="15"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eed6-78e9-961c-4356" name="Warriors" hidden="false" collective="false" import="true" type="unit">
@@ -672,92 +672,92 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
           <modifiers>
             <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="eed6-78e9-961c-4356" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -783,14 +783,14 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
       <selectionEntries>
         <selectionEntry id="d00c-1d24-5f7f-69a7" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2fe-813e-5f3c-00f1" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2fe-813e-5f3c-00f1" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="d19e-2c60-0a75-140d" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -801,7 +801,7 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -810,7 +810,7 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -819,8 +819,8 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
         <entryLink id="f2a5-b53b-8921-ed9b" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Warband Rating" typeId="wb-rating" value="5.0"/>
-        <cost name="pts" typeId="points" value="25.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name="pts" typeId="points" value="25"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="24fc-942e-9bd6-bef4" name="Cossacks" hidden="false" collective="false" import="true" type="unit">
@@ -829,92 +829,92 @@ This bear has been trained to follow the Tamer&apos;s commands, and so will auto
           <modifiers>
             <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="24fc-942e-9bd6-bef4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -946,14 +946,14 @@ Cossacks are subject to Hatred against all forces of Chaos (eg. members of any w
       <selectionEntries>
         <selectionEntry id="2c66-73fe-75b0-0e0d" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6813-6748-ae1e-9ffb" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6813-6748-ae1e-9ffb" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="7bb8-54c3-1321-ec53" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -966,7 +966,7 @@ Cossacks are subject to Hatred against all forces of Chaos (eg. members of any w
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -975,112 +975,112 @@ Cossacks are subject to Hatred against all forces of Chaos (eg. members of any w
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Warband Rating" typeId="wb-rating" value="5.0"/>
-        <cost name="pts" typeId="points" value="30.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name="pts" typeId="points" value="30"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="22df-6ed3-e065-54cb" name="Streltsi" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a6c-55f6-604e-e8a5" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a6c-55f6-604e-e8a5" type="max"/>
       </constraints>
       <profiles>
         <profile id="ce9b-a587-227a-adf8" name="Streltsi" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <modifiers>
             <modifier type="increment" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-394e-fe13-2a96" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9368-3616-516f-5178" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da26-8381-781a-6149" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27d8-c790-a4c1-b9cc" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7918-b440-5d63-bd5e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37c4-dcb1-8949-d4eb" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c4db-7b50-a4f9-cd5f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe1-7bba-3ca0-06b7" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a83-274a-bba8-f498" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="e234eaea-a02a-2fb7-3e1f-605392aabb89" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a519-13dc-1b04-e39e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="bf393c37-9d10-fc85-c147-62b1c01a89fe" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9faf-d3bf-a2ba-411e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dee-74f8-7707-ce64" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e57-5d0b-5279-b4ab" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9209-0067-18d2-b78c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e79-80b9-77e3-fcc9" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca62-64c2-488a-f17c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="a6fd52b0-be0a-655e-6314-87b392c9c90e" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7531-eebe-fabf-7cf5" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="d5aca8ba-0204-b324-b976-c2b536e09924" value="1">
               <repeats>
-                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="22df-6ed3-e065-54cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae44-58f4-4440-5777" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -1113,14 +1113,14 @@ The warrior receives a +1 on his &apos;to hit&apos; roll with the handgun, as lo
       <selectionEntries>
         <selectionEntry id="10bc-30d9-ddee-a31b" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f8c-eec9-744c-6a96" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f8c-eec9-744c-6a96" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="720b-82fa-3745-06a1" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1133,7 +1133,7 @@ The warrior receives a +1 on his &apos;to hit&apos; roll with the handgun, as lo
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1142,27 +1142,27 @@ The warrior receives a +1 on his &apos;to hit&apos; roll with the handgun, as lo
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="534a-6ec6-5d82-da7f" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Warband Rating" typeId="wb-rating" value="5.0"/>
-        <cost name="pts" typeId="points" value="25.0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name="pts" typeId="points" value="25"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ae65-439c-16b7-2e0f" name="Trained Bear" hidden="false" collective="false" import="true" type="model">
       <modifiers>
-        <modifier type="set" field="cd4f-23ec-89f8-72dd" value="1.0">
+        <modifier type="set" field="cd4f-23ec-89f8-72dd" value="1">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eac0-a988-e53b-a4b5" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eac0-a988-e53b-a4b5" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd4f-23ec-89f8-72dd" type="max"/>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd4f-23ec-89f8-72dd" type="max"/>
       </constraints>
       <profiles>
         <profile id="6ca3-6ae9-b642-83be" name="Trained Bear" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -1219,14 +1219,14 @@ If any of these results are rolled for the Bear Tamer, treat the result as a &ap
         <categoryLink id="1d71-f1af-1924-b3ea" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="125.0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5.0"/>
+        <cost name="pts" typeId="points" value="125"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fd14-8b66-a0b8-ae76" name="Stash" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5138-8d79-c8e5-7127" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e2-44d9-af31-f882" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5138-8d79-c8e5-7127" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e2-44d9-af31-f882" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="09a2-73bd-34f9-5a15" name="New CategoryLink" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
@@ -1237,8 +1237,8 @@ If any of these results are rolled for the Bear Tamer, treat the result as a &ap
         <entryLink id="bf40-c3f5-f3c6-0d34" name="Looted Equip" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -1262,16 +1262,16 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff81-6add-c485-6e8d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff81-6add-c485-6e8d" type="max"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0.0"/>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1288,10 +1288,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         <entryLink id="cfc8-6fe9-5e97-728f" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
         <entryLink id="e328-8add-84be-39c4" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="1.0">
+            <modifier type="set" field="points" value="1">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1302,10 +1302,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         <entryLink id="92d0-1570-793b-b816" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="Mace, Hammer"/>
-            <modifier type="set" field="points" value="2.0">
+            <modifier type="set" field="points" value="2">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1315,10 +1315,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="ea20-8ea2-8b3a-36b1" name="Axe" hidden="false" collective="false" import="true" targetId="5d01-06b9-3a86-73c9" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="3.0">
+            <modifier type="set" field="points" value="3">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1328,10 +1328,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="4963-767e-08fd-c68a" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="5.0">
+            <modifier type="set" field="points" value="5">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1341,10 +1341,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="73b8-1d27-b41a-eb95" name="Morning Star" hidden="false" collective="false" import="true" targetId="d5f3-1906-da91-4e8f" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="8.0">
+            <modifier type="set" field="points" value="8">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1354,10 +1354,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="94ef-953c-92b8-1731" name="Double Handed Weapon" hidden="false" collective="false" import="true" targetId="a0a1-b311-e3aa-6c3b" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="8.0">
+            <modifier type="set" field="points" value="8">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1367,10 +1367,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="eefe-77dc-2a90-a95c" name="Halberd" hidden="false" collective="false" import="true" targetId="3c52-9e92-25ec-1939" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="5.0">
+            <modifier type="set" field="points" value="5">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1380,10 +1380,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="b782-088f-a043-9b97" name="Spear" hidden="false" collective="false" import="true" targetId="005e-e397-8108-f198" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="5.0">
+            <modifier type="set" field="points" value="5">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1392,16 +1392,26 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e0c4-c59c-dd15-811e" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="3" field="e0c4-c59c-dd15-811e">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="e88d-c348-2cd4-bc56" name="Missile Weapons" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="7598-9fba-fe18-954a" name="Throwing Knives/Stars" hidden="false" collective="false" import="true" targetId="23f5-19c3-5a6c-a8fb" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="Throwing Knives"/>
-            <modifier type="set" field="points" value="8.0">
+            <modifier type="set" field="points" value="8">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1411,10 +1421,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="53cb-c7c7-9c8c-50c7" name="Shortbow" hidden="false" collective="false" import="true" targetId="3706-6421-53b4-940d" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="3.0">
+            <modifier type="set" field="points" value="3">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1424,10 +1434,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="ca63-2d31-de9b-19b1" name="Bow" hidden="false" collective="false" import="true" targetId="311a-bf3f-67ff-46e7" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="5.0">
+            <modifier type="set" field="points" value="5">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1437,10 +1447,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="0276-9368-7a4e-1dad" name="Crossbow" hidden="false" collective="false" import="true" targetId="38cc-bc0b-7f19-8039" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="13.0">
+            <modifier type="set" field="points" value="13">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1450,10 +1460,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="4148-a838-4897-9016" name="Pistol" hidden="false" collective="false" import="true" targetId="67e9-a4f5-8f76-168c" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="8.0">
+            <modifier type="set" field="points" value="8">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1463,10 +1473,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="d560-50ca-1bd1-1fd4" name="Dueling Pistol" hidden="false" collective="false" import="true" targetId="da24-6a7f-725b-5bcb" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="15.0">
+            <modifier type="set" field="points" value="15">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1480,10 +1490,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
       <entryLinks>
         <entryLink id="959c-b9e6-9872-b805" name="Buckler" hidden="false" collective="false" import="true" targetId="0871-44c2-f0f0-c27a" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="3.0">
+            <modifier type="set" field="points" value="3">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1493,10 +1503,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="2b14-41bb-e232-f680" name="Helmet" hidden="false" collective="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="5.0">
+            <modifier type="set" field="points" value="5">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1506,10 +1516,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="ef38-61a8-ad89-51f3" name="Heavy Armor" hidden="false" collective="false" import="true" targetId="4e34-bbc5-c7ef-6bd6" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="25.0">
+            <modifier type="set" field="points" value="25">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1519,10 +1529,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="149b-3755-6241-b344" name="Light Armor" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="10.0">
+            <modifier type="set" field="points" value="10">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1532,10 +1542,10 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </entryLink>
         <entryLink id="1e04-7f13-df14-a20e" name="Shield" hidden="false" collective="false" import="true" targetId="74fb-cc90-1361-df26" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="3.0">
+            <modifier type="set" field="points" value="3">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>

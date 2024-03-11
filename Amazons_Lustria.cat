@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c0ee-cf6e-9b18-45b6" name="Amazons Lustria (1b)" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c0ee-cf6e-9b18-45b6" name="Amazons Lustria (1b)" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="a434-e23f-bfff-a11a" name="Serpent Priestess" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1214,6 +1214,13 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="125c-6932-2d76-757e"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="3" field="125c-6932-2d76-757e">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="8498-1d99-6ae4-6adf" name="Missile Weapons" hidden="false" collective="false" import="true">
       <entryLinks>
@@ -1260,6 +1267,13 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7b0d-8e91-b2b3-badf"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="3" field="7b0d-8e91-b2b3-badf">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="d674-5ce0-e696-044b" name="Missile Weapons" hidden="false" collective="false" import="true">
       <entryLinks>
@@ -1293,6 +1307,13 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bda1-864c-ba68-3160"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="3" field="bda1-864c-ba68-3160">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="2d6c-8476-abba-a540" name="Missile Weapons" hidden="false" collective="false" import="true">
       <entryLinks>

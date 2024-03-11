@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c07d-10eb-1eaf-ab77" name="Forest Goblins (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c07d-10eb-1eaf-ab77" name="Forest Goblins (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="2916-c073-fa3f-e13e" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -147,6 +147,16 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
             <entryLink import="true" name="Halberd" hidden="false" type="selectionEntry" id="cc27-9822-af4e-cb57" targetId="3c52-9e92-25ec-1939"/>
             <entryLink import="true" name="Boss Pole" hidden="false" type="selectionEntry" id="88a-7402-f87f-e7f5" targetId="9510-d071-4cce-6d20"/>
           </entryLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f22-2b5c-9ed9-13d5" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="3" field="f22-2b5c-9ed9-13d5">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile weapons" hidden="false" id="f6a1-73fc-5627-f400">
           <entryLinks>
@@ -171,6 +181,16 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
             <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="ad83-f7c4-6621-6012" targetId="34fd-d6a3-50ee-ee06"/>
             <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="926e-226b-d548-a88b" targetId="005e-e397-8108-f198"/>
           </entryLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8ab6-22f5-a49a-13b2" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="3" field="8ab6-22f5-a49a-13b2">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile weapons" hidden="false" id="743c-882a-848e-612b">
           <entryLinks>

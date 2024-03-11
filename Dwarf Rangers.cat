@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1df8-a2ec-8d5c-c7b" name="Dwarf Rangers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1df8-a2ec-8d5c-c7b" name="Dwarf Rangers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Don’t Trust ‘Em" hidden="false" id="c420-9cfa-bfde-368a">
       <description>While Ranger Warbands are free to ally with other Dwarf warbands in multi-player games, their point of view is so different that they do not trust them fully.
@@ -52,6 +52,13 @@ Note that this price is only for a starting warband, as it represents the Dwarf
 Later purchases of Gromril weapons are done using the Price Charts in the Mordheim rulebook.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="3" field="7286-1e5b-2c80-5924">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="337d-3438-261d-a99a">
           <entryLinks>
@@ -116,6 +123,13 @@ Note that this price is only for a starting warband, as it represents the Dwarf
 Later purchases of Gromril weapons are done using the Price Charts in the Mordheim rulebook.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="3" field="15f4-8590-99a0-b097">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="a789-83f8-6600-f498">
           <entryLinks>

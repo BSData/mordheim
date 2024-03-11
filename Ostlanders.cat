@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="05ad-b0d8-77a8-2572" name="Ostlanders (1a)" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="05ad-b0d8-77a8-2572" name="Ostlanders (1a)" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="42ce-e25d-7713-b46b" name="Ostlanders Rules" shortName="Ostlanders" publisher="https://broheim.net/downloads/warbands/official/Ostlanders.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Ostlanders.pdf"/>
   </publications>
@@ -1214,6 +1214,16 @@ As a result they can never hire any Mercenaries except for Ogres (who are not an
         <entryLink id="033a-1e27-d322-ded5" name="Double Handed Weapon" hidden="false" collective="false" import="true" targetId="a0a1-b311-e3aa-6c3b" type="selectionEntry"/>
         <entryLink id="2375-268a-c35c-87bf" name="Spear" hidden="false" collective="false" import="true" targetId="005e-e397-8108-f198" type="selectionEntry"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8957-8b-d43a-cf6e" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="3" field="8957-8b-d43a-cf6e">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="00ce-fd8c-4167-a80d" name="Hand to Hand Weapons" hidden="false" collective="false" import="true">
       <entryLinks>
@@ -1228,6 +1238,16 @@ As a result they can never hire any Mercenaries except for Ogres (who are not an
         <entryLink id="3db5-7f99-64bb-836b" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
         <entryLink id="a6c0-7444-3bc0-ae29" name="Double Handed Weapon" hidden="false" collective="false" import="true" targetId="a0a1-b311-e3aa-6c3b" type="selectionEntry"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="29b0-89ea-7ca4-503d" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="3" field="29b0-89ea-7ca4-503d">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="1c89-592f-4ad9-aebc" name="Hand to Hand Weapons" hidden="false" collective="false" import="true">
       <entryLinks>
@@ -1237,6 +1257,16 @@ As a result they can never hire any Mercenaries except for Ogres (who are not an
         <entryLink id="5bf7-805a-ddff-9e69" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
         <entryLink id="1ee9-ecc8-9251-3e28" name="Spear" hidden="false" collective="false" import="true" targetId="005e-e397-8108-f198" type="selectionEntry"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="45c7-2060-5877-153f" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="3" field="45c7-2060-5877-153f">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="6a4a-1653-4f2b-e25d" name="Hand to Hand Weapons" hidden="false" collective="false" import="true">
       <entryLinks>
@@ -1249,6 +1279,9 @@ As a result they can never hire any Mercenaries except for Ogres (who are not an
         <entryLink id="c0ea-212a-defb-79ce" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
         <entryLink id="6ce9-0fad-5ed7-624f" name="Double Handed Weapon" hidden="false" collective="false" import="true" targetId="a0a1-b311-e3aa-6c3b" type="selectionEntry"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fb3c-c989-b81-dc8" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup id="e18e-1b85-7f19-63d8" name="Missile Weapons" hidden="false" collective="false" import="true">
       <entryLinks>

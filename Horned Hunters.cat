@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e37c-460d-d517-b3b7" name="Horned Hunters (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e37c-460d-d517-b3b7" name="Horned Hunters (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="c32b-f67-ea0b-c818" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -143,6 +143,13 @@ Enemy models must halve their Initiative when attempting to find this warrior w
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="82d9-8463-1a0-69cd"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="3" field="82d9-8463-1a0-69cd">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="e847-9edf-1fa7-9d76" name="Missile Weapons" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -198,6 +205,13 @@ Enemy models must halve their Initiative when attempting to find this warrior w
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9e9b-c1c3-a5d0-d67b"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="3" field="9e9b-c1c3-a5d0-d67b">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="39a5-3ea5-c018-7400" name="Missile Weapons" hidden="false" collective="false" import="true">
           <entryLinks>

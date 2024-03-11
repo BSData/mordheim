@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f2c-337f-3ebd-2263" name="Amazons Mordheim (1b)" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7f2c-337f-3ebd-2263" name="Amazons Mordheim (1b)" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="8b30-e6c9-483c-6fa7" name="Priestess" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1003,6 +1003,13 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c327-d47-d94-185e"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="3" field="c327-d47-d94-185e">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="7196-0e81-5a2e-7680" name="Missile Weapons" hidden="false" collective="false" import="true">
       <entryLinks>
@@ -1055,6 +1062,13 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8b4d-9784-86df-d153"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="3" field="8b4d-9784-86df-d153">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="91cc-5810-88ac-d5fd" name="Missile Weapons" hidden="false" collective="false" import="true">
       <entryLinks>
