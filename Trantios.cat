@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4da7-a3e6-31d6-ec66" name="Trantios (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4da7-a3e6-31d6-ec66" name="Trantios (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="5e7b-bf3d-fabd-164f" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -2388,6 +2388,24 @@ The Duellist counts as using a shield in close combat.</description>
       <costs>
         <cost name="pts" hidden="false" id="65b8-8916-a4b8-6b6" typeId="points" value="15"/>
         <cost name="Warband Rating" hidden="false" id="d371-d88a-26db-47d3" typeId="wb-rating" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stash" hidden="false" id="6a39-4faf-2b60-aba4" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a6a-f41a-f205-ff8b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9905-109-7a52-8cba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Stash" hidden="false" id="dfe8-fab2-5e81-9b4d" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Gold" hidden="false" id="eeb9-3a9f-cae6-fd38" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Wyrdstone" hidden="false" id="ecf0-411a-6eef-772" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="73c0-dc11-a737-5d32" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" hidden="false" id="2a7d-93f6-f616-562a" typeId="points" value="0"/>
+        <cost name="Warband Rating" hidden="false" id="294-af54-854e-ac6c" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
