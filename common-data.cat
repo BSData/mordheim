@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="9" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="10" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2497,6 +2497,76 @@ Toughened leathers cannot be sold back at the Trading Posts; the stench alone is
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a79c-4fb2-4100-9f13" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pike" hidden="false" id="68ec-2a33-6ca8-d146" page="0" collective="false">
+      <profiles>
+        <profile name="Pike" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="d7b5-68c6-efaa-add4" page="0">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two-handed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="5b19-5021-8598-9cf" page="0" collective="false">
+          <modifiers>
+            <modifier type="set" value="30" field="points"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b936-89c5-2023-2368" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Gromril weapon" hidden="false" id="90c8-99c1-cb29-2aca" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" hidden="false" id="510e-2cfd-bce6-5f1a" typeId="points" value="0"/>
+            <cost name="Warband Rating" hidden="false" id="8baf-cbe5-c8fb-eed8" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="b7cc-2cd1-1613-6a28" page="0" collective="false">
+          <modifiers>
+            <modifier type="set" value="20" field="points"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ef5c-e2c6-61f9-aebb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ithilmar weapon" hidden="false" id="329-e5eb-18f7-2b5f" targetId="2c05-eef1-5b96-cc14" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" hidden="false" id="f807-e38a-ce06-c67" typeId="points" value="0"/>
+            <cost name="Warband Rating" hidden="false" id="f25a-427-f30c-feec" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="12"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Rarity" hidden="false" id="2568-3c2e-6dc6-7c32">
+          <description>Rarity 7</description>
+        </rule>
+        <rule name="Strike First" hidden="false" id="5d8c-b546-d849-7891">
+          <description>A model wielding a pike can strike first in the first round of combat even when charged by a model wielding a spear.
+
+
+After the initial round of combat resolve strikes in Initiative order. 
+
+
+The model can change to normal hand-to-hand weapons after the initial round.</description>
+        </rule>
+        <rule name="Reach" hidden="false" id="7709-4624-dd7c-daba">
+          <description>Due to its considerable length, a model that has a pike can attack another model from up to 3&quot; away without being a part of a hand-to hand melee.</description>
+        </rule>
+        <rule name="Human sized" hidden="false" id="211-fbe-6976-cc40">
+          <description>Only man-sized or larger creatures can use pikes. Skaven, Skinks, Halflings, etc, cannot.</description>
+        </rule>
+        <rule name="One Attack, No shields" hidden="false" id="b7fc-6096-b8b2-de4e">
+          <description>Pikes have to be used with both hands, and so the model cannot take advantage of shields or bucklers.
+Additionally, only 1 attack is allowed, no matter the number on the wielder’s profile.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true">
@@ -3195,6 +3265,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="77c2-cd19-1a82-e607" name="Starsword" hidden="false" collective="false" import="true" targetId="d555-01a5-feb1-9251" type="selectionEntry"/>
         <entryLink id="7dbd-0cff-c5d6-0c9d" name="Starblade" hidden="false" collective="false" import="true" targetId="ec90-545c-e303-099b" type="selectionEntry"/>
         <entryLink id="b1e6-5b0e-41d7-eeaf" name="Claw of the Old Ones" hidden="false" collective="false" import="true" targetId="993b-b4c4-118f-3ce3" type="selectionEntry"/>
+        <entryLink import="true" name="Pike" hidden="false" id="9f83-3b50-5491-90f2" type="selectionEntry" targetId="68ec-2a33-6ca8-d146"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1937-df4f-3c68-e0be" name="Missile Weapons" hidden="false" collective="false" import="true">
@@ -3233,7 +3304,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9d3f-3246-67fd-9817" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="e6d6-c880-d3f0-5bfe" name="Leg Wound" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9927-6360-269c-7050" name="Leg Wound" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="c847-ef0d-c229-d784" name="Leg Wound" page="0" hidden="false">
               <description>The warrior’s leg is broken. He suffers a -1 Movement characteristic penalty from now on.</description>
@@ -3252,7 +3323,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f715-7162-e432-3cd6" name="Severe Arm Wound" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7d82-1ea4-5499-172c" name="Severe Arm Wound" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="428e-09c4-6969-6155" name="Severe Arm Wound" page="0" hidden="false">
               <description>Severe arm wound. The arm must be amputated. The warrior may only use a single onehanded weapon from now on</description>
@@ -3263,7 +3334,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f761-033c-36b8-493c" name="Maddness: Stupidity" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f480-dbf6-473e-d864" name="Maddness: Stupidity" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="babf-70b4-0e56-27a5" name="Stupidity" hidden="false" targetId="20f0-4428-0681-c9f9" type="rule"/>
           </infoLinks>
@@ -3272,7 +3343,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="69ea-23e9-c778-1705" name="Madness: Frenzy" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="cef9-4d52-99da-1cc4" name="Madness: Frenzy" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="67b5-1f59-789d-efd1" name="Frenzy" hidden="false" targetId="ce28-23a1-7b2a-7e6c" type="rule"/>
           </infoLinks>
@@ -3281,7 +3352,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c27c-8bab-253f-cbee" name="Chest Wound" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9d69-c1ac-da2e-d3e9" name="Chest Wound" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="4e5a-38e9-60ce-53cc" name="Chest Wound" page="0" hidden="false">
               <description>The warrior has been badly wounded in the chest. He recovers but is weakened by the injury so his Toughness is reduced by 1</description>
@@ -3300,7 +3371,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a377-50e2-614f-6d71" name="Blind In one Eye" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2100-c2a5-734c-2ea9" name="Blind In one Eye" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="e532-fb6f-d093-20f1" name="Blind In one Eye" page="0" hidden="false">
               <description>A character that loses an eye has his Ballistic Skill reduced by -1. If the warrior is subsequently blinded in his remaining good eye he
@@ -3320,7 +3391,7 @@ must retire from the warband.</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="74a3-7dfb-ddd8-8a72" name="Old Battle Wound" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9f26-11e3-f83b-8172" name="Old Battle Wound" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="b4d3-8cc9-7621-650c" name="Old Battle Wound" page="0" hidden="false">
               <description>The warrior survives, but his wound will prevent him from fighting if you roll a 1 on a D6 at the start of any battle. Roll at the start of each battle from now on.</description>
@@ -3331,7 +3402,7 @@ must retire from the warband.</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d7e8-31d9-2e1e-6d1e" name="Nervous Condition" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="58cd-4e8e-91fe-8cb2" name="Nervous Condition" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="cb61-ebd9-8b95-406c" name="Nervous Condition" page="0" hidden="false">
               <description>The warrior’s nervous system has been damaged. His Initiative is permanently reduced by -1.</description>
@@ -3350,7 +3421,7 @@ must retire from the warband.</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d62d-28d5-5535-5deb" name="Hand Injury" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5cc5-a91f-6d50-ae12" name="Hand Injury" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="ccfe-9ca2-7596-9535" name="Hand Injury" page="0" hidden="false">
               <description>The warrior’s hand is badly injured. His Weapon Skill is permanently reduced by -1.</description>
@@ -3369,7 +3440,7 @@ must retire from the warband.</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f40c-0940-99d0-bb1b" name="Bitter Emity" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="17f5-733e-1134-636a" name="Bitter Emity" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="7fbb-33d5-fe62-fc87" name="Bitter Emity" page="0" hidden="false">
               <description>Warrior Hates Somone/Group</description>
@@ -3380,7 +3451,7 @@ must retire from the warband.</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9115-685a-426d-c2bc" name="Hardened" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a6a0-725d-349a-da8e" name="Hardened" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="9237-ec08-5f80-50e2" name="Hardened" page="0" hidden="false">
               <description>The warrior survives and becomes inured to the horrors of Mordheim. From now on he is immune to fear.</description>
@@ -3391,7 +3462,7 @@ must retire from the warband.</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7082-fe0c-9098-5e8b" name="Horrible Scars" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4e4e-f6df-a6ba-90c3" name="Horrible Scars" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="e3d5-c55a-0fdf-218c" name="Horrible Scars" page="0" hidden="false">
               <description>The warrior causes fear from now on.</description>
@@ -3405,7 +3476,7 @@ must retire from the warband.</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ada4-9337-4685-54ad" name="Smashed Leg" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d85b-d78d-3efb-2f32" name="Smashed Leg" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="a9d2-c512-465e-9909" name="Smashed Leg" page="0" hidden="false">
               <description>The warrior may not run any more but he may still charge.</description>
