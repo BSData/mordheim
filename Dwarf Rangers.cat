@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1df8-a2ec-8d5c-c7b" name="Dwarf Rangers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1df8-a2ec-8d5c-c7b" name="Dwarf Rangers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Don’t Trust ‘Em" hidden="false" id="c420-9cfa-bfde-368a">
       <description>While Ranger Warbands are free to ally with other Dwarf warbands in multi-player games, their point of view is so different that they do not trust them fully.
@@ -12,6 +12,16 @@ This means that members of one warband WILL stop members of the other from Marc
 
 
 They don’t count as enemy models and may split any treasure found at the end of the game as normal, but the two bands are not friends, make no mistake!</description>
+    </rule>
+    <rule name="Starting Gromril weapons" hidden="false" id="5709-40e7-4541-67a7">
+      <description>Any weapon a Dwarf may normally purchase may be purchased as a Gromril weapon instead.
+This multiplies the cost of the weapon by three.
+
+
+Note that this price is only for a starting warband, as it represents the Dwarfs outfitting themselves at their own stronghold.
+
+
+Later purchases of Gromril weapons are done using the Price Charts in the Mordheim rulebook.</description>
     </rule>
   </rules>
   <sharedSelectionEntryGroups>
@@ -89,40 +99,20 @@ Later purchases of Gromril weapons are done using the Price Charts in the Mordh
                 <modifier type="set" value="Mace, Hammer" field="name"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="6c98-9ba-48e7-df91" targetId="34fd-d6a3-50ee-ee06">
-              <modifiers>
-                <modifier type="set" value="5" field="points"/>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="6c98-9ba-48e7-df91" targetId="34fd-d6a3-50ee-ee06"/>
             <entryLink import="true" name="Double Handed Weapon" hidden="false" type="selectionEntry" id="a0f4-8a91-b2df-39c2" targetId="a0a1-b311-e3aa-6c3b"/>
             <entryLink import="true" name="Axe" hidden="false" type="selectionEntry" id="1c68-d1cc-7e5e-4442" targetId="5d01-06b9-3a86-73c9">
               <modifiers>
                 <modifier type="set" value="Battleaxe" field="name"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="ea9b-ae8-14db-a113" targetId="005e-e397-8108-f198">
-              <modifiers>
-                <modifier type="set" value="20" field="points"/>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="ea9b-ae8-14db-a113" targetId="005e-e397-8108-f198"/>
             <entryLink import="true" name="Dwarf Axe" hidden="false" type="selectionEntry" id="7ac7-af25-cb4c-909b" targetId="5208-f70c-664-e36e"/>
             <entryLink import="true" name="Halberd" hidden="false" type="selectionEntry" id="af40-e65f-cf91-374c" targetId="3c52-9e92-25ec-1939"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="15f4-8590-99a0-b097"/>
           </constraints>
-          <rules>
-            <rule name="Starting Gromril weapons" hidden="false" id="5709-40e7-4541-67a7">
-              <description>Any weapon a Dwarf may normally purchase may be purchased as a Gromril weapon instead.
-This multiplies the cost of the weapon by three.
-
-
-Note that this price is only for a starting warband, as it represents the Dwarfs outfitting themselves at their own stronghold.
-
-
-Later purchases of Gromril weapons are done using the Price Charts in the Mordheim rulebook.</description>
-            </rule>
-          </rules>
           <modifiers>
             <modifier type="set" value="3" field="15f4-8590-99a0-b097">
               <conditions>
@@ -154,7 +144,7 @@ Later purchases of Gromril Armour must be done using the normal Price Chart in 
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8a40-10ea-572b-bcd0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5fb3-d52e-955d-ea74" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -169,7 +159,7 @@ Later purchases of Gromril Armour must be done using the normal Price Chart in 
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8a40-10ea-572b-bcd0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5fb3-d52e-955d-ea74" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -252,7 +242,7 @@ When rolling on the exploration chart at the end of a game, the hero may modify 
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Ferocious Charge" hidden="false" id="3635-e93f-a769-2d16">
+        <selectionEntry type="upgrade" import="true" name="Ferocious Charge" hidden="true" id="3635-e93f-a769-2d16">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1caf-3539-97a5-abb"/>
           </constraints>
@@ -265,8 +255,15 @@ He will suffer a –1 to hit penalty on that turn.
 Slayers only.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5fb3-d52e-955d-ea74" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Monster Slayer" hidden="false" id="e1c6-7e1c-5a8-9fb1">
+        <selectionEntry type="upgrade" import="true" name="Monster Slayer" hidden="true" id="e1c6-7e1c-5a8-9fb1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4118-1e15-fb83-3836"/>
           </constraints>
@@ -278,8 +275,15 @@ Slayers only.</description>
 Slayers only.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5fb3-d52e-955d-ea74" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Berserker" hidden="false" id="76c8-d216-1adf-5feb">
+        <selectionEntry type="upgrade" import="true" name="Berserker" hidden="true" id="76c8-d216-1adf-5feb">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5933-358f-dfc5-38e5"/>
           </constraints>
@@ -291,6 +295,13 @@ Slayers only.</description>
 Slayers only.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5fb3-d52e-955d-ea74" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
