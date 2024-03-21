@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="10" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="11" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2796,6 +2796,30 @@ If he fails he must roll on the injury table immediately with no saves treating 
             </modifier>
           </modifiers>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Beast Handler" hidden="false" id="4c63-12a4-9182-578">
+          <rules>
+            <rule name="Beast Handler" hidden="false" id="ec06-6151-7d0c-6690">
+              <description>This skill is highly beneficial if non-ridden animals are to be included in a warband.
+
+
+This skill must be taken for specific animals and may be taken multiple times for different animals.
+
+
+It represents knowledge of the general care and well being of the animal as well as training techniques.
+
+A warrior with this skill has a beneficial effect on the animals under his care.
+
+
+If a warrior has the Animal Handling skill for a particular animal, any such animals may use his Leadership provided he is within 6&quot; If the warband’s leader is also nearby, a player may choose which of the warriors Leadership to use unless the animal is stupid, in which case only the handler’s Leadership may be used.
+
+
+In addition, stubborn animals with a handler in base contact, ignore the effects of stubbornness.
+
+
+This counts as an academic skill.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="7879-46ac-5598-aa00" name="Characteristic Increases" hidden="false" collective="false" import="true">
@@ -3945,6 +3969,190 @@ No armour saves allowed.</characteristic>
             <cost name="pts" typeId="points" value="0"/>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Cavalry Skills" hidden="false" id="9614-2638-4e92-128d">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ride" hidden="false" id="f95d-1030-4a88-6824">
+          <rules>
+            <rule name="Ride" hidden="false" id="6d9f-302c-bb1b-2b0c">
+              <description>This skill is vital if a rider wishes to ride an animal into combat.
+The skill is specific to a particular type of animal and must be gained again if the warrior wishes to be able to ride a
+different kind of animal.
+
+
+For instance, a warrior with Ride Horse would need to gain the skill Ride Warhorse if he wanted to be able to ride such a spirited mount.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ce65-d6f9-3f77-2a91" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cavalry Commander" hidden="false" id="8998-9fea-24bb-f609">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d747-a1ef-efe7-1491" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Cavalry Commander" hidden="false" id="fa97-66a1-8e48-8e02">
+              <description>Mounted heroes are an impressive sight.
+With a good vantage point, they can see (and be seen) far more readily than if they were on foot.
+
+
+If the warband&apos;s leader has this skill and is mounted, add an extra 6&quot; to the distance within which other warriors in the warband may use his Leadership.
+
+
+This is in addition to any other bonuses that increase the range of the leader’s influence.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Trick Riding" hidden="false" id="8dce-e2d6-f503-78c7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="405e-e4ee-3a65-f008" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Trick Riding" hidden="false" id="e825-b4a5-9a15-1e6d">
+              <description>By athletically hanging off the side of his mount, a rider makes himself harder to hit.
+
+
+While a rider is trick riding all missile aitacks against him suffer -1 to hit in addition to other modifiers.
+
+
+The rider must declare that he is trick riding before moving.
+
+
+He must then make an Initiative test and, if suceessful, may move full distance.
+
+
+If he fails he loses control of his mount and must roll immediately on the Whoa Boy! table.
+
+
+This skill may not be used with heavy armour because of the agility required.
+
+
+In addition, trick riding requires both hands, so the model may not use a shield or missile weapons whilst using the skill.
+
+
+Warriors without Ride may not use this skill.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Combat Riding" hidden="false" id="63ed-ee3f-afd9-cf12">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="422-2f07-8627-41aa" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Combat Riding" hidden="false" id="7b44-a60e-6b26-60bb">
+              <description>The rider has trained his mount to use its bulk to trample any unmounted enemy before him.
+
+
+A warrior with this skill may make a single additional S4 attack when charging an unmounted opponent.
+
+
+In subsequent rounds of combat, or if charged by enemy warriors, the mounted warrior fights as normal.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b048-4e27-b7f0-cf05" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Evade" hidden="false" id="7d04-6b09-a2e1-8f75">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bc3-6d57-8437-b337" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Evade" hidden="false" id="b1a2-f0f-c3c4-8b9c">
+              <description>The rider has trained his mount to swerve from side to side in combat, wrongfooting his opponent.
+
+
+A rider with this skill always strikes first in close combat against dismounted opponents.
+
+
+When charged by an opponent, or otherwise fighting an enemy also entitled to strike first, attacks are carried out in order of Initiative.
+
+
+If Initiative is equal, the model with greater experience strikes first.
+
+
+Warriors without Ride may not use this skill.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Running Dismount" hidden="false" id="8893-6e06-2437-68c0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e53-60f2-10ac-23f5" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Running Dismount" hidden="false" id="1f1a-c34-aafc-8bcf">
+              <description>The rider is able to dismount from his mount at speed.
+
+
+The rider may ride up to the mount&apos;s normal move distance and then dismount immediately.
+
+
+No further movement or shooting is possible.
+
+
+This skill may be used to move into contact with the enemy, counting as a Diving Charge from a height of 2&quot; - all the usual rules for diving charges apply.
+
+
+Note that the rider then counts as dismounted, gaining no further assistance from his mount.
+
+
+Warriors without Ride may not use this skill.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Athletic Mount" hidden="false" id="8b6b-b412-8975-c3d6">
+          <rules>
+            <rule name="Athletic Mount" hidden="false" id="6588-96-ece7-248e">
+              <description>Without breaking stride, the warrior is able to leap onto the back of his mount and immediately spur it into a full gallop. 
+
+
+Once the warrior is on board, the mount may make a run or charge move as normal.
+
+
+The warrior must be within half his full move distance of his steed to use this skill.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="382-90fa-a58f-a5fd" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Horse Archer" hidden="false" id="6e0b-ae98-e309-25b6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a86c-3b63-3869-2905" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Horse Archer" hidden="false" id="1203-de79-bba3-f0f3">
+              <description>The rider has learned the skills of the steppe nomads and can shoot from a running mount.
+
+
+The rider may shoot in a 360 degree arc whilst mounted, and may shoot while his mount is running; however the shot suffers a -1 to hit penalty in addition to all other normal modifiers.
+
+
+Warriors without Ride may not use this skill.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mounted Combat Master" hidden="false" id="d0cc-2ece-a6b6-8c1f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="261e-87bb-210a-c75" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Mounted Combat Master" hidden="false" id="314-59ec-f5cf-a650">
+              <description>The rider is especially skilled at combat against a mounted opponent.
+
+
+If the model is fighting mounted against a mounted opponent and successfully wounds the enemy, the wounded model must add +1 to his roll on the Whoa Boy! table.
+
+Warriors without Ride may not use this skill.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

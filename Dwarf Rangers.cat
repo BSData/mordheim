@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1df8-a2ec-8d5c-c7b" name="Dwarf Rangers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1df8-a2ec-8d5c-c7b" name="Dwarf Rangers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Don’t Trust ‘Em" hidden="false" id="c420-9cfa-bfde-368a">
       <description>While Ranger Warbands are free to ally with other Dwarf warbands in multi-player games, their point of view is so different that they do not trust them fully.
@@ -934,7 +934,6 @@ An Apprentice Runesmith in the warband allows a Master Runesmith to inscribe on
       </selectionEntries>
       <entryLinks>
         <entryLink id="4db9-e6d9-965-36d8" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink id="e3eb-7650-94bb-b552" name="Dwarf Runes" hidden="false" collective="false" import="true" targetId="7466-d9e1-b2b9-172" type="selectionEntryGroup"/>
         <entryLink id="5c5-aff9-6045-1b3e" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink id="70ee-ae02-73ae-b49e" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink id="64a3-ab99-66fa-456c" name="Dwarf Warrior Equipment" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup"/>
@@ -1318,7 +1317,6 @@ They are completely immune to all psychology and never need to test if fighting
             <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27e9-5e39-f77c-6da1" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="ce57-109f-17bb-6b9e" name="Dwarf Runes" hidden="false" collective="false" import="true" targetId="7466-d9e1-b2b9-172" type="selectionEntryGroup"/>
         <entryLink id="26ba-6535-3006-1d84" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink id="c258-5265-74d9-ad42" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink id="b2e3-7d01-f396-56d8" name="Dwarf Warrior Equipment" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup"/>
