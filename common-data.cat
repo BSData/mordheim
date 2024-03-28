@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="12" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2566,6 +2566,55 @@ The model can change to normal hand-to-hand weapons after the initial round.</
 Additionally, only 1 attack is allowed, no matter the number on the wielder’s profile.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scythe" hidden="false" id="5487-85f6-ae5f-dac1">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="3140-32c8-2c02-ea61" page="0" collective="false">
+          <modifiers>
+            <modifier type="set" value="40" field="points"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bf9e-1d88-2867-7bbb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Gromril weapon" hidden="false" id="4bb-2dce-8a17-ea9a" targetId="fad2-ae3b-6e41-c8b3" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" hidden="false" id="b33b-8d1f-e918-7f11" typeId="points" value="0"/>
+            <cost name="Warband Rating" hidden="false" id="64d2-965f-2d95-d48a" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="3ce5-f7a2-fb38-fa66" page="0" collective="false">
+          <modifiers>
+            <modifier type="set" value="30" field="points"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f627-bcc8-d573-38e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ithilmar weapon" hidden="false" id="c0dc-459b-ae30-df46" targetId="2c05-eef1-5b96-cc14" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" hidden="false" id="1ccd-3de7-fbd6-4cbc" typeId="points" value="0"/>
+            <cost name="Warband Rating" hidden="false" id="c910-9a19-258d-909d" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="10"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Difficult to use" hidden="false" id="a7f7-a72a-2ca8-1cf3" type="rule" targetId="14b3-65c8-02c4-ae65"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Scythe" hidden="false" id="a9d7-bfda-5316-6684" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+1</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Difficult to use</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

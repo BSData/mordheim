@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="ebaf-f5a8-cac6-bd65" name="Pit Fighter (1a)" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -5485,6 +5485,527 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
         <cost name="pts" typeId="points" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Priest of Morr (1b)" hidden="false" id="d99a-5b47-80f6-75ad" collective="false">
+      <profiles>
+        <profile name="Priest of Morr" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="88b6-f639-d8c2-dd16">
+          <characteristics>
+            <characteristic name="M" hidden="false" id="be5c-782e-da30-1cd4" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+            <characteristic name="WS" hidden="false" id="a5d3-e307-1192-1bf1" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">2</characteristic>
+            <characteristic name="BS" hidden="false" id="8a7f-8d79-d07c-7a1" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">2</characteristic>
+            <characteristic name="S" hidden="false" id="cc9-e1c-ec32-ed72" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
+            <characteristic name="T" hidden="false" id="1aba-b2d0-db00-46d4" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" hidden="false" id="c3f6-cbef-c94c-406a" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" hidden="false" id="b632-7d00-d3b2-f4cf" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">4</characteristic>
+            <characteristic name="A" hidden="false" id="9263-2cca-d783-d090" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" hidden="false" id="6a7f-9f1e-f464-8c32" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">9</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="492ef626-87b8-7b39-378d-38fbd1ffb131" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="bf393c37-9d10-fc85-c147-62b1c01a89fe">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="8acf5ee1-3430-be22-ec94-15b12e15e497" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="a6fd52b0-be0a-655e-6314-87b392c9c90e">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="0cbce569-483e-fc61-9a46-75bb7f52573a" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="d5aca8ba-0204-b324-b976-c2b536e09924">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="7e03b263-c206-09f3-f9d3-47c0c9294235" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="54f4796b-dedb-c296-8b1a-ff7f8043293a">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="a3c87526-fae5-8945-97c3-057d97df69e7" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="e234eaea-a02a-2fb7-3e1f-605392aabb89">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="62be0dba-2c77-76b0-3da3-48c05611f170" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="bf7c1f26-0442-54db-cacc-44dc499dcebc" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="54f4796b-dedb-c296-8b1a-ff7f8043293a">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="d5aca8ba-0204-b324-b976-c2b536e09924">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="abc4f440-9124-351f-831d-aaf5be4d3ae4" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="bf393c37-9d10-fc85-c147-62b1c01a89fe">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="06c6e571-9da5-51a2-4053-aeca9035e1a2" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="bbd9ff4c-4aa7-432d-a143-b786400cef79" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="e234eaea-a02a-2fb7-3e1f-605392aabb89">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="043d62b3-76f8-822e-3d67-9c3806889918" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="a6fd52b0-be0a-655e-6314-87b392c9c90e">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="d99a-5b47-80f6-75ad" childId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Loner" hidden="false" id="de4c-a441-79be-1f30">
+          <description>Few people care to spend any length of time in the company of a priest of Morr - even when it is their duty to do so.
+
+
+As such, a priest of Morr is used to being alone and probably prefers it that way. 
+
+
+Priests of Morr do not suffer from the All Alone rules.</description>
+        </rule>
+        <rule name="Funerary Rites" hidden="false" id="b386-c4c8-e27d-ec57">
+          <description>Priests of Morr are not wizards by any means, however, they do have numerous Funerary Rites, which they may perform.
+
+
+As such, priests of Morr may choose a Funerary Rite listed below, using the rules for Magic on page 56 of the Mordheim hook.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Human max" hidden="false" id="28c4-51c5-a269-367e" targetId="d9c2-4427-8e2b-586a" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Heroes" hidden="false" id="a39e-e812-c068-7ded" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Equipment" hidden="false" id="4dc6-3ae3-a9ab-a700" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="17d4-10eb-915a-58f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d366-1fa-47ff-356d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Scythe" hidden="false" id="6dac-fa49-35d5-6a13" collective="false" targetId="5487-85f6-ae5f-dac1" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f887-d7dd-dd0c-335a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49d3-a0f9-851e-64b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Dagger" hidden="false" id="b1e6-3147-8d77-860b" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9cf6-454f-9aa1-64eb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7424-d98c-934a-de37" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" hidden="false" id="44c9-d469-41c9-e345" typeId="points" value="0"/>
+            <cost name="Warband Rating" hidden="false" id="d808-483a-681a-c437" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="6f00-ea1e-8193-d170" page="0" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1a9-c8c2-5f54-243e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="2257-8f09-d9b3-fcd6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Speed Skills" hidden="false" id="b6de-53c4-432f-62a3" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Academic Skills" hidden="false" id="b152-fada-7d19-ecdd" collective="false" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" hidden="false" id="d7e9-a16c-b910-aafe" typeId="points" value="0"/>
+            <cost name="Warband Rating" hidden="false" id="5d-6223-bc38-b89d" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="b591-49b6-3a8b-16d9" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Advancement" hidden="false" id="ce93-9111-10bc-8129" type="selectionEntry" targetId="c26e-414e-293-2621">
+          <modifiers>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="23" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="27" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="31" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="35" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="40" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="45" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="56" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="62" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="68" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="75" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="82" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="89" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="23" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="27" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="31" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="35" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="40" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="45" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="56" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="62" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="68" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="75" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="82" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="89" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="any" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="19" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="16" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="13" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="19" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="16" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="13" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
+              <conditions>
+                <condition type="greaterThan" value="10" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a79c-4fb2-4100-9f13">
+              <conditions>
+                <condition type="greaterThan" value="10" field="selections" scope="parent" childId="d769-0d85-e810-df60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Experience" hidden="false" id="ff49-978-d31c-e82f" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="813d-6780-479c-9450" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" hidden="false" id="a3b5-8f53-7f2-1855" typeId="points" value="35"/>
+        <cost name="Warband Rating" hidden="false" id="50b4-2279-9c78-7cd9" typeId="wb-rating" value="5"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Funerary Rites" hidden="false" id="2dc6-d530-6243-6d0d" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="1 Morr&apos;s Protection" hidden="false" id="862c-ea4b-d549-9801" page="0" collective="false">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e21-85d9-193b-f4c1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9284-83b3-c078-d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Morr&apos;s Protection" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="c025-3fdd-6f69-138e">
+                  <characteristics>
+                    <characteristic name="Difficulty" hidden="false" id="111-4001-df90-2889" typeId="dd91-3f4d-8b72-7905">6</characteristic>
+                    <characteristic name="Effect" hidden="false" id="3349-be8b-db45-736c" typeId="0592-3510-8508-7263">The Priest of Morr calls out to his god when confronted by an abomination and asks that he be shielded from the corrupted magic of the tainted.
+
+
+Any Magical attacks made by a Necromancer, a Magister or Daemons, which would be considered a direct attack on the priest, will be negated if this rite is successful.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" hidden="false" id="69dd-74de-ceb7-127d" typeId="points" value="0"/>
+                <cost name="Warband Rating" hidden="false" id="4d38-948-c804-a1f1" typeId="wb-rating" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2 Death Holds No Fear" hidden="false" id="b868-1764-e5d5-6deb" page="0" collective="false">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="614e-816d-f56c-c9e2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bef5-ca71-eb4f-234f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Death Holds No Fear" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="dc23-aabb-71c6-9bb">
+                  <characteristics>
+                    <characteristic name="Difficulty" hidden="false" id="11f-c6a-f816-42c1" typeId="dd91-3f4d-8b72-7905">Auto</characteristic>
+                    <characteristic name="Effect" hidden="false" id="533d-4701-916b-24de" typeId="0592-3510-8508-7263">Priests of Morr must be steadfast in their resolution and as such must, above all else, have no fear of death.
+
+
+The priest of Morr is now Fearless for the remainder of the game.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" hidden="false" id="b4f1-a1d4-fa05-c693" typeId="points" value="0"/>
+                <cost name="Warband Rating" hidden="false" id="5cca-2d6e-79d0-518" typeId="wb-rating" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="3 Sanctity of the Fallen" hidden="false" id="2b72-a141-91a-7c54" page="0" collective="false">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="61a1-a3fa-cdef-69dd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d98-fe61-43ba-58e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sanctity of the Fallen" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="51ab-d0b7-bf7d-480c">
+                  <characteristics>
+                    <characteristic name="Difficulty" hidden="false" id="2b3b-504f-d9e8-bef7" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                    <characteristic name="Effect" hidden="false" id="f4cc-a4e5-f703-578c" typeId="0592-3510-8508-7263">Those who fall shall be sanctified and their soul freed, in the name of Morr, god of death.
+
+
+The priest of Morr may attempt to perform the Rite of Sanctity on a model (friend or foe) who has been taken Out of Action.
+
+
+The priest of Morr must be within 6” of the model in question.
+
+
+If successful, the model may not be raised up by a Necromancer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" hidden="false" id="b003-ea6-35d1-dc02" typeId="points" value="0"/>
+                <cost name="Warband Rating" hidden="false" id="2cb1-253c-5c50-a1e4" typeId="wb-rating" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="4 Hand of Morr" hidden="false" id="2b2e-65fa-86b7-1ce5" page="0" collective="false">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d5a5-6749-9896-ec5b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e83b-1992-42d3-5d4a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hand of Morr" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="51a3-ff84-819e-f1ed">
+                  <characteristics>
+                    <characteristic name="Difficulty" hidden="false" id="5b1d-157d-f9d6-3a0f" typeId="dd91-3f4d-8b72-7905">9</characteristic>
+                    <characteristic name="Effect" hidden="false" id="384-36a6-53b1-4183" typeId="0592-3510-8508-7263">&apos;By his the hand of Morr, the Undead shall become as dust and ashes&apos;.
+
+The priest of Morr must be in base-to-base contact with an Undead model.
+
+Before Hand-to-Hand combat occurs, the priest of Morr may attempt to use the Hand of Morr rite.
+
+If successful the foe immediately goes out of action (this affects Zombies, Dire Wolves and Vampires).
+
+Ghouls and Possessed affected by this rite will immediately flee their full Move away from the priest of Morr.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" hidden="false" id="531a-caab-49f1-3042" typeId="points" value="0"/>
+                <cost name="Warband Rating" hidden="false" id="7ec4-60af-b273-aed1" typeId="wb-rating" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="5 Do you know who I am?" hidden="false" id="29f-a154-bde3-59bf" page="0" collective="false">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c34a-aa9c-4a43-a227" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f6d-e198-7676-8385" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Do you know who I am?" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="655c-d390-15f3-1b45">
+                  <characteristics>
+                    <characteristic name="Difficulty" hidden="false" id="3761-f99b-a0e8-9e96" typeId="dd91-3f4d-8b72-7905">7</characteristic>
+                    <characteristic name="Effect" hidden="false" id="12bb-5ff8-c448-cb65" typeId="0592-3510-8508-7263">‘Gaze upon me, abomination, for I am a priest of Morr&apos;.
+
+
+This rite has a range of 6” and must be directed at the closest Undead model first, or if no Undead are within range, at the next closest human servant of the Undead (Dregs, Ghouls, Necromancers), or finally at any model.
+
+
+If successful, that model is immediately Stunned.
+
+
+If the model cannot be Stunned, then it is Knocked Down instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" hidden="false" id="46d0-987-c6bf-afea" typeId="points" value="0"/>
+                <cost name="Warband Rating" hidden="false" id="2237-5f56-bcb-384a" typeId="wb-rating" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="6 I am death!" hidden="false" id="4bd2-676f-4b3f-1ba0" page="0" collective="false">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="766e-26a6-b254-704f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eae1-ed31-c8cb-9760" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="I am death!" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="31c6-f736-45f6-4541">
+                  <characteristics>
+                    <characteristic name="Difficulty" hidden="false" id="dc1f-5a55-f98b-41ba" typeId="dd91-3f4d-8b72-7905">8</characteristic>
+                    <characteristic name="Effect" hidden="false" id="72c2-b8a2-2665-b43a" typeId="0592-3510-8508-7263">&apos;I am a priest of Morr, god of death!&apos;
+
+
+It is a well-known fact that the priests of Morr are not martially inclined.
+
+
+Their divine duties involved the dead, not the taking of life.
+However, there are times when a priest of Morr will he called to engage in combat and who would be more feared than a representative of the god of Death?
+
+
+This spell gives the priest of Morr a 6+ armor save and increases their WS by either +1 or makes it 4, whichever is greater.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" hidden="false" id="1959-242d-fbb2-ae86" typeId="points" value="0"/>
+                <cost name="Warband Rating" hidden="false" id="ff16-443e-7d0e-cb43" typeId="wb-rating" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
