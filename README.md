@@ -1,7 +1,9 @@
 Mordheim
 ========
 
-**Deprecation note:** This game is unsupported by publisher and files are available for historical purposes.
+**Deprecation note:** This game is unsupported by publisher, it is however maintained by the community.
+An index of all available rules and FAQs can be accessed on https://broheim.net/ 
+Work is in progress on adding the various warbands available to the data files.
 
 
 [![GitHub release](https://img.shields.io/github/release/BSData/mordheim.svg?style=flat-square)](https://github.com/BSData/mordheim/releases/latest)
