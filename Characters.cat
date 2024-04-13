@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1" name="Characters" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="ebaf-f5a8-cac6-bd65" name="Pit Fighter (1a)" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -6006,6 +6006,9 @@ This spell gives the priest of Morr a 6+ armor save and increases their WS by e
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9fa4-40a9-a73f-599a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

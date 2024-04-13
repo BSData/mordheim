@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="13" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="14" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2491,7 +2491,7 @@ Toughened leathers cannot be sold back at the Trading Posts; the stench alone is
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Advancement" hidden="false" id="c26e-414e-293-2621" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Advancement (Hero)" hidden="false" id="c26e-414e-293-2621" collective="false">
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f983-fe4b-65c8-b54f" includeChildSelections="false"/>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a79c-4fb2-4100-9f13" includeChildSelections="false"/>
@@ -2615,6 +2615,12 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Advancement (Henchmen)" hidden="false" id="583e-a0c5-873-acdc" collective="false">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c5e-408b-3baf-1f9e" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c8c2-da7f-edc5-5630" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -4406,6 +4412,24 @@ If there are no enemy models within sight, the Orc or Goblin warrior may make a 
 This move is in addition to his regular move in the Movement phase, so he may therefore move twice in a single turn if you wish.
 If the extra move takes the Orc or Goblin warrior within charge reach of an enemy model, the warrior must charge into close combat during his regular movement.</description>
     </rule>
+    <rule name="Immune to Psychology" id="114e-939e-220b-403" hidden="false">
+      <description>This warrior is immune to psychology and never leave combat.</description>
+    </rule>
+    <rule name="Do not Drink" id="78d7-f07e-65e2-b830" hidden="false">
+      <description>This model does not need water (Khemri or similar desert like setting)</description>
+    </rule>
+    <rule name="No Pain" id="54c4-5d87-e5c5-f0dc" hidden="false">
+      <description>All Undead warriors treat a Stunned result as Knocked Down.</description>
+    </rule>
+    <rule name="May not Run" id="8f9a-f7a4-45f0-6918" hidden="false">
+      <description>This warrior may not run, but may charge as normal.</description>
+    </rule>
+    <rule name="Immune to Poison" id="f654-2dea-4f11-5730" hidden="false">
+      <description>This warrior is not affected by poison.</description>
+    </rule>
+    <rule name="No Brain" id="52a8-95d9-6982-5db5" hidden="false">
+      <description>This creature has no intelligence and as such never gains experience.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="d9c2-4427-8e2b-586a" name="Human max" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -4627,6 +4651,32 @@ If the extra move takes the Orc or Goblin warrior within charge reach of an enem
         <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">7</characteristic>
         <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">4</characteristic>
         <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Tomb Lord (Mummy) max" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="4276-a1f7-88b6-ae4c">
+      <characteristics>
+        <characteristic name="M" id="7f05-aada-b484-29bf" hidden="false" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+        <characteristic name="WS" id="4a06-78f6-4e08-b384" hidden="false" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">6</characteristic>
+        <characteristic name="BS" id="2d8f-c487-bc58-538a" hidden="false" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">6</characteristic>
+        <characteristic name="S" id="a77-6945-1d89-4865" hidden="false" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">5</characteristic>
+        <characteristic name="T" id="6551-8122-fdeb-86e9" hidden="false" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">5</characteristic>
+        <characteristic name="W" id="10e1-2346-a70d-c978" hidden="false" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">5</characteristic>
+        <characteristic name="I" id="aa3a-694d-eb23-c4f2" hidden="false" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">5</characteristic>
+        <characteristic name="A" id="f69-e828-8d43-f227" hidden="false" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">4</characteristic>
+        <characteristic name="LD" id="a2fc-ecc8-141e-8afc" hidden="false" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Liche &amp; Accolyte (Mummy) max" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="8bc-2e8-d672-82d4">
+      <characteristics>
+        <characteristic name="M" id="1fc2-4135-d07a-3afe" hidden="false" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">4</characteristic>
+        <characteristic name="WS" id="5eea-9f0e-90ea-46e0" hidden="false" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">6</characteristic>
+        <characteristic name="BS" id="4bea-6cd2-376c-dc18" hidden="false" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">6</characteristic>
+        <characteristic name="S" id="bbd8-305d-68da-b6d2" hidden="false" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+        <characteristic name="T" id="c30a-bf8f-60f5-7d6f" hidden="false" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">4</characteristic>
+        <characteristic name="W" id="7791-c49c-e8c4-829" hidden="false" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">3</characteristic>
+        <characteristic name="I" id="7ccd-6e66-f35b-69ee" hidden="false" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">6</characteristic>
+        <characteristic name="A" id="43f5-a9b2-b1a9-74ad" hidden="false" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">4</characteristic>
+        <characteristic name="LD" id="5c34-d3de-d362-7045" hidden="false" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">9</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
