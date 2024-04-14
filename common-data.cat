@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="14" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="15" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2622,6 +2622,47 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c8c2-da7f-edc5-5630" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Boat Hook" hidden="false" id="8bf0-e215-6bbb-383e">
+      <profiles>
+        <profile name="Boat Hook" hidden="false" id="d807-f424-2528-1363" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+          <characteristics>
+            <characteristic name="Str" id="b8c3-45cb-f701-24d2" hidden="false" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">-1</characteristic>
+            <characteristic name="Special" id="9043-a3f6-9643-57f0" hidden="false" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Strike First, Two-handed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Strike First" id="759e-2539-c7cc-75d0" hidden="false" type="rule" targetId="744d-bb7c-09b9-ab1c"/>
+        <infoLink name="Two Handed" id="b608-1a62-aabf-c90a" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="8"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Belaying Pin" hidden="false" id="282e-5485-a38c-9f14">
+      <profiles>
+        <profile name="Boat Hook" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon" hidden="false" id="c7ee-dea2-d55f-1f73">
+          <characteristics>
+            <characteristic name="Range" id="db8b-16d4-725c-8dfd" hidden="false" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">6</characteristic>
+            <characteristic name="Str" id="2023-8179-6beb-8eec" hidden="false" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">-1</characteristic>
+            <characteristic name="Special" id="285b-fc38-894b-58a4" hidden="false" typeId="fde90816-abbb-f019-75a0-0c24662facf3">+1 Enemy Armor, Thrown Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="+1 Enemy armour save" id="ffce-21c-c13e-69ab" hidden="false" type="rule" targetId="98ac-2376-00c1-4f65"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="3"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Thrown Weapon" id="96a8-4e79-9910-5abd" hidden="false">
+          <description>Models using Belaying Pins do not suffer any penalties for range, but still suffer a -1 to hit penalty if they use them after moving that turn.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true">
@@ -3345,6 +3386,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="7dbd-0cff-c5d6-0c9d" name="Starblade" hidden="false" collective="false" import="true" targetId="ec90-545c-e303-099b" type="selectionEntry"/>
         <entryLink id="b1e6-5b0e-41d7-eeaf" name="Claw of the Old Ones" hidden="false" collective="false" import="true" targetId="993b-b4c4-118f-3ce3" type="selectionEntry"/>
         <entryLink import="true" name="Pike" hidden="false" id="9f83-3b50-5491-90f2" type="selectionEntry" targetId="68ec-2a33-6ca8-d146"/>
+        <entryLink import="true" name="Boat Hook" hidden="false" id="355b-13e-2e5b-921c" type="selectionEntry" targetId="8bf0-e215-6bbb-383e"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1937-df4f-3c68-e0be" name="Missile Weapons" hidden="false" collective="false" import="true">
@@ -3679,7 +3721,11 @@ must retire from the warband.</description>
       <entryLinks>
         <entryLink id="5ba4-c93b-a512-6afa" name="Armor" hidden="false" collective="false" import="true" targetId="975d-a3e5-9029-58d5" type="selectionEntryGroup"/>
         <entryLink id="7364-e39a-1a0b-a869" name="Hand to Hand Weapons" hidden="false" collective="false" import="true" targetId="073c-d5ce-dcc0-b820" type="selectionEntryGroup"/>
-        <entryLink id="af8a-aa1a-1e8f-8701" name="Missile Weapons" hidden="false" collective="false" import="true" targetId="1937-df4f-3c68-e0be" type="selectionEntryGroup"/>
+        <entryLink id="af8a-aa1a-1e8f-8701" name="Missile Weapons" hidden="false" collective="false" import="true" targetId="1937-df4f-3c68-e0be" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink import="true" name="Belaying Pin" hidden="false" id="6142-177b-92b0-c95" type="selectionEntry" targetId="282e-5485-a38c-9f14"/>
+          </entryLinks>
+        </entryLink>
         <entryLink id="dc31-0d77-4ab1-91b9" name="Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
