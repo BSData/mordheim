@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="17" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="18" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2662,6 +2662,29 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
           <description>Models using Belaying Pins do not suffer any penalties for range, but still suffer a -1 to hit penalty if they use them after moving that turn.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dragon Sword (Katana)" hidden="false" id="b6d9-7260-674e-ec68" page="0" collective="false">
+      <profiles>
+        <profile name="Dragon Sword" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="2a16-1960-d2ff-5316" page="0">
+          <characteristics>
+            <characteristic name="Str" id="4ea7-6ced-2d7c-e4f3" hidden="false" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+1</characteristic>
+            <characteristic name="Special" id="1b7b-b588-9969-2de2" hidden="false" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two Handed, Parry</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="20"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Rarity" id="de4d-2c63-ab87-b3d" hidden="false">
+          <description>Rarity 10</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Two Handed" id="ded2-12c1-fcc-ca1e" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
+        <infoLink name="Parry" id="c068-9967-a764-ae12" hidden="false" type="rule" targetId="17dc-9c49-08e1-af45"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
