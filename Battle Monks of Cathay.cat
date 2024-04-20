@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4cde-fbe1-d53-81d1" name="Battle Monks of Cathay (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4cde-fbe1-d53-81d1" name="Battle Monks of Cathay (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="2085-9795-666b-65cf" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -12,7 +12,6 @@
             <entryLink import="true" name="Free Dagger" hidden="false" id="b1b2-c5b7-4bbe-859a" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
             <entryLink import="true" name="Cathayan Longsword" hidden="true" id="6b1d-8ffa-7452-2ea3" collective="false" targetId="c3c1-acf0-6d76-fa15" type="selectionEntry">
               <modifiers>
-                <modifier type="set" value="Hammer, Mace" field="name"/>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1044-3703-88e5-811a" shared="true"/>
@@ -2299,8 +2298,7 @@ Note that this only applies when they are armed with normal swords, and not wit
       <rules>
         <rule name="Improvised Weapons" id="9824-771e-57dd-e84b" hidden="false">
           <description>A peasant is usually equipped with a pitchfork, torch or other simple tool.
-Treat them as fighting unarmed but without any penalties.
-</description>
+Treat them as fighting unarmed but without any penalties.</description>
         </rule>
         <rule name="Simple Folk" id="7bff-86ab-8576-4b6e" hidden="false">
           <description>Peasants never gain Experience.</description>
@@ -2344,6 +2342,24 @@ The model is immediately taken out of action.</description>
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stash" hidden="false" id="1353-2b33-da78-2524" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f34e-ba75-bacc-be93" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b772-5265-70ad-8460" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Stash" hidden="false" id="24a6-be66-7314-ac9e" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Gold" hidden="false" id="aedd-4f11-98c9-6a" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Wyrdstone" hidden="false" id="4c00-f2e1-25d9-6ea9" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="5c93-c3e5-27af-c68a" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" id="c96d-b86f-261c-3d05" hidden="false" typeId="points" value="0"/>
+        <cost name="Warband Rating" id="5138-9a98-8d3e-c73a" hidden="false" typeId="wb-rating" value="0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <rules>
