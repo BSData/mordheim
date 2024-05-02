@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1df8-a2ec-8d5c-c7b" name="Dwarf Rangers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1df8-a2ec-8d5c-c7b" name="Dwarf Rangers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Don’t Trust ‘Em" hidden="false" id="c420-9cfa-bfde-368a">
       <description>While Ranger Warbands are free to ally with other Dwarf warbands in multi-player games, their point of view is so different that they do not trust them fully.
@@ -591,7 +591,7 @@ When a Runesmith advances and rolls a skill on the Hero Advance table, he may c
         <infoLink id="ff2-94e-c80f-f066" name="Leader" hidden="false" targetId="8712-d0f2-fe64-07bd" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="3699-9cce-80e2-5353" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="3699-9cce-80e2-5353" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="641f-89b-b8b9-3eb2" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -635,7 +635,7 @@ When a Runesmith advances and rolls a skill on the Hero Advance table, he may c
         <entryLink id="834e-a8ef-f946-ae7e" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink id="60f2-92fb-df24-3f20" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink id="dbb0-2902-524a-2d84" name="Dwarf Warrior Equipment" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="f7c7-7c98-dea0-e3d" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="f7c7-7c98-dea0-e3d" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -899,7 +899,7 @@ An Apprentice Runesmith in the warband allows a Master Runesmith to inscribe on
         <infoLink id="5e-bf4c-2251-7c1b" name="Dwarf max" hidden="false" targetId="20ca-82d5-4ea4-4152" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="5aef-7987-5271-8642" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="5aef-7987-5271-8642" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="ed87-3e48-2f68-b9ac" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -937,7 +937,7 @@ An Apprentice Runesmith in the warband allows a Master Runesmith to inscribe on
         <entryLink id="5c5-aff9-6045-1b3e" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink id="70ee-ae02-73ae-b49e" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink id="64a3-ab99-66fa-456c" name="Dwarf Warrior Equipment" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="8e51-125-6ce4-4d83" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="8e51-125-6ce4-4d83" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1279,7 +1279,7 @@ They are completely immune to all psychology and never need to test if fighting
         <infoLink id="7022-9041-5544-ec92" name="Dwarf max" hidden="false" targetId="20ca-82d5-4ea4-4152" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="d129-93b0-d70e-f970" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="d129-93b0-d70e-f970" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9eec-192f-5bcd-c667" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -1320,7 +1320,7 @@ They are completely immune to all psychology and never need to test if fighting
         <entryLink id="26ba-6535-3006-1d84" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink id="c258-5265-74d9-ad42" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
         <entryLink id="b2e3-7d01-f396-56d8" name="Dwarf Warrior Equipment" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="b2e4-c082-45fb-2f6d" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="b2e4-c082-45fb-2f6d" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1616,7 +1616,7 @@ They are completely immune to all psychology and never need to test if fighting
         <infoLink id="bee3-c44e-dae8-ae5b" name="Dwarf max" hidden="false" targetId="20ca-82d5-4ea4-4152" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="f799-953c-3dc-b971" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="f799-953c-3dc-b971" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="ea5e-30ac-2192-d225" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -1656,7 +1656,7 @@ They are completely immune to all psychology and never need to test if fighting
           </modifiers>
         </entryLink>
         <entryLink id="2d24-540c-b475-7a54" name="Dwarf Warrior Equipment" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="107c-ea98-11bf-a8f8" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="107c-ea98-11bf-a8f8" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2057,7 +2057,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
         <infoLink id="3c49-81cf-6884-78a9" name="Dwarf max" hidden="false" targetId="20ca-82d5-4ea4-4152" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="66b7-b25f-fdc7-7e10" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="66b7-b25f-fdc7-7e10" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3c38-4a44-20df-c263" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -2097,7 +2097,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
           </modifiers>
         </entryLink>
         <entryLink id="8abe-bc75-746d-d5b3" name="Crossbowmen Equipment" hidden="false" collective="false" import="true" targetId="b6f8-72e6-7260-bf13" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="5f3a-128-6b97-6798" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="5f3a-128-6b97-6798" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2484,7 +2484,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
         <infoLink id="c77-f2e1-aa90-dc22" name="Dwarf max" hidden="false" targetId="20ca-82d5-4ea4-4152" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="f4de-e321-6655-14a6" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="f4de-e321-6655-14a6" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="4341-8fc4-db53-10d6" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -2524,7 +2524,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
           </modifiers>
         </entryLink>
         <entryLink id="bc96-5c96-57ec-303c" name="Dwarf Warrior Equipment" hidden="false" collective="false" import="true" targetId="8cde-235f-34c3-48c2" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="4721-950c-ee4b-723d" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="4721-950c-ee4b-723d" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2922,7 +2922,7 @@ Remember that you can never reroll a reroll, so the result of this second roll 
         <infoLink id="b6c8-7c-f27a-fe28" name="Dwarf max" hidden="false" targetId="20ca-82d5-4ea4-4152" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="186c-1d5f-e9d-179" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="186c-1d5f-e9d-179" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3f7c-299f-8f24-909e" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -3234,6 +3234,24 @@ Remember that you can never reroll a reroll, so the result of this second roll 
       <costs>
         <cost name="pts" typeId="points" value="25"/>
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stash" hidden="false" id="7773-3134-8736-d4d2" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bea-5db7-4da6-a40a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9726-4e85-9b5f-92ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Stash" hidden="false" id="1fd0-128d-bf93-d21e" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Gold" hidden="false" id="9e33-d702-6f7-422f" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Wyrdstone" hidden="false" id="a22b-ab24-c787-51cd" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="f84-8be6-b661-8f32" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" id="8517-8812-cd77-d2b0" hidden="false" typeId="points" value="0"/>
+        <cost name="Warband Rating" id="5acd-8079-9a47-7749" hidden="false" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
