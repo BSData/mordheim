@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="19" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="20" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -3431,17 +3431,17 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="9ef6-11c5-84bb-8208" name="Dueling Pistol" hidden="false" collective="false" import="true" targetId="da24-6a7f-725b-5bcb" type="selectionEntry"/>
         <entryLink id="bce2-87d9-3a06-86a4" name="Elf Bow" hidden="false" collective="false" import="true" targetId="e2c2-751b-5384-ce1d" type="selectionEntry"/>
         <entryLink id="7ae8-6d85-3d30-d3b7" name="Handgun" hidden="false" collective="false" import="true" targetId="7f5a-d04d-153d-d334" type="selectionEntry"/>
-        <entryLink id="6985-a928-a371-c68a" name="Hochland long rifle" hidden="false" collective="false" import="true" targetId="51ed-e371-76d2-d46b" type="selectionEntry"/>
+        <entryLink id="6985-a928-a371-c68a" name="Hochland Long Rifle" hidden="false" collective="false" import="true" targetId="51ed-e371-76d2-d46b" type="selectionEntry"/>
         <entryLink id="71ed-94f3-f8e7-e10b" name="Longbow" hidden="false" collective="false" import="true" targetId="afa2-2d5c-54dd-d435" type="selectionEntry"/>
         <entryLink id="f9f4-cf69-0204-85f5" name="Pistol" hidden="false" collective="false" import="true" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
         <entryLink id="5c2b-dc41-890d-00b9" name="Repeater Crossbow" hidden="false" collective="false" import="true" targetId="a802-b7c6-caea-a5b1" type="selectionEntry"/>
         <entryLink id="ec95-3895-9311-cdac" name="Shortbow" hidden="false" collective="false" import="true" targetId="3706-6421-53b4-940d" type="selectionEntry"/>
         <entryLink id="b99a-dc1c-d2d8-31c5" name="Sling" hidden="false" collective="false" import="true" targetId="87c7-49b5-f1e7-6662" type="selectionEntry"/>
-        <entryLink id="dc4f-68e4-d582-55e6" name="Throwing Knives/stars" hidden="false" collective="false" import="true" targetId="23f5-19c3-5a6c-a8fb" type="selectionEntry"/>
+        <entryLink id="dc4f-68e4-d582-55e6" name="Throwing Knives/Stars" hidden="false" collective="false" import="true" targetId="23f5-19c3-5a6c-a8fb" type="selectionEntry"/>
         <entryLink id="fede-5933-f805-838d" name="Double Barreled Pistol" hidden="false" collective="false" import="true" targetId="b8bb-20cf-ae3a-693f" type="selectionEntry"/>
-        <entryLink id="4487-21e7-e1de-ffc3" name="Double Barreled Hochland long rifle" hidden="false" collective="false" import="true" targetId="5fd9-080e-10f1-9d52" type="selectionEntry"/>
+        <entryLink id="4487-21e7-e1de-ffc3" name="Double Barreled Hochland Long Rifle" hidden="false" collective="false" import="true" targetId="5fd9-080e-10f1-9d52" type="selectionEntry"/>
         <entryLink id="a418-11ed-3d56-23f3" name="Warplock Pistol" hidden="false" collective="false" import="true" targetId="c51a-d060-7bf2-7ae3" type="selectionEntry"/>
-        <entryLink id="178e-5e89-0c9f-ddae" name="Sunstaff" hidden="false" collective="false" import="true" targetId="27ff-9f93-cc7a-6f30" type="selectionEntry"/>
+        <entryLink id="178e-5e89-0c9f-ddae" name="Sunstaff (Lustria)" hidden="false" collective="false" import="true" targetId="27ff-9f93-cc7a-6f30" type="selectionEntry"/>
         <entryLink id="181a-bd6a-0170-593b" name="Bolas" hidden="false" collective="false" import="true" targetId="5595-398a-3e24-de99" type="selectionEntry"/>
         <entryLink id="e1d0-cbf2-5c64-5fd7" name="Gladiators’ Javelins" hidden="false" collective="false" import="true" targetId="85f3-770e-f51e-ce4e" type="selectionEntry"/>
         <entryLink id="b502-ec9d-da27-a5d7" name="Javelins/Harpoons" hidden="false" collective="false" import="true" targetId="ece5-fffa-8dd8-94dc" type="selectionEntry"/>
@@ -3713,7 +3713,7 @@ must retire from the warband.</description>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4aa1-2ce5-e554-edc6" type="min"/>
       </constraints>
       <entryLinks>
-        <entryLink id="7e51-38d3-c7f1-cf14" name="(un)Holy Relic" hidden="false" collective="false" import="true" targetId="f122-5313-bc4d-97fa" type="selectionEntry"/>
+        <entryLink id="7e51-38d3-c7f1-cf14" name="Holy (Unholy) Relic" hidden="false" collective="false" import="true" targetId="f122-5313-bc4d-97fa" type="selectionEntry"/>
         <entryLink id="4083-2644-8b47-fffd" name="Black Lotus" hidden="false" collective="false" import="true" targetId="e7a3-2c8a-19a7-75a9" type="selectionEntry"/>
         <entryLink id="3d88-21fc-5884-051e" name="Blessed Water" hidden="false" collective="false" import="true" targetId="a654-7424-2e41-2f41" type="selectionEntry"/>
         <entryLink id="f471-2b34-9544-eb1a" name="Bugman&apos;s Ale" hidden="false" collective="false" import="true" targetId="c2d6-783b-473e-9406" type="selectionEntry"/>
@@ -3746,7 +3746,6 @@ must retire from the warband.</description>
     <selectionEntryGroup id="2247-1f56-bc59-0ead" name="Equipment" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="851e-4289-371c-f05c" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28e8-c284-27bc-a4bc" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="5ba4-c93b-a512-6afa" name="Armor" hidden="false" collective="false" import="true" targetId="975d-a3e5-9029-58d5" type="selectionEntryGroup"/>
@@ -4792,6 +4791,32 @@ If the extra move takes the Orc or Goblin warrior within charge reach of an enem
         <characteristic name="I" id="b462-d452-5239-c7b8" hidden="false" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">6</characteristic>
         <characteristic name="A" id="8a3e-788b-f2af-d181" hidden="false" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">5</characteristic>
         <characteristic name="LD" id="b3ae-c343-e5fa-cfdf" hidden="false" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Liche (Undead) max" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="b5fd-a2f4-1eb5-c302">
+      <characteristics>
+        <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">5</characteristic>
+        <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
+        <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">4</characteristic>
+        <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+        <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">4</characteristic>
+        <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">8</characteristic>
+        <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">6</characteristic>
+        <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">3</characteristic>
+        <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">10</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Grave Guard (Undead) max" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="6494-9583-c947-c093">
+      <characteristics>
+        <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">5</characteristic>
+        <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">5</characteristic>
+        <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">5</characteristic>
+        <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+        <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">4</characteristic>
+        <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">4</characteristic>
+        <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">5</characteristic>
+        <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">4</characteristic>
+        <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">10</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
