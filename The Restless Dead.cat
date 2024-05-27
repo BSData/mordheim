@@ -145,7 +145,7 @@
         <categoryLink name="Heroes" hidden="false" id="ee9b-4c55-6bb9-4b04" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="c4d7-fdfb-b02b-15c1" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="c4d7-fdfb-b02b-15c1" collective="false" sortIndex="7">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6f5a-37dd-3e48-1115" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8d1-cafa-ef4-9dce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -158,7 +158,7 @@
             <cost name="Warband Rating" id="bcd3-73bc-e482-3fbd" hidden="false" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="36eb-5682-f286-e5aa" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Skills" hidden="false" id="36eb-5682-f286-e5aa" collective="false" sortIndex="6">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec4e-789d-d871-57b1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9b1-79a0-5aa4-4d8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -174,15 +174,15 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="3e57-c5dd-f516-16dd" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink import="true" name="Experience" hidden="false" id="3e57-c5dd-f516-16dd" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="8b40-d0f1-fc82-128" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Undead Equipment" hidden="false" id="4822-9eff-9679-a86f" collective="false" targetId="3db-54f3-1b4f-9c09" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="fc4b-3aeb-c323-2d8a" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="false" id="918f-9d0e-b454-50a" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="1613-73b6-d492-7e71" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Undead Equipment" hidden="false" id="4822-9eff-9679-a86f" collective="false" targetId="3db-54f3-1b4f-9c09" type="selectionEntryGroup" sortIndex="3"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="fc4b-3aeb-c323-2d8a" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="5"/>
+        <entryLink import="true" name="Serious Injuries" hidden="false" id="918f-9d0e-b454-50a" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" sortIndex="8"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="1613-73b6-d492-7e71" type="selectionEntry" targetId="c26e-414e-293-2621" sortIndex="2">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -317,7 +317,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Necromancy" hidden="false" id="1eeb-71ee-cfe-783c" type="selectionEntryGroup" targetId="5733-c579-44bb-5e7b"/>
+        <entryLink import="true" name="Necromancy" hidden="false" id="1eeb-71ee-cfe-783c" type="selectionEntryGroup" targetId="5733-c579-44bb-5e7b" sortIndex="4"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="125"/>
@@ -432,7 +432,7 @@ Indeed, it is often the clothing and armour alone that gives the Liche substanc
         <categoryLink name="Henchmen" hidden="false" id="c05a-545e-2a3c-dd97" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="f262-d30b-1a00-837a">
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="f262-d30b-1a00-837a" sortIndex="3">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -451,7 +451,7 @@ Indeed, it is often the clothing and armour alone that gives the Liche substanc
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="2abc-70a1-2751-4c89" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup">
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="2abc-70a1-2751-4c89" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="2">
           <modifiers>
             <modifier type="set" value="Set Resurrected Hero Characteristics" field="name"/>
           </modifiers>
@@ -459,7 +459,7 @@ Indeed, it is often the clothing and armour alone that gives the Liche substanc
             <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="c6a0-6d61-e686-3254" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Equipment" hidden="false" id="1a4c-d8be-a5d-726" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="1a4c-d8be-a5d-726" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -797,7 +797,7 @@ Indeed, it is often the clothing and armour alone that gives the Liche substanc
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Necromancy" hidden="false" id="df7-15a0-848b-5896" type="selectionEntryGroup" targetId="5733-c579-44bb-5e7b"/>
+        <entryLink import="true" name="Necromancy" hidden="false" id="df7-15a0-848b-5896" type="selectionEntryGroup" targetId="5733-c579-44bb-5e7b" sortIndex="4"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="40"/>
@@ -1453,7 +1453,7 @@ You may roll ‘to wound’ as normal to determine if it is a ‘critical hit�
         <categoryLink name="Henchmen" hidden="false" id="6211-5372-1a2f-595f" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="c0c6-106e-35d-c0bd">
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="c0c6-106e-35d-c0bd" sortIndex="1">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -1472,7 +1472,7 @@ You may roll ‘to wound’ as normal to determine if it is a ‘critical hit�
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Undead Equipment" hidden="false" id="1bec-a6f3-6f47-8b25" type="selectionEntryGroup" targetId="3db-54f3-1b4f-9c09"/>
+        <entryLink import="true" name="Undead Equipment" hidden="false" id="1bec-a6f3-6f47-8b25" type="selectionEntryGroup" targetId="3db-54f3-1b4f-9c09" sortIndex="2"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="20"/>
@@ -1610,7 +1610,7 @@ You may roll ‘to wound’ as normal to determine if it is a ‘critical hit�
         <categoryLink name="Henchmen" hidden="false" id="3d40-7010-a2bf-2dcd" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="9cf6-de66-90f1-8d6f" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="9cf6-de66-90f1-8d6f" collective="false" sortIndex="9">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cffa-34cb-a074-3186" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa72-60d5-c475-db46" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1623,7 +1623,7 @@ You may roll ‘to wound’ as normal to determine if it is a ‘critical hit�
             <cost name="Warband Rating" id="7624-3e31-3235-4f12" hidden="false" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="e75-d646-33de-83a9">
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="e75-d646-33de-83a9" sortIndex="3">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -1642,10 +1642,10 @@ You may roll ‘to wound’ as normal to determine if it is a ‘critical hit�
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Experience" hidden="false" id="1546-7c8-9c3-56a2" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink import="true" name="Promoted" hidden="false" id="9b44-8854-b752-14b8" collective="false" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="84a0-9223-71a7-2d56" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Serious Injuries" hidden="true" id="d25d-3c57-c967-bc1d" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup">
+        <entryLink import="true" name="Experience" hidden="false" id="1546-7c8-9c3-56a2" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry" sortIndex="1"/>
+        <entryLink import="true" name="Promoted" hidden="false" id="9b44-8854-b752-14b8" collective="false" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" sortIndex="2"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="84a0-9223-71a7-2d56" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="7"/>
+        <entryLink import="true" name="Serious Injuries" hidden="true" id="d25d-3c57-c967-bc1d" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" sortIndex="10">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -1654,8 +1654,8 @@ You may roll ‘to wound’ as normal to determine if it is a ‘critical hit�
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Undead Equipment" hidden="false" id="ac67-9478-b494-b2ae" collective="false" targetId="3db-54f3-1b4f-9c09" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="5ca9-28c1-260d-e746" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Undead Equipment" hidden="false" id="ac67-9478-b494-b2ae" collective="false" targetId="3db-54f3-1b4f-9c09" type="selectionEntryGroup" sortIndex="6"/>
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="5ca9-28c1-260d-e746" type="selectionEntry" targetId="c26e-414e-293-2621" sortIndex="5">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1875,7 +1875,7 @@ You may roll ‘to wound’ as normal to determine if it is a ‘critical hit�
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Advancement (Henchmen)" hidden="false" id="7fe4-5d14-c540-e273" type="selectionEntry" targetId="583e-a0c5-873-acdc">
+        <entryLink import="true" name="Advancement (Henchmen)" hidden="false" id="7fe4-5d14-c540-e273" type="selectionEntry" targetId="583e-a0c5-873-acdc" sortIndex="4">
           <modifiers>
             <modifier type="increment" value="1" field="c5e-408b-3baf-1f9e">
               <conditions>
@@ -1930,7 +1930,7 @@ You may roll ‘to wound’ as normal to determine if it is a ‘critical hit�
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Skills" id="9b52-527d-ec5-3e8e" hidden="true">
+        <selectionEntryGroup name="Skills" id="9b52-527d-ec5-3e8e" hidden="true" sortIndex="8">
           <entryLinks>
             <entryLink import="true" name="Strength Skills" hidden="false" id="c041-b3d5-31c5-b111" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="2"/>
             <entryLink import="true" name="Combat Skills" hidden="false" id="5a1b-5d5-cc2d-6b6d" type="selectionEntryGroup" targetId="ee2c-89e3-489b-d0cb" sortIndex="1"/>
@@ -1981,7 +1981,7 @@ You may roll ‘to wound’ as normal to determine if it is a ‘critical hit�
             <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">3</characteristic>
             <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
             <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">3</characteristic>
-            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3 (6)</characteristic>
             <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
             <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
             <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">2</characteristic>
@@ -2092,7 +2092,7 @@ You may roll ‘to wound’ as normal to determine if it is a ‘critical hit�
         <categoryLink name="Henchmen" hidden="false" id="aed9-7103-dadf-8563" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="d29b-47a3-598a-368d">
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="d29b-47a3-598a-368d" sortIndex="2">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -2163,7 +2163,7 @@ Whenever the scarecrow&apos;s controller loses a wound he must pass an unmodifi
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Controller" id="3211-dd09-c459-3426" hidden="false">
+        <selectionEntryGroup name="Controller" id="3211-dd09-c459-3426" hidden="false" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Liche" hidden="false" id="41ea-c41c-e94d-14b9">
               <constraints>
@@ -2178,6 +2178,10 @@ Whenever the scarecrow&apos;s controller loses a wound he must pass an unmodifi
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ba2-74a2-ca7c-767b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ba2-74a2-ca7c-767b-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
