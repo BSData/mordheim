@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="b758-ee46-f27e-58dd" name="Beastman Rules" shortName="Beastman" publisher="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf" publisherUrl="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf"/>
   </publications>
@@ -125,7 +125,7 @@
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="8538-7417-b8e1-2fd1" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="8538-7417-b8e1-2fd1" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="bb7e-97bb-8ac4-1435" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -311,7 +311,7 @@
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="d518-1160-299c-7712" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="d518-1160-299c-7712" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="110e-6085-5f1d-8d0e" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -492,7 +492,7 @@
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="5733-2252-b567-88c8" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="5733-2252-b567-88c8" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6e97-1cd4-20c5-77ae" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -693,7 +693,7 @@ This counts as an additional attack, which does not benefit from weapon bonuses 
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="5fd4-34bc-cc30-873a" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="5fd4-34bc-cc30-873a" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1235-cefe-6786-0f29" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -731,7 +731,7 @@ This counts as an additional attack, which does not benefit from weapon bonuses 
             <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0386-564b-1bd1-5797" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="4067-2250-e105-9665" name="Ungor Equipment" hidden="false" collective="false" import="true" targetId="d4f7-044f-41ce-5aec" type="selectionEntryGroup"/>
+        <entryLink id="4067-2250-e105-9665" name="Beastman Equipment" hidden="false" collective="false" import="true" targetId="4112-3cbd-4df0-08f4" type="selectionEntryGroup"/>
         <entryLink id="77fa-28f6-dda8-c783" name="Mutations" hidden="true" collective="false" import="true" targetId="5541-f5c4-85e0-b399" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -877,7 +877,7 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="c0ad-305d-bb96-4e76" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="c0ad-305d-bb96-4e76" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="afd8-328b-6eaa-a7bb" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -1023,7 +1023,7 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="cd55-9edf-548c-40d7" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="cd55-9edf-548c-40d7" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="57f3-44e1-f9f9-9f2d" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -1106,7 +1106,7 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
         <infoLink id="fb53-47b3-5050-b54a" name="Animals" hidden="false" targetId="daaa-38f1-8c4c-3140" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="f7e9-3d8d-bbca-b901" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="f7e9-3d8d-bbca-b901" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="points" value="15"/>
@@ -1238,7 +1238,7 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
         <infoLink id="dd06-753b-f017-b7b2" name="Minotaur max" hidden="false" targetId="55c0-b2f8-6107-c579" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="bc4e-fb9f-503c-a1e6" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="bc4e-fb9f-503c-a1e6" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="b9dc-b669-1407-8d5d" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -1271,12 +1271,12 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a8b-3514-841c-fcc8" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="d8ea-09b6-df01-6a26" name="New CategoryLink" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
+        <categoryLink id="d8ea-09b6-df01-6a26" name="Stash" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="16b7-704b-249a-4199" name="Gold" hidden="false" collective="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink id="e743-b303-078d-580e" name="Wyrdstone" hidden="false" collective="false" import="true" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink id="04c3-6648-7241-e5c1" name="Looted Equip" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink id="04c3-6648-7241-e5c1" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
