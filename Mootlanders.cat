@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3ce7-ad0a-f74d-9c48" name="Mootlanders (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3ce7-ad0a-f74d-9c48" name="Mootlanders (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Weak constitution" hidden="false" id="dd88-dc67-8282-9124">
       <description>Halflings are very weak and puny and even the lightest of blows tends to knock them senseless.
@@ -166,7 +166,7 @@ When rolling for a Halfling’s injury, treat a roll of a 2 as ‘stunned’.</
         <entryLink import="true" name="Mootlander Equipment" hidden="false" id="f66e-f0eb-9e57-2a18" collective="false" targetId="a716-d7b2-2721-b5d8" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="7094-4c99-280c-9f2e" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="abb6-b39c-b0a5-c0ab" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="2b32-de47-5cf4-1a0c" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="2b32-de47-5cf4-1a0c" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -464,7 +464,7 @@ When rolling for a Halfling’s injury, treat a roll of a 2 as ‘stunned’.</
         <entryLink import="true" name="Mootlander Equipment" hidden="false" id="f927-53b8-9716-d1fe" collective="false" targetId="a716-d7b2-2721-b5d8" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="99e1-c618-b308-bfe4" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="46de-971b-dba7-8d86" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="8969-52ec-37be-f00" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="8969-52ec-37be-f00" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -652,7 +652,7 @@ When rolling for a Halfling’s injury, treat a roll of a 2 as ‘stunned’.</
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Halfling Thieves" hidden="false" id="ee23-d861-35b1-cd66" collective="false">
       <constraints>
-        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="7d1c-9cc5-96af-74a4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="7d1c-9cc5-96af-74a4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <profiles>
         <profile name="Halfling Thieves" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="5c9e-b8db-a297-219b">
@@ -802,7 +802,7 @@ When rolling for a Halfling’s injury, treat a roll of a 2 as ‘stunned’.</
         <entryLink import="true" name="Mootlander Equipment" hidden="false" id="8270-2e01-29c4-df58" collective="false" targetId="a716-d7b2-2721-b5d8" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="97c4-aecb-b95a-3310" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="ec8f-7597-5580-ccca" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="4f7c-6a94-dd52-2028" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="4f7c-6a94-dd52-2028" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1195,7 +1195,7 @@ Halfling thieves always have a -1 to hit modifier when being shot at, this add
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Mootlander Equipment" hidden="false" id="2e40-a95-49b8-2196" collective="false" targetId="a716-d7b2-2721-b5d8" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="111c-7494-1296-ab23" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="111c-7494-1296-ab23" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1642,7 +1642,7 @@ Halfling thieves always have a -1 to hit modifier when being shot at, this add
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Mootlander Equipment" hidden="false" id="9d03-ee9c-ccc8-5296" collective="false" targetId="a716-d7b2-2721-b5d8" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="e3e1-641b-802c-b435" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="e3e1-641b-802c-b435" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
