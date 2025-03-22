@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a808d69a-88e2-9484-b24a-181ea44917e5" name="Shadow Warriors (1b)" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a808d69a-88e2-9484-b24a-181ea44917e5" name="Shadow Warriors (1b)" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="83acbe09-ec66-c45c-0f5b-1a9e0017016e" name="Shadow Master" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -3053,7 +3053,18 @@ with a bow or crossbow (but not a crossbow pistol).</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b23-9f95-d6ca-b2ce" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="e77d-869c-f8df-a640" name="Special Skills (Shadow Warrior)" hidden="false" collective="false" import="true" targetId="285ebcd1-3b2e-4937-39bc-a88721067dca" type="selectionEntryGroup"/>
+            <entryLink id="e77d-869c-f8df-a640" name="Special Skills (Shadow Warrior)" hidden="false" collective="false" import="true" targetId="285ebcd1-3b2e-4937-39bc-a88721067dca" type="selectionEntryGroup">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="See In Shadows" hidden="false" id="18a9-8fce-7173-df59">
+                  <rules>
+                    <rule name="See In Shadows" id="2cf7-9595-a53a-4921" hidden="false">
+                      <description>The warrior’s senses have become especially keen from years spent walking the shadows.
+As long as he has movement to reach them, the warrior may always roll to charge opponents he cannot see (instead of the normal 4&quot;).</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3077,7 +3088,10 @@ with a bow or crossbow (but not a crossbow pistol).</description>
         <selectionEntry id="a656b5c4-2707-e1ce-aa18-4bf4dff3a18c" name="Infiltration" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="daa6a87d-c59f-799b-16a2-2779ae4e2703" name="Infiltration" hidden="false">
-              <description>As long as he has movement to reach them, the warrior may always roll to charge opponents he cannot see (instead of the normal 4&quot;).</description>
+              <description>A Shadow Warrior with this skill is always placed on the battlefield after the opposing warband and can be placed anywhere on the table as long as it is out of sight of the opposing warband and more than 12&quot; away from any enemy model.
+
+
+If both players have models which infiltrate, roll a D6 for each, and the lowest roll sets up first.</description>
             </rule>
           </rules>
           <costs>
@@ -3088,7 +3102,14 @@ with a bow or crossbow (but not a crossbow pistol).</description>
         <selectionEntry id="6ece6f8b-5cff-ec07-649c-1d7f2dd9e63a" name="Sniper" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="dfa2a5a9-2ce4-c381-21bc-e8f363fed87a" name="Sniper" hidden="false">
-              <description>If Hidden, a warrior with this skill may shoot or cast spells and still remain Hidden.</description>
+              <description>Long years of guerrilla warfare against the Dark Elves have taught Shadow Warriors how to strike from the shadows without being seen.
+
+
+If Hidden, a warrior with this skill may shoot or cast spells and still remain Hidden.
+
+
+If his target is not immediately taken out of action by the Sniper they get to test against their Initiative in an attempt to spot him.
+A successful test means that the Sniper has been spotted and is no longer hidden.</description>
             </rule>
           </rules>
           <costs>
@@ -3099,7 +3120,13 @@ with a bow or crossbow (but not a crossbow pistol).</description>
         <selectionEntry id="aaf9c1fa-e1d9-c3c3-8c8b-dfb48fca045e" name="Powerful Build" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="b01c80e0-5c4d-b6ed-9bd6-4402a615feaf" name="Powerful Build" hidden="false">
-              <description>A warrior with this skill may choose skills from the Strength skills table from now on. This skill may not be taken by Shadow Weavers. There may never be more than two Elves with this skill in the warband at any one time.</description>
+              <description>A warrior with this skill may choose skills from the Strength skills table from now on.
+
+
+This skill may not be taken by Shadow Weavers.
+
+
+There may never be more than two Elves with this skill in the warband at any one time.</description>
             </rule>
           </rules>
           <costs>
