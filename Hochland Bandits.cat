@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ff8e-be11-7016-5abc" name="Hochland Bandits (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ff8e-be11-7016-5abc" name="Hochland Bandits (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="3737-518b-3731-edba" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -164,7 +164,7 @@
         <entryLink import="true" name="Bandit Hero Equipment" hidden="false" id="9e73-a0ae-dc8-7eef" collective="false" targetId="1600-d973-cea9-e6f1" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="fbd5-b7f3-fc0-c467" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="cf5f-1613-f357-fcce" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="87c0-85f7-a4ae-cc55" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="87c0-85f7-a4ae-cc55" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -476,7 +476,7 @@ Also, models halve their Initiative when checking the range to see if they can�
         <entryLink import="true" name="Bandit Equipment" hidden="false" id="1fa2-e8da-bc10-ee9a" collective="false" targetId="ca0c-d6db-50c5-8e9c" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="b149-d049-5fb6-e4ba" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="f562-b393-f8eb-a101" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="c6cd-ea9f-7af2-af0c" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="c6cd-ea9f-7af2-af0c" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -834,7 +834,7 @@ A Duelist may use any close combat or missile weapon that the warband members c
         <entryLink import="true" name="Duelist Equipment" hidden="false" id="c500-66b6-a42d-6e7d" collective="false" targetId="8f76-c404-3cfe-cce3" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="aa52-8a65-1e03-8369" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="22f2-7c28-82c3-f7c1" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="bae3-c9d6-2a41-26e4" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="bae3-c9d6-2a41-26e4" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1179,7 +1179,7 @@ However, on a result of 1 the huckster’s con has backfired and he is on the r
         <entryLink import="true" name="Coward Equipment" hidden="false" id="ef28-8d5d-907c-330b" collective="false" targetId="c502-8daa-6c5e-2e78" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="20eb-1ef-79d1-a5f2" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="dd-8339-600e-b366" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="f45-5ffe-e17-dc3c" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="f45-5ffe-e17-dc3c" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1488,6 +1488,11 @@ However, on a result of 1 the huckster’s con has backfired and he is on the r
             <cost name="Warband Rating" hidden="false" id="b92c-d552-3429-da63" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="84a0-12df-ccb7-d7ee">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5549-fbf8-fd82-67dc" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Experience" hidden="false" id="9130-5d21-6703-cf9e" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
@@ -1512,7 +1517,7 @@ However, on a result of 1 the huckster’s con has backfired and he is on the r
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Bandit Equipment" hidden="false" id="8216-c352-62f-4737" collective="false" targetId="ca0c-d6db-50c5-8e9c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="2ace-ebb6-6035-4a66" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="2ace-ebb6-6035-4a66" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1915,6 +1920,11 @@ However, on a result of 1 the huckster’s con has backfired and he is on the r
             <cost name="Warband Rating" hidden="false" id="d9ef-f9d0-d6c1-f106" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="9750-62c8-8e78-b1c7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5083-f91f-026e-2adb" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Experience" hidden="false" id="f592-716a-7766-7b2f" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
@@ -1939,7 +1949,7 @@ However, on a result of 1 the huckster’s con has backfired and he is on the r
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Coward Equipment" hidden="false" id="fc41-4603-5ccb-2af0" collective="false" targetId="c502-8daa-6c5e-2e78" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="4c68-1a01-107e-f03b" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="4c68-1a01-107e-f03b" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2363,6 +2373,11 @@ Note also that warriors to be looted can be from any warband participating in 
             <cost name="Warband Rating" hidden="false" id="9d91-7b22-e476-b667" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="64b1-95c4-6616-a75c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e72-be0b-6800-13d9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Experience" hidden="false" id="3705-7c1a-9ea2-4232" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
@@ -2387,7 +2402,7 @@ Note also that warriors to be looted can be from any warband participating in 
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Poacher Equipment" hidden="false" id="f734-c545-f6b5-f3db" collective="false" targetId="66e1-94ac-12c8-5227" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="3739-94c4-dd57-71f2" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="3739-94c4-dd57-71f2" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2805,6 +2820,11 @@ often darned close!</description>
             <cost name="Warband Rating" hidden="false" id="1946-1345-66e3-fe6a" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="8d90-a412-208b-f4f3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fda6-a191-8402-9e2d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Experience" hidden="false" id="abd6-c6e6-33b7-e689" collective="false" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
@@ -2829,7 +2849,7 @@ often darned close!</description>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Bandit Equipment" hidden="false" id="1007-e1ad-5930-543b" collective="false" targetId="ca0c-d6db-50c5-8e9c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="2869-1da8-59db-592d" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="2869-1da8-59db-592d" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -3242,6 +3262,11 @@ Blackhearts are immune to Fear, and never have to take All-Alone tests (they pr
             <cost name="pts" hidden="false" id="4905-a087-2b94-e5da" typeId="points" value="0"/>
             <cost name="Warband Rating" hidden="false" id="2fac-45a4-fd44-fd46" typeId="wb-rating" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Unit Group" hidden="false" id="638d-1e88-e887-076a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28d3-220f-b6d2-96ff" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
