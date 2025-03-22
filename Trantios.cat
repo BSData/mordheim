@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4da7-a3e6-31d6-ec66" name="Trantios (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4da7-a3e6-31d6-ec66" name="Trantios (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="5e7b-bf3d-fabd-164f" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -36,7 +36,11 @@
         <selectionEntryGroup name="Missile Weapons" hidden="false" id="c66f-2e58-5824-63aa" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="221e-c6f1-caee-973" collective="false" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="57cb-e871-e6d2-bc90" type="selectionEntry" targetId="da24-6a7f-725b-5bcb"/>
+            <entryLink import="true" name="Dueling Pistol" hidden="false" id="57cb-e871-e6d2-bc90" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
+              <modifiers>
+                <modifier type="set" value="25" field="points"/>
+              </modifiers>
+            </entryLink>
             <entryLink import="true" name="Longbow" hidden="false" id="4f1e-94fd-7974-7a6a" type="selectionEntry" targetId="afa2-2d5c-54dd-d435"/>
             <entryLink import="true" name="Crossbow" hidden="false" id="dbdb-82f6-dd36-1e78" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
             <entryLink import="true" name="Handgun" hidden="false" id="bf68-14b6-c2f-8cba" type="selectionEntry" targetId="7f5a-d04d-153d-d334"/>
@@ -92,7 +96,11 @@
         <selectionEntryGroup name="Missile Weapons" hidden="false" id="2bf3-19cb-cf93-f997" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="71e2-f01e-ec8e-bcce" collective="false" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="d541-e7e1-a412-590e" type="selectionEntry" targetId="da24-6a7f-725b-5bcb"/>
+            <entryLink import="true" name="Dueling Pistol" hidden="false" id="d541-e7e1-a412-590e" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
+              <modifiers>
+                <modifier type="set" value="25" field="points"/>
+              </modifiers>
+            </entryLink>
             <entryLink import="true" name="Bow" hidden="false" id="d3-4aad-da2a-fb2" type="selectionEntry" targetId="311a-bf3f-67ff-46e7"/>
             <entryLink import="true" name="Crossbow" hidden="false" id="9bc6-6b8d-9b37-4930" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
           </entryLinks>
@@ -272,7 +280,7 @@
         <entryLink import="true" name="Tilean Equipment" hidden="false" id="1efd-e6fc-8a68-47e3" collective="false" targetId="2948-21fa-bcf2-6d39" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="255e-5848-47b3-21ba" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="8e68-b2c9-af2f-2a06" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="d18b-fd00-dfc0-6f34" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="d18b-fd00-dfc0-6f34" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -569,7 +577,7 @@
         <entryLink import="true" name="Tilean Equipment" hidden="false" id="1033-a34c-8d7-933e" collective="false" targetId="2948-21fa-bcf2-6d39" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="7709-ddff-dbff-c3ec" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="6a81-c4cf-d896-646a" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="519d-3eed-a1af-fb5a" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="519d-3eed-a1af-fb5a" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -902,7 +910,7 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Tilean Equipment" hidden="false" id="5f8e-7470-e637-535e" collective="false" targetId="2948-21fa-bcf2-6d39" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="de03-8b62-22b8-b5e0" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="de03-8b62-22b8-b5e0" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1340,7 +1348,7 @@ The Duellist counts as using a shield in close combat.</description>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Marksman Equipment" hidden="false" id="b65e-c3fa-dc26-a287" collective="false" targetId="e997-48fa-7a0d-43d9" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="cb88-3394-6eb7-4956" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="cb88-3394-6eb7-4956" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1770,7 +1778,7 @@ The Duellist counts as using a shield in close combat.</description>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Tilean Equipment" hidden="false" id="ffed-2e19-6947-42c5" collective="false" targetId="2948-21fa-bcf2-6d39" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="a1b-c7e5-5d9f-d483" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="a1b-c7e5-5d9f-d483" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2197,7 +2205,7 @@ The Duellist counts as using a shield in close combat.</description>
         <entryLink import="true" name="Tilean Equipment" hidden="false" id="c1f4-6ed6-c3dd-aae8" collective="false" targetId="2948-21fa-bcf2-6d39" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="234d-35b9-5e96-eb80" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="c9c0-55af-f354-3474" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="8609-cd72-96fc-13d6" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="8609-cd72-96fc-13d6" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
