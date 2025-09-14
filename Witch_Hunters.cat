@@ -183,7 +183,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="08cc3960-62eb-bff3-603d-9ae0ae57056b" name="Skills" hidden="false" collective="false" import="true" targetId="39deaab7-93cc-922b-d866-f7368e56495a" type="selectionEntryGroup"/>
+            <entryLink id="08cc3960-62eb-bff3-603d-9ae0ae57056b" name="Skills" hidden="false" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -417,9 +417,9 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="b72d2347-64d2-8e68-c463-0e82a6723ff5" name="Combat Skills" hidden="false" collective="false" import="true" targetId="bd8689c9-bc5c-df7b-87b9-aad34e27a295" type="selectionEntryGroup"/>
-            <entryLink id="6943bf03-8cfb-db4c-bd0a-f04356ec15ec" name="Strength Skills" hidden="false" collective="false" import="true" targetId="9e76820a-3a93-f94a-a7c7-d31889583e06" type="selectionEntryGroup"/>
-            <entryLink id="bb755636-0b5c-95f0-6f44-ccb4319cb7f2" name="Academic Skills" hidden="false" collective="false" import="true" targetId="f8cb9c64-fd91-ecfd-2e82-5ec10ec7ef53" type="selectionEntryGroup"/>
+            <entryLink id="b72d2347-64d2-8e68-c463-0e82a6723ff5" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
+            <entryLink id="6943bf03-8cfb-db4c-bd0a-f04356ec15ec" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
+            <entryLink id="bb755636-0b5c-95f0-6f44-ccb4319cb7f2" name="Academic Skills" hidden="false" collective="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -624,10 +624,10 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="17612618-33cb-0ad5-6325-cdb50c7f936f" name="Academic Skills" hidden="false" collective="false" import="true" targetId="f8cb9c64-fd91-ecfd-2e82-5ec10ec7ef53" type="selectionEntryGroup"/>
-            <entryLink id="b730009d-1a25-5605-9c34-f59b2da1cb69" hidden="false" collective="false" import="true" targetId="bd8689c9-bc5c-df7b-87b9-aad34e27a295" type="selectionEntryGroup" name="Combat Skills"/>
-            <entryLink id="9a2384e1-c454-d434-2f2c-8a881c7ebacb" hidden="false" collective="false" import="true" targetId="2a62fe9a-16ae-b087-f5a5-47f19da37c89" type="selectionEntryGroup" name="Speed Skills"/>
-            <entryLink id="bc17-38e9-4027-5cb8" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="52007ee0-cc99-b312-3650-cfab391e476c" type="selectionEntryGroup"/>
+            <entryLink id="17612618-33cb-0ad5-6325-cdb50c7f936f" name="Academic Skills" hidden="false" collective="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
+            <entryLink id="b730009d-1a25-5605-9c34-f59b2da1cb69" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup" name="Combat Skills"/>
+            <entryLink id="9a2384e1-c454-d434-2f2c-8a881c7ebacb" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" name="Speed Skills"/>
+            <entryLink id="bc17-38e9-4027-5cb8" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -817,11 +817,11 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="bc04a2e1-90c1-425b-78fa-a13e49cfb179" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="52007ee0-cc99-b312-3650-cfab391e476c" type="selectionEntryGroup"/>
-            <entryLink id="c171b0c2-f16f-eb30-9160-efc35795a11b" name="Strength Skills" hidden="false" collective="false" import="true" targetId="9e76820a-3a93-f94a-a7c7-d31889583e06" type="selectionEntryGroup"/>
-            <entryLink id="1a55ca39-174e-b3bd-5c43-b37a709bd42f" name="Speed Skills" hidden="false" collective="false" import="true" targetId="2a62fe9a-16ae-b087-f5a5-47f19da37c89" type="selectionEntryGroup"/>
-            <entryLink id="7dfe147c-aba4-13bc-bf11-383a8c4f97f3" name="Combat Skills" hidden="false" collective="false" import="true" targetId="bd8689c9-bc5c-df7b-87b9-aad34e27a295" type="selectionEntryGroup"/>
-            <entryLink id="1cd8773e-95ba-8894-60bc-b9371a36d1b4" name="Academic Skills" hidden="false" collective="false" import="true" targetId="f8cb9c64-fd91-ecfd-2e82-5ec10ec7ef53" type="selectionEntryGroup"/>
+            <entryLink id="bc04a2e1-90c1-425b-78fa-a13e49cfb179" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
+            <entryLink id="c171b0c2-f16f-eb30-9160-efc35795a11b" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
+            <entryLink id="1a55ca39-174e-b3bd-5c43-b37a709bd42f" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
+            <entryLink id="7dfe147c-aba4-13bc-bf11-383a8c4f97f3" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
+            <entryLink id="1cd8773e-95ba-8894-60bc-b9371a36d1b4" name="Academic Skills" hidden="false" collective="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1012,7 +1012,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="1db86a95-b3e2-8bef-db44-a3ad9861e582" name="Skills" hidden="false" collective="false" import="true" targetId="39deaab7-93cc-922b-d866-f7368e56495a" type="selectionEntryGroup"/>
+            <entryLink id="1db86a95-b3e2-8bef-db44-a3ad9861e582" name="Skills" hidden="false" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
