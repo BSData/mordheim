@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="65788600-7fa0-eb7c-b1a3-36d0c3c506c6" name="Witch Hunters (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="65788600-7fa0-eb7c-b1a3-36d0c3c506c6" name="Witch Hunters (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" name="Flagellants" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -118,7 +118,7 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="074d9cc5-ab18-5302-91eb-29f4f9d61bcc-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="074d9cc5-ab18-5302-91eb-29f4f9d61bcc-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true" name="Henchmen"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="38f17f5d-5cb6-91b3-1e1a-97d8f3eb211e" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -127,9 +127,10 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="7de5f8f9-b8fb-02db-1b9d-37658dd743e8" hidden="false" collective="false" import="true" targetId="b54b39f1-0daa-eabc-e0b8-74f83d2a19e0" type="selectionEntryGroup"/>
-            <entryLink id="ffd3fea9-533a-d8fb-861e-c66a61197d55" hidden="false" collective="false" import="true" targetId="ab4e5484-acd3-b553-7694-5e60e6c7e3ae" type="selectionEntryGroup"/>
-            <entryLink id="0b286487-3d73-3d5e-0541-d2aa37df2c11" hidden="false" collective="false" import="true" targetId="cd413ae9-4927-5bae-ff6e-93723ba44113" type="selectionEntryGroup"/>
+            <entryLink id="7de5f8f9-b8fb-02db-1b9d-37658dd743e8" hidden="false" collective="false" import="true" targetId="b54b39f1-0daa-eabc-e0b8-74f83d2a19e0" type="selectionEntryGroup" name="Hand to Hand Weapons"/>
+            <entryLink id="ffd3fea9-533a-d8fb-861e-c66a61197d55" hidden="false" collective="false" import="true" targetId="ab4e5484-acd3-b553-7694-5e60e6c7e3ae" type="selectionEntryGroup" name="Armor"/>
+            <entryLink id="0b286487-3d73-3d5e-0541-d2aa37df2c11" hidden="false" collective="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup" name="Miscellaneous Equipment"/>
+            <entryLink import="true" name="Miscellaneous Equipment (1a)" hidden="false" id="6103-d482-7c1f-af96" type="selectionEntryGroup" targetId="27a7-c1bf-0c40-ff21"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -142,7 +143,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="f7f4f8bf-03e2-f72b-50df-d5db42554776" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup"/>
+            <entryLink id="f7f4f8bf-03e2-f72b-50df-d5db42554776" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" name="Characteristic Increases"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -162,7 +163,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6c891bb7-ea61-b861-205b-c6c2af3abbc5" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup"/>
+            <entryLink id="6c891bb7-ea61-b861-205b-c6c2af3abbc5" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup" name="Serious Injuries"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -192,7 +193,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="faa8d372-77d4-33a4-1a08-49fe27633c52" name="Experience" hidden="false" collective="false" import="true" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry"/>
-        <entryLink id="f57b6a1f-5d40-44cc-70b1-45f6d23525c3" hidden="false" collective="false" import="true" targetId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="selectionEntry"/>
+        <entryLink id="f57b6a1f-5d40-44cc-70b1-45f6d23525c3" hidden="false" collective="false" import="true" targetId="0f2c78d6-e019-6b88-136a-9e00031645e5" type="selectionEntry" name="Promoted"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="40"/>
@@ -205,7 +206,7 @@
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32e9-0457-f9f7-0ba4" type="min"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="83ade99f-e9ef-d25a-59ac-ca3f3def011c-a31acb39-8ce9-d6d7-bcc9-f3144d63db48" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
+        <categoryLink id="83ade99f-e9ef-d25a-59ac-ca3f3def011c-a31acb39-8ce9-d6d7-bcc9-f3144d63db48" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true" name="Stash"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d56d-57ab-3b6d-8dd0" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade">
@@ -217,7 +218,7 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="dad9014c-4be3-4cca-3345-5808f02cbcce" name="Gold" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
-        <entryLink id="6f878f2b-fa2b-6e2c-5bfe-a94012499470" hidden="false" collective="false" import="true" targetId="50dfad7a-35b1-bee6-657c-d603b181977d" type="selectionEntryGroup"/>
+        <entryLink id="6f878f2b-fa2b-6e2c-5bfe-a94012499470" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup" name="Equipment"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -249,7 +250,7 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="889151de-4826-5f00-5dbb-fcf546ebedbb-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="889151de-4826-5f00-5dbb-fcf546ebedbb-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true" name="Henchmen"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="points" value="15"/>
@@ -368,7 +369,7 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="93700e68-f80c-ad1c-b5cd-06fd3c7e7537-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="93700e68-f80c-ad1c-b5cd-06fd3c7e7537-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e7daa68c-56da-e5c0-ff61-454d0e70fc3a" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -377,7 +378,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="94ed96f9-bb95-c6f3-7c64-ada053e4eb0f" hidden="false" collective="false" import="true" targetId="50dfad7a-35b1-bee6-657c-d603b181977d" type="selectionEntryGroup"/>
+            <entryLink id="94ed96f9-bb95-c6f3-7c64-ada053e4eb0f" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup" name="Equipment"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -390,7 +391,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="63cd0cac-bdf3-54cc-7b1f-9346ca7ac777" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup"/>
+            <entryLink id="63cd0cac-bdf3-54cc-7b1f-9346ca7ac777" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup" name="Serious Injuries"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -403,7 +404,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="9531e450-451a-d77b-e6c2-7a391c8049ab" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup"/>
+            <entryLink id="9531e450-451a-d77b-e6c2-7a391c8049ab" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" name="Characteristic Increases"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -440,7 +441,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="42132d31-b7fe-788f-ab94-390f6e406693" hidden="false" collective="false" import="true" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry">
+        <entryLink id="42132d31-b7fe-788f-ab94-390f6e406693" hidden="false" collective="false" import="true" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry" name="Experience">
           <constraints>
             <constraint type="min" value="12" field="selections" scope="parent" shared="true" id="a85e-a040-19b9-3245"/>
           </constraints>
@@ -568,10 +569,10 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="03e89e63-561e-9a6c-2853-c809128f3a30" hidden="false" targetId="3ebe96a5-ad6a-b51d-0d99-f62dfb2a807c" type="rule"/>
+        <infoLink id="03e89e63-561e-9a6c-2853-c809128f3a30" hidden="false" targetId="3ebe96a5-ad6a-b51d-0d99-f62dfb2a807c" type="rule" name="Hatred"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="83ab8692-01da-65c5-af52-a55d4800f012-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="83ab8692-01da-65c5-af52-a55d4800f012-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="4c359fa9-8570-3c9d-56b9-c03be92aa0f6" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -580,7 +581,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="b65f0ae8-d6c7-c6fb-efe3-b989d021abb3" hidden="false" collective="false" import="true" targetId="50dfad7a-35b1-bee6-657c-d603b181977d" type="selectionEntryGroup"/>
+            <entryLink id="b65f0ae8-d6c7-c6fb-efe3-b989d021abb3" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup" name="Equipment"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -593,7 +594,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="eb542e2f-5c07-65f8-8d74-a73a4bae85a0" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup"/>
+            <entryLink id="eb542e2f-5c07-65f8-8d74-a73a4bae85a0" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup" name="Serious Injuries"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -606,7 +607,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="44fd38ee-cf49-6b20-69b1-014f6828bab0" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup">
+            <entryLink id="44fd38ee-cf49-6b20-69b1-014f6828bab0" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" name="Characteristic Increases">
               <modifiers>
                 <modifier type="increment" field="minSelections" value="0"/>
               </modifiers>
@@ -624,8 +625,8 @@
           </constraints>
           <entryLinks>
             <entryLink id="17612618-33cb-0ad5-6325-cdb50c7f936f" name="Academic Skills" hidden="false" collective="false" import="true" targetId="f8cb9c64-fd91-ecfd-2e82-5ec10ec7ef53" type="selectionEntryGroup"/>
-            <entryLink id="b730009d-1a25-5605-9c34-f59b2da1cb69" hidden="false" collective="false" import="true" targetId="bd8689c9-bc5c-df7b-87b9-aad34e27a295" type="selectionEntryGroup"/>
-            <entryLink id="9a2384e1-c454-d434-2f2c-8a881c7ebacb" hidden="false" collective="false" import="true" targetId="2a62fe9a-16ae-b087-f5a5-47f19da37c89" type="selectionEntryGroup"/>
+            <entryLink id="b730009d-1a25-5605-9c34-f59b2da1cb69" hidden="false" collective="false" import="true" targetId="bd8689c9-bc5c-df7b-87b9-aad34e27a295" type="selectionEntryGroup" name="Combat Skills"/>
+            <entryLink id="9a2384e1-c454-d434-2f2c-8a881c7ebacb" hidden="false" collective="false" import="true" targetId="2a62fe9a-16ae-b087-f5a5-47f19da37c89" type="selectionEntryGroup" name="Speed Skills"/>
             <entryLink id="bc17-38e9-4027-5cb8" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="52007ee0-cc99-b312-3650-cfab391e476c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
@@ -635,7 +636,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="a7d4eb84-400b-29e8-339c-fceebcba1553" hidden="false" collective="false" import="true" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry">
+        <entryLink id="a7d4eb84-400b-29e8-339c-fceebcba1553" hidden="false" collective="false" import="true" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry" name="Experience">
           <constraints>
             <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="b7fc-69f4-c08b-6f3b"/>
           </constraints>
@@ -764,11 +765,11 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="897a9a6b-fbef-690f-78d8-886616cbbe22" hidden="false" targetId="e23bd4fb-c553-13cf-2ab8-252167663a44" type="rule"/>
-        <infoLink id="aba4bafa-4856-31af-bf3f-ab9c374b8cac" hidden="false" targetId="3ebe96a5-ad6a-b51d-0d99-f62dfb2a807c" type="rule"/>
+        <infoLink id="897a9a6b-fbef-690f-78d8-886616cbbe22" hidden="false" targetId="e23bd4fb-c553-13cf-2ab8-252167663a44" type="rule" name="Leader"/>
+        <infoLink id="aba4bafa-4856-31af-bf3f-ab9c374b8cac" hidden="false" targetId="3ebe96a5-ad6a-b51d-0d99-f62dfb2a807c" type="rule" name="Hatred"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="83acbe09-ec66-c45c-0f5b-1a9e0017016e-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="83acbe09-ec66-c45c-0f5b-1a9e0017016e-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="a359fe11-ad97-3216-79e2-42fa0fcef557" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -777,7 +778,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="265b97b3-483f-58f3-f7a4-780ba166d059" hidden="false" collective="false" import="true" targetId="50dfad7a-35b1-bee6-657c-d603b181977d" type="selectionEntryGroup"/>
+            <entryLink id="265b97b3-483f-58f3-f7a4-780ba166d059" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup" name="Equipment"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -790,7 +791,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="4da70b4b-2903-8bb7-49aa-a8226f14561b" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup"/>
+            <entryLink id="4da70b4b-2903-8bb7-49aa-a8226f14561b" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup" name="Serious Injuries"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -803,7 +804,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="4e184abe-fdce-287e-ab88-b98585f03810" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup"/>
+            <entryLink id="4e184abe-fdce-287e-ab88-b98585f03810" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" name="Characteristic Increases"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -829,7 +830,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="9e2cb516-6834-4a3e-ec39-9855b3d6ed2d" hidden="false" collective="false" import="true" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry">
+        <entryLink id="9e2cb516-6834-4a3e-ec39-9855b3d6ed2d" hidden="false" collective="false" import="true" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry" name="Experience">
           <constraints>
             <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="3821-8808-b3fe-ec45"/>
           </constraints>
@@ -949,7 +950,7 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="16763088-15c1-4f72-fdfe-153003be4a24-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="16763088-15c1-4f72-fdfe-153003be4a24-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true" name="Henchmen"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="579963c2-b42f-2254-f6e0-c4746cd13fc4" name="Equipment" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -958,7 +959,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="04058374-6be1-5c6b-05d9-c5b9abf9f92c" hidden="false" collective="false" import="true" targetId="50dfad7a-35b1-bee6-657c-d603b181977d" type="selectionEntryGroup"/>
+            <entryLink id="04058374-6be1-5c6b-05d9-c5b9abf9f92c" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup" name="Equipment"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -971,7 +972,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="361cac7b-215e-9a22-6c51-c04e043f825d" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup"/>
+            <entryLink id="361cac7b-215e-9a22-6c51-c04e043f825d" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" name="Characteristic Increases"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -991,7 +992,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="78716ad7-86df-39de-eb59-c4c01cfa1143" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup"/>
+            <entryLink id="78716ad7-86df-39de-eb59-c4c01cfa1143" hidden="false" collective="false" import="true" targetId="2ace8f8f-6f26-2b7f-5407-332ed11d0355" type="selectionEntryGroup" name="Serious Injuries"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1035,7 +1036,7 @@
     </selectionEntry>
   </selectionEntries>
   <infoLinks>
-    <infoLink id="bc6ab1b0-ad56-fcef-5ed7-968f231af91b" hidden="false" targetId="bd2100cc-65f9-2311-e4b9-d0e6830884c3" type="rule"/>
+    <infoLink id="bc6ab1b0-ad56-fcef-5ed7-968f231af91b" hidden="false" targetId="bd2100cc-65f9-2311-e4b9-d0e6830884c3" type="rule" name="EXP Adancement"/>
   </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8acf5ee1-3430-be22-ec94-15b12e15e497" name="+1 A" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1347,7 +1348,7 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="891fc816-9a6e-c06b-c2a4-bcefa6bf0972" hidden="false" targetId="3207d292-6501-25cb-d869-63b0987c78f6" type="rule"/>
+            <infoLink id="891fc816-9a6e-c06b-c2a4-bcefa6bf0972" hidden="false" targetId="3207d292-6501-25cb-d869-63b0987c78f6" type="rule" name="Avoid stun:"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="10"/>
@@ -1378,7 +1379,7 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="796187a0-6236-3270-d63f-57b3905eab58" hidden="false" targetId="f1630f42-6b8b-0d73-b6a6-d2626cd8839b" type="rule"/>
+            <infoLink id="796187a0-6236-3270-d63f-57b3905eab58" hidden="false" targetId="f1630f42-6b8b-0d73-b6a6-d2626cd8839b" type="rule" name="Parry"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="5"/>
@@ -1395,7 +1396,7 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink id="9ef4302a-5af6-66e4-fb45-6b907752ccff" hidden="false" collective="false" import="true" targetId="bf7c1f26-0442-54db-cacc-44dc499dcebc" type="selectionEntry"/>
+            <entryLink id="9ef4302a-5af6-66e4-fb45-6b907752ccff" hidden="false" collective="false" import="true" targetId="bf7c1f26-0442-54db-cacc-44dc499dcebc" type="selectionEntry" name="-1 M"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="80"/>
@@ -1444,15 +1445,15 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
         <constraint field="points" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="5f33b879-84c4-0192-3962-e5f1510f30b8" hidden="false" collective="false" import="true" targetId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" type="selectionEntry"/>
-        <entryLink id="90e572b8-8f37-3902-7e4d-0d519d3320e9" hidden="false" collective="false" import="true" targetId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" type="selectionEntry"/>
-        <entryLink id="e57c34e4-cb6c-ca8c-a3b8-5ab15cc7a293" hidden="false" collective="false" import="true" targetId="abc4f440-9124-351f-831d-aaf5be4d3ae4" type="selectionEntry"/>
-        <entryLink id="e6f2ef6e-e9c6-5c03-e5df-4f750f71eec1" hidden="false" collective="false" import="true" targetId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" type="selectionEntry"/>
-        <entryLink id="a1eb369a-7395-62c1-8569-e298d930a5b6" hidden="false" collective="false" import="true" targetId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" type="selectionEntry"/>
-        <entryLink id="b799bf73-d1a2-3643-6c91-e2e61027dac7" hidden="false" collective="false" import="true" targetId="06c6e571-9da5-51a2-4053-aeca9035e1a2" type="selectionEntry"/>
-        <entryLink id="acaee1cb-5fb9-77c7-b151-fe3877681535" hidden="false" collective="false" import="true" targetId="bf7c1f26-0442-54db-cacc-44dc499dcebc" type="selectionEntry"/>
-        <entryLink id="f53d9f32-0d34-4ee1-7489-edaaa6b9c60b" hidden="false" collective="false" import="true" targetId="043d62b3-76f8-822e-3d67-9c3806889918" type="selectionEntry"/>
-        <entryLink id="3dacaef2-0a84-fb18-9e2d-46da1f65b2f1" hidden="false" collective="false" import="true" targetId="bbd9ff4c-4aa7-432d-a143-b786400cef79" type="selectionEntry"/>
+        <entryLink id="5f33b879-84c4-0192-3962-e5f1510f30b8" hidden="false" collective="false" import="true" targetId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" type="selectionEntry" name="-1 I"/>
+        <entryLink id="90e572b8-8f37-3902-7e4d-0d519d3320e9" hidden="false" collective="false" import="true" targetId="96c7d130-2a55-a926-fe7b-9ea7edc0f8a1" type="selectionEntry" name="-1 S"/>
+        <entryLink id="e57c34e4-cb6c-ca8c-a3b8-5ab15cc7a293" hidden="false" collective="false" import="true" targetId="abc4f440-9124-351f-831d-aaf5be4d3ae4" type="selectionEntry" name="-1 WS"/>
+        <entryLink id="e6f2ef6e-e9c6-5c03-e5df-4f750f71eec1" hidden="false" collective="false" import="true" targetId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" type="selectionEntry" name="-1 BS"/>
+        <entryLink id="a1eb369a-7395-62c1-8569-e298d930a5b6" hidden="false" collective="false" import="true" targetId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" type="selectionEntry" name="-1 T"/>
+        <entryLink id="b799bf73-d1a2-3643-6c91-e2e61027dac7" hidden="false" collective="false" import="true" targetId="06c6e571-9da5-51a2-4053-aeca9035e1a2" type="selectionEntry" name="-1 A"/>
+        <entryLink id="acaee1cb-5fb9-77c7-b151-fe3877681535" hidden="false" collective="false" import="true" targetId="bf7c1f26-0442-54db-cacc-44dc499dcebc" type="selectionEntry" name="-1 M"/>
+        <entryLink id="f53d9f32-0d34-4ee1-7489-edaaa6b9c60b" hidden="false" collective="false" import="true" targetId="043d62b3-76f8-822e-3d67-9c3806889918" type="selectionEntry" name="-1 LD"/>
+        <entryLink id="3dacaef2-0a84-fb18-9e2d-46da1f65b2f1" hidden="false" collective="false" import="true" targetId="bbd9ff4c-4aa7-432d-a143-b786400cef79" type="selectionEntry" name="-1 W"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="36e117d8-419f-59b9-e337-512db3c6c990" name="Characteristic Increases" hidden="false" collective="false" import="true">
@@ -1467,15 +1468,15 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
         <constraint field="points" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="91ba12d9-83b5-9996-bf4d-36d7f3ccacfd" hidden="false" collective="false" import="true" targetId="0cbce569-483e-fc61-9a46-75bb7f52573a" type="selectionEntry"/>
-        <entryLink id="b3bcb90d-dc4a-d879-079a-892e6dc4cd37" hidden="false" collective="false" import="true" targetId="62be0dba-2c77-76b0-3da3-48c05611f170" type="selectionEntry"/>
-        <entryLink id="05840d87-e7fc-9f6e-b4be-d98f6ef21d1d" hidden="false" collective="false" import="true" targetId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" type="selectionEntry"/>
-        <entryLink id="0a43461b-4860-a310-ca97-3639cc453a82" hidden="false" collective="false" import="true" targetId="7e03b263-c206-09f3-f9d3-47c0c9294235" type="selectionEntry"/>
-        <entryLink id="d5c24639-3822-d97d-cc82-6d5e18b39062" hidden="false" collective="false" import="true" targetId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" type="selectionEntry"/>
-        <entryLink id="ab62eab6-d82b-714b-7a9b-4135b49e7a12" hidden="false" collective="false" import="true" targetId="8acf5ee1-3430-be22-ec94-15b12e15e497" type="selectionEntry"/>
-        <entryLink id="461ea6a4-b5be-2975-5802-0d0f3634e774" hidden="false" collective="false" import="true" targetId="492ef626-87b8-7b39-378d-38fbd1ffb131" type="selectionEntry"/>
-        <entryLink id="498df122-099e-8a4f-7a1c-5b63aad30226" hidden="false" collective="false" import="true" targetId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" type="selectionEntry"/>
-        <entryLink id="5be5042d-302f-7f79-20d6-ece5316b53b7" hidden="false" collective="false" import="true" targetId="a3c87526-fae5-8945-97c3-057d97df69e7" type="selectionEntry"/>
+        <entryLink id="91ba12d9-83b5-9996-bf4d-36d7f3ccacfd" hidden="false" collective="false" import="true" targetId="0cbce569-483e-fc61-9a46-75bb7f52573a" type="selectionEntry" name="+1 I"/>
+        <entryLink id="b3bcb90d-dc4a-d879-079a-892e6dc4cd37" hidden="false" collective="false" import="true" targetId="62be0dba-2c77-76b0-3da3-48c05611f170" type="selectionEntry" name="+1 S"/>
+        <entryLink id="05840d87-e7fc-9f6e-b4be-d98f6ef21d1d" hidden="false" collective="false" import="true" targetId="b648a959-c4f1-e4dd-7f0b-7e0e9fcec205" type="selectionEntry" name="+1 WS"/>
+        <entryLink id="0a43461b-4860-a310-ca97-3639cc453a82" hidden="false" collective="false" import="true" targetId="7e03b263-c206-09f3-f9d3-47c0c9294235" type="selectionEntry" name="+1 BS"/>
+        <entryLink id="d5c24639-3822-d97d-cc82-6d5e18b39062" hidden="false" collective="false" import="true" targetId="ef8311cb-ceb9-5a7c-9d6b-9b1e0de9018d" type="selectionEntry" name="+1 T"/>
+        <entryLink id="ab62eab6-d82b-714b-7a9b-4135b49e7a12" hidden="false" collective="false" import="true" targetId="8acf5ee1-3430-be22-ec94-15b12e15e497" type="selectionEntry" name="+1 A"/>
+        <entryLink id="461ea6a4-b5be-2975-5802-0d0f3634e774" hidden="false" collective="false" import="true" targetId="492ef626-87b8-7b39-378d-38fbd1ffb131" type="selectionEntry" name="+1 M"/>
+        <entryLink id="498df122-099e-8a4f-7a1c-5b63aad30226" hidden="false" collective="false" import="true" targetId="e6a2720c-06c4-d495-d8e5-0eeb2009570a" type="selectionEntry" name="+1 LD"/>
+        <entryLink id="5be5042d-302f-7f79-20d6-ece5316b53b7" hidden="false" collective="false" import="true" targetId="a3c87526-fae5-8945-97c3-057d97df69e7" type="selectionEntry" name="+1 W"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="bd8689c9-bc5c-df7b-87b9-aad34e27a295" name="Combat Skills" hidden="false" collective="false" import="true">
@@ -1589,10 +1590,10 @@ only applies when they are armed with normal swords or weeping blades, and not w
         <constraint field="points" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="5e3bad32-8bfc-8a94-d8dc-30ef553381b9" hidden="false" collective="false" import="true" targetId="b54b39f1-0daa-eabc-e0b8-74f83d2a19e0" type="selectionEntryGroup"/>
-        <entryLink id="bdeec097-c1c3-0357-6493-474bb50085f4" hidden="false" collective="false" import="true" targetId="38175608-757c-9eb5-59a8-2f7b6b1019e2" type="selectionEntryGroup"/>
-        <entryLink id="66c22b80-dbbb-9f33-28bd-101f588861d6" hidden="false" collective="false" import="true" targetId="cd413ae9-4927-5bae-ff6e-93723ba44113" type="selectionEntryGroup"/>
-        <entryLink id="453eec21-f71b-52b1-ff0e-d7a05c4600e4" hidden="false" collective="false" import="true" targetId="ab4e5484-acd3-b553-7694-5e60e6c7e3ae" type="selectionEntryGroup"/>
+        <entryLink id="5e3bad32-8bfc-8a94-d8dc-30ef553381b9" hidden="false" collective="false" import="true" targetId="b54b39f1-0daa-eabc-e0b8-74f83d2a19e0" type="selectionEntryGroup" name="Hand to Hand Weapons"/>
+        <entryLink id="bdeec097-c1c3-0357-6493-474bb50085f4" hidden="false" collective="false" import="true" targetId="38175608-757c-9eb5-59a8-2f7b6b1019e2" type="selectionEntryGroup" name="Missile Weapons"/>
+        <entryLink id="66c22b80-dbbb-9f33-28bd-101f588861d6" hidden="false" collective="false" import="true" targetId="cd413ae9-4927-5bae-ff6e-93723ba44113" type="selectionEntryGroup" name="War Gear"/>
+        <entryLink id="453eec21-f71b-52b1-ff0e-d7a05c4600e4" hidden="false" collective="false" import="true" targetId="ab4e5484-acd3-b553-7694-5e60e6c7e3ae" type="selectionEntryGroup" name="Armor"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="b54b39f1-0daa-eabc-e0b8-74f83d2a19e0" name="Hand to Hand Weapons" hidden="false" collective="false" import="true">
@@ -1617,7 +1618,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="2903edbc-e21e-b7d5-9d6e-2d0b2101078e" hidden="false" targetId="c03b3d4d-30bf-c3b6-4992-b0b5b5ef9617" type="rule"/>
+            <infoLink id="2903edbc-e21e-b7d5-9d6e-2d0b2101078e" hidden="false" targetId="c03b3d4d-30bf-c3b6-4992-b0b5b5ef9617" type="rule" name="+1 Enemy armour save:"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="a022bf96-d456-1fd8-41e6-fd0882f5ed93" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1628,7 +1629,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="65f97af6-c4ac-6a24-f0a3-3fd167c76ccf" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule"/>
+                <infoLink id="65f97af6-c4ac-6a24-f0a3-3fd167c76ccf" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule" name="Gromril weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1643,7 +1644,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="1beea8a7-1b3a-bd6d-3d7f-56c31b8745eb" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule"/>
+                <infoLink id="1beea8a7-1b3a-bd6d-3d7f-56c31b8745eb" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule" name="Ithilmar weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1674,7 +1675,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="319ab830-e85b-038b-6c42-244e1427e054" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule"/>
+                <infoLink id="319ab830-e85b-038b-6c42-244e1427e054" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule" name="Gromril weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1689,7 +1690,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="84aa8675-4cae-ed96-ae9c-2d9b86a4730f" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule"/>
+                <infoLink id="84aa8675-4cae-ed96-ae9c-2d9b86a4730f" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule" name="Ithilmar weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1712,8 +1713,8 @@ only applies when they are armed with normal swords or weeping blades, and not w
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="cc595512-627a-9d6d-924c-f138cd14f4b8" hidden="false" targetId="441f52ae-32a2-44f9-1784-c76c65bfd452" type="rule"/>
-            <infoLink id="dabc2113-6e8f-c846-13b3-06062efcb4a5" hidden="false" targetId="140e74d1-bf16-356b-c7d1-08b3bb5052b5" type="rule"/>
+            <infoLink id="cc595512-627a-9d6d-924c-f138cd14f4b8" hidden="false" targetId="441f52ae-32a2-44f9-1784-c76c65bfd452" type="rule" name="Heavy"/>
+            <infoLink id="dabc2113-6e8f-c846-13b3-06062efcb4a5" hidden="false" targetId="140e74d1-bf16-356b-c7d1-08b3bb5052b5" type="rule" name="Difficult To Use"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="37972d57-6f98-64fc-0e7c-cc3c30174a11" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1724,7 +1725,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="84ce2a10-2169-638f-af64-ad18b4abea67" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule"/>
+                <infoLink id="84ce2a10-2169-638f-af64-ad18b4abea67" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule" name="Gromril weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1739,7 +1740,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="517b922e-a3df-b54a-1b3b-f71bf5f70507" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule"/>
+                <infoLink id="517b922e-a3df-b54a-1b3b-f71bf5f70507" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule" name="Ithilmar weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1762,7 +1763,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="5201fc31-a7c3-2e79-99e0-fa98833d9d37" hidden="false" targetId="f1630f42-6b8b-0d73-b6a6-d2626cd8839b" type="rule"/>
+            <infoLink id="5201fc31-a7c3-2e79-99e0-fa98833d9d37" hidden="false" targetId="f1630f42-6b8b-0d73-b6a6-d2626cd8839b" type="rule" name="Parry"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="fcc1d76e-a482-00a0-03fb-fecd9deb538e" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1773,7 +1774,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="a4b5c477-37fe-5849-30d9-2531ecaa7ff7" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule"/>
+                <infoLink id="a4b5c477-37fe-5849-30d9-2531ecaa7ff7" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule" name="Gromril weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1788,7 +1789,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="37de33d5-c482-7f85-3ea0-439af226c196" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule"/>
+                <infoLink id="37de33d5-c482-7f85-3ea0-439af226c196" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule" name="Ithilmar weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1811,8 +1812,8 @@ only applies when they are armed with normal swords or weeping blades, and not w
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="830f646d-0b52-490f-e700-bd8eeeb5c604" hidden="false" targetId="a9f238c7-bf82-807c-f964-888f9c9d0f26" type="rule"/>
-            <infoLink id="b48163a2-7a87-a54e-9d24-b34d1c0b5646" hidden="false" targetId="58c7eaa3-75c5-8aad-7374-f0275b30848d" type="rule"/>
+            <infoLink id="830f646d-0b52-490f-e700-bd8eeeb5c604" hidden="false" targetId="a9f238c7-bf82-807c-f964-888f9c9d0f26" type="rule" name="Strike Last"/>
+            <infoLink id="b48163a2-7a87-a54e-9d24-b34d1c0b5646" hidden="false" targetId="58c7eaa3-75c5-8aad-7374-f0275b30848d" type="rule" name="Two Handed"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="eafc9bba-c5a2-09d3-627c-c5c102a70528" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1823,7 +1824,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="c2fa56f0-ec77-8ed4-b6ed-b2b4102b39f4" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule"/>
+                <infoLink id="c2fa56f0-ec77-8ed4-b6ed-b2b4102b39f4" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule" name="Gromril weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1838,7 +1839,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="235be023-1770-b414-194e-d66425a7396d" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule"/>
+                <infoLink id="235be023-1770-b414-194e-d66425a7396d" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule" name="Ithilmar weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1861,9 +1862,9 @@ only applies when they are armed with normal swords or weeping blades, and not w
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="8615a7d7-d7ae-0e92-7280-21b21b7860b1" hidden="false" targetId="3fa1d399-e681-411c-ebf6-c53c307e749a" type="rule"/>
-            <infoLink id="b91f130e-8c7f-4540-b36a-8ed229d77b2e" hidden="false" targetId="be37b096-f38b-d3f0-0c72-f18572a56f1d" type="rule"/>
-            <infoLink id="8a3f73c2-103b-f779-64ac-cfa48bc470b7" hidden="false" targetId="c0c80c24-1dc8-7adc-c069-8917b30bffcd" type="rule"/>
+            <infoLink id="8615a7d7-d7ae-0e92-7280-21b21b7860b1" hidden="false" targetId="3fa1d399-e681-411c-ebf6-c53c307e749a" type="rule" name="Strike First"/>
+            <infoLink id="b91f130e-8c7f-4540-b36a-8ed229d77b2e" hidden="false" targetId="be37b096-f38b-d3f0-0c72-f18572a56f1d" type="rule" name="Unwieldy:"/>
+            <infoLink id="8a3f73c2-103b-f779-64ac-cfa48bc470b7" hidden="false" targetId="c0c80c24-1dc8-7adc-c069-8917b30bffcd" type="rule" name="Cavalry bonus"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="3ef9bbbf-a875-133e-a275-fb47750ca7d8" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1874,7 +1875,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="42026292-17a5-217e-f99c-25fa309b419b" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule"/>
+                <infoLink id="42026292-17a5-217e-f99c-25fa309b419b" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule" name="Gromril weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1889,7 +1890,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="58bcc84b-2f70-f600-a7b5-02a110b6e75e" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule"/>
+                <infoLink id="58bcc84b-2f70-f600-a7b5-02a110b6e75e" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule" name="Ithilmar weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1912,7 +1913,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="76f6cf7e-4049-c81d-da4c-be4d30027e57" hidden="false" targetId="58c7eaa3-75c5-8aad-7374-f0275b30848d" type="rule"/>
+            <infoLink id="76f6cf7e-4049-c81d-da4c-be4d30027e57" hidden="false" targetId="58c7eaa3-75c5-8aad-7374-f0275b30848d" type="rule" name="Two Handed"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="e1ae1bcf-84ef-dd9f-ae28-ed867c321df4" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1923,7 +1924,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="9677837d-8238-8d25-ded3-56208a905d5e" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule"/>
+                <infoLink id="9677837d-8238-8d25-ded3-56208a905d5e" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule" name="Gromril weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1938,7 +1939,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="0e5d8796-e2f4-428b-e7b8-0f20bdabc8ca" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule"/>
+                <infoLink id="0e5d8796-e2f4-428b-e7b8-0f20bdabc8ca" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule" name="Ithilmar weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1964,7 +1965,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="fcb546de-38fa-3421-fddd-4352073ac0e9" hidden="false" targetId="c03b3d4d-30bf-c3b6-4992-b0b5b5ef9617" type="rule"/>
+            <infoLink id="fcb546de-38fa-3421-fddd-4352073ac0e9" hidden="false" targetId="c03b3d4d-30bf-c3b6-4992-b0b5b5ef9617" type="rule" name="+1 Enemy armour save:"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1981,7 +1982,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="33fa7a2a-f6cc-c44e-004f-0495c9ba8871" hidden="false" targetId="47cdbf9b-babf-aefa-1d8a-cac5b85bf281" type="rule"/>
+            <infoLink id="33fa7a2a-f6cc-c44e-004f-0495c9ba8871" hidden="false" targetId="47cdbf9b-babf-aefa-1d8a-cac5b85bf281" type="rule" name="ConCussion"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="0608e581-cb18-48b9-ab15-a1c7143f9203" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1992,7 +1993,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="f17cab57-6f45-eb8e-169c-5a7080f1ee33" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+                <entryLink id="f17cab57-6f45-eb8e-169c-5a7080f1ee33" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -2007,7 +2008,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="364edd8f-b16c-ebcf-dea7-3ae0a9566dcf" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule"/>
+                <infoLink id="364edd8f-b16c-ebcf-dea7-3ae0a9566dcf" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule" name="Ithilmar weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -2030,7 +2031,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="e2261edb-c3b7-16ba-f602-c7137f1a68ce" hidden="false" targetId="c03b3d4d-30bf-c3b6-4992-b0b5b5ef9617" type="rule"/>
+            <infoLink id="e2261edb-c3b7-16ba-f602-c7137f1a68ce" hidden="false" targetId="c03b3d4d-30bf-c3b6-4992-b0b5b5ef9617" type="rule" name="+1 Enemy armour save:"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -2047,8 +2048,8 @@ only applies when they are armed with normal swords or weeping blades, and not w
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="9d2e1e1c-b04e-6e55-7cc7-626b85545e55" hidden="false" targetId="441f52ae-32a2-44f9-1784-c76c65bfd452" type="rule"/>
-            <infoLink id="20da9de1-f635-f482-6628-dfb37a26c21c" hidden="false" targetId="58c7eaa3-75c5-8aad-7374-f0275b30848d" type="rule"/>
+            <infoLink id="9d2e1e1c-b04e-6e55-7cc7-626b85545e55" hidden="false" targetId="441f52ae-32a2-44f9-1784-c76c65bfd452" type="rule" name="Heavy"/>
+            <infoLink id="20da9de1-f635-f482-6628-dfb37a26c21c" hidden="false" targetId="58c7eaa3-75c5-8aad-7374-f0275b30848d" type="rule" name="Two Handed"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="aaef08ab-959e-c1cb-cce3-c9409cfc73c2" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -2059,7 +2060,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="e6d5fafd-f13c-ae9e-547f-8798c51b628c" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule"/>
+                <infoLink id="e6d5fafd-f13c-ae9e-547f-8798c51b628c" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule" name="Gromril weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -2074,7 +2075,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="ccbf5b4d-a438-9450-3f80-2b30c9bd9d0a" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule"/>
+                <infoLink id="ccbf5b4d-a438-9450-3f80-2b30c9bd9d0a" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule" name="Ithilmar weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -2097,8 +2098,8 @@ only applies when they are armed with normal swords or weeping blades, and not w
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="b8259800-cc41-431e-be71-16c66412323e" hidden="false" targetId="3f6ce5a7-906d-b980-439f-9dd32ad84ed5" type="rule"/>
-            <infoLink id="46536962-cd5f-ed27-0f2e-c50558d89db5" hidden="false" targetId="c0c80c24-1dc8-7adc-c069-8917b30bffcd" type="rule"/>
+            <infoLink id="b8259800-cc41-431e-be71-16c66412323e" hidden="false" targetId="3f6ce5a7-906d-b980-439f-9dd32ad84ed5" type="rule" name="Cavalry Weapon"/>
+            <infoLink id="46536962-cd5f-ed27-0f2e-c50558d89db5" hidden="false" targetId="c0c80c24-1dc8-7adc-c069-8917b30bffcd" type="rule" name="Cavalry bonus"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="50469495-65e4-8313-fb4a-b47e3f3d4e5d" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -2109,7 +2110,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="86c39759-8365-3e28-c22c-6b990895e161" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule"/>
+                <infoLink id="86c39759-8365-3e28-c22c-6b990895e161" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule" name="Gromril weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -2124,7 +2125,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="8a29de49-1b00-b754-95fe-38caf12ea51b" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule"/>
+                <infoLink id="8a29de49-1b00-b754-95fe-38caf12ea51b" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule" name="Ithilmar weapon"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -2288,8 +2289,8 @@ a duelling pistol have a +1 bonus to hit.</description>
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="174577f9-4df4-b461-5c68-774bddd28e1a" hidden="false" targetId="a3327e94-8ff2-b189-9303-34c54c57373f" type="rule"/>
-            <infoLink id="8d606396-a57a-a055-7179-273191fac276" hidden="false" targetId="f7723056-9cfe-c405-d7e6-357321f7dca3" type="rule"/>
+            <infoLink id="174577f9-4df4-b461-5c68-774bddd28e1a" hidden="false" targetId="a3327e94-8ff2-b189-9303-34c54c57373f" type="rule" name="Gun Save modifier"/>
+            <infoLink id="8d606396-a57a-a055-7179-273191fac276" hidden="false" targetId="f7723056-9cfe-c405-d7e6-357321f7dca3" type="rule" name="Prepare shot"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="30"/>
@@ -2307,7 +2308,7 @@ a duelling pistol have a +1 bonus to hit.</description>
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink id="75b70afd-e04c-c597-2082-77fa1b59d80b" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="75b70afd-e04c-c597-2082-77fa1b59d80b" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="35"/>
@@ -2325,9 +2326,9 @@ a duelling pistol have a +1 bonus to hit.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="ff44c56f-6d6a-53b9-4ea9-676458a5bd9e" hidden="false" targetId="f7723056-9cfe-c405-d7e6-357321f7dca3" type="rule"/>
-            <infoLink id="965861ef-e2d3-2114-8fc1-83d97d0b0b96" hidden="false" targetId="da91afee-2f0d-cbc1-78ff-c6bdec885712" type="rule"/>
-            <infoLink id="aeea8cc7-4ae8-a66c-747d-a85a162db224" hidden="false" targetId="a3327e94-8ff2-b189-9303-34c54c57373f" type="rule"/>
+            <infoLink id="ff44c56f-6d6a-53b9-4ea9-676458a5bd9e" hidden="false" targetId="f7723056-9cfe-c405-d7e6-357321f7dca3" type="rule" name="Prepare shot"/>
+            <infoLink id="965861ef-e2d3-2114-8fc1-83d97d0b0b96" hidden="false" targetId="da91afee-2f0d-cbc1-78ff-c6bdec885712" type="rule" name="Move Of Fire"/>
+            <infoLink id="aeea8cc7-4ae8-a66c-747d-a85a162db224" hidden="false" targetId="a3327e94-8ff2-b189-9303-34c54c57373f" type="rule" name="Gun Save modifier"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="35"/>
@@ -2570,7 +2571,7 @@ The power of the Armour of Righteousness lasts until the beginning of the Priest
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="f0bf7b17-b2a9-e6b0-ce05-d19f0700aedb" hidden="false" collective="false" import="true" targetId="bf7c1f26-0442-54db-cacc-44dc499dcebc" type="selectionEntry">
+            <entryLink id="f0bf7b17-b2a9-e6b0-ce05-d19f0700aedb" hidden="false" collective="false" import="true" targetId="bf7c1f26-0442-54db-cacc-44dc499dcebc" type="selectionEntry" name="-1 M">
               <modifiers>
                 <modifier type="set" field="minSelections" value="1"/>
               </modifiers>
@@ -2594,7 +2595,7 @@ The power of the Armour of Righteousness lasts until the beginning of the Priest
         </selectionEntry>
         <selectionEntry id="d7277e6e-49d8-50cb-988c-84bb7240da31" name="Maddness: Stupidity" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
-            <infoLink id="03ca68f4-c714-1811-6183-179c17af9aa9" hidden="false" targetId="cd0edb82-a80c-4679-2376-f34a11dc840e" type="rule"/>
+            <infoLink id="03ca68f4-c714-1811-6183-179c17af9aa9" hidden="false" targetId="cd0edb82-a80c-4679-2376-f34a11dc840e" type="rule" name="Stupidity"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -2603,7 +2604,7 @@ The power of the Armour of Righteousness lasts until the beginning of the Priest
         </selectionEntry>
         <selectionEntry id="abc70d10-8ad7-23a1-6eb0-e05474350e3f" name="Madness: Frenzy" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
-            <infoLink id="2405cb62-5f89-ae77-e992-d849386a7dae" hidden="false" targetId="abb6f4c1-7058-c49a-c0df-9dfacb18d599" type="rule"/>
+            <infoLink id="2405cb62-5f89-ae77-e992-d849386a7dae" hidden="false" targetId="abb6f4c1-7058-c49a-c0df-9dfacb18d599" type="rule" name="Frenzy"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -2617,7 +2618,7 @@ The power of the Armour of Righteousness lasts until the beginning of the Priest
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="a998bfe9-42c1-0763-0747-e1c851080e15" hidden="false" collective="false" import="true" targetId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" type="selectionEntry">
+            <entryLink id="a998bfe9-42c1-0763-0747-e1c851080e15" hidden="false" collective="false" import="true" targetId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" type="selectionEntry" name="-1 T">
               <modifiers>
                 <modifier type="set" field="minSelections" value="1"/>
               </modifiers>
@@ -2636,7 +2637,7 @@ must retire from the warband.</description>
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="30324a76-6c80-b2e4-7879-3f9fbddefe9f" hidden="false" collective="false" import="true" targetId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" type="selectionEntry">
+            <entryLink id="30324a76-6c80-b2e4-7879-3f9fbddefe9f" hidden="false" collective="false" import="true" targetId="a93c5e1e-9169-8d09-5cba-5aa094184fe1" type="selectionEntry" name="-1 BS">
               <modifiers>
                 <modifier type="set" field="minSelections" value="1"/>
               </modifiers>
@@ -2665,7 +2666,7 @@ must retire from the warband.</description>
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="d7d5e798-2fbc-8704-e69c-61113a0c1bb2" hidden="false" collective="false" import="true" targetId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" type="selectionEntry">
+            <entryLink id="d7d5e798-2fbc-8704-e69c-61113a0c1bb2" hidden="false" collective="false" import="true" targetId="ceb4c328-6b8b-79ef-05fe-d4858b4bb69f" type="selectionEntry" name="-1 I">
               <modifiers>
                 <modifier type="set" field="minSelections" value="1"/>
               </modifiers>
@@ -2683,7 +2684,7 @@ must retire from the warband.</description>
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="0ed1495c-3cd6-e312-8087-84a1945b4a56" hidden="false" collective="false" import="true" targetId="abc4f440-9124-351f-831d-aaf5be4d3ae4" type="selectionEntry">
+            <entryLink id="0ed1495c-3cd6-e312-8087-84a1945b4a56" hidden="false" collective="false" import="true" targetId="abc4f440-9124-351f-831d-aaf5be4d3ae4" type="selectionEntry" name="-1 WS">
               <modifiers>
                 <modifier type="set" field="minSelections" value="1"/>
               </modifiers>
@@ -2723,7 +2724,7 @@ must retire from the warband.</description>
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="1a02c0ba-c1e9-bfb6-c550-bb4f5146c775" hidden="false" targetId="4390265d-0892-5427-fe46-78054de59a7e" type="rule"/>
+            <infoLink id="1a02c0ba-c1e9-bfb6-c550-bb4f5146c775" hidden="false" targetId="4390265d-0892-5427-fe46-78054de59a7e" type="rule" name="Fear"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3170,7 +3171,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="71020939-8649-86e5-e688-1ee924e46b53" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="71020939-8649-86e5-e688-1ee924e46b53" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3184,7 +3185,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="1c3487eb-bcce-e97b-ee82-efd7781a89d5" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="1c3487eb-bcce-e97b-ee82-efd7781a89d5" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3198,7 +3199,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="4e5f7880-a51f-cf25-84c8-ab558e9dbcd5" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="4e5f7880-a51f-cf25-84c8-ab558e9dbcd5" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3212,7 +3213,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="b7636e08-2b2b-d34a-0549-642de0c3ad33" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="b7636e08-2b2b-d34a-0549-642de0c3ad33" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3229,7 +3230,7 @@ Side effects: After the battle, roll 2D6. On a roll of 2-3, the model becomes ad
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="efa0c4e1-d3e5-3089-c64d-c3927315d85b" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="efa0c4e1-d3e5-3089-c64d-c3927315d85b" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3243,7 +3244,7 @@ Side effects: After the battle, roll 2D6. On a roll of 2-3, the model becomes ad
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="b6ccfa23-782b-0286-2654-b56752d2f2b0" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="b6ccfa23-782b-0286-2654-b56752d2f2b0" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="30"/>
@@ -3257,7 +3258,7 @@ Side effects: After the battle, roll 2D6. On a roll of 2-3, the model becomes ad
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="32229f36-5fea-e8ac-ce8c-054f8ef18eca" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="32229f36-5fea-e8ac-ce8c-054f8ef18eca" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="100"/>
@@ -3282,7 +3283,7 @@ Side effects: After the battle, roll 2D6. On a roll of 2-3, the model becomes ad
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="db96c5bc-a151-5aea-b28c-b48e4a30b47c" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="db96c5bc-a151-5aea-b28c-b48e4a30b47c" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="30"/>
@@ -3296,7 +3297,7 @@ Side effects: After the battle, roll 2D6. On a roll of 2-3, the model becomes ad
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="25f76104-f8fa-7b77-86c3-a56086506682" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="25f76104-f8fa-7b77-86c3-a56086506682" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="20"/>
@@ -3310,7 +3311,7 @@ Side effects: After the battle, roll 2D6. On a roll of 2-3, the model becomes ad
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="65c1c273-dc16-298a-8a68-d5d943378ee2" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="65c1c273-dc16-298a-8a68-d5d943378ee2" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3324,7 +3325,7 @@ Side effects: After the battle, roll 2D6. On a roll of 2-3, the model becomes ad
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="35149235-b9a7-0f4a-253d-6d687eec4459" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="35149235-b9a7-0f4a-253d-6d687eec4459" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3365,7 +3366,7 @@ You may mount one of your Heroes on a horse  in the coming battles. Horses  can 
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="f16ad40b-2a02-da55-dc5a-130140022ff7" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="f16ad40b-2a02-da55-dc5a-130140022ff7" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3417,7 +3418,7 @@ Side effects: Mandrake Root is highly poisonous. At the end of the battle, roll 
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="c5c68411-eb22-3164-4bf7-dcbbb06435b6" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="c5c68411-eb22-3164-4bf7-dcbbb06435b6" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="25"/>
@@ -3445,7 +3446,7 @@ on the Exploration chart as long as the Hero who possesses this map was not take
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="a6a95389-0057-3875-8a46-d563896c64c4" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="a6a95389-0057-3875-8a46-d563896c64c4" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3493,7 +3494,7 @@ model’s BS to determine whether the net hits or not – there are no movement 
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="443ce069-05dc-9940-1387-169e88dad9f6" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="443ce069-05dc-9940-1387-169e88dad9f6" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3550,7 +3551,7 @@ Wardogs count towards the maximum number of warriors allowed in your warband.</d
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="56bc022e-bf29-afb3-0425-73738a9d19e5" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="56bc022e-bf29-afb3-0425-73738a9d19e5" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3578,7 +3579,7 @@ Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes per
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="760e1570-5e4b-e06a-7ada-6f173c1afc98" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="760e1570-5e4b-e06a-7ada-6f173c1afc98" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3592,7 +3593,7 @@ Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes per
             </rule>
           </rules>
           <entryLinks>
-            <entryLink id="b8af3d73-5744-2659-88a0-2bfbb5a55da0" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+            <entryLink id="b8af3d73-5744-2659-88a0-2bfbb5a55da0" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry" name="Gold"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3692,4 +3693,7 @@ combat, roll a D6.
       <description>A weapon with Unwieldy may only use a shield or a buckler in his other hand. He may not use a second weapon.</description>
     </rule>
   </sharedRules>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="common-data" id="45b6-f7d7-5e74-3e3a" targetId="e020-c282-277b-b173"/>
+  </catalogueLinks>
 </catalogue>
