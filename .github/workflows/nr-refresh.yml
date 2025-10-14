@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Refresh New Recruit
-        run: curl --request GET "https://www.newrecruit.eu/api/check-for-update/BSData/horus-heresy-3rd-edition"
+        run: curl --request GET "https://www.newrecruit.eu/api/check-for-update/BSData/mordheim"
