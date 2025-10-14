@@ -927,9 +927,9 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="da24-6a7f-725b-5bcb" name="Dueling Pistol" page="0" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="da24-6a7f-725b-5bcb" name="Duelling Pistol" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="6f37-7303-125c-3bda" name="Dueling Pistol" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+        <profile id="6f37-7303-125c-3bda" name="Duelling Pistol" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
           <characteristics>
             <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">10</characteristic>
             <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
@@ -938,24 +938,22 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         </profile>
       </profiles>
       <rules>
-        <rule id="6ccf-79f5-36de-d39b" name="Hand to Hand" page="0" hidden="false">
-          <description>Pistols can be used in hand-to-hand combat as well as for shooting. A model armed with a pistol and another close combat weapon gains +1 Attack, which is resolved at Strength 4 with a -2 save modifier. This bonus attack can be used only once per combat. If you are firing a brace of pistols, your model can fight with 2 Attacks in the first turn of close combat. These attacks are resolved with a model’s Weapon Skill like any normal close combat attack and likewise may be parried. Successful hits are resolved at Strength 4 and with
-a -2 save modifier, regardless of the firer’s Strength.</description>
+        <rule id="6ccf-79f5-36de-d39b" name="Hand-to-hand" page="0" hidden="false">
+          <description>Duelling pistols can be used in hand-to-hand combat as well as for shooting. A model armed with a duelling pistol and another close combat weapon gains +1 Attack, which is resolved at Strength 4 with a -2 save modifier. This bonus attack can be used only once per combat. If you are firing a brace of duelling pistols, your model can fight with 2 Attacks in the first turn of close combat. These attacks are resolved with a model’s Weapon Skill like any normal close combat attack and likewise may be parried. Successful hits are resolved at Strength 4 and with a -2 save modifier, regardless of the firer’s Strength.</description>
         </rule>
-        <rule id="a464-64e4-d774-9211" name="accuracy" page="0" hidden="false">
-          <description>A duelling pistol is built for accuracy as a skilled duellist is able to hit a coin from twenty paces. All shots and close combat attacks from
-a duelling pistol have a +1 bonus to hit.</description>
+        <rule id="a464-64e4-d774-9211" name="Accuracy" page="0" hidden="false">
+          <description>A duelling pistol is built for accuracy as a skilled duellist is able to hit a coin from twenty paces. All shots and close combat attacks from a duelling pistol have a +1 bonus to hit.</description>
         </rule>
         <rule id="36e7-c544-5b8d-ce3e" name="Rarity" hidden="false">
           <description>Rarity 10</description>
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="2708-8204-c4cd-a84c" name="Firearm save modifier" hidden="false" targetId="5d21-2b30-4219-ec86" type="rule"/>
+        <infoLink id="2708-8204-c4cd-a84c" name="Save modifier" hidden="false" targetId="5d21-2b30-4219-ec86" type="rule"/>
         <infoLink id="3585-8791-1dce-1a51" name="Prepare shot" hidden="false" targetId="4f7f-29ec-a9da-82fc" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="30"/>
+        <cost name="pts" typeId="points" value="25"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
@@ -4320,8 +4318,8 @@ Note that creatures that cause fear can ignore these tests.
 a) If the model is charged by a warrior or a creature which causes fear. If a warrior is charged by an enemy that he fears then he must take a test to overcome that fear. Test when the charge is declared and is determined to be within range. If the test is passed the model may fight as normal. If it is failed, the model must roll 6s to score hits in that round of combat.
 b) If the model wishes to charge a fearcausing enemy. If a warrior wishes to charge an enemy that it fears then it must take a test to overcome this. If it fails the model may not charge and must remain stationary for the turn. Treat this as a failed charge.</description>
     </rule>
-    <rule id="5d21-2b30-4219-ec86" name="Firearm save modifier" page="0" hidden="false">
-      <description>This weapon is even better at penetrating armour than its Strength suggests. A warrior wounded by a firearm must make his armour save with a -2 modifier.</description>
+    <rule id="5d21-2b30-4219-ec86" name="Save modifier" page="0" hidden="false">
+      <description>Firearms are even better at penetrating armour than their Strength suggests. A warrior wounded by a firearm must make his armour save with a -2 modifier.</description>
     </rule>
     <rule id="ce28-23a1-7b2a-7e6c" name="Frenzy" page="0" hidden="false">
       <description>Frenzied models must always charge if there are any enemy models within charge range (check after charges have been declared). The player has no choice in this matter – the warrior will automatically declare a charge. Frenzied warriors fight with double their Attacks characteristic in hand-to-hand combat. Warriors with 1 Attack therefore have 2 Attacks, warriors with 2
