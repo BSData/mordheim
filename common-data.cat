@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="20" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="21" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2684,6 +2684,201 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <infoLink name="Parry" id="c068-9967-a764-ae12" hidden="false" type="rule" targetId="17dc-9c49-08e1-af45"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry id="394f-a580-a345-e1ad" name="Caltrops" page="Ye Old Curiosity Shoppe, Mordheim Annual 2002 (1a)" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="9c83-d40e-12ec-ba33" name="Caltrops" page="0" hidden="false">
+          <description>There are enough caltrops to last for one use only. They may be used when an opponent decides to charge. The defender simply throws the caltrops into the path of his attacker and they reduce his charge range by D6 inches. If this means that the attacker cannot reach his target then it is a failed charge.</description>
+        </rule>
+        <rule id="3b3b-b88f-615c-d38d" name="Rarity" hidden="false">
+          <description>Rarity 6</description>
+        </rule>
+        <rule name="Price Modifier" id="9f2d-d96b-7098-de13" hidden="false">
+          <description>2D6</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <comment>1a</comment>
+    </selectionEntry>
+    <selectionEntry id="8293-c01a-9fab-9054" name="Banner" page="Opulent Goods, Mordheim Annual 2002 (1a)" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="ff7a-9aca-e5e1-0347" name="Banner" page="0" hidden="false">
+          <description>A banner requires one hand to use and can be carried by any Hero in the warband. Friendly warriors within 12&quot; of the banner bearer may re-roll any failed &apos;All Alone&apos; test; but remember, you can&apos;t re-roll a failed re-roll.</description>
+        </rule>
+        <rule id="521d-2ae6-2eb4-f923" name="Rarity" hidden="false">
+          <description>Rarity 5</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="10"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <comment>1a</comment>
+    </selectionEntry>
+    <selectionEntry id="d16f-0904-21e5-158b" name="Fire Bomb" page="Ye Old Curiosity Shoppe, Mordheim Annual 2002 (1a)" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="bb96-1f9d-814a-49eb" name="Fire Bomb" page="0" hidden="false">
+          <description>The fire bomb may be thrown in the shooting phase in the same way as blessed water (see p53 Mordheim rule book). If the bomb lands on target the warrior hit takes D3 Strength 4 hits with no saves for armour and all warriors, friend or foe, within 1 inch of him take 1 Strength 3 hit with saves as normal. If the throwing warrior rolls a 1 when rolling to hit the bomb misfires and explodes just as if the throwing warrior had been hit by his own fire bomb!</description>
+        </rule>
+        <rule id="e7b8-34fa-20df-0e85" name="Rarity" hidden="false">
+          <description>Rarity 9</description>
+        </rule>
+        <rule name="Price Modifier" id="92f6-c19f-331f-9d5f" hidden="false">
+          <description>2D6</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="35"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <comment>1a</comment>
+    </selectionEntry>
+    <selectionEntry id="e15c-e780-cf64-8bee" name="Flash Powder" page="Ye Old Curiosity Shoppe, Mordheim Annual 2002 (1a)" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="c182-567a-d561-3915" name="Flash Powder" page="0" hidden="false">
+          <description>Flash powder can be thrown as an enemy charges the wielder (as an interrupt). The charger must take an immediate Initiative test in order to cover their eyes. If he fails, he is temporarily blinded and it counts as a failed charge. There is only enough flash powder for one use during the battle.</description>
+        </rule>
+        <rule id="138e-ee6b-b4ef-22ef" name="Rarity" hidden="false">
+          <description>Rarity 8</description>
+        </rule>
+        <rule name="Price Modifier" id="a98b-18f5-741b-425c" hidden="false">
+          <description>2D6</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <comment>1a</comment>
+    </selectionEntry>
+    <selectionEntry id="2aa9-cf76-c0fc-686c" name="Lock Picks" page="Empire in Flames supplement (1a)" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="d5f9-382a-1a21-e962" name="Lock Picks" page="0" hidden="false">
+          <description>A model equipped with a set of lock picks may make his test to open doors on his Initiative rather than his Strength characteristic if he wishes. This is done at the end of his Movement phase as if the model were ripping the door off its hinges, though he uses his Initiative rather than Strength, there is no -1 modifier, and there is no chance that the door is too damaged to be locked again later.</description>
+        </rule>
+        <rule id="b6a1-4a9e-8f8e-1960" name="Rarity" hidden="false">
+          <description>Rarity 8</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <comment>1a</comment>
+    </selectionEntry>
+    <selectionEntry id="b7ee-595e-9530-2c67" name="Fire Arrows" page="Ye Old Curiosity Shoppe, Mordheim Annual 2002 (1a)" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="3c41-d31e-a6e9-8a2a" name="Fire Arrows" page="0" hidden="false">
+          <description>If you hit with a fire arrow roll a D6. If you score a 4+ your opponent has been set on fire. They must roll a D6 in the recovery phase and score a 4+ to put themselves out or they will suffer a strength 4 hit and will be unable to do anything other than move for each turn they are on fire. Allies may also attempt to put the warrior out. They must be in base contact and need a 4+ to be successful. The fire arrows last for one battle only.</description>
+        </rule>
+        <rule id="62a3-31bf-38f6-2127" name="Rarity" hidden="false">
+          <description>Rarity 9</description>
+        </rule>
+        <rule name="Price Modifier" id="5d82-9cc8-3c9c-bb3f" hidden="false">
+          <description>D6</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="30"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <comment>1a</comment>
+    </selectionEntry>
+    <selectionEntry id="86a9-a953-4354-8ab3" name="Hammer of Witches" page="Opulent Goods, Mordheim Annual 2002 (1a)" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="3fb2-92bb-8ccc-5346" name="Hammer of Witches" page="0" hidden="false">
+          <description>A Hero with the Hammer of Witches will hate all Possessed, Skaven, Beastmen, Chaos, Daemons, Dark Elf, Orc &amp; Goblins and Sigmarite Sisters.</description>
+        </rule>
+        <rule id="8c67-6775-658e-a4dc" name="Rarity" hidden="false">
+          <description>Rarity 10 (Witch Hunters only)</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="100"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <comment>1a</comment>
+    </selectionEntry>
+    <selectionEntry id="1410-6d05-7ae1-bf81" name="Rabbit&apos;s Foot" page="Ye Old Curiosity Shoppe, Mordheim Annual 2002 (1a)" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="ff84-1218-233a-2d70" name="Rabbit&apos;s Foot" page="0" hidden="false">
+          <description>A rabbit&apos;s foot allows the warrior wearing it to reroll one dice during the battle. If not used in the battle it can be used to reroll one dice during the exploration phase providing the hero is able to search through the ruins.</description>
+        </rule>
+        <rule id="1104-bad9-c53c-1a3f" name="Rarity" hidden="false">
+          <description>Rarity 5</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="10"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <comment>1a</comment>
+    </selectionEntry>
+    <selectionEntry id="dc4a-3b9c-3c3e-72cd" name="Tarot Cards" page="Opulent Goods, Mordheim Annual 2002 (1a)" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="42ad-47ea-1e82-a052" name="Tarot Cards" page="0" hidden="false">
+          <description>A Hero with a deck of tarot cards may consult them before each game. Make a Leadership test. If successful, the Hero gains a favorable insight into the future and you may modify the result of any one dice in the Exploration phase by -1/+1 (even if the Hero with the cards is taken Out Of Action). If the Leadership test is failed by three or more (i.e., a Hero with Ld of 8 rolls 11 or 12) the cards show a portent of doom and despair and the Hero refuses to fight in the following battle and must miss the next game.</description>
+        </rule>
+        <rule id="1f0d-e703-cd15-f0a3" name="Rarity" hidden="false">
+          <description>Rare 7 (Not available to Witch Hunters or Sisters of Sigmar)</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="50"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <comment>1a</comment>
+    </selectionEntry>
+    <selectionEntry id="b627-8e25-4817-ab22" name="Wyrdstone Pendulum" page="Opulent Goods, Mordheim Annual 2002 (1a)" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="48ca-34f7-50ae-83d2" name="Wyrdstone Pendulum" page="0" hidden="false">
+          <description>If he was not taken out, the Hero using the Wyrdstone Pendulum may make a Leadership test after the battle. If he is successful, you may re-roll any one dice in the Exploration phase. This dice may not be re-rolled</description>
+        </rule>
+        <rule id="4e9d-55ac-79bc-fde5" name="Rarity" hidden="false">
+          <description>Rare 9</description>
+        </rule>
+        <rule name="Price Modifier" id="bac0-83af-6016-9d62" hidden="false" page="3D6"/>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <comment>1a</comment>
+    </selectionEntry>
+    <selectionEntry id="356d-ccef-3ec2-5c04" name="Telescope" page="Ye Old Curiosity Shoppe, Mordheim Annual 2002 (1a)" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="e4d4-80a4-5d82-1b2e" name="Telescope" page="0" hidden="false">
+          <description>Any hero using a telescope may increase the range of any missile weapon he is using by D6 inches each turn. Furthermore, he triples the distance at which he can spot hidden enemies.</description>
+        </rule>
+        <rule id="dff8-18d7-ef1e-b580" name="Rarity" hidden="false">
+          <description>Rare 10</description>
+        </rule>
+        <rule name="Price Modifier" id="2900-35df-9e92-5b2a" hidden="false" page="3D6"/>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="75"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <comment>1a</comment>
+    </selectionEntry>
+    <selectionEntry id="4e09-c82c-1bd9-081d" name="War Horn" page="Ye Old Curiosity Shoppe, Mordheim Annual 2002 (1a)" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="8f15-ee5e-e940-7988" name="War Horn" page="0" hidden="false">
+          <description>A war horn may be used once per battle at the beginning of any turn. It allows the warband to increase its Leadership by +1. The effect will last from the start of one turn to the start of the next. The war horn can be used just before a warband is about to take a rout test.</description>
+        </rule>
+        <rule id="fe9c-5451-686b-1671" name="Rarity" hidden="false">
+          <description>Rare 8</description>
+        </rule>
+        <rule name="Price Modifier" id="a286-152c-f633-1235" hidden="false" page="2D6"/>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="30"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <comment>1a</comment>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true">
@@ -3415,6 +3610,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="b1e6-5b0e-41d7-eeaf" name="Claw of the Old Ones" hidden="false" collective="false" import="true" targetId="993b-b4c4-118f-3ce3" type="selectionEntry"/>
         <entryLink import="true" name="Pike" hidden="false" id="9f83-3b50-5491-90f2" type="selectionEntry" targetId="68ec-2a33-6ca8-d146"/>
         <entryLink import="true" name="Boat Hook" hidden="false" id="355b-13e-2e5b-921c" type="selectionEntry" targetId="8bf0-e215-6bbb-383e"/>
+        <entryLink import="true" name="Free Dagger" hidden="false" id="60c9-4e5b-0040-dd65" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1937-df4f-3c68-e0be" name="Missile Weapons" hidden="false" collective="false" import="true">
@@ -3754,6 +3950,7 @@ must retire from the warband.</description>
           </entryLinks>
         </entryLink>
         <entryLink id="dc31-0d77-4ab1-91b9" name="Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="a2cf-6f28-f7c2-275d" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Miscellaneous Equipment (1a)" hidden="false" id="00ff-dc02-4a1b-02d9" type="selectionEntryGroup" targetId="27a7-c1bf-0c40-ff21"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="5541-f5c4-85e0-b399" name="Mutations" hidden="false" collective="false" import="true">
@@ -4283,6 +4480,26 @@ Warriors without Ride may not use this skill.</description>
           </rules>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="27a7-c1bf-0c40-ff21" name="Miscellaneous Equipment (1a)" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f49-b067-d129-cd74" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Banner" hidden="false" id="096d-afa4-480c-6947" collective="false" targetId="8293-c01a-9fab-9054" type="selectionEntry" page="Opulent Goods, Mordheim Annual 2002 (1a)"/>
+        <entryLink import="true" name="Caltrops" hidden="false" id="3ca4-67c7-fd0d-b9f2" type="selectionEntry" targetId="394f-a580-a345-e1ad"/>
+        <entryLink import="true" name="Fire Arrows" hidden="false" id="8232-874b-0070-dc1b" type="selectionEntry" targetId="b7ee-595e-9530-2c67"/>
+        <entryLink import="true" name="Fire Bomb" hidden="false" id="3586-5d6c-524e-0f22" type="selectionEntry" targetId="d16f-0904-21e5-158b"/>
+        <entryLink import="true" name="Flash Powder" hidden="false" id="4cf0-90f5-244f-ba14" type="selectionEntry" targetId="e15c-e780-cf64-8bee"/>
+        <entryLink import="true" name="Hammer of Witches" hidden="false" id="f277-53fc-027e-7625" type="selectionEntry" targetId="86a9-a953-4354-8ab3"/>
+        <entryLink import="true" name="Lock Picks" hidden="false" id="61f2-2a6d-5bb3-36ba" type="selectionEntry" targetId="2aa9-cf76-c0fc-686c"/>
+        <entryLink import="true" name="Rabbit&apos;s Foot" hidden="false" id="0112-63ba-cdb6-06fc" type="selectionEntry" targetId="1410-6d05-7ae1-bf81"/>
+        <entryLink import="true" name="Tarot Cards" hidden="false" id="c0ad-983e-d137-3a81" type="selectionEntry" targetId="dc4a-3b9c-3c3e-72cd"/>
+        <entryLink import="true" name="Telescope" hidden="false" id="c726-03ed-de31-4a55" type="selectionEntry" targetId="356d-ccef-3ec2-5c04"/>
+        <entryLink import="true" name="War Horn" hidden="false" id="8d13-4408-6331-588a" type="selectionEntry" targetId="4e09-c82c-1bd9-081d"/>
+        <entryLink import="true" name="Wyrdstone Pendulum" hidden="false" id="7b7a-ec7c-1d99-454e" type="selectionEntry" targetId="b627-8e25-4817-ab22"/>
+        <entryLink import="true" name="Torch" hidden="false" id="f2b9-2aa8-28fe-02ea" type="selectionEntry" targetId="065e-ad0a-c227-a634"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
