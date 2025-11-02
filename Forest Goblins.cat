@@ -35,6 +35,30 @@
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spear" hidden="false" id="9510-d071-4cce-6d21">
+      <profiles>
+        <profile name="Spear" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="3254-66c7-5593-fd97">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As User</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Unwieldy, Strike First, Cavalry Bonus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="5"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Unwieldy" hidden="false" type="rule" id="4e58-2513-010b-b28f" targetId="2b45-f8c1-de87-638f"/>
+        <infoLink name="Strike First" hidden="false" type="rule" id="83bd-8977-6f6d-2355" targetId="744d-bb7c-09b9-ab1c"/>
+        <infoLink name="Cavalry bonus" hidden="false" type="rule" id="93df-3679-a8f8-37c1" targetId="ef77-8d02-8707-afc4"/>
+      </infoLinks>
+      <rules>
+        <rule id="fc51-782d-eb52-c94c" name="Rarity" hidden="false">
+          <description>Common (Goblins Only)</description>
+        </rule>
+      </rules>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Poisoned Weapon (Goblin)" hidden="false" id="6f01-8356-8bea-5c2d">
       <costs>
         <cost name="pts" typeId="points" value="25"/>
@@ -143,7 +167,7 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
             <entryLink import="true" name="Axe" hidden="false" type="selectionEntry" id="27dd-8c75-4a17-a5d7" targetId="5d01-06b9-3a86-73c9"/>
             <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="fc5e-b330-4a6d-693a" targetId="34fd-d6a3-50ee-ee06"/>
             <entryLink import="true" name="Double Handed Weapon" hidden="false" type="selectionEntry" id="afe-71bf-5470-3041" targetId="a0a1-b311-e3aa-6c3b"/>
-            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="3307-523c-e044-6b3b" targetId="005e-e397-8108-f198"/>
+            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="3307-523c-e044-6b3b" targetId="9510-d071-4cce-6d21"/>
             <entryLink import="true" name="Halberd" hidden="false" type="selectionEntry" id="cc27-9822-af4e-cb57" targetId="3c52-9e92-25ec-1939"/>
             <entryLink import="true" name="Boss Pole" hidden="false" type="selectionEntry" id="88a-7402-f87f-e7f5" targetId="9510-d071-4cce-6d20"/>
           </entryLinks>
@@ -179,7 +203,7 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="c9d6-406d-67c7-d6ca" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="c922-50a8-8da3-24b5" targetId="64e0-0bb6-542b-4beb"/>
             <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="ad83-f7c4-6621-6012" targetId="34fd-d6a3-50ee-ee06"/>
-            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="926e-226b-d548-a88b" targetId="005e-e397-8108-f198"/>
+            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="926e-226b-d548-a88b" targetId="9510-d071-4cce-6d21"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8ab6-22f5-a49a-13b2" includeChildSelections="false"/>
