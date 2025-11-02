@@ -135,57 +135,6 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Hero Equipment" hidden="false" id="aa8c-67af-c03a-75c6">
-      <selectionEntry id="c9494475-3720-3676-42b0-8a7c261ae004" name="Spear" page="0" hidden="false" collective="false" import="true" type="upgrade">
-        <profiles>
-          <profile id="80262f8e-5181-2be8-215c-55f52229674c" name="Spear" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
-            <characteristics>
-              <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
-              <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Unwieldy, Strike First, Calvary Bonus +1</characteristic>
-            </characteristics>
-          </profile>
-        </profiles>
-        <infoLinks>
-          <infoLink id="8615a7d7-d7ae-0e92-7280-21b21b7860b1" hidden="false" targetId="3fa1d399-e681-411c-ebf6-c53c307e749a" type="rule" name="Strike First"/>
-            <infoLink id="b91f130e-8c7f-4540-b36a-8ed229d77b2e" hidden="false" targetId="be37b096-f38b-d3f0-0c72-f18572a56f1d" type="rule" name="Unwieldy:"/>
-          <infoLink id="8a3f73c2-103b-f779-64ac-cfa48bc470b7" hidden="false" targetId="c0c80c24-1dc8-7adc-c069-8917b30bffcd" type="rule" name="Cavalry bonus"/>
-        </infoLinks>
-        <selectionEntries>
-          <selectionEntry id="3ef9bbbf-a875-133e-a275-fb47750ca7d8" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
-            <modifiers>
-              <modifier type="set" field="points" value="30"/>
-            </modifiers>
-            <constraints>
-              <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-            </constraints>
-            <infoLinks>
-              <infoLink id="42026292-17a5-217e-f99c-25fa309b419b" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule" name="Gromril weapon"/> 
-            </infoLinks>
-            <costs>
-              <cost name="pts" typeId="points" value="0"/>
-              <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-            </costs>
-          </selectionEntry>
-          <selectionEntry id="1f737ba7-658d-f833-131c-48735ada0760" name="Ithilmar weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
-            <modifiers>
-              <modifier type="set" field="points" value="20"/>
-            </modifiers>
-            <constraints>
-              <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-             </constraints>
-            <infoLinks>
-              <infoLink id="58bcc84b-2f70-f600-a7b5-02a110b6e75e" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule" name="Ithilmar weapon"/>
-            </infoLinks>
-            <costs>
-              <cost name="pts" typeId="points" value="0"/>
-              <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-            </costs>
-          </selectionEntry>
-        </selectionEntries>
-        <costs>
-          <cost name="pts" typeId="points" value="5"/>
-          <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-        </costs>
-    </selectionEntry>
       <selectionEntryGroups>
         <selectionEntryGroup name="Hand to Hand Weapons" hidden="false" id="c291-5cc6-a28-1b10">
           <entryLinks>
@@ -194,6 +143,7 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
             <entryLink import="true" name="Axe" hidden="false" type="selectionEntry" id="27dd-8c75-4a17-a5d7" targetId="5d01-06b9-3a86-73c9"/>
             <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="fc5e-b330-4a6d-693a" targetId="34fd-d6a3-50ee-ee06"/>
             <entryLink import="true" name="Double Handed Weapon" hidden="false" type="selectionEntry" id="afe-71bf-5470-3041" targetId="a0a1-b311-e3aa-6c3b"/>
+            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="3307-523c-e044-6b3b" targetId="005e-e397-8108-f198"/>
             <entryLink import="true" name="Halberd" hidden="false" type="selectionEntry" id="cc27-9822-af4e-cb57" targetId="3c52-9e92-25ec-1939"/>
             <entryLink import="true" name="Boss Pole" hidden="false" type="selectionEntry" id="88a-7402-f87f-e7f5" targetId="9510-d071-4cce-6d20"/>
           </entryLinks>
@@ -225,61 +175,11 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
     <selectionEntryGroup name="Henchmen Equipment" hidden="false" id="7ceb-1f27-4cb5-4ab5">
       <selectionEntryGroups>
         <selectionEntryGroup name="Hand to Hand Weapons" hidden="false" id="96d1-691e-dc66-2419">
-          <selectionEntry id="c9494475-3720-3676-42b0-8a7c261ae004" name="Spear" page="0" hidden="false" collective="false" import="true" type="upgrade">
-            <profiles>
-              <profile id="80262f8e-5181-2be8-215c-55f52229674c" name="Spear" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
-                <characteristics>
-                  <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
-                <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Unwieldy, Strike First, Calvary Bonus +1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="8615a7d7-d7ae-0e92-7280-21b21b7860b1" hidden="false" targetId="3fa1d399-e681-411c-ebf6-c53c307e749a" type="rule" name="Strike First"/>
-              <infoLink id="b91f130e-8c7f-4540-b36a-8ed229d77b2e" hidden="false" targetId="be37b096-f38b-d3f0-0c72-f18572a56f1d" type="rule" name="Unwieldy:"/>
-            <infoLink id="8a3f73c2-103b-f779-64ac-cfa48bc470b7" hidden="false" targetId="c0c80c24-1dc8-7adc-c069-8917b30bffcd" type="rule" name="Cavalry bonus"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="3ef9bbbf-a875-133e-a275-fb47750ca7d8" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="points" value="30"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="42026292-17a5-217e-f99c-25fa309b419b" hidden="false" targetId="6549136a-9a00-4d3a-b8fa-ecadf63e4744" type="rule" name="Gromril weapon"/> 
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1f737ba7-658d-f833-131c-48735ada0760" name="Ithilmar weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="points" value="20"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-               </constraints>
-              <infoLinks>
-                <infoLink id="58bcc84b-2f70-f600-a7b5-02a110b6e75e" hidden="false" targetId="05584e01-dfb3-7e17-b3ba-279aba211018" type="rule" name="Ithilmar weapon"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0"/>
-                <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="5"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-      </selectionEntry>
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="c9d6-406d-67c7-d6ca" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="c922-50a8-8da3-24b5" targetId="64e0-0bb6-542b-4beb"/>
             <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="ad83-f7c4-6621-6012" targetId="34fd-d6a3-50ee-ee06"/>
+            <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="926e-226b-d548-a88b" targetId="005e-e397-8108-f198"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8ab6-22f5-a49a-13b2" includeChildSelections="false"/>
