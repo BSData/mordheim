@@ -1731,7 +1731,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
           </constraints>
           <rules>
             <rule id="90c9b94a-4eb7-cda4-fb71-3808b78043fd" name="Combat Master" page="0" hidden="false">
-              <description>When fighting multiple opponents in hand-to-hand combat,  he gains an extra Attack in any hand to hand phase . In addition, the warrior is immune to ‘All Alone’ tests.</description>
+              <description>When fighting multiple opponents in hand-to-hand combat, he gains an extra Attack in any hand-to-hand phase. In addition, the warrior is immune to ‘All Alone’ tests.</description>
             </rule>
           </rules>
           <costs>
@@ -1759,7 +1759,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
         <entryLink id="453eec21-f71b-52b1-ff0e-d7a05c4600e4" hidden="false" collective="false" import="true" targetId="ab4e5484-acd3-b553-7694-5e60e6c7e3ae" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b54b39f1-0daa-eabc-e0b8-74f83d2a19e0" name="Hand to Hand Weapons" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="b54b39f1-0daa-eabc-e0b8-74f83d2a19e0" name="Hand-to-hand Weapons" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -2464,10 +2464,10 @@ The Ball and Chain wielder cannot be held in close combat and will automatically
 
 ignores the special rules for Animosity.</description>
             </rule>
-            <rule id="a2948139-cad2-7570-b3cf-8f995b16961d" name="CumbersomE" page="0" hidden="false">
+            <rule id="a2948139-cad2-7570-b3cf-8f995b16961d" name="Cumbersome" page="0" hidden="false">
               <description>a model equipped with one may carry no other weapons or equipment, only Mad Cap Mushrooms which they must have.</description>
             </rule>
-            <rule id="04bf04df-6e63-3b78-a8d9-cfc5ebf9122a" name="Unwieldy:" page="0" hidden="false">
+            <rule id="04bf04df-6e63-3b78-a8d9-cfc5ebf9122a" name="Unwieldy" page="0" hidden="false">
               <description>at the end of the battle the controlling player must roll for Injury for each model that used a Ball and Chain, just as if the model had been taken out of action. If the model was actually taken out of action normally, just roll once for Injury.</description>
             </rule>
           </rules>
@@ -2540,12 +2540,6 @@ ignores the special rules for Animosity.</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6f68b734-ca83-2e0e-1b07-33662d61d523" name="New Entry" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <modifiers>
         <modifier type="set" value="3" field="maxSelections">
@@ -2582,9 +2576,9 @@ ignores the special rules for Animosity.</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="be4e70ce-f2a1-8dfa-9035-058eb1c95243" name="Cross Bow" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="be4e70ce-f2a1-8dfa-9035-058eb1c95243" name="Crossbow" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="7758d437-8ae0-aed0-bf0b-2c03ec036e38" name="Cross Bow" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+            <profile id="7758d437-8ae0-aed0-bf0b-2c03ec036e38" name="Crossbow" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">30</characteristic>
                 <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
@@ -2642,9 +2636,9 @@ ignores the special rules for Animosity.</description>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="21769e56-0db7-859a-95df-be7e48c3ab13" name="Dueling Pistol" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="21769e56-0db7-859a-95df-be7e48c3ab13" name="Duelling Pistol" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="2d8a978e-cc9e-8ddf-0295-d96e881ecc03" name="Dueling Pistol" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+            <profile id="2d8a978e-cc9e-8ddf-0295-d96e881ecc03" name="Duelling Pistol" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">10</characteristic>
                 <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
@@ -2653,11 +2647,11 @@ ignores the special rules for Animosity.</description>
             </profile>
           </profiles>
           <rules>
-            <rule id="0a7ce4c8-fc2e-bc5e-29bd-6265947421f3" name="Hand to Hand" page="0" hidden="false">
+            <rule id="0a7ce4c8-fc2e-bc5e-29bd-6265947421f3" name="Hand-to-hand" page="0" hidden="false">
               <description>Pistols can be used in hand-to-hand combat as well as for shooting. A model armed with a pistol and another close combat weapon gains +1 Attack, which is resolved at Strength 4 with a -2 save modifier. This bonus attack can be used only once per combat. If you are firing a brace of pistols, your model can fight with 2 Attacks in the first turn of close combat. These attacks are resolved with a model’s Weapon Skill like any normal close combat attack and likewise may be parried. Successful hits are resolved at Strength 4 and with
 a -2 save modifier, regardless of the firer’s Strength.</description>
             </rule>
-            <rule id="70b5c322-3177-5091-49dd-54932cf79e48" name="accuracy" page="0" hidden="false">
+            <rule id="70b5c322-3177-5091-49dd-54932cf79e48" name="Accuracy" page="0" hidden="false">
               <description>A duelling pistol is built for accuracy as a skilled duellist is able to hit a coin from twenty paces. All shots and close combat attacks from
 a duelling pistol have a +1 bonus to hit.</description>
             </rule>
