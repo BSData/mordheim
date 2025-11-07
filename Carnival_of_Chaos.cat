@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="3ca8-2429-2fa9-659e" name="Carnival of Chaos (1a)" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
 	<sharedSelectionEntries>
-	<selectionEntry id="3706-6421-53b4-940e" name="Short Bow" page="0" hidden="false" collective="false" import="true" type="upgrade">
+	<selectionEntry type="upgrade" import="true" name="Short Bow" hidden="false" id="9510-d071-4cce-6d20">
       <profiles>
-        <profile id="6bae-8763-feca-a52f" name="Short Bow" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+        <profile name="Short Bow" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="3254-66c7-5593-fd97">
           <characteristics>
             <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">16</characteristic>
             <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
@@ -15,10 +15,15 @@
         <cost name="pts" typeId="points" value="10"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
+      <rules>
+        <rule id="fc51-782d-eb52-c94c" name="Rarity" hidden="false">
+          <description>Common (Carnival of Chaos Only)</description>
+        </rule>
+      </rules>
     </selectionEntry>
-	<selectionEntry id="311a-bf3f-67ff-46e8" name="Bow" page="0" hidden="false" collective="false" import="true" type="upgrade">
+	<selectionEntry type="upgrade" import="true" name="Bow" hidden="false" id="9510-d071-4cce-6d21">
       <profiles>
-        <profile id="14c3-6aab-3730-8586" name="Bow" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+        <profile name="Bow" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="3254-66c7-5593-fd98">
           <characteristics>
             <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">24</characteristic>
             <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
@@ -30,6 +35,11 @@
         <cost name="pts" typeId="points" value="15"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
+      <rules>
+        <rule id="fc51-782d-eb52-c94c" name="Rarity" hidden="false">
+          <description>Common (Carnival of Chaos Only)</description>
+        </rule>
+      </rules>
     </selectionEntry>
 	</sharedSelectionEntries>
 	<selectionEntries>
@@ -1004,9 +1014,9 @@ The Plague Cart automatically passes any Leadership-based test it is required to
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c60-fdc3-fdfa-1f64" type="min"/>
       </constraints>
       <entryLinks>
-        <entryLink id="4424-c029-f7b8-5990" name="Bow" hidden="false" collective="false" import="true" targetId="311a-bf3f-67ff-46e8" type="selectionEntry"/>
+        <entryLink id="4424-c029-f7b8-5990" name="Bow" hidden="false" collective="false" import="true" targetId="9510-d071-4cce-6d21" type="selectionEntry"/>
         <entryLink id="6cb4-80ab-136a-eb64" name="Pistol" hidden="false" collective="false" import="true" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
-        <entryLink id="7215-4782-0d09-9be0" name="Short Bow" hidden="false" collective="false" import="true" targetId="3706-6421-53b4-940e" type="selectionEntry"/>
+        <entryLink id="7215-4782-0d09-9be0" name="Short Bow" hidden="false" collective="false" import="true" targetId="9510-d071-4cce-6d20" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3ee4-b781-9335-e698" name="Armor" hidden="false" collective="false" import="true">
