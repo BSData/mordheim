@@ -889,6 +889,21 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="311a-bf3f-67ff-46e8" name="Bow" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="14c3-6aab-3730-8586" name="Bow" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">24</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="38cc-bc0b-7f19-8039" name="Crossbow" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="d298-56a9-fc56-136b" name="Crossbow" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
@@ -1108,6 +1123,21 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
       </profiles>
       <costs>
         <cost name="pts" typeId="points" value="5"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3706-6421-53b4-940e" name="Shortbow" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6bae-8763-feca-a52f" name="Shortbow" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">16</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">3</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="10"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
