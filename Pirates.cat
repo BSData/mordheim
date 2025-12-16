@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="6805-5465-81dd-a433" name="Pirates (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="cf9d-16eb-44a7-1fbe" targetId="e020-c282-277b-b173"/>
@@ -2632,9 +2632,6 @@ Remove them from your warband roster as if they had been killed.</description>
 Any Swabbies who are running away or have been taken out of action do not count towards the need to take a Rout test for the warband.</description>
         </rule>
       </rules>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="983b-48c4-b49c-4350" includeChildSelections="true"/>
-      </constraints>
       <modifiers>
         <modifier type="set" value="1" field="983b-48c4-b49c-4350">
           <conditions>
