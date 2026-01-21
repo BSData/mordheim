@@ -1168,6 +1168,33 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="67e9-a4f5-8f76-168d" name="Brace of Pistols" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d0ea-a831-4462-5301" name="Brace of Pistols" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">6</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Prepare shot, Save modifier, Hand-to-hand</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="22fb-6bcd-b828-f355" name="Hand-to-hand" page="0" hidden="false">
+          <description>A brace of pistols can be used in hand-to-hand combat as well as for shooting. A model armed with a pistol and another close combat weapon gains +1 Attack, which is resolved at Strength 4 with a -2 save modifier. This bonus attack can be used only once per combat. If you are firing a brace of pistols, your model can fight with 2 Attacks in the first turn of close combat. These attacks are resolved with a model’s Weapon Skill like any normal close combat attack and likewise may be parried. Successful hits are resolved at Strength 4 and with
+a -2 save modifier, regardless of the firer’s Strength.</description>
+        </rule>
+        <rule id="0494-6268-f136-0793" name="Rarity" hidden="false">
+          <description>Rarity 8</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="bcb2-4f05-6757-ad68" name="Firearm save modifier" hidden="false" targetId="5d21-2b30-4219-ec86" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="30"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="a802-b7c6-caea-a5b1" name="Repeater Crossbow" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="c5c1-b208-eb06-8d86" name="Repeater Crossbow" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
@@ -3543,6 +3570,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="6985-a928-a371-c68a" name="Hochland Long Rifle" hidden="false" collective="false" import="true" targetId="51ed-e371-76d2-d46b" type="selectionEntry"/>
         <entryLink id="71ed-94f3-f8e7-e10b" name="Longbow" hidden="false" collective="false" import="true" targetId="afa2-2d5c-54dd-d435" type="selectionEntry"/>
         <entryLink id="f9f4-cf69-0204-85f5" name="Pistol" hidden="false" collective="false" import="true" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
+        <entryLink id="f9f4-cf69-0204-85f5" name="Brace of Pistols" hidden="false" collective="false" import="true" targetId="67e9-a4f5-8f76-168d" type="selectionEntry"/>
         <entryLink id="5c2b-dc41-890d-00b9" name="Repeater Crossbow" hidden="false" collective="false" import="true" targetId="a802-b7c6-caea-a5b1" type="selectionEntry"/>
         <entryLink id="ec95-3895-9311-cdac" name="Shortbow" hidden="false" collective="false" import="true" targetId="3706-6421-53b4-940d" type="selectionEntry"/>
         <entryLink id="b99a-dc1c-d2d8-31c5" name="Sling" hidden="false" collective="false" import="true" targetId="87c7-49b5-f1e7-6662" type="selectionEntry"/>
