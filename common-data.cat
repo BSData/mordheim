@@ -1022,6 +1022,36 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="da24-6a7f-725b-5bce" name="Brace of Duelling Pistols" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6f37-7303-125c-3bda" name="Brace of Duelling Pistols" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="a275054b-9b3d-9e68-49e9-7fbb6c714412">10</characteristic>
+            <characteristic name="Str" typeId="0e9e02bf-4d20-7ac3-d67f-67172b142b5c">4</characteristic>
+            <characteristic name="Special" typeId="fde90816-abbb-f019-75a0-0c24662facf3">Accuracy, Prepare shot, Save modifier, Hand-to-hand</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="6ccf-79f5-36de-d39b" name="Hand-to-hand" page="0" hidden="false">
+          <description>A brace of duelling pistols can be used in hand-to-hand combat as well as for shooting. A model armed with a duelling pistol and another close combat weapon gains +1 Attack, which is resolved at Strength 4 with a -2 save modifier. This bonus attack can be used only once per combat. If you are firing a brace of duelling pistols, your model can fight with 2 Attacks in the first turn of close combat. These attacks are resolved with a model’s Weapon Skill like any normal close combat attack and likewise may be parried. Successful hits are resolved at Strength 4 and with a -2 save modifier, regardless of the firer’s Strength.</description>
+        </rule>
+        <rule id="a464-64e4-d774-9211" name="Accuracy" page="0" hidden="false">
+          <description>A brace of duelling pistols is built for accuracy as a skilled duellist is able to hit a coin from twenty paces. All shots and close combat attacks from a duelling pistol have a +1 bonus to hit.</description>
+        </rule>
+        <rule id="36e7-c544-5b8d-ce3e" name="Rarity" hidden="false">
+          <description>Rarity 10</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="2708-8204-c4cd-a84c" name="Save modifier" hidden="false" targetId="5d21-2b30-4219-ec86" type="rule"/>
+        <infoLink id="3585-8791-1dce-1a51" name="Prepare shot" hidden="false" targetId="4f7f-29ec-a9da-82fc" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="50"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="e2c2-751b-5384-ce1d" name="Elf Bow" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="1a0b-6390-c1cd-d185" name="Elf Bow" page="0" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
@@ -3506,7 +3536,8 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="6a15-fa8c-68b0-9642" name="Bow" hidden="false" collective="false" import="true" targetId="311a-bf3f-67ff-46e7" type="selectionEntry"/>
         <entryLink id="6228-5226-7978-75db" name="Crossbow" hidden="false" collective="false" import="true" targetId="38cc-bc0b-7f19-8039" type="selectionEntry"/>
         <entryLink id="7500-bd88-d1f5-9a5b" name="Crossbow Pistol" hidden="false" collective="false" import="true" targetId="7e2c-4e29-d41c-2d9e" type="selectionEntry"/>
-        <entryLink id="9ef6-11c5-84bb-8208" name="Dueling Pistol" hidden="false" collective="false" import="true" targetId="da24-6a7f-725b-5bcb" type="selectionEntry"/>
+        <entryLink id="9ef6-11c5-84bb-8208" name="Duelling Pistol" hidden="false" collective="false" import="true" targetId="da24-6a7f-725b-5bcb" type="selectionEntry"/>
+        <entryLink id="9ef6-11c5-84bb-8208" name="Brace of Duelling Pistols" hidden="false" collective="false" import="true" targetId="da24-6a7f-725b-5bce" type="selectionEntry"/>
         <entryLink id="bce2-87d9-3a06-86a4" name="Elf Bow" hidden="false" collective="false" import="true" targetId="e2c2-751b-5384-ce1d" type="selectionEntry"/>
         <entryLink id="7ae8-6d85-3d30-d3b7" name="Handgun" hidden="false" collective="false" import="true" targetId="7f5a-d04d-153d-d334" type="selectionEntry"/>
         <entryLink id="6985-a928-a371-c68a" name="Hochland Long Rifle" hidden="false" collective="false" import="true" targetId="51ed-e371-76d2-d46b" type="selectionEntry"/>
