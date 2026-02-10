@@ -1737,9 +1737,9 @@ model’s BS to determine whether the net hits or not – there are no movement 
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5dcd-265b-9fef-751d" name="Squigg Prodder" page="0" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5dcd-265b-9fef-751d" name="Squig Prodder" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="a932-eba6-7b9d-8c77" name="Squigg Prodder" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+        <profile id="a932-eba6-7b9d-8c77" name="Squig Prodder" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
             <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Unwieldy, Strike First, Calvary Bonus +1</characteristic>
@@ -1747,7 +1747,7 @@ model’s BS to determine whether the net hits or not – there are no movement 
         </profile>
       </profiles>
       <rules>
-        <rule id="9415-0ec2-4e57-b6c6" name="Squigg Prodder" page="0" hidden="false">
+        <rule id="9415-0ec2-4e57-b6c6" name="Squig Prodder" page="0" hidden="false">
           <description>a Goblin with a Squig prodder can keep all Cave Squigs within 12&quot; from special rule under the Cave Squig entry.
 In addition, a Squig prodder is treated exactly like a spear in hand-to-hand combat.</description>
         </rule>
@@ -3594,7 +3594,8 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="34d9-99b5-1f17-6ce2" name="Morning Star" hidden="false" collective="false" import="true" targetId="d5f3-1906-da91-4e8f" type="selectionEntry"/>
         <entryLink id="b875-8164-dca6-2e7a" name="Spear" hidden="false" collective="false" import="true" targetId="005e-e397-8108-f198" type="selectionEntry"/>
         <entryLink id="003a-c940-fae4-0931" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
-        <entryLink id="d0ac-18d9-8c39-2900" name="Squigg Prodder" hidden="false" collective="false" import="true" targetId="5dcd-265b-9fef-751d" type="selectionEntry"/>
+        <entryLink id="003a-c940-fae4-0931" name="Trident" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee07" type="selectionEntry"/>
+        <entryLink id="d0ac-18d9-8c39-2900" name="Squig Prodder" hidden="false" collective="false" import="true" targetId="5dcd-265b-9fef-751d" type="selectionEntry"/>
         <entryLink id="89c8-d069-f3b4-9387" name="Fighting Claws" hidden="false" collective="false" import="true" targetId="c9bb-a349-a1d0-79b7" type="selectionEntry"/>
         <entryLink id="7e32-018b-fb3c-516d" name="Cathayan Longsword" hidden="false" collective="false" import="true" targetId="c3c1-acf0-6d76-fa15" type="selectionEntry"/>
         <entryLink id="77c2-cd19-1a82-e607" name="Starsword" hidden="false" collective="false" import="true" targetId="d555-01a5-feb1-9251" type="selectionEntry"/>
