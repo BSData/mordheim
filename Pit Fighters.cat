@@ -637,7 +637,7 @@ model’s BS to determine whether the net hits or not – there are no movement 
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Witch Elf Style" hidden="false" id="b49b-f863-5eda-35f5">
           <costs>
-            <cost name="pts" id="6ab7-c61e-7931-87a3" hidden="false" typeId="points" value="35"/>
+            <cost name="pts" id="6ab7-c61e-7931-87a3" hidden="false" typeId="points" value="30"/>
             <cost name="Warband Rating" id="62cc-5e0a-8a56-480c" hidden="false" typeId="wb-rating" value="0"/>
           </costs>
           <selectionEntries>
@@ -1034,6 +1034,30 @@ A 1-3 means he remains the Pit Fighters captive and may be fielded in the pits 
     </rule>
   </rules>
   <selectionEntries>
+    <selectionEntry id="83ade99f-e9ef-d25a-59ac-ca3f3def011c" name="Stash" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="83ade99f-e9ef-d25a-59ac-ca3f3def011c-a31acb39-8ce9-d6d7-bcc9-f3144d63db48" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5f07-20e8-34d1-e340" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="dad9014c-4be3-4cca-3345-5808f02cbcce" name="Gold" hidden="false" collective="false" import="true" targetId="b39ee84c-3f79-227e-4b39-8469fb19d56a" type="selectionEntry"/>
+        <entryLink id="6f878f2b-fa2b-6e2c-5bfe-a94012499470" hidden="false" collective="false" import="true" targetId="50dfad7a-35b1-bee6-657c-d603b181977d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="model" import="true" name="Pit King" hidden="false" id="640c-99a9-a8e-b112" collective="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1c5d-54f1-2ac9-f5f6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
