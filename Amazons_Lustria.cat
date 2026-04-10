@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c0ee-cf6e-9b18-45b6" name="Amazons Lustria (1b)" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c0ee-cf6e-9b18-45b6" name="Amazons Lustria (1b)" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+  <publications>
+    <publication id="c766-4c9f-c70c-d00a" name="GitHub" publisherUrl="https://github.com/BSData/mordheim.git"/>
+  </publications>
   <selectionEntries>
     <selectionEntry id="a434-e23f-bfff-a11a" name="Serpent Priestess" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -121,13 +124,12 @@ She starts with 1 ritual chosen at random from the list over.</description>
       </rules>
       <infoLinks>
         <infoLink id="c871-d126-51d9-f0ab" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
-        <infoLink id="0eac-3dd8-70ed-0345" name="Leader" hidden="false" targetId="8712-d0f2-fe64-07bd" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="b794-cc8a-d211-9d29" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="b794-cc8a-d211-9d29" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="6635-b493-3336-dab5" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6635-b493-3336-dab5" name="Trading Post" hidden="false" collective="false" import="true" type="upgrade" sortIndex="6">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edb2-6cef-4b73-f8ce" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="461d-de22-efa9-f8f7" type="max"/>
@@ -136,42 +138,105 @@ She starts with 1 ritual chosen at random from the list over.</description>
             <entryLink id="b7d8-07f3-5d04-252f" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5d44-a12e-0e8b-9c1e" name="Skills" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0411-8940-c55a-bc8d" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="313f-bad1-fc9c-9ef6" type="max"/>
-          </constraints>
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Heroines)" hidden="false" id="b24a-d029-3391-52a2" sortIndex="5" collapsible="true">
           <entryLinks>
-            <entryLink id="9c91-0726-efdc-1d83" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
-            <entryLink id="e7f3-68f7-499b-cafd" name="Special Skills (Amazons Lustria)" hidden="false" collective="false" import="true" targetId="4fca-86ef-05c9-c013" type="selectionEntryGroup"/>
-            <entryLink id="d4a6-c493-ebcf-3b98" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
-            <entryLink id="d12c-a3bc-ac9e-95d0" name="Academic Skills" hidden="false" collective="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Armour" hidden="false" id="ce5a-ad28-8958-928a" collective="false" targetId="ef2c-002f-6edc-0052" type="selectionEntryGroup" sortIndex="3"/>
+            <entryLink import="true" name="Hand-to-hand Weapons" hidden="false" id="f2ec-2060-dcde-421d" collective="false" targetId="c729-8ae4-d466-1a08" type="selectionEntryGroup" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="586d-bc1a-05e2-e2ec"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="3" field="586d-bc1a-05e2-e2ec">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Miscellaneous" hidden="false" id="b6f8-96f1-7b9f-ae93" collective="false" targetId="4533-e33e-be5f-6b33" type="selectionEntryGroup" sortIndex="4"/>
+            <entryLink import="true" name="Missile Weapons" hidden="false" id="0385-f5c1-860e-454c" collective="false" targetId="8498-1d99-6ae4-6adf" type="selectionEntryGroup" sortIndex="2"/>
           </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47a9-7a41-f482-b927-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="f32f-a2c9-7e05-fd6e" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink id="f32f-a2c9-7e05-fd6e" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="20" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2b3-0c52-833c-d2c2" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="69b7-008b-2927-57d9" name="Amazon Rituals" hidden="false" collective="false" import="true" targetId="2f8e-97f8-d549-60f8" type="selectionEntryGroup"/>
-        <entryLink id="efdb-0ff7-89eb-e8cd" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink id="98d2-137e-75a2-6367" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink id="8430-8c77-8102-8550" name="Heroines Equipment" hidden="false" collective="false" import="true" targetId="0b8e-6c7c-6f7a-119b" type="selectionEntryGroup"/>
+        <entryLink id="69b7-008b-2927-57d9" name="Amazon Rituals" hidden="false" collective="false" import="true" targetId="2f8e-97f8-d549-60f8" type="selectionEntryGroup" sortIndex="8" collapsible="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba83-7954-ac91-efa4"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="efdb-0ff7-89eb-e8cd" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="4"/>
+        <entryLink id="98d2-137e-75a2-6367" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" sortIndex="9"/>
+        <entryLink import="true" name="Leader" hidden="false" id="5933-79a5-2b88-be9e" type="selectionEntry" targetId="c392-8a40-3bfc-bdfa" sortIndex="1"/>
+        <entryLink import="true" name="Spell Caster" hidden="false" id="410a-41a1-2fc0-9ab2" type="selectionEntry" targetId="3cab-8082-9e74-d378" sortIndex="2"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="70"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name=" gc" typeId="points" value="70"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Skills" id="9107-0ead-9aa3-e53b" hidden="false" sortIndex="7">
+          <entryLinks>
+            <entryLink import="true" name="Speed Skills" hidden="false" id="d7c9-c9fa-ee01-7069" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5"/>
+            <entryLink import="true" name="Special Skills (Amazons Lustria)" hidden="false" id="b034-eb14-accb-95cd" collective="false" targetId="4fca-86ef-05c9-c013" type="selectionEntryGroup" sortIndex="6"/>
+            <entryLink import="true" name="Strength Skills" hidden="true" id="e978-7fe4-9672-779e" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4"/>
+            <entryLink import="true" name="Shooting Skills" hidden="true" id="5176-a297-789e-0ce2" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1" sortIndex="2"/>
+            <entryLink import="true" name="Combat Skills" hidden="false" id="addf-ac7f-2d3f-ff62" collective="false" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup" collapsible="true" sortIndex="1">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f02d-acf0-616a-29b5" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Academic Skills" hidden="false" id="7547-7f01-7815-a42f" collective="false" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup" collapsible="true" sortIndex="3">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2bea-96b7-1902-c279" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Alchemist’s notebook" hidden="true" id="614a-c80e-9abe-b07a" sortIndex="7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb00-a6d4-c9a3-6b2d"/>
+              </constraints>
+              <rules>
+                <rule name="(2 2 2 2 2) Alchemist’s Laboratory" id="8485-3411-b92d-68aa" hidden="false">
+                  <description>In the ruins you find loot worth 3D6 gc and a battered old notebook. One of your Heroes may study the Alchemist’s notebook, and the extra wisdom he gains will enable him to choose from Academic skills whenever he gains a new skill in addition to those skills normally available to him.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Training manual" hidden="true" id="d5cc-ae0d-82d5-bd95" sortIndex="8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b03d-544d-7df5-dbcf"/>
+              </constraints>
+              <rules>
+                <rule name="(5 5 5 5 5 5) Fighting Arena" id="8f96-08ad-c5a3-9199" hidden="false">
+                  <description>You find a training manual, which you can either sell for 100 gc or let one of your Heroes read. The extra knowledge your Hero gleans from reading the manual entitles him to choose from Combat skills whenever he gains a new skill, and his WS may now be increased by an extra point above his normal racial maximum (for example, a Human who has the book would now have a maximum Weapon Skill of 7).</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="4f7b-078f-10a6-6b29" name="Eagle Warriors" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -288,10 +353,10 @@ She starts with 1 ritual chosen at random from the list over.</description>
         <infoLink id="486d-fc45-f831-cc36" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="5559-c287-a2ad-c858" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="5559-c287-a2ad-c858" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="9dec-b6c3-e964-f33c" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9dec-b6c3-e964-f33c" name="Trading Post" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fe9-d647-2b3b-a733" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7077-f658-8d16-e7df" type="max"/>
@@ -300,41 +365,58 @@ She starts with 1 ritual chosen at random from the list over.</description>
             <entryLink id="c8d7-a6b5-1aac-3da3" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="36fe-4267-8864-e68d" name="Skills" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d38-584d-197c-c533" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2cc-d762-bd7c-279f" type="max"/>
-          </constraints>
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Heroines)" hidden="false" id="930f-e743-09af-eab8" sortIndex="3" collapsible="true">
           <entryLinks>
-            <entryLink id="f213-9e7b-ab1d-c237" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
-            <entryLink id="866c-3a6c-dc15-10ab" name="Special Skills (Amazons Lustria)" hidden="false" collective="false" import="true" targetId="4fca-86ef-05c9-c013" type="selectionEntryGroup"/>
-            <entryLink id="05f2-ec99-571e-b7df" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
-            <entryLink id="6abf-8ccd-6001-9c0a" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Armour" hidden="false" id="dfd8-5728-8abb-e035" collective="false" targetId="ef2c-002f-6edc-0052" type="selectionEntryGroup" sortIndex="3"/>
+            <entryLink import="true" name="Hand-to-hand Weapons" hidden="false" id="7822-f812-b20f-d3f4" collective="false" targetId="c729-8ae4-d466-1a08" type="selectionEntryGroup" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6c8f-8ad5-a6c0-7032"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="3" field="6c8f-8ad5-a6c0-7032">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Miscellaneous" hidden="false" id="8fb3-f38c-99c0-86a1" collective="false" targetId="4533-e33e-be5f-6b33" type="selectionEntryGroup" sortIndex="4"/>
+            <entryLink import="true" name="Missile Weapons" hidden="false" id="cf1f-d0a5-ee5d-76da" collective="false" targetId="8498-1d99-6ae4-6adf" type="selectionEntryGroup" sortIndex="2"/>
           </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33a3-5fa6-7c9a-ee2b-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="6f5c-3fcc-22df-d52b" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink id="6f5c-3fcc-22df-d52b" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5acc-524c-ebc1-952a" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="a1be-a32f-a58e-9e92" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink id="ef20-288a-39e3-2acb" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink id="00f9-da8d-b96b-7061" name="Heroines Equipment" hidden="false" collective="false" import="true" targetId="0b8e-6c7c-6f7a-119b" type="selectionEntryGroup"/>
+        <entryLink id="a1be-a32f-a58e-9e92" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="2"/>
+        <entryLink id="ef20-288a-39e3-2acb" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" sortIndex="6"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="35"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name=" gc" typeId="points" value="35"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Skills" id="7bac-fcb7-ca3f-6f36" hidden="false" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Combat Skills" hidden="false" id="f213-9e7b-ab1d-c237" collective="false" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup" sortIndex="1"/>
+            <entryLink import="true" name="Strength Skills" hidden="false" id="6abf-8ccd-6001-9c0a" collective="false" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup" sortIndex="2"/>
+            <entryLink import="true" name="Speed Skills" hidden="false" id="05f2-ec99-571e-b7df" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="3"/>
+            <entryLink import="true" name="Special Skills (Amazons Lustria)" hidden="false" id="866c-3a6c-dc15-10ab" collective="false" targetId="4fca-86ef-05c9-c013" type="selectionEntryGroup" sortIndex="4"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="4c0c-e3f9-0732-a766" name="Piranha Warriors" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -451,58 +533,114 @@ She starts with 1 ritual chosen at random from the list over.</description>
         <infoLink id="0e54-8def-4be2-a9a4" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="bdbc-4f18-8923-1850" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="bdbc-4f18-8923-1850" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="eead-ecb7-b5e5-ee01" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="eead-ecb7-b5e5-ee01" name="Trading Post" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba65-721b-12f4-40fb" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f79e-8ba1-d91c-f5d4" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="0b37-412f-3ba6-8e91" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-            <entryLink id="a2d3-6863-3635-4d55" name="Conch Shell Horn" hidden="false" collective="false" import="true" targetId="4648-e96e-321c-e8c2" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a373-9347-eadc-fe95" name="Skills" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7c3-cfb4-7445-a91a" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6626-883f-e66a-74ed" type="max"/>
-          </constraints>
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Heroines)" hidden="false" id="0ade-ff0e-5d51-d050" sortIndex="3" collapsible="true">
           <entryLinks>
-            <entryLink id="c924-01ae-53b5-f499" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
-            <entryLink id="704f-ac42-261e-2d8f" name="Special Skills (Amazons Lustria)" hidden="false" collective="false" import="true" targetId="4fca-86ef-05c9-c013" type="selectionEntryGroup"/>
-            <entryLink id="ffd0-59d4-8f8f-e737" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
-            <entryLink id="54f8-45bc-efaa-4941" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Armour" hidden="false" id="ae81-e046-2151-8a49" collective="false" targetId="ef2c-002f-6edc-0052" type="selectionEntryGroup" sortIndex="3"/>
+            <entryLink import="true" name="Hand-to-hand Weapons" hidden="false" id="e435-b27c-849f-74f2" collective="false" targetId="c729-8ae4-d466-1a08" type="selectionEntryGroup" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="577d-9c3b-54a4-370d"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="3" field="577d-9c3b-54a4-370d">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Miscellaneous" hidden="false" id="b9ee-9e67-074a-fe83" collective="false" targetId="4533-e33e-be5f-6b33" type="selectionEntryGroup" sortIndex="4"/>
+            <entryLink import="true" name="Missile Weapons" hidden="false" id="a23c-fe43-f133-8795" collective="false" targetId="8498-1d99-6ae4-6adf" type="selectionEntryGroup" sortIndex="2"/>
           </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3273-d2df-a392-b78a-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="dc32-f934-82a3-e4d4" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry">
+        <entryLink id="dc32-f934-82a3-e4d4" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40ea-b321-2fd1-5b7e" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="9ce0-0b26-0142-fd9b" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink id="eaab-ed32-3003-0b4c" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink id="ba49-8a10-6612-3206" name="Heroines Equipment" hidden="false" collective="false" import="true" targetId="0b8e-6c7c-6f7a-119b" type="selectionEntryGroup"/>
+        <entryLink id="9ce0-0b26-0142-fd9b" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="2"/>
+        <entryLink id="eaab-ed32-3003-0b4c" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" sortIndex="6"/>
       </entryLinks>
       <costs>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
-        <cost name="pts" typeId="points" value="30"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name=" gc" typeId="points" value="30"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Skills" id="6896-9a41-2e99-c1e2" hidden="false" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Combat Skills" hidden="false" id="c924-01ae-53b5-f499" collective="false" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup" sortIndex="1" collapsible="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f02d-acf0-616a-29b5" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Shooting Skills" hidden="false" id="54f8-45bc-efaa-4941" collective="false" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup" sortIndex="2" collapsible="true"/>
+            <entryLink import="true" name="Speed Skills" hidden="false" id="ffd0-59d4-8f8f-e737" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5" collapsible="true"/>
+            <entryLink import="true" name="Special Skills (Amazons Lustria)" hidden="false" id="704f-ac42-261e-2d8f" collective="false" targetId="4fca-86ef-05c9-c013" type="selectionEntryGroup" sortIndex="6" collapsible="true"/>
+            <entryLink import="true" name="Strength Skills" hidden="true" id="b622-26dc-3c6e-33ba" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4" collapsible="true"/>
+            <entryLink import="true" name="Academic Skills" hidden="true" id="b151-7bb1-c3fd-5217" collective="false" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup" sortIndex="3" collapsible="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2bea-96b7-1902-c279" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Alchemist’s notebook" hidden="false" id="2bea-96b7-1902-c279" sortIndex="7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9862-63f7-5edc-cdcf"/>
+              </constraints>
+              <rules>
+                <rule name="(2 2 2 2 2) Alchemist’s Laboratory" id="ff77-ca00-7fb4-c1e7" hidden="false">
+                  <description>In the ruins you find loot worth 3D6 gc and a battered old notebook. One of your Heroes may study the Alchemist’s notebook, and the extra wisdom he gains will enable him to choose from Academic skills whenever he gains a new skill in addition to those skills normally available to him.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Training manual" hidden="true" id="f02d-acf0-616a-29b5" sortIndex="8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13b8-a822-2cc0-325c"/>
+              </constraints>
+              <rules>
+                <rule name="(5 5 5 5 5 5) Fighting Arena" id="298d-6b54-de7e-57ce" hidden="false">
+                  <description>You find a training manual, which you can either sell for 100 gc or let one of your Heroes read. The extra knowledge your Hero gleans from reading the manual entitles him to choose from Combat skills whenever he gains a new skill, and his WS may now be increased by an extra point above his normal racial maximum (for example, a Human who has the book would now have a maximum Weapon Skill of 7).</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="45f4-d5a6-22b2-0281" name="Amazon Warriors" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4fb-8212-167d-a4ac" type="min"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f38-097b-3b39-7ab7" type="min"/>
       </constraints>
       <profiles>
         <profile id="07fd-d7da-c0d8-fcd3" name="Amazon Warriors" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -615,10 +753,10 @@ She starts with 1 ritual chosen at random from the list over.</description>
         <infoLink id="917e-3403-15e0-38af" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="ec2a-01aa-ff6c-0456" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="ec2a-01aa-ff6c-0456" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1846-507b-8665-ec74" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1846-507b-8665-ec74" name="Trading Post" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72dd-62c9-89ff-9186" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e40-a617-29f8-4d6d" type="max"/>
@@ -627,15 +765,123 @@ She starts with 1 ritual chosen at random from the list over.</description>
             <entryLink id="6baa-3d95-133e-ac6e" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="de60-0f25-d969-ccd0" name="Amazon Warrior" hidden="false" collective="false" import="true" type="model" sortIndex="1">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f02a-96a2-9dae-1646" type="min"/>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="565b-ce17-b097-ac36" type="max"/>
+          </constraints>
+          <costs>
+            <cost name=" gc" typeId="points" value="25"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="565b-ce17-b097-ac36">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="534a-6ec6-5d82-da7f" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="To promote a henchmen to hero, duplicate the group. Set one group to 1 promoted model and decrease the size of the remaining henchmen group by 1." field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="534a-6ec6-5d82-da7f" shared="true"/>
+                <condition type="atLeast" value="2" field="selections" scope="parent" childId="model" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="prepend" value="Hero" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="534a-6ec6-5d82-da7f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Henchwoman)" hidden="false" id="183c-4b32-b1f2-329d" sortIndex="5" collapsible="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Missile Weapons" id="818f-c50e-deb5-b61d" hidden="false" collective="false" import="true" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1953-0ceb-96df-32ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Bow" hidden="false" id="8b8a-7ad2-e8ef-2e28" collective="false" targetId="311a-bf3f-67ff-46e7" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80ae-4c82-6952-46cb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Sunstaff (Lustria)" hidden="false" id="6c4d-2001-f957-4cd0" collective="false" targetId="7537-ac89-b499-e6d0" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78cd-0716-f97e-0390" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Sling" hidden="false" id="dfeb-0088-dc2b-1114" collective="false" targetId="87c7-49b5-f1e7-6662" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" value="3" field="points"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5b7-af6d-1ff4-b13b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="8d5a-0170-9cce-461e" hidden="false" collective="false" import="true" sortIndex="1">
+              <modifiers>
+                <modifier type="set" value="3" field="e913-1d78-1e81-7a8c">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e913-1d78-1e81-7a8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Club" hidden="false" id="1fb1-73f6-e3ce-807e" collective="false" targetId="b43f-0d15-1f20-7fda" type="selectionEntry"/>
+                <entryLink import="true" name="Dagger" hidden="false" id="707c-4f14-634d-153c" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
+                <entryLink import="true" name="Free Dagger" hidden="false" id="460d-75fc-05b5-717f" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
+                <entryLink import="true" name="Spear" hidden="false" id="a104-a82f-403b-8caa" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry"/>
+                <entryLink import="true" name="Sword" hidden="false" id="799e-b892-4229-97b8" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Armour" id="ceb1-3acd-fd83-9726" hidden="false" collective="false" import="true" collapsible="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Buckler" hidden="false" id="a47c-217a-6c34-9394" collective="false" targetId="0871-44c2-f0f0-c27a" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbc4-d737-7225-457c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Enchanted Skins" hidden="false" id="ffac-64db-a123-1db7" collective="false" targetId="c874-54c8-e83d-a1b4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" value="20" field="points">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" value="20" field="points"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19e9-ddd3-3819-76b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Helmet" hidden="false" id="de9f-ea67-4dc3-061d" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eca5-03fc-1f04-d294" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d766-f944-5e17-8f61-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="c65a-c771-ab53-dac7" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink id="05b9-e5cc-e786-b0cf" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink id="9bc6-37e5-ee3c-3810" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
+        <entryLink id="c65a-c771-ab53-dac7" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" sortIndex="2"/>
+        <entryLink id="05b9-e5cc-e786-b0cf" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="3"/>
+        <entryLink id="9bc6-37e5-ee3c-3810" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" sortIndex="4"/>
         <entryLink id="efb1-698b-0471-abf8" name="Serious Injuries" hidden="true" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -645,7 +891,7 @@ She starts with 1 ritual chosen at random from the list over.</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="bdfa-567b-e35f-adc1" name="Skills" hidden="true" collective="false" import="true" targetId="19ba-8ff2-2f47-b3d9" type="selectionEntryGroup">
+        <entryLink id="bdfa-567b-e35f-adc1" name="Skills" hidden="true" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -654,12 +900,19 @@ She starts with 1 ritual chosen at random from the list over.</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="063c-3963-17a8-5526" name="Henchwomen Equipment" hidden="false" collective="false" import="true" targetId="d882-3830-4c1f-5788" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
-        <cost name="pts" typeId="points" value="25"/>
+        <cost name=" gc" typeId="points" value="0"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="prepend" value="Hero" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="534a-6ec6-5d82-da7f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="3f70-891e-c188-a409" name="Jaguar Warriors" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -781,10 +1034,10 @@ She starts with 1 ritual chosen at random from the list over.</description>
         <infoLink id="00b1-e2c9-ebae-f43d" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="05e1-7743-cc03-dcbe" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="05e1-7743-cc03-dcbe" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1f51-3ec6-634f-bca6" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1f51-3ec6-634f-bca6" name="Trading Post" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8bc-fb66-47bd-28fe" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8093-c466-b146-5c97" type="max"/>
@@ -793,15 +1046,128 @@ She starts with 1 ritual chosen at random from the list over.</description>
             <entryLink id="d981-5718-c2d9-afc0" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="aa53-c437-48ec-e31d" name="Jaguar Warrior" hidden="false" collective="false" import="true" type="model" sortIndex="1">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4aad-ebd6-eaa4-462f" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2047-a236-6813-98c1" type="max"/>
+          </constraints>
+          <costs>
+            <cost name=" gc" typeId="points" value="30"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="1" field="2047-a236-6813-98c1">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="534a-6ec6-5d82-da7f" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="To promote a henchmen to hero, duplicate the group. Set one group to 1 promoted model and decrease the size of the remaining henchmen group by 1." field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="534a-6ec6-5d82-da7f" shared="true"/>
+                <condition type="atLeast" value="2" field="selections" scope="parent" childId="model" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="prepend" value="Hero" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="534a-6ec6-5d82-da7f" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Jaguar Warriors)" hidden="false" id="41ad-0f66-a4ff-e248" sortIndex="5" collapsible="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armour" id="9a57-79b1-f89c-22fb" hidden="false" collective="false" import="true" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Enchanted Skins" hidden="false" id="249e-dc30-f9b6-bd2b" collective="false" targetId="c874-54c8-e83d-a1b4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" value="20" field="points">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="aa53-c437-48ec-e31d" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" value="20" field="points"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2862-77bc-4419-cad7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Helmet" hidden="false" id="f13d-f633-4eeb-b582" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5be-6596-f476-9216" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="fcb2-c211-888c-ef8a" hidden="false" collective="false" import="true" sortIndex="1">
+              <modifiers>
+                <modifier type="set" value="3" field="0796-3644-a677-cf29">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0796-3644-a677-cf29" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Club" hidden="false" id="1859-94b3-d55e-0447" collective="false" targetId="b43f-0d15-1f20-7fda" type="selectionEntry"/>
+                <entryLink import="true" name="Dagger" hidden="false" id="9b8a-c392-bc4d-fa78" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
+                <entryLink import="true" name="Free Dagger" hidden="false" id="0eec-6f8c-ffb5-5a65" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
+                <entryLink import="true" name="Spear" hidden="false" id="649d-9601-3f0f-d365" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry"/>
+                <entryLink import="true" name="Sword" hidden="false" id="070e-5424-ad49-229f" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Missile Weapons" id="4f64-470d-2189-fb76" hidden="false" collective="false" import="true" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cd2b-2b61-e59d-fd0b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Bow" hidden="false" id="0894-f661-9b9d-038a" collective="false" targetId="311a-bf3f-67ff-46e7" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8884-10a8-ff4f-1b6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Sunstaff (Lustria)" hidden="false" id="5d5f-e2cb-240f-55ba" collective="false" targetId="7537-ac89-b499-e6d0" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d2d-c76d-3b1e-a40d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Sling" hidden="false" id="d312-a775-d38a-15df" collective="false" targetId="87c7-49b5-f1e7-6662" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" value="3" field="points"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60ec-3ef1-8430-a65d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Bolas" hidden="false" id="a7f1-f2a6-5160-6e66" collective="false" targetId="5595-398a-3e24-de99" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce62-a412-a9a4-6b3a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Javelins" hidden="false" id="484a-f5b1-0edc-59bd" collective="false" targetId="ece5-fffa-8dd8-94dc" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2010-707f-afa5-5991" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cad3-68c2-a1d5-c2bd-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="ddfa-8276-e8b8-0e91" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry"/>
-        <entryLink id="e9e3-71e5-c030-4c7f" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink id="73c2-5ebe-e3ee-eb6d" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry"/>
+        <entryLink id="cb88-7c07-10d1-cdee" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" sortIndex="2"/>
+        <entryLink id="e9e3-71e5-c030-4c7f" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="3"/>
+        <entryLink id="73c2-5ebe-e3ee-eb6d" name="Promoted" hidden="false" collective="false" import="true" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" sortIndex="4"/>
         <entryLink id="0e10-125b-8afb-f69a" name="Serious Injuries" hidden="true" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -811,7 +1177,7 @@ She starts with 1 ritual chosen at random from the list over.</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="ef70-9a9b-abf4-a5b5" name="Skills" hidden="true" collective="false" import="true" targetId="19ba-8ff2-2f47-b3d9" type="selectionEntryGroup">
+        <entryLink id="ef70-9a9b-abf4-a5b5" name="Skills" hidden="true" collective="false" import="true" targetId="70b9-9a07-4088-7598" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -820,12 +1186,19 @@ She starts with 1 ritual chosen at random from the list over.</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="04fa-b5ad-9b74-f202" name="Jaguar Warrior Equipment" hidden="false" collective="false" import="true" targetId="0635-cccb-deaa-d185" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
-        <cost name="pts" typeId="points" value="30"/>
+        <cost name=" gc" typeId="points" value="0"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="prepend" value="Hero" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="534a-6ec6-5d82-da7f" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="2561-12dd-6680-846f" name="Stash" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -833,16 +1206,21 @@ She starts with 1 ritual chosen at random from the list over.</description>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65eb-2610-5236-9225" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="8078-b629-a3cf-1325" name="New CategoryLink" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
+        <categoryLink id="8078-b629-a3cf-1325" name="Stash" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="cf2e-ea28-cc90-29a4" name="Gold" hidden="false" collective="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink id="cf2e-ea28-cc90-29a4" name="Variable Gold Cost" hidden="false" collective="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="Gold" field="name"/>
+          </modifiers>
+        </entryLink>
         <entryLink id="f1ba-bfd9-d8b0-0afb" name="Wyrdstone" hidden="false" collective="false" import="true" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink id="2d78-37f2-5ee2-19d8" name="Looted Equip" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink id="2d78-37f2-5ee2-19d8" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" gc" typeId="points" value="0"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -882,8 +1260,9 @@ This restores all wounds he has previously lost during the game.</description>
         </rule>
       </rules>
       <costs>
-        <cost name="pts" typeId="points" value="35"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" gc" typeId="points" value="35"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4648-e96e-321c-e8c2" name="Conch Shell Horn" hidden="false" collective="false" import="true" type="upgrade">
@@ -894,20 +1273,46 @@ This restores all wounds he has previously lost during the game.</description>
 At the beginning of the game a Piranha warrior may use the horn to re-roll when deciding who deploys first and who goes first.
 Multiple models that have the horn cannot force a second re-roll. (Piranha warriors only)</description>
         </rule>
-        <rule id="72a5-a187-80cf-1cd5" name="Rarity" hidden="false">
-          <description>Rarity 8</description>
+        <rule id="72a5-a187-80cf-1cd5" name="Rare" hidden="false">
+          <description>8</description>
         </rule>
       </rules>
       <costs>
-        <cost name="pts" typeId="points" value="25"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" gc" typeId="points" value="25"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="c874-54c8-e83d-a1b4" name="Enchanted Skins" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ea4f-9b83-cadd-65a4" name="Enchanted Skins" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor">
+          <characteristics>
+            <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">special 6+</characteristic>
+            <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">The protective skins and charms that the Amazons wear have been warded with defensive magic.
+To represent this, any model wearing Skins and Charms receives a 6+ special save versus any wounds inflicted.
+In addition, the wearer of Skins and Charms is unaffected by enemy magic on a roll of 5+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b8f4-1f6f-04ea-8720" name="Rare" hidden="false">
+          <description>Rarity 6</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" gc" typeId="points" value="20"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b59-cc9c-a2df-73a4" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="4fca-86ef-05c9-c013" name="Special Skills (Amazons Lustria)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="4fca-86ef-05c9-c013" name="Special Skills (Amazons Lustria)" hidden="false" collective="false" import="true" collapsible="true">
       <selectionEntries>
-        <selectionEntry id="d555-c6d7-4a10-d15f" name="Skink Hunter" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d555-c6d7-4a10-d15f" name="Skink Hunter" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="387c-0826-ea14-c432" type="max"/>
           </constraints>
@@ -919,11 +1324,12 @@ An Amazon with this skill will always strike first in the first round of combat 
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="28f8-3dcd-59fe-4227" name="Elixir of Life" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="28f8-3dcd-59fe-4227" name="Elixir of Life" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="047d-531b-0262-c2c0" type="max"/>
           </constraints>
@@ -936,11 +1342,12 @@ Any Amazon with this Elixir can reroll an Out of Action roll once after the batt
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f3d5-1d5f-1fa4-b4a7" name="Mesmerising Dance" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f3d5-1d5f-1fa4-b4a7" name="Mesmerising Dance" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5761-0f1f-181d-fd41" type="max"/>
           </constraints>
@@ -955,11 +1362,12 @@ The dance however is useless against Lizardmen and undead who are immune to thei
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a4f3-c249-caac-5b82" name="Savage Fury" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a4f3-c249-caac-5b82" name="Savage Fury" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75e5-41a3-56b8-dcf1" type="max"/>
           </constraints>
@@ -971,11 +1379,12 @@ Any Amazon model with this skill receives +1A when charging and is immune to cha
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="12b0-3f57-544b-e02f" name="Concealment" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="12b0-3f57-544b-e02f" name="Concealment" hidden="false" collective="false" import="true" type="upgrade" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2846-02ac-2854-83bc" type="max"/>
           </constraints>
@@ -987,17 +1396,18 @@ When hiding in jungle terrain all enemy models must halve the range at which the
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="2f8e-97f8-d549-60f8" name="Amazon Rituals" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="2f8e-97f8-d549-60f8" name="Amazon Rituals" hidden="false" collective="false" import="true" collapsible="true">
       <selectionEntries>
-        <selectionEntry id="969a-26a6-b6c9-d6b7" name="1 Singing Wind" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="969a-26a6-b6c9-d6b7" name="1. Singing Wind" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="888d-61ae-8a0b-2f91" name="1 Singing Wind" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+            <profile id="888d-61ae-8a0b-2f91" name="1. Singing Wind" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
               <characteristics>
                 <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
                 <characteristic name="Effect" typeId="0592-3510-8508-7263">The priestess calls upon the power of Shaekal the Wind Goddess to enter the battlefield.
@@ -1009,13 +1419,17 @@ Models affected by this ritual automatically go last in combat.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7d9-f8d3-c869-babd" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry id="e1af-8dbc-b539-0780" name="2 Serpent’s Strength" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e1af-8dbc-b539-0780" name="2. Serpent’s Strength" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="67d0-34b0-7e72-f7a5" name="2 Serpent’s Strength" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+            <profile id="67d0-34b0-7e72-f7a5" name="2. Serpent’s Strength" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
               <characteristics>
                 <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">9</characteristic>
                 <characteristic name="Effect" typeId="0592-3510-8508-7263">The priestess begins the ritual by dancing wildly and screaming in an ancient tongue.
@@ -1028,13 +1442,17 @@ The effects will continue after the ritual is cast if the Priestess enters comba
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a15-42d3-7f05-164f" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry id="93ae-af75-434b-a732" name="3 Wendala’s Maelstrom" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="93ae-af75-434b-a732" name="3. Wendala’s Maelstrom" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="dcf3-c27e-ba64-eb96" name="3 Wendala’s Maelstrom" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+            <profile id="dcf3-c27e-ba64-eb96" name="3. Wendala’s Maelstrom" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
               <characteristics>
                 <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
                 <characteristic name="Effect" typeId="0592-3510-8508-7263">The priestess summons harsh tropical winds to protect the Amazons from enemy ranged attacks.
@@ -1046,13 +1464,17 @@ The ritual lasts up until the start of the Amazon player’s next turn.</charact
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a211-c457-3478-7aad" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry id="1253-2bb8-4e6c-662b" name="4 Shield of Thorns" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1253-2bb8-4e6c-662b" name="4. Shield of Thorns" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="20ae-3f07-cc02-10f3" name="4 Shield of Thorns" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+            <profile id="20ae-3f07-cc02-10f3" name="4. Shield of Thorns" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
               <characteristics>
                 <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
                 <characteristic name="Effect" typeId="0592-3510-8508-7263">Moving her arms about in a weaving motion, the priestess calls upon the plants to protect her.
@@ -1065,13 +1487,17 @@ The Priestess cannot cast this ritual while in hand-to-hand combat.</characteris
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b009-101d-2e19-c541" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry id="6159-5e46-82bf-d6f3" name="5 The Living Jungle" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6159-5e46-82bf-d6f3" name="5. The Living Jungle" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="b760-83ef-5987-206c" name="5 The Living Jungle" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+            <profile id="b760-83ef-5987-206c" name="5. The Living Jungle" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
               <characteristics>
                 <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
                 <characteristic name="Effect" typeId="0592-3510-8508-7263">Drawing upon her will, the Priestess reaches out to the denizens of the jungle, seeking their aid.
@@ -1084,13 +1510,17 @@ You cannot use a dodge save against a swarm.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e2f-9e6b-a9d4-7ff1" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry id="87a5-d49d-1e46-41a5" name="6 Siren’s Dreams" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="87a5-d49d-1e46-41a5" name="6. Siren’s Dreams" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="c3f0-d371-09ac-1aec" name="6 Siren’s Dreams" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+            <profile id="c3f0-d371-09ac-1aec" name="6. Siren’s Dreams" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
               <characteristics>
                 <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
                 <characteristic name="Effect" typeId="0592-3510-8508-7263">The priestess starts to sing with a wondrous voice and all the Amazons join in with her.
@@ -1102,246 +1532,91 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6c5-afe5-fa99-4b5b" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="19ba-8ff2-2f47-b3d9" name="Skills" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c80-1f2f-da2e-4969" type="max"/>
-        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9718-3416-f5d8-53bc" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="f166-f542-fc14-0aee" name="Academic Skills" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e767-ee2f-5f72-0c3e" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="e468-56b0-f7b8-d27c" name="Academic Skills" hidden="false" collective="false" import="true" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="92d2-8bf1-d21d-3857" name="Special Skills (Amazons Lustria)" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43d3-7a49-02c9-1a8d" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="f8a6-bbe3-209a-b5f1" name="Special Skills (Amazons Lustria)" hidden="false" collective="false" import="true" targetId="4fca-86ef-05c9-c013" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="17da-4e26-6088-8e9a" name="Combat Skills" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="721a-b871-9b5e-4d95" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ada5-e70a-f30b-c894" name="Combat Skills" hidden="false" collective="false" import="true" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0428-7eb3-dd10-3e2c" name="Shooting Skills" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e8f-0511-613f-190e" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="d349-7978-b823-57e4" name="Shooting Skills" hidden="false" collective="false" import="true" targetId="0073-d2d6-15c0-45b1" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="507d-45ef-be64-0de4" name="Speed Skills" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6210-4275-0b4e-8cbd" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="c66a-aa3a-c3f5-5a6c" name="Speed Skills" hidden="false" collective="false" import="true" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="01de-bcb6-6b0d-8054" name="Strength Skills" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a8c-8873-1b29-5b7e" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="c343-54a2-7e66-6be2" name="Strength Skills" hidden="false" collective="false" import="true" targetId="e5ac-cd5b-9057-e096" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="0b8e-6c7c-6f7a-119b" name="Heroines Equipment" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="c729-8ae4-d466-1a08" name="Hand-to-hand Weapons" hidden="false" collective="false" import="true" collapsible="false">
       <entryLinks>
-        <entryLink id="8bc3-f00a-a720-c9ef" name="Hand-to-hand Weapons" hidden="false" collective="false" import="true" targetId="c729-8ae4-d466-1a08" type="selectionEntryGroup"/>
-        <entryLink id="6047-62c1-b84b-0f31" name="Missile Weapons" hidden="false" collective="false" import="true" targetId="8498-1d99-6ae4-6adf" type="selectionEntryGroup"/>
-        <entryLink id="9df0-ab5f-fe58-49ca" name="Armor" hidden="false" collective="false" import="true" targetId="ef2c-002f-6edc-0052" type="selectionEntryGroup"/>
-        <entryLink id="1250-a287-2565-3929" name="Miscellaneous" hidden="false" collective="false" import="true" targetId="4533-e33e-be5f-6b33" type="selectionEntryGroup"/>
+        <entryLink id="4c49-55f9-f9ae-3a22" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
+        <entryLink id="f6a5-b486-f194-1a2f" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
+        <entryLink id="8bb1-211b-da9b-a5e5" name="Club" hidden="false" collective="false" import="true" targetId="b43f-0d15-1f20-7fda" type="selectionEntry" sortIndex="3"/>
+        <entryLink id="fe09-9a4e-c27d-4a67" name="Spear" hidden="false" collective="false" import="true" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="5"/>
+        <entryLink id="35f0-9a10-f1ad-5f99" name="Double Handed Weapon" hidden="false" collective="false" import="true" targetId="a0a1-b311-e3aa-6c3b" type="selectionEntry" sortIndex="6"/>
+        <entryLink id="2753-f2cb-4a16-794a" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry" sortIndex="4"/>
+        <entryLink import="true" name="Starblade" hidden="false" id="2bce-d15b-bd69-2bee" type="selectionEntry" targetId="7f74-19af-981d-394d" sortIndex="7"/>
+        <entryLink import="true" name="Starsword" hidden="false" id="cc43-436d-982e-4ffb" type="selectionEntry" targetId="1f34-eeff-387e-70bb" sortIndex="8"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="c729-8ae4-d466-1a08" name="Hand-to-hand Weapons" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="8498-1d99-6ae4-6adf" name="Missile Weapons" hidden="false" collective="false" import="true" collapsible="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eae3-a984-1b30-6932" type="max"/>
+      </constraints>
       <entryLinks>
-        <entryLink id="4c49-55f9-f9ae-3a22" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-        <entryLink id="f6a5-b486-f194-1a2f" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
-        <entryLink id="8bb1-211b-da9b-a5e5" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="name" value="Club"/>
-          </modifiers>
+        <entryLink id="87c3-335c-974e-d87a" name="Bow" hidden="false" collective="false" import="true" targetId="311a-bf3f-67ff-46e7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5e5-f030-867b-f8e1" type="max"/>
+          </constraints>
         </entryLink>
-        <entryLink id="fe09-9a4e-c27d-4a67" name="Spear" hidden="false" collective="false" import="true" targetId="005e-e397-8108-f198" type="selectionEntry"/>
-        <entryLink id="35f0-9a10-f1ad-5f99" name="Double Handed Weapon" hidden="false" collective="false" import="true" targetId="a0a1-b311-e3aa-6c3b" type="selectionEntry"/>
-        <entryLink id="2753-f2cb-4a16-794a" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
-        <entryLink id="9555-e7b4-c44f-9935" name="Starblade" hidden="false" collective="false" import="true" targetId="ec90-545c-e303-099b" type="selectionEntry"/>
-        <entryLink id="1145-83f2-d733-225a" name="Starsword" hidden="false" collective="false" import="true" targetId="d555-01a5-feb1-9251" type="selectionEntry"/>
-      </entryLinks>
-      <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="125c-6932-2d76-757e"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="3" field="125c-6932-2d76-757e">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="8498-1d99-6ae4-6adf" name="Missile Weapons" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="87c3-335c-974e-d87a" name="Bow" hidden="false" collective="false" import="true" targetId="311a-bf3f-67ff-46e7" type="selectionEntry"/>
-        <entryLink id="c073-6fe9-471c-ed66" name="Sunstaff" hidden="false" collective="false" import="true" targetId="27ff-9f93-cc7a-6f30" type="selectionEntry"/>
-      </entryLinks>
-      <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="eae3-a984-1b30-6932"/>
-      </constraints>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="ef2c-002f-6edc-0052" name="Armor" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="00c2-93de-d22a-9369" name="Helmet" hidden="false" collective="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry"/>
-        <entryLink id="6eb6-0922-4015-6861" name="Buckler" hidden="false" collective="false" import="true" targetId="0871-44c2-f0f0-c27a" type="selectionEntry"/>
-        <entryLink id="cf1b-ef93-f56d-8791" name="Enchanted Skins" hidden="false" collective="false" import="true" targetId="b4b4-b4a8-dd8f-36a3" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="4533-e33e-be5f-6b33" name="Miscellaneous" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="983d-f8f4-d490-a9bd" name="Amulet of the Moon" hidden="false" collective="false" import="true" targetId="d737-92c2-4586-5b26" type="selectionEntry"/>
-        <entryLink id="1434-beb3-c21b-de46" name="Healing Herbs" hidden="false" collective="false" import="true" targetId="a4dc-ccbb-11c8-0df8" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="d882-3830-4c1f-5788" name="Henchwomen Equipment" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="98d1-823a-fce5-e407" name="Hand-to-hand Weapons" hidden="false" collective="false" import="true" targetId="9af0-9c2a-4e26-c872" type="selectionEntryGroup"/>
-        <entryLink id="583d-8dec-cbca-68d5" name="Missile Weapons" hidden="false" collective="false" import="true" targetId="d674-5ce0-e696-044b" type="selectionEntryGroup"/>
-        <entryLink id="e630-6970-3e0e-aa80" name="Armor" hidden="false" collective="false" import="true" targetId="ef2c-002f-6edc-0052" type="selectionEntryGroup"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="9af0-9c2a-4e26-c872" name="Hand-to-hand Weapons" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="686b-8364-592b-8f1a" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-        <entryLink id="0ab3-92a1-fcd4-8974" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
-        <entryLink id="b56d-a946-f86f-ff97" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="name" value="Club"/>
-          </modifiers>
-        </entryLink>
-        <entryLink id="0eaa-2a33-a81d-bfce" name="Spear" hidden="false" collective="false" import="true" targetId="005e-e397-8108-f198" type="selectionEntry"/>
-        <entryLink id="b132-3472-bb7f-565d" name="Double Handed Weapon" hidden="false" collective="false" import="true" targetId="a0a1-b311-e3aa-6c3b" type="selectionEntry"/>
-        <entryLink id="1734-1694-800f-184d" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
-      </entryLinks>
-      <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7b0d-8e91-b2b3-badf"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="3" field="7b0d-8e91-b2b3-badf">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="d674-5ce0-e696-044b" name="Missile Weapons" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="a6dc-18ed-00a2-49aa" name="Bow" hidden="false" collective="false" import="true" targetId="311a-bf3f-67ff-46e7" type="selectionEntry"/>
-        <entryLink id="720a-2c91-8255-8b4e" name="Sunstaff" hidden="false" collective="false" import="true" targetId="27ff-9f93-cc7a-6f30" type="selectionEntry"/>
-        <entryLink id="91ab-44c3-b87f-307e" name="Sling" hidden="false" collective="false" import="true" targetId="87c7-49b5-f1e7-6662" type="selectionEntry"/>
-      </entryLinks>
-      <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d967-ee60-4b79-2ace"/>
-      </constraints>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="0635-cccb-deaa-d185" name="Jaguar Warrior Equipment" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="ecb6-d82c-d772-72a1" name="Hand-to-hand Weapons" hidden="false" collective="false" import="true" targetId="907f-c493-45c2-d006" type="selectionEntryGroup"/>
-        <entryLink id="22a9-fe37-74a3-2946" name="Missile Weapons" hidden="false" collective="false" import="true" targetId="2d6c-8476-abba-a540" type="selectionEntryGroup"/>
-        <entryLink id="2a5b-a140-eb70-2636" name="Armor" hidden="false" collective="false" import="true" targetId="ad77-29dd-d8c7-51a0" type="selectionEntryGroup"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="907f-c493-45c2-d006" name="Hand-to-hand Weapons" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="2d83-b8bb-b3f3-3abc" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-        <entryLink id="72c8-c01b-88f8-1499" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
-        <entryLink id="4898-5fbb-48ae-575f" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="name" value="Club"/>
-          </modifiers>
-        </entryLink>
-        <entryLink id="c5f5-8383-9a62-1f82" name="Spear" hidden="false" collective="false" import="true" targetId="005e-e397-8108-f198" type="selectionEntry"/>
-        <entryLink id="7992-ba08-3a86-06a8" name="Sword" hidden="false" collective="false" import="true" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry"/>
-      </entryLinks>
-      <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bda1-864c-ba68-3160"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="3" field="bda1-864c-ba68-3160">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="2d6c-8476-abba-a540" name="Missile Weapons" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="aae8-63fc-be70-d24d" name="Bow" hidden="false" collective="false" import="true" targetId="311a-bf3f-67ff-46e7" type="selectionEntry"/>
-        <entryLink id="cdc1-ad5b-60f3-8a1a" name="Sunstaff" hidden="false" collective="false" import="true" targetId="27ff-9f93-cc7a-6f30" type="selectionEntry"/>
-        <entryLink id="ed92-b808-e634-77bb" name="Sling" hidden="false" collective="false" import="true" targetId="87c7-49b5-f1e7-6662" type="selectionEntry"/>
-        <entryLink id="3f21-3936-1a46-1535" name="Bolas" hidden="false" collective="false" import="true" targetId="5595-398a-3e24-de99" type="selectionEntry"/>
-        <entryLink id="46c6-2275-86ed-9a86" name="Javelins/Harpoons" hidden="false" collective="false" import="true" targetId="ece5-fffa-8dd8-94dc" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="name" value="Javelins"/>
-          </modifiers>
+        <entryLink id="c073-6fe9-471c-ed66" name="Sunstaff (Lustria)" hidden="false" collective="false" import="true" targetId="7537-ac89-b499-e6d0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d238-8d04-8ee3-b052" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
-      <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="68e6-3b5b-83d7-33ad"/>
-      </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup id="ad77-29dd-d8c7-51a0" name="Armor" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="ef2c-002f-6edc-0052" name="Armour" hidden="false" collective="false" import="true" collapsible="false">
       <entryLinks>
-        <entryLink id="5561-b4a7-fa2a-a3a4" name="Helmet" hidden="false" collective="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry"/>
-        <entryLink id="4844-cb0d-d3c2-e6e3" name="Enchanted Skins" hidden="false" collective="false" import="true" targetId="b4b4-b4a8-dd8f-36a3" type="selectionEntry"/>
+        <entryLink id="00c2-93de-d22a-9369" name="Helmet" hidden="false" collective="false" import="true" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50a2-2264-9fb0-a988" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6eb6-0922-4015-6861" name="Buckler" hidden="false" collective="false" import="true" targetId="0871-44c2-f0f0-c27a" type="selectionEntry" sortIndex="1">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a03-ec6c-5c3c-70ae" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="cf1b-ef93-f56d-8791" name="Enchanted Skins" hidden="false" collective="false" import="true" targetId="c874-54c8-e83d-a1b4" type="selectionEntry" sortIndex="3">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46f5-0dcd-58cf-3ba5" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4533-e33e-be5f-6b33" name="Miscellaneous" hidden="false" collective="false" import="true" collapsible="false">
+      <entryLinks>
+        <entryLink id="983d-f8f4-d490-a9bd" name="Amulet of the Moon" hidden="false" collective="false" import="true" targetId="d737-92c2-4586-5b26" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6607-2826-7271-c781" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1434-beb3-c21b-de46" name="Healing Herbs" hidden="false" collective="false" import="true" targetId="a4dc-ccbb-11c8-0df8" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="897e-a34b-c5b3-a918" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="721b-9624-66b8-f3a6" name="common-data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
-  <publications>
-    <publication name="GitHub" hidden="false" id="c766-4c9f-c70c-d00a" publisherUrl="https://github.com/BSData/mordheim.git"/>
-  </publications>
+  <entryLinks>
+    <entryLink import="true" name="Grade" hidden="false" id="1743-28bf-c7fc-1d16" type="selectionEntryGroup" targetId="3394-366e-74c0-2277">
+      <categoryLinks>
+        <categoryLink targetId="4852-c4cb-82b0-b7fa" id="6685-e23a-8fdf-ddf6" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="791e-2684-0b08-e047-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="791e-2684-0b08-e047-max"/>
+      </constraints>
+    </entryLink>
+  </entryLinks>
 </catalogue>
