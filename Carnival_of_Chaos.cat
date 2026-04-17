@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3ca8-2429-2fa9-659e" name="Carnival of Chaos (1a)" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3ca8-2429-2fa9-659e" name="Carnival of Chaos (1a)" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="a8de-6c73-092a-998b" name="Carnival Master" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1300,6 +1300,23 @@ The Plague Cart automatically passes any Leadership-based test it is required to
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="23e3-c862-9c44-78d7" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="9df2-54c3-1663-4afb" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="28a0-4594-a1f5-64e2-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="28a0-4594-a1f5-64e2-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Dangerous to Know" id="bfc5-92f5-d0cd-fe2c" hidden="false">
+          <description>Because of its rather diseased nature a Carnival of Chaos warband would find it very hard to keep any Hired Swords alive! Therefore, a Carnival of Chaos may never hire any type of Hired Sword.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="8f23-3438-1296-640b" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

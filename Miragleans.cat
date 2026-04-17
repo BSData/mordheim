@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6805-ff0e-9061-8cb6" name="Miragleans (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6805-ff0e-9061-8cb6" name="Miragleans (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="e87b-f686-aa1d-8236" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -164,7 +164,7 @@
         <entryLink import="true" name="Tilean Equipment" hidden="false" id="6f44-6339-1db9-868" collective="false" targetId="317e-6c1f-20c6-7549" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="75bf-e5bb-879f-d29d" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="20a-c1d3-e038-5054" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="ddf9-a58-62cc-4af1" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="ddf9-a58-62cc-4af1" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -461,7 +461,7 @@
         <entryLink import="true" name="Tilean Equipment" hidden="false" id="7770-eab5-e8e1-e5e4" collective="false" targetId="317e-6c1f-20c6-7549" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="d1dd-d405-ac19-3044" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="866c-2e06-3ae-6202" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="703d-8f8d-7a17-f1f" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="703d-8f8d-7a17-f1f" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -794,7 +794,7 @@
         <entryLink import="true" name="Tilean Equipment" hidden="false" id="28d2-d47d-56f4-78d4" collective="false" targetId="317e-6c1f-20c6-7549" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="2417-4470-7c63-1e9c" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="6631-b28a-f6d-81de" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="940e-209e-60dc-5ce9" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="940e-209e-60dc-5ce9" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1167,7 +1167,7 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Tilean Equipment" hidden="false" id="272-f73c-af87-9bd5" collective="false" targetId="317e-6c1f-20c6-7549" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="dace-8b86-9b8c-dd11" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="dace-8b86-9b8c-dd11" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1594,7 +1594,7 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Tilean Equipment" hidden="false" id="823a-b00e-4d13-9aa8" collective="false" targetId="317e-6c1f-20c6-7549" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="ee6e-8dc6-ab2d-c6e6" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="ee6e-8dc6-ab2d-c6e6" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2032,7 +2032,7 @@ The Duellist counts as using a shield in close combat.</description>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Marksman Equipment" hidden="false" id="5e98-8eb6-b609-dc61" collective="false" targetId="cf38-53f6-cf18-c5bc" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="22f2-318a-15f9-35c4" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="22f2-318a-15f9-35c4" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2319,7 +2319,7 @@ The Duellist counts as using a shield in close combat.</description>
         <categoryLink name="Stash" hidden="false" id="72c1-e311-6bac-1104" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Gold" hidden="false" id="6db3-c985-1820-8831" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="6db3-c985-1820-8831" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="4ac2-b09e-6fde-c75e" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
         <entryLink import="true" name="Equipment" hidden="false" id="a746-32b2-74b4-9c21" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2327,6 +2327,53 @@ The Duellist counts as using a shield in close combat.</description>
         <cost name="pts" hidden="false" id="32a8-155c-5708-7b9e" typeId="points" value="0"/>
         <cost name="Warband Rating" hidden="false" id="6029-4e28-70db-8492" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="0ce7-2ce9-dd01-c81e" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="d1e3-6c96-88db-5c1d" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="c3d3-978d-4c5b-9239-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c3d3-978d-4c5b-9239-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Hired Swords" id="3adb-c42f-b716-7457" hidden="false">
+          <description>A Tilean warband can use any Hired Sword available to the Mercenary warbands including the following
+
+
+ - Shadow Warrior
+ - Big Game Hunter
+ - Expert Marksman
+
+
+Unless noted otherwise, Hired Swords cannot benefit from individual city-state rules given to each warband.</description>
+        </rule>
+        <rule name="Crossbowmen" id="6ad1-f6e2-76b5-7d9e" hidden="false">
+          <description>The Miragleans are deadly accurate with the city’s official weapon, the crossbow (all variants).
+
+
+Therefore Miraglean Heroes have a +1 to hit when using crossbows only.
+
+
+Marksmen get a +1 to hit with any missile weapon they use (this is
+included in the marksmen’s profile).</description>
+        </rule>
+        <rule name="Hate Rats" id="511d-3f64-1493-934b" hidden="false">
+          <description>All Miragleans have a deep-seated hatred toward Skaven.
+
+
+This dates back to the red pox outbreak of 1812 when three quarters of the population of the city perished.
+
+
+When fighting Skaven a Miraglean warband will be affected by the rules for Hatred towards them.
+
+
+Hired swords and Dramatis Personae are not affected by the Hatred rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="3548-ea66-b3de-c288" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>
@@ -2371,7 +2418,7 @@ Unless noted otherwise, Hired Swords cannot benefit from individual city-state 
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="4321-9552-9e67-c046" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="a106-e801-71b4-4509" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="f144-e282-6098-53ab" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="f144-e282-6098-53ab" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -2385,7 +2432,7 @@ Unless noted otherwise, Hired Swords cannot benefit from individual city-state 
             <entryLink import="true" name="Spear" hidden="false" id="a8b-4b10-4c4a-a018" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry"/>
             <entryLink import="true" name="Double Handed Weapon" hidden="false" id="8d06-cac3-d3a-79a3" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b"/>
             <entryLink import="true" name="Halberd" hidden="false" id="ed55-9bed-e8f5-fd06" type="selectionEntry" targetId="3c52-9e92-25ec-1939"/>
-            <entryLink import="true" name="Unknown" hidden="false" id="97a1-42e-7540-2622" type="selectionEntry" targetId="68ec-2a33-6ca8-d146"/>
+            <entryLink import="true" name="Pike" hidden="false" id="97a1-42e-7540-2622" type="selectionEntry" targetId="68ec-2a33-6ca8-d146"/>
             <entryLink import="true" name="Morning Star" hidden="false" id="d9d5-db08-484a-b964" type="selectionEntry" targetId="d5f3-1906-da91-4e8f"/>
             <entryLink import="true" name="Rapier" hidden="false" id="871-c437-6212-437f" type="selectionEntry" targetId="1cad-3ea5-f379-1040"/>
           </entryLinks>
@@ -2403,7 +2450,7 @@ Unless noted otherwise, Hired Swords cannot benefit from individual city-state 
         <selectionEntryGroup name="Missile Weapons" hidden="false" id="21f3-ef18-d13e-1c1e" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="d1ed-b283-5127-8da7" collective="false" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="5d7b-f240-94ff-fcf1" type="selectionEntry" targetId="da24-6a7f-725b-5bcb"/>
+            <entryLink import="true" name="Duelling Pistol" hidden="false" id="5d7b-f240-94ff-fcf1" type="selectionEntry" targetId="da24-6a7f-725b-5bcb"/>
             <entryLink import="true" name="Bow" hidden="false" id="1f8a-630-500-da89" type="selectionEntry" targetId="311a-bf3f-67ff-46e7"/>
             <entryLink import="true" name="Crossbow" hidden="false" id="2964-c0fb-ab98-3639" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
           </entryLinks>
@@ -2413,7 +2460,7 @@ Unless noted otherwise, Hired Swords cannot benefit from individual city-state 
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="5900-7eeb-83d-fc66" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="c9aa-56b1-e244-4a6" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="c9aa-56b1-e244-4a6" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="52e0-26ac-6286-50c5" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="86f4-988e-752-617f" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Buckler" hidden="false" id="ae7-f8f2-f626-2e22" type="selectionEntry" targetId="0871-44c2-f0f0-c27a"/>
@@ -2427,7 +2474,7 @@ Unless noted otherwise, Hired Swords cannot benefit from individual city-state 
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="f712-7466-640d-f8d2" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="2cf8-5ea8-65dc-6b85" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="399b-9041-82fb-4e5a" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="399b-9041-82fb-4e5a" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -2453,7 +2500,7 @@ Unless noted otherwise, Hired Swords cannot benefit from individual city-state 
         <selectionEntryGroup name="Missile Weapons" hidden="false" id="e66d-47c3-6eb0-20c2" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="dd1e-2d6b-9e3a-4157" collective="false" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="3090-e6af-a11-ad2b" type="selectionEntry" targetId="da24-6a7f-725b-5bcb"/>
+            <entryLink import="true" name="Duelling Pistol" hidden="false" id="3090-e6af-a11-ad2b" type="selectionEntry" targetId="da24-6a7f-725b-5bcb"/>
             <entryLink import="true" name="Longbow" hidden="false" id="816b-b252-17a2-fcd9" type="selectionEntry" targetId="afa2-2d5c-54dd-d435"/>
             <entryLink import="true" name="Crossbow" hidden="false" id="7aee-fd81-fa84-2ee" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
             <entryLink import="true" name="Handgun" hidden="false" id="4698-1515-9c8f-1fc4" type="selectionEntry" targetId="7f5a-d04d-153d-d334"/>
@@ -2465,7 +2512,7 @@ Unless noted otherwise, Hired Swords cannot benefit from individual city-state 
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="b455-9f33-66f8-360" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="cc96-988-d793-5b1e" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="cc96-988-d793-5b1e" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Helmet" hidden="false" id="d925-7125-970f-d4c7" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
           </entryLinks>
         </selectionEntryGroup>

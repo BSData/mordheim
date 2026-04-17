@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3990-6810-2651-81b0" name="Merchant Caravans (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3990-6810-2651-81b0" name="Merchant Caravans (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="3418-3f66-a3bc-d41e" targetId="e020-c282-277b-b173"/>
     <catalogueLink type="catalogue" name="New Catalogue (link)" id="87e6-d8d1-6fc3-6290" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1"/>
@@ -52,7 +52,7 @@ If players cannot agree on a price no deal is closed and the visit is wasted.<
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="4392-49da-eeb6-1c18" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="7d69-3aff-825d-6d54" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="1987-479-6a0a-60be" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
+            <entryLink import="true" name="Hammer" hidden="false" id="1987-479-6a0a-60be" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
@@ -73,8 +73,8 @@ If players cannot agree on a price no deal is closed and the visit is wasted.<
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="2130-9379-5725-c0a" hidden="false" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="19f-513d-4f9f-bc16" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
-            <entryLink import="true" name="Heavy Armor" hidden="false" id="73d3-ef05-29a6-8b5c" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2">
+            <entryLink import="true" name="Light Armour" hidden="false" id="19f-513d-4f9f-bc16" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="73d3-ef05-29a6-8b5c" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2">
               <modifiers>
                 <modifier type="set" value="10" field="points"/>
               </modifiers>
@@ -85,7 +85,7 @@ If players cannot agree on a price no deal is closed and the visit is wasted.<
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile weapons" id="7753-91dd-c5bc-622a" hidden="false" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="eb2f-5342-6ae2-679f" type="selectionEntry" targetId="da24-6a7f-725b-5bcb" sortIndex="2"/>
+            <entryLink import="true" name="Duelling Pistol" hidden="false" id="eb2f-5342-6ae2-679f" type="selectionEntry" targetId="da24-6a7f-725b-5bcb" sortIndex="2"/>
             <entryLink import="true" name="Pistol" hidden="false" id="b033-ad7e-b3e8-9d98" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="1"/>
           </entryLinks>
           <constraints>
@@ -110,7 +110,7 @@ If players cannot agree on a price no deal is closed and the visit is wasted.<
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="f0bd-eabb-f7ec-86e4" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="85df-4f2-1585-493b" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="96b1-49a8-60a6-ddfc" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
+            <entryLink import="true" name="Hammer" hidden="false" id="96b1-49a8-60a6-ddfc" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
@@ -133,8 +133,8 @@ If players cannot agree on a price no deal is closed and the visit is wasted.<
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="980c-80ba-e038-20b8" hidden="false" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="6dca-5f13-8848-caa0" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
-            <entryLink import="true" name="Heavy Armor" hidden="false" id="8e48-d39f-e456-c5a3" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2">
+            <entryLink import="true" name="Light Armour" hidden="false" id="6dca-5f13-8848-caa0" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="8e48-d39f-e456-c5a3" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2">
               <modifiers>
                 <modifier type="set" value="10" field="points"/>
               </modifiers>
@@ -159,7 +159,7 @@ If players cannot agree on a price no deal is closed and the visit is wasted.<
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="cb1-1d2-d158-c64b" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="8744-e0ae-bdce-2895" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="b08a-1a64-2c0d-4421" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
+            <entryLink import="true" name="Hammer" hidden="false" id="b08a-1a64-2c0d-4421" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="Club" field="name"/>
               </modifiers>
@@ -181,8 +181,8 @@ If players cannot agree on a price no deal is closed and the visit is wasted.<
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="98a9-6e0f-ea2d-9e9a" hidden="false" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="ff13-226f-4bf1-8020" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
-            <entryLink import="true" name="Heavy Armor" hidden="false" id="6857-2d2d-1752-2d6b" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2">
+            <entryLink import="true" name="Light Armour" hidden="false" id="ff13-226f-4bf1-8020" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="6857-2d2d-1752-2d6b" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2">
               <modifiers>
                 <modifier type="set" value="10" field="points"/>
               </modifiers>
@@ -294,7 +294,7 @@ Note that though the Merchant may buy items using the table above he can never s
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="184-bbd9-68cd-5062" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="3446-c2f-bb23-c8fb" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="e12f-fa46-8117-cef9" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
+            <entryLink import="true" name="Hammer" hidden="false" id="e12f-fa46-8117-cef9" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
@@ -317,8 +317,8 @@ Note that though the Merchant may buy items using the table above he can never s
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="92c1-4af9-1a58-4520" hidden="false" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="5b67-7ce7-d51c-2b27" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
-            <entryLink import="true" name="Heavy Armor" hidden="false" id="21f9-33d1-e079-d09" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2">
+            <entryLink import="true" name="Light Armour" hidden="false" id="5b67-7ce7-d51c-2b27" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="21f9-33d1-e079-d09" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2">
               <modifiers>
                 <modifier type="set" value="10" field="points"/>
               </modifiers>
@@ -329,7 +329,7 @@ Note that though the Merchant may buy items using the table above he can never s
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile weapons" id="a6aa-c1f1-1cb-dbeb" hidden="false" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="64c5-d533-1624-ef1b" type="selectionEntry" targetId="da24-6a7f-725b-5bcb" sortIndex="2"/>
+            <entryLink import="true" name="Duelling Pistol" hidden="false" id="64c5-d533-1624-ef1b" type="selectionEntry" targetId="da24-6a7f-725b-5bcb" sortIndex="2"/>
             <entryLink import="true" name="Pistol" hidden="false" id="8d7a-3133-3090-826e" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="1"/>
           </entryLinks>
           <constraints>
@@ -2951,6 +2951,59 @@ A warband capturing a Wagon from a Merchant Caravan may not search for rare ite
       <categoryLinks>
         <categoryLink targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" id="7fb5-97da-bde4-5853" primary="true" name="Henchmen"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="3b98-51f2-c64e-06fd" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="856c-b201-1ce9-f2dd" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="7c23-4b9d-c98e-06b8-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7c23-4b9d-c98e-06b8-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Hired Swords" id="ec00-7d68-a97e-71e3" hidden="false">
+          <description>Merchant Caravans may hire every Hired Sword that is available to Mercenary warbands.</description>
+        </rule>
+        <rule name="Open for Business" id="13eb-2df9-829e-2ae4" hidden="false">
+          <description>All players may choose to send any of their Heroes to the Merchant instead of having them search for rare items.
+
+
+A Hero doing so may buy one item from the warband&apos;s stored equipment if the players can agree on a price (including exchange deals with items and Treasures).
+
+
+Instead of buying an item a Hero may also go to the Merchant to sell any one item (rare, common, magical, treasure counters) to him.
+
+
+If players cannot agree on a price no deal is closed and the visit is wasted.</description>
+        </rule>
+        <rule name="Rarity" id="03d2-7459-ed8f-6f21" hidden="false">
+          <description>Any rare item that is reduced to Rare 2 or below by the Trade Wagon&apos;s Reputation rule, the Streetwise skill etc., can be bought as Common items.</description>
+        </rule>
+        <rule name="Trade" id="90a4-fdf5-548f-0bc5" hidden="false">
+          <description>Instead of searching for rare items the Merchant may sell a rare item that has been stored in the Trade Cart during the preceding battle.
+
+
+This must be done before Heroes of either warband search for rare items.
+
+
+Roll a D6 to determine how many gold coins the Merchant would get for the item.
+
+
+  D6     Gold coins
+  1-2     Half the item&apos;s basic price
+  3-4     The item&apos;s full basic price
+  5-6     Full plus half the item&apos;s basic price
+
+
+Note that the Merchant may decide whether he wants to sell the item for that price or if he wants to try again after the next battle.
+
+
+This can be combined with the wholesale skill to sell up to D3+1 items each game.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="b89b-3982-9632-7e6c" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedRules>

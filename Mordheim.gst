@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" name="Mordheim" revision="16" battleScribeVersion="2.03" authorName="Uncle Mel" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" name="Mordheim" revision="17" battleScribeVersion="2.03" authorName="Uncle Mel" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>If a Henchmen is promoted, Duplicate the henchmen group, remove 1 from the original group and set the promoted henchmen to 1 model. Battlescribe doesn&apos;t support splitting groups or dynamically changing categories</readme>
   <publications>
     <publication id="ff7c-2cb8-2105-563f" name="GitHub" publisherUrl="https://github.com/BSData/mordheim"/>
   </publications>
   <costTypes>
-    <costType id="points" name=" gc" defaultCostLimit="0" hidden="false"/>
+    <costType id="points" name=" gc" defaultCostLimit="-1" hidden="false"/>
     <costType id="wb-rating" name=" Warband Rating" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <profileTypes>
@@ -59,7 +59,7 @@
   <forceEntries>
     <forceEntry id="7451d7da-3cc0-0299-775b-2f48162a731d" name="Warband" hidden="false" sortIndex="1">
       <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="5d45-3d8d-79db-5458" targetId="4852-c4cb-82b0-b7fa" type="categoryEntry"/>
+        <categoryLink name="Configuration" hidden="false" id="5d45-3d8d-79db-5458" targetId="4852-c4cb-82b0-b7fa"/>
         <categoryLink id="7451d7da-3cc0-0299-775b-2f48162a731d-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>

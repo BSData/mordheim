@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" name="Cult of the Possessed (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" name="Cult of the Possessed (1a)" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" name="Beastmen" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -2631,6 +2631,18 @@ for details.</description>
         <cost name="pts" typeId="points" value="0"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="1797-ccc9-5506-649f" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="7220-e563-9edb-b619" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="dcf4-463e-48eb-c34e-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="dcf4-463e-48eb-c34e-max" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="bd05-cf85-4e60-a865" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <infoLinks>

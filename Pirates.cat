@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6805-5465-81dd-a433" name="Pirates (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6805-5465-81dd-a433" name="Pirates (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="cf9d-16eb-44a7-1fbe" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -2576,8 +2576,8 @@ They may re-roll failed Initiative tests Leaping over Gaps, Jumping Down, and 
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Characteristic Increases (only captured models)" hidden="false" id="e0cd-d130-5a6e-2699" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Skills (only captured models)" hidden="false" id="d0eb-a39-dbe2-3ce8" collective="false" targetId="df1f-9abb-8310-fb62" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="e0cd-d130-5a6e-2699" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Skills" hidden="false" id="d0eb-a39-dbe2-3ce8" collective="false" targetId="df1f-9abb-8310-fb62" type="selectionEntryGroup"/>
         <entryLink import="true" name="Swabbie Equipment" hidden="false" id="b06f-abdf-e1ab-ab49" collective="false" targetId="8da8-929b-1f85-db8d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -2639,6 +2639,105 @@ Any Swabbies who are running away or have been taken out of action do not coun
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="523f-3b2d-8697-926b" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="3c29-5108-85aa-267d" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="89e1-8370-5ad1-da43-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="89e1-8370-5ad1-da43-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Free Swabbies" id="7195-7e54-618c-48f1" hidden="false">
+          <description>In one-off games, a Pirate Warband starts with two Swabbies for free.</description>
+        </rule>
+        <rule name="Hired Swords" id="7c05-2b3a-f760-dd19" hidden="false">
+          <description>Unless noted otherwise, Pirate Warbands have the same access to Hired Swords &amp; any other items as for a regular human Mercenary Warband, and follow all the normal rules for them as well.
+
+
+They must however pay an additional +20 gc in upkeep if they have both Dwarfs and Elves together in the same warband (the ship is only so big, and the confines make them more irritable than usual!).</description>
+        </rule>
+        <rule name="Succession" id="e3ed-b743-c8c6-ca1b" hidden="false">
+          <description>If the Captain is killed, one of the Mates will take over in the same manner as a Champion taking over for a Mercenary warband.</description>
+        </rule>
+        <rule name="Swabbies" id="7d56-a78f-a49f-e1c9" hidden="false">
+          <description>Pirate warbands can ‘recruit’ new members to join the adventuresome life of a pirate, sometimes willingly but oftentimes more as an alternative to walking the plank! Only humans can be recruited in this manner though – not even the most bloodthirsty pirate would ever trust a Skaven or Beastman, and other races even though friendly to mankind would normally never follow a mere human into battle!
+
+
+The following special rules apply to certain situations in Mordheim game play:
+
+
+Kidnapped! Enemy human Heroes who after the game rolled up the Captured result (D66 rolls of 61 or 62) can be ‘offered’ one opportunity to join the pirate crew (usually at the point of a cutlass!).
+
+
+As an alternative to exchanging/ransoming the captured Hero back to their original Warband (or selling him to slavers), the Pirate Captain can instead add the captured enemy to the ship’s crew as follows.
+
+
+Both players roll 2D6, with the Pirate player adding the Captain’s Leadership and the enemy player adding the Leadership of the captured Hero.
+If either side won that game, it may add +1 to it’s score.
+
+
+
+If the Pirate player’s result is higher, the Hero renounces his old ways for the life of the high seas!
+She or he joins the Crew, either starting a new Crew group or joining an existing one if it has four models or less.
+There is no extra cost to add him to a group which has accumulated experience points, and any equipment or weapons he had are immediately sold off to buy him the proper weapons and armor to match his new unit in an even swap. 
+
+
+His skills and characteristics are changed to those of a starting Crewman, or to match those of his new crewmates if joining an existing group.
+
+
+Otherwise, the Hero has resisted the siren’s song of the sea, and is forced to become a Swabbie (see Swabbies below).
+
+
+He is stripped of his equipment and weapons; these are handed out as the player desires.
+
+
+He does retain any skills and keeps his original characteristics, but can only be re-armed with the weapons listed in the Swabbie equipment list.
+
+
+Enemy human Henchmen taken Out of Action during the game and then lost from their original Warband for good (a 1-2 was rolled for them post-game) also have a chance of joining up too!
+
+
+Roll another D6 for each: on a roll of 4+, the Pirates manage to drag them away or otherwise make off with their wounded bodies, and patch them up on the ship.
+
+
+The Pirate player can then test to see if they will join exactly as above, by both players rolling 2D6 and adding it to the Captain’s and the Henchman’s Leadership.
+
+
+This test can only be done if the Pirates win the game, so the Pirate player will always get a +1 to his roll.
+
+
+Hired Swords and Special Characters are too skilled to be taken off in this manner, and can never be recruited – they have their own agendas to pursue, and will ensure the pirate life is not part of those plans.
+
+
+Well now matey, have you ever considered pirating as a career?
+If the Pirates encounter Stragglers (result 44) or Prisoners (result 333) when Searching, there is a chance they may sign up to sail under the Jolly Roger. 
+
+
+Either of these options may be used instead of the regular options listed for these situations.
+
+
+If a Straggler is found, the Captain can try to convince him to join the crew by making a successful Leadership test.
+If passed, the Straggler joins as a Swabbie (he’s too unhinged even to become a member of the Crew!)
+
+
+If Prisoners are found, roll a D3 to determine how many are rescued.
+If the Captain passes a Leadership test (he must make a separate test for each one), the Prisoner eagerly joins his rescuers as a member of the Crew, either starting a new Crew group or joining an existing one if it has four models or less.
+If he is starting a new Crew group, he will start at the normal characteristics levels for a normal Crew member and at Zero Experience.
+
+
+There is no extra cost to add him to an existing group which has accumulated experience points, and his skills and characteristics match those of his new crewmates.
+The player must pay though to equip and arm the new Crewman as per his new unit.
+If the player cannot pay, the prisoner must join as a Swabbie.
+
+
+If the test is failed, the Prisoner isn’t quite so convinced of the worthiness of the sea dogs and is added as a Swabbie.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="6978-4fd4-22c0-23ee" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Pirate Equipment" id="7c3-bc18-ea97-5d07" hidden="false">
@@ -2647,7 +2746,7 @@ Any Swabbies who are running away or have been taken out of action do not coun
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="e69e-aea8-c691-8ed2" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="cf3a-a586-ea4b-c953" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="2f8c-34f4-149b-cd59" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="2f8c-34f4-149b-cd59" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -2688,12 +2787,12 @@ Any Swabbies who are running away or have been taken out of action do not coun
         <selectionEntryGroup name="Missile Weapons" id="b0be-a3ab-3278-9471" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="8a03-9fc-a28d-5896" collective="false" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="59d5-d411-4ec2-37cf" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
+            <entryLink import="true" name="Duelling Pistol" hidden="false" id="59d5-d411-4ec2-37cf" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
               <modifiers>
                 <modifier type="set" value="25" field="points"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Belaying Pin" hidden="false" id="63b2-f5-70ef-90f6" type="selectionEntry" targetId="282e-5485-a38c-9f14"/>
+            <entryLink import="true" name="Belaying Pins" hidden="false" id="63b2-f5-70ef-90f6" type="selectionEntry" targetId="282e-5485-a38c-9f14"/>
             <entryLink import="true" name="Crossbow" hidden="false" id="1968-6686-75bb-46d5" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
           </entryLinks>
           <constraints>
@@ -2702,7 +2801,7 @@ Any Swabbies who are running away or have been taken out of action do not coun
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="970d-6f30-c5cd-9e0e" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="8833-8289-1496-f0fd" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="8833-8289-1496-f0fd" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Helmet" hidden="false" id="a26c-707c-75d7-ff07" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Buckler" hidden="false" id="d141-9e3c-b0ed-896e" type="selectionEntry" targetId="0871-44c2-f0f0-c27a"/>
             <entryLink import="true" name="Toughened Leathers" hidden="false" id="c276-52be-9a5b-ba61" type="selectionEntry" targetId="439f-1b4d-1579-14b"/>
@@ -2957,7 +3056,7 @@ Though only a small chest is found at the site, when opened it reveals 2+D3 sha
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="4101-f089-4ccc-3a8d" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="a4d2-fafe-2da9-9b31" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="533b-a83a-ade8-d575" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="533b-a83a-ade8-d575" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -2988,7 +3087,7 @@ Though only a small chest is found at the site, when opened it reveals 2+D3 sha
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile Weapons" id="1160-2523-b21f-7f51" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Belaying Pin" hidden="false" id="5ec8-85b5-91ed-e5b2" type="selectionEntry" targetId="282e-5485-a38c-9f14"/>
+            <entryLink import="true" name="Belaying Pins" hidden="false" id="5ec8-85b5-91ed-e5b2" type="selectionEntry" targetId="282e-5485-a38c-9f14"/>
             <entryLink import="true" name="Bow" hidden="false" id="b6fb-62d8-fcd4-449f" type="selectionEntry" targetId="311a-bf3f-67ff-46e7"/>
           </entryLinks>
           <constraints>
@@ -3009,7 +3108,7 @@ Though only a small chest is found at the site, when opened it reveals 2+D3 sha
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="d8de-18e6-77b0-535b" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="bcb9-ce05-a41d-9e41" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="a5cb-8bc3-ceef-e92c" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="a5cb-8bc3-ceef-e92c" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -3039,7 +3138,7 @@ Though only a small chest is found at the site, when opened it reveals 2+D3 sha
         <selectionEntryGroup name="Missile Weapons" id="56dd-af48-9a38-c9f0" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="624f-9a1c-893f-6f0b" collective="false" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="e328-efc8-41b7-1b61" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
+            <entryLink import="true" name="Duelling Pistol" hidden="false" id="e328-efc8-41b7-1b61" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
               <modifiers>
                 <modifier type="set" value="25" field="points"/>
               </modifiers>
@@ -3054,7 +3153,7 @@ Though only a small chest is found at the site, when opened it reveals 2+D3 sha
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="15a9-7aab-a7c3-6db" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="fa5b-6dee-c631-5a03" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="fa5b-6dee-c631-5a03" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Helmet" hidden="false" id="7c6f-22f0-a9c4-a26e" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Toughened Leathers" hidden="false" id="1a7-ea2f-f54e-9b9f" type="selectionEntry" targetId="439f-1b4d-1579-14b"/>
           </entryLinks>
@@ -3507,7 +3606,7 @@ If he fails the test he remains in combat and must fight as normal in the follow
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="7763-971a-723d-899b" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="daa4-d050-f91c-abd3" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="233-662e-60a2-fdc9" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="233-662e-60a2-fdc9" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -3548,12 +3647,12 @@ If he fails the test he remains in combat and must fight as normal in the follow
         <selectionEntryGroup name="Missile Weapons" id="2b13-509e-777c-9cfd" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="577e-c005-d6b7-2b90" collective="false" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="d0e-46ed-d48c-a626" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
+            <entryLink import="true" name="Duelling Pistol" hidden="false" id="d0e-46ed-d48c-a626" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
               <modifiers>
                 <modifier type="set" value="25" field="points"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Belaying Pin" hidden="false" id="8f99-9247-ae07-a74b" type="selectionEntry" targetId="282e-5485-a38c-9f14"/>
+            <entryLink import="true" name="Belaying Pins" hidden="false" id="8f99-9247-ae07-a74b" type="selectionEntry" targetId="282e-5485-a38c-9f14"/>
             <entryLink import="true" name="Crossbow" hidden="false" id="cc04-b235-d56b-7a1e" type="selectionEntry" targetId="38cc-bc0b-7f19-8039"/>
           </entryLinks>
           <constraints>
@@ -3562,7 +3661,7 @@ If he fails the test he remains in combat and must fight as normal in the follow
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="c032-7dba-8dee-5db4" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="4066-dd43-9d45-b963" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="4066-dd43-9d45-b963" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Helmet" hidden="false" id="1731-718d-77a-81b2" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Buckler" hidden="false" id="9eda-3168-c787-7b81" type="selectionEntry" targetId="0871-44c2-f0f0-c27a"/>
             <entryLink import="true" name="Toughened Leathers" hidden="false" id="e2c4-f821-c512-c52f" type="selectionEntry" targetId="439f-1b4d-1579-14b"/>
@@ -3958,7 +4057,7 @@ Pirates know to duck out of the way when they hear a Swivel Gun going off, and t
             </rule>
           </rules>
           <infoLinks>
-            <infoLink name="Ignores Armor" id="608f-4504-f06a-d259" hidden="false" type="rule" targetId="1f6d-8599-e2d3-1062"/>
+            <infoLink name="Ignores Armour" id="608f-4504-f06a-d259" hidden="false" type="rule" targetId="1f6d-8599-e2d3-1062"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8315579e-b80d-5ed1-7a51-d85cdf59c06b" name="Dwarf Treasure Hunters (1a)" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="8315579e-b80d-5ed1-7a51-d85cdf59c06b" name="Dwarf Treasure Hunters (1a)" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="2d1dabde-1182-a9db-6186-35bff94b4a69" name="Beardlings" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -154,7 +154,11 @@
                 <entryLink import="true" name="Shield" hidden="false" id="5415-781f-f00f-954a" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="4"/>
                 <entryLink import="true" name="Light Armour" hidden="false" id="e6e5-cd95-df3b-6eeb" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
                 <entryLink import="true" name="Heavy Armour" hidden="false" id="e641-335e-2aa9-e607" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
-                <entryLink import="true" name="Gromril Armour" hidden="false" id="8e31-9395-04dc-eebe" type="selectionEntry" targetId="4c6d-eb92-53a7-a6d3" sortIndex="3"/>
+                <entryLink import="true" name="Gromril Armour" hidden="false" id="8e31-9395-04dc-eebe" type="selectionEntry" targetId="4c6d-eb92-53a7-a6d3" sortIndex="3">
+                  <costs>
+                    <cost name=" gc" typeId="points" value="75"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Hand-to-hand Weapons" id="c85b-3d57-afaf-03e9" hidden="false" sortIndex="1">
@@ -434,9 +438,9 @@
                 <entryLink import="true" name="Gromril Armour" hidden="false" id="bc88-27fb-3d7e-6d29" type="selectionEntry" targetId="4c6d-eb92-53a7-a6d3" sortIndex="3"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="6ad5-8208-76d0-18e1" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="6ad5-8208-76d0-18e1" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Mace" hidden="false" id="e586-3cf4-fd53-1077" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
+                <entryLink import="true" name="Mace" hidden="false" id="e586-3cf4-fd53-1077" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="1044-2924-01f7-45ee" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
                 <entryLink import="true" name="Free Dagger" hidden="false" id="98bb-b11d-a63d-02e4" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
                 <entryLink import="true" name="Sword" hidden="false" id="ce46-d9c1-caa3-439f" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry" sortIndex="6"/>
@@ -457,6 +461,21 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <profiles>
+                <profile name="Hand-to-hand Weapons" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="a62c-bd5f-29af-9985">
+                  <characteristics>
+                    <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92"/>
+                    <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924"/>
+                    <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8"/>
+                    <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9"/>
+                    <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a"/>
+                    <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442"/>
+                    <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e"/>
+                    <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe"/>
+                    <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89"/>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntryGroup>
             <selectionEntryGroup name="Missile Weapons" id="dbba-54db-86d5-623f" hidden="false" sortIndex="2">
               <entryLinks>
@@ -465,6 +484,9 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="56af-7a2a-39a1-14b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="decrement" value="1" field="56af-7a2a-39a1-14b2"/>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
@@ -941,6 +963,9 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c5d6-28c5-454b-5a32" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="decrement" value="0" field="c5d6-28c5-454b-5a32"/>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
@@ -1428,7 +1453,11 @@
       </profiles>
       <rules>
         <rule id="3b3019fc-ab69-2ae2-8d8d-b253b1516358" name="Deathwish" page="0" hidden="false">
-          <description>Troll Slayers seek an honourable death in combat. They are completely immune to all psychology and never need to test if fighting alone</description>
+          <description>Troll Slayers seek an honourable death in combat. They are completely immune to all psychology and never need to test if fighting alone
+</description>
+        </rule>
+        <rule name="Equipment Restriction" id="38f2-7247-2bfe-63a0" hidden="false">
+          <description>Slayers may never carry or use missile weapons or any form of armour.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -1461,7 +1490,28 @@
                 <entryLink import="true" name="Shield" hidden="false" id="b3aa-c4c6-ec78-596e" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="4"/>
                 <entryLink import="true" name="Light Armour" hidden="false" id="03e7-d036-3d08-eccd" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
                 <entryLink import="true" name="Heavy Armour" hidden="false" id="86f4-e10a-5b82-1e8b" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
-                <entryLink import="true" name="Gromril Armour" hidden="false" id="8989-ce25-2045-6665" type="selectionEntry" targetId="4c6d-eb92-53a7-a6d3" sortIndex="3"/>
+                <entryLink import="true" name="Gromril Armour" hidden="false" id="8989-ce25-2045-6665" type="selectionEntry" targetId="4c6d-eb92-53a7-a6d3" sortIndex="3">
+                  <costs>
+                    <cost name=" gc" typeId="points" value="75"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Armour" id="d9cd-1ecf-cab5-aaa6" hidden="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Helmet" hidden="false" id="62e5-9662-c8e2-441b" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5481-cd0c-806e-a6e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shield" hidden="false" id="b3aa-c4c6-ec78-596e" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="4"/>
+                <entryLink import="true" name="Light Armour" hidden="false" id="03e7-d036-3d08-eccd" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="86f4-e10a-5b82-1e8b" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
+                <entryLink import="true" name="Gromril Armour" hidden="false" id="8989-ce25-2045-6665" type="selectionEntry" targetId="4c6d-eb92-53a7-a6d3" sortIndex="3">
+                  <costs>
+                    <cost name=" gc" typeId="points" value="75"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Hand-to-hand Weapons" id="af20-2147-e69c-7882" hidden="false" sortIndex="1">
@@ -1567,6 +1617,39 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="075f-adcf-7fd0-5c41" page="0">
+      <categoryLinks>
+        <categoryLink targetId="4852-c4cb-82b0-b7fa" id="b839-ae6d-8b05-be44" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="9ada-cc39-d78d-f23c-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9ada-cc39-d78d-f23c-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Armour Use" id="f5d2-69d6-58e2-fb76" hidden="false" page="0">
+          <description>Dwarfs never suffer movement penalties for wearing armour.</description>
+        </rule>
+        <rule name="Grudgebearers" id="e1c4-6a34-a230-df47" hidden="false" page="0">
+          <description>Dwarfs hold an ancient grudge against Elves from the days when the two races fought for supremacy in the Old World. A Dwarf warband may never include any kind of Elven Hired Sword or Dramatis Personae.</description>
+        </rule>
+        <rule name="Hard Head" id="0327-afbe-2027-434d" hidden="false" page="0">
+          <description>Dwarfs ignore the special rules for maces, clubs,etc. used against them.</description>
+        </rule>
+        <rule name="Hard to Kill" id="27d7-0654-ad2b-78cb" hidden="false" page="0">
+          <description>Dwarfs are tough, resilient individuals who can only be taken out of action on a roll of 6 instead of 5-6 when rolling on the Injury chart. Treat a roll of 1-2 as knocked down, 3-5 as stunned, and 6 as out of action.</description>
+        </rule>
+        <rule name="Hate Orcs and Goblins" id="7a56-e9a4-3ee1-518c" hidden="false" page="0">
+          <description>All Dwarfs hate Orcs and Goblins</description>
+        </rule>
+        <rule name="Incomparable Miners" id="3235-282d-a280-2356" hidden="false" page="0">
+          <description>Dwarfs spend much of their lives underground searching for precious minerals, and they are the best in the world at this kind of work. In the city of Mordheim they apply similar skills to the search for wyrdstone. When checking for wyrdstone at the end of a game, add +1 to the number of pieces found for a Dwarf warband.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="d5ea-23d1-fdae-7583" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+        <infoLink name="Hatred" id="9e78-1b0a-4a78-252f" hidden="false" targetId="3ebe96a5-ad6a-b51d-0d99-f62dfb2a807c" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
   <rules>
     <rule id="61761c75-b111-0d47-7fca-d1a50f33ef93" name="Hard Head" page="0" hidden="false">
@@ -1590,7 +1673,7 @@
   </rules>
   <infoLinks>
     <infoLink id="f98676e7-07fd-7cea-03c3-483ac99b0435" hidden="false" targetId="3ebe96a5-ad6a-b51d-0d99-f62dfb2a807c" type="rule" name="Hatred"/>
-    <infoLink id="21dc314b-01d7-9a0e-3606-fc4b640d9271" hidden="false" targetId="dc466bee-0dd9-eaa2-db68-d16f58af2521" type="rule" name="EXP Advancement"/>
+    <infoLink id="21dc314b-01d7-9a0e-3606-fc4b640d9271" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule" name="EXP advancement"/>
   </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8acf5ee1-3430-be22-ec94-15b12e15e497" name="+1 A" page="0" hidden="false" collective="true" import="true" type="upgrade">

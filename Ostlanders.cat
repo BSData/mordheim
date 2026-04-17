@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="05ad-b0d8-77a8-2572" name="Ostlanders (1a)" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="05ad-b0d8-77a8-2572" name="Ostlanders (1a)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" page="0">
   <publications>
     <publication id="42ce-e25d-7713-b46b" name="Ostlanders Rules" shortName="Ostlanders" publisher="https://broheim.net/downloads/warbands/official/Ostlanders.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Ostlanders.pdf"/>
   </publications>
@@ -1724,6 +1724,24 @@ Ogres only gain advances at half the rate of everyone else (ie, they must accrue
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="33c2-3f65-525e-fa50">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="e4b1-213e-dbe3-c4a1" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="23b9-caf4-7d80-2153-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="23b9-caf4-7d80-2153-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Self Sufficient" id="6543-5e20-298e-29fd" hidden="false">
+          <description>The men of Ostland have no desire to give their hard-earned gold to outsiders.
+As a result they can never hire any Mercenaries except for Ogres (who are not an uncommon sight in Ostland).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="d0b0-c011-1d0c-5c5b" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

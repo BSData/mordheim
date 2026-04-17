@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="facb1142-7463-7676-00c0-d78150e13a50" name="Skaven (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="facb1142-7463-7676-00c0-d78150e13a50" name="Skaven (1a)" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="facb1142--pubN71023" name="Mordheim Official"/>
   </publications>
@@ -1532,6 +1532,18 @@
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="f088-8223-112a-853d" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="da0d-45d5-eb4b-c121" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="1fe4-b03d-8b96-0b2f-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1fe4-b03d-8b96-0b2f-max" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="77d0-40f6-ab16-8980" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <infoLinks>

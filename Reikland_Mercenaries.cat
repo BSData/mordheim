@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ac1721e2-653d-e279-11e3-ca8ba77b0637" name="Reiklanders (1a)" revision="10" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/mordheim/issues" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="ac1721e2-653d-e279-11e3-ca8ba77b0637" name="Reiklanders (1a)" revision="11" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/mordheim/issues" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="83ab8692-01da-65c5-af52-a55d4800f012" name="Champion" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1672,6 +1672,27 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="2923-0319-d2e6-2a45" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="5917-5dc3-80af-523e" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="74c3-7294-01b1-3a0f-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="74c3-7294-01b1-3a0f-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Reikland Leadership" id="89a6-d116-725d-746a" hidden="false" page="0">
+          <description>Reikland Mercenaries are accustomed to the demands of military discipline and have a strongly developed loyalty between officers and men.
+To represent this, fighters may use their Captain’s Leadership if within 12&quot; rather than the usual 6&quot;.
+
+A strong tradition of martial training is also responsible for the high standards of archery amongst the people of Reikland.
+All Marksmen therefore add +1 to their Ballistic Skill, whether they are recruited when the warband is first formed or added later. (this is included in their profile)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="16c1-4bbd-1be8-2188" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5d51-e8c-6ba4-d00" name="The Restless Dead (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5d51-e8c-6ba4-d00" name="The Restless Dead (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="85b9-c5d9-9e8e-7d20" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Stash" hidden="false" id="719e-61a8-87cc-4c16" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Stash" hidden="false" id="719e-61a8-87cc-4c16" collective="false" page="0">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22d1-6053-ddcd-4144" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa93-4f85-6e09-8841" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -13,7 +13,11 @@
         <categoryLink name="Stash" hidden="false" id="1caa-825c-c81e-97d0" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Gold" hidden="false" id="5547-b31a-c282-2950" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="5547-b31a-c282-2950" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="Gold" field="name"/>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="fe6d-ccc5-4ce9-e26f" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
         <entryLink import="true" name="Equipment" hidden="false" id="90e5-d76e-9268-1647" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2185,6 +2189,18 @@ Whenever the scarecrow&apos;s controller loses a wound he must pass an unmodifi
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="a0fd-318a-fc2e-49a7" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="c5fb-17fc-20bc-6fd6" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="90b0-a6ce-740c-6f9a-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="90b0-a6ce-740c-6f9a-max" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="29f5-43ad-48ca-95df" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Undead Equipment" id="3db-54f3-1b4f-9c09" hidden="false">
@@ -2193,7 +2209,7 @@ Whenever the scarecrow&apos;s controller loses a wound he must pass an unmodifi
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="2e2a-60fc-c03-68ca" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="f71c-49f8-78a8-43e3" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="8923-4936-4d19-527a" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
+            <entryLink import="true" name="Hammer" hidden="false" id="8923-4936-4d19-527a" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="Mace, Hammer" field="name"/>
               </modifiers>
@@ -2221,9 +2237,9 @@ Whenever the scarecrow&apos;s controller loses a wound he must pass an unmodifi
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="3033-720a-f063-ed75" hidden="false" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="2f79-4142-3f41-e3a6" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="2f79-4142-3f41-e3a6" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
             <entryLink import="true" name="Shield" hidden="false" id="87ec-4d9d-1a6a-27ba" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
-            <entryLink import="true" name="Heavy Armor" hidden="false" id="5720-7c6e-cd48-5677" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="5720-7c6e-cd48-5677" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
             <entryLink import="true" name="Buckler" hidden="false" id="2b04-b3ca-812-d86" type="selectionEntry" targetId="0871-44c2-f0f0-c27a" sortIndex="4"/>
             <entryLink import="true" name="Helmet" hidden="false" id="4e6c-f72c-beac-9e60" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2" sortIndex="5"/>
           </entryLinks>

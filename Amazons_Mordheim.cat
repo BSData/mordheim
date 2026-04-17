@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f2c-337f-3ebd-2263" name="Amazons Mordheim (1b)" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7f2c-337f-3ebd-2263" name="Amazons Mordheim (1b)" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="8b30-e6c9-483c-6fa7" name="Priestess" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -124,7 +124,7 @@ She starts with 1 ritual chosen at random from the list over.</description>
         <infoLink id="9d60-54ec-14f2-1f33" name="Leader" hidden="false" targetId="8712-d0f2-fe64-07bd" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="c6ca-2011-b22b-a558" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="c6ca-2011-b22b-a558" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="bb19-362c-651e-2017" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -290,7 +290,7 @@ She starts with 1 ritual chosen at random from the list over.</description>
         <infoLink id="7573-32e5-0091-58b9" name="Frenzy" hidden="false" targetId="ce28-23a1-7b2a-7e6c" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="dc79-d0f6-09aa-5219" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="dc79-d0f6-09aa-5219" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c144-769c-b2dd-efc4" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -452,7 +452,7 @@ She starts with 1 ritual chosen at random from the list over.</description>
         <infoLink id="d07a-caf3-2cf0-e3c1" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="4761-52f6-7a68-5591" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="4761-52f6-7a68-5591" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1a12-85bd-2396-ee42" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -614,7 +614,7 @@ She starts with 1 ritual chosen at random from the list over.</description>
         <infoLink id="1b94-8ffb-1d0a-cdec" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="9771-898c-4bd2-17f5" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="9771-898c-4bd2-17f5" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="63af-1cba-f53d-14a2" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -780,7 +780,7 @@ She starts with 1 ritual chosen at random from the list over.</description>
         <infoLink id="c8fa-82e9-5eab-06d0" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="5cda-8dff-d861-8cca" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="5cda-8dff-d861-8cca" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="fe1d-a309-97fe-2160" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -832,17 +832,45 @@ She starts with 1 ritual chosen at random from the list over.</description>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c659-a664-8515-0a34" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="6025-beba-5e03-42c9" name="New CategoryLink" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
+        <categoryLink id="6025-beba-5e03-42c9" name="Stash" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a673-f4cf-b1ee-af92" name="Gold" hidden="false" collective="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink id="a673-f4cf-b1ee-af92" name="Variable Gold Cost" hidden="false" collective="false" import="true" targetId="deca-5737-6234-23a1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="Gold" field="name"/>
+          </modifiers>
+        </entryLink>
         <entryLink id="6c73-1d64-5123-0918" name="Wyrdstone" hidden="false" collective="false" import="true" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink id="2710-26af-c8d9-8800" name="Looted Equip" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
+        <entryLink id="2710-26af-c8d9-8800" name="Equipment" hidden="false" collective="false" import="true" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="1251-1c71-a66b-c872" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="c22f-e85f-222c-ed14" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="fca1-2e52-58a8-016f-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fca1-2e52-58a8-016f-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Not one of us" id="96dd-96ca-fce8-d2af" hidden="false">
+          <description>Due to the Amazons isolationism and suspicions about other races they never side with anyone else.
+
+For this reason, the Amazons may not have any Hired Swords or Dramatis Personae unless they are actually Amazons themselves.</description>
+        </rule>
+        <rule name="Sacrifice" id="b153-9474-f614-a497" hidden="false">
+          <description>The Amazons are quick to sacrifice any captive to their gods.
+
+The Amazons follow the rules for Possessed in the Rulebook when it comes to captives.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="d5a2-8ce3-793b-ff89" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>
@@ -991,7 +1019,7 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
       <entryLinks>
         <entryLink id="0b35-6b54-95e7-ad8e" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
         <entryLink id="cda1-95a5-b50e-064e" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
-        <entryLink id="40b9-188f-7ba3-cc16" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+        <entryLink id="40b9-188f-7ba3-cc16" name="Hammer" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="Club"/>
           </modifiers>
@@ -1051,7 +1079,7 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
       <entryLinks>
         <entryLink id="75ef-c59d-a647-8800" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
         <entryLink id="5fb5-5c4e-f438-5987" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
-        <entryLink id="b524-2bd5-78cb-96b9" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+        <entryLink id="b524-2bd5-78cb-96b9" name="Hammer" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="Club"/>
           </modifiers>
@@ -1090,7 +1118,7 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
       <entryLinks>
         <entryLink id="911d-aade-ca94-c15c" name="Sling" hidden="false" collective="false" import="true" targetId="87c7-49b5-f1e7-6662" type="selectionEntry"/>
         <entryLink id="9272-a6fd-2a73-624a" name="Bow" hidden="false" collective="false" import="true" targetId="311a-bf3f-67ff-46e7" type="selectionEntry"/>
-        <entryLink id="999a-f29c-f3b5-366f" name="Javelins/Harpoons" hidden="false" collective="false" import="true" targetId="ece5-fffa-8dd8-94dc" type="selectionEntry">
+        <entryLink id="999a-f29c-f3b5-366f" name="Javelins" hidden="false" collective="false" import="true" targetId="ece5-fffa-8dd8-94dc" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="Javelins"/>
           </modifiers>
