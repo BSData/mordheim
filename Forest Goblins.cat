@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c07d-10eb-1eaf-ab77" name="Forest Goblins (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c07d-10eb-1eaf-ab77" name="Forest Goblins (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="2916-c073-fa3f-e13e" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -166,7 +166,7 @@ Note even if the rider has the Running Dismount skill, the maximum diving charg
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="34b8-cf53-f8a-2978">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="f1a2-1d90-5b79-c26b" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" type="selectionEntry" id="f1a2-1d90-5b79-c26b" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="e2bc-35ab-9c1b-45e9" targetId="74fb-cc90-1361-df26"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -418,7 +418,7 @@ The effects last until the Shaman takes a wound.</characteristic>
         <infoLink id="3177-dd11-286b-1e3d" name="Leader" hidden="false" targetId="8712-d0f2-fe64-07bd" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="4b13-db19-e4cc-c13c" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="4b13-db19-e4cc-c13c" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="aae6-594b-8ccb-9e22" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -587,7 +587,7 @@ The effects last until the Shaman takes a wound.</characteristic>
         <infoLink id="d444-4aca-a763-94a1" name="Goblin max" hidden="false" targetId="de0f-ab0b-13a4-cefc" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="2ace-ab-cd50-cd47" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="2ace-ab-cd50-cd47" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="10-5099-2ce6-cae4" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -756,7 +756,7 @@ The effects last until the Shaman takes a wound.</characteristic>
         <infoLink name="Animosity" hidden="false" type="rule" id="906-f5b2-6cd7-f0f7" targetId="c214-2ad0-8f27-7328"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="35d7-a014-6e1b-5bb" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="35d7-a014-6e1b-5bb" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="229-bcb5-3ddf-d279" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -930,7 +930,7 @@ The effects last until the Shaman takes a wound.</characteristic>
         <infoLink name="Animosity" hidden="false" type="rule" id="3e3f-9125-2e3f-7206" targetId="c214-2ad0-8f27-7328"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="96e4-2a67-cf96-d697" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="96e4-2a67-cf96-d697" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1a2a-7d9d-c3ed-59a1" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -1090,7 +1090,7 @@ The effects last until the Shaman takes a wound.</characteristic>
         <infoLink name="Frenzy" hidden="false" type="rule" id="143f-e266-7983-138c" targetId="ce28-23a1-7b2a-7e6c"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="a17b-4974-4cfc-448e" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="a17b-4974-4cfc-448e" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c20a-7795-d762-4439" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -1264,7 +1264,7 @@ In addition, if they begin their turn within charge range of an enemy, they ar
         <infoLink name="Animosity" hidden="false" type="rule" id="cfcd-a043-1c93-3305" targetId="c214-2ad0-8f27-7328"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="5ef4-803e-3475-bdc2" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="5ef4-803e-3475-bdc2" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d2bb-887f-c565-61ed" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -1436,7 +1436,7 @@ This may not be combined with Quick Shot if they should be promoted to hero st
         <infoLink name="Animals" hidden="false" type="rule" id="c2ea-e835-e14c-126b" targetId="daaa-38f1-8c4c-3140"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="19de-811e-9a5-2bb3" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="19de-811e-9a5-2bb3" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="points" value="20"/>
@@ -1472,6 +1472,24 @@ In close combat, the opponent may choose which to hit.
 The Gigantic Spider no longer has to check for stupidity if it is being ridden, as the Chieftain is directing its actions.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="7cb4-647e-f1e9-5655" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="3fd9-cae0-32e0-f2fd" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8fd2-538f-c821-cc0d-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8fd2-538f-c821-cc0d-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Natives" id="5ad7-3e44-b16a-4ccd" hidden="false">
+          <description>Used to poking through the underbrush, Forest Goblins suffer no movement penalties from moving through any wooded terrain.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="6589-00f2-f161-48d5" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+        <infoLink name="Animosity" id="b2bc-5e44-648d-cc50" hidden="false" type="rule" targetId="c214-2ad0-8f27-7328"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

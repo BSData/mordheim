@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9632-7414-5d8a-43cd" name="Kislevites (1a)" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="9632-7414-5d8a-43cd" name="Kislevites (1a)" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5164-95fd-8401-79b9" name="Kislevites Rules" shortName="Kislevites" publisher="https://broheim.net/downloads/warbands/official/Kislevites.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Kislevites.pdf"/>
   </publications>
@@ -1971,6 +1971,33 @@ If any of these results are rolled for the Bear Tamer, treat the result as a &ap
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="5f0d-1a51-0c34-91a9" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="9857-230c-19b6-3374" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="1be5-a784-a3af-aa9d-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1be5-a784-a3af-aa9d-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Ancient Enemies" id="80ee-aa43-418d-0f89" hidden="false">
+          <description>Kilsevites warbands may nevet ally (see the &apos;Multiplayer rules for Mordheim&apos; article from Town Cryer for more details on warband alliances) with any type of Chaos warband.
+This restriction pertains to the following warbands:
+  Possessed,
+  Beastman,
+  Skaven,
+  Dark Elf,
+  Chaos Dwarf,
+and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;</description>
+        </rule>
+        <rule name="May Hire" id="ecda-96fc-edaf-90a7" hidden="false">
+          <description>A Kilsevite warband is allowed the same selection of Hired Swords as the Human Mercenary warbands from the Mordheim rulebook.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="65b8-bf8a-53c5-3ecf" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

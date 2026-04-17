@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d7899d8b-a172-7e27-aec7-b9c51cb475c1" name="Marienburgers (1a)" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d7899d8b-a172-7e27-aec7-b9c51cb475c1" name="Marienburgers (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="83ab8692-01da-65c5-af52-a55d4800f012" name="Champion" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1627,6 +1627,26 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="f80e-32a5-5f8f-8d43" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="0a44-8fd4-791b-58fa" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="54c4-4dcc-19c0-c56b-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="54c4-4dcc-19c0-c56b-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Great Traders" id="a1d8-fc5d-95b8-2289" hidden="false" page="0">
+          <description>As natural traders with contacts in the merchant guilds Marienburg warbands receive a +1 bonus when attempting to find rare items.
+To reflect their enormous wealth Marienburgers start off with an extra 100 gold crowns (600 in total) when fighting in a campaign.
+In a one-off game they are permitted an extra 20% gold crowns when recruiting a warband.
+For example, in a 1,000 gold crown game a Marienburger warband will have 1,200gc.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="866c-4d0c-23dd-4905" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

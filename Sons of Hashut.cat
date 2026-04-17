@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="cd0a-cc34-9315-94b7" name="Sons of Hashut" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="cd0a-cc34-9315-94b7" name="Sons of Hashut" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Hard Head" id="99c6-f9b5-ef8e-6c4a" hidden="false">
       <description>Chaos Dwarfs ignore the special rules for maces, clubs, etc. They are not easy to knock out!</description>
@@ -53,7 +53,7 @@ They may never hire Elves of any sort!</description>
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="349-c02d-c6df-e7c1" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="9029-a15f-d2a6-d66b" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="4384-728-3c61-9111" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
+            <entryLink import="true" name="Hammer" hidden="false" id="4384-728-3c61-9111" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="Mace, Hammer" field="name"/>
               </modifiers>
@@ -79,9 +79,9 @@ They may never hire Elves of any sort!</description>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="bbcb-d564-98ad-275a" hidden="false" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="9340-9298-1d98-6048" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="9340-9298-1d98-6048" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
             <entryLink import="true" name="Shield" hidden="false" id="d012-6a1d-5454-c311" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
-            <entryLink import="true" name="Heavy Armor" hidden="false" id="2f9f-3bfd-3e5d-21ea" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="2f9f-3bfd-3e5d-21ea" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
             <entryLink import="true" name="Buckler" hidden="false" id="ee33-b000-31b-815a" type="selectionEntry" targetId="0871-44c2-f0f0-c27a" sortIndex="4"/>
             <entryLink import="true" name="Helmet" hidden="false" id="cdb-ae88-168f-d574" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2" sortIndex="5"/>
           </entryLinks>
@@ -101,4 +101,64 @@ They may never hire Elves of any sort!</description>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="3cc3-e013-737f-b04f" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="cfdc-314e-80db-8df1" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="d447-ee56-7e35-c4ad" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="7aa4-8499-140b-c83a-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7aa4-8499-140b-c83a-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Armour" id="03cf-435e-98a5-4ecd" hidden="false">
+          <description>Chaos Dwarfs and Centaurs never suffer movement penalties for wearing armour.</description>
+        </rule>
+        <rule name="Hard Head" id="6f8a-180e-c943-ffb3" hidden="false">
+          <description>Chaos Dwarfs ignore the special rules for maces, clubs, etc. They are not easy to knock out!</description>
+        </rule>
+        <rule name="Hard to Kill" id="c4b4-1ddd-310d-c746" hidden="false">
+          <description>Chaos Dwarfs and Centaurs are tough, resilient individuals who can only be taken out of action on a roll of 6 instead of 5-6 when rolling on the Injury chart.
+Treat a roll of 1-2 as knocked down, 3-5 as stunned, and 6 as out of action.</description>
+        </rule>
+        <rule name="Hired Swords" id="a252-25f6-b26d-dc3b" hidden="false">
+          <description>A Chaos Dwarf warband may hire the following Hired Swords: 
+ Ogre Bodyguard,
+ Pit Fighter,
+ Warlock,
+ Imperial Assassin,
+ and Hobgoblin Scout.
+
+
+They may hire any Hired Sword described as “all may hire,” or allowed by Orc warbands and Chaos warbands.
+They may never hire Elves of any sort!</description>
+        </rule>
+        <rule name="Indentured Servants" id="a297-b7ba-63dc-8dda" hidden="false">
+          <description>A Chaos Dwarf warband must start with at least 4 Hobgoblins; if it drops below 4 hobgoblins, you cannot recruit other members until the number of hobgoblins is increased to four or more.</description>
+        </rule>
+        <rule name="Slavers" id="c6a1-fd98-914d-1751" hidden="false">
+          <description>One of the main objectives of the Chaos Dwarves of Mordheim is to get more slaves for their sacrifices and for their tasks.
+Consequently, the Chaos Dwarves will never free any slave they capture.
+
+
+Pick one: Sacrifice them or put them to work.
+
+
+If you sacrifice them, the apprentice sorcerer will get +1 to Experience for each slave sacrificed.
+If put to work, you force them to help them in their quest for the wyrdstone; at the end of the game, gain an additional +1 wyrdstone for each working slave; then make a 1D6 roll: On a result of 2 to 6, the captive dies due to overwork, disease, the effects of long exposure to the sorcerer’s stone, or for any other similar reason, and the Chaos Dwarf band may keep the captive’s equipment.
+On a result of 1, the captive manages to escape, returns to his band with his equipment intact and, in addition, gains an experience bonus of 1D3 (if he is a henchman, simply add 1 to his total).</description>
+        </rule>
+        <rule name="Uncommon" id="2c7f-1f73-610c-099c" hidden="false">
+          <description>Chaos Dwarves are quite rare in Old World settlements.
+For this reason, when they make rolls for the acquisition of new recruits in their bands, they have to spend 1.5 times (rounding up) the amount they normally spend.
+
+
+Remember that this is not the case for Hobgoblins, a race far more common than that of Chaos Dwarves. For example, a group of Chaos Dwarf recruits armed with blunderbusses with 4 experience points would require at least 6 experience points to acquire one recruit, 12 to recruit two and so on.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="7e48-f493-c2ee-2e3d" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

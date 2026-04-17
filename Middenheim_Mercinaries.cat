@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="51919a76-f868-1581-224f-24394fbb0d64" name="Middenheimers (1a)" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="51919a76-f868-1581-224f-24394fbb0d64" name="Middenheimers (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="83ab8692-01da-65c5-af52-a55d4800f012" name="Champion" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1656,6 +1656,24 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="49f2-d30a-9e0f-1349" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="3b17-5dd4-d4af-2fc2" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="b6e0-8e77-aaaf-82d8-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b6e0-8e77-aaaf-82d8-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Middenheim Strength" id="e699-6203-2ba3-37f1" hidden="false">
+          <description>The men of Middenheim are famous for their physical prowess.
+To represent their advantage in size and bulk, the Champions and Captains of a Middenheim warband start with Strength 4 instead of Strength 3.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="6b8c-9344-5ef9-b163" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

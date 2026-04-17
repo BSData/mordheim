@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3ce7-ad0a-f74d-9c48" name="Mootlanders (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3ce7-ad0a-f74d-9c48" name="Mootlanders (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Weak constitution" hidden="false" id="dd88-dc67-8282-9124">
       <description>Halflings are very weak and puny and even the lightest of blows tends to knock them senseless.
@@ -1917,6 +1917,24 @@ Halfling thieves always have a -1 to hit modifier when being shot at, this add
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="0258-6d1d-8b01-5d74" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="cf5b-fea5-b464-600e" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="9706-371b-f774-1992-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9706-371b-f774-1992-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Weak constitution" id="b1bd-7dba-782b-c520" hidden="false">
+          <description>Halflings are very weak and puny and even the lightest of blows tends to knock them senseless.
+When rolling for a Halfling’s injury, treat a roll of a 2 as ‘stunned’.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="a3ca-e25f-8d89-0c05" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="62b7-88e3-5eeb-8d7c" targetId="e020-c282-277b-b173"/>
@@ -1936,7 +1954,7 @@ Halfling thieves always have a -1 to hit modifier when being shot at, this add
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Free Dagger" hidden="false" id="6615-9a21-6075-65ec" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="21ad-debc-1b9d-d4d4" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="21ad-debc-1b9d-d4d4" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Staff" field="name">
                   <conditions>
@@ -2005,7 +2023,7 @@ Halfling thieves always have a -1 to hit modifier when being shot at, this add
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="e78b-bf88-f679-b22f" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="5e5-b5b4-f0b6-dff0" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="5e5-b5b4-f0b6-dff0" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="53c3-ad36-caef-a6e2" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Cooking Pot Helmet" hidden="true" id="9ae4-3c10-9b7a-d86c" type="selectionEntry" targetId="e958-4b33-a85d-664b">
               <modifiers>

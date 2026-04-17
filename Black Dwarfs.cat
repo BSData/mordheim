@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6e90-f47-6d8f-ecf5" name="Black Dwarfs (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6e90-f47-6d8f-ecf5" name="Black Dwarfs (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="a72c-9e0b-9f94-25a4" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -31,7 +31,7 @@ They may never hire Elves of any sort!</description>
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="996e-24a4-38db-696f" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="3b01-fcf0-cfa6-f06d" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="8379-c2b7-8521-8378" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="3">
+            <entryLink import="true" name="Hammer" hidden="false" id="8379-c2b7-8521-8378" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -93,10 +93,10 @@ They may never hire Elves of any sort!</description>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="bbc7-6300-ffe7-a5b" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="a8dd-2993-6deb-f0b" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="a8dd-2993-6deb-f0b" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
             <entryLink import="true" name="Shield" hidden="false" id="4b62-461b-a9ee-64fa" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
             <entryLink import="true" name="Helmet" hidden="false" id="672b-c28f-5a84-498c" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2" sortIndex="4"/>
-            <entryLink import="true" name="Heavy Armor" hidden="false" id="92ff-31d8-1f41-39e" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="92ff-31d8-1f41-39e" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
             <entryLink import="true" name="Mechanical suit" hidden="true" id="c3c1-e495-4749-4322" type="selectionEntry" targetId="7b1-4b5e-5f87-b08d" sortIndex="5">
               <modifiers>
                 <modifier type="set" value="175" field="points"/>
@@ -117,7 +117,7 @@ They may never hire Elves of any sort!</description>
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="d5ca-8cb0-7fff-18ea" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="700e-e816-3bc6-4b4f" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="fa84-d20f-4d19-b7c8" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="3">
+            <entryLink import="true" name="Hammer" hidden="false" id="fa84-d20f-4d19-b7c8" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="Mace" field="name"/>
               </modifiers>
@@ -151,7 +151,7 @@ They may never hire Elves of any sort!</description>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="1fd1-f692-336d-fb3c" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="dde4-aef2-a012-792c" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="dde4-aef2-a012-792c" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
             <entryLink import="true" name="Shield" hidden="false" id="f51f-8dd1-73aa-1eff" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="2"/>
             <entryLink import="true" name="Helmet" hidden="false" id="36f5-67f2-1409-8c77" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2" sortIndex="3"/>
           </entryLinks>
@@ -399,8 +399,7 @@ Clouds of black gas are slowly emitted until with an almighty belch, a wave of 
 
 
 The spell has a range of 8’’, hitting all models in its path on a D6 score of 4+. Any model hit suffers a S4 hit, roll to wound as normal.
-No armor saves allowed.
-</characteristic>
+No armor saves allowed.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -513,8 +512,7 @@ It can never be removed.</description>
 Attempts to parry its strikes are futile.
 
 
-A model attacked by a steel whip may not make parries with swords or bucklers.
-</description>
+A model attacked by a steel whip may not make parries with swords or bucklers.</description>
         </rule>
         <rule name="Whipcrack" id="82f8-2790-3445-2c18" hidden="false">
           <description>When the wielder charges they gain +1A for that turn.
@@ -526,8 +524,7 @@ This additional attack will ‘strike first’.
 If the wielder is simultaneously charged by two or more opponents they will still only receive a total of +1A.
 
 
-If the wielder is using two whips at the same time then they get +1A for the additional hand weapon, but only the first whip gets the whipcrack +1A.
-</description>
+If the wielder is using two whips at the same time then they get +1A for the additional hand weapon, but only the first whip gets the whipcrack +1A.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -2152,7 +2149,11 @@ Re-roll all results of ‘The lad’s got talent’ for them.</description>
         <categoryLink name="Stash" hidden="false" id="755d-8d4f-1e6a-bf78" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Gold" hidden="false" id="9d9c-16a7-2ea6-8c6" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="9d9c-16a7-2ea6-8c6" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry" page="0">
+          <modifiers>
+            <modifier type="set" value="Gold" field="name"/>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="5280-8994-f8d6-5bb2" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
         <entryLink import="true" name="Equipment" hidden="false" id="3bbd-8884-567-7413" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2301,6 +2302,39 @@ Captives     Hashut’s Reward
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="8ff1-9c6b-5839-0305">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="9065-0424-6643-8983" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="22a4-79ea-072e-f8f4-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="22a4-79ea-072e-f8f4-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Armor" id="43d1-9348-fe18-5606" hidden="false">
+          <description>Chaos Dwarfs never suffer movement penalties for wearing armor.</description>
+        </rule>
+        <rule name="Hard Head" id="f83a-da78-1370-bf45" hidden="false">
+          <description>Chaos Dwarfs ignore the special rules for clubs, maces, etc. They too are not easy to knock out!</description>
+        </rule>
+        <rule name="Hard to Kill" id="1a0e-803d-7524-bdc9" hidden="false">
+          <description>Like their uncorrupted brethren, Chaos Dwarfs are tough, resilient individuals who can only be taken out of action on a roll of 6 instead of 5-6 when rolling on the Injury chart.
+
+
+Treat a roll of 1-2 as knocked down, 3-5 as stunned, and 6 as out of action.</description>
+        </rule>
+        <rule name="Hired Swords" id="cc83-0d82-01f3-c840" hidden="false">
+          <description>A Chaos Dwarf warband may hire the following Hired Swords: Ogre Bodyguard, Pit Fighter, Warlock, Imperial Assassin, and Hobgoblin Scout.
+
+
+They may hire any Hired Sword described as all may hire, or allowed by Orc warbands and Chaos warbands.
+They may never hire Elves of any sort!</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="a326-f4ef-26b3-87a7" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0b05773f-a863-7a25-f872-588b804e2c75" name="Undead (1a)" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0b05773f-a863-7a25-f872-588b804e2c75" name="Undead (1a)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="888b0a33-7922-685c-49fc-591b3fb26358" name="Awakened Zombie" page="0" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -1321,6 +1321,18 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="63f8-c470-00f8-18f3" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="5149-01d1-7728-af3a" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="c9af-b601-2724-34c0-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c9af-b601-2724-34c0-max" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="2a53-2a10-2a38-672e" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <infoLinks>

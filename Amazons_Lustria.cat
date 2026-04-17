@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c0ee-cf6e-9b18-45b6" name="Amazons Lustria (1b)" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c0ee-cf6e-9b18-45b6" name="Amazons Lustria (1b)" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="c766-4c9f-c70c-d00a" name="GitHub" publisherUrl="https://github.com/BSData/mordheim.git"/>
   </publications>
@@ -1223,6 +1223,45 @@ She starts with 1 ritual chosen at random from the list over.</description>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="4841-a339-6a7b-4a98" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="e402-d2b1-545f-f4a4" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="1f2b-38f5-f898-c235-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1f2b-38f5-f898-c235-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Isolationists" id="b145-8eae-7e23-4843" hidden="false">
+          <description>The Amazons are constantly battling against the predations of the Lizardmen and greedy treasure-seeking Norse.
+Amazon culture reflects their dislike and distrust of outsiders and in battle they are particularly savage.
+
+Amazons get to re-roll any attack rolls that miss in the first round of combat against Lizardmen and Norse.</description>
+        </rule>
+        <rule name="Norse Enmity" id="08bf-9b27-fe06-1d9a" hidden="false">
+          <description>When facing a Norse Warband an Amazon Warband will fight to the death.
+
+The Amazons can re-roll their first failed Rout against the Norse.
+Remember you can’t re-roll a failed re-roll. 
+
+In addition, Amazons can never choose to voluntarily rout when facing a Norse warband unless their Warband Leader has been taken Out of Action.</description>
+        </rule>
+        <rule name="Not one of us" id="8eeb-64b9-bf4c-6f9b" hidden="false">
+          <description>Due to the Amazons isolationism and suspicions about other races they never side with anyone else.
+
+For this reason, the Amazons may not have any Hired Swords or Dramatis Personae unless they are Amazons themselves.</description>
+        </rule>
+        <rule name="Sacrifice" id="9b01-d7cc-330f-4312" hidden="false">
+          <description>The Amazons are quick to sacrifice any captive to their gods.
+The Amazons follow the rules for Possessed in the Rulebook when it comes to captives.
+
+If an Amazon Warband captures a Lizardman, they may sacrifice him as normal, plus get a free Skins and Charms.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="57f9-5fdc-127e-f964" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
   <rules>
     <rule id="cc65-53b2-ceba-cf3d" name="Isolationists" hidden="false">
@@ -1608,15 +1647,4 @@ Lizardmen and Undead are immune to the effects of this ritual.</characteristic>
   <catalogueLinks>
     <catalogueLink id="721b-9624-66b8-f3a6" name="common-data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
-  <entryLinks>
-    <entryLink import="true" name="Grade" hidden="false" id="1743-28bf-c7fc-1d16" type="selectionEntryGroup" targetId="3394-366e-74c0-2277">
-      <categoryLinks>
-        <categoryLink targetId="4852-c4cb-82b0-b7fa" id="6685-e23a-8fdf-ddf6" primary="true" name="Configuration"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="791e-2684-0b08-e047-min"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="791e-2684-0b08-e047-max"/>
-      </constraints>
-    </entryLink>
-  </entryLinks>
 </catalogue>

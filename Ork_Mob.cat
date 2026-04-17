@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8b66f7c3-fdd7-fcea-eb91-086959d72140" name="Orc Mob (1a)" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="8b66f7c3-fdd7-fcea-eb91-086959d72140" name="Orc Mob (1a)" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0094-a0e7-9fc9-5aa2" name="Ork Mob Rules" shortName="Broheim Rules (1a)" publisher="https://broheim.net/downloads/warbands/official/Orc%20Mob.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Orc%20Mob.pdf"/>
   </publications>
@@ -1591,6 +1591,50 @@ Trolls do not gain experience.</description>
         <cost name="pts" typeId="points" value="200"/>
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="ff7d-ad80-6e26-2253" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="3a6b-fbdd-01c2-13f1" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8ee3-47f1-4d21-6d51-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8ee3-47f1-4d21-6d51-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Animosity" id="3059-3d65-2f99-c14c" hidden="false" page="0">
+          <description>At the start of the Orc player’s turn, roll a D6 for each Henchman who is either an Orc or a Goblin and not in Hand to Hand Combat.
+
+Roll on table below if 1 is rolled. 
+
+1 “I ’Erd Dat!”
+If there is a friendly Orc or Goblin Henchman or Hired Sword within charge reach (if there are multiple targets within reach, choose the one nearest to the mad model), the warrior must immediately charge and fight a round of hand-to-hand combat against the Target.
+At the end of this round of combat, the models will immediately move 1&quot; apart and no longer count as being in close combat.
+If there are no friendly Orc or Goblin Henchmen or Hired Swords within charge reach, and the warrior is armed with a missile weapon, he immediately takes a shot at the nearest friendly Orc or Goblin Henchman or Hired Sword.
+If none of the above applies, or if the nearest friendly model is an Orc Hero, the warrior behaves as if a 2-5 had been rolled on this chart.
+In any case, the warrior in question may take no other action this turn, though he may defend himself if attacked in hand-to-hand combat.
+
+2-5 “Wud Yoo Say?” 
+The warrior is fairly certain he heard an offensive sound from the nearest friendly Orc or Goblin, but he’s not quite sure.
+He spends the turn hurling insults at his mate.
+He may do nothing else this turn, though he may defend himself if attacked in hand-to-hand combat.
+
+6. “I’ll Show Yer!” 
+The warrior imagines that his mates are laughing about him behind his back and calling him silly names.
+To show them up he decides that he’ll be the first one to the scrap! 
+This model must move as quickly as possible towards the nearest enemy model, charging into combat if possible.
+If there are no enemy models within sight, the Orc or Goblin warrior may make a normal move immediately.
+This move is in addition to his regular move in the Movement phase, so he may therefore move twice in a single turn if you wish.
+If the extra move takes the Orc or Goblin warrior within charge reach of an enemy model, the warrior must charge into close combat during his regular movement.</description>
+        </rule>
+        <rule name="Distasteful Company" id="54b0-c32f-fe70-807e" hidden="false" page="0">
+          <description>Many Hired Swords refuse to work for Orcs, as they know that Orcs are just as likely to eat them as fight alongside them.
+Orcs may only hire the following Hired Swords: 
+  Pit Fighters, Ogre Bodyguards or Warlocks.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="a7c1-9a8f-0986-4326" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

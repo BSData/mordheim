@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="21" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="22" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -242,6 +242,11 @@ Warhorses only.</description>
           </conditions>
         </modifier>
       </modifiers>
+      <rules>
+        <rule name="Sword and Buckler" id="0504-e341-08e4-78d6" hidden="false">
+          <description>If your model is armed with a buckler and a sword, you may re-roll any failed parries once. A model armed with two swords can still only roll once.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry id="4c6d-eb92-53a7-a6d3" name="Gromril Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1637,6 +1642,14 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         <rule id="81a5-4dbc-dd19-aef3" name="Rarity" hidden="false">
           <description>Rarity 9</description>
         </rule>
+        <rule name="Hand-to-hand" id="a8a0-16f3-34e9-76ed" hidden="false" page="0">
+          <description>Pistols can be used in hand-to-hand combat as well as for shooting. A model armed with a pistol and another close combat weapon gains +1 Attack, which is resolved at Strength 4 with a -2 save modifier. This bonus attack can be used only once per combat. If you are firing a brace of pistols, your model can fight with 2 Attacks in the first turn of close combat. These attacks are resolved with a model’s Weapon Skill like any normal close combat attack and likewise may be parried. Successful hits are resolved at Strength 4 and with
+a -2 save modifier, regardless of the firer’s Strength.</description>
+        </rule>
+        <rule name="Shoot In Hand-To-Hand Combat" id="8906-d783-a9d8-3a6a" hidden="false">
+          <description>A model armed with a crossbow pistol may shoot it in the first round of a hand-to-hand combat and this shot is always resolved first, before any blows are struck. This shot has an extra -2 to hit penalty. Use model&apos;s Ballistic Skill to see whether it hits or not.
+Note: No matter if its a brace or not you only get 1 shot.</description>
+        </rule>
       </rules>
       <costs>
         <cost name=" gc" typeId="points" value="35"/>
@@ -1644,7 +1657,7 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6eba-986e-1a07-0e58"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6eba-986e-1a07-0e58"/>
       </constraints>
       <modifiers>
         <modifier type="increment" value="35" field="points">
@@ -1658,6 +1671,19 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Brace" hidden="false" id="a2c7-0fe2-a068-de0b">
+          <infoLinks>
+            <infoLink name="Brace" id="544b-f913-5f46-9186" hidden="false" type="rule" targetId="a67f-510b-c01b-8c72"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="35" field="points"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="895e-3ecf-3daf-36d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="da24-6a7f-725b-5bcb" name="Duelling Pistol" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1692,7 +1718,7 @@ a duelling pistol have a +1 bonus to hit.</description>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d684-25ed-f53c-1219"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d684-25ed-f53c-1219"/>
       </constraints>
       <modifiers>
         <modifier type="increment" value="30" field="points">
@@ -1706,6 +1732,19 @@ a duelling pistol have a +1 bonus to hit.</description>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Brace" hidden="false" id="a4b1-781f-add0-8678">
+          <infoLinks>
+            <infoLink name="Brace" id="3369-6664-5fc4-6011" hidden="false" type="rule" targetId="a67f-510b-c01b-8c72"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="30" field="points"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bdc1-ed11-ccb7-b868" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="e2c2-751b-5384-ce1d" name="Elf Bow" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1876,7 +1915,7 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bd8d-028e-ccb8-f783"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd8d-028e-ccb8-f783"/>
       </constraints>
       <modifiers>
         <modifier type="increment" value="15" field="points">
@@ -1890,6 +1929,19 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Brace" hidden="false" id="ae20-29a5-5bfc-afe3">
+          <infoLinks>
+            <infoLink name="Brace" id="a222-35ff-f83f-9445" hidden="false" type="rule" targetId="a67f-510b-c01b-8c72"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="15" field="points"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0832-9bfc-6f8d-75d0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="a802-b7c6-caea-a5b1" name="Repeater Crossbow" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2726,7 +2778,7 @@ Only available to Humans.</description>
 a -2 save modifier, regardless of the firer’s Strength.</description>
         </rule>
         <rule id="0c3f-75f6-646f-71ad" name="Rarity" hidden="false">
-          <description>Rarity 10</description>
+          <description>Rarity 9</description>
         </rule>
       </rules>
       <infoLinks>
@@ -2734,12 +2786,12 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <infoLink id="2794-a9df-e85e-86aa" name="Firearm save modifier" hidden="false" targetId="5d21-2b30-4219-ec86" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name=" gc" typeId="points" value="30"/>
+        <cost name=" gc" typeId="points" value="25"/>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="08d4-6287-7c20-78b0"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08d4-6287-7c20-78b0"/>
       </constraints>
       <modifiers>
         <modifier type="increment" value="25" field="points">
@@ -2762,6 +2814,24 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Brace" hidden="false" id="f3b7-8fca-a58c-713a">
+          <infoLinks>
+            <infoLink name="Brace" id="cda4-027b-809b-6bde" hidden="false" type="rule" targetId="a67f-510b-c01b-8c72"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="21" field="points"/>
+          </modifiers>
+          <rules>
+            <rule name="Rarity" id="8ab2-8fbc-3cd0-f8dc" hidden="false">
+              <description>Rarity 10</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="421e-afa4-e68c-df6e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="5fd9-080e-10f1-9d52" name="Double Barreled Hochland Long Rifle" page="0" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3930,7 +4000,7 @@ Toughened leathers cannot be sold back at the Trading Posts; the stench alone is
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry id="c26e-414e-293-2621" name="Advancement (Hero)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c26e-414e-293-2621" name="Advancement (Hero)" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a79c-4fb2-4100-9f13" type="max"/>
       </constraints>
@@ -4098,7 +4168,7 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry id="583e-a0c5-873-acdc" name="Advancement (Henchmen)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="583e-a0c5-873-acdc" name="Advancement (Henchmen)" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8c2-da7f-edc5-5630" type="max"/>
       </constraints>
@@ -5063,7 +5133,7 @@ Not available to Possessed or Undead.</description>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c69-fc2a-5033-ebcf" type="min"/>
       </constraints>
@@ -5454,7 +5524,7 @@ This counts as an academic skill.</description>
         <entryLink id="1d4b-f425-6e4c-b130" name="+1 WS" hidden="false" collective="false" import="true" targetId="7418-394e-fe13-2a96" type="selectionEntry" sortIndex="2"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="ee2c-89e3-489b-d0cb" name="Combat Skills" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="ee2c-89e3-489b-d0cb" name="Combat Skills" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b43e-f5a8-b370-a340" type="min"/>
       </constraints>
@@ -5552,7 +5622,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="0073-d2d6-15c0-45b1" name="Shooting Skills" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="0073-d2d6-15c0-45b1" name="Shooting Skills" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="430e-dad9-a668-235c" type="min"/>
       </constraints>
@@ -5680,7 +5750,7 @@ with a bow or crossbow (but not a crossbow pistol).</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="e134-0fdf-67a2-4684" name="Speed Skills" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="e134-0fdf-67a2-4684" name="Speed Skills" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ef7-5338-d8ef-cad0" type="min"/>
       </constraints>
@@ -5795,7 +5865,7 @@ charging), the order of attack between the charger(s) and the warrior with this 
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="e5ac-cd5b-9057-e096" name="Strength Skills" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="e5ac-cd5b-9057-e096" name="Strength Skills" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb1d-d235-c34f-c0c4" type="min"/>
       </constraints>
@@ -5900,7 +5970,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="975d-a3e5-9029-58d5" name="Armour" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="975d-a3e5-9029-58d5" name="Armour" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb13-71da-4b4e-deac" type="min"/>
       </constraints>
@@ -5916,7 +5986,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink id="bc00-e905-1ad2-3a16" name="Toughened Leathers" hidden="false" collective="false" import="true" targetId="439f-1b4d-1579-14b" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="073c-d5ce-dcc0-b820" name="Hand to Hand Weapons" hidden="false" collective="false" import="true" collapsible="false">
+    <selectionEntryGroup id="073c-d5ce-dcc0-b820" name="Hand to Hand Weapons" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="70e0-a7b1-cc1f-5995" type="min"/>
       </constraints>
@@ -5944,9 +6014,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink import="true" name="Sword Breaker" hidden="false" id="3721-1714-d050-1eb2" type="selectionEntry" targetId="719a-cf09-5749-6be2">
           <rules>
             <rule name="Trap Blade:" id="8f39-fb0c-60ae-dbf4" hidden="false">
-              <description>The two prongs used to trap an opponent&apos;s weapon are snapped out when the warrior parries. Whenever you make a successful parry attempt roll a D6. If you score a 4+ you break the weapon your opponent was using. The weapon is now useless and they must use another one, or if they have no other weapon, resort to unarmed combat.
-
-</description>
+              <description>The two prongs used to trap an opponent&apos;s weapon are snapped out when the warrior parries. Whenever you make a successful parry attempt roll a D6. If you score a 4+ you break the weapon your opponent was using. The weapon is now useless and they must use another one, or if they have no other weapon, resort to unarmed combat.</description>
             </rule>
           </rules>
           <modifiers>
@@ -6185,7 +6253,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <entryLink import="true" name="Weeping Blades" hidden="false" id="d77d-47a7-1215-e1cc" type="selectionEntry" targetId="0a36-4063-32b7-61b3"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="1937-df4f-3c68-e0be" name="Missile Weapons" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="1937-df4f-3c68-e0be" name="Missile Weapons" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c7f8-e6d1-34c6-505e" type="min"/>
       </constraints>
@@ -6506,13 +6574,13 @@ must retire from the warband.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="70b9-9a07-4088-7598" name="Skills" hidden="false" collective="false" import="true" collapsible="true">
+    <selectionEntryGroup id="70b9-9a07-4088-7598" name="Skills" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4884-6328-6974-bafb" type="max"/>
         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="08b8-7efb-cf23-0534" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="955a-d5d9-dfa2-b7ed" name="Academic Skills" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3" collapsible="false">
+        <selectionEntry id="955a-d5d9-dfa2-b7ed" name="Academic Skills" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3343-7d3b-63c5-11d1" type="max"/>
           </constraints>
@@ -6525,7 +6593,7 @@ must retire from the warband.</description>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="46be-0b42-069c-bea9" name="Combat Skills" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1" collapsible="false">
+        <selectionEntry id="46be-0b42-069c-bea9" name="Combat Skills" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e945-d9f7-3271-3511" type="max"/>
           </constraints>
@@ -6538,7 +6606,7 @@ must retire from the warband.</description>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9ff6-272c-433e-704f" name="Shooting Skills" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2" collapsible="false">
+        <selectionEntry id="9ff6-272c-433e-704f" name="Shooting Skills" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="decd-aef4-71ae-c2b3" type="max"/>
           </constraints>
@@ -6551,7 +6619,7 @@ must retire from the warband.</description>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a354-8274-2d13-2ba4" name="Speed Skills" hidden="false" collective="false" import="true" type="upgrade" sortIndex="5" collapsible="false">
+        <selectionEntry id="a354-8274-2d13-2ba4" name="Speed Skills" hidden="false" collective="false" import="true" type="upgrade" sortIndex="5" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="122c-9010-b239-a4e2" type="max"/>
           </constraints>
@@ -6564,7 +6632,7 @@ must retire from the warband.</description>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c736-d3a0-629d-0631" name="Strength Skills" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4" collapsible="false">
+        <selectionEntry id="c736-d3a0-629d-0631" name="Strength Skills" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4" collapsible="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca32-c763-3d0b-3356" type="max"/>
           </constraints>
@@ -6579,7 +6647,7 @@ must retire from the warband.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a2cf-6f28-f7c2-275d" name="Miscellaneous Equipment" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="a2cf-6f28-f7c2-275d" name="Miscellaneous Equipment" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4aa1-2ce5-e554-edc6" type="min"/>
       </constraints>
@@ -6653,7 +6721,7 @@ Multiple models that have the horn cannot force a second re-roll. (Piranha warri
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="5541-f5c4-85e0-b399" name="Mutations" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="5541-f5c4-85e0-b399" name="Mutations" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d97-52b6-3a7f-50a3" type="min"/>
       </constraints>
@@ -6780,7 +6848,7 @@ for details.</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="61c7-8179-00b5-1772" name="Chaos Rituals" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="61c7-8179-00b5-1772" name="Chaos Rituals" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e287-19d3-4453-1942" type="min"/>
       </constraints>
@@ -6895,7 +6963,7 @@ If he engages a fleeing enemy, in the close combat phase he will score one autom
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3905-cd06-b0b9-95d3" name="Prayers of Taal" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="3905-cd06-b0b9-95d3" name="Prayers of Taal" hidden="false" collective="false" import="true" collapsible="true">
       <selectionEntries>
         <selectionEntry id="bc04-35b-654d-279a" name="1 - Stag&apos;s Leap" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -7018,7 +7086,7 @@ No armour saves allowed.</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="9614-2638-4e92-128d" name="Cavalry Skills" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="9614-2638-4e92-128d" name="Cavalry Skills" hidden="false" collective="false" import="true" collapsible="true">
       <selectionEntries>
         <selectionEntry id="f95d-1030-4a88-6824" name="Ride" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
           <constraints>
@@ -7308,7 +7376,7 @@ no longer frenzied. He continues to fight as normal for the rest of the battle.<
       <description>You may not move and fire a  in the same turn, other than to pivot on the spot to face your target or stand up.</description>
     </rule>
     <rule id="17dc-9c49-08e1-af45" name="Parry" page="0" hidden="false">
-      <description>The two prongs used to trap an opponent&apos;s weapon are snapped out when the warrior parries. Whenever you make a successful parry attempt roll a D6. If you score a 4+ you break the weapon your opponent was using. The weapon is now useless and they must use another one, or if they have no other weapon, resort to unarmed combat.</description>
+      <description>When an opponent scores a hit, Roll a D6. If the score is higher than the number your opponent rolled to hit, the buckler or sword has parried the strike. Note that it is therefore impossible to parry a blow which scored a 6 on the roll to hit.</description>
     </rule>
     <rule id="4f7f-29ec-a9da-82fc" name="Prepare shot" page="0" hidden="false">
       <description>Takes a whole turn to reload, so you may only fire every other turn. If you have a brace of pistols (ie, two) you may fire every turn.</description>
@@ -7465,6 +7533,9 @@ If the extra move takes the Orc or Goblin warrior within charge reach of an enem
     </rule>
     <rule id="52a8-95d9-6982-5db5" name="No Brain" hidden="false">
       <description>This creature has no intelligence and as such never gains experience.</description>
+    </rule>
+    <rule name="Brace" id="a67f-510b-c01b-8c72" hidden="false">
+      <description>Allows 2 pistols to be taken as 1 missile option</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
