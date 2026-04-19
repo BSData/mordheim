@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8315579e-b80d-5ed1-7a51-d85cdf59c06b" name="Dwarf Treasure Hunters (1a)" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="8315579e-b80d-5ed1-7a51-d85cdf59c06b" name="Dwarf Treasure Hunters (1a)" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="2d1dabde-1182-a9db-6186-35bff94b4a69" name="Beardlings" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -198,7 +198,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66d3-af6f-34aa-6a7b" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="c191-8f39-ab65-c7c5" collective="false" sortIndex="6">
+        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="c191-8f39-ab65-c7c5" collective="false" sortIndex="6" collapsible="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -402,7 +402,7 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="2bdb-58ef-d399-b183" collective="false" sortIndex="6">
+        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="2bdb-58ef-d399-b183" collective="false" sortIndex="6" page="0">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -423,7 +423,7 @@
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Dwarf Warrior)" hidden="false" id="d680-c66a-689d-4224" sortIndex="5" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Dwarf Warrior)" hidden="false" id="d680-c66a-689d-4224" sortIndex="5" collapsible="true" page="0">
           <selectionEntryGroups>
             <selectionEntryGroup name="Armour" id="e9fd-c89a-017c-ebcf" hidden="false" sortIndex="3">
               <entryLinks>
@@ -903,7 +903,7 @@
         <categoryLink id="b463eea6-c00c-2a2e-4538-087cf51cf5ae-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="5533-dc3d-32d0-2386" collective="false" sortIndex="5">
+        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="5533-dc3d-32d0-2386" collective="false" sortIndex="5" page="0" collapsible="true">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ddb3-2e05-b1df-b281" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7670-d637-1214-0709" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -917,7 +917,7 @@
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Dwarf Warrior)" hidden="false" id="9077-a021-3086-b7c0" sortIndex="4" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Dwarf Warrior)" hidden="false" id="9077-a021-3086-b7c0" sortIndex="4" collapsible="true" page="0">
           <selectionEntryGroups>
             <selectionEntryGroup name="Armour" id="9d53-c562-a555-e997" hidden="false" sortIndex="3">
               <entryLinks>
@@ -1052,7 +1052,7 @@
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="e836-d819-149f-0c3f" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="e836-d819-149f-0c3f" collective="false" page="0">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="47db-25d1-4272-5e8a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c32e-fc88-3ca9-8cc1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1071,7 +1071,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="c01c-6528-e9dd-1a80" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry">
+        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="c01c-6528-e9dd-1a80" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry" page="0">
           <modifiers>
             <modifier type="set" value="Gold" field="name"/>
           </modifiers>
@@ -1277,7 +1277,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="621c-fd97-daf8-7de3" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="6eeb-b40e-7517-9d59" collective="false" sortIndex="6">
+        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="6eeb-b40e-7517-9d59" collective="false" sortIndex="6" collapsible="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -1453,8 +1453,7 @@
       </profiles>
       <rules>
         <rule id="3b3019fc-ab69-2ae2-8d8d-b253b1516358" name="Deathwish" page="0" hidden="false">
-          <description>Troll Slayers seek an honourable death in combat. They are completely immune to all psychology and never need to test if fighting alone
-</description>
+          <description>Troll Slayers seek an honourable death in combat. They are completely immune to all psychology and never need to test if fighting alone</description>
         </rule>
         <rule name="Equipment Restriction" id="38f2-7247-2bfe-63a0" hidden="false">
           <description>Slayers may never carry or use missile weapons or any form of armour.</description>
@@ -1464,7 +1463,7 @@
         <categoryLink id="83ab8692-01da-65c5-af52-a55d4800f012-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="3795-b0a5-6506-f397" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="3795-b0a5-6506-f397" collective="false" collapsible="true">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ffe3-0236-8e71-72f9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3249-d706-8769-7582" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
