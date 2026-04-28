@@ -76,6 +76,7 @@ They may never hire Elves of any sort!</description>
         <selectionEntryGroup name="Armor" id="bbcb-d564-98ad-275a" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Light Armour" hidden="false" id="9340-9298-1d98-6048" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+			<entryLink import="true" name="Heavy Armour" hidden="false" id="b2f1-404f-1aa2-a150" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
             <entryLink import="true" name="Shield" hidden="false" id="d012-6a1d-5454-c311" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
             <entryLink import="true" name="Helmet" hidden="false" id="cdb-ae88-168f-d574" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2" sortIndex="5"/>
           </entryLinks>
@@ -487,7 +488,7 @@ Remember that this is not the case for Hobgoblins, a race far more common than t
             </selectionEntryGroup>
             <selectionEntryGroup name="Missile Weapons" id="8232-490b-17d2-acbe" hidden="false" sortIndex="2">
               <entryLinks>
-                <entryLink import="true" name="Pistol" hidden="false" id="d177-eafc-b4d5-9764" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="2"/>
+                <entryLink import="true" name="Pistol" hidden="false" id="d177-eafc-b4d5-9765" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="2"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fd5e-1e86-99a1-4d70" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
