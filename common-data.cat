@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="24" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="25" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -5420,6 +5420,11 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="First mutation" hidden="false" id="bc0f-5f4b-4a70-6320">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="model" shared="true" id="abea-14a7-c3de-8b43" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="df9d-8724-d362-9d7c" name="Academic Skills" hidden="false" collective="false" import="true" collapsible="true">
@@ -7012,7 +7017,14 @@ Multiple models that have the horn cannot force a second re-roll. (Piranha warri
     </selectionEntryGroup>
     <selectionEntryGroup id="5541-f5c4-85e0-b399" name="Mutations" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d97-52b6-3a7f-50a3" type="min"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="7597-bd22-6c95-194d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="false" id="aeaf-82d7-02ba-877a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="9399-ab68-34ab-f5f5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="2437-52a4-027e-7daa" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="cb1d-2246-be38-b54f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="edb4-1fa5-197c-e61c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="eb38-59de-5dec-38be" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="d827-0128-85ca-f803" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="7d6d-e545-dd9e-0978" name="Daemon Soul" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
@@ -7022,10 +7034,20 @@ Multiple models that have the horn cannot force a second re-roll. (Piranha warri
             </rule>
           </rules>
           <costs>
-            <cost name=" gc" typeId="points" value="20"/>
+            <cost name=" gc" typeId="points" value="40"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28c2-fdbd-bd07-64dd"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="First mutation" hidden="false" id="9dfc-0a26-d488-12a3" type="selectionEntry" targetId="bc0f-5f4b-4a70-6320">
+              <modifiers>
+                <modifier type="decrement" value="20" field="points"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="5046-3b50-ab52-7139" name="Great Claw" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
           <rules>
@@ -7034,10 +7056,17 @@ Multiple models that have the horn cannot force a second re-roll. (Piranha warri
             </rule>
           </rules>
           <costs>
-            <cost name=" gc" typeId="points" value="50"/>
+            <cost name=" gc" typeId="points" value="100"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="First mutation" hidden="false" id="198e-8608-f870-330c" type="selectionEntry" targetId="bc0f-5f4b-4a70-6320">
+              <modifiers>
+                <modifier type="decrement" value="50" field="points"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="954d-82d2-0bf3-568f" name="Tentacle" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <rules>
@@ -7046,10 +7075,17 @@ Multiple models that have the horn cannot force a second re-roll. (Piranha warri
             </rule>
           </rules>
           <costs>
-            <cost name=" gc" typeId="points" value="35"/>
+            <cost name=" gc" typeId="points" value="70"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="First mutation" hidden="false" id="7119-1053-5110-bd63" type="selectionEntry" targetId="bc0f-5f4b-4a70-6320">
+              <modifiers>
+                <modifier type="decrement" value="35" field="points"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="c9b6-6deb-d5f6-c86c" name="Cloven Hoofs" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
           <rules>
@@ -7064,9 +7100,14 @@ Multiple models that have the horn cannot force a second re-roll. (Piranha warri
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dae-093a-37ce-9e6d" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="First mutation" hidden="false" id="e79f-1eea-a256-f3ea" type="selectionEntry" targetId="bc0f-5f4b-4a70-6320">
+              <modifiers>
+                <modifier type="decrement" value="40" field="points"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <costs>
-            <cost name=" gc" typeId="points" value="40"/>
+            <cost name=" gc" typeId="points" value="80"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
@@ -7078,10 +7119,17 @@ Multiple models that have the horn cannot force a second re-roll. (Piranha warri
             </rule>
           </rules>
           <costs>
-            <cost name=" gc" typeId="points" value="30"/>
+            <cost name=" gc" typeId="points" value="60"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="First mutation" hidden="false" id="cdd4-3735-f0fa-2cc8" type="selectionEntry" targetId="bc0f-5f4b-4a70-6320">
+              <modifiers>
+                <modifier type="decrement" value="30" field="points"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="b456-bc51-23ab-7389" name="Spines" hidden="false" collective="false" import="true" type="upgrade" sortIndex="6">
           <rules>
@@ -7090,10 +7138,17 @@ Multiple models that have the horn cannot force a second re-roll. (Piranha warri
             </rule>
           </rules>
           <costs>
-            <cost name=" gc" typeId="points" value="35"/>
+            <cost name=" gc" typeId="points" value="70"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="First mutation" hidden="false" id="cde7-ac60-546a-874a" type="selectionEntry" targetId="bc0f-5f4b-4a70-6320">
+              <modifiers>
+                <modifier type="decrement" value="35" field="points"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="212c-c022-52e3-c079" name="Scorpion Tail" hidden="false" collective="false" import="true" type="upgrade" sortIndex="7">
           <rules>
@@ -7102,10 +7157,17 @@ Multiple models that have the horn cannot force a second re-roll. (Piranha warri
             </rule>
           </rules>
           <costs>
-            <cost name=" gc" typeId="points" value="40"/>
+            <cost name=" gc" typeId="points" value="80"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="First mutation" hidden="false" id="4413-1bc6-f5e7-b1be" type="selectionEntry" targetId="bc0f-5f4b-4a70-6320">
+              <modifiers>
+                <modifier type="decrement" value="40" field="points"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="be73-83c9-e6be-1a49" name="Extra Arm" hidden="false" collective="false" import="true" type="upgrade" sortIndex="8">
           <rules>
@@ -7114,10 +7176,17 @@ Multiple models that have the horn cannot force a second re-roll. (Piranha warri
             </rule>
           </rules>
           <costs>
-            <cost name=" gc" typeId="points" value="40"/>
+            <cost name=" gc" typeId="points" value="80"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="First mutation" hidden="false" id="8473-22f7-730b-822c" type="selectionEntry" targetId="bc0f-5f4b-4a70-6320">
+              <modifiers>
+                <modifier type="decrement" value="40" field="points"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="f8a9-8d3b-3c3b-db22" name="Hideous" hidden="false" collective="false" import="true" type="upgrade" sortIndex="9">
           <rules>
@@ -7130,10 +7199,20 @@ for details.</description>
             <infoLink id="8cca-c2b9-09c3-49f9" name="Fear" hidden="false" targetId="cdc8-da3b-a2ed-d841" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" gc" typeId="points" value="40"/>
+            <cost name=" gc" typeId="points" value="80"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4b8-c119-9a85-51de"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="First mutation" hidden="false" id="a27f-3144-4d6c-c2f4" type="selectionEntry" targetId="bc0f-5f4b-4a70-6320">
+              <modifiers>
+                <modifier type="decrement" value="40" field="points"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
