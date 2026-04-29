@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9632-7414-5d8a-43cd" name="Kislevites (1a)" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="9632-7414-5d8a-43cd" name="Kislevites (1a)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5164-95fd-8401-79b9" name="Kislevites Rules" shortName="Kislevites" publisher="https://broheim.net/downloads/warbands/official/Kislevites.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Kislevites.pdf"/>
   </publications>
@@ -116,18 +116,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="ae83-4fc2-834d-43ce" name="Inheritance" hidden="false">
-          <description>When the Kislevite warband is first created, the Druzhina Captain is allowed to purchase one item from the Kislevite Warrior equipment list at half the normal cost.
-This item represents a treasured family heirloom that has been passed down through the generations.
-
-Losing an ancestra item is considered very disrespectful and if the item is ever lost (eg. from a &apos;Robbed&apos; result on the serious injury chart), the captain MUST replace it with a finely-made substitute as quicly as possible or risk being haunted by the angry spirits of his ancestors.
-To replace an ancestral item, the Captain must purchase the same item of equipment at 150% of it&apos;s normal price.
-This higher cost represents the fine detail and valuable materials used in the item&apos;s manufacture.
-
-Until the item is replaced, the Captain suffers a -1 penalty to all tests and rolls to hit.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="0e84-3671-fc82-689f" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
@@ -143,25 +131,80 @@ Until the item is replaced, the Captain suffers a -1 penalty to all tests and ro
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf5d-74cd-166d-8689" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="ca0f-49bc-7901-7584" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
                 </entryLink>
-                <entryLink import="true" name="Shield" hidden="false" id="5d01-155f-1b09-3ac4" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
-                <entryLink import="true" name="Light Armour" hidden="false" id="dcfe-f948-2f8b-6412" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
-                <entryLink import="true" name="Heavy Armour" hidden="false" id="70eb-6b4b-4d84-2db4" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
-                <entryLink import="true" name="Buckler" hidden="false" id="f2ff-b5c5-7319-a540" type="selectionEntry" targetId="0871-44c2-f0f0-c27a" sortIndex="4"/>
+                <entryLink import="true" name="Shield" hidden="false" id="5d01-155f-1b09-3ac4" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="4d9f-bd82-95f2-243e" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Light Armour" hidden="false" id="dcfe-f948-2f8b-6412" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="de8b-6ae9-d4ae-9fb1" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="70eb-6b4b-4d84-2db4" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="8fd6-f9e8-4f4e-07f6" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Buckler" hidden="false" id="f2ff-b5c5-7319-a540" type="selectionEntry" targetId="0871-44c2-f0f0-c27a" sortIndex="4">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="500e-de9c-54ec-aa55" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Hand-to-hand Weapons" id="3062-0def-53f8-2378" hidden="false" sortIndex="1">
               <entryLinks>
-                <entryLink import="true" name="Mace" hidden="false" id="14f3-19e8-a550-67b4" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
-                <entryLink import="true" name="Dagger" hidden="false" id="a83f-0e8c-00f2-145d" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
+                <entryLink import="true" name="Mace" hidden="false" id="14f3-19e8-a550-67b4" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="be6d-6081-a884-b9d2" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Dagger" hidden="false" id="a83f-0e8c-00f2-145d" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="3b0b-b2aa-6241-7608" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
                 <entryLink import="true" name="Free Dagger" hidden="false" id="828e-d998-e8f1-bf02" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
-                <entryLink import="true" name="Sword" hidden="false" id="a692-d1e8-c5ea-bfc9" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry" sortIndex="6"/>
-                <entryLink import="true" name="Hammer" hidden="false" id="6019-a5da-25e9-53ff" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
-                <entryLink import="true" name="Axe" hidden="false" id="1223-79b6-30e7-5ea2" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
-                <entryLink import="true" name="Morning Star" hidden="false" id="9665-95cd-933f-767b" type="selectionEntry" targetId="d5f3-1906-da91-4e8f" sortIndex="7"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="45c2-7944-b01b-9e49" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
-                <entryLink import="true" name="Spear" hidden="false" id="8adf-8ccc-3e7d-ad3d" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="9"/>
-                <entryLink import="true" name="Halberd" hidden="false" id="359d-4bc3-40a3-a2ee" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="10"/>
+                <entryLink import="true" name="Sword" hidden="false" id="a692-d1e8-c5ea-bfc9" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry" sortIndex="6">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="1c8a-6fda-0249-4f08" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Hammer" hidden="false" id="6019-a5da-25e9-53ff" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="cc61-778a-7f2e-8167" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Axe" hidden="false" id="1223-79b6-30e7-5ea2" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="c917-5abd-db5c-d992" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Morning Star" hidden="false" id="9665-95cd-933f-767b" type="selectionEntry" targetId="d5f3-1906-da91-4e8f" sortIndex="7">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="d76b-0fec-06ed-2896" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="45c2-7944-b01b-9e49" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="ec6a-79ed-1810-3b64" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Spear" hidden="false" id="8adf-8ccc-3e7d-ad3d" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="9">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="cb75-1d39-e3d9-6c24" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Halberd" hidden="false" id="359d-4bc3-40a3-a2ee" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="10">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="3e5e-91e2-73d9-cfc1" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="267f-4138-6775-a64a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -180,15 +223,37 @@ Until the item is replaced, the Captain suffers a -1 penalty to all tests and ro
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cff-9783-8899-415e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="32c0-7c8b-0705-fa41" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
                 </entryLink>
-                <entryLink import="true" name="Crossbow" hidden="false" id="4409-76db-68df-79b9" type="selectionEntry" targetId="38cc-bc0b-7f19-8039" sortIndex="4"/>
-                <entryLink import="true" name="Pistol" hidden="false" id="e157-f25f-a666-893e" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="5"/>
-                <entryLink import="true" name="Throwing Knives/Stars" hidden="false" id="38b2-9921-4f2c-3e4e" type="selectionEntry" targetId="23f5-19c3-5a6c-a8fb" sortIndex="1"/>
-                <entryLink import="true" name="Shortbow" hidden="false" id="7865-504d-d125-5078" type="selectionEntry" targetId="3706-6421-53b4-940d" sortIndex="2"/>
+                <entryLink import="true" name="Crossbow" hidden="false" id="4409-76db-68df-79b9" type="selectionEntry" targetId="38cc-bc0b-7f19-8039" sortIndex="4">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="1c11-acdb-842e-cc40" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Pistol" hidden="false" id="e157-f25f-a666-893e" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="5">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="432e-2447-923c-b522" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Throwing Knives/Stars" hidden="false" id="38b2-9921-4f2c-3e4e" type="selectionEntry" targetId="23f5-19c3-5a6c-a8fb" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="cac1-c881-c936-383b" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Shortbow" hidden="false" id="7865-504d-d125-5078" type="selectionEntry" targetId="3706-6421-53b4-940d" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="e3c9-65df-5264-9bb9" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
+                </entryLink>
                 <entryLink import="true" name="Duelling Pistol" hidden="false" id="44e3-3b74-0eed-2c4a" type="selectionEntry" targetId="da24-6a7f-725b-5bcb" sortIndex="6">
                   <costs>
                     <cost name=" gc" typeId="points" value="25"/>
                   </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Inheritance" hidden="false" id="fd63-8719-e003-976a" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
+                  </entryLinks>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -2016,21 +2081,29 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
     </rule>
   </rules>
   <sharedSelectionEntries>
-    <selectionEntry id="054e-708c-6d78-a766" name="Inheritance" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="054e-708c-6d78-a766" name="Inheritance" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-          </conditions>
-        </modifier>
+        <modifier type="divide" value="2" field="points" affects="self.entries" scope="parent"/>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff81-6add-c485-6e8d" type="max"/>
+        <constraint type="max" value="1" field="selections" scope="model" shared="true" id="f8c8-d6b7-4f9d-689e" includeChildSelections="true"/>
       </constraints>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
+      <rules>
+        <rule name="Inheritance" id="ae83-4fc2-834d-43ce" hidden="false">
+          <description>When the Kislevite warband is first created, the Druzhina Captain is allowed to purchase one item from the Kislevite Warrior equipment list at half the normal cost.
+This item represents a treasured family heirloom that has been passed down through the generations.
+
+Losing an ancestra item is considered very disrespectful and if the item is ever lost (eg. from a &apos;Robbed&apos; result on the serious injury chart), the captain MUST replace it with a finely-made substitute as quicly as possible or risk being haunted by the angry spirits of his ancestors.
+To replace an ancestral item, the Captain must purchase the same item of equipment at 150% of it&apos;s normal price.
+This higher cost represents the fine detail and valuable materials used in the item&apos;s manufacture.
+
+Until the item is replaced, the Captain suffers a -1 penalty to all tests and rolls to hit.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

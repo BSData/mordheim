@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0b05773f-a863-7a25-f872-588b804e2c75" name="Undead (1a)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0b05773f-a863-7a25-f872-588b804e2c75" name="Undead (Core)" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="888b0a33-7922-685c-49fc-591b3fb26358" name="Awakened Zombie" page="0" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -100,6 +100,7 @@
             <modifier type="set" field="name" value="Set Resurrected Hero Characteristics"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Experience" hidden="false" id="a1a9-5f92-b650-3199" collective="false" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -1743,7 +1744,8 @@ combat, roll a D6.
     </rule>
     <rule id="7eca-4a4f-438f-495b" name="No Brain" hidden="false">
       <description>Zombies never gain experience. They do not learn from their mistakes.
-What did you expect?</description>
+
+Awaken Zombies do keep the experience from before but don&apos;t gain any more.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>

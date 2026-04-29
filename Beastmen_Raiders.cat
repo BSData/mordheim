@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="b758-ee46-f27e-58dd" name="Beastman Rules" shortName="Beastman" publisher="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf" publisherUrl="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf"/>
   </publications>
@@ -1198,7 +1198,7 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Ungor" hidden="false" id="a8c6-e886-2d6f-c6cf" sortIndex="1">
           <costs>
-            <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
+            <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
