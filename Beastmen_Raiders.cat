@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="b758-ee46-f27e-58dd" name="Beastman Rules" shortName="Beastman" publisher="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf" publisherUrl="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf"/>
   </publications>
@@ -127,7 +127,7 @@
         <categoryLink id="8538-7417-b8e1-2fd1" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="9fcd-c4ba-5ede-95b4" name="Skills" hidden="false" collective="false" import="true" type="upgrade" sortIndex="7">
+        <selectionEntry id="9fcd-c4ba-5ede-95b4" name="Skills" hidden="false" collective="false" import="true" type="upgrade" sortIndex="6">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec4b-503b-7284-3fdf" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e38-8803-96b4-ed49" type="max"/>
@@ -183,7 +183,48 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="1421-bdd8-b286-5b20" collective="false" sortIndex="6">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Beastmen)" hidden="false" id="0961-cba6-f046-f49b" sortIndex="4" collapsible="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armour" id="32dd-3c0f-80c2-5f56" hidden="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Helmet" hidden="false" id="d652-1a7c-17a4-a530" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f815-a556-b480-2ab7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shield" hidden="false" id="8365-1fb3-a0a2-ae27" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="87fc-69fb-994d-50cc" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
+                <entryLink import="true" name="Light Armour" hidden="false" id="d2b0-bb7a-5c83-4eda" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="1d18-0fcb-2cf4-50ef" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Mace" hidden="false" id="d839-2bcf-f548-89ca" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
+                <entryLink import="true" name="Dagger" hidden="false" id="edc2-f1d1-f25c-ad06" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
+                <entryLink import="true" name="Free Dagger" hidden="false" id="fa9a-c402-b138-cc86" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
+                <entryLink import="true" name="Sword" hidden="false" id="5324-e134-9468-5b93" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry" sortIndex="6"/>
+                <entryLink import="true" name="Hammer" hidden="false" id="ba64-0899-c1e4-e933" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
+                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="7e9b-b513-a88d-3b00" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Axe" hidden="false" id="a2c7-57a6-b2bc-8324" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
+                <entryLink import="true" name="Halberd" hidden="false" id="7fa4-8f85-6f88-23f1" type="selectionEntry" sortIndex="7" targetId="3c52-9e92-25ec-1939"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b8e3-b7a6-5d7f-242a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="3" field="b8e3-b7a6-5d7f-242a">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7f9-f9bd-f4dc-23ab" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="1421-bdd8-b286-5b20" collective="false" sortIndex="5">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0445-94d2-f32c-e254" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="137f-a96d-d14d-3035" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -205,8 +246,8 @@
           </constraints>
         </entryLink>
         <entryLink id="463a-4402-9cb4-a89f" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="3"/>
-        <entryLink id="2ef8-29db-7bcf-7f8e" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" sortIndex="9"/>
-        <entryLink id="539c-ea6f-7983-b372" name="Mutations" hidden="true" collective="false" import="true" targetId="5541-f5c4-85e0-b399" type="selectionEntryGroup" sortIndex="8">
+        <entryLink id="2ef8-29db-7bcf-7f8e" name="Serious Injuries" hidden="false" collective="false" import="true" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" sortIndex="8"/>
+        <entryLink id="539c-ea6f-7983-b372" name="Mutations" hidden="true" collective="false" import="true" targetId="5541-f5c4-85e0-b399" type="selectionEntryGroup" sortIndex="7">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -221,7 +262,6 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Leader" hidden="false" id="7e00-b15e-af5c-8c0b" type="selectionEntry" targetId="c392-8a40-3bfc-bdfa" sortIndex="1"/>
-        <entryLink import="true" name="Starting Equipment (Beastmen)" hidden="false" id="58fc-46c4-e3b1-666d" type="selectionEntry" targetId="16b2-3b7c-9a3c-51b3" sortIndex="4"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="65"/>
@@ -1145,6 +1185,13 @@ This counts as an additional attack, which does not benefit from weapon bonuses 
 If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="9cdc-45b0-5a8f-888b" name="Gor max" hidden="false" targetId="19a9-69f3-c83a-0203" type="profile">
+          <modifiers>
+            <modifier type="set" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="5"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="c0ad-305d-bb96-4e76" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
@@ -1221,6 +1268,9 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
         <cost name="pts" typeId="points" value="25"/>
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="10" field="selections" scope="roster" shared="false" id="fe4d-b148-7095-426e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="f882-12d0-ce5c-f7c1" name="Gor" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -1495,6 +1545,46 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry id="6080-3a64-ecba-7a68" name="Warhounds of Chaos" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3954-361a-2e2c-a5d5" name="Warhounds of Chaos" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
+          <characteristics>
+            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">7</characteristic>
+            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
+            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
+            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
+            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
+            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
+            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
+            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
+            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="fb53-47b3-5050-b54a" name="Animals" hidden="false" targetId="daaa-38f1-8c4c-3140" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f7e9-3d8d-bbca-b901" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Warhounds of Chaos" hidden="false" id="c9c1-e3a1-61fb-8156">
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="0472-2574-0f21-c4df" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be86-5014-8a56-363f"/>
+            <constraint type="max" value="5" field="selections" scope="force" shared="true" id="bd94-ea9a-86b5-49eb" includeChildSelections="true"/>
+          </constraints>
+          <costs>
+            <cost name=" gc" typeId="points" value="15"/>
+            <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
+            <cost name=" Rarity" typeId="rarity" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry id="3da6-37c6-6fd0-c92f" name="Minotaur" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3059-f02c-3471-4848" type="max"/>
@@ -1644,11 +1734,51 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Beastmen)" hidden="false" id="0cd1-60a6-819d-20a3" sortIndex="3" collapsible="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armour" id="9488-b84a-9703-d645" hidden="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Helmet" hidden="false" id="e1ed-c14a-c20d-eb04" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c74-ef61-dddb-7cc7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shield" hidden="false" id="8bc8-2eb6-b6fc-2f1c" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="e93b-4574-6559-2528" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
+                <entryLink import="true" name="Light Armour" hidden="false" id="ab47-1b2d-7a9c-9fd5" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="4d6e-c2c6-18fa-a2be" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Mace" hidden="false" id="6e4f-3ecb-ca83-8966" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
+                <entryLink import="true" name="Dagger" hidden="false" id="458e-56dd-477f-5dd6" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
+                <entryLink import="true" name="Free Dagger" hidden="false" id="2b2a-b3c7-58d6-6a7c" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
+                <entryLink import="true" name="Sword" hidden="false" id="117f-bc6a-0904-2079" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry" sortIndex="6"/>
+                <entryLink import="true" name="Hammer" hidden="false" id="b69d-0a0f-c9ec-c007" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
+                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="3c9a-76f5-b3ae-9294" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Axe" hidden="false" id="f5f3-2848-b6f2-6f05" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
+                <entryLink import="true" name="Halberd" hidden="false" id="7e7a-061c-0ddc-e828" type="selectionEntry" sortIndex="7" targetId="3c52-9e92-25ec-1939"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d327-a69d-82a8-252f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="3" field="d327-a69d-82a8-252f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9056-0aa9-32d5-8043" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="00cf-9f9f-e8bd-6ba2" name="Experience" hidden="false" collective="false" import="true" targetId="d769-0d85-e810-df60" type="selectionEntry" sortIndex="1"/>
         <entryLink id="886e-64d7-1a2d-e508" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="2"/>
-        <entryLink import="true" name="Starting Equipment (Beastmen)" hidden="false" id="6f7c-fe44-e226-9960" type="selectionEntry" targetId="16b2-3b7c-9a3c-51b3" sortIndex="3"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="200"/>
@@ -1695,37 +1825,6 @@ A Beastmen warband may never hire any Hired Swords unless specifically stated wi
       <infoLinks>
         <infoLink name="EXP advancement" id="2dd7-280c-b442-305e" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
       </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Warhounds of Chaos" hidden="false" id="d2d1-b770-e2b5-2416">
-      <constraints>
-        <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="ed43-b52a-8bf8-a4c0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-      </constraints>
-      <costs>
-        <cost name=" gc" typeId="points" value="15"/>
-        <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-        <cost name=" Rarity" typeId="rarity" value="0"/>
-      </costs>
-      <profiles>
-        <profile name="Warhounds of Chaos" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="27e5-7852-5853-f357">
-          <characteristics>
-            <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">7</characteristic>
-            <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924">4</characteristic>
-            <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8">0</characteristic>
-            <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9">4</characteristic>
-            <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a">3</characteristic>
-            <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442">1</characteristic>
-            <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e">3</characteristic>
-            <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe">1</characteristic>
-            <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89">5</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Animals" id="9019-cfa2-05d6-c0ac" hidden="false" targetId="daaa-38f1-8c4c-3140" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" id="3975-bd03-5132-f7e3" primary="true" name="Henchmen"/>
-      </categoryLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>
@@ -1840,47 +1939,4 @@ See Mutants section on special rules.</description>
   <catalogueLinks>
     <catalogueLink id="5040-939c-652a-2255" name="common-data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
-  <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Starting Equipment (Beastmen)" hidden="false" id="16b2-3b7c-9a3c-51b3">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b61f-f7cb-be19-cf9c" includeChildSelections="false"/>
-      </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Armour" id="f307-01fb-9520-4bef" hidden="false" collapsible="true">
-          <entryLinks>
-            <entryLink import="true" name="Helmet" hidden="false" id="999c-296b-2756-1899" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f84-2d6c-e8d6-99e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Shield" hidden="false" id="bfdc-5dee-b9dd-57e3" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="166f-7cc6-dc00-a838" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
-            <entryLink import="true" name="Light Armour" hidden="false" id="4312-1d88-7f3c-8b4f" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Hand-to-hand Weapons" id="8f14-5c60-bcdd-787c" hidden="false" collapsible="true">
-          <entryLinks>
-            <entryLink import="true" name="Mace" hidden="false" id="df07-29de-a17c-3de0" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
-            <entryLink import="true" name="Dagger" hidden="false" id="9f91-4d7a-a5c8-a237" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
-            <entryLink import="true" name="Free Dagger" hidden="false" id="3766-a7dc-ce3d-a532" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
-            <entryLink import="true" name="Sword" hidden="false" id="0f73-74ea-9b22-be1e" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry" sortIndex="6"/>
-            <entryLink import="true" name="Hammer" hidden="false" id="3566-ac2c-9ddb-af64" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
-            <entryLink import="true" name="Double Handed Weapon" hidden="false" id="faf9-8126-cb02-c32d" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
-            <entryLink import="true" name="Axe" hidden="false" id="2dc5-33f5-aea7-7aee" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
-            <entryLink import="true" name="Halberd" hidden="false" id="5c5d-4b3d-efa7-a4c0" type="selectionEntry" sortIndex="7" targetId="3c52-9e92-25ec-1939"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8350-931f-492c-1457" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="3" field="8350-931f-492c-1457">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
-  </sharedSelectionEntries>
 </catalogue>
