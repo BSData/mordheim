@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen (1b)" revision="11" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen (1b)" revision="12" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="889151de-4826-5f00-5dbb-fcf546ebedbb" name="Kroxigor" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -2565,7 +2565,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="3165-b259-8b19-538f" hidden="false" targetId="f1630f42-6b8b-0d73-b6a6-d2626cd8839b" type="rule" name="Parry"/>
+        <infoLink id="3165-b259-8b19-538f" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule" name="Parry"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="118a-e1dc-119b-9fe3" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -2847,7 +2847,7 @@ The Javelins are thrown weapons and the warrior suffer no penalty for moving and
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="ffc1-36f5-3493-952d" hidden="false" targetId="f1630f42-6b8b-0d73-b6a6-d2626cd8839b" type="rule" name="Parry"/>
+        <infoLink id="ffc1-36f5-3493-952d" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule" name="Parry"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="5"/>
@@ -3450,7 +3450,7 @@ ignores the special rules for Animosity.</description>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="1ceb77a9-9490-4927-18d2-176840913753" hidden="false" targetId="f1630f42-6b8b-0d73-b6a6-d2626cd8839b" type="rule" name="Parry"/>
+            <infoLink id="1ceb77a9-9490-4927-18d2-176840913753" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule" name="Parry"/>
             <infoLink id="75a41582-d588-841e-a159-6334eff22df8" hidden="false" targetId="f5ff4eee-7b45-2b25-aa0f-6761166c4b3d" type="rule" name="Pair"/>
             <infoLink id="779a713a-057a-1f49-45ee-2ce15e630718" hidden="false" targetId="e8a37d75-61fb-abbf-07da-e4e376363521" type="rule" name="Climb"/>
             <infoLink id="df893a03-c6c2-a930-e8be-4279765c6067" hidden="false" targetId="d8f7a6aa-6b24-e322-5ae7-ffc1ca009807" type="rule" name="Cumbersome"/>
@@ -3497,7 +3497,7 @@ ignores the special rules for Animosity.</description>
           </profiles>
           <infoLinks>
             <infoLink id="848f907d-4112-9dd6-6265-4b027cc68f2b" hidden="false" targetId="f5ff4eee-7b45-2b25-aa0f-6761166c4b3d" type="rule" name="Pair"/>
-            <infoLink id="ce7e4a89-88ab-8484-de1e-070b733f8a18" hidden="false" targetId="f1630f42-6b8b-0d73-b6a6-d2626cd8839b" type="rule" name="Parry"/>
+            <infoLink id="ce7e4a89-88ab-8484-de1e-070b733f8a18" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule" name="Parry"/>
             <infoLink id="f49bbf9e-77b1-d2ac-4c5d-c5839a426b32" hidden="false" targetId="379ad661-b836-65ae-9597-ad7a1a45f44d" type="rule" name="Venomous"/>
           </infoLinks>
           <selectionEntries>
@@ -5284,9 +5284,6 @@ no longer frenzied. He continues to fight as normal for the rest of the battle.<
     </rule>
     <rule id="f5ff4eee-7b45-2b25-aa0f-6761166c4b3d" name="Pair" hidden="false">
       <description>This weapon is traditionally used in pairs, one in each hand. A warrior armed with it gets an additional attack.</description>
-    </rule>
-    <rule id="f1630f42-6b8b-0d73-b6a6-d2626cd8839b" name="Parry" page="0" hidden="false">
-      <description>A model equipped with a parry weapon may parry the first blow in each round of hand-to-hand combat. When his opponent scores a hit, a model with a may roll 1D6. If the score is greater than the highest to hit score of his opponent, the model has parried the blow, and that attack is discarded. A model may not parry attacks made with double or more its own Strength – they are simply too powerful to be stopped.</description>
     </rule>
     <rule id="d6ce0b17-744e-af8c-009b-906a2b08634d" name="Poison" hidden="false">
       <description>The needles fired by a blowpipe are coated in a venom very similar in its effects to the Black Lotus (if you roll a 6 on the To Hit roll, the victim is automatically wounded). A blowpipe cannot cause critical hits. This weapon has a positive armour save modifier, so a model that normally has a save of 5+ will get a save of 4+ against a blowpipe dart. Even models that normally do not have an armour save will get a 6+ save to take into account protection offered by clothes, fur or the like.</description>
