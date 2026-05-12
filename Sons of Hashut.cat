@@ -60,11 +60,7 @@ They may never hire Elves of any sort!</description>
             </entryLink>
             <entryLink import="true" name="Sword" hidden="false" id="6c3-e4be-a3e0-207a" type="selectionEntry" targetId="34fd-d6a3-50ee-ee06" sortIndex="5"/>
             <entryLink import="true" name="Double Handed Weapon" hidden="false" id="2dc8-bccd-9aa2-950e" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="6"/>
-            <entryLink import="true" name="Axe" hidden="false" id="5fa4-31e2-9875-5a4f" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="4">
-              <modifiers>
-                <modifier type="set" value="Battleaxe" field="name"/>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Axe" hidden="false" id="5fa4-31e2-9875-5a4f" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="4"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7379-3082-1f27-431f"/>
@@ -80,15 +76,15 @@ They may never hire Elves of any sort!</description>
         <selectionEntryGroup name="Armor" id="bbcb-d564-98ad-275a" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Light Armour" hidden="false" id="9340-9298-1d98-6048" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+			<entryLink import="true" name="Heavy Armour" hidden="false" id="b2f1-404f-1aa2-a150" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
             <entryLink import="true" name="Shield" hidden="false" id="d012-6a1d-5454-c311" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
             <entryLink import="true" name="Helmet" hidden="false" id="cdb-ae88-168f-d574" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2" sortIndex="5"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile weapons" id="e2a2-666a-ee21-9352" hidden="false" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Shortbow" hidden="false" id="748a-f615-8f80-a7a0" type="selectionEntry" targetId="3706-6421-53b4-940d" sortIndex="1"/>
-            <entryLink import="true" name="Bow" hidden="false" id="b3f3-9c0c-a2b6-e2cc" type="selectionEntry" targetId="311a-bf3f-67ff-46e7" sortIndex="2"/>
-          </entryLinks>
+			<entryLink import="true" name="Pistol" hidden="false" id="d177-eafc-b4d5-9764" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="2"/>
+		  </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c5af-6eb5-7989-2a9c"/>
           </constraints>
@@ -178,7 +174,7 @@ They may never hire Elves of any sort!</description>
             <entryLink import="true" name="Axe" hidden="false" id="acc9-6fc1-8ea1-fa78" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="4"/>
             <entryLink import="true" name="Hammer" hidden="false" id="f885-7ef9-6bce-16c6" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
               <modifiers>
-                <modifier type="set" value="Battleaxe" field="name"/>
+                <modifier type="set" value="Mace, Hammer" field="name"/>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Sword" hidden="false" id="705e-1839-d7fa-c5ec" type="selectionEntry" targetId="34fd-d6a3-50ee-ee06" sortIndex="5"/>
@@ -197,7 +193,8 @@ They may never hire Elves of any sort!</description>
         <selectionEntryGroup name="Armor" id="0166-10dc-389b-4c71" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Light Armour" hidden="false" id="ee63-c512-dde0-11b0" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
-            <entryLink import="true" name="Shield" hidden="false" id="d608-9d18-a129-e30d" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
+			<entryLink import="true" name="Heavy Armour" hidden="false" id="b2f1-404f-1aa2-a149" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
+            <entryLink import="true" name="Helmet" hidden="false" id="9efa-d44b-9f43-8d57" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2" sortIndex="5"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile weapons" id="e5c9-91fd-74c2-498b" hidden="false" sortIndex="2">
@@ -221,18 +218,9 @@ They may never hire Elves of any sort!</description>
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="cc8d-9250-e9e8-a719" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="2ff3-3909-d60e-7277" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer" hidden="false" id="f4ce-c4c8-dae1-ffbb" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
-              <modifiers>
-                <modifier type="set" value="Mace, Hammer" field="name"/>
-              </modifiers>
-            </entryLink>
             <entryLink import="true" name="Sword" hidden="false" id="0806-5db7-c343-df2b" type="selectionEntry" targetId="34fd-d6a3-50ee-ee06" sortIndex="5"/>
             <entryLink import="true" name="Hobgoblin Poisoned Daggers" hidden="false" id="f35d-3e42-d7a7-f615" type="selectionEntry" targetId="9c69-1dc9-3191-2dc0" sortIndex="6"/>
-            <entryLink import="true" name="Axe" hidden="false" id="0c40-b794-70be-6e1e" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="4">
-              <modifiers>
-                <modifier type="set" value="Battleaxe" field="name"/>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Axe" hidden="false" id="0c40-b794-70be-6e1e" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="4"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ee95-2612-4878-3e17"/>
@@ -249,13 +237,12 @@ They may never hire Elves of any sort!</description>
           <entryLinks>
             <entryLink import="true" name="Light Armour" hidden="false" id="e798-7fb9-4d6c-eef2" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
             <entryLink import="true" name="Shield" hidden="false" id="5cb6-0f57-7e25-045e" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
-            <entryLink import="true" name="Heavy Armour" hidden="false" id="b2f1-404f-1aa2-a149" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
-            <entryLink import="true" name="Helmet" hidden="false" id="9efa-d44b-9f43-8d57" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2" sortIndex="5"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile weapons" id="c3e1-7c16-1de8-da4b" hidden="false" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Pistol" hidden="false" id="ab4f-2b18-c532-f3b2" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="1"/>
+            <entryLink import="true" name="Shortbow" hidden="false" id="hb01-1a2b-3c4d-0001" type="selectionEntry" targetId="3706-6421-53b4-940d" sortIndex="1"/>
+            <entryLink import="true" name="Bow" hidden="false" id="hb02-2b3c-4d5e-0002" type="selectionEntry" targetId="311a-bf3f-67ff-46e7" sortIndex="2"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="55a0-d7a8-504a-aa67"/>
@@ -501,7 +488,7 @@ Remember that this is not the case for Hobgoblins, a race far more common than t
             </selectionEntryGroup>
             <selectionEntryGroup name="Missile Weapons" id="8232-490b-17d2-acbe" hidden="false" sortIndex="2">
               <entryLinks>
-                <entryLink import="true" name="Pistol" hidden="false" id="d177-eafc-b4d5-9764" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="2"/>
+                <entryLink import="true" name="Pistol" hidden="false" id="d177-eafc-b4d5-9765" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="1"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fd5e-1e86-99a1-4d70" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1153,7 +1140,7 @@ Remember that this is not the case for Hobgoblins, a race far more common than t
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Chaos Dwarf Warrior" hidden="false" id="92fc-e833-45bb-f83c" sortIndex="1">
           <costs>
-            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" gc" typeId="points" value="40"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
@@ -1191,8 +1178,8 @@ Remember that this is not the case for Hobgoblins, a race far more common than t
         <entryLink import="true" name="Promoted" hidden="false" id="ce1e-07fc-a044-be13" collective="false" targetId="534a-6ec6-5d82-da7f" type="selectionEntry" sortIndex="3"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="40"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="10" field="selections" scope="roster" shared="false" id="eb0a-471d-77bb-a65b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -1319,7 +1306,7 @@ Remember that this is not the case for Hobgoblins, a race far more common than t
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Blunderbuss Chaos Dwarf" hidden="false" id="c862-37d4-0c9f-9b53" sortIndex="1">
           <costs>
-            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" gc" typeId="points" value="40"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
@@ -1356,8 +1343,8 @@ Remember that this is not the case for Hobgoblins, a race far more common than t
         <entryLink import="true" name="Starting Equipment (Blunderbusser)" hidden="false" id="ac61-550d-254c-5382" type="selectionEntryGroup" targetId="af7a-06c5-61c2-fdf8" collapsible="true"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="40"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="10" field="selections" scope="roster" shared="false" id="2a44-6fcc-dba8-fb4c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -1484,7 +1471,7 @@ Remember that this is not the case for Hobgoblins, a race far more common than t
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Hobgoblin" hidden="false" id="ccb3-c2a2-f240-f67f" sortIndex="1">
           <costs>
-            <cost name=" gc" typeId="points" value="0"/>
+            <cost name=" gc" typeId="points" value="15"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
@@ -1522,8 +1509,8 @@ Remember that this is not the case for Hobgoblins, a race far more common than t
         <entryLink import="true" name="Starting Equipment (Hobgoblin)" hidden="false" id="b0ab-89b6-7068-1d7b" type="selectionEntryGroup" targetId="8363-3699-3e00-a346" collapsible="true"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="15"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="10" field="selections" scope="roster" shared="false" id="8b94-7661-9ea5-40a9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
