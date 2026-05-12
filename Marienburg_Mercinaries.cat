@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d7899d8b-a172-7e27-aec7-b9c51cb475c1" name="Marienburgers (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d7899d8b-a172-7e27-aec7-b9c51cb475c1" name="Marienburgers (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="83ab8692-01da-65c5-af52-a55d4800f012" name="Champion" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -464,7 +464,7 @@
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
-            <constraint type="max" value="7" field="selections" scope="parent" shared="false" id="d8ab-5776-78eb-e71b"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="d8ab-5776-78eb-e71b"/>
             <constraint type="max" value="7" field="selections" scope="force" shared="true" id="ccf9-ee85-0532-e4f7" includeChildSelections="true"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d7b-481b-b238-5d73"/>
           </constraints>
@@ -1915,6 +1915,9 @@ no longer frenzied. He continues to fight as normal for the rest of the battle.<
     </rule>
     <rule id="da91afee-2f0d-cbc1-78ff-c6bdec885712" name="Move Of Fire" page="0" hidden="false">
       <description>You may not move and fire a  in the same turn,other than to pivot on the spot to face your target or stand up.</description>
+    </rule>
+    <rule id="f1630f42-6b8b-0d73-b6a6-d2626cd8839b" name="Parry" page="0" hidden="false">
+      <description>A model equipped with a parry weapon may parry the first blow in each round of hand-to-hand combat. When his opponent scores a hit, a model with a may roll 1D6. If the score is greater than the highest to hit score of his opponent, the model has parried the blow, and that attack is discarded. A model may not parry attacks made with double or more its own Strength – they are simply too powerful to be stopped.</description>
     </rule>
     <rule id="f7723056-9cfe-c405-d7e6-357321f7dca3" name="Prepare shot" page="0" hidden="false">
       <description>Takes a whole turn to reload, so you may only fire every other turn. If you have a brace of pistols (ie, two) you may fire every turn.</description>
