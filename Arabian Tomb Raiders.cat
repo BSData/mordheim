@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="15c7-6ea-37ea-739d" name="Arabian Tomb Raiders (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="15c7-6ea-37ea-739d" name="Arabian Tomb Raiders (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="b80c-d8ab-a18d-bc37" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -1041,7 +1041,7 @@ Therefore Arab Heroes hate all Undead.</description>
     </selectionEntryGroup>
     <selectionEntryGroup name="Missile Weapons" hidden="false" id="8b15-7504-b53-a2f">
       <entryLinks>
-        <entryLink import="true" name="Shortbow" hidden="false" type="selectionEntry" id="3c50-c50c-34ed-35fc" targetId="3706-6421-53b4-940d"/>
+        <entryLink import="true" name="Short bow" hidden="false" type="selectionEntry" id="3c50-c50c-34ed-35fc" targetId="3706-6421-53b4-940d"/>
         <entryLink import="true" name="Bow" hidden="false" type="selectionEntry" id="b1f4-e331-5e99-c179" targetId="311a-bf3f-67ff-46e7"/>
         <entryLink import="true" name="Tufenk" hidden="false" type="selectionEntry" id="44c-d63d-1e4e-42d" targetId="bb96-6dc1-2f2f-b4c"/>
         <entryLink import="true" name="Handgun" hidden="false" type="selectionEntry" id="8ca6-8c07-83ac-c137" targetId="7f5a-d04d-153d-d334"/>
@@ -1337,7 +1337,7 @@ If the caster was taken out of action this spell my not be cast.</characteristic
   <rules>
     <rule name="Hate Undead" hidden="false" id="a521-7c45-5833-b14b">
       <description>The men of Araby have suffered heavily at the hands (or should that be claws!) of the Tomb King’s armies of the Land of the Dead.
-Therefore Arab Heroes hate all Undead.</description>
+Therefore Arab Heroes have a Hatred all Undead.</description>
     </rule>
   </rules>
 </catalogue>
