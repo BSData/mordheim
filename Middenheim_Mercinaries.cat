@@ -389,7 +389,7 @@
             <cost name=" Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="6f8e-50eb-b3be-3d5d"/>
+            <constraint type="max" value="5" field="selections" scope="model-or-unit" shared="false" id="6f8e-50eb-b3be-3d5d"/>
             <constraint type="max" value="7" field="selections" scope="force" shared="true" id="8f40-d668-0ab2-e84c" includeChildSelections="true"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c009-500f-c72c-625f"/>
           </constraints>
