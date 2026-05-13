@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8b66f7c3-fdd7-fcea-eb91-086959d72140" name="Orc Mob (1a)" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="8b66f7c3-fdd7-fcea-eb91-086959d72140" name="Orc Mob (1a)" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0094-a0e7-9fc9-5aa2" name="Ork Mob Rules" shortName="Broheim Rules (1a)" publisher="https://broheim.net/downloads/warbands/official/Orc%20Mob.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Orc%20Mob.pdf"/>
   </publications>
@@ -590,7 +590,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
             </selectionEntryGroup>
             <selectionEntryGroup name="Missile Weapons" id="4d86-d8a4-7d20-5394" hidden="false" sortIndex="2">
               <entryLinks>
-                <entryLink import="true" name="Short bow" hidden="false" id="5ef5-0d83-086b-281c" type="selectionEntry" targetId="3706-6421-53b4-940d" sortIndex="1"/>
+                <entryLink import="true" name="Shortbow" hidden="false" id="5ef5-0d83-086b-281c" type="selectionEntry" targetId="3706-6421-53b4-940d" sortIndex="1"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dfbf-4b4e-8254-6448" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2089,8 +2089,30 @@ or split between the two closest enemy targets.</characteristic>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
+    <rule id="c03b3d4d-30bf-c3b6-4992-b0b5b5ef9617" name="+1 Enemy armour save:" page="0" hidden="false">
+      <description>An enemy wounded by a fist gains a +1 bonus to his armour save, and a 6+ armour save if he normally has none.</description>
+    </rule>
     <rule id="7c09af65-6094-ddb7-b0be-cd7a970dbef0" name="Animosity" page="0" hidden="false">
       <description>Subject To Animosity</description>
+    </rule>
+    <rule id="3207d292-6501-25cb-d869-63b0987c78f6" name="Avoid stun:" page="0" hidden="false">
+      <description>A model that is equipped with a helmet has a special 4+ save on a D6 against being stunned. If the save is made, treat the stunned
+result as knocked down instead. This save is not modified by the opponent’s Strength.</description>
+    </rule>
+    <rule id="c0c80c24-1dc8-7adc-c069-8917b30bffcd" name="Cavalry bonus" page="0" hidden="false">
+      <description>If using the rules for mounted models, a mounted warrior armed with a spear receives a   Strength bonus when he charges. This bonus only applies for that turn.</description>
+    </rule>
+    <rule id="3f6ce5a7-906d-b980-439f-9dd32ad84ed5" name="Cavalry Weapon" page="0" hidden="false">
+      <description>A warrior must own a warhorse to use , as it can only be used whilst he is on horseback.</description>
+    </rule>
+    <rule id="47cdbf9b-babf-aefa-1d8a-cac5b85bf281" name="ConCussion" page="0" hidden="false">
+      <description>Hammers and other bludgeoning weapons are excellent to use for striking your enemy senseless. When using a hammer, club or mace, a roll of 2-4 is treated as stunned when rolling to see the extent of a model’s injuries.</description>
+    </rule>
+    <rule id="6118263e-03c4-68f7-694d-6ceebac4e80b" name="Cutting edge" page="0" hidden="false">
+      <description>A Cutting edgee has an extra save modifier of -1, so a model with Strength 4 using an Cutting edge has a -2 save modifier when he hits an opponent in hand-to-hand combat.</description>
+    </rule>
+    <rule id="140e74d1-bf16-356b-c7d1-08b3bb5052b5" name="Difficult To Use" page="0" hidden="false">
+      <description>A model with aDifficult To Use  may not use a second weapon or buckler in his other hand because it requires all his skill to wield it. He may carry a shield as normal though.</description>
     </rule>
     <rule id="bd2100cc-65f9-2311-e4b9-d0e6830884c3" name="EXP Adancement" page="0" hidden="false">
       <description>Heroes get new advances at 2, 4, 6, 8, 11, 14, 17, 20, 24, 28, 32, 36, 41, 46, 51, 57, 63, 69, 76, 83 and 90 experience.
@@ -2102,8 +2124,47 @@ Note that creatures that cause fear can ignore these tests.
 a) If the model is charged by a warrior or a creature which causes fear. If a warrior is charged by an enemy that he fears then he must take a test to overcome that fear. Test when the charge is declared and is determined to be within range. If the test is passed the model may fight as normal. If it is failed, the model must roll 6s to score hits in that round of combat.
 b) If the model wishes to charge a fearcausing enemy. If a warrior wishes to charge an enemy that it fears then it must take a test to overcome this. If it fails the model may not charge and must remain stationary for the turn. Treat this as a failed charge.</description>
     </rule>
+    <rule id="abb6f4c1-7058-c49a-c0df-9dfacb18d599" name="Frenzy" page="0" hidden="false">
+      <description>Frenzied models must always charge if there are any enemy models within charge range (check after charges have been declared). The player has no choice in this matter – the warrior will automatically declare a charge. Frenzied warriors fight with double their Attacks characteristic in hand-to-hand combat. Warriors with 1 Attack therefore have 2 Attacks, warriors with 2
+Attacks have 4, etc. If a warrior is carrying a weapon in each hand, he receives +1 Attack for this as normal. This extra Attack is not doubled. Once they are within charge range, frenzied warriors are immune to all other psychology, such as fear and don’t have to take these tests as long as they remain within charge range. If a frenzied model is knocked down or stunned, he is
+no longer frenzied. He continues to fight as normal for the rest of the battle.</description>
+    </rule>
+    <rule id="6549136a-9a00-4d3a-b8fa-ecadf63e4744" name="Gromril weapon" page="0" hidden="false">
+      <description>A gromril weapon has an extra -1 save modifier, and costs four times the price of a normal weapon of its kind.</description>
+    </rule>
+    <rule id="a3327e94-8ff2-b189-9303-34c54c57373f" name="Gun Save modifier" page="0" hidden="false">
+      <description>even better at penetrating armour than their Strength  suggests. A warrior wounded by afirearm lmust make his armour save with a -2 modifier.</description>
+    </rule>
+    <rule id="3ebe96a5-ad6a-b51d-0d99-f62dfb2a807c" name="Hatred" page="0" hidden="false">
+      <description>Warriors who fight enemies they hate in hand-to-hand combat may re-roll any misses when they attack in the first turn of each hand-to-hand combat. This bonus applies only in the first turn of each combat</description>
+    </rule>
+    <rule id="441f52ae-32a2-44f9-1784-c76c65bfd452" name="Heavy" page="0" hidden="false">
+      <description>The weapon is extremely tiring to use, so its +1 Strength bonus applies only in the first turn of each hand-to-hand combat.</description>
+    </rule>
+    <rule id="f9eb9637-0727-7a66-6984-0927fbd4bf3d" name="Hired Sword" page="0" hidden="false">
+      <description>Hired Swords do not count towards the maximum number of warriors or Heroes a warband may have on its roster and don’t affect your income from selling wyrdstone.
+They can not be given exta items or have thier items taken. They can not use thier leadership for route tests. The DO add to your war band rating.  Hired Swords gain experience in exactly the same way as Henchmen, but roll on the Hero Chart. If a Hired Sword goes out of action during the game, roll for his injuries as you would roll for a Henchman after a battle</description>
+    </rule>
+    <rule id="05584e01-dfb3-7e17-b3ba-279aba211018" name="Ithilmar weapon" page="0" hidden="false">
+      <description>An ithilmar weapon gives its user +1 Initiative in hand-to-hand combat, and costs three times the price of a normal weapon of its kind.</description>
+    </rule>
+    <rule id="da91afee-2f0d-cbc1-78ff-c6bdec885712" name="Move Of Fire" page="0" hidden="false">
+      <description>You may not move and fire a  in the same turn,other than to pivot on the spot to face your target or stand up.</description>
+    </rule>
     <rule id="d01f3b76-116e-6c48-fad5-666190491edb" name="Not Orcs" page="0" hidden="false">
       <description>Orcs don’t expect much from non-Orcs, and are therefore not unsettled if Goblins or Cave Squigs break or get cut down in battle. In fact, they expect as much from these weaklings! Therefore, when testing to see if an Orc Warband needs to take a Rout test, each Goblin Warrior or Cave Squig taken out of action only counts as half a model.</description>
+    </rule>
+    <rule id="f1630f42-6b8b-0d73-b6a6-d2626cd8839b" name="Parry" page="0" hidden="false">
+      <description>A model equipped with a parry weapon may parry the first blow in each round of hand-to-hand combat. When his opponent scores a hit, a model with a may roll 1D6. If the score is greater than the highest to hit score of his opponent, the model has parried the blow, and that attack is discarded. A model may not parry attacks made with double or more its own Strength – they are simply too powerful to be stopped.</description>
+    </rule>
+    <rule id="f7723056-9cfe-c405-d7e6-357321f7dca3" name="Prepare shot" page="0" hidden="false">
+      <description>Takes a whole turn to reload, so you may only fire every other turn. If you have a brace of pistols (ie, two) you may fire every turn.</description>
+    </rule>
+    <rule id="3fa1d399-e681-411c-ebf6-c53c307e749a" name="Strike First" page="0" hidden="false">
+      <description>A warrior with Strike First strikes first in the first turn of hand-to-hand combat</description>
+    </rule>
+    <rule id="a9f238c7-bf82-807c-f964-888f9c9d0f26" name="Strike Last" page="0" hidden="false">
+      <description>weapons are so heavy that the model using them always strikes last, even when charging.</description>
     </rule>
     <rule id="cd0edb82-a80c-4679-2376-f34a11dc840e" name="Stupidity" page="0" hidden="false">
       <description>Models that are stupid test leadership (2d6) at the start of their turn to see if they overcome their stupidity. 
@@ -2116,6 +2177,12 @@ combat, roll a D6.
 1-3 The warrior moves directly forward at half speed in a shambling manner. He will not charge an enemy (stop his movement 1&quot; away)  He can fall down from the edge of a sheer drop (see the Falling rules) or hit an obstacle, in which case he stops. The model will not shoot this turn.
 
 4-6 The warrior stands inactive and drools a bit during this turn.</description>
+    </rule>
+    <rule id="58c7eaa3-75c5-8aad-7374-f0275b30848d" name="Two Handed" page="0" hidden="false">
+      <description>model armed with a 2handed weapon may not use a shield, buckler or additional weapon in close combat. If the model has a shield he still gets a +1 bonus to his armour save against shooting.</description>
+    </rule>
+    <rule id="be37b096-f38b-d3f0-0c72-f18572a56f1d" name="Unwieldy:" page="0" hidden="false">
+      <description>A weapon with Unwieldy may only use a shield or a buckler in his other hand. He may not use a second weapon.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>
