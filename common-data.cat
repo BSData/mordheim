@@ -13,11 +13,6 @@
             <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="2" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry id="37c4-dcb1-8949-d4eb" name="+1 A" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -192,13 +187,6 @@ Warhorses only.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cae-fb47-759a-7bfa" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="80" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="0871-44c2-f0f0-c27a" name="Buckler" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -220,13 +208,6 @@ Warhorses only.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64c3-2c36-750a-fe9e" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="5" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <rules>
         <rule name="Sword and Buckler" id="0504-e341-08e4-78d6" hidden="false">
           <description>If your model is armed with a buckler and a sword, you may re-roll any failed parries once. A model armed with two swords can still only roll once.</description>
@@ -255,13 +236,6 @@ Warhorses only.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a39e-fa6e-c246-f4e6" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="150" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="4e34-bbc5-c7ef-6bd6" name="Heavy Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -280,13 +254,6 @@ Warhorses only.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="988b-46f6-4c34-58fd" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="50" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="d0e5-ca89-5f0d-f5d2" name="Helmet" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -308,13 +275,6 @@ Warhorses only.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8211-b99d-68ab-ffd0" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="10" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="b0bd-108f-d18d-a2c7" name="Ithilmar Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -338,13 +298,6 @@ Warhorses only.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3512-d2dc-eb93-8188" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="90" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="3d2a-426a-c350-2a03" name="Light Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -363,13 +316,6 @@ Warhorses only.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b135-cd37-b6ad-52c4" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="20" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="74fb-cc90-1361-df26" name="Shield" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -388,13 +334,6 @@ Warhorses only.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcd3-7a98-a78c-3380" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="5" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="5d01-06b9-3a86-73c9" name="Axe" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -410,13 +349,6 @@ Warhorses only.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="5" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="2cda-8ede-6864-bb0d" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="cd57-dd4b-0a49-03e6" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -465,11 +397,6 @@ ignores the special rules for Animosity.</description>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -503,13 +430,6 @@ ignores the special rules for Animosity.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="2" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="6e6f-eb85-a18a-316d" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="88a9-9057-b107-4cc0" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -599,13 +519,6 @@ ignores the special rules for Animosity.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="eb7b-b5c6-d4f2-80e5" name="Fist" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -646,13 +559,6 @@ ignores the special rules for Animosity.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="5e96-6c17-4a69-b564" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="e2ab-ef89-32c7-5169" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -696,13 +602,6 @@ ignores the special rules for Animosity.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="10" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="7ce8-6edc-de69-88b0" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="d2ec-26ae-aa6f-46fe" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -725,13 +624,6 @@ ignores the special rules for Animosity.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="3" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="90e8-0377-23c2-c8d3" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="06f0-0b43-9d98-f218" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -761,13 +653,6 @@ ignores the special rules for Animosity.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="8"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="40" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="fc3e-f7f6-5649-fce0" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="7328-5002-e362-1d26" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -791,13 +676,6 @@ ignores the special rules for Animosity.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="792d-d00a-b243-1759" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="ec10-1513-e5f3-f68e" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -822,13 +700,6 @@ ignores the special rules for Animosity.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="10" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="58b7-824f-9a18-1766" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="67ec-f365-6f6f-f328" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -852,13 +723,6 @@ ignores the special rules for Animosity.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="10" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="ad54-e0b7-d487-ab7d" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="75c8-7ccf-b27e-f73c" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -895,13 +759,6 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="724d-a61b-9fed-b94d" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="30" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="311a-bf3f-67ff-46e7" name="Bow" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -921,13 +778,6 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f06c-83a2-736f-7b24" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="10" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="38cc-bc0b-7f19-8039" name="Crossbow" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -950,13 +800,6 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73ac-f1d4-9978-75f9" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="25" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="7e2c-4e29-d41c-2d9e" name="Crossbow Pistol" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -989,13 +832,6 @@ Note: No matter if its a brace or not you only get 1 shot.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6eba-986e-1a07-0e58"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="35" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Brace" hidden="false" id="a2c7-0fe2-a068-de0b">
           <infoLinks>
@@ -1045,13 +881,6 @@ a duelling pistol have a +1 bonus to hit.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d684-25ed-f53c-1219"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="30" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Brace" hidden="false" id="a4b1-781f-add0-8678">
           <infoLinks>
@@ -1092,13 +921,6 @@ a duelling pistol have a +1 bonus to hit.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c190-0a36-ea06-4be8" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="35" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="7f5a-d04d-153d-d334" name="Handgun" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1128,13 +950,6 @@ a duelling pistol have a +1 bonus to hit.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc15-36ae-0c21-db87" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="35" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="51ed-e371-76d2-d46b" name="Hochland Long Rifle" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1184,13 +999,6 @@ a duelling pistol have a +1 bonus to hit.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75b6-514a-9708-ff11" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="67e9-a4f5-8f76-168c" name="Pistol" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1222,13 +1030,6 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd8d-028e-ccb8-f783"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Brace" hidden="false" id="ae20-29a5-5bfc-afe3">
           <infoLinks>
@@ -1269,13 +1070,6 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c382-8a60-6e48-6d01" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="40" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="3706-6421-53b4-940d" name="Short bow" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1295,13 +1089,6 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7824-2584-d42d-fd71" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="5" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="87c7-49b5-f1e7-6662" name="Sling" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1327,13 +1114,6 @@ If the model fires twice then each shot is at -1 to hit.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f697-12a0-fc3f-4019" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="5" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="23f5-19c3-5a6c-a8fb" name="Throwing Knives/Stars" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1361,13 +1141,6 @@ If the model fires twice then each shot is at -1 to hit.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4b6-11e1-5e33-ecda" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="f122-5313-bc4d-97fa" name="Holy (Unholy) Relic" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
@@ -1666,13 +1439,6 @@ Only available to Humans.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="40" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="992a-7458-a3fa-52cb" name="Hunting Arrows" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
@@ -1847,11 +1613,6 @@ In addition, a Squig prodder is treated exactly like a spear in hand-to-hand com
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -1971,13 +1732,6 @@ Not available to Skaven.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="25" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="7863-e620-5c6e-7eee" name="Warhorse" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2011,13 +1765,6 @@ Only available to Humans.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="80" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="60f8-e6e7-c2ea-0dad" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -2058,11 +1805,6 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08d4-6287-7c20-78b0"/>
       </constraints>
       <modifiers>
-        <modifier type="increment" value="25" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2123,11 +1865,6 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30ca-28c7-4305-7d00" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="increment" value="300" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2164,11 +1901,6 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2213,13 +1945,6 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="30" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="2a59-d487-d7eb-10cc" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="da9a-d332-0bd2-4a43" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -2268,11 +1993,6 @@ Any models that have a Regeneration special rule (like Trolls) will not be able 
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="35" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2310,11 +2030,6 @@ Any models that have a Regeneration special rule (like Trolls) will not be able 
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f602-adb8-bb93-ba86" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="increment" value="35" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2352,11 +2067,6 @@ Only Matriarchs and Sister Superiors may carry two Sigmarite  warhammers.</descr
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2401,13 +2111,6 @@ Only Matriarchs and Sister Superiors may carry two Sigmarite  warhammers.</descr
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="75" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="8eaf-e13b-86c1-5fdd" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="0d0e-65be-b471-8d45" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -2548,11 +2251,6 @@ The model may still shoot and may try to free itself in the recovery phase. If h
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ffe-b1e5-6410-cd0c" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="increment" value="5" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2591,13 +2289,6 @@ The model may still shoot and may try to free itself in the recovery phase. If h
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7cf-c19d-5cff-9355" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="5" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="993b-b4c4-118f-3ce3" name="Claw of the Old Ones" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2628,11 +2319,6 @@ The blade of this weapon glows white hot and can cut through armour as if it wer
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="30" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2672,11 +2358,6 @@ The blade of this weapon glows white hot and can cut through armour as if it wer
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fe5-5a37-7acf-f775" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="increment" value="50" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2721,11 +2402,6 @@ Because it does not require prepared shot, this bonus attack may be used in each
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3ab5-7436-4cd8-1c21"/>
       </constraints>
       <modifiers>
-        <modifier type="increment" value="40" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2766,13 +2442,6 @@ Khemri setting</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d281-80b5-c24a-70a0" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="f3e5-d54b-f731-7afd" name="Katar" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2796,13 +2465,6 @@ Khemri setting</description>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="5" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="67a2-df32-2b39-b9e0" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="0087-fdf2-9df6-8c4d" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -2832,11 +2494,6 @@ Khemri setting</description>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2894,11 +2551,6 @@ If the test is successful, the Goblin no longer counts as hidden.</description>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c56-5670-bc8e-3217" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="increment" value="25" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2997,13 +2649,6 @@ Toughened leathers cannot be sold back at the Trading Posts; the stench alone is
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6116-77c9-d806-f7a1" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="5" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="c26e-414e-293-2621" name="Advancement (Hero)" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
       <constraints>
@@ -3054,11 +2699,6 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="12" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -3093,13 +2733,6 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="10" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="5461-16a4-549e-8108" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="43cf-63f4-8992-3e40" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -3134,11 +2767,6 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="8" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -3177,11 +2805,6 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4671-63d6-384c-398b" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="increment" value="3" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -3217,11 +2840,6 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="20" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -3255,13 +2873,6 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="3" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="3764-e8b0-4453-2de7" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="c715-d891-e9f0-76df" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -3284,13 +2895,6 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="3" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="99f8-7273-a9e5-c592" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="5329-db03-f822-e2be" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -3313,13 +2917,6 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="3" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="8770-2a6f-504c-ae3e" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="e46b-eb27-37c7-a5dc" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
@@ -3365,11 +2962,6 @@ Aside from ward and dodge saves a Sunbolt ignores armour saves and penalties for
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dc7-f8f7-6060-6a9c" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="increment" value="35" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -3411,11 +3003,6 @@ It is a close combat weapon and attacks like a dagger but can parry the first su
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -3460,11 +3047,6 @@ The Sword confers a bonus of +1 Strength and ignores all armour saves except for
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="30" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -3500,11 +3082,6 @@ The Sword confers a bonus of +1 Strength and ignores all armour saves except for
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="50" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -3538,11 +3115,6 @@ The Sword confers a bonus of +1 Strength and ignores all armour saves except for
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="increment" value="10" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -3629,13 +3201,6 @@ The Sword confers a bonus of +1 Strength and ignores all armour saves except for
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="30" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <rules>
         <rule name="Rarity" id="ddff-6c73-ec00-6f18" hidden="false">
           <description>Rarity 8
@@ -3675,13 +3240,6 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bef-5c06-ddf3-1dee" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="increment" value="40" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink name="Prepare shot" id="acdb-d2c6-8b7b-b347" hidden="false" targetId="4f7f-29ec-a9da-82fc" type="rule"/>
       </infoLinks>
@@ -3703,13 +3261,6 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="increment" value="15" field="points">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60bf-c49b-1ec7-3898" includeChildSelections="false"/>
       </constraints>
@@ -3739,12 +3290,7 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gromril Weapon" hidden="false" id="cb4e-de46-b048-02d9" page="0" collective="false">
       <modifiers>
-        <modifier type="multiply" value="4" field="points"/>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
+        <modifier type="multiply" value="4" field="points" scope="parent"/>
         <modifier type="prepend" value="Gromril" field="name" scope="parent"/>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -3776,12 +3322,7 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ithilmar weapon" hidden="false" id="f797-886a-f53d-b770" page="0" collective="false">
       <modifiers>
-        <modifier type="multiply" value="3" field="points"/>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
+        <modifier type="multiply" value="3" field="points" scope="parent"/>
         <modifier type="prepend" value="Ithilmar" field="name" scope="parent"/>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -3813,16 +3354,11 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Obsidian weapon" hidden="false" id="8e77-6886-8b6e-2124" page="0" collective="false">
       <modifiers>
-        <modifier type="multiply" value="4" field="points"/>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-          </conditions>
-        </modifier>
+        <modifier type="multiply" value="4" field="points" scope="parent"/>
         <modifier type="prepend" value="Obsidian" field="name" scope="parent"/>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="4c6d-eb92-53a7-a6d3" shared="true" childName="Gromril Armour"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="cb4e-de46-b048-02d9" shared="true" childName="Gromril Weapon"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
@@ -3832,7 +3368,7 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="b0bd-108f-d18d-a2c7" shared="true" childName="Ithilmar Armour"/>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="f797-886a-f53d-b770" shared="true" childName="Ithilmar weapon"/>
           </conditions>
         </modifier>
       </modifiers>
