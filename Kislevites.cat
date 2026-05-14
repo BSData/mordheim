@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9632-7414-5d8a-43cd" name="Kislevites (1a)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="9632-7414-5d8a-43cd" name="Kislevites (1a)" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5164-95fd-8401-79b9" name="Kislevites Rules" shortName="Kislevites" publisher="https://broheim.net/downloads/warbands/official/Kislevites.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Kislevites.pdf"/>
   </publications>
@@ -2310,6 +2310,16 @@ Until the item is replaced, the Captain suffers a -1 penalty to all tests and ro
                 <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="25" field="points">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="a4b1-781f-add0-8678" shared="true" childName="Brace"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="30" field="points">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="a4b1-781f-add0-8678" shared="true" childName="Brace"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <entryLinks>
             <entryLink id="ea74-9daa-52dd-0ed6" name="Inheritance" hidden="false" collective="false" import="true" targetId="054e-708c-6d78-a766" type="selectionEntry"/>
@@ -2320,14 +2330,6 @@ Until the item is replaced, the Captain suffers a -1 penalty to all tests and ro
     <selectionEntryGroup id="6b13-7b10-e009-f519" name="Armor" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="959c-b9e6-9872-b805" name="Buckler" hidden="false" collective="false" import="true" targetId="0871-44c2-f0f0-c27a" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="points" value="3">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdc6-20c2-34ee-759a" type="instanceOf"/>
-                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="054e-708c-6d78-a766" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink id="0a1f-7363-5cca-05a1" name="Inheritance" hidden="false" collective="false" import="true" targetId="054e-708c-6d78-a766" type="selectionEntry"/>
           </entryLinks>
@@ -2398,7 +2400,20 @@ Until the item is replaced, the Captain suffers a -1 penalty to all tests and ro
         <entryLink id="1da3-9476-5ac0-3a0b" name="Bow" hidden="false" collective="false" import="true" targetId="311a-bf3f-67ff-46e7" type="selectionEntry"/>
         <entryLink id="405d-ef6b-903f-3ed9" name="Crossbow" hidden="false" collective="false" import="true" targetId="38cc-bc0b-7f19-8039" type="selectionEntry"/>
         <entryLink id="12c6-3917-3ea4-5c11" name="Pistol" hidden="false" collective="false" import="true" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
-        <entryLink id="7218-b2d7-94d8-846f" name="Duelling Pistol" hidden="false" collective="false" import="true" targetId="da24-6a7f-725b-5bcb" type="selectionEntry"/>
+        <entryLink id="7218-b2d7-94d8-846f" name="Duelling Pistol" hidden="false" collective="false" import="true" targetId="da24-6a7f-725b-5bcb" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="25" field="points">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="a4b1-781f-add0-8678" shared="true" childName="Brace"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="30" field="points">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="a4b1-781f-add0-8678" shared="true" childName="Brace"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="0bcc-fd7b-be87-c91b" name="Handgun" hidden="false" collective="false" import="true" targetId="7f5a-d04d-153d-d334" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
