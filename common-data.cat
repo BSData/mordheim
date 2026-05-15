@@ -353,6 +353,7 @@ Warhorses only.</description>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="2cda-8ede-6864-bb0d" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="cd57-dd4b-0a49-03e6" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian weapon" hidden="false" id="7c7a-f75a-ef9b-682c" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="c8de-5fda-9ad9-9ad6" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
       <rules>
         <rule name="Rarity" id="c716-0294-e6e2-68f7" hidden="false">
@@ -370,7 +371,7 @@ Warhorses only.</description>
         <infoLink name="Cutting edge" id="c406-eb5c-8065-e7d4" hidden="false" type="rule" targetId="4b68-6905-29fd-e549"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry id="ae81-7b68-5718-38e1" name="Ball and Chain" page="0" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ae81-7b68-5718-38e1" name="Ball and Chain" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="902b-66e2-0dcd-d1e0" name="Ball and Chain" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
           <characteristics>
@@ -412,23 +413,18 @@ ignores the special rules for Animosity.</description>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8b66f7c3-fdd7-fcea-eb91-086959d72140" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8ae8-558c-e115-6668" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="de0f-ab0b-13a4-cefc" shared="true" childName="Goblin max" includeChildSelections="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="ed29-abf9-056d-41b4" shared="true" childName="1a" includeChildForces="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="ed29-abf9-056d-41b4" shared="true" childName="1a" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="3787-fffb-a73c-9b15" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="ca06-830c-8b8f-8a6f" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="9a31-949e-fd85-ea6b" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="2099-50ae-2d20-d511" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="64e0-0bb6-542b-4beb" name="Dagger" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -451,7 +447,20 @@ ignores the special rules for Animosity.</description>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="6e6f-eb85-a18a-316d" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="88a9-9057-b107-4cc0" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian weapon" hidden="false" id="305e-544e-849b-ce30" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="d1b6-0313-cd8e-e19b" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="6a5f-df89-fcfd-a558" shared="true" childName="Core" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Rarity" id="97cd-081b-64b0-9b93" hidden="false">
+          <description>Common</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry id="a0a1-b311-e3aa-6c3b" name="Double Handed Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -475,6 +484,7 @@ ignores the special rules for Animosity.</description>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="57cf-7a27-ab41-3e7a" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="bbfd-75d6-2065-18c5" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="6eb9-db4a-b01d-6af8" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="2c66-321c-1554-1c85" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="eb7b-b5c6-d4f2-80e5" name="Fist" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -520,6 +530,7 @@ ignores the special rules for Animosity.</description>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="91ce-5a31-ac7c-c485" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="bdb3-6904-c55c-bb5a" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian weapon" hidden="false" id="3c2e-faf7-7f7b-7dac" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="ab8a-e9bc-1081-669c" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="0d0b-ed37-d8b0-4cbf" name="Free Dagger" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -564,6 +575,7 @@ ignores the special rules for Animosity.</description>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="7ce8-6edc-de69-88b0" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="d2ec-26ae-aa6f-46fe" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian weapon" hidden="false" id="048c-f409-b2be-a466" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="8e47-609a-76d0-0c91" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="cfcc-39fd-aeb4-876a" name="Hammer" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -587,7 +599,20 @@ ignores the special rules for Animosity.</description>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="90e8-0377-23c2-c8d3" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="06f0-0b43-9d98-f218" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian weapon" hidden="false" id="3152-9084-fb45-542b" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="5a65-c277-449b-56e3" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="6a5f-df89-fcfd-a558" shared="true" childName="Core" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Rarity" id="1d4b-b4b2-9467-7e6e" hidden="false">
+          <description>Common</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry id="5223-13a6-14ec-f372" name="Lance" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -616,6 +641,7 @@ ignores the special rules for Animosity.</description>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="1655-d936-789c-d758" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="c120-3dd2-186a-b8e0" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="476b-5912-dd6c-288c" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="b89b-96fa-1e1f-3674" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="d5f3-1906-da91-4e8f" name="Morning Star" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -640,6 +666,7 @@ ignores the special rules for Animosity.</description>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="2cf2-2eda-c0ef-672d" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="d492-315d-5fd9-a0ec" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="4da7-3056-c640-b405" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="5cc7-b3dc-8cb9-9f93" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="005e-e397-8108-f198" name="Spear" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -665,6 +692,7 @@ ignores the special rules for Animosity.</description>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="d173-18f8-b89c-a4bb" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="5697-aebe-430a-d36c" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="04bb-5eda-973f-f5f1" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="d5a3-aa73-ee93-10f2" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="34fd-d6a3-50ee-ee06" name="Sword" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -688,6 +716,7 @@ ignores the special rules for Animosity.</description>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="9b3e-d263-db0b-5dae" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="f72e-aaf9-18b5-1cb0" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="4250-6f46-5d96-df47" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="5253-12f8-9b14-6491" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="4386-7400-9146-1dee" name="Blunderbuss" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -1878,6 +1907,7 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="0c80-e5ef-375a-ed02" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="1bbd-eaae-deac-6d8f" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="a084-3c65-8303-7def" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="f4c8-04a6-0040-3145" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="7c61-2104-517e-dfab" name="Horseman&apos;s Hammer" hidden="false" collective="false" import="true" type="upgrade">
@@ -1907,6 +1937,7 @@ a -2 save modifier, regardless of the firer’s Strength.</description>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="2a59-d487-d7eb-10cc" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="da9a-d332-0bd2-4a43" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="5d21-9eea-5ecf-fe2f" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="3d0d-8673-ab54-44c1" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="065e-ad0a-c227-a634" name="Torch" hidden="false" collective="false" import="true" type="upgrade">
@@ -1966,6 +1997,7 @@ Any models that have a Regeneration special rule (like Trolls) will not be able 
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="954e-4ec4-4944-6174" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="a752-af4d-177b-550a" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian weapon" hidden="false" id="99ca-e634-6103-09ec" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="26c7-9e78-083a-5cff" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="c51a-d060-7bf2-7ae3" name="Warplock Pistol" hidden="true" collective="false" import="true" type="upgrade">
@@ -2046,19 +2078,15 @@ Any models that have a Regeneration special rule (like Trolls) will not be able 
         </profile>
       </profiles>
       <rules>
-        <rule id="cbb4-d9af-3cbf-dd8f" name="Price Modifier" hidden="false">
-          <description>+ 2D6</description>
+        <rule id="cbb4-d9af-3cbf-dd8f" name="Tradding Post Cost" hidden="false">
+          <description> 75 + 2D6 gc</description>
         </rule>
         <rule id="97a3-f0b6-7162-1e56" name="Rarity" hidden="false">
           <description>Rarity 12</description>
         </rule>
-        <rule id="ebff-ed55-8fd4-2540" name="Mastercrafted" hidden="false">
-          <description>Attacks made with a Cathayan longsword give the bearer +1 Initiative and +1 Weapon Skill.</description>
-        </rule>
       </rules>
       <infoLinks>
-        <infoLink id="a7d1-8c01-f986-f552" name="Parry" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule"/>
-        <infoLink id="6174-85b5-16ec-632c" name="Cutting edge" hidden="false" targetId="4b68-6905-29fd-e549" type="rule"/>
+        <infoLink name="Mastercrafted" id="1ace-dfc4-7526-b78b" hidden="false" type="rule" targetId="1aeb-b462-c3e2-f59b"/>
       </infoLinks>
       <costs>
         <cost name=" gc" typeId="points" value="75"/>
@@ -2069,7 +2097,15 @@ Any models that have a Regeneration special rule (like Trolls) will not be able 
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="8eaf-e13b-86c1-5fdd" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="0d0e-65be-b471-8d45" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian weapon" hidden="false" id="8786-3a37-9f90-31df" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="b243-51c1-0b43-cd9a" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="31a3-4638-92c1-d56a" shared="true" childName="1c" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="79b7-5cfb-549c-c973" name="Gnoblar Fighter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2252,28 +2288,22 @@ The model may still shoot and may try to free itself in the recovery phase. If h
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7cf-c19d-5cff-9355" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry id="993b-b4c4-118f-3ce3" name="Claw of the Old Ones" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="993b-b4c4-118f-3ce3" name="Claw of the Old Ones" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="2095-a1c0-3e5e-ae50" name="Claw of the Old Ones" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user +1</characteristic>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">No save, Parry</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Ignores Armour</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="0660-4d1b-0f1e-96f0" name="Claw of the Old Ones" hidden="false">
-          <description>This is a very ancient weapon made from a strange metal that is impervious to age and corrosion.
-The powers of this artefact can only be unleashed through a ritual known only to a handful of Amazons.
-The blade of this weapon glows white hot and can cut through armour as if it were paper.</description>
-        </rule>
         <rule id="7ff0-e0d8-d441-627c" name="Rarity" hidden="false">
-          <description>Rarity 12</description>
+          <description>Rare 12 (Amazons (Mordheim) only)</description>
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="a5e9-fc74-289d-521f" name="Ignores Armour" hidden="false" targetId="1f6d-8599-e2d3-1062" type="rule"/>
-        <infoLink id="f7cd-5e9e-f946-ef2f" name="Parry" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule"/>
+        <infoLink name="Ignores Armour" id="e3e3-6b51-9502-9c90" hidden="false" type="rule" targetId="1f6d-8599-e2d3-1062"/>
       </infoLinks>
       <costs>
         <cost name=" gc" typeId="points" value="30"/>
@@ -2281,16 +2311,18 @@ The blade of this weapon glows white hot and can cut through armour as if it wer
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7f2c-337f-3ebd-2263" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="14f5-6007-fd97-9286" shared="true" childName="1b" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="8a4e-5097-dd2d-e5b1" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="7c2f-cbf7-1ebe-5990" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="03e4-5e21-7666-79de" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="3255-3ab2-f832-b260" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="d09f-94f6-1448-fe76" name="Sunstaff (Mordheim)" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2378,6 +2410,7 @@ Because it does not require prepared shot, this bonus attack may be used in each
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="a3c0-13de-ceaf-9799" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="a6bf-b53b-ef2d-2559" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="70df-c7f7-2cdb-a5ed" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="b87e-66e0-fba2-a6b7" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="bb96-6dc1-2f2f-b4c" name="Tufenk" hidden="false" collective="false" import="true" type="upgrade">
@@ -2435,6 +2468,8 @@ Khemri setting</description>
       <entryLinks>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="67a2-df32-2b39-b9e0" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="0087-fdf2-9df6-8c4d" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="b7d3-b5b9-5cca-2bc3" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="4f3d-ae68-edcf-e174" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="5208-f70c-664-e36e" name="Dwarf Axe" page="0" hidden="true" collective="false" import="true" type="upgrade">
@@ -2477,6 +2512,7 @@ Khemri setting</description>
         <entryLink import="true" name="Obsidian weapon" hidden="false" id="3ae1-3bec-d17b-5401" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="13ff-6b79-831d-61b5" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="ca47-51e4-94aa-ca5d" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="93f6-216e-e044-ad92" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="b6b-2ea5-1f65-a84b" name="Blowpipe" hidden="true" collective="false" import="true" type="upgrade">
@@ -2683,6 +2719,7 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="b081-97b2-fc9d-2967" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="829b-c5e1-db70-bb65" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="2604-c4ee-328c-f303" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="7f99-a27e-631d-a450" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="5487-85f6-ae5f-dac1" name="Scythe" hidden="false" collective="false" import="true" type="upgrade">
@@ -2706,6 +2743,7 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="5461-16a4-549e-8108" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="43cf-63f4-8992-3e40" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="0fc2-b30f-7472-3c92" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="331a-e453-5f77-10f8" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="583e-a0c5-873-acdc" name="Advancement (Henchmen)" hidden="false" collective="false" import="true" type="upgrade" collapsible="true">
@@ -2718,7 +2756,7 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8bf0-e215-6bbb-383e" name="Boat Hook" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8bf0-e215-6bbb-383e" name="Boat Hook" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="d807-f424-2528-1363" name="Boat Hook" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
           <characteristics>
@@ -2737,14 +2775,10 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6805-5465-81dd-a433" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="14f5-6007-fd97-9286" shared="true" childName="1b" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <rules>
@@ -2752,8 +2786,14 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
           <description>Common (Pirates only)</description>
         </rule>
       </rules>
+      <entryLinks>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="c6b8-9eaa-f48b-72b9" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="f75d-e091-af97-52d9" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="2c77-803e-9e6d-fc99" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="56bf-519e-2535-0986" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+      </entryLinks>
     </selectionEntry>
-    <selectionEntry id="282e-5485-a38c-9f14" name="Belaying Pins" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="282e-5485-a38c-9f14" name="Belaying Pins" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="c7ee-dea2-d55f-1f73" name="Belaying Pins" hidden="false" typeId="c4b0233c-e5d1-2b41-3446-45a745fbbbec" typeName="Ranged Weapon">
           <characteristics>
@@ -2783,15 +2823,6 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4671-63d6-384c-398b" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6805-5465-81dd-a433" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="14f5-6007-fd97-9286" shared="true" childName="1b" includeChildForces="true" includeChildSelections="true"/>
@@ -2838,6 +2869,7 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <entryLink import="true" name="Obsidian weapon" hidden="false" id="1ac0-1800-502e-a504" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="4318-806d-8d30-3483" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="08f6-4e40-f658-4a32" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="1ba8-8458-0c1d-cf8d" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="7214-9103-e23e-45ac" name="Staff" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -2861,6 +2893,7 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="3764-e8b0-4453-2de7" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="c715-d891-e9f0-76df" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="77f1-64a3-63e8-fc38" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="ea35-5672-a5b0-ddb2" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="2cbb-013b-3ebf-0459" name="Mace" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -2884,7 +2917,20 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="ee7d-a955-853a-74ac" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="d949-6d53-ab59-b8a0" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="c53b-9393-848f-413c" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="1286-3168-674c-ee27" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="6a5f-df89-fcfd-a558" shared="true" childName="Core" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Rarity" id="0f6c-a93a-93c6-dc24" hidden="false">
+          <description>Common</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry id="b43f-0d15-1f20-7fda" name="Club" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2907,7 +2953,20 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="8770-2a6f-504c-ae3e" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="e46b-eb27-37c7-a5dc" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian weapon" hidden="false" id="7d36-9546-b48b-b7ce" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="136e-c9b2-3a96-0f29" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
+      <rules>
+        <rule name="Rarity" id="c37f-3bb0-bbee-ee06" hidden="false">
+          <description>Common</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="6a5f-df89-fcfd-a558" shared="true" childName="Core" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sunstaff (Lustria)" hidden="true" id="7537-ac89-b499-e6d0" collective="false">
       <profiles>
@@ -3004,6 +3063,7 @@ It is a close combat weapon and attacks like a dagger but can parry the first su
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="d94a-55f8-ca02-f615" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="f8ac-53b9-fd8d-64a8" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="3187-46a2-09aa-f674" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="bd58-5461-fc25-a039" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Starsword" hidden="true" id="1f34-eeff-387e-70bb" collective="false" page="0">
@@ -3049,6 +3109,7 @@ The Sword confers a bonus of +1 Strength and ignores all armour saves except for
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="4fa9-265d-40be-b6e0" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="b0c5-bb65-f421-42af" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="4b50-3026-1877-2bf6" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="d442-01c5-dea0-eb62" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="0a36-4063-32b7-61b3" name="Weeping Blades" page="0" hidden="true" collective="false" import="true" type="upgrade">
@@ -3063,7 +3124,6 @@ The Sword confers a bonus of +1 Strength and ignores all armour saves except for
       <infoLinks>
         <infoLink id="3943-43f7-a130-3b55" name="Parry" hidden="false" targetId="17dc-9c49-08e1-af45" type="rule"/>
         <infoLink name="Pair" id="ecf6-08aa-e5ff-cf3e" hidden="false" targetId="f053-2d68-666e-727a" type="rule"/>
-        <infoLink name="Pair" id="ce86-d79a-7d99-092f" hidden="false" targetId="f053-2d68-666e-727a" type="rule"/>
       </infoLinks>
       <costs>
         <cost name=" gc" typeId="points" value="50"/>
@@ -3088,6 +3148,7 @@ The Sword confers a bonus of +1 Strength and ignores all armour saves except for
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="189a-4c57-2b24-3a17" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="5d6e-987c-32aa-7e0e" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="811d-10d8-eafd-b9ff" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="e15e-77a9-6c83-43ff" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="1ce7-1431-21fc-6d18" name="Steel Whip" page="0" hidden="true" collective="false" import="true" type="upgrade">
@@ -3128,6 +3189,7 @@ The Sword confers a bonus of +1 Strength and ignores all armour saves except for
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="e27c-2e3a-836c-af0f" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="4441-dd85-b494-0308" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="9171-816d-0bc8-17ac" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="713c-ad90-5a5a-4092" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="6de3-e855-8fb4-ce53" name="Wolfcloak" page="0" hidden="true" collective="false" import="true" type="upgrade">
@@ -3203,6 +3265,7 @@ Not available to Possessed or Undead.</description>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="2584-55a1-3b76-73d5" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="0593-6eec-db48-628b" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="0c35-9225-4591-ee2f" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="a048-04b4-557c-fa63" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chaos Dwarf Blunderbuss" hidden="false" id="f425-ed8a-06d6-57b6" page="0" collective="false">
@@ -3289,6 +3352,16 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8e77-6886-8b6e-2124" shared="true" childName="Obsidian weapon"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="6a5f-df89-fcfd-a558" shared="true" childName="Core" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="5fce-a752-b4f3-e475" shared="true" childName="Dark Elf Blade"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4d86-e7e6-a7a4-55ba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -3301,6 +3374,11 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
+      <rules>
+        <rule name="Rarity" id="67b5-697b-a17e-b0b8" hidden="false">
+          <description>Rare 11</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ithilmar Weapon" hidden="false" id="f797-886a-f53d-b770" page="0" collective="false">
       <modifiers>
@@ -3316,6 +3394,16 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="8e77-6886-8b6e-2124" shared="true" childName="Obsidian weapon"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="6a5f-df89-fcfd-a558" shared="true" childName="Core" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="5fce-a752-b4f3-e475" shared="true" childName="Dark Elf Blade"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f62d-9d38-f3a6-3092" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -3328,6 +3416,11 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
         <cost name=" Rarity" typeId="rarity" value="0"/>
       </costs>
+      <rules>
+        <rule name="Rarity" id="1984-a29c-53ce-602a" hidden="false">
+          <description>Rare 9</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Obsidian Weapon" hidden="false" id="8e77-6886-8b6e-2124" page="0" collective="false">
       <modifiers>
@@ -3343,13 +3436,23 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
             <condition type="atLeast" value="1" field="selections" scope="parent" childId="f797-886a-f53d-b770" shared="true" childName="Ithilmar weapon"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="5fce-a752-b4f3-e475" shared="true" childName="Dark Elf Blade"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="6a5f-df89-fcfd-a558" shared="true" childName="Core" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60bf-c49b-1ec7-3898" includeChildSelections="false"/>
       </constraints>
       <rules>
         <rule name="Rarity" id="f623-6003-def7-5611" hidden="false">
-          <description> Rare 12</description>
+          <description>Rare 12 (Marauders of Chaos, Norse, Beastmen, Chaos Dwarfs, Possessed and Carnival of Chaos only)</description>
         </rule>
       </rules>
       <infoLinks>
@@ -3381,6 +3484,7 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="4df4-ec6a-8b98-1521" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="107d-4e91-a2c1-8987" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="62a0-9744-4fc0-35a8" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="9cb9-51bc-ace8-ba70" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
       <rules>
         <rule name="Rarity" id="8c79-b098-ab37-5a37" hidden="false">
@@ -3394,12 +3498,11 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="ed29-abf9-056d-41b4" shared="true" childName="1a" includeChildForces="true" includeChildSelections="true"/>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="e783-91c9-0f57-a7bb" shared="true" includeChildSelections="true" childName="Beastmen Raiders (1a)" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Barbed Whip" hidden="true" id="30d6-ce0a-5729-4c97">
+    <selectionEntry type="upgrade" import="true" name="Barbed Whip" hidden="false" id="30d6-ce0a-5729-4c97">
       <costs>
         <cost name=" gc" typeId="points" value="15"/>
         <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
@@ -3408,6 +3511,7 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="63d2-cfd5-4ead-bea9" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="0d7a-ef60-5fd7-1054" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="fbee-b0b2-b847-a48d" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="c78f-3228-3d6c-7009" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
       <profiles>
         <profile name="Barbed Whip" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="32a5-55b3-adf3-a89f" page="0">
@@ -3427,16 +3531,9 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
       </constraints>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="31a3-4638-92c1-d56a" shared="true" childName="1c" includeChildForces="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" shared="true" childId="31a3-4638-92c1-d56a" includeChildSelections="true" childName="1c">
-                  <comment>This should be fixed to Marauders of Chaos Hero only</comment>
-                </condition>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="31a3-4638-92c1-d56a" shared="true" childName="1c" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -3453,6 +3550,7 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="18eb-6bdb-3324-f9c2" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="3147-3ac8-1e24-0740" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="a6c6-9dd6-1fac-df83" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="36aa-c1e8-a451-300a" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
       <profiles>
         <profile name="Beastlash" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="ddda-a86c-a71b-60a1" page="0">
@@ -3465,6 +3563,9 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
       <rules>
         <rule name="Rarity" id="6ddb-47c3-085b-90f3" hidden="false">
           <description>Common</description>
+        </rule>
+        <rule name="Trading Post Cost" id="754e-f2e8-478d-f8b2" hidden="false">
+          <description>10 + D6 gc</description>
         </rule>
       </rules>
       <modifiers>
@@ -3500,6 +3601,7 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
         <entryLink import="true" name="Obsidian Weapon" hidden="false" id="9407-c32a-4ac6-1594" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
         <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="5b3f-6898-ba38-e159" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Gromril Weapon" hidden="false" id="2b07-7d0b-40ea-31a9" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="1266-5338-3e6b-0c21" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Two Handed" id="7bbe-fb7a-e361-ecab" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
@@ -3511,6 +3613,349 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
           <description>Common</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Boss Pole" hidden="false" id="5346-d528-1b45-4a7e">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="14f5-6007-fd97-9286" shared="true" childName="1b" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Rarity" id="510b-c9dc-e99a-bde2" hidden="false">
+          <description> Common (Forest and Night Goblins only)</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Boss Pole" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="ed29-f3be-1241-0580" page="0">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Strike First, Unwieldy, Cavalry Bonus, Ignore Animosity</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="16c1-d866-e998-d01c" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="dfe6-dfdb-a101-82fb" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="34d7-2c2e-56eb-79ff" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="443e-5c8e-cbe2-c7fb" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
+      </entryLinks>
+      <costs>
+        <cost name=" gc" typeId="points" value="20"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Ignore Animosity" id="d9a2-4b84-01b9-bee6" hidden="false" type="rule" targetId="b651-7916-eeff-ba43"/>
+        <infoLink name="Unwieldy" id="0bcd-6b21-29d0-7eae" hidden="false" type="rule" targetId="2b45-f8c1-de87-638f"/>
+        <infoLink name="Strike First" id="ccff-da3f-b401-35a5" hidden="false" type="rule" targetId="744d-bb7c-09b9-ab1c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Brass Knuckles" hidden="false" id="0d28-b083-acfd-9366">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="14f5-6007-fd97-9286" shared="true" childName="1b" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Rarity" id="5086-3528-bd19-034d" hidden="false">
+          <description>Rare 6 (Always bought in pairs)</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Brass Knuckles" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="50d5-f89c-b4e8-e53d" page="0">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user +1</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Pair, Encumbrance</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="1d10-3107-681e-c899" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="0d12-3360-4274-634d" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="ba23-199e-c5d1-a03d" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="8d9e-a8ae-3363-d5e8" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
+      </entryLinks>
+      <costs>
+        <cost name=" gc" typeId="points" value="20"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Up-close" id="013c-2771-bb33-cb3a" hidden="false" type="rule" targetId="dcc9-d13e-54a5-4615"/>
+        <infoLink name="Pair" id="9eb1-0ec2-c06a-9a25" hidden="false" type="rule" targetId="f053-2d68-666e-727a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Brazier Iron" hidden="false" id="7575-1615-60e9-fae8">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="ed29-abf9-056d-41b4" shared="true" childName="1a" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Rarity" id="589f-1452-9b2b-822a" hidden="false">
+          <description>Rare 7 (Witch Hunters only)</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Brazier Iron" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="2ab0-3ab8-8ce9-2cb2" page="0">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user +1</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two handed, Fire Damage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="e1cc-b23e-7729-5f20" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="0092-7375-fe19-9be3" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="5b8e-86ed-f6c2-6c3c" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="8500-c280-f40e-ed8d" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
+      </entryLinks>
+      <costs>
+        <cost name=" gc" typeId="points" value="35"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Fire Damage" id="5968-d95d-d0c5-9e87" hidden="false" type="rule" targetId="640a-9b4c-8a93-59b2"/>
+        <infoLink name="Two Handed" id="892a-ebfa-5382-30e9" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Broadsword" hidden="false" id="6a4d-bfbe-3bbf-460d">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="31a3-4638-92c1-d56a" shared="true" childName="1c" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Rarity" id="9882-12bf-f939-b4db" hidden="false">
+          <description>Common (Bretonnian Chapel Guard Knights only)</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Broadsword" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="9e10-c5a1-f3c4-01a7" page="0">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user +1</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Difficult to use, Strike last</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="49c1-5c9e-7342-0bab" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="9a6c-f4a4-82b4-ec81" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="d0cf-7960-9bc5-8a50" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="e419-3455-5700-4b6a" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
+      </entryLinks>
+      <costs>
+        <cost name=" gc" typeId="points" value="15"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Difficult to use" id="5de7-a0f1-bdce-4313" hidden="false" type="rule" targetId="14b3-65c8-02c4-ae65"/>
+        <infoLink name="Strike Last" id="c0d8-72ec-b0b7-1d89" hidden="false" type="rule" targetId="a365-c068-5790-d61d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cat O&apos; Nine Tails" hidden="false" id="1de8-5e4a-c4ea-3560">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="14f5-6007-fd97-9286" shared="true" childName="1b" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Rarity" id="0d64-8161-24f3-29ca" hidden="false">
+          <description>Common (Pirate Heroes only)</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Cat O&apos; Nine Tails" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="343c-a152-312f-034a" page="0">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Cannot be parried, +1 Enemy armour save, Whipcrack</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="db2d-270e-a3cd-466c" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="8626-5b58-c41e-563e" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="af88-7574-3328-5f34" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="fd5d-9eae-5fc2-ee53" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
+      </entryLinks>
+      <costs>
+        <cost name=" gc" typeId="points" value="8"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Whipcrack" id="2515-fe73-3a47-f4e5" hidden="false" type="rule" targetId="8c10-4ca4-4d30-e088"/>
+        <infoLink name="Cannot Be Parried" id="fdaa-6d1a-4059-b4f6" hidden="false" type="rule" targetId="ae40-6413-e61e-444f"/>
+        <infoLink name="+1 Enemy armour save" id="c308-7769-4d58-3003" hidden="false" type="rule" targetId="98ac-2376-00c1-4f65"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Censer" hidden="false" id="3272-2c01-c615-70d1" collective="false">
+      <profiles>
+        <profile name="Censer" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="76ed-00d2-d567-3dc1">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user +2</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Heavy, Two-handed, Fog of Death</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="a7f0-3bed-a7a9-4f09" hidden="false">
+          <description>Rare 9 (Skaven of Clan Pestilens only)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Heavy" id="39ad-93ef-8667-9346" hidden="false" type="rule" targetId="c097-af8b-c2de-ac04"/>
+        <infoLink name="Two Handed" id="cb93-2b20-ce41-7afe" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
+        <infoLink name="Fog of Death" id="8913-4318-310c-6a23" hidden="false" type="rule" targetId="42d6-2140-0f7b-0947"/>
+      </infoLinks>
+      <costs>
+        <cost name=" gc" typeId="points" value="40"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="1aef-5899-4a33-b8c1" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="05d7-f665-a434-61b8" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="aa1c-e4d9-4e52-ac4a" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="0845-e073-6ece-3870" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="14f5-6007-fd97-9286" shared="true" childName="1b" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chain Sticks" hidden="false" id="8744-5132-4ef6-71e9" collective="false">
+      <profiles>
+        <profile name="Chain Sticks" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="5d12-ce02-8793-2fc0">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Flurry, Two-handed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="9343-500c-e50e-7b27" hidden="false">
+          <description>Rare 9 (Skaven of Clan Pestilens only)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Two Handed" id="fed8-bd95-fab5-8cf7" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
+        <infoLink name="Flurry" id="f78a-a555-878a-1c3e" hidden="false" type="rule" targetId="40e1-d9f7-d6a9-17de"/>
+      </infoLinks>
+      <costs>
+        <cost name=" gc" typeId="points" value="20"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="dcdc-53f3-dc39-dab8" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="7604-1302-2f3a-4639" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="df8c-96e6-cf22-8e2e" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="34fd-d054-b62e-0b24" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="31a3-4638-92c1-d56a" shared="true" childName="1c" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cleaver" hidden="false" id="9529-31db-81e8-0b34" page="0" collective="false">
+      <profiles>
+        <profile name="Cleaver" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="9828-4370-bd2c-ce05" page="0">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Cutting edge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Cutting edge" id="ac00-31fe-135e-1f79" hidden="false" targetId="4b68-6905-29fd-e549" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" gc" typeId="points" value="3"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="d8d3-3295-3d73-d63a" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="0a57-8e8f-a3a9-5b50" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="4d6b-7cff-0f98-826c" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Dark Elf Blade" hidden="false" id="b06b-25e3-d06d-c597" type="selectionEntry" targetId="5fce-a752-b4f3-e475"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="14f5-6007-fd97-9286" shared="true" childName="1b" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Rarity" id="f7e4-3b0d-ef05-e967" hidden="false">
+          <description>Common (Mootlanders only)</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dark Elf Blade" hidden="false" id="5fce-a752-b4f3-e475" page="0" collective="false">
+      <profiles>
+        <profile name="Dagger" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="eefe-2246-c06f-bb5f" page="0">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">+1 enemy armor save</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Critical Damage" id="470a-8182-a65b-723b" hidden="false" type="rule" targetId="5fe0-6885-f726-ec5a"/>
+        <infoLink name="Wicked Edge" id="5652-d6ec-f841-5a9f" hidden="false" type="rule" targetId="981c-1fd0-eff9-0615"/>
+      </infoLinks>
+      <costs>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="14f5-6007-fd97-9286" shared="true" childName="1b" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="f797-886a-f53d-b770" shared="true" childName="Ithilmar weapon"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8e77-6886-8b6e-2124" shared="true" childName="Obsidian weapon"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="cb4e-de46-b048-02d9" shared="true" childName="Gromril Weapon"/>
+          </conditions>
+        </modifier>
+        <modifier type="prepend" value="Dark Elf" field="name" scope="parent"/>
+        <modifier type="increment" value="20" field="points" scope="parent"/>
+      </modifiers>
+      <rules>
+        <rule name="Rarity" id="616d-ada3-dab5-bc40" hidden="false">
+          <description>Rare 9 (Dark Elves only)</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1612-fbf3-4015-18d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -5615,16 +6060,16 @@ Attacks have 4, etc. If a warrior is carrying a weapon in each hand, he receives
 no longer frenzied. He continues to fight as normal for the rest of the battle.</description>
     </rule>
     <rule id="fad2-ae3b-6e41-c8b3" name="Gromril Weapon" page="0" hidden="false">
-      <description>A gromril weapon has an extra -1 save modifier, and costs four times the price of a normal weapon of its kind.</description>
+      <description>A gromril weapon has an extra -1 save modifier.</description>
     </rule>
     <rule id="fcb5-1485-5135-40ff" name="Hatred" page="0" hidden="false">
       <description>Warriors who fight enemies they hate in hand-to-hand combat may re-roll any misses when they attack in the first turn of each hand-to-hand combat. This bonus applies only in the first turn of each combat</description>
     </rule>
     <rule id="c097-af8b-c2de-ac04" name="Heavy" page="0" hidden="false">
-      <description>The weapon is extremely tiring to use, so its +1 Strength bonus applies only in the first turn of each hand-to-hand combat.</description>
+      <description>The weapon is extremely tiring to use, so its +X Strength bonus applies only in the first turn of each hand-to-hand combat.</description>
     </rule>
     <rule id="2c05-eef1-5b96-cc14" name="Ithilmar weapon" page="0" hidden="false">
-      <description>An ithilmar weapon gives its user +1 Initiative in hand-to-hand combat, and costs three times the price of a normal weapon of its kind.</description>
+      <description>An ithilmar weapon gives its user +1 Initiative in hand-to-hand combat.</description>
     </rule>
     <rule id="8712-d0f2-fe64-07bd" name="Leader" page="0" hidden="false">
       <description>All Models within 6&quot; of leader can use the leaders leadership when taking leadership tests.</description>
@@ -5642,7 +6087,7 @@ no longer frenzied. He continues to fight as normal for the rest of the battle.<
       <description>A warrior with Strike First strikes first in the first turn of hand-to-hand combat</description>
     </rule>
     <rule id="a365-c068-5790-d61d" name="Strike Last" page="0" hidden="false">
-      <description>weapons are so heavy that the model using them always strikes last, even when charging.</description>
+      <description>Weapons are so heavy that the model using them always strikes last, even when charging.</description>
     </rule>
     <rule id="20f0-4428-0681-c9f9" name="Stupidity" page="0" hidden="false">
       <description>Models that are stupid test leadership (2d6) at the start of their turn to see if they overcome their stupidity. 
@@ -5710,7 +6155,7 @@ You may continue attacking as long as you hit and it is possible to strike your 
       <description>A model armed with this weapon  may not use any other weapons in the entire battle.</description>
     </rule>
     <rule id="f053-2d68-666e-727a" name="Pair" hidden="false">
-      <description>The venom of Weeping Blades will enter the blood of the victim and ravage his organs and muscles. These weapons count as being permanently coated in black lotus. No additional poison may be applied to Weeping Blades.</description>
+      <description>This weapon is bought in pairs. You may not use any other weapon or item in their hand while using these.</description>
     </rule>
     <rule id="f8a4-02ae-0f3c-3da0" name="-3 Save Modifier" hidden="false">
       <description>A warrior wounded by this weapon must make his armour save with a -3 modifier.</description>
@@ -5744,7 +6189,6 @@ The target and any models within 1 ½” of him each take a single S4 hit from t
 They must roll a D6 each Recovery phase, on a 4+ they extinguish the fire or they immediately suffer a S4 hit and may only move.
 Friendly models may help in extinguishing the model that is ablaze.
 They must be in base-to-base contact and need to roll a 4+ on a D6.
-
 
 Against dry targets like Mummies they are Strength 3 and on a 2+ on1D6 the Mummy catches fire.</description>
     </rule>
@@ -5817,6 +6261,33 @@ Note that you will still need to score a 6 before any modifiers in order to caus
     </rule>
     <rule name="Enrage" id="4740-9362-830c-c09d" hidden="false">
       <description>The Hero may use his whip to make the Warhounds charge wildly. As long as he is not involved in close combat all Warhounds within 4&quot; gain +1 attack.</description>
+    </rule>
+    <rule name="Ignore Animosity" id="b651-7916-eeff-ba43" hidden="false">
+      <description>Heroes and henchmen within 6&quot; ignore Animosity.</description>
+    </rule>
+    <rule name="Encumbrance" id="dcc9-d13e-54a5-4615" hidden="false">
+      <description>This weapon is difficult to use, suffer a -2 to Initiative in close combat.</description>
+    </rule>
+    <rule name="Mastercrafted" id="1aeb-b462-c3e2-f59b" hidden="false">
+      <description>Attacks made with a Cathayan longsword give the bearer +1 Initiative and +1 Weapon Skill.</description>
+    </rule>
+    <rule name="Fog of Death" id="42d6-2140-0f7b-0947" hidden="false">
+      <description>A model hit by this weapon must take a Toughness test. If the result failed he will suffer an automatic wound in addition to the censer hit. A result of 6 always inflicts a wound.
+
+Also the model wielding the weapon must take the test as well.
+
+Models of undead and possessed are immune to the fog of death and do not take the test.
+
+If the model wielding this weapon also has the fog-enhancing warpstone shards, he becomes a difficult target to shoot at, and models targeting him with missile weapons suffer a -1 penalty to hit.</description>
+    </rule>
+    <rule name="Flurry" id="40e1-d9f7-d6a9-17de" hidden="false" page="0">
+      <description>A warrior armed with this gets +2 Attacks. This bonus only applies in the first turn of each hand-to-hard combat.</description>
+    </rule>
+    <rule name="Critical Damage" id="5fe0-6885-f726-ec5a" hidden="false">
+      <description>When rolling on the critical hit chart this item will add +1 to the result.</description>
+    </rule>
+    <rule name="Wicked Edge" id="981c-1fd0-eff9-0615" hidden="false">
+      <description>A roll of 2-4 on the injury table is a Stunned result.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
