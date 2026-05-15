@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e020-c282-277b-b173" name="common-data" revision="26" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e020-c282-277b-b173" name="common-data" revision="27" battleScribeVersion="2.03" library="true" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d769-0d85-e810-df60" name="Experience" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
@@ -169,7 +169,7 @@
       </profiles>
       <rules>
         <rule id="fcde-1767-d284-0a32" name="Rarity" hidden="false">
-          <description>Rarity 11</description>
+          <description>Rarity 8</description>
         </rule>
         <rule id="5ec0-4a78-a43c-b0fc" name="Barding" hidden="false">
           <description>Barding is armor for a horse in the same way that light and heavy armor is for a human.
@@ -354,13 +354,28 @@ Warhorses only.</description>
         <entryLink import="true" name="Ithilmar weapon" hidden="false" id="cd57-dd4b-0a49-03e6" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
         <entryLink import="true" name="Obsidian weapon" hidden="false" id="7c7a-f75a-ef9b-682c" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
       </entryLinks>
+      <rules>
+        <rule name="Rarity" id="c716-0294-e6e2-68f7" hidden="false">
+          <description>Common</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" shared="true" childId="6a5f-df89-fcfd-a558" childName="Core" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Cutting edge" id="c406-eb5c-8065-e7d4" hidden="false" type="rule" targetId="4b68-6905-29fd-e549"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="ae81-7b68-5718-38e1" name="Ball and Chain" page="0" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="902b-66e2-0dcd-d1e0" name="Ball and Chain" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user +2</characteristic>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Incredible Force, Random, Two-handed, Cumbersome, Unwieldy</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Incredible Force, Random, Two-handed, Cumbersome, Unwieldy, Goblins only</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -403,6 +418,12 @@ ignores the special rules for Animosity.</description>
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="8b66f7c3-fdd7-fcea-eb91-086959d72140" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="8ae8-558c-e115-6668" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="de0f-ab0b-13a4-cefc" shared="true" childName="Goblin max" includeChildSelections="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="ed29-abf9-056d-41b4" shared="true" childName="1a" includeChildForces="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2145,7 +2166,7 @@ Any missile fire directed at a model equipped with the amulet suffers a penalty 
 The amulet also confers a special save of 5+ against missile fire.</description>
         </rule>
         <rule id="9a8e-26ee-77be-f91c" name="Rarity" hidden="false">
-          <description>Rarity 11</description>
+          <description>Rarity 12 (Amazons only, Rare 11 for Amazons (Lustria))</description>
         </rule>
       </rules>
       <costs>
@@ -2156,6 +2177,13 @@ The amulet also confers a special save of 5+ against missile fire.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6438-8d2c-30b5-11c5" includeChildSelections="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="14f5-6007-fd97-9286" shared="true" childName="1b" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="5595-398a-3e24-de99" name="Bolas" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2719,6 +2747,11 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
           </conditionGroups>
         </modifier>
       </modifiers>
+      <rules>
+        <rule name="Rarity" id="3766-4ca1-f232-ecec" hidden="false">
+          <description>Common (Pirates only)</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry id="282e-5485-a38c-9f14" name="Belaying Pins" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2733,6 +2766,9 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
       <rules>
         <rule id="96a8-4e79-9910-5abd" name="Thrown Weapon" hidden="false">
           <description>Models using Belaying Pins do not suffer any penalties for range, but still suffer a -1 to hit penalty if they use them after moving that turn.</description>
+        </rule>
+        <rule name="Rarity" id="cd3c-3ed7-3810-268f" hidden="false">
+          <description>Common (Pirates only)</description>
         </rule>
       </rules>
       <infoLinks>
@@ -2755,6 +2791,11 @@ Additionally, only 1 attack is allowed, no matter the number on the wielder’s 
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="14f5-6007-fd97-9286" shared="true" childName="1b" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -3321,6 +3362,155 @@ Any and all models in its path are automatically hit by a Strength 3 hit.</descr
       <constraints>
         <constraint type="max" value="1" field="selections" scope="model" shared="true" id="abea-14a7-c3de-8b43" includeChildSelections="true"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Battle Axe" hidden="false" id="110c-0d4c-1350-023f" page="0" collective="false">
+      <profiles>
+        <profile name="Battle Axe" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="bc17-77dc-b78e-b8f8" page="0">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Cutting edge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" gc" typeId="points" value="5"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name=" Rarity" typeId="rarity" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="4df4-ec6a-8b98-1521" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="107d-4e91-a2c1-8987" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="62a0-9744-4fc0-35a8" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+      </entryLinks>
+      <rules>
+        <rule name="Rarity" id="8c79-b098-ab37-5a37" hidden="false">
+          <description>Common</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Cutting edge" id="da05-8afd-a34d-5b51" hidden="false" type="rule" targetId="4b68-6905-29fd-e549"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="ed29-abf9-056d-41b4" shared="true" childName="1a" includeChildForces="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e783-91c9-0f57-a7bb" shared="true" includeChildSelections="true" childName="Beastmen Raiders (1a)" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Barbed Whip" hidden="true" id="30d6-ce0a-5729-4c97">
+      <costs>
+        <cost name=" gc" typeId="points" value="15"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="63d2-cfd5-4ead-bea9" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="0d7a-ef60-5fd7-1054" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="fbee-b0b2-b847-a48d" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Barbed Whip" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="32a5-55b3-adf3-a89f" page="0">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Whipcrack, Cannot Be Parried, Enrage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="6f0e-1734-ff5e-62d8" hidden="false">
+          <description>Rare 9 (One Marauders of Chaos Hero only)</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9644-2155-384d-23ee" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="31a3-4638-92c1-d56a" shared="true" childName="1c" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" shared="true" childId="31a3-4638-92c1-d56a" includeChildSelections="true" childName="1c">
+                  <comment>This should be fixed to Marauders of Chaos Hero only</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Whipcrack" id="1fbe-0cd4-ff12-b943" hidden="false" type="rule" targetId="8c10-4ca4-4d30-e088"/>
+        <infoLink name="Cannot Be Parried" id="1ad9-b97c-ab90-3169" hidden="false" type="rule" targetId="ae40-6413-e61e-444f"/>
+        <infoLink name="Enrage" id="f6f0-efcc-b5bf-c571" hidden="false" type="rule" targetId="4740-9362-830c-c09d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Beastlash" hidden="false" id="275c-35dc-982e-b065">
+      <costs>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="18eb-6bdb-3324-f9c2" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="3147-3ac8-1e24-0740" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="a6c6-9dd6-1fac-df83" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Beastlash" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="ddda-a86c-a71b-60a1" page="0">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user -1</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Beastbane, Cannot Be Parried, Whipcrack</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rarity" id="6ddb-47c3-085b-90f3" hidden="false">
+          <description>Common</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="14f5-6007-fd97-9286" shared="true" childName="1b" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Whipcrack" id="e44d-742b-3a71-eb84" hidden="false" type="rule" targetId="8c10-4ca4-4d30-e088"/>
+        <infoLink name="Beastbane" id="4905-3bc1-5c15-5ee2" hidden="false" type="rule" targetId="e7cb-756c-7cbf-3369"/>
+        <infoLink name="Cannot Be Parried" id="085b-bb0a-85a4-e7e9" hidden="false" type="rule" targetId="ae40-6413-e61e-444f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bec de Corbin" hidden="false" id="7566-da3c-f50d-2bc9">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notEqualTo" value="1" field="selections" scope="4852-c4cb-82b0-b7fa" childId="31a3-4638-92c1-d56a" shared="true" childName="1c" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Bec de Corbin" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon" hidden="false" id="8679-fba2-eb9b-7d95" page="0">
+          <characteristics>
+            <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user +1</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two-handed, Strike First, Concussion</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Obsidian Weapon" hidden="false" id="9407-c32a-4ac6-1594" type="selectionEntry" targetId="8e77-6886-8b6e-2124"/>
+        <entryLink import="true" name="Ithilmar Weapon" hidden="false" id="5b3f-6898-ba38-e159" type="selectionEntry" targetId="f797-886a-f53d-b770"/>
+        <entryLink import="true" name="Gromril Weapon" hidden="false" id="2b07-7d0b-40ea-31a9" type="selectionEntry" targetId="cb4e-de46-b048-02d9"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Two Handed" id="7bbe-fb7a-e361-ecab" hidden="false" type="rule" targetId="2fb3-525b-86c3-2cd6"/>
+        <infoLink name="Strike First" id="42c5-27f2-a3ae-499c" hidden="false" type="rule" targetId="744d-bb7c-09b9-ab1c"/>
+        <infoLink name="Concussion" id="4185-63ea-0318-98c6" hidden="false" type="rule" targetId="f08e-fc7a-fca1-6a49"/>
+      </infoLinks>
+      <rules>
+        <rule name="Rarity" id="090e-7f95-338a-d9a3" hidden="false">
+          <description>Common</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -5616,6 +5806,18 @@ A warrior equipped with an obsidian weapon subtracts 1 from his Initiative attri
 Note that you will still need to score a 6 before any modifiers in order to cause a critical hit.
 </description>
     </rule>
+    <rule name="Cannot Be Parried" id="ae40-6413-e61e-444f" hidden="false">
+      <description>Attempts to parry its strikes are futile. A model attacked by this weapon may not make parries.</description>
+    </rule>
+    <rule name="Beastbane" id="e7cb-756c-7cbf-3369" hidden="false">
+      <description>The model wielding this weapon causes Fear in animals, any animal charged or wishing to charge the bearer with one of these weapons must first take a Fear test.</description>
+    </rule>
+    <rule name="Whipcrack" id="8c10-4ca4-4d30-e088" hidden="false">
+      <description>When the wielder charges they gain +1A for that turn. This bonus attack is added after any other modifications. When the wielder is charged they gain +1A that they may only use against the charger. This additional attack will ‘strike first&apos;. If the wielder is simultaneously charged by two or more opponents they will still only receive a total of +1A. If the wielder is using two whips at the same time then they get +1A for the additional hand weapon, but only the first whip gets the whipcrack +1A.</description>
+    </rule>
+    <rule name="Enrage" id="4740-9362-830c-c09d" hidden="false">
+      <description>The Hero may use his whip to make the Warhounds charge wildly. As long as he is not involved in close combat all Warhounds within 4&quot; gain +1 attack.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="d9c2-4427-8e2b-586a" name="Human max" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -5966,12 +6168,41 @@ Note that you will still need to score a 6 before any modifiers in order to caus
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Core" hidden="false" id="6a5f-df89-fcfd-a558" sortIndex="1">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91b1-1876-1b6c-7dc3-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91b1-1876-1b6c-7dc3-max" includeChildSelections="false"/>
           </constraints>
           <rules>
             <rule name="Core" id="af8d-e505-50ae-531a" hidden="false">
               <description>Published in the original Mordheim Rulebook.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="2a" hidden="false" id="f747-3bf3-fa88-c5fb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6944-4028-b241-03e3" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="2a" id="61e5-8fcb-5e32-6a14" hidden="false">
+              <description>Reliable, created and tested by fans and gaming groups. Will likely blend well with grade 1 warbands.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="2b" hidden="false" id="7eb5-7691-adc9-cb19">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d74-c48b-c109-b2d8" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="2b" id="32ac-876b-fbda-c36c" hidden="false">
+              <description>Supplemental, also reliable, but are better suited for their specific campaign.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="3" hidden="false" id="8b3d-5b13-1443-b689">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="becf-157a-9002-5f66" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="3" id="0fff-15f1-a511-a334" hidden="false">
+              <description>Draft, New rules that have been created but not tested properly.</description>
             </rule>
           </rules>
         </selectionEntry>
