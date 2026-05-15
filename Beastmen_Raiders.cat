@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e783-91c9-0f57-a7bb" name="Beastmen Raiders (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="b758-ee46-f27e-58dd" name="Beastman Rules" shortName="Beastman" publisher="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf" publisherUrl="https://broheim.net/downloads/warbands/unofficial/Beastmen%2C%20Errata%27d.pdf"/>
   </publications>
@@ -1269,12 +1269,15 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
       <constraints>
-        <constraint type="max" value="10" field="selections" scope="roster" shared="false" id="fe4d-b148-7095-426e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="1a6c-a44f-5a6f-3f2c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8550-3c54-3cff-edaa"/>
       </constraints>
     </selectionEntry>
     <selectionEntry id="f882-12d0-ce5c-f7c1" name="Gor" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dba6-c9f9-d647-200e" type="max"/>
+        <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="5e58-515a-1bfa-68e7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef73-8cdd-c369-5f0c"/>
       </constraints>
       <profiles>
         <profile id="4ce3-0df4-7fde-d4c0" name="Gor" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
@@ -1588,6 +1591,7 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
     <selectionEntry id="3da6-37c6-6fd0-c92f" name="Minotaur" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3059-f02c-3471-4848" type="max"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b6c0-d072-f045-b4e9"/>
       </constraints>
       <profiles>
         <profile id="f559-c836-bb3c-fdb4" name="Minotaur" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
