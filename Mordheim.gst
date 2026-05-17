@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" name="Mordheim" revision="17" battleScribeVersion="2.03" authorName="Uncle Mel" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="9481a749-7900-614b-1695-bdc2899069c1" name="Mordheim" revision="18" battleScribeVersion="2.03" authorName="Uncle Mel" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>If a Henchmen is promoted, Duplicate the henchmen group, remove 1 from the original group and set the promoted henchmen to 1 model. Battlescribe doesn&apos;t support splitting groups or dynamically changing categories</readme>
   <publications>
     <publication id="ff7c-2cb8-2105-563f" name="GitHub" publisherUrl="https://github.com/BSData/mordheim"/>
