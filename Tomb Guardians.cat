@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7d2b-89ab-a974-f328" name="Tomb Guardians (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7d2b-89ab-a974-f328" name="Tomb Guardians (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="488d-4919-cbab-67d9" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -10,7 +10,7 @@
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="7d5c-8375-6ad5-7941" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" id="2c93-1b29-c17d-3d00" type="selectionEntry" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="d9e0-5145-7cb4-aa5" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Hammer" hidden="false" id="d9e0-5145-7cb4-aa5" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Mace" field="name"/>
               </modifiers>
@@ -40,7 +40,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="c89a-2648-5b3e-1564" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="3a6c-5a3-5e1d-f98e" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="3a6c-5a3-5e1d-f98e" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="380a-b8cb-bc0-987a" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -108,7 +108,7 @@ Any attack with a ranged weapon performed using these arrows benefits from a +1 
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="2128-55da-7c41-703a" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" id="d21b-b6e9-19a3-d53f" type="selectionEntry" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="a1ee-bebd-85aa-1c03" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Hammer" hidden="false" id="a1ee-bebd-85aa-1c03" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Mace, Staff" field="name"/>
               </modifiers>
@@ -750,13 +750,13 @@ Place the model anywhere within 6&quot; of the Liche Priest, but not straight in
       </profiles>
       <infoLinks>
         <infoLink name="Leader" id="9fcf-3754-28b5-901d" hidden="false" targetId="8712-d0f2-fe64-07bd" type="rule"/>
-        <infoLink name="Unknown" id="c014-7118-2dbe-28a0" hidden="false" targetId="4276-a1f7-88b6-ae4c" type="profile"/>
+        <infoLink name="Tomb Lord (Mummy) max" id="c014-7118-2dbe-28a0" hidden="false" targetId="4276-a1f7-88b6-ae4c" type="profile"/>
         <infoLink name="Fear" id="10a8-b6dd-3e92-e1d4" hidden="false" type="rule" targetId="cdc8-da3b-a2ed-d841"/>
-        <infoLink name="Unknown" id="969-37f7-6d6e-ce03" hidden="false" type="rule" targetId="114e-939e-220b-403"/>
+        <infoLink name="Immune to Psychology" id="969-37f7-6d6e-ce03" hidden="false" type="rule" targetId="114e-939e-220b-403"/>
         <infoLink name="Do not Drink" id="5b8b-d267-2d4-64c1" hidden="false" type="rule" targetId="78d7-f07e-65e2-b830"/>
         <infoLink name="No Pain" id="fef2-6a04-47da-b60a" hidden="false" type="rule" targetId="54c4-5d87-e5c5-f0dc"/>
-        <infoLink name="Immune to poison" id="6aa6-52eb-e39b-84eb" hidden="false" type="rule" targetId="f654-2dea-4f11-5730"/>
-        <infoLink name="May not run" id="1fec-61ae-3157-2b8c" hidden="false" type="rule" targetId="8f9a-f7a4-45f0-6918"/>
+        <infoLink name="Immune to Poison" id="6aa6-52eb-e39b-84eb" hidden="false" type="rule" targetId="f654-2dea-4f11-5730"/>
+        <infoLink name="May not Run" id="1fec-61ae-3157-2b8c" hidden="false" type="rule" targetId="8f9a-f7a4-45f0-6918"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Heroes" hidden="false" id="cc61-c674-283b-5d0d" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
@@ -800,7 +800,7 @@ Place the model anywhere within 6&quot; of the Liche Priest, but not straight in
         <entryLink import="true" name="Undead Equipment" hidden="false" id="c51e-a10f-a589-ddb2" collective="false" targetId="982b-baae-2892-3979" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="acf-6940-652f-a948" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="3a83-a4bf-968f-ab1c" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="3516-e568-d2e-da90" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="3516-e568-d2e-da90" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1066,8 +1066,8 @@ A hit from a fire-based attack will cause double the normal number of wounds o
         <infoLink name="Immune to Psychology" id="ca42-2484-949e-2689" hidden="false" type="rule" targetId="114e-939e-220b-403"/>
         <infoLink name="Do not Drink" id="6d25-5386-8959-d0c" hidden="false" type="rule" targetId="78d7-f07e-65e2-b830"/>
         <infoLink name="No Pain" id="269a-5afd-8d35-6555" hidden="false" type="rule" targetId="54c4-5d87-e5c5-f0dc"/>
-        <infoLink name="Immune to poison" id="82f5-d1d1-ea85-1e3b" hidden="false" type="rule" targetId="f654-2dea-4f11-5730"/>
-        <infoLink name="May not run" id="edc3-60d6-84ce-b4ac" hidden="false" type="rule" targetId="8f9a-f7a4-45f0-6918"/>
+        <infoLink name="Immune to Poison" id="82f5-d1d1-ea85-1e3b" hidden="false" type="rule" targetId="f654-2dea-4f11-5730"/>
+        <infoLink name="May not Run" id="edc3-60d6-84ce-b4ac" hidden="false" type="rule" targetId="8f9a-f7a4-45f0-6918"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Heroes" hidden="false" id="6f86-bf1d-6aa6-5bb3" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
@@ -1408,8 +1408,8 @@ A hit from a fire-based attack will cause double the normal number of wounds o
         <infoLink name="Immune to Psychology" id="9ebc-41d0-d971-8ad5" hidden="false" type="rule" targetId="114e-939e-220b-403"/>
         <infoLink name="Do not Drink" id="6ecc-da11-ac08-e16" hidden="false" type="rule" targetId="78d7-f07e-65e2-b830"/>
         <infoLink name="No Pain" id="c5df-8d1a-25c5-9b58" hidden="false" type="rule" targetId="54c4-5d87-e5c5-f0dc"/>
-        <infoLink name="Immune to poison" id="536e-5535-f22d-5303" hidden="false" type="rule" targetId="f654-2dea-4f11-5730"/>
-        <infoLink name="May not run" id="88a9-6911-443b-4321" hidden="false" type="rule" targetId="8f9a-f7a4-45f0-6918"/>
+        <infoLink name="Immune to Poison" id="536e-5535-f22d-5303" hidden="false" type="rule" targetId="f654-2dea-4f11-5730"/>
+        <infoLink name="May not Run" id="88a9-6911-443b-4321" hidden="false" type="rule" targetId="8f9a-f7a4-45f0-6918"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Heroes" hidden="false" id="8719-92a9-1c9b-52c5" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
@@ -1696,10 +1696,10 @@ A hit from a fire-based attack will cause double the normal number of wounds o
         <infoLink name="Do not Drink" id="2595-7ec-fbdd-e3d0" hidden="false" type="rule" targetId="78d7-f07e-65e2-b830"/>
         <infoLink name="Fear" id="b214-4bb6-1b89-9275" hidden="false" type="rule" targetId="cdc8-da3b-a2ed-d841"/>
         <infoLink name="Immune to Psychology" id="7337-dce4-256b-a334" hidden="false" type="rule" targetId="114e-939e-220b-403"/>
-        <infoLink name="Unknown" id="1bd2-c707-3c83-af4" hidden="false" type="rule" targetId="52a8-95d9-6982-5db5"/>
+        <infoLink name="No Brain" id="1bd2-c707-3c83-af4" hidden="false" type="rule" targetId="52a8-95d9-6982-5db5"/>
         <infoLink name="No Pain" id="111e-44b7-98ce-a26a" hidden="false" type="rule" targetId="54c4-5d87-e5c5-f0dc"/>
-        <infoLink name="Immune to poison" id="c869-e59e-8c54-2e2" hidden="false" type="rule" targetId="f654-2dea-4f11-5730"/>
-        <infoLink name="May not run" id="ab31-b55f-2929-5e1d" hidden="false" type="rule" targetId="8f9a-f7a4-45f0-6918"/>
+        <infoLink name="Immune to Poison" id="c869-e59e-8c54-2e2" hidden="false" type="rule" targetId="f654-2dea-4f11-5730"/>
+        <infoLink name="May not Run" id="ab31-b55f-2929-5e1d" hidden="false" type="rule" targetId="8f9a-f7a4-45f0-6918"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Extra Equipment" hidden="false" id="3bbf-d395-3c3d-a1e9" collective="false">
@@ -1853,8 +1853,8 @@ A hit from a fire-based attack will cause double the normal number of wounds o
         <infoLink name="Immune to Psychology" id="afe9-ccda-b125-b16c" hidden="false" type="rule" targetId="114e-939e-220b-403"/>
         <infoLink name="No Brain" id="fb7-79f0-263-63d4" hidden="false" type="rule" targetId="52a8-95d9-6982-5db5"/>
         <infoLink name="No Pain" id="fe66-646f-d0ab-88fd" hidden="false" type="rule" targetId="54c4-5d87-e5c5-f0dc"/>
-        <infoLink name="Immune to poison" id="3292-5e8a-c9ff-2576" hidden="false" type="rule" targetId="f654-2dea-4f11-5730"/>
-        <infoLink name="May not run" id="10b3-964d-bdd1-4418" hidden="false" type="rule" targetId="8f9a-f7a4-45f0-6918"/>
+        <infoLink name="Immune to Poison" id="3292-5e8a-c9ff-2576" hidden="false" type="rule" targetId="f654-2dea-4f11-5730"/>
+        <infoLink name="May not Run" id="10b3-964d-bdd1-4418" hidden="false" type="rule" targetId="8f9a-f7a4-45f0-6918"/>
         <infoLink name="Liche &amp; Accolyte (Mummy) max" id="2500-9035-a5f5-3c8f" hidden="false" type="profile" targetId="8bc-2e8-d672-82d4"/>
       </infoLinks>
       <selectionEntries>
@@ -2361,7 +2361,7 @@ If the chariot is hit, roll a D6 to see where it is hit: 1-2 steed, 3-4 chari
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Extra Gold Cost" hidden="false" id="77ae-a4e-9947-de2d" type="selectionEntry" targetId="deca-5737-6234-23a1">
+        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="77ae-a4e-9947-de2d" type="selectionEntry" targetId="deca-5737-6234-23a1">
           <constraints>
             <constraint type="max" value="60" field="selections" scope="parent" shared="true" id="8e4c-4856-ad2c-e3d2" includeChildSelections="false"/>
             <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="c07-2a87-1acd-500e" includeChildSelections="false"/>
@@ -2378,7 +2378,7 @@ If the chariot is hit, roll a D6 to see where it is hit: 1-2 steed, 3-4 chari
         <categoryLink name="Stash" hidden="false" id="3507-8817-d99a-4575" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Gold" hidden="false" id="8864-7d5e-f08e-36d5" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="8864-7d5e-f08e-36d5" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="48f6-41e6-a802-efd0" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
         <entryLink import="true" name="Equipment" hidden="false" id="7709-d489-f21c-438f" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2386,6 +2386,26 @@ If the chariot is hit, roll a D6 to see where it is hit: 1-2 steed, 3-4 chari
         <cost name="pts" id="3ce4-5a1d-c58d-5373" hidden="false" typeId="points" value="0"/>
         <cost name="Warband Rating" id="5bf8-9e99-5de-2367" hidden="false" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="7711-7b3d-5f0f-65b0" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="3bf9-4d65-e8eb-4377" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="79ca-cd02-dd81-97e5-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="79ca-cd02-dd81-97e5-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Home Ground" id="567e-b092-2e55-f124" hidden="false">
+          <description>The Tomb Guardians live in the Necropolises and have no trouble locating the hidden tombs in search of weapons and armor to help them defend their homes. 
+
+
+A Tomb Guardian warband always roll one extra dice in the Exploration phase.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="e48e-979e-6797-28c3" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

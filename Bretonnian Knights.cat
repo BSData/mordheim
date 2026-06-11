@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4ffc-66b0-fbc6-5a24" name="Bretonnian Knights (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4ffc-66b0-fbc6-5a24" name="Bretonnian Knights (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="7d32-487d-bc16-1db1" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -36,12 +36,12 @@ If any enemy model wishes to shoot at a Bretonnian Knight (Questing Knights an
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="4b9-fdf8-84dd-3113" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="fb63-22d7-1cc4-ff04" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" type="selectionEntry" id="4cec-1af6-13a5-29e4" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Hammer" hidden="false" type="selectionEntry" id="4cec-1af6-13a5-29e4" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Mace" field="name"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="5def-eac6-eeda-7cc7" targetId="34fd-d6a3-50ee-ee06" />
+            <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="5def-eac6-eeda-7cc7" targetId="34fd-d6a3-50ee-ee06"/>
             <entryLink import="true" name="Axe" hidden="false" type="selectionEntry" id="b0ba-11ef-808e-3250" targetId="5d01-06b9-3a86-73c9"/>
             <entryLink import="true" name="Double Handed Weapon" hidden="false" type="selectionEntry" id="c9ae-26b4-b2cd-bf00" targetId="a0a1-b311-e3aa-6c3b"/>
             <entryLink import="true" name="Morning Star" hidden="false" type="selectionEntry" id="d1e4-34bc-5ff7-a80a" targetId="d5f3-1906-da91-4e8f"/>
@@ -64,8 +64,8 @@ If any enemy model wishes to shoot at a Bretonnian Knight (Questing Knights an
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="c897-77c2-58af-4587">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="466e-a6ed-e998-d4b5" targetId="3d2a-426a-c350-2a03"/>
-            <entryLink import="true" name="Heavy Armor" hidden="false" type="selectionEntry" id="d394-fbf9-8e11-945b" targetId="4e34-bbc5-c7ef-6bd6"/>
+            <entryLink import="true" name="Light Armour" hidden="false" type="selectionEntry" id="466e-a6ed-e998-d4b5" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" type="selectionEntry" id="d394-fbf9-8e11-945b" targetId="4e34-bbc5-c7ef-6bd6"/>
             <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="2fa4-893b-c61d-ec4e" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" type="selectionEntry" id="8760-518-7a4-a259" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Warhorse" hidden="false" type="selectionEntry" id="7fb2-14f7-7311-af1a" targetId="7863-e620-5c6e-7eee"/>
@@ -80,7 +80,7 @@ If any enemy model wishes to shoot at a Bretonnian Knight (Questing Knights an
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="e17b-9488-4024-7444" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="697d-86eb-9722-e7f9" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" type="selectionEntry" id="9ddd-ba89-2689-a837" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Hammer" hidden="false" type="selectionEntry" id="9ddd-ba89-2689-a837" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
@@ -95,7 +95,7 @@ If any enemy model wishes to shoot at a Bretonnian Knight (Questing Knights an
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="3c5c-107f-a288-2b6f">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="1e88-6c6f-9b3e-e3e7" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" type="selectionEntry" id="1e88-6c6f-9b3e-e3e7" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="244f-f307-1017-bafc" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" type="selectionEntry" id="56ac-8ec6-be7c-3a0" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Buckler" hidden="false" type="selectionEntry" id="894d-1447-cc8-6c27" targetId="0871-44c2-f0f0-c27a"/>
@@ -119,12 +119,12 @@ If any enemy model wishes to shoot at a Bretonnian Knight (Questing Knights an
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="e851-30c0-1e9c-52a2" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="fd6b-8542-1277-9f1a" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" type="selectionEntry" id="a187-4524-eac0-d2b7" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Hammer" hidden="false" type="selectionEntry" id="a187-4524-eac0-d2b7" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Mace" field="name"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="ea88-dc7-9478-5be8" targetId="34fd-d6a3-50ee-ee06" />
+            <entryLink import="true" name="Sword" hidden="false" type="selectionEntry" id="ea88-dc7-9478-5be8" targetId="34fd-d6a3-50ee-ee06"/>
             <entryLink import="true" name="Double Handed Weapon" hidden="false" type="selectionEntry" id="90d-3b9b-5a85-a002" targetId="a0a1-b311-e3aa-6c3b"/>
             <entryLink import="true" name="Spear" hidden="false" type="selectionEntry" id="3983-6285-45af-d2ea" targetId="005e-e397-8108-f198"/>
             <entryLink import="true" name="Axe" hidden="false" type="selectionEntry" id="dc03-90a8-d175-a98e" targetId="5d01-06b9-3a86-73c9"/>
@@ -143,7 +143,7 @@ If any enemy model wishes to shoot at a Bretonnian Knight (Questing Knights an
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="10ea-42e3-6f1f-25f7">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="79e1-1efc-a1d9-fe55" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" type="selectionEntry" id="79e1-1efc-a1d9-fe55" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="22af-954e-9788-db32" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" type="selectionEntry" id="f756-4768-63d2-c586" targetId="d0e5-ca89-5f0d-f5d2"/>
           </entryLinks>
@@ -176,7 +176,7 @@ If any enemy model wishes to shoot at a Bretonnian Knight (Questing Knights an
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="1a61-3ecd-3e4a-d1f6">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="592b-f3ef-1a53-5e9c" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" type="selectionEntry" id="592b-f3ef-1a53-5e9c" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Helmet" hidden="false" type="selectionEntry" id="fa12-5f5b-bab0-b88e" targetId="d0e5-ca89-5f0d-f5d2"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -1176,7 +1176,7 @@ He will never panic and break from combat and so does not have to pass a Leade
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Stash" hidden="false" id="65be-ab2e-83e9-18e4" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Stash" hidden="false" id="65be-ab2e-83e9-18e4" collective="false" page="0">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cdb2-f4da-df98-7821" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d85-ab23-048b-33b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1185,7 +1185,11 @@ He will never panic and break from combat and so does not have to pass a Leade
         <categoryLink name="Stash" hidden="false" id="fd96-0f06-a088-550b" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Gold" hidden="false" id="730a-2de1-017c-a997" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="730a-2de1-017c-a997" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="Gold" field="name"/>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="0823-2adf-aeaa-123f" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
         <entryLink import="true" name="Equipment" hidden="false" id="8866-b0ba-b7e4-b2dc" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
@@ -1193,6 +1197,44 @@ He will never panic and break from combat and so does not have to pass a Leade
         <cost name="pts" id="de11-9c58-9b21-0d9e" hidden="false" typeId="points" value="0"/>
         <cost name="Warband Rating" id="339b-1569-9e96-1c71" hidden="false" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="b540-b69b-580d-948c" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="cbc9-fb6e-a215-1e43" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="1ade-2323-8682-2599-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1ade-2323-8682-2599-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Blessing of the Lake" id="a92f-9cca-a91c-0d0a" hidden="false">
+          <description>Before heading into battle Bretonnian Knights kneel and pray to the Lady of the Lake , avowing to fight to the death for honour and justice.
+
+
+Before playing a game of Mordheim make a Leadership test against the Leadership characteristic of the warbands leader.
+
+
+If the test is successful the Lady of the Lake has bestowed her blessing on the warband.
+
+
+The blessing takes the form of a powerful curse upon the enemies of chivalry; and in particular upon those that make use of the foul and dishonourable weapons of mass destruction.
+
+
+Any model in the opposing warband who wishes to fire a black powder weapon must roll a D6 and score 4 + to overcome the curse, otherwise they may not fire the weapon.
+
+
+The opposing player must test each time they wish to fire such a weapon.
+
+
+Models armed with other shooting weapons, such as bows and crossbows, do not have to test unless they dare raise their weapons against the gallant Knights of Bretonnia.
+
+
+If any enemy model wishes to shoot at a Bretonnian Knight (Questing Knights and Errants only), then they must first roll a 4+ on a D6 to overcome the curse.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="7e3f-df0a-8e82-df6a" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

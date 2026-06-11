@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4cde-fbe1-d53-81d1" name="Battle Monks of Cathay (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4cde-fbe1-d53-81d1" name="Battle Monks of Cathay (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="2085-9795-666b-65cf" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -37,7 +37,7 @@
         <selectionEntryGroup name="Missile Weapons" id="626a-4ada-d264-73b" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Handgun" hidden="false" id="994e-1634-55a-948c" collective="false" targetId="7f5a-d04d-153d-d334" type="selectionEntry"/>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="1652-b8b0-5718-b558" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
+            <entryLink import="true" name="Duelling Pistol" hidden="false" id="1652-b8b0-5718-b558" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
               <modifiers>
                 <modifier type="set" value="25" field="points"/>
               </modifiers>
@@ -51,10 +51,10 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="d3fc-126d-4fe5-a3f9" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="ff48-87b5-1d83-73c8" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="ff48-87b5-1d83-73c8" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="430b-dd28-4f1e-7ba7" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="1627-bb9a-f46a-89a5" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
-            <entryLink import="true" name="Heavy Armor" hidden="false" id="a9ed-305b-94b2-c8c2" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="a9ed-305b-94b2-c8c2" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Miscellaneous Equipment" id="a7b8-2cc1-8ba6-47df" hidden="true">
@@ -2352,7 +2352,11 @@ The model is immediately taken out of action.</description>
         <categoryLink name="Stash" hidden="false" id="24a6-be66-7314-ac9e" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Gold" hidden="false" id="aedd-4f11-98c9-6a" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="aedd-4f11-98c9-6a" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="Gold" field="name"/>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="4c00-f2e1-25d9-6ea9" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
         <entryLink import="true" name="Equipment" hidden="false" id="5c93-c3e5-27af-c68a" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2360,6 +2364,39 @@ The model is immediately taken out of action.</description>
         <cost name="pts" id="c96d-b86f-261c-3d05" hidden="false" typeId="points" value="0"/>
         <cost name="Warband Rating" id="5138-9a98-8d3e-c73a" hidden="false" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="6aab-1ffc-4d14-8a59" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="49b4-d5bf-05cc-b6f9" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="d088-731c-e3ea-77c8-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d088-731c-e3ea-77c8-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Distaste for Poison" id="9cc9-e5c8-f86a-194d" hidden="false">
+          <description>The use of poisons and various drugs is a speciality for dishonourable warriors who would stoop to such ends.
+
+
+Dragon Monks and Warrior Monks frown on this and may never use any kind of poison or venom.</description>
+        </rule>
+        <rule name="Outsiders" id="58a5-ac18-8c0b-c8e3" hidden="false">
+          <description>Foreigners are generally considered unwelcome by the border guards of Cathay. 
+
+
+The Battle Monks warband may never hire any sort of Hired Sword or Dramatis Personae unless specifically stated with the Hired sword/Dramatis Personae.</description>
+        </rule>
+        <rule name="Strictures" id="3e85-458b-ca62-a766" hidden="false">
+          <description>A stringent regime of meditation is used by monks.
+Their faith is supported by a notion that the skin of ones body is armor in itself. 
+
+
+Dragon Monks and Warrior Monks never wear any kind of armor.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="e71f-cbf6-5352-ef9f" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

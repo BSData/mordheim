@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a808d69a-88e2-9484-b24a-181ea44917e5" name="Shadow Warriors (1b)" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a808d69a-88e2-9484-b24a-181ea44917e5" name="Shadow Warriors (1b)" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="83acbe09-ec66-c45c-0f5b-1a9e0017016e" name="Shadow Master" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1142,6 +1142,38 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
         <cost name="pts" typeId="points" value="0"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="13d4-f43c-af1f-ecdf" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="a335-35a9-5037-5085" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="23c5-39d2-8761-4982-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="23c5-39d2-8761-4982-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Excellent Sight" id="6096-a283-4b83-d99c" hidden="false">
+          <description>All the Elves in a
+Shadow Warrior Warband can spot Hidden
+enemies from twice as far away as other
+warriors (i.e. twice their Initiative in inches).</description>
+        </rule>
+        <rule name="Hate Dark Elves" id="265c-c503-4f3f-104e" hidden="false">
+          <description>All warriors in a Shadow Warrior Warband (excluding any Hired Swords) have an unyielding Hatred for Dark Elves.</description>
+        </rule>
+        <rule name="Tolerant" id="7d6a-3480-8912-51be" hidden="false">
+          <description>A Shadow Warrior Warband may hire any Hired Sword that is not of a Chaotic or evil bent (so no Skaven,Possessed, Beastmen, Dark Elves, Undead,etc.). They also shun the company of anyone specialising in the use of poison (so no Assassins).</description>
+        </rule>
+        <rule name="Unforgiving" id="c1a6-1cec-1408-5047" hidden="false">
+          <description>a Shadow Warrior warband may never forge an alliance
+with any Warband of a Chaotic nature
+(Possessed, Skaven, Beastmen, Dark Elves,
+etc.).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP Adancement" id="bdc4-3ab9-295a-d5af" hidden="false" targetId="bd2100cc-65f9-2311-e4b9-d0e6830884c3" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

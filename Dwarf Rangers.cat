@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1df8-a2ec-8d5c-c7b" name="Dwarf Rangers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1df8-a2ec-8d5c-c7b" name="Dwarf Rangers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Don’t Trust ‘Em" hidden="false" id="c420-9cfa-bfde-368a">
       <description>While Ranger Warbands are free to ally with other Dwarf warbands in multi-player games, their point of view is so different that they do not trust them fully.
@@ -31,7 +31,7 @@ Later purchases of Gromril weapons are done using the Price Charts in the Mordh
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="d040-797a-8497-943d" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="8786-cd1d-6cfd-92e2" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" type="selectionEntry" id="4801-7df7-4eda-2429" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Hammer" hidden="false" type="selectionEntry" id="4801-7df7-4eda-2429" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Mace, Hammer" field="name"/>
               </modifiers>
@@ -72,8 +72,8 @@ Later purchases of Gromril weapons are done using the Price Charts in the Mordh
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="337d-3438-261d-a99a">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="bc4f-e83-34a5-91c1" targetId="3d2a-426a-c350-2a03"/>
-            <entryLink import="true" name="Heavy Armor" hidden="false" type="selectionEntry" id="f70f-d546-cfa-34ba" targetId="4e34-bbc5-c7ef-6bd6"/>
+            <entryLink import="true" name="Light Armour" hidden="false" type="selectionEntry" id="bc4f-e83-34a5-91c1" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" type="selectionEntry" id="f70f-d546-cfa-34ba" targetId="4e34-bbc5-c7ef-6bd6"/>
             <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="4c71-f0ae-4816-4332" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" type="selectionEntry" id="b733-eb64-ee58-3680" targetId="d0e5-ca89-5f0d-f5d2"/>
           </entryLinks>
@@ -94,7 +94,7 @@ Later purchases of Gromril weapons are done using the Price Charts in the Mordh
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" type="selectionEntry" id="f23e-fc94-d5e2-9204" targetId="0d0b-ed37-d8b0-4cbf"/>
             <entryLink import="true" name="Dagger" hidden="false" type="selectionEntry" id="b1d3-3d4-7a51-be34" targetId="64e0-0bb6-542b-4beb"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" type="selectionEntry" id="50d2-bdc6-2dc0-fdcf" targetId="cfcc-39fd-aeb4-876a">
+            <entryLink import="true" name="Hammer" hidden="false" type="selectionEntry" id="50d2-bdc6-2dc0-fdcf" targetId="cfcc-39fd-aeb4-876a">
               <modifiers>
                 <modifier type="set" value="Mace, Hammer" field="name"/>
               </modifiers>
@@ -123,8 +123,8 @@ Later purchases of Gromril weapons are done using the Price Charts in the Mordh
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="a789-83f8-6600-f498">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" type="selectionEntry" id="926a-36b9-ae54-f23f" targetId="3d2a-426a-c350-2a03"/>
-            <entryLink import="true" name="Heavy Armor" hidden="false" type="selectionEntry" id="60f5-4828-3bcb-8d5b" targetId="4e34-bbc5-c7ef-6bd6"/>
+            <entryLink import="true" name="Light Armour" hidden="false" type="selectionEntry" id="926a-36b9-ae54-f23f" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" type="selectionEntry" id="60f5-4828-3bcb-8d5b" targetId="4e34-bbc5-c7ef-6bd6"/>
             <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="555c-8074-9d14-4dcd" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" type="selectionEntry" id="5a1a-a7b0-8e0f-fbda" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Gromril Armour" hidden="false" type="selectionEntry" id="3b5c-88c7-75-4b77" targetId="4c6d-eb92-53a7-a6d3">
@@ -3245,7 +3245,11 @@ Remember that you can never reroll a reroll, so the result of this second roll 
         <categoryLink name="Stash" hidden="false" id="1fd0-128d-bf93-d21e" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Gold" hidden="false" id="9e33-d702-6f7-422f" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="9e33-d702-6f7-422f" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="Gold" field="name"/>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="a22b-ab24-c787-51cd" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
         <entryLink import="true" name="Equipment" hidden="false" id="f84-8be6-b661-8f32" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
@@ -3253,6 +3257,42 @@ Remember that you can never reroll a reroll, so the result of this second roll 
         <cost name="pts" id="8517-8812-cd77-d2b0" hidden="false" typeId="points" value="0"/>
         <cost name="Warband Rating" id="5acd-8079-9a47-7749" hidden="false" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="0282-6e4b-e6d6-6309" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="3cb3-0094-e80e-4f17" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="9785-16d5-7b4b-6fd6-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9785-16d5-7b4b-6fd6-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Don’t Trust ‘Em" id="aeb7-32ae-021c-141e" hidden="false">
+          <description>While Ranger Warbands are free to ally with other Dwarf warbands in multi-player games, their point of view is so different that they do not trust them fully.
+
+
+Members of a Dwarf Rangers warband are never considered ‘friendly models’ to other dwarfs and vice versa.
+
+
+This means that members of one warband WILL stop members of the other from Marching, they won’t keep each other from taking All Alone tests, etc.
+
+
+They don’t count as enemy models and may split any treasure found at the end of the game as normal, but the two bands are not friends, make no mistake!</description>
+        </rule>
+        <rule name="Starting Gromril weapons" id="0135-474f-db6d-2ff7" hidden="false">
+          <description>Any weapon a Dwarf may normally purchase may be purchased as a Gromril weapon instead.
+This multiplies the cost of the weapon by three.
+
+
+Note that this price is only for a starting warband, as it represents the Dwarfs outfitting themselves at their own stronghold.
+
+
+Later purchases of Gromril weapons are done using the Price Charts in the Mordheim rulebook.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="b836-7557-6931-c1fb" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

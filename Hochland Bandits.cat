@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ff8e-be11-7016-5abc" name="Hochland Bandits (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ff8e-be11-7016-5abc" name="Hochland Bandits (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="3737-518b-3731-edba" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -3297,7 +3297,7 @@ Gutterscum do not gain experience.</description>
         <categoryLink name="Stash" hidden="false" id="4413-51bc-e7f6-4c75" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Gold" hidden="false" id="cf30-b16c-1fc2-1c05" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="cf30-b16c-1fc2-1c05" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="3202-ccd3-cd37-7ba7" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
         <entryLink import="true" name="Equipment" hidden="false" id="3801-d53b-ebb9-a2e0" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
@@ -3305,6 +3305,43 @@ Gutterscum do not gain experience.</description>
         <cost name="pts" hidden="false" id="791a-909d-67c8-ee5e" typeId="points" value="0"/>
         <cost name="Warband Rating" hidden="false" id="c87c-e48c-2c-2284" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="79b6-ea8b-9b00-7aa5" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="ad58-2c8e-1f6c-76ee" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="c16b-d26f-00cd-0b8d-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c16b-d26f-00cd-0b8d-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Foragers" id="8e17-0561-47cf-20cc" hidden="false">
+          <description>Bandits are used to lean times, and know how to make their gold stretch.
+Because of this, they usually have fewer expenses between adventures.
+When determining Income for a Bandit warband, always use the next lower warband size category (a warband with 1-3 members still uses the first column however!).
+For example, a warband with 15 members finds 4 Treasures in the Exploration Phase.
+When they sell these Treasures, they use the 10-12 members column instead of the 13-15 members column, resulting in a gain of 5 gold pieces for the warband.</description>
+        </rule>
+        <rule name="Hired Swords" id="a196-1e38-1a48-2fad" hidden="false">
+          <description>Bandits have no compunction about hiring mercenaries, and may hire any Hired Swords allowed to a Human Mercenary warband.</description>
+        </rule>
+        <rule name="Know Who To Sell To" id="bb9e-9450-8732-1e25" hidden="false">
+          <description>Bandits are used to getting rid of stolen goods, and have built up contacts for doing so.
+When a Bandit warband sells equipment, they get half of any random element of the equipment cost, in addition to the normal half of the item&apos;s basic cost.</description>
+        </rule>
+        <rule name="Powder&apos;s Expensive!" id="fd92-48e7-38f3-5d54" hidden="false">
+          <description>Bandits are often too poor to purchase or upkeep expensive equipment like gunpowder weapons.
+
+
+The exception to this is Bandit heroes, who often see such extravagances as pistols as symbols of their status and higher wealth.
+
+
+The higher costs for black powder weapons in the equipment chart, and the fact that henchmen can&apos;t purchase them at all, reflect the extreme rarity of these types of weapons for Bandit warbands.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="2ea9-df57-f59a-80ea" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -3401,7 +3438,7 @@ If an Enemy warrior is attempting to detect the bandit While he is Hidden, rol
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="8488-c598-435d-811c" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="8201-82eb-953d-40e9" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="e664-2b40-3e2-ec4b" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="e664-2b40-3e2-ec4b" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
@@ -3440,7 +3477,7 @@ If an Enemy warrior is attempting to detect the bandit While he is Hidden, rol
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="2970-d7cf-786c-eef2" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="857d-8c52-2aec-4d4" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="857d-8c52-2aec-4d4" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="1ade-2c0d-1b4a-8525" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="ae91-540d-91b5-7081" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
           </entryLinks>
@@ -3453,7 +3490,7 @@ If an Enemy warrior is attempting to detect the bandit While he is Hidden, rol
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="b224-98d6-264e-e68a" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="6ace-f201-9c83-8021" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="9a0b-f275-8d55-f506" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="9a0b-f275-8d55-f506" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
@@ -3505,7 +3542,7 @@ If an Enemy warrior is attempting to detect the bandit While he is Hidden, rol
                 <modifier type="set" value="Pistol *" field="name"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="4dfd-89bc-7358-29ac" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
+            <entryLink import="true" name="Duelling Pistol" hidden="false" id="4dfd-89bc-7358-29ac" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
               <modifiers>
                 <modifier type="set" value="Dueling Pistol *" field="name"/>
               </modifiers>
@@ -3517,7 +3554,7 @@ If an Enemy warrior is attempting to detect the bandit While he is Hidden, rol
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="57af-e50d-defe-23e6" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="77c3-a34a-147-c69" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="77c3-a34a-147-c69" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="8fee-325e-5f59-c619" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="79ce-96a9-6bee-319e" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Buckler" hidden="false" id="1dfa-6111-7baf-eda7" type="selectionEntry" targetId="0871-44c2-f0f0-c27a">
@@ -3554,7 +3591,7 @@ If an Enemy warrior is attempting to detect the bandit While he is Hidden, rol
         <selectionEntryGroup name="Missile Weapons" hidden="false" id="7339-7fa4-7a48-efcc" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="18ae-56aa-7770-79ba" collective="false" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="df20-64f6-bb87-94b9" type="selectionEntry" targetId="da24-6a7f-725b-5bcb"/>
+            <entryLink import="true" name="Duelling Pistol" hidden="false" id="df20-64f6-bb87-94b9" type="selectionEntry" targetId="da24-6a7f-725b-5bcb"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b27f-5d4c-c936-2270"/>

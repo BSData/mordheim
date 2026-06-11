@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c315-31da-1718-4dde" name="Ostermarkers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c315-31da-1718-4dde" name="Ostermarkers (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="70d7-f26c-2d0f-b6a1" targetId="e020-c282-277b-b173"/>
     <catalogueLink type="catalogue" name="Characters" id="340f-935f-33ea-76d8" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1"/>
@@ -11,7 +11,7 @@
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="aba3-222a-8137-8452" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="a44e-b24f-7dfa-29af" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="f2e-9eb8-5190-ffe0" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="f2e-9eb8-5190-ffe0" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -41,7 +41,7 @@
         <selectionEntryGroup name="Missile Weapons" hidden="false" id="184c-1326-5118-cfdd" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="1752-23fa-b273-99e9" collective="false" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="12f1-830d-fd58-72b9" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
+            <entryLink import="true" name="Duelling Pistol" hidden="false" id="12f1-830d-fd58-72b9" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
               <modifiers>
                 <modifier type="set" value="25" field="points"/>
               </modifiers>
@@ -55,11 +55,11 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="7a2-76f7-f12e-45d2" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="e937-a2cf-248a-8b77" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="e937-a2cf-248a-8b77" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="7aa1-a8bf-5a46-6715" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="116b-b40e-e045-9b20" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Buckler" hidden="false" id="c5dd-4e7b-cffb-5b39" type="selectionEntry" targetId="0871-44c2-f0f0-c27a"/>
-            <entryLink import="true" name="Heavy Armor" hidden="false" id="c16e-7ca0-4779-72a4" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6"/>
+            <entryLink import="true" name="Heavy Armour" hidden="false" id="c16e-7ca0-4779-72a4" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -70,7 +70,7 @@
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="4314-29b4-617-3259" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="882e-afcd-d608-dd36" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="85fe-c2ef-fa35-f323" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="85fe-c2ef-fa35-f323" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -109,7 +109,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="ebc9-fe89-e2ba-7b29" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="e18b-e0cb-466d-72ba" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="e18b-e0cb-466d-72ba" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Helmet" hidden="false" id="2ea1-1376-225c-cc50" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Shield" hidden="false" id="ea11-de24-1294-ced4" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
           </entryLinks>
@@ -278,7 +278,7 @@
         <entryLink import="true" name="Mercenary Equipment" hidden="false" id="11dc-fc9a-b1ba-4e16" collective="false" targetId="637c-f7df-b54a-315f" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="14b7-b03d-738e-652c" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="7de0-ddf8-7037-dcc1" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="290e-afc9-5082-4d84" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="290e-afc9-5082-4d84" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -575,7 +575,7 @@
         <entryLink import="true" name="Mercenary Equipment" hidden="false" id="1e2f-3c18-e1a1-3085" collective="false" targetId="637c-f7df-b54a-315f" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="e18b-ed48-8bd2-1b5d" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="2d34-2b66-e6eb-5188" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="e824-250a-8848-3d0a" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="e824-250a-8848-3d0a" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -908,7 +908,7 @@
         <entryLink import="true" name="Mercenary Equipment" hidden="false" id="409-6ca-9222-a1f2" collective="false" targetId="637c-f7df-b54a-315f" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="7540-9f50-a08a-dbc2" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="ce57-73e3-4bed-2f5" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="f7cc-56d7-1518-e188" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="f7cc-56d7-1518-e188" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1298,7 +1298,7 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Mercenary Equipment" hidden="false" id="b334-7665-275b-3998" collective="false" targetId="637c-f7df-b54a-315f" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="bf93-2555-e935-9ba9" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="bf93-2555-e935-9ba9" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1742,7 +1742,7 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Marksman Equipment" hidden="false" id="5be8-7db9-a6b3-c668" collective="false" targetId="af6d-b84d-99cf-d72c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="6a82-47d6-706e-ecbe" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="6a82-47d6-706e-ecbe" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2189,7 +2189,7 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Mercenary Equipment" hidden="false" id="3973-c515-49a1-cda7" collective="false" targetId="637c-f7df-b54a-315f" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="688b-6562-f096-116b" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="688b-6562-f096-116b" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2475,9 +2475,21 @@ Note that this only applies when they are armed with normal swords, and not wit
         <constraint type="max" value="5" field="selections" scope="roster" shared="true" id="c34e-13a4-4deb-f606" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="5da8-233f-68ac-e1d3" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="28f2-2c23-a154-a188" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="e4ab-5806-d265-5cdf-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e4ab-5806-d265-5cdf-max" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="4691-f58c-53ce-7ab5" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Priest of Morr" hidden="false" id="1fb4-ddcb-1ae7-ec" type="selectionEntry" targetId="d99a-5b47-80f6-75ad">
+    <entryLink import="true" name="Priest of Morr (1b)" hidden="false" id="1fb4-ddcb-1ae7-ec" type="selectionEntry" targetId="d99a-5b47-80f6-75ad">
       <categoryLinks>
         <categoryLink targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" id="388b-17d0-47f8-b7c8" primary="true" name="Heroes"/>
       </categoryLinks>

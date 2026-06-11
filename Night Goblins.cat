@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8ae8-558c-e115-6668" name="Night Goblins (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="8ae8-558c-e115-6668" name="Night Goblins (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="aa51-11f1-7d42-1535" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -12,8 +12,7 @@
 
 
 This only affects Night Goblins, not any other models in the warband.
-Fanatics are so out of their skull that they are not affected.
-</description>
+Fanatics are so out of their skull that they are not affected.</description>
     </rule>
     <rule name="Fear Elves" id="7908-b29f-1079-a75c" hidden="false">
       <description>Night Goblins are terrified of the Elven race.
@@ -45,7 +44,7 @@ Once the model loses Frenzy, due to being knocked down or stunned, it will be e
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="ab43-2e28-36ba-b5a" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="c3b4-b098-5821-9505" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="74d6-4c25-f9df-3afc" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
+            <entryLink import="true" name="Hammer" hidden="false" id="74d6-4c25-f9df-3afc" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="Club" field="name"/>
               </modifiers>
@@ -71,7 +70,7 @@ Once the model loses Frenzy, due to being knocked down or stunned, it will be e
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="b8a0-63c4-272c-c90c" hidden="false" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="4718-a786-859b-1925" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="4718-a786-859b-1925" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
             <entryLink import="true" name="Shield" hidden="false" id="4b6f-ce90-fc1b-b266" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="2"/>
             <entryLink import="true" name="Helmet" hidden="false" id="7312-be1d-d04f-e75a" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2" sortIndex="3"/>
           </entryLinks>
@@ -142,7 +141,7 @@ Once the model loses Frenzy, due to being knocked down or stunned, it will be e
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="45ec-f795-586b-82bd" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="4963-f1b2-494b-88a0" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="91ee-3a49-29f0-de69" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
+            <entryLink import="true" name="Hammer" hidden="false" id="91ee-3a49-29f0-de69" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="Club" field="name"/>
               </modifiers>
@@ -164,7 +163,7 @@ Once the model loses Frenzy, due to being knocked down or stunned, it will be e
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="9d79-401d-d67d-ebd2" hidden="false" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="440f-2c17-8de5-cc54" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="440f-2c17-8de5-cc54" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
             <entryLink import="true" name="Shield" hidden="false" id="caaa-dd5a-fc1a-62bc" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="2"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -3485,6 +3484,50 @@ Trolls do not gain experience.</description>
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="b53a-ed07-c4ac-5aea" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="90da-fb79-5e60-8968" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="9f31-b90d-8c80-c723-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9f31-b90d-8c80-c723-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Distasteful Company" id="fd02-78a6-f64b-6344" hidden="false">
+          <description>Many Hired Swords refuse to work for Night Goblins, they know that the backstabbing &apos;lil gits are likely to turn on them.
+
+
+Night Goblins may only hire Pit Fighters, Ogre Bodyguards, Warlocks, Witches, plus any Hired Sword that specifically states they work with Orcs or Goblins.</description>
+        </rule>
+        <rule name="Fear Elves" id="9ebc-dd8a-cee7-433f" hidden="false">
+          <description>Night Goblins are terrified of the Elven race.
+
+
+This only affects Night Goblins, not any other models in the warband.
+Fanatics are so out of their skull that they are not affected.</description>
+        </rule>
+        <rule name="Hate Stunties" id="4aa5-b028-fd11-1fdc" hidden="false">
+          <description>Night Goblins are subject to hatred towards Dwarfs.
+
+
+This only affects Night Goblins, not any other models in the warband.
+Fanatics are so out of their skull that they are not affected.</description>
+        </rule>
+        <rule name="Mad Cap Masters" id="0e7b-6167-f5dd-539f" hidden="false">
+          <description>Night Goblins consume so much dangerous fungi they can ignore some of the permanent side effects of Mad Cap Mushrooms, provided they have a constant supply.
+
+
+Night Goblins affected by Mad Cap overuse may ignore the resulting Stupidity, but only while under the effect of more Mad Caps.
+
+
+Once the model loses Frenzy, due to being knocked down or stunned, it will be effected by Stupidity as normal.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="c623-2461-8a5f-32fb" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+        <infoLink name="Animosity" id="2b59-de69-60cd-8230" hidden="false" type="rule" targetId="c214-2ad0-8f27-7328"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c182-5974-6237-14b7" name="Lustrian Reavers (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c182-5974-6237-14b7" name="Lustrian Reavers (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="6c3-139a-972a-2bf5" targetId="e020-c282-277b-b173"/>
     <catalogueLink type="catalogue" name="Characters" id="ab7-e674-4718-461e" targetId="9bf78c55-7dba-4a44-90ce-10ed57d8b3a1"/>
@@ -11,7 +11,7 @@
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="1622-30dc-6ac2-8bf0" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="24cb-175c-b0e0-8fdd" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="2d6a-7c43-114-68b0" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="4">
+            <entryLink import="true" name="Hammer" hidden="false" id="2d6a-7c43-114-68b0" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="4">
               <modifiers>
                 <modifier type="set" value="Mace" field="name"/>
               </modifiers>
@@ -38,7 +38,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="da79-f983-ad00-98e7" hidden="false" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="1e4b-3a71-3f57-5c47" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="1e4b-3a71-3f57-5c47" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
             <entryLink import="true" name="Shield" hidden="false" id="2cc-fee5-1a8e-c766" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="2">
               <modifiers>
                 <modifier type="set" value="10" field="points"/>
@@ -50,7 +50,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Missile weapons" id="836c-6159-8445-5268" hidden="false" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Javelins/Harpoons" hidden="false" id="7f54-d2c6-f17a-78b1" type="selectionEntry" targetId="ece5-fffa-8dd8-94dc" sortIndex="1">
+            <entryLink import="true" name="Javelins" hidden="false" id="7f54-d2c6-f17a-78b1" type="selectionEntry" targetId="ece5-fffa-8dd8-94dc" sortIndex="1">
               <modifiers>
                 <modifier type="set" value="10" field="points"/>
               </modifiers>
@@ -93,7 +93,7 @@
           <entryLinks>
             <entryLink import="true" name="Free Dagger" hidden="false" id="ac6c-eba2-2c83-633b" type="selectionEntry" targetId="0d0b-ed37-d8b0-4cbf" sortIndex="1"/>
             <entryLink import="true" name="Dagger" hidden="false" id="1c20-38cd-e9d1-e344" type="selectionEntry" targetId="64e0-0bb6-542b-4beb" sortIndex="2"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="b471-f0c8-e2e5-2388" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="4">
+            <entryLink import="true" name="Hammer" hidden="false" id="b471-f0c8-e2e5-2388" type="selectionEntry" targetId="cfcc-39fd-aeb4-876a" sortIndex="4">
               <modifiers>
                 <modifier type="set" value="Mace" field="name"/>
               </modifiers>
@@ -126,7 +126,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="b66-9ac8-80df-6f55" hidden="false" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="e123-6eb1-9a9-a43b" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="e123-6eb1-9a9-a43b" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
             <entryLink import="true" name="Shield" hidden="false" id="b5a6-da16-6295-8dbf" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="2">
               <modifiers>
                 <modifier type="set" value="10" field="points"/>
@@ -1187,7 +1187,7 @@ This ability can save the Conqueror only one time.</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Heavy Armor" hidden="false" id="1e45-959f-2518-4434" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="9">
+        <entryLink import="true" name="Heavy Armour" hidden="false" id="1e45-959f-2518-4434" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="9">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="deb-2325-3dd4-7053" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e3e-cf94-2c9c-db57" includeChildSelections="false"/>
@@ -1698,7 +1698,7 @@ This ability can save the Conqueror only one time.</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Heavy Armor" hidden="false" id="a1da-9be-13a0-629d" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="9">
+        <entryLink import="true" name="Heavy Armour" hidden="false" id="a1da-9be-13a0-629d" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="9">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ed2-e1c2-7a7f-2e00" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf84-995d-6540-5664" includeChildSelections="false"/>
@@ -2318,7 +2318,7 @@ If you make the Jungle Shadow a Wizard, remove the Light Armour from the equip
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Javelins/Harpoons" hidden="false" id="b031-67ee-d30f-6e20" type="selectionEntry" targetId="ece5-fffa-8dd8-94dc" sortIndex="10">
+        <entryLink import="true" name="Javelins" hidden="false" id="b031-67ee-d30f-6e20" type="selectionEntry" targetId="ece5-fffa-8dd8-94dc" sortIndex="10">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82f2-4238-3313-5d18" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eeaf-4c72-add3-a23f" includeChildSelections="false"/>
@@ -2327,7 +2327,7 @@ If you make the Jungle Shadow a Wizard, remove the Light Armour from the equip
             <modifier type="set" value="0" field="points"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Light Armor" hidden="false" id="8b54-2f75-800e-2fe0" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="11">
+        <entryLink import="true" name="Light Armour" hidden="false" id="8b54-2f75-800e-2fe0" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="11">
           <modifiers>
             <modifier type="set" value="0" field="points"/>
             <modifier type="set" value="true" field="hidden">
@@ -2814,7 +2814,7 @@ This does not work with Blackpowder weapons.</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Heavy Armor" hidden="false" id="4476-891d-9c9-2f27" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="9">
+        <entryLink import="true" name="Heavy Armour" hidden="false" id="4476-891d-9c9-2f27" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="9">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="deb-2325-3dd4-7053" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e3e-cf94-2c9c-db57" includeChildSelections="false"/>
@@ -3093,6 +3093,46 @@ Remove the counters when the trap is sprung.</description>
       <constraints>
         <constraint type="max" value="5" field="selections" scope="roster" shared="true" id="5914-a073-abeb-6b2e" includeChildSelections="true"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="72fb-1612-f6c0-5037" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="e0f5-0a20-860d-854b" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="796f-17e9-88d4-d4d5-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="796f-17e9-88d4-d4d5-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Hired Swords" id="9d52-8fb1-df07-e69d" hidden="false">
+          <description>The Lustrian Reavers are proud and suspicious, and therefore rarely use Hired Swords.
+
+
+They may hire an Ogre Bodyguard, Dwarf Trollslayer, Tilean Marksman or a Big Game Hunter.</description>
+        </rule>
+        <rule name="Promotions" id="49d6-286e-b4e5-1c97" hidden="false">
+          <description>When you lose one of the Heroes for whatever reason, you cannot buy a new one. 
+However, you retain all the equipment of the fallen Hero, and you may now promote one of the Prospects into the role of the lost hero, as if that Henchman just successfully rolled Lad’s Got Talent on the Henchmen Advancement Table: 
+
+
+You may choose two skill lists available to Heroes in your warband.
+These are the skill types your new Hero can choose from when the model gains new skills.
+The new Hero can immediately make one roll on the Heroes Advance table.
+The new Hero then gains the armor, weapons, (but not the equipment) of the fallen Hero and assumes their position the Warband.
+The Prospect’s own equipment may be added to the Warband stash.
+
+
+If you have no Prospect currently in you Warband, you can promote the next one you hire.</description>
+        </rule>
+        <rule name="Rare Heroes" id="8d28-b5ea-d011-7205" hidden="false">
+          <description>You can only ever buy one of each type of Heroes during the existence of your Warband, representing the extreme rarity of these the toughest of survivors of Lustria.
+
+
+The Heroes are bought with the weapons and armor listed under their entry, and can never swap or give away these, though you may acquire new equipment, weapons and armor to them if you wish.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="f8b4-baf3-afb7-3b71" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

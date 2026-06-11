@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen (1b)" revision="10" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0845-6af8-5c39-3866ce12-79a1-424c-bda6" name="Lizardmen (1b)" revision="11" battleScribeVersion="2.03" authorName="David Brown" authorContact="Twitter: @dabrown_us" authorUrl="http://dabrown.us" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="889151de-4826-5f00-5dbb-fcf546ebedbb" name="Kroxigor" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -2175,6 +2175,19 @@
         <cost name="pts" typeId="points" value="0"/>
         <cost name="Warband Rating" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="d00f-f3c8-5c00-2237" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="82e5-2c4c-fdf9-67ad" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="5f65-738b-ef7f-edd5-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5f65-738b-ef7f-edd5-max" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="e65c-2d6a-25ce-3309" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+        <infoLink name="Poisoned Weapons" id="25fd-54ec-7026-4321" hidden="false" targetId="0838-2e59-470f-c282" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <infoLinks>

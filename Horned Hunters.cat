@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e37c-460d-d517-b3b7" name="Horned Hunters (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e37c-460d-d517-b3b7" name="Horned Hunters (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="c32b-f67-ea0b-c818" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -130,7 +130,7 @@ Enemy models must halve their Initiative when attempting to find this warrior w
           <entryLinks>
             <entryLink id="7425-4e98-a617-4b31" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink id="8634-7dd0-3e82-80be" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink id="2db8-a90b-f150-e8f1" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink id="2db8-a90b-f150-e8f1" name="Hammer" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Mace, Hammer"/>
               </modifiers>
@@ -163,7 +163,7 @@ Enemy models must halve their Initiative when attempting to find this warrior w
         </selectionEntryGroup>
         <selectionEntryGroup id="ea60-9443-2154-26e8" name="Armor" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="a916-e616-442d-ef12" name="Light Armor" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry"/>
+            <entryLink id="a916-e616-442d-ef12" name="Light Armour" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry"/>
             <entryLink import="true" name="Toughened Leathers" hidden="false" type="selectionEntry" id="29db-c6ef-baae-dcf2" targetId="439f-1b4d-1579-14b"/>
             <entryLink import="true" name="Shield" hidden="false" type="selectionEntry" id="acb3-5c8e-31ff-dc58" targetId="74fb-cc90-1361-df26"/>
           </entryLinks>
@@ -193,7 +193,7 @@ Enemy models must halve their Initiative when attempting to find this warrior w
           <entryLinks>
             <entryLink id="50c5-8397-2ab3-6d28" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink id="61e8-4cf8-9227-272a" name="Free Dagger" hidden="false" collective="false" import="true" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink id="c0a7-99d8-f8a6-d250" name="Hammer, staff, mace or club" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink id="c0a7-99d8-f8a6-d250" name="Hammer" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Mace, Hammer"/>
               </modifiers>
@@ -513,7 +513,7 @@ Enemy models must halve their Initiative when attempting to find this warrior w
         <infoLink name="Strictures" hidden="false" type="rule" id="2601-4249-aa3a-743c" targetId="572d-9f68-ed41-e5b7"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="2f75-e48b-5d-4c5c" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="2f75-e48b-5d-4c5c" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3fa5-fc41-ecea-e26f" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -681,7 +681,7 @@ Enemy models must halve their Initiative when attempting to find this warrior w
         <infoLink name="Hang the Bandit!" hidden="false" type="rule" id="ac28-204a-9687-2982" targetId="86f4-b849-8459-5685"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="ec12-cffa-d70d-78d4" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="ec12-cffa-d70d-78d4" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e77f-f63b-dcab-2e1f" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -847,7 +847,7 @@ Enemy models must halve their Initiative when attempting to find this warrior w
         <infoLink name="Hang the Bandit!" hidden="false" type="rule" id="13c9-a18b-daf7-ea32" targetId="86f4-b849-8459-5685"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="6319-3b90-2368-c14" name="New CategoryLink" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
+        <categoryLink id="6319-3b90-2368-c14" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="da9b-54b6-e74f-9320" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -1008,7 +1008,7 @@ Enemy models must halve their Initiative when attempting to find this warrior w
         <infoLink id="c92c-5d52-38c1-29c6" name="Human max" hidden="false" targetId="d9c2-4427-8e2b-586a" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="1a4a-f244-ec92-b2db" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="1a4a-f244-ec92-b2db" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5bd7-2b96-1a84-a51c" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -1176,7 +1176,7 @@ As such, they automatically pass all Leadership-based tests they are required 
         <infoLink name="Strictures" hidden="false" type="rule" id="dba1-3a02-7015-4b4d" targetId="572d-9f68-ed41-e5b7"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="4287-dafd-3fd5-a936" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="4287-dafd-3fd5-a936" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="87fa-d684-71dd-95aa" name="Extra Equipment" hidden="false" collective="false" import="true" type="upgrade">
@@ -1334,7 +1334,7 @@ As such, they automatically pass all Leadership-based tests they are required 
         <infoLink name="Animals" hidden="false" type="rule" id="5dad-216b-a90f-a47e" targetId="daaa-38f1-8c4c-3140"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="c76-6861-28f6-8e12" name="New CategoryLink" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
+        <categoryLink id="c76-6861-28f6-8e12" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="points" value="15"/>
@@ -1353,7 +1353,7 @@ As such, they automatically pass all Leadership-based tests they are required 
         <categoryLink name="Stash" hidden="false" id="9b1-edef-a3f2-83c3" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Gold" hidden="false" id="7194-29e1-8c0f-e4d9" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="7194-29e1-8c0f-e4d9" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="4287-9391-6add-999e" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
         <entryLink import="true" name="Equipment" hidden="false" id="24ae-4ab1-c22c-451a" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
@@ -1361,6 +1361,27 @@ As such, they automatically pass all Leadership-based tests they are required 
         <cost name="pts" hidden="false" id="f0fd-6f99-cdfa-9833" typeId="points" value="0"/>
         <cost name="Warband Rating" hidden="false" id="6fde-34ae-ecc4-bca3" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="4bcc-7254-fee1-ad1a" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="7859-dd18-f3ea-5aa3" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="f4dd-5566-259e-f8c2-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f4dd-5566-259e-f8c2-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Woodcraft" id="a823-5784-7d85-4332" hidden="false">
+          <description>Followers of Taal make their homes in the wilderness and shall only frequent towns or cities when it is compulsory for them to do so.
+They are expert woodsmen and their knowledge of the wilds is unrivalled by all except perhaps the Wood Elves.
+
+
+Horned Hunter warbands move through any difficult terrain they encounter without suffering any movement penalties.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="aff2-e7d6-533e-6bfe" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedRules>

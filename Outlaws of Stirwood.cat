@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5ef4-8dba-4608-5227" name="Outlaws of Stirwood (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5ef4-8dba-4608-5227" name="Outlaws of Stirwood (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="478e-d9ce-d69f-2496" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -10,7 +10,7 @@
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="9a50-9479-9a22-dd9d" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="49c9-b738-b4aa-d3b2" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="4244-95fb-bd5e-e2db" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="4244-95fb-bd5e-e2db" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Staff, Club, Mace" field="name"/>
               </modifiers>
@@ -69,7 +69,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" id="f031-1852-790a-8382" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="true" id="d106-bd22-82ae-3d5c" type="selectionEntry" targetId="3d2a-426a-c350-2a03">
+            <entryLink import="true" name="Light Armour" hidden="true" id="d106-bd22-82ae-3d5c" type="selectionEntry" targetId="3d2a-426a-c350-2a03">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditionGroups>
@@ -447,7 +447,7 @@ The only exception to this is the Cleric who may choose to carry a bow, but is
         <entryLink import="true" name="Outlaws Equipment" hidden="false" id="1c49-2534-9d2c-32db" collective="false" targetId="b784-3696-a861-1e85" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="fce3-6d2f-9751-a3fa" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="1db4-9f93-58c4-88fb" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="8973-27e9-1232-9e7b" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="8973-27e9-1232-9e7b" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -744,7 +744,7 @@ The only exception to this is the Cleric who may choose to carry a bow, but is
         <entryLink import="true" name="Outlaws Equipment" hidden="false" id="e328-deb7-3989-a416" collective="false" targetId="b784-3696-a861-1e85" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="fe27-4a41-f535-55f8" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="da8a-f9ce-a87a-ae84" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="c356-dd21-74b3-ce87" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="c356-dd21-74b3-ce87" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1092,7 +1092,7 @@ The only exception to this is the Cleric who may choose to carry a bow, but is
         <entryLink import="true" name="Outlaws Equipment" hidden="false" id="ffd-5605-3a17-dfce" collective="false" targetId="b784-3696-a861-1e85" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="f79b-1fc9-90c7-7625" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="81a2-a31e-870d-3d06" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="5dd1-2c3e-3ee6-7664" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="5dd1-2c3e-3ee6-7664" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1446,7 +1446,7 @@ As with a Witch-Hunter’s Warrior Priest, he is also subject to some of the r
         <entryLink import="true" name="Outlaws Equipment" hidden="false" id="d5cd-4be6-35e5-45c0" collective="false" targetId="b784-3696-a861-1e85" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="aae-ecf9-7fb6-5c20" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="8649-ab46-f699-cb9b" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="5a29-bd77-b5d4-e9eb" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="5a29-bd77-b5d4-e9eb" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1831,7 +1831,7 @@ As with a Witch-Hunter’s Warrior Priest, he is also subject to some of the r
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Outlaws Equipment" hidden="false" id="ea4c-2f70-ecd3-4129" collective="false" targetId="b784-3696-a861-1e85" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="f031-1ae4-ea62-8ed2" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="f031-1ae4-ea62-8ed2" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2273,7 +2273,7 @@ As with a Witch-Hunter’s Warrior Priest, he is also subject to some of the r
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Outlaws Equipment" hidden="false" id="9d41-b5c4-609d-33d0" collective="false" targetId="b784-3696-a861-1e85" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="5fa1-8ecf-db4a-1f28" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="5fa1-8ecf-db4a-1f28" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2557,7 +2557,7 @@ As with a Witch-Hunter’s Warrior Priest, he is also subject to some of the r
         <categoryLink name="Stash" hidden="false" id="d3ca-db06-de2a-4b9d" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Gold" hidden="false" id="3c47-5b62-6644-23cd" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="3c47-5b62-6644-23cd" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="d8ed-7706-ff3b-6dbd" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
         <entryLink import="true" name="Equipment" hidden="false" id="440b-ea84-997c-b68a" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2565,6 +2565,39 @@ As with a Witch-Hunter’s Warrior Priest, he is also subject to some of the r
         <cost name="pts" id="544f-9c67-5b87-8a96" hidden="false" typeId="points" value="0"/>
         <cost name="Warband Rating" id="7592-aa12-8d8d-91ec" hidden="false" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="d6f6-ca14-032d-dcbc" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="bfde-f53e-f138-a990" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="eb19-952b-fb8e-5b77-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="eb19-952b-fb8e-5b77-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Hired Swords" id="d915-a889-d026-14a7" hidden="false">
+          <description>The following Hired Swords are not available to the Outlaws: 
+  Bounty Hunter,
+  Wolf-Priest of Ulric,
+  Norse Shaman, 
+  Dark Elf Assassin.</description>
+        </rule>
+        <rule name="Bow required" id="e7b0-48c9-767d-be6e" hidden="false">
+          <description>All warriors in an Outlaws warband may be equipped with only one missile weapon at any time.
+
+
+All warriors must carry a type of bow, but not crossbows, as part of their equipment. So, even if an Outlaw acquires skills that allow him to use additional ballistic weaponry, he cannot do so.
+
+
+The only exception to this is the Cleric who may choose to carry a bow, but is not compelled to do so.</description>
+        </rule>
+        <rule name="Cleric" id="2d41-e8bc-67a0-64ee" hidden="false">
+          <description>Your warband may include up to one Cleric, but he can only be taken instead of either a Champion or a Petty Thief.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="cb6c-2c07-b9d9-052f" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

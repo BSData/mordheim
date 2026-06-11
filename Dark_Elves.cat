@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="306dc1be-876f-4f6e-a4a8-4465e1309b7f" name="Dark Elves (1b)" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="306dc1be-876f-4f6e-a4a8-4465e1309b7f" name="Dark Elves (1b)" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="83acbe09-ec66-c45c-0f5b-1a9e0017016e" name="High Born" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1333,6 +1333,32 @@
         <cost name="pts" typeId="points" value="30"/>
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="8ede-5484-7979-08df" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="701c-97f3-af96-1b72" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="3319-693c-5737-c8b8-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3319-693c-5737-c8b8-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Black Powder Weapons" id="757d-617b-1c6a-ab47" hidden="false">
+          <description>Dark Elves may never use black powder weapons as they ﬁnd them too crude, noisy and unreliable.</description>
+        </rule>
+        <rule name="Excellent Sight" id="34e0-d8e6-fa74-6b32" hidden="false">
+          <description>Elves can spot Hidden enemies from twice as far away as other warriors (i.e. twice their Initiative in inches).</description>
+        </rule>
+        <rule name="Kindred Hatred" id="3f67-e91c-dd6c-c226" hidden="false">
+          <description>The Dark Elves have been ﬁghting the High Elves for many centuries.
+The wars between these two races have been very long and bloody affairs.
+Dark Elves Hate any High Elf warriors including High Elf Hired Swords.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP Adancement" id="a951-2e38-b698-b6bd" hidden="false" targetId="bd2100cc-65f9-2311-e4b9-d0e6830884c3" type="rule"/>
+        <infoLink name="Hatred" id="4a91-2b07-816f-a380" hidden="false" targetId="3ebe96a5-ad6a-b51d-0d99-f62dfb2a807c" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

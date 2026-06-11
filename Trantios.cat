@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4da7-a3e6-31d6-ec66" name="Trantios (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4da7-a3e6-31d6-ec66" name="Trantios (1b)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="5e7b-bf3d-fabd-164f" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -10,7 +10,7 @@
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="e158-c08a-b633-6c15" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="eb91-8acf-cc35-6cc1" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="c301-13be-9936-24ac" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="c301-13be-9936-24ac" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -36,7 +36,7 @@
         <selectionEntryGroup name="Missile Weapons" hidden="false" id="c66f-2e58-5824-63aa" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="221e-c6f1-caee-973" collective="false" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="57cb-e871-e6d2-bc90" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
+            <entryLink import="true" name="Duelling Pistol" hidden="false" id="57cb-e871-e6d2-bc90" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
               <modifiers>
                 <modifier type="set" value="25" field="points"/>
               </modifiers>
@@ -52,7 +52,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="8548-813e-4a7f-83b1" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="7d25-1f9f-3311-993" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="7d25-1f9f-3311-993" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Helmet" hidden="false" id="eb1f-c252-c872-1203" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -64,7 +64,7 @@
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="bbeb-30fa-c9fd-8f" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="27fc-cae9-3751-4374" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="1073-8a57-754d-75d7" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="1073-8a57-754d-75d7" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer, Mace" field="name"/>
               </modifiers>
@@ -96,7 +96,7 @@
         <selectionEntryGroup name="Missile Weapons" hidden="false" id="2bf3-19cb-cf93-f997" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Pistol" hidden="false" id="71e2-f01e-ec8e-bcce" collective="false" targetId="67e9-a4f5-8f76-168c" type="selectionEntry"/>
-            <entryLink import="true" name="Dueling Pistol" hidden="false" id="d541-e7e1-a412-590e" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
+            <entryLink import="true" name="Duelling Pistol" hidden="false" id="d541-e7e1-a412-590e" type="selectionEntry" targetId="da24-6a7f-725b-5bcb">
               <modifiers>
                 <modifier type="set" value="25" field="points"/>
               </modifiers>
@@ -110,7 +110,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="96ec-9fd8-29d0-f9dc" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="2950-b8db-aafa-cccd" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="2950-b8db-aafa-cccd" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="4e4c-ae5-bdf3-5afe" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="ab5c-ade8-700-be83" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
             <entryLink import="true" name="Buckler" hidden="false" id="54c4-7772-5284-da78" type="selectionEntry" targetId="0871-44c2-f0f0-c27a"/>
@@ -2435,7 +2435,7 @@ The Duellist counts as using a shield in close combat.</description>
         <categoryLink name="Stash" hidden="false" id="dfe8-fab2-5e81-9b4d" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Gold" hidden="false" id="eeb9-3a9f-cae6-fd38" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
+        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="eeb9-3a9f-cae6-fd38" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry"/>
         <entryLink import="true" name="Wyrdstone" hidden="false" id="ecf0-411a-6eef-772" collective="false" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
         <entryLink import="true" name="Equipment" hidden="false" id="73c0-dc11-a737-5d32" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2443,6 +2443,35 @@ The Duellist counts as using a shield in close combat.</description>
         <cost name="pts" hidden="false" id="2a7d-93f6-f616-562a" typeId="points" value="0"/>
         <cost name="Warband Rating" hidden="false" id="294-af54-854e-ac6c" typeId="wb-rating" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="d975-f313-a175-6b87" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="d462-96bb-daee-968b" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="c06b-60fc-596d-5570-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c06b-60fc-596d-5570-max" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Hired Swords" id="c393-4e8f-ed48-705f" hidden="false">
+          <description>A Tilean warband can use any Hired Sword available to the Mercenary warbands including the following
+
+
+ - Shadow Warrior
+ - Big Game Hunter
+ - Expert Marksman
+
+
+Unless noted otherwise, Hired Swords cannot benefit from individual city-state rules given to each warband.</description>
+        </rule>
+        <rule name="Trantio Extra Gold" id="4358-2cf6-9607-a555" hidden="false">
+          <description>A warband hailing from Trantio will be the best-equipped and most experienced human warband in Lustria.
+To represent this a Trantio war band will always start a one-off match with an extra 20% gc and in a Lustrian campaign they will start with an extra 100 gc added to their total.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="0709-7220-a6b4-6ca6" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

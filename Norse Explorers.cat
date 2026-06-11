@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b854-4934-9cad-dcb0" name="Norse Explorers (1b) (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b854-4934-9cad-dcb0" name="Norse Explorers (1b) (1c)" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="common-data" id="950e-3bb9-3296-b6c4" targetId="e020-c282-277b-b173"/>
   </catalogueLinks>
@@ -10,7 +10,7 @@
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="8cae-f894-2959-5b14" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="b611-c00e-b099-8301" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="688c-a1cc-62e7-9dbe" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="688c-a1cc-62e7-9dbe" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
@@ -49,7 +49,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="fd39-6530-b6f-7934" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="b44a-b983-ee7d-6833" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="b44a-b983-ee7d-6833" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="d650-96fc-7be8-fa10" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="4353-13c0-411b-564a" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
           </entryLinks>
@@ -69,7 +69,7 @@
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="5e94-c694-d378-4640" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="12a4-99df-dc0-65f1" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="9f24-682b-8c92-1fed" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="9f24-682b-8c92-1fed" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
@@ -97,7 +97,7 @@
         <selectionEntryGroup name="Missile Weapons" hidden="false" id="313-6da6-2ba0-5d3a" collective="false" import="true">
           <entryLinks>
             <entryLink import="true" name="Bow" hidden="false" id="d009-5503-a5a9-bf8b" type="selectionEntry" targetId="311a-bf3f-67ff-46e7"/>
-            <entryLink import="true" name="Javelins/Harpoons" hidden="false" id="5c2a-60bc-8663-fe4a" type="selectionEntry" targetId="ece5-fffa-8dd8-94dc">
+            <entryLink import="true" name="Javelins" hidden="false" id="5c2a-60bc-8663-fe4a" type="selectionEntry" targetId="ece5-fffa-8dd8-94dc">
               <modifiers>
                 <modifier type="set" value="Javelins" field="name"/>
               </modifiers>
@@ -121,7 +121,7 @@
           <entryLinks>
             <entryLink import="true" name="Dagger" hidden="false" id="fc7a-2f47-b11f-800d" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
             <entryLink import="true" name="Free Dagger" hidden="false" id="da98-d3b0-76c6-ccd2" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry"/>
-            <entryLink import="true" name="Hammer, staff, mace or club" hidden="false" id="208-42ad-aa91-1ad2" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
+            <entryLink import="true" name="Hammer" hidden="false" id="208-42ad-aa91-1ad2" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="Hammer" field="name"/>
               </modifiers>
@@ -160,7 +160,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Armor" hidden="false" id="d882-5406-800f-a443" collective="false" import="true">
           <entryLinks>
-            <entryLink import="true" name="Light Armor" hidden="false" id="9dbb-f5-e811-5881" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
+            <entryLink import="true" name="Light Armour" hidden="false" id="9dbb-f5-e811-5881" type="selectionEntry" targetId="3d2a-426a-c350-2a03"/>
             <entryLink import="true" name="Shield" hidden="false" id="26d8-986c-a983-7dac" type="selectionEntry" targetId="74fb-cc90-1361-df26"/>
             <entryLink import="true" name="Helmet" hidden="false" id="4f29-6096-fc37-25da" type="selectionEntry" targetId="d0e5-ca89-5f0d-f5d2"/>
           </entryLinks>
@@ -481,7 +481,7 @@ No enemy may parry an attack made by this hero because it strikes with such grea
         <entryLink import="true" name="Hero Equipment" hidden="false" id="2fb8-c56f-5fc3-b456" collective="false" targetId="e434-139e-28e6-49e1" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="5061-724-c2ff-3442" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="f28a-19b4-6aaa-474a" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="23af-91b8-2ba5-83cf" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="23af-91b8-2ba5-83cf" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -779,7 +779,7 @@ No enemy may parry an attack made by this hero because it strikes with such grea
         </entryLink>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="fb40-8624-af02-7665" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="4b37-1726-f929-14d6" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="1f7c-1393-8b91-434c" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="1f7c-1393-8b91-434c" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1122,7 +1122,7 @@ too feral and uncontrolled to become the leader of the warband.</description>
         <entryLink import="true" name="Hero Equipment" hidden="false" id="cd03-690d-ac5a-7fa6" collective="false" targetId="e434-139e-28e6-49e1" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="181e-fdc2-50ce-372b" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="f59d-dff0-62e-f87a" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="838a-bdb5-4d66-962" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="838a-bdb5-4d66-962" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1500,7 +1500,7 @@ too feral and uncontrolled to become the leader of the warband.</description>
         <entryLink import="true" name="Hero Equipment" hidden="false" id="5bac-7794-3a55-3e68" collective="false" targetId="e434-139e-28e6-49e1" type="selectionEntryGroup"/>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="4737-e807-c82a-57fa" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="bfb1-6e9c-94b8-b2d3" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="a49-ff2e-4e4f-125f" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="a49-ff2e-4e4f-125f" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -1829,7 +1829,7 @@ too feral and uncontrolled to become the leader of the warband.</description>
         </entryLink>
         <entryLink import="true" name="Characteristic Increases" hidden="false" id="4837-ef70-13b4-3ccb" collective="false" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup"/>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="ec21-68b5-4b26-b3e4" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="false" id="1c14-3f1a-7d89-b504" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="false" id="1c14-3f1a-7d89-b504" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2183,7 +2183,7 @@ too feral and uncontrolled to become the leader of the warband.</description>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Hunter Equipment" hidden="false" id="a2b-bf39-4f1c-e5ae" collective="false" targetId="48b4-d4b8-2d71-24dc" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="14b2-4013-7364-3d77" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="14b2-4013-7364-3d77" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -2782,7 +2782,7 @@ In the event that no Wulfen (Ulfwerenar) is included in the warband due to a de
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Henchman Equipment" hidden="false" id="bc49-2c1a-7dc5-14f7" collective="false" targetId="5f97-4cb5-5f38-88f0" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Advancement" hidden="true" id="a2e4-24a0-a7a4-9265" type="selectionEntry" targetId="c26e-414e-293-2621">
+        <entryLink import="true" name="Advancement (Hero)" hidden="true" id="a2e4-24a0-a7a4-9265" type="selectionEntry" targetId="c26e-414e-293-2621">
           <modifiers>
             <modifier type="increment" value="1" field="f983-fe4b-65c8-b54f">
               <conditions>
@@ -3056,6 +3056,18 @@ In the event that no Wulfen (Ulfwerenar) is included in the warband due to a de
         <cost name="pts" hidden="false" id="d7b7-e56f-34d5-4ca" typeId="points" value="25"/>
         <cost name="Warband Rating" hidden="false" id="f2e9-c9af-b372-bf49" typeId="wb-rating" value="5"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="1811-7ecb-b161-28e4" page="0">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="a2d3-1b40-1b90-c0ae" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="b1c4-abda-5d44-4bef-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b1c4-abda-5d44-4bef-max" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="EXP advancement" id="d925-5085-e08a-a4a2" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
