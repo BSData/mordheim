@@ -1,9 +1,11 @@
 Mordheim
 ========
 
-__Mordheim Discord__ [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://discord.gg/q952v3w6X9)
-__BSData Developers Discord__ [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://discord.gg/pMXqCqWJRE)
-__New Recruit Discord__ [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://discord.gg/muFFTpQy37)
+__Mordheim Discord__ [![Chat on Discord](https://img.shields.io/badge/Discord-Join!-5865F2?style=for-the-badge&logo=Discord)](https://discord.gg/q952v3w6X9)
+
+__BSData Developers Discord__ [![Chat on Discord](https://img.shields.io/badge/Discord-Join!-5865F2?style=for-the-badge&logo=Discord)](https://discord.gg/pMXqCqWJRE)
+
+__New Recruit Discord__ [![Chat on Discord](https://img.shields.io/badge/Discord-Join!-5865F2?style=for-the-badge&logo=Discord)](https://discord.gg/muFFTpQy37)
 
 ## Notice Board ##
 
@@ -12,6 +14,8 @@ All of the __Grade 1a (Official) Warbands__ have been fully fixed and should all
 Unfortunately these fixes have broken every other outdated, non Grade 1a Warbands, so they have been temporarily removed while we restore them to working order. Please do not fret or panic, they will be added once more as soon as possible, I just ask that you be patient while we do our best, in what little free time we have to dedicate to data entry.
 I sincerely apologise for the inconvenience and thank you for your understanding.
 Posted on 13/06/2026, by theoakenfig.
+
+## Overview ##
 
 __What's this?__
 
@@ -31,6 +35,7 @@ Feel free to ask for or tag @theoakenfig directly and I'll be more than happy to
 ## Change Log ##
 
 __13/06/2026__
+
 All Grade 1a (Official) Warbands added.
 
 [Open up a new issue directly]: https://github.com/BSData/mordheim/issues
