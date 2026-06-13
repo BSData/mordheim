@@ -1,54 +1,37 @@
 Mordheim
 ========
 
-**Deprecation note:** This game is unsupported by publisher, it is however maintained by the community.
-An index of all available rules and FAQs can be accessed on https://broheim.net/ 
-WOrc is in progress on adding the various warbands available to the data files.
+__Mordheim Discord__ [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://discord.gg/q952v3w6X9)
+__BSData Developers Discord__ [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://discord.gg/pMXqCqWJRE)
+__New Recruit Discord__ [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://discord.gg/muFFTpQy37)
 
+## Notice Board ##
 
-[![GitHub release](https://img.shields.io/github/release/BSData/mordheim.svg?style=flat-square)](https://github.com/BSData/mordheim/releases/latest)
-![Github commits (since latest release)](https://img.shields.io/github/commits-since/BSData/mordheim/latest.svg?style=flat-square)
-[![Open Bug issues](https://img.shields.io/github/issues/bsdata/mordheim/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/mordheim/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
-[![GitHub contributors](https://img.shields.io/github/contributors/BSData/mordheim.svg?style=flat-square)](https://github.com/BSData/mordheim/graphs/contributors)
-![GitHub commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/mordheim.svg?style=flat-square)
-
-[![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://discord.gg/KqPVhds)
-
-#### Contents ####
-
-* [Overview][]
-* [Links][]
-
-## Overview ##
-[Overview]: #overview
+For a very long time this repo has been an absolute mess. With a gigantic contribution from UncleMel, who's help and dedication to the Mordheim community cannot be understated, we wish to overhaul the repo and fix it properly once and for all.
+All of the __Grade 1a (Official) Warbands__ have been fully fixed and should all be working perfectly.
+Unfortunately these fixes have broken every other outdated, non Grade 1a Warbands, so they have been temporarily removed while we restore them to working order. Please do not fret or panic, they will be added once more as soon as possible, I just ask that you be patient while we do our best, in what little free time we have to dedicate to data entry.
+I sincerely apologise for the inconvenience and thank you for your understanding.
+Posted on 13/06/2026, by theoakenfig.
 
 __What's this?__
 
-BSData organisation created this project. It's a GitHub repository of datafiles.
-Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. If you want
-to develop - cool! We need you! Take a look at [Getting Started wiki][]
+This is the GitHub repository of Mordheim data files created free by BSData.
+By the community, for the community, currently lead by yours truly theoakenfig, with the help of UncleMel.
 
-__Okay, nice project. Is it actually wOrcing?__ _I just want those files..._
+__I found a bug!__
 
-Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]
+[Open up a new issue directly][] by following the link and hitting the green `New Issue` button in the upper right and then describing what seems to be the problem. Mind you'll need a GitHub account to do so. You'll be able track progress, get notifications and help us further by answering possible follow-up questions.
+Thank you for your help!
 
-__I found a bug!__ / *I have another request*
+__I also want to be a data dev!__
 
-Great, thank you! Now, you have some options:
+[Learn how to start][] contributing to the data repo by following the link and reading the wiki. You can also join either the BSData Developers or the New Recruit Discord servers and ask how you can help and contribute there.
+Feel free to ask for or tag @theoakenfig directly and I'll be more than happy to point you in the right direction.
 
-1. [Report it on AppSpot][] - it's anonymous and no account is needed - on downside, you'll need to manually check on the progress of your issue.
+## Change Log ##
 
-2. [Open issue directly][] (green `New Issue` in upper-right, GitHub account required) - you can track the progress, get notifications, help us by answering possibly follow-up questions and help us better!
+__13/06/2026__
+All Grade 1a (Official) Warbands added.
 
-## Links ##
-[Links]: #links
-
-* [BattleScribe homepage][]
-* [BattleScribe Data on Appspot][]
-* [Getting Started wiki][]
-
-[Report it on Appspot]: http://battlescribedata.appspot.com/#/repo/mordheim
-[Open Issue directly]: https://github.com/BSData/mordheim/issues
-[BattleScribe homepage]: http://www.battlescribe.net/
-[BattleScribe Data on Appspot]: http://battlescribedata.appspot.com/#/repos
-[Getting Started wiki]: https://github.com/BSData/catalogue-development/wiki/Getting-Started#contributing
+[Open up a new issue directly]: https://github.com/BSData/mordheim/issues
+[Learn how to start]: https://github.com/BSData/catalogue-development/wiki/Getting-Started
