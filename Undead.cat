@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0b05773f-a863-7a25-f872-588b804e2c75" name="Undead (Core)" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0b05773f-a863-7a25-f872-588b804e2c75" name="Undead (1a)" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="888b0a33-7922-685c-49fc-591b3fb26358" name="Awakened Zombie" page="0" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -78,7 +78,7 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="aa63-f27b-6b6b-a57e" collective="false">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="17ce-f69d-7aec-9670" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17ce-f69d-7aec-9670" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99db-8992-0734-b1e8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
@@ -87,7 +87,7 @@
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <modifiers>
             <modifier type="set" value="Equipment" field="name"/>
@@ -95,12 +95,11 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="24a6-2a07-60de-b8bc" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" collapsible="true">
+        <entryLink id="24a6-2a07-60de-b8bc" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" collapsible="true" sortIndex="1">
           <modifiers>
             <modifier type="set" field="name" value="Set Resurrected Hero Characteristics"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Experience" hidden="false" id="a1a9-5f92-b650-3199" collective="false" targetId="f0fc009a-7990-32ef-b84b-b631058620e2" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -231,19 +230,19 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         <categoryLink id="074d9cc5-ab18-5302-91eb-29f4f9d61bcc-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true" name="Henchmen"/>
       </categoryLinks>
       <costs>
-        <cost name=" Rarity" typeId="rarity" value="0"/>
+        <cost name="Rarity" typeId="rarity" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Dire Wolves" hidden="false" id="0a40-bffb-6cf3-62b2">
           <costs>
             <cost name=" gc" typeId="points" value="50"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
-            <constraint type="max" value="5" field="selections" scope="roster" shared="false" id="5823-98ae-eae3-9c11" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b2b-7365-d008-4305"/>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="313b-7980-e23a-630f"/>
+            <constraint type="max" value="5" field="selections" scope="roster" shared="false" id="5823-98ae-eae3-9c11" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -374,12 +373,12 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Undead)" hidden="false" id="7cb0-4a2b-3aeb-75d6" sortIndex="3" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Undead)" hidden="false" id="7cb0-4a2b-3aeb-75d6" sortIndex="3" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="fff1-0a36-dcf7-dfb2" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="fff1-0a36-dcf7-dfb2" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="519a-e2e7-7029-8f42" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -391,7 +390,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
                 <entryLink import="true" name="Light Armour" hidden="false" id="8d4a-0786-7249-3eb0" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="2252-472e-3099-cd17" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="2252-472e-3099-cd17" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="bcfb-5902-4c89-4969" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="59d0-9e79-1567-8485" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -400,7 +399,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
                 <entryLink import="true" name="Sword" hidden="false" id="b1ed-08bf-45d8-33fe" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry" sortIndex="6"/>
                 <entryLink import="true" name="Hammer" hidden="false" id="4e0c-f6f0-d6b1-19d4" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
                 <entryLink import="true" name="Axe" hidden="false" id="b30d-ca14-301d-1d71" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="a9f4-8f10-b868-09a3" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="a9f4-8f10-b868-09a3" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="d6d6-5fc0-b783-2482" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="10"/>
               </entryLinks>
               <constraints>
@@ -414,7 +413,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="c092-41e1-76dc-6bcf" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="c092-41e1-76dc-6bcf" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="0b70-3097-986e-e7d4" collective="false" targetId="311a-bf3f-67ff-46e7" type="selectionEntry" sortIndex="4">
                   <constraints>
@@ -453,7 +452,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
       <selectionEntryGroups>
         <selectionEntryGroup name="Skills" id="e0c4-4913-4b2a-7196" hidden="false" sortIndex="5">
           <entryLinks>
-            <entryLink import="true" name="Strength Skills" hidden="false" id="cd23-4df5-11b5-a70a" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4"/>
+            <entryLink import="true" name="Strength Skills" hidden="false" id="cd23-4df5-11b5-a70a" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" collapsible="true" sortIndex="4"/>
             <entryLink import="true" name="Combat Skills" hidden="false" id="4151-947e-921c-4181" collective="false" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup" collapsible="true" sortIndex="1">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -473,7 +472,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Speed Skills" hidden="true" id="109c-9475-9360-425e" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5"/>
+            <entryLink import="true" name="Speed Skills" hidden="true" id="109c-9475-9360-425e" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" collapsible="true" sortIndex="5"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Training manual" hidden="true" id="c40c-b250-0e0e-894e" sortIndex="7">
@@ -619,7 +618,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
           <costs>
             <cost name=" gc" typeId="points" value="40"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b52-1564-4ecd-567b"/>
@@ -662,7 +661,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -690,7 +689,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" Rarity" typeId="rarity" value="0"/>
+        <cost name="Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
         <modifier type="prepend" value="Hero" field="name">
@@ -839,12 +838,12 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Undead)" hidden="false" id="b4fc-8d60-a94c-5e3b" sortIndex="4" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Undead)" hidden="false" id="b4fc-8d60-a94c-5e3b" sortIndex="4" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="5c5a-8601-383d-2251" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="5c5a-8601-383d-2251" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="3aa0-56c8-55d2-61d9" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -856,7 +855,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
                 <entryLink import="true" name="Light Armour" hidden="false" id="c372-0622-92ac-0106" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="e36e-90b3-0700-109d" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="e36e-90b3-0700-109d" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="cbf7-9dc7-81fc-cf1c" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="6a9a-d897-d6a3-08f4" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -865,7 +864,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
                 <entryLink import="true" name="Sword" hidden="false" id="402d-a915-68d4-8a84" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry" sortIndex="6"/>
                 <entryLink import="true" name="Hammer" hidden="false" id="9001-58c7-a11f-3ab4" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
                 <entryLink import="true" name="Axe" hidden="false" id="857c-cadc-2d3e-848f" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="42fd-62fe-0b27-be83" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="42fd-62fe-0b27-be83" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="c4ec-fcd3-3448-10b9" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="10"/>
               </entryLinks>
               <constraints>
@@ -879,7 +878,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="a72a-b801-c778-1ee1" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="a72a-b801-c778-1ee1" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="0de0-bacb-4d67-1f7f" collective="false" targetId="311a-bf3f-67ff-46e7" type="selectionEntry" sortIndex="4">
                   <constraints>
@@ -923,7 +922,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
       <selectionEntryGroups>
         <selectionEntryGroup name="Skills" id="deb4-9fe4-1db9-509d" hidden="false" sortIndex="6">
           <entryLinks>
-            <entryLink import="true" name="Speed Skills" hidden="false" id="6c1a-89a9-59e2-36d1" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5"/>
+            <entryLink import="true" name="Speed Skills" hidden="false" id="6c1a-89a9-59e2-36d1" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" collapsible="true" sortIndex="5"/>
             <entryLink import="true" name="Academic Skills" hidden="false" id="1ea1-6a39-576d-a489" collective="false" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup" collapsible="true" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -943,7 +942,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Strength Skills" hidden="true" id="80a5-29ac-6fd2-55da" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4"/>
+            <entryLink import="true" name="Strength Skills" hidden="true" id="80a5-29ac-6fd2-55da" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" collapsible="true" sortIndex="4"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Alchemist’s notebook" hidden="true" id="1da8-7970-3b63-9570" sortIndex="6">
@@ -969,51 +968,6 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry id="83ade99f-e9ef-d25a-59ac-ca3f3def011c" name="Stash" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38a7-02c0-1b8a-37b6" type="min"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="83ade99f-e9ef-d25a-59ac-ca3f3def011c-a31acb39-8ce9-d6d7-bcc9-f3144d63db48" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true" name="Stash"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="74cb-4266-baac-3ca5" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="6116-e39a-81cf-37dc" collective="false">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="31fe-5199-fad5-ac58" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c59a-20e0-9330-1741" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="75c9-1c58-ecb0-a209" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" gc" typeId="points" value="0"/>
-            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="Equipment" field="name"/>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="1acb-e55d-5651-9f0b" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="Gold" field="name"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="83acbe09-ec66-c45c-0f5b-1a9e0017016e" name="Vampire" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1148,12 +1102,12 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Undead)" hidden="false" id="8b34-d0a0-21bf-7359" sortIndex="4" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Undead)" hidden="false" id="8b34-d0a0-21bf-7359" sortIndex="4" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="2d41-5856-5ccb-6daa" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="2d41-5856-5ccb-6daa" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="e574-6737-ad88-3aa3" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -1165,7 +1119,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
                 <entryLink import="true" name="Light Armour" hidden="false" id="b907-7237-28de-379f" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="6663-474b-a73d-dd70" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="6663-474b-a73d-dd70" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="390e-072c-c1bc-303a" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="2a88-4c8e-1f22-7f59" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -1174,7 +1128,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
                 <entryLink import="true" name="Sword" hidden="false" id="22c1-7beb-da78-2c4e" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry" sortIndex="6"/>
                 <entryLink import="true" name="Hammer" hidden="false" id="3ba6-cd39-399f-00ee" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
                 <entryLink import="true" name="Axe" hidden="false" id="e79c-2305-00c1-57aa" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="c1ab-b6fa-58f2-8bc3" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="c1ab-b6fa-58f2-8bc3" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="ec66-0f57-8971-d5ed" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="10"/>
               </entryLinks>
               <constraints>
@@ -1188,7 +1142,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="339f-a430-5fcf-9d4d" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="339f-a430-5fcf-9d4d" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="ff8c-9cd4-8ddf-0efb" collective="false" targetId="311a-bf3f-67ff-46e7" type="selectionEntry" sortIndex="4">
                   <constraints>
@@ -1232,8 +1186,8 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
       <selectionEntryGroups>
         <selectionEntryGroup name="Skills" id="6314-5143-9d82-ca3f" hidden="false" sortIndex="6">
           <entryLinks>
-            <entryLink import="true" name="Speed Skills" hidden="false" id="9cfe-a79f-1884-6edb" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5"/>
-            <entryLink import="true" name="Strength Skills" hidden="false" id="84f8-8b4f-e0b4-293d" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4"/>
+            <entryLink import="true" name="Speed Skills" hidden="false" id="9cfe-a79f-1884-6edb" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" collapsible="true" sortIndex="5"/>
+            <entryLink import="true" name="Strength Skills" hidden="false" id="84f8-8b4f-e0b4-293d" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" collapsible="true" sortIndex="4"/>
             <entryLink import="true" name="Combat Skills" hidden="false" id="cfc1-cc96-00e0-4383" collective="false" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup" collapsible="true" sortIndex="1">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -1307,14 +1261,14 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         <categoryLink id="16763088-15c1-4f72-fdfe-153003be4a24-f9b08d8e-4922-78d5-78ad-2047bff52dc8" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true" name="Henchmen"/>
       </categoryLinks>
       <costs>
-        <cost name=" Rarity" typeId="rarity" value="0"/>
+        <cost name="Rarity" typeId="rarity" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Zombies" hidden="false" id="9a0c-726b-01ef-eab8">
           <costs>
             <cost name=" gc" typeId="points" value="15"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ff5-2d94-0b75-eb27"/>
@@ -1322,18 +1276,6 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
           </constraints>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="63f8-c470-00f8-18f3" page="0">
-      <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="5149-01d1-7728-af3a" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="c9af-b601-2724-34c0-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c9af-b601-2724-34c0-max" includeChildSelections="false"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="EXP advancement" id="2a53-2a10-2a38-672e" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
-      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <infoLinks>
@@ -1532,7 +1474,7 @@ Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.</desc
         <entryLink id="5be5042d-302f-7f79-20d6-ece5316b53b7" hidden="false" collective="false" import="true" targetId="a3c87526-fae5-8945-97c3-057d97df69e7" type="selectionEntry" name="+1 W"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="5b051df2-86a2-4480-25d1-a99dcbed79b0" name="Necromancy" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="5b051df2-86a2-4480-25d1-a99dcbed79b0" name="Necromancy" hidden="false" collective="false" collapsible="true" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -1744,11 +1686,10 @@ combat, roll a D6.
     </rule>
     <rule id="7eca-4a4f-438f-495b" name="No Brain" hidden="false">
       <description>Zombies never gain experience. They do not learn from their mistakes.
-
-Awaken Zombies do keep the experience from before but don&apos;t gain any more.</description>
+What did you expect?</description>
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="1948-41b4-4982-1044" targetId="e020-c282-277b-b173" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="data" id="1948-41b4-4982-1044" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

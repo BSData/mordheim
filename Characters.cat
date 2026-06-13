@@ -139,7 +139,7 @@ May be Hired: Any warband except Skaven, Undead and the Possessed may hire a Pit
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ca4-d73d-c0fd-c603" type="max"/>
               </constraints>
               <profiles>
-                <profile id="5e0e-78dc-8b27-990f" name="Spiked Gauntlet" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+                <profile id="5e0e-78dc-8b27-990f" name="Spiked Gauntlet" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
                   <characteristics>
                     <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">As user</characteristic>
                     <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">The spiked gauntlet counts as an additional hand weapon and a buckler. And no, your Heroes annot learn to use it!</characteristic>
@@ -546,12 +546,12 @@ May be Hired: Any warband except Skaven may hire an Ogre Bodyguard.</description
                   </modifiers>
                 </entryLink>
                 <entryLink id="4993-0e83-c706-3a35" name="Sword" hidden="false" collective="false" import="true" targetId="01c0-2847-74b6-2431" type="selectionEntry"/>
-                <entryLink id="3bab-b464-a93c-bdc6" name="Double Handed Weapon" hidden="false" collective="false" import="true" targetId="8bcd-302f-817c-f0b7" type="selectionEntry"/>
+                <entryLink id="3bab-b464-a93c-bdc6" name="Double-handed weapon" hidden="false" collective="false" import="true" targetId="8bcd-302f-817c-f0b7" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="909b-b8ad-635d-f340" name="Light Armor" hidden="false" collective="false" import="true" targetId="0515-342a-52c0-7028" type="selectionEntry">
+            <entryLink id="909b-b8ad-635d-f340" name="Light Armour" hidden="false" collective="false" import="true" targetId="0515-342a-52c0-7028" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0aa7-b0ac-6bd1-4d49" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cef3-ed51-2db7-ec2b" type="max"/>
@@ -762,7 +762,7 @@ When mounted, the Freelancer has an armour saving throw of 3+. On foot his save 
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46e2-ade3-e88f-7a85" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="3855-dabf-b218-8788" name="Heavy Armor" hidden="false" collective="false" import="true" targetId="aca5-c73e-f285-5bf6" type="selectionEntry">
+            <entryLink id="3855-dabf-b218-8788" name="Heavy Armour" hidden="false" collective="false" import="true" targetId="aca5-c73e-f285-5bf6" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb9e-337f-24d2-9f25" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f385-9c85-0d87-0704" type="max"/>
@@ -980,7 +980,7 @@ They are not very easy individuals to knock out!</description>
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09f3-f2d2-55cb-5e56" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="7dd7-50f8-984e-72f9" name="Double Handed Weapon" hidden="false" collective="false" import="true" targetId="8bcd-302f-817c-f0b7" type="selectionEntry">
+            <entryLink id="7dd7-50f8-984e-72f9" name="Double-handed weapon" hidden="false" collective="false" import="true" targetId="8bcd-302f-817c-f0b7" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Double-Handed Axe"/>
               </modifiers>
@@ -1174,7 +1174,7 @@ He will suffer a -1 to hit penalty on that turn.</description>
           <description>Upkeep: 15gc
 Rating: +16 (+1/exp)
 
-Warlocks are magicians and have two spells generated at random from the Lesser Magic list. See the Magic section for details. 
+Warlocks are Magicians and have two spells generated at random from the Lesser Magic list. See the Magic section for details. 
 
 May be Hired: Any warband except Witch Hunters and Sisters of Sigmar may hire a Warlock.</description>
         </rule>
@@ -1428,7 +1428,7 @@ May be Hired: Mercenaries and Witch Hunters may hire Elf Rangers. Warbands which
                 <selectionEntry id="49e0-13dc-c969-42a6" name="Fey" hidden="false" collective="false" import="true" type="upgrade">
                   <rules>
                     <rule id="aea7-c3a7-8c18-09f6" name="Fey" hidden="false">
-                      <description>Hostile magic spells will not affect the Elf on a D6 roll of 4+.</description>
+                      <description>Hostile Magic spells will not affect the Elf on a D6 roll of 4+.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -1896,7 +1896,7 @@ The bodyguard will not charge unless the Merchant also charges and cannot interc
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41de-7512-c092-6a82" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="4e28-944c-d7f2-77e3" name="Light Armor" hidden="false" collective="false" import="true" targetId="0515-342a-52c0-7028" type="selectionEntry">
+            <entryLink id="4e28-944c-d7f2-77e3" name="Light Armour" hidden="false" collective="false" import="true" targetId="0515-342a-52c0-7028" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10b8-0e54-4df8-587d" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9d2-b728-d13d-56b2" type="max"/>
@@ -2110,7 +2110,7 @@ He may be set up anywhere on the board that is hidden and outside of the enemy d
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bc7-56b6-480a-8b10" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="8752-ae93-82e2-bf91" name="Light Armor" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry"/>
+            <entryLink id="8752-ae93-82e2-bf91" name="Light Armour" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -2921,7 +2921,7 @@ He ignores &apos;to hit&apos; modifiers for cover when shooting his crossbow.</d
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0325-ab34-b771-f21c" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="e0f5-ee3e-b96f-4cb9" name="Light Armor" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry">
+            <entryLink id="e0f5-ee3e-b96f-4cb9" name="Light Armour" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="points" value="0"/>
               </modifiers>
@@ -3107,7 +3107,7 @@ When mounted, the Roadwarden has an armour saving throw of 4+. On foot his save 
           <description>A master with the crossbow, a Roadwarden combines the skills of Trick Shooter and Eagle Eyes.</description>
         </rule>
         <rule id="fb29-dd46-0264-8e41" name="Stern" hidden="false">
-          <description>Working alone and in the dark for the majority of his profession the Roadwarden is made of strong stuff indeed.
+          <description>WOrcing alone and in the dark for the majority of his profession the Roadwarden is made of strong stuff indeed.
 
 He may re-roll any failed Leadership test for panic, fear, and is immune to the rules for being All Alone.</description>
         </rule>
@@ -3159,7 +3159,7 @@ He may re-roll any failed Leadership test for panic, fear, and is immune to the 
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3762-c45e-3591-352d" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="4399-05fe-7e31-6438" name="Light Armor" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry">
+            <entryLink id="4399-05fe-7e31-6438" name="Light Armour" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="points" value="0"/>
               </modifiers>
@@ -3394,7 +3394,7 @@ A warband who used Aenur in their last battle may not seek him out until they ha
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84d3-0ef9-9ac1-fc94" type="max"/>
               </constraints>
               <profiles>
-                <profile id="df3c-be0c-7096-b324" name="Ienh-Khain" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+                <profile id="df3c-be0c-7096-b324" name="Ienh-Khain" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
                   <characteristics>
                     <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+1</characteristic>
                     <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Parry, Improved Criticals</characteristic>
@@ -3912,7 +3912,7 @@ She gains +2 to all her rolls to see whether her Prayers of Sigmar are granted.<
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5caf-c392-8f38-db54" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="533a-10bb-dabb-7b8c" name="Holy (Unholy) Relic" hidden="false" collective="false" import="true" targetId="f122-5313-bc4d-97fa" type="selectionEntry">
+            <entryLink id="533a-10bb-dabb-7b8c" name="Holy Relic" hidden="false" collective="false" import="true" targetId="f122-5313-bc4d-97fa" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="points" value="0"/>
                 <modifier type="set" field="name" value="Holy Relic"/>
@@ -4232,7 +4232,7 @@ In a campaign, if one member of the partnership retires then the other will reti
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f34a-355b-45f2-5d6b" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="6901-c200-6e15-29ef" name="Light Armor" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry">
+            <entryLink id="6901-c200-6e15-29ef" name="Light Armour" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="points" value="0"/>
               </modifiers>
@@ -4313,7 +4313,7 @@ charging), the order of attack between the charger(s) and the warrior with this 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ee5-d84e-e5bd-b0a4" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="3674-31fd-bb1c-bbfb" name="Double Handed Weapon" hidden="false" collective="false" import="true" targetId="a0a1-b311-e3aa-6c3b" type="selectionEntry">
+            <entryLink id="3674-31fd-bb1c-bbfb" name="Double-handed weapon" hidden="false" collective="false" import="true" targetId="a0a1-b311-e3aa-6c3b" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="points" value="0"/>
                 <modifier type="set" field="name" value="Two-handed warhammer"/>
@@ -4323,7 +4323,7 @@ charging), the order of attack between the charger(s) and the warrior with this 
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66bd-0b0a-7d41-9ed5" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="abde-0f0e-7998-bc83" name="Light Armor" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry">
+            <entryLink id="abde-0f0e-7998-bc83" name="Light Armour" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="points" value="0"/>
               </modifiers>
@@ -4351,7 +4351,7 @@ charging), the order of attack between the charger(s) and the warrior with this 
               </constraints>
               <rules>
                 <rule id="cfd9-fa37-6dc4-2cce" name="Strongman" page="0" hidden="false">
-                  <description>He may use a double-handed weapon without the usual penalty of always striking last. Work out order of battle as you would with other weapons</description>
+                  <description>He may use a double-handed weapon without the usual penalty of always striking last. WOrc out order of battle as you would with other weapons</description>
                 </rule>
               </rules>
               <costs>
@@ -4776,7 +4776,7 @@ Armour saves are taken as normal (ie, with -1 modifier).</characteristic>
                     <profile id="dc1f-2016-1f6b-3f3a" name="Flight of Zimmeran" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
                       <characteristics>
                         <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                        <characteristic name="Effect" typeId="0592-3510-8508-7263">Calling upon the power of the winds of magic, the wizard walks on air.
+                        <characteristic name="Effect" typeId="0592-3510-8508-7263">Calling upon the power of the winds of Magic, the wizard walks on air.
 The wizard may immediately move anywhere within 12&quot;, including into base contact with an enemy, in which case he counts as charging.
 If he engages a fleeing enemy in the close combat phase he will score 1 automatic hit and then his opponent will flee again (if he survives).</characteristic>
                       </characteristics>
@@ -4840,7 +4840,7 @@ The arrows cause one S3 hit each.</characteristic>
                     <profile id="3220-cc2c-0c8c-8a11" name="Luck of Shemtek" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
                       <characteristics>
                         <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
-                        <characteristic name="Effect" typeId="0592-3510-8508-7263">The wizard summons the fickle power of magic to manipulate chance.
+                        <characteristic name="Effect" typeId="0592-3510-8508-7263">The wizard summons the fickle power of Magic to manipulate chance.
 The wizard may re-roll all his failed dice rolls, though the second results stand.
 The effect lasts until the beginning of his own next turn.</characteristic>
                       </characteristics>
@@ -4892,7 +4892,7 @@ If the test fails, the sword disappears.</characteristic>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3dca-6db7-a13e-b17a" type="max"/>
               </constraints>
               <profiles>
-                <profile id="6cce-90a2-abec-ffb4" name="Enormous Wizard&apos;s Staff" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+                <profile id="6cce-90a2-abec-ffb4" name="Enormous Wizard&apos;s Staff" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
                   <characteristics>
                     <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
                     <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Concussion</characteristic>
@@ -5088,7 +5088,7 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cc3-3430-a029-886d" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="848e-aeaa-1d0c-ba9e" name="Light Armor" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry">
+            <entryLink id="848e-aeaa-1d0c-ba9e" name="Light Armour" hidden="false" collective="false" import="true" targetId="3d2a-426a-c350-2a03" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="points" value="0"/>
               </modifiers>
@@ -5266,9 +5266,9 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
     </selectionEntry>
     <selectionEntry id="7e48-676e-a2ce-0e3f" name="Helmet" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="d95d-50ed-cc99-9692" name="Helmet" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor">
+        <profile id="d95d-50ed-cc99-9692" name="Helmet" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armour">
           <characteristics>
-            <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b"/>
+            <characteristic name="Armour Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b"/>
             <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">Avoid stun</characteristic>
           </characteristics>
         </profile>
@@ -5283,7 +5283,7 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
     </selectionEntry>
     <selectionEntry id="7a28-754a-58bf-843c" name="Morning Star" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="c693-3e8f-71e9-534b" name="Morning Star" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+        <profile id="c693-3e8f-71e9-534b" name="Morning Star" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+1</characteristic>
             <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Heavy, Difficult to use</characteristic>
@@ -5299,11 +5299,11 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0515-342a-52c0-7028" name="Light Armor" page="0" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0515-342a-52c0-7028" name="Light Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="a015-1f8e-eda6-fb4d" name="Light Armor" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor">
+        <profile id="a015-1f8e-eda6-fb4d" name="Light Armour" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armour">
           <characteristics>
-            <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">6+</characteristic>
+            <characteristic name="Armour Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">6+</characteristic>
             <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f"/>
           </characteristics>
         </profile>
@@ -5315,7 +5315,7 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
     </selectionEntry>
     <selectionEntry id="0860-fcb5-9459-23f7" name="Axe" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="1bfe-eaa4-14e2-861a" name="Axe" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+        <profile id="1bfe-eaa4-14e2-861a" name="Axe" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
             <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Cutting edge</characteristic>
@@ -5332,7 +5332,7 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
     </selectionEntry>
     <selectionEntry id="2fc0-e260-643e-ab2a" name="Hammer, Staff, Mace, Club" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="4d1f-51bb-a9b3-0f6c" name="Club,Mace, Hammer" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+        <profile id="4d1f-51bb-a9b3-0f6c" name="Club,Mace, Hammer" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
             <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Concussion</characteristic>
@@ -5349,7 +5349,7 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
     </selectionEntry>
     <selectionEntry id="01c0-2847-74b6-2431" name="Sword" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="7260-ba91-5680-2702" name="Sword" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+        <profile id="7260-ba91-5680-2702" name="Sword" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
             <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Parry</characteristic>
@@ -5364,9 +5364,9 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8bcd-302f-817c-f0b7" name="Double Handed Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8bcd-302f-817c-f0b7" name="Double-handed weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="aabf-131e-9b90-5428" name="Double Handed Weapon" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+        <profile id="aabf-131e-9b90-5428" name="Double-handed weapon" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
             <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two-handed,  Strike last</characteristic>
@@ -5399,10 +5399,10 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
     </selectionEntry>
     <selectionEntry id="0e18-af38-80f9-5802" name="Dagger" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="4f45-810b-75de-6870" name="Dagger" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+        <profile id="4f45-810b-75de-6870" name="Dagger" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
-            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">+1 enemy armor save</characteristic>
+            <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">+1 enemy Armour save</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5416,9 +5416,9 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
     </selectionEntry>
     <selectionEntry id="a47f-7872-7a95-683f" name="Shield" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="9691-a80c-1c99-6130" name="Shield" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor">
+        <profile id="9691-a80c-1c99-6130" name="Shield" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armour">
           <characteristics>
-            <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">+1</characteristic>
+            <characteristic name="Armour Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">+1</characteristic>
             <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f"/>
           </characteristics>
         </profile>
@@ -5428,11 +5428,11 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aca5-c73e-f285-5bf6" name="Heavy Armor" page="0" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="aca5-c73e-f285-5bf6" name="Heavy Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="b533-07ab-2b6f-6a97" name="Heavy Armor" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor">
+        <profile id="b533-07ab-2b6f-6a97" name="Heavy Armour" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armour">
           <characteristics>
-            <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">5+</characteristic>
+            <characteristic name="Armour Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">5+</characteristic>
             <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">A warrior that is armed with both heavy armour and a shield suffers a -1 Movement penalty.</characteristic>
           </characteristics>
         </profile>
@@ -5444,7 +5444,7 @@ If an animal of any sort is put Out of Action by a trap, it is automatically cap
     </selectionEntry>
     <selectionEntry id="96ae-edec-6d11-9250" name="Lance" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="1be2-03ce-095e-0190" name="Lance" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+        <profile id="1be2-03ce-095e-0190" name="Lance" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
           <characteristics>
             <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
             <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Calvary Weapon, Calvary Bonus +2</characteristic>
@@ -5862,7 +5862,7 @@ As such, priests of Morr may choose a Funerary Rite listed below, using the rul
                 <profile name="Morr&apos;s Protection" typeId="d891-ee2b-b7dc-f545" typeName="Magic" hidden="false" id="c025-3fdd-6f69-138e">
                   <characteristics>
                     <characteristic name="Difficulty" hidden="false" id="111-4001-df90-2889" typeId="dd91-3f4d-8b72-7905">6</characteristic>
-                    <characteristic name="Effect" hidden="false" id="3349-be8b-db45-736c" typeId="0592-3510-8508-7263">The Priest of Morr calls out to his god when confronted by an abomination and asks that he be shielded from the corrupted magic of the tainted.
+                    <characteristic name="Effect" hidden="false" id="3349-be8b-db45-736c" typeId="0592-3510-8508-7263">The Priest of Morr calls out to his god when confronted by an abomination and asks that he be shielded from the corrupted Magic of the tainted.
 
 
 Any Magical attacks made by a Necromancer, a Magister or Daemons, which would be considered a direct attack on the priest, will be negated if this rite is successful.</characteristic>
@@ -5994,7 +5994,7 @@ Their divine duties involved the dead, not the taking of life.
 However, there are times when a priest of Morr will he called to engage in combat and who would be more feared than a representative of the god of Death?
 
 
-This spell gives the priest of Morr a 6+ armor save and increases their WS by either +1 or makes it 4, whichever is greater.</characteristic>
+This spell gives the priest of Morr a 6+ Armour save and increases their WS by either +1 or makes it 4, whichever is greater.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6126,7 +6126,7 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="ab4e5484-acd3-b553-7694-5e60e6c7e3ae" name="Armor" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="ab4e5484-acd3-b553-7694-5e60e6c7e3ae" name="Armour" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -6140,9 +6140,9 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
       <selectionEntries>
         <selectionEntry id="6980f8c9-e102-2440-30da-a10572cde567" name="Buckler" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="ba8c5125-1983-376c-dfff-495f40bf6715" name="Buckler" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor">
+            <profile id="ba8c5125-1983-376c-dfff-495f40bf6715" name="Buckler" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armour">
               <characteristics>
-                <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b"/>
+                <characteristic name="Armour Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b"/>
                 <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">Parry</characteristic>
               </characteristics>
             </profile>
@@ -6157,9 +6157,9 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
         </selectionEntry>
         <selectionEntry id="179351b1-b943-159c-70c0-5328a17a363b" name="Barding" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="d15278cd-d4c1-bd40-bb38-6540ecd04c8d" name="Barding" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor">
+            <profile id="d15278cd-d4c1-bd40-bb38-6540ecd04c8d" name="Barding" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armour">
               <characteristics>
-                <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">+1</characteristic>
+                <characteristic name="Armour Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">+1</characteristic>
                 <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">-1 MV, Warhorse Only</characteristic>
               </characteristics>
             </profile>
@@ -6174,9 +6174,9 @@ phase you may re-roll one dice when rolling on the Exploration chart. The second
         </selectionEntry>
         <selectionEntry id="97262f51-4a0b-7127-c03a-9499e7e38a0a" name="Gromril Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="9198fa07-1c51-4b16-db0f-a40e4cdb47f2" name="Gromril Armour" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armor">
+            <profile id="9198fa07-1c51-4b16-db0f-a40e4cdb47f2" name="Gromril Armour" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armour">
               <characteristics>
-                <characteristic name="Armor Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">4+</characteristic>
+                <characteristic name="Armour Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">4+</characteristic>
                 <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">Not Showed By Shield</characteristic>
               </characteristics>
             </profile>
@@ -6344,7 +6344,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
         <entryLink id="453eec21-f71b-52b1-ff0e-d7a05c4600e4" hidden="false" collective="false" import="true" targetId="ab4e5484-acd3-b553-7694-5e60e6c7e3ae" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b54b39f1-0daa-eabc-e0b8-74f83d2a19e0" name="Hand to Hand Weapons" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="b54b39f1-0daa-eabc-e0b8-74f83d2a19e0" name="Hand-to-hand Combat Weapons" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -6358,7 +6358,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
       <selectionEntries>
         <selectionEntry id="c9494475-3720-3676-42b0-8a7c261ae004" name="Spear" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="80262f8e-5181-2be8-215c-55f52229674c" name="Spear" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+            <profile id="80262f8e-5181-2be8-215c-55f52229674c" name="Spear" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
               <characteristics>
                 <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
                 <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Unwieldy, Strike First, Calvary Bonus +1</characteristic>
@@ -6409,7 +6409,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
         </selectionEntry>
         <selectionEntry id="5f0e7a6b-e633-9b8e-d06a-fb5c82e885b9" name="Halberd" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="aa494a86-0ec7-0e94-89ef-6addbf8afd93" name="Halberd" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+            <profile id="aa494a86-0ec7-0e94-89ef-6addbf8afd93" name="Halberd" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
               <characteristics>
                 <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+1</characteristic>
                 <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Two-handed</characteristic>
@@ -6461,7 +6461,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <profiles>
-            <profile id="c419d855-1a49-a967-4b92-d910d59fd87b" name="Free Dagger" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+            <profile id="c419d855-1a49-a967-4b92-d910d59fd87b" name="Free Dagger" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
               <characteristics>
                 <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
                 <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">+1 enemey save</characteristic>
@@ -6478,7 +6478,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
         </selectionEntry>
         <selectionEntry id="dfbc868a-c6a4-80ae-2c3a-1789b3dde6dd" name="Fist" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="55d46418-aab2-ed8c-9e83-635312b441b5" name="Fist" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+            <profile id="55d46418-aab2-ed8c-9e83-635312b441b5" name="Fist" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
               <characteristics>
                 <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68"/>
                 <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">+1 Enemy armour save:</characteristic>
@@ -6495,7 +6495,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
         </selectionEntry>
         <selectionEntry id="46a156bc-9d62-8bf1-94aa-26ed5a1cad42" name="Flail" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="9457ee33-25e2-c030-e33f-2dc41f9e86be" name="Flail" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+            <profile id="9457ee33-25e2-c030-e33f-2dc41f9e86be" name="Flail" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
               <characteristics>
                 <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
                 <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Heavy, Two-handed</characteristic>
@@ -6545,7 +6545,7 @@ only applies when they are armed with normal swords or weeping blades, and not w
         </selectionEntry>
         <selectionEntry id="d5b77a74-af16-76e5-a643-97b6d31673c5" name="Ball and Chain" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="c16da210-c777-e1c0-6219-05256ff53062" name="Ball and Chain" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="HtH Weapon">
+            <profile id="c16da210-c777-e1c0-6219-05256ff53062" name="Ball and Chain" page="0" hidden="false" typeId="9db87680-6ee5-b46c-48ca-dcd1c5de1bad" typeName="H-t-h Weapon">
               <characteristics>
                 <characteristic name="Str" typeId="f10cfcb7-b71e-4c27-9836-75d341e28f68">+2</characteristic>
                 <characteristic name="Special" typeId="80dd3fd5-3811-af0b-e182-2ecbc7ad5d8e">Incredible Force, Random, Two-handed, Cumbersome, Unwieldy</characteristic>
@@ -6598,7 +6598,7 @@ ignores the special rules for Animosity.</description>
         <constraint field="points" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="f941a52c-a11a-fef5-dd80-d7a857d3789a" name="Waaagg magic" hidden="false" collective="false" import="true" targetId="5cce5525-3057-85be-427a-ceeac0d35c53" type="selectionEntryGroup"/>
+        <entryLink id="f941a52c-a11a-fef5-dd80-d7a857d3789a" name="Waaagh! Magic" hidden="false" collective="false" import="true" targetId="5cce5525-3057-85be-427a-ceeac0d35c53" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="38175608-757c-9eb5-59a8-2f7b6b1019e2" name="Missile Weapons" hidden="false" collective="false" import="true">
@@ -7320,7 +7320,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
           </constraints>
           <rules>
             <rule id="4300f1bc-89a1-6955-5b97-f8a81f0b5b27" name="Strongman" page="0" hidden="false">
-              <description>He may use a double-handed weapon without the usual penalty of always striking last. Work out order of battle as you would with other weapons</description>
+              <description>He may use a double-handed weapon without the usual penalty of always striking last. WOrc out order of battle as you would with other weapons</description>
             </rule>
           </rules>
           <costs>
@@ -7393,7 +7393,7 @@ Armour saves are taken as normal (ie, with -1 modifier).</characteristic>
             <profile id="81cd-6130-2e8a-cb68" name="Flight of Zimmeran" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
               <characteristics>
                 <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">7</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">Calling upon the power of the winds of magic, the wizard walks on air.
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">Calling upon the power of the winds of Magic, the wizard walks on air.
 The wizard may immediately move anywhere within 12&quot;, including into base contact with an enemy, in which case he counts as charging.
 If he engages a fleeing enemy in the close combat phase he will score 1 automatic hit and then his opponent will flee again (if he survives).</characteristic>
               </characteristics>
@@ -7445,7 +7445,7 @@ The arrows cause one S3 hit each.</characteristic>
             <profile id="641b-0dc0-95e2-a761" name="Luck of Shemtek" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
               <characteristics>
                 <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">6</characteristic>
-                <characteristic name="Effect" typeId="0592-3510-8508-7263">The wizard summons the fickle power of magic to manipulate chance.
+                <characteristic name="Effect" typeId="0592-3510-8508-7263">The wizard summons the fickle power of Magic to manipulate chance.
 The wizard may re-roll all his failed dice rolls, though the second results stand.
 The effect lasts until the beginning of his own next turn.</characteristic>
               </characteristics>
@@ -7867,9 +7867,9 @@ Wardogs count towards the maximum number of warriors allowed in your warband.</d
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fb90c61e-63c8-ee98-05b2-afb1f4aae1d8" name="Squigg Prodder" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="fb90c61e-63c8-ee98-05b2-afb1f4aae1d8" name="Squig Prodder" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="0bdef679-46c4-8ea8-5e57-18b0fa955a4c" name="Squigg Prodder" page="0" hidden="false">
+            <rule id="0bdef679-46c4-8ea8-5e57-18b0fa955a4c" name="Squig Prodder" page="0" hidden="false">
               <description>a Goblin with a Squig prodder can keep all Cave Squigs within 12&quot; from special rule under the Cave Squig entry. In addition, a Squig prodder is treated exactly like a spear in hand-to-hand combat.</description>
             </rule>
           </rules>
@@ -8003,6 +8003,6 @@ combat, roll a D6.
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink id="cd5b-a743-c9c8-fffa" name="common-data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="cd5b-a743-c9c8-fffa" name="data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

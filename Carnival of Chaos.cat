@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3ca8-2429-2fa9-659e" name="Carnival of Chaos (1a)" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3ca8-2429-2fa9-659e" name="Carnival of Chaos (1a)" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="a8de-6c73-092a-998b" name="Carnival Master" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -125,9 +125,9 @@
         <categoryLink id="5145-5e95-69db-b652" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Carnival)" hidden="false" id="037f-e592-9688-263d" sortIndex="5" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Carnival)" hidden="false" id="037f-e592-9688-263d" sortIndex="5" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="a166-be79-9b19-24e8" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="a166-be79-9b19-24e8" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="4fe0-7572-249d-173e" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="4">
                   <constraints>
@@ -139,7 +139,7 @@
                 <entryLink import="true" name="Heavy Armour" hidden="false" id="688d-3432-e76e-6511" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="c2fc-c0da-c7ee-e6bf" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="c2fc-c0da-c7ee-e6bf" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="7015-a4c4-a1b5-5d5e" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="d946-d3a2-c5b4-6a76" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -149,7 +149,7 @@
                 <entryLink import="true" name="Axe" hidden="false" id="4946-f549-1020-1d84" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
                 <entryLink import="true" name="Morning Star" hidden="false" id="734c-3ab3-f963-f11e" type="selectionEntry" targetId="d5f3-1906-da91-4e8f" sortIndex="7"/>
                 <entryLink import="true" name="Spear" hidden="false" id="7201-c15c-87be-ac20" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="9"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="270e-c869-df0b-adb5" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="270e-c869-df0b-adb5" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="3f67-70a2-c2e6-c315" collective="false" targetId="3c52-9e92-25ec-1939" type="selectionEntry" sortIndex="10"/>
               </entryLinks>
               <constraints>
@@ -163,7 +163,7 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="877f-3b13-653e-22f7" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="877f-3b13-653e-22f7" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Pistol" hidden="false" id="fca9-2e89-492b-6bcb" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="3"/>
                 <entryLink import="true" name="Shortbow" hidden="false" id="120f-41b7-e2a5-0425" type="selectionEntry" targetId="3706-6421-53b4-940d" sortIndex="1">
@@ -200,7 +200,7 @@
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -393,12 +393,12 @@
         <categoryLink id="f50b-baf9-2da0-9e0f" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Brutes)" hidden="false" id="c968-31d7-e406-1799" sortIndex="3" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Brutes)" hidden="false" id="c968-31d7-e406-1799" sortIndex="3" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="fcfa-4f9f-d3b8-4053" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="fcfa-4f9f-d3b8-4053" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Flail" hidden="false" id="22a6-b803-a3bf-16d8" collective="false" targetId="fea6-684b-02c4-6c62" type="selectionEntry" sortIndex="9"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="25f2-be02-3ccc-f2e6" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="25f2-be02-3ccc-f2e6" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3893-8e30-8df6-1448" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -427,7 +427,7 @@
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -617,9 +617,9 @@
         <categoryLink id="60ef-34bd-b571-8dbe" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Carnival)" hidden="false" id="a1ac-59cc-8970-e87f" sortIndex="3" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Carnival)" hidden="false" id="a1ac-59cc-8970-e87f" sortIndex="3" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="dc80-be18-202d-0404" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="dc80-be18-202d-0404" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="7545-9769-3885-c726" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="4">
                   <constraints>
@@ -631,7 +631,7 @@
                 <entryLink import="true" name="Heavy Armour" hidden="false" id="1d26-4280-3405-d6c3" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="ab53-ef75-d76a-8488" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="ab53-ef75-d76a-8488" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="0fcf-460a-6773-07a6" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="c04a-e10c-89de-f7e6" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -641,7 +641,7 @@
                 <entryLink import="true" name="Axe" hidden="false" id="d898-7850-e331-252b" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
                 <entryLink import="true" name="Morning Star" hidden="false" id="1f99-2d03-cbf4-7e30" type="selectionEntry" targetId="d5f3-1906-da91-4e8f" sortIndex="7"/>
                 <entryLink import="true" name="Spear" hidden="false" id="c6f6-cc81-fe87-058b" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="9"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="ef48-1661-049a-cb38" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="ef48-1661-049a-cb38" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="6151-8d6e-588b-ebfc" collective="false" targetId="3c52-9e92-25ec-1939" type="selectionEntry" sortIndex="10"/>
               </entryLinks>
               <constraints>
@@ -655,7 +655,7 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="3860-20f7-b739-529d" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="3860-20f7-b739-529d" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Pistol" hidden="false" id="5b74-7b51-4ee9-3be9" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="3"/>
                 <entryLink import="true" name="Shortbow" hidden="false" id="2b6b-c7ce-aa16-3540" type="selectionEntry" targetId="3706-6421-53b4-940d" sortIndex="1">
@@ -692,7 +692,7 @@
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -756,7 +756,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry id="35c5-e6ec-8ab4-8b55" name="Plague Bearers" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="35c5-e6ec-8ab4-8b55" name="Plague Bearers" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="42f7-9ad4-218c-81e7" name="Plague Bearers" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <characteristics>
@@ -800,11 +800,11 @@ They are totally immune to all poisons and diseases.</description>
 They automatically pass any Leadership-based test they are required to take.</description>
         </rule>
         <rule id="aa94-8a37-4dfc-83a7" name="Daemonic Aura" hidden="false">
-          <description>Due to the magical, intangible nature of Daemons they have a special Armour save of 5+.
+          <description>Due to the Magical, intangible nature of Daemons they have a special Armour save of 5+.
 
-This is modified by the Strength of the attack as normal and is completely negated by magic weapons and spells.
+This is modified by the Strength of the attack as normal and is completely negated by Magic weapons and spells.
 
-Plague Bearers’ attacks are considered as magical also.</description>
+Plague Bearers’ attacks are considered as Magical also.</description>
         </rule>
         <rule id="c99f-3bbf-72dc-2ea0" name="Daemonic Instability" hidden="false">
           <description>Plague Bearers are bound to the world by Dark Sorcery that is highly volatile and unstable.
@@ -827,17 +827,17 @@ If this test is failed, then the Plague Bearer counts as destroyed.</description
           <costs>
             <cost name=" gc" typeId="points" value="50"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="0d01-eaf1-2adb-0baf"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f8e-f4c8-2064-14ac"/>
-            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="1004-9674-6f78-9309" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="1004-9674-6f78-9309" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="5aa3-7e82-455f-08e0" name="Nurglings" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5aa3-7e82-455f-08e0" name="Nurglings" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="9200-8bf5-cb87-5419" name="Nurglings" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <characteristics>
@@ -879,10 +879,10 @@ They are totally immune to all poisons and diseases.</description>
 They automatically pass any Leadership-based test they are required to take.</description>
         </rule>
         <rule id="1dfd-5d6f-7f0a-c35b" name="Daemonic Aura" hidden="false">
-          <description>Due to the magical, intangible nature of Daemons they have a special Armour save of 5+.
-This is modified by the Strength of the attack as normal and is completely negated by magic weapons and spells.
+          <description>Due to the Magical, intangible nature of Daemons they have a special Armour save of 5+.
+This is modified by the Strength of the attack as normal and is completely negated by Magic weapons and spells.
 
-Nurglings’ attacks are also considered as magical.</description>
+Nurglings’ attacks are also considered as Magical.</description>
         </rule>
         <rule id="9079-fb17-dd0f-4c22" name="Daemonic Instability" hidden="false">
           <description>Nurglings are bound to the world by Dark Sorcery that is highly volatile and unstable.
@@ -902,7 +902,7 @@ If this test is failed, then Nurgling counts as destroyed.</description>
           <costs>
             <cost name=" gc" typeId="points" value="15"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="7140-c0dd-d532-ca00"/>
@@ -1026,9 +1026,9 @@ If this test is failed, then Nurgling counts as destroyed.</description>
         <categoryLink id="dda7-1e5c-f29d-1191" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Carnival)" hidden="false" id="ea86-9828-d74e-8aaf" sortIndex="5" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Carnival)" hidden="false" id="ea86-9828-d74e-8aaf" sortIndex="5" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="474d-225a-d48b-e9bd" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="474d-225a-d48b-e9bd" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="2e33-6c5d-0e9b-dd88" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="4">
                   <constraints>
@@ -1040,7 +1040,7 @@ If this test is failed, then Nurgling counts as destroyed.</description>
                 <entryLink import="true" name="Heavy Armour" hidden="false" id="8ec6-d1e8-fab4-6ace" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="4350-2cae-e65c-7a98" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="4350-2cae-e65c-7a98" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="e2cf-1132-a310-3f1d" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="145c-a98b-65eb-137a" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -1050,7 +1050,7 @@ If this test is failed, then Nurgling counts as destroyed.</description>
                 <entryLink import="true" name="Axe" hidden="false" id="b8ea-7afe-669b-0558" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
                 <entryLink import="true" name="Morning Star" hidden="false" id="46c1-438a-58ea-75fa" type="selectionEntry" targetId="d5f3-1906-da91-4e8f" sortIndex="7"/>
                 <entryLink import="true" name="Spear" hidden="false" id="c541-ddbf-25e7-468a" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="9"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="eccf-8ed9-1e91-6974" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="eccf-8ed9-1e91-6974" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="8725-9c74-b8a8-b479" collective="false" targetId="3c52-9e92-25ec-1939" type="selectionEntry" sortIndex="10"/>
               </entryLinks>
               <constraints>
@@ -1064,7 +1064,7 @@ If this test is failed, then Nurgling counts as destroyed.</description>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="bf59-bbdd-d800-d404" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="bf59-bbdd-d800-d404" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Pistol" hidden="false" id="42c0-8a6c-637e-fbd7" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="3"/>
                 <entryLink import="true" name="Shortbow" hidden="false" id="44a4-571f-ef75-8a78" type="selectionEntry" targetId="3706-6421-53b4-940d" sortIndex="1">
@@ -1108,14 +1108,14 @@ If this test is failed, then Nurgling counts as destroyed.</description>
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Brethren" hidden="false" id="585b-2b5c-d105-84ff" sortIndex="1">
           <costs>
             <cost name=" gc" typeId="points" value="25"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="b464-1eb6-1346-4e92"/>
@@ -1261,63 +1261,6 @@ The Plague Cart automatically passes any Leadership-based test it is required to
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="57fb-2cb3-ea2a-04af" name="Stash" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a07-e78b-40ad-c192" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c29-4524-f502-b4ad" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="fb69-8dab-f6ab-3bf5" name="Stash" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="b290-2b01-ae87-5ba5" name="Wyrdstone" hidden="false" collective="false" import="true" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="c69a-b9b8-a681-db48" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="Gold" field="name"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="d4e2-72e1-7a24-2e8b" collective="false">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c60f-4152-54a2-d57b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95c6-ed0e-2e42-d3da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="d48e-4459-13b9-3c1f" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" gc" typeId="points" value="0"/>
-            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="Equipment" field="name"/>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="23e3-c862-9c44-78d7" page="0">
-      <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="9df2-54c3-1663-4afb" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="28a0-4594-a1f5-64e2-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="28a0-4594-a1f5-64e2-max" includeChildSelections="false"/>
-      </constraints>
-      <rules>
-        <rule name="Dangerous to Know" id="bfc5-92f5-d0cd-fe2c" hidden="false">
-          <description>Because of its rather diseased nature a Carnival of Chaos warband would find it very hard to keep any Hired Swords alive! Therefore, a Carnival of Chaos may never hire any type of Hired Sword.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="EXP advancement" id="8f23-3438-1296-640b" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
-      </infoLinks>
-    </selectionEntry>
   </selectionEntries>
   <rules>
     <rule id="267b-1607-e774-4e6c" name="Dangerous to Know" hidden="false">
@@ -1338,12 +1281,12 @@ The Plague Cart automatically passes any Leadership-based test it is required to
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="5dbb-7aba-e47b-8ac7" name="Carnival equipment" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="2cdb-3113-8b86-e7a1" name="Armor" hidden="false" collective="false" import="true" targetId="3ee4-b781-9335-e698" type="selectionEntryGroup"/>
-        <entryLink id="206c-f350-53bb-1e5b" name="Hand to Hand Weapons" hidden="false" collective="false" import="true" targetId="97d1-862e-2efb-63a8" type="selectionEntryGroup"/>
+        <entryLink id="2cdb-3113-8b86-e7a1" name="Armour" hidden="false" collective="false" import="true" targetId="3ee4-b781-9335-e698" type="selectionEntryGroup"/>
+        <entryLink id="206c-f350-53bb-1e5b" name="Hand-to-hand Combat Weapons" hidden="false" collective="false" import="true" targetId="97d1-862e-2efb-63a8" type="selectionEntryGroup"/>
         <entryLink id="48d9-3120-10a4-c588" name="Missile Weapons" hidden="false" collective="false" import="true" targetId="f636-4ec5-d97b-ec8e" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="97d1-862e-2efb-63a8" name="Hand to Hand Weapons" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="97d1-862e-2efb-63a8" name="Hand-to-hand Combat Weapons" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d7e4-0611-301f-2ed9" type="min"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fe18-ae5d-36a5-bbd3" includeChildSelections="false"/>
@@ -1351,7 +1294,7 @@ The Plague Cart automatically passes any Leadership-based test it is required to
       <entryLinks>
         <entryLink id="43a7-2528-5ce3-9e98" name="Axe" hidden="false" collective="false" import="true" targetId="5d01-06b9-3a86-73c9" type="selectionEntry"/>
         <entryLink id="f569-7ab0-3ce8-834c" name="Dagger" hidden="false" collective="false" import="true" targetId="64e0-0bb6-542b-4beb" type="selectionEntry"/>
-        <entryLink id="967f-be18-e401-e755" name="Double Handed Weapon" hidden="false" collective="false" import="true" targetId="a0a1-b311-e3aa-6c3b" type="selectionEntry"/>
+        <entryLink id="967f-be18-e401-e755" name="Double-handed weapon" hidden="false" collective="false" import="true" targetId="a0a1-b311-e3aa-6c3b" type="selectionEntry"/>
         <entryLink id="ca37-dee3-a1df-4673" name="Halberd" hidden="false" collective="false" import="true" targetId="3c52-9e92-25ec-1939" type="selectionEntry"/>
         <entryLink id="9a07-8680-b258-4853" name="Hammer" hidden="false" collective="false" import="true" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry">
           <modifiers>
@@ -1381,7 +1324,7 @@ The Plague Cart automatically passes any Leadership-based test it is required to
         <entryLink id="7215-4782-0d09-9be0" name="Shortbow" hidden="false" collective="false" import="true" targetId="3706-6421-53b4-940d" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3ee4-b781-9335-e698" name="Armor" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="3ee4-b781-9335-e698" name="Armour" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6218-bb6e-9594-6d37" type="min"/>
       </constraints>
@@ -1394,17 +1337,17 @@ The Plague Cart automatically passes any Leadership-based test it is required to
     </selectionEntryGroup>
     <selectionEntryGroup id="3044-119e-70f0-5302" name="Brute equipment" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="5899-8afc-dbeb-17c8" name="Hand to Hand Weapons" hidden="false" collective="false" import="true" targetId="60d4-49dc-b265-2191" type="selectionEntryGroup"/>
+        <entryLink id="5899-8afc-dbeb-17c8" name="Hand-to-hand Combat Weapons" hidden="false" collective="false" import="true" targetId="60d4-49dc-b265-2191" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="60d4-49dc-b265-2191" name="Hand to Hand Weapons" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="60d4-49dc-b265-2191" name="Hand-to-hand Combat Weapons" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="081c-8678-64a6-f542" type="min"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6482-e061-64e4-df7b" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
         <entryLink id="d979-0d34-43ee-491a" name="Flail" hidden="false" collective="false" import="true" targetId="fea6-684b-02c4-6c62" type="selectionEntry"/>
-        <entryLink id="7993-5dac-c68c-3ec2" name="Double Handed Weapon" hidden="false" collective="false" import="true" targetId="a0a1-b311-e3aa-6c3b" type="selectionEntry"/>
+        <entryLink id="7993-5dac-c68c-3ec2" name="Double-handed weapon" hidden="false" collective="false" import="true" targetId="a0a1-b311-e3aa-6c3b" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="9296-1a70-7097-c1f7" name="Nurgle Rituals" hidden="false" collective="false" import="true">
@@ -1792,7 +1735,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
           </constraints>
           <rules>
             <rule id="c29e-06b9-6384-fc46" name="Strongman" page="0" hidden="false">
-              <description>He may use a double-handed weapon without the usual penalty of always striking last. Work out order of battle as you would with other weapons</description>
+              <description>He may use a double-handed weapon without the usual penalty of always striking last. WOrc out order of battle as you would with other weapons</description>
             </rule>
           </rules>
           <costs>
@@ -1834,6 +1777,6 @@ In addition, if a 6 is rolled for the Toughness test then he has unwittingly pas
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink id="fad7-45e1-ecf9-5c45" name="common-data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="fad7-45e1-ecf9-5c45" name="data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

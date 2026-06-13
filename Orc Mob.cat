@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8b66f7c3-fdd7-fcea-eb91-086959d72140" name="Orc Mob (1a)" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="8b66f7c3-fdd7-fcea-eb91-086959d72140" name="Orc Mob (1a)" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
-    <publication id="0094-a0e7-9fc9-5aa2" name="Ork Mob Rules" shortName="Broheim Rules (1a)" publisher="https://broheim.net/downloads/warbands/official/Orc%20Mob.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Orc%20Mob.pdf"/>
+    <publication id="0094-a0e7-9fc9-5aa2" name="Orc Mob Rules" shortName="Broheim Rules (1a)" publisher="https://broheim.net/downloads/warbands/official/Orc%20Mob.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Orc%20Mob.pdf"/>
   </publications>
   <selectionEntries>
     <selectionEntry id="83ab8692-01da-65c5-af52-a55d4800f012" name="Orc Big Uns" page="0" hidden="false" collective="false" import="true" type="model">
@@ -130,12 +130,12 @@
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Orcs)" hidden="false" id="0f07-d78f-0f8f-c802" sortIndex="3" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Orcs)" hidden="false" id="0f07-d78f-0f8f-c802" sortIndex="3" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="736b-93c0-ee93-6586" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="736b-93c0-ee93-6586" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="e0a7-267f-e39d-260a" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -146,7 +146,7 @@
                 <entryLink import="true" name="Light Armour" hidden="false" id="a8c7-e5d2-92ee-4a33" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="b534-bcb9-4d9f-0772" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="b534-bcb9-4d9f-0772" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Dagger" hidden="false" id="4587-de6a-80e5-8ab4" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
                 <entryLink import="true" name="Free Dagger" hidden="false" id="7897-89cd-cdd2-9b36" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
@@ -154,7 +154,7 @@
                 <entryLink import="true" name="Club" hidden="false" id="2bc2-0c3f-a8ee-e802" collective="false" targetId="b43f-0d15-1f20-7fda" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Axe" hidden="false" id="b208-423e-e7b5-65c6" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="4"/>
                 <entryLink import="true" name="Morning Star" hidden="false" id="8d3c-1719-1817-4368" type="selectionEntry" targetId="d5f3-1906-da91-4e8f" sortIndex="9"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="3098-4d26-31d6-e550" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="3098-4d26-31d6-e550" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="46a4-496c-3996-c362" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="7"/>
                 <entryLink import="true" name="Spear" hidden="false" id="d729-acac-a2a2-ccf5" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="5"/>
               </entryLinks>
@@ -169,7 +169,7 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="80e6-6366-b044-fc47" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="80e6-6366-b044-fc47" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="9355-b0fa-67b4-41b5" collective="false" targetId="311a-bf3f-67ff-46e7" type="selectionEntry" sortIndex="2">
                   <constraints>
@@ -206,8 +206,8 @@
           <entryLinks>
             <entryLink import="true" name="Speed Skills" hidden="true" id="bd99-49e2-de7e-70bf" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5"/>
             <entryLink import="true" name="Shooting Skills" hidden="false" id="74c6-a630-f07c-74c4" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1" sortIndex="2"/>
-            <entryLink import="true" name="Strength Skills" hidden="false" id="c285-ee7a-4fb2-bfd2" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4"/>
-            <entryLink import="true" name="Special Skils (Orc Mob)" hidden="false" id="d080-516e-494b-8cdf" type="selectionEntryGroup" targetId="15a59018-e588-319b-6ce2-450c80998e97" sortIndex="6"/>
+            <entryLink import="true" name="Strength Skills" hidden="false" id="c285-ee7a-4fb2-bfd2" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4" collapsible="true"/>
+            <entryLink import="true" name="Special Skils (Orc Mob)" hidden="false" id="d080-516e-494b-8cdf" type="selectionEntryGroup" targetId="15a59018-e588-319b-6ce2-450c80998e97" sortIndex="6" collapsible="true"/>
             <entryLink import="true" name="Academic Skills" hidden="true" id="ba25-1d78-6ddc-1052" collective="false" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup" collapsible="true" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -372,7 +372,7 @@
           <costs>
             <cost name=" gc" typeId="points" value="15"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="dee3-90ba-66fe-d7ba"/>
@@ -538,7 +538,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
           <costs>
             <cost name=" gc" typeId="points" value="15"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="784a-8167-5d2d-b720"/>
@@ -556,9 +556,9 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Goblins)" hidden="false" id="f6f8-dd68-4337-9d43" sortIndex="4" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Goblins)" hidden="false" id="f6f8-dd68-4337-9d43" sortIndex="4" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="6981-84b5-d2e5-e75e" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="6981-84b5-d2e5-e75e" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="458d-d151-ab89-48c9" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -568,7 +568,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
                 <entryLink import="true" name="Shield" hidden="false" id="bd3a-dc30-68a2-a6ac" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="8231-a3dd-539f-1b8a" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="8231-a3dd-539f-1b8a" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Dagger" hidden="false" id="0c38-2dda-8470-dc80" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
                 <entryLink import="true" name="Free Dagger" hidden="false" id="2355-492d-7fc7-af9f" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
@@ -588,7 +588,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="4d86-d8a4-7d20-5394" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="4d86-d8a4-7d20-5394" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Shortbow" hidden="false" id="5ef5-0d83-086b-281c" type="selectionEntry" targetId="3706-6421-53b4-940d" sortIndex="1"/>
               </entryLinks>
@@ -596,14 +596,10 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dfbf-4b4e-8254-6448" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Miscellaneous" id="16bb-f909-4ef4-6650" hidden="false">
+            <selectionEntryGroup name="Miscellaneous" id="16bb-f909-4ef4-6650" hidden="false" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Squigg Prodder" hidden="false" id="7185-6520-3665-c9f5" type="selectionEntry" targetId="5dcd-265b-9fef-751d" sortIndex="1"/>
-                <entryLink import="true" name="Mad Cap Mushrooms" hidden="false" id="2f35-a60e-8fed-d88d" type="selectionEntry" targetId="edc4-3728-be2f-d50d" sortIndex="2">
-                  <modifiers>
-                    <modifier type="set" value="25" field="points"/>
-                  </modifiers>
-                </entryLink>
+                <entryLink import="true" name="Squig Prodder" hidden="false" id="7185-6520-3665-c9f5" type="selectionEntry" targetId="5dcd-265b-9fef-751d" sortIndex="1"/>
+                <entryLink import="true" name="Mad Cap Mushrooms" hidden="false" id="2f35-a60e-8fed-d88d" type="selectionEntry" targetId="fdc4-3728-be2f-d50d" sortIndex="2"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -629,7 +625,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -770,12 +766,12 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Orcs)" hidden="false" id="6ff6-ae4b-9472-a7b9" sortIndex="4" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Orcs)" hidden="false" id="6ff6-ae4b-9472-a7b9" sortIndex="4" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="4e11-dcc5-dd19-0fa1" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="4e11-dcc5-dd19-0fa1" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="1111-f4c0-1423-b39f" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -786,7 +782,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
                 <entryLink import="true" name="Light Armour" hidden="false" id="94f3-9484-c262-3bfc" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="42c0-030b-0b7c-e466" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="42c0-030b-0b7c-e466" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Dagger" hidden="false" id="1377-d6cf-1aa6-3661" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
                 <entryLink import="true" name="Free Dagger" hidden="false" id="90b7-6643-236a-8990" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
@@ -794,7 +790,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
                 <entryLink import="true" name="Club" hidden="false" id="040f-73fd-3fb9-ffd3" collective="false" targetId="b43f-0d15-1f20-7fda" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Axe" hidden="false" id="b30e-6d13-778d-5fcd" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="4"/>
                 <entryLink import="true" name="Morning Star" hidden="false" id="9cc7-6cf9-f348-1182" type="selectionEntry" targetId="d5f3-1906-da91-4e8f" sortIndex="9"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="a7db-ff78-b6ca-10ad" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="a7db-ff78-b6ca-10ad" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="8f27-f8ac-1313-625c" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="7"/>
                 <entryLink import="true" name="Spear" hidden="false" id="9369-2fb7-c438-155c" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="5"/>
               </entryLinks>
@@ -809,7 +805,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="0abc-e1cb-e1b8-74df" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="0abc-e1cb-e1b8-74df" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="d26f-22fa-02f8-1273" collective="false" targetId="311a-bf3f-67ff-46e7" type="selectionEntry" sortIndex="2">
                   <constraints>
@@ -845,10 +841,10 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
       <selectionEntryGroups>
         <selectionEntryGroup name="Skills" id="f9ff-e4b3-cfbd-6f50" hidden="false" sortIndex="6">
           <entryLinks>
-            <entryLink import="true" name="Speed Skills" hidden="false" id="968c-0164-3392-09d9" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5"/>
-            <entryLink import="true" name="Shooting Skills" hidden="false" id="68a6-fefa-386d-65ba" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1" sortIndex="2"/>
-            <entryLink import="true" name="Strength Skills" hidden="false" id="e595-88e1-37e5-53ec" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4"/>
-            <entryLink import="true" name="Special Skils (Orc Mob)" hidden="false" id="a799-7c0a-01df-cb03" type="selectionEntryGroup" targetId="15a59018-e588-319b-6ce2-450c80998e97" sortIndex="6"/>
+            <entryLink import="true" name="Speed Skills" hidden="false" id="968c-0164-3392-09d9" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5" collapsible="true"/>
+            <entryLink import="true" name="Shooting Skills" hidden="false" id="68a6-fefa-386d-65ba" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1" sortIndex="2" collapsible="true"/>
+            <entryLink import="true" name="Strength Skills" hidden="false" id="e595-88e1-37e5-53ec" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4" collapsible="true"/>
+            <entryLink import="true" name="Special Skils (Orc Mob)" hidden="false" id="a799-7c0a-01df-cb03" type="selectionEntryGroup" targetId="15a59018-e588-319b-6ce2-450c80998e97" sortIndex="6" collapsible="true"/>
             <entryLink import="true" name="Academic Skills" hidden="true" id="2bb5-1f1b-4f03-a412" collective="false" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup" collapsible="true" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -1045,7 +1041,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
           <costs>
             <cost name=" gc" typeId="points" value="25"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="9b5b-9fdb-9915-98cb"/>
@@ -1070,9 +1066,9 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Orcs)" hidden="false" id="56b1-1346-b89f-765e" sortIndex="5" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Orcs)" hidden="false" id="56b1-1346-b89f-765e" sortIndex="5" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="ccb8-351a-9a85-98c2" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="ccb8-351a-9a85-98c2" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="b651-e65a-0c93-02fc" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -1083,7 +1079,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
                 <entryLink import="true" name="Light Armour" hidden="false" id="2a0e-10f8-edee-3a8d" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="63b9-4a57-f83b-a8ad" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="63b9-4a57-f83b-a8ad" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Dagger" hidden="false" id="3f19-58bb-c96a-ca4e" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
                 <entryLink import="true" name="Free Dagger" hidden="false" id="38e1-9b76-2c46-1db7" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
@@ -1091,7 +1087,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
                 <entryLink import="true" name="Club" hidden="false" id="39ee-3fb7-ae8f-8458" collective="false" targetId="b43f-0d15-1f20-7fda" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Axe" hidden="false" id="b7b1-ce6a-563e-06d9" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="4"/>
                 <entryLink import="true" name="Morning Star" hidden="false" id="9cb6-612a-3d39-de2c" type="selectionEntry" targetId="d5f3-1906-da91-4e8f" sortIndex="9"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="b914-840e-bcd0-db9e" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="b914-840e-bcd0-db9e" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="95c1-c39f-3d71-344f" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="7"/>
                 <entryLink import="true" name="Spear" hidden="false" id="a67b-22be-f5f6-1d60" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="5"/>
               </entryLinks>
@@ -1106,7 +1102,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="3a8b-b4dd-ab64-769d" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="3a8b-b4dd-ab64-769d" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="45e8-bd3d-ac15-0b26" collective="false" targetId="311a-bf3f-67ff-46e7" type="selectionEntry" sortIndex="2">
                   <constraints>
@@ -1142,7 +1138,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1275,7 +1271,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="2fda6c46-2bec-ab70-b6a2-20411e9e4b25" name="Waaagg magic" hidden="false" collective="false" import="true" targetId="5cce5525-3057-85be-427a-ceeac0d35c53" type="selectionEntryGroup"/>
+            <entryLink id="2fda6c46-2bec-ab70-b6a2-20411e9e4b25" name="Waaagh! Magic" hidden="false" collective="false" import="true" targetId="5cce5525-3057-85be-427a-ceeac0d35c53" type="selectionEntryGroup" collapsible="true"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1293,12 +1289,12 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Orcs)" hidden="false" id="166e-4fda-96b4-bc73" sortIndex="4" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Orcs)" hidden="false" id="166e-4fda-96b4-bc73" sortIndex="4" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="ff5c-2c9b-6c21-2034" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="ff5c-2c9b-6c21-2034" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Dagger" hidden="false" id="3f4a-5118-49d3-8a20" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
                 <entryLink import="true" name="Free Dagger" hidden="false" id="0cec-d331-9179-ac4a" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
@@ -1306,7 +1302,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
                 <entryLink import="true" name="Club" hidden="false" id="5564-7320-078d-eb60" collective="false" targetId="b43f-0d15-1f20-7fda" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Axe" hidden="false" id="163a-26c1-c52a-0e61" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="4"/>
                 <entryLink import="true" name="Morning Star" hidden="false" id="0ac7-73c6-3485-a04a" type="selectionEntry" targetId="d5f3-1906-da91-4e8f" sortIndex="9"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="9d27-d3ce-97b9-4a43" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="9d27-d3ce-97b9-4a43" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="46d0-64f2-a985-a3bb" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="7"/>
                 <entryLink import="true" name="Spear" hidden="false" id="d120-d62f-177e-d5bd" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="5"/>
               </entryLinks>
@@ -1321,7 +1317,7 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="e00b-33ed-0e7b-fdf9" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="e00b-33ed-0e7b-fdf9" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="6962-4b6b-60a2-e39a" collective="false" targetId="311a-bf3f-67ff-46e7" type="selectionEntry" sortIndex="2">
                   <constraints>
@@ -1359,8 +1355,8 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
           <entryLinks>
             <entryLink import="true" name="Speed Skills" hidden="true" id="7103-2420-1368-f7df" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5"/>
             <entryLink import="true" name="Shooting Skills" hidden="true" id="dccc-aade-312a-83ec" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1" sortIndex="2"/>
-            <entryLink import="true" name="Strength Skills" hidden="false" id="1077-df15-3317-7871" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4"/>
-            <entryLink import="true" name="Special Skils (Orc Mob)" hidden="false" id="63c4-2390-8db8-a525" type="selectionEntryGroup" targetId="15a59018-e588-319b-6ce2-450c80998e97" sortIndex="6"/>
+            <entryLink import="true" name="Strength Skills" hidden="false" id="1077-df15-3317-7871" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4" collapsible="true"/>
+            <entryLink import="true" name="Special Skils (Orc Mob)" hidden="false" id="63c4-2390-8db8-a525" type="selectionEntryGroup" targetId="15a59018-e588-319b-6ce2-450c80998e97" sortIndex="6" collapsible="true"/>
             <entryLink import="true" name="Academic Skills" hidden="true" id="3539-4535-e4a5-39c7" collective="false" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup" collapsible="true" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -1404,51 +1400,6 @@ Goblins are far too afraid of Orcs to challenge them individually.</description>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry id="83ade99f-e9ef-d25a-59ac-ca3f3def011c" name="Stash" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f67c-fd08-cd7d-3a48" type="min"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="83ade99f-e9ef-d25a-59ac-ca3f3def011c-a31acb39-8ce9-d6d7-bcc9-f3144d63db48" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true" name="Stash"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="4d4f-2d67-018a-fa00" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="c67f-9e68-e586-310b" collective="false">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1b54-7777-c164-7cec" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d46-7829-9ec6-3033" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="9f86-8c2a-0d96-63f3" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" gc" typeId="points" value="0"/>
-            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="Equipment" field="name"/>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="120a-9d07-db62-848d" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="Gold" field="name"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="c32c3458-18e5-acbf-7d39-245aa6d7689b" name="Troll" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -1576,7 +1527,7 @@ This is a single attack that automatically hits with a Strength of 5 and ignores
         <rule id="a29599a5-f3d2-1015-4d7c-88133dbce76d" name="Regeneration" page="0" hidden="false">
           <description>Trolls have a unique physiology that allow them to regenerate wounds.
 Whenever an enemy successfully inflicts a wound on a Troll roll a D6, on a result of 4 or more the wound is ignored and the Troll is unhurt.
-Trolls may not regenerate wounds caused by fire or fire-based magic.
+Trolls may not regenerate wounds caused by fire or fire-based Magic.
 Trolls never roll for Injury after a battle.</description>
         </rule>
         <rule id="39cf-4964-2886-cf32" name="Dumb Monster" hidden="false">
@@ -1585,6 +1536,7 @@ Trolls do not gain experience.</description>
         </rule>
       </rules>
       <infoLinks>
+        <infoLink id="edcc-aeed-a651-90ae" name="Large Target" hidden="false" targetId="069e-ecc0-275d-765c" type="rule"/>
         <infoLink id="c9a4ca46-fd1c-1ff7-d724-7999aed730a6" name="Stupidity" hidden="false" targetId="cd0edb82-a80c-4679-2376-f34a11dc840e" type="rule"/>
         <infoLink id="0812a670-2de8-7c31-6e8d-246e7b7f0af7" name="Fear" hidden="false" targetId="4390265d-0892-5427-fe46-78054de59a7e" type="rule"/>
       </infoLinks>
@@ -1593,52 +1545,8 @@ Trolls do not gain experience.</description>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="points" value="200"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
+        <cost name="Warband Rating" typeId="wb-rating" value="20"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="ff7d-ad80-6e26-2253" page="0">
-      <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="3a6b-fbdd-01c2-13f1" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="8ee3-47f1-4d21-6d51-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8ee3-47f1-4d21-6d51-max" includeChildSelections="false"/>
-      </constraints>
-      <rules>
-        <rule name="Animosity" id="3059-3d65-2f99-c14c" hidden="false" page="0">
-          <description>At the start of the Orc player’s turn, roll a D6 for each Henchman who is either an Orc or a Goblin and not in Hand to Hand Combat.
-
-Roll on table below if 1 is rolled. 
-
-1 “I ’Erd Dat!”
-If there is a friendly Orc or Goblin Henchman or Hired Sword within charge reach (if there are multiple targets within reach, choose the one nearest to the mad model), the warrior must immediately charge and fight a round of hand-to-hand combat against the Target.
-At the end of this round of combat, the models will immediately move 1&quot; apart and no longer count as being in close combat.
-If there are no friendly Orc or Goblin Henchmen or Hired Swords within charge reach, and the warrior is armed with a missile weapon, he immediately takes a shot at the nearest friendly Orc or Goblin Henchman or Hired Sword.
-If none of the above applies, or if the nearest friendly model is an Orc Hero, the warrior behaves as if a 2-5 had been rolled on this chart.
-In any case, the warrior in question may take no other action this turn, though he may defend himself if attacked in hand-to-hand combat.
-
-2-5 “Wud Yoo Say?” 
-The warrior is fairly certain he heard an offensive sound from the nearest friendly Orc or Goblin, but he’s not quite sure.
-He spends the turn hurling insults at his mate.
-He may do nothing else this turn, though he may defend himself if attacked in hand-to-hand combat.
-
-6. “I’ll Show Yer!” 
-The warrior imagines that his mates are laughing about him behind his back and calling him silly names.
-To show them up he decides that he’ll be the first one to the scrap! 
-This model must move as quickly as possible towards the nearest enemy model, charging into combat if possible.
-If there are no enemy models within sight, the Orc or Goblin warrior may make a normal move immediately.
-This move is in addition to his regular move in the Movement phase, so he may therefore move twice in a single turn if you wish.
-If the extra move takes the Orc or Goblin warrior within charge reach of an enemy model, the warrior must charge into close combat during his regular movement.</description>
-        </rule>
-        <rule name="Distasteful Company" id="54b0-c32f-fe70-807e" hidden="false" page="0">
-          <description>Many Hired Swords refuse to work for Orcs, as they know that Orcs are just as likely to eat them as fight alongside them.
-Orcs may only hire the following Hired Swords: 
-  Pit Fighters, Ogre Bodyguards or Warlocks.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="EXP advancement" id="a7c1-9a8f-0986-4326" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
-      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>
@@ -1668,7 +1576,7 @@ This move is in addition to his regular move in the Movement phase, so he may th
 If the extra move takes the Orc or Goblin warrior within charge reach of an enemy model, the warrior must charge into close combat during his regular movement.</description>
     </rule>
     <rule id="17d55312-7a90-e32d-879a-e5f772335c69" name="Distasteful Company" page="0" hidden="false">
-      <description>Many Hired Swords refuse to work for Orcs, as they know that Orcs are just as likely to eat them as fight alongside them.
+      <description>Many Hired Swords refuse to wOrc for Orcs, as they know that Orcs are just as likely to eat them as fight alongside them.
 Orcs may only hire the following Hired Swords: 
   Pit Fighters, Ogre Bodyguards or Warlocks.</description>
     </rule>
@@ -1881,7 +1789,7 @@ Orcs may only hire the following Hired Swords:
         <constraint field="points" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="f941a52c-a11a-fef5-dd80-d7a857d3789a" hidden="false" collective="false" import="true" targetId="5cce5525-3057-85be-427a-ceeac0d35c53" type="selectionEntryGroup" name="Waaagg magic"/>
+        <entryLink id="f941a52c-a11a-fef5-dd80-d7a857d3789a" hidden="false" collective="false" import="true" targetId="5cce5525-3057-85be-427a-ceeac0d35c53" type="selectionEntryGroup" name="Waaagh! Magic"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="15a59018-e588-319b-6ce2-450c80998e97" name="Special Skils (Orc Mob)" hidden="false" collective="false" import="true">
@@ -1982,7 +1890,7 @@ Orcs may only hire the following Hired Swords:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="5cce5525-3057-85be-427a-ceeac0d35c53" name="Waaagg magic" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="5cce5525-3057-85be-427a-ceeac0d35c53" name="Waaagh! Magic" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -2070,9 +1978,9 @@ This spell lasts until the Shaman suffers a wound.</characteristic>
             <cost name="Warband Rating" typeId="wb-rating" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="959b63b6-8a79-4291-d753-9f2166e0c0f1" name="6 Fire of Gork" page="0" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="959b63b6-8a79-4291-d753-9f2166e0c0f1" name="6 Fire of GOrc" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="579e-6d28-d35e-f02b" name="6 Fire of Gork" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
+            <profile id="579e-6d28-d35e-f02b" name="6 Fire of GOrc" hidden="false" typeId="d891-ee2b-b7dc-f545" typeName="Magic">
               <characteristics>
                 <characteristic name="Difficulty" typeId="dd91-3f4d-8b72-7905">8</characteristic>
                 <characteristic name="Effect" typeId="0592-3510-8508-7263">Range 12&quot;. Each of the two bolts causes D3 S3 hits; the bolts can either be fired both at the closest enemy target
@@ -2186,6 +2094,6 @@ combat, roll a D6.
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="79d6-84bd-0a3d-03a4" targetId="e020-c282-277b-b173" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="data" id="79d6-84bd-0a3d-03a4" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

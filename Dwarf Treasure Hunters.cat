@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8315579e-b80d-5ed1-7a51-d85cdf59c06b" name="Dwarf Treasure Hunters (1a)" revision="25" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="8315579e-b80d-5ed1-7a51-d85cdf59c06b" name="Dwarf Treasure Hunters (1a)" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="2d1dabde-1182-a9db-6186-35bff94b4a69" name="Beardlings" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -117,7 +117,7 @@
           <costs>
             <cost name=" gc" typeId="points" value="25"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="1d32-eec5-836e-3ced"/>
@@ -142,7 +142,7 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Dwarf Warrior)" hidden="false" id="9d66-2134-9f53-7525" sortIndex="5" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Dwarf Warrior)" hidden="false" id="9d66-2134-9f53-7525" sortIndex="5" collapsible="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Armour" id="62bb-989f-b3b7-7a07" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
@@ -154,11 +154,7 @@
                 <entryLink import="true" name="Shield" hidden="false" id="5415-781f-f00f-954a" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="4"/>
                 <entryLink import="true" name="Light Armour" hidden="false" id="e6e5-cd95-df3b-6eeb" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
                 <entryLink import="true" name="Heavy Armour" hidden="false" id="e641-335e-2aa9-e607" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
-                <entryLink import="true" name="Gromril Armour" hidden="false" id="8e31-9395-04dc-eebe" type="selectionEntry" targetId="4c6d-eb92-53a7-a6d3" sortIndex="3">
-                  <costs>
-                    <cost name=" gc" typeId="points" value="75"/>
-                  </costs>
-                </entryLink>
+                <entryLink import="true" name="Gromril Armour" hidden="false" id="8e31-9395-04dc-eebe" type="selectionEntry" targetId="4c6d-eb92-53a7-a6d3" sortIndex="3"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Hand-to-hand Weapons" id="c85b-3d57-afaf-03e9" hidden="false" sortIndex="1" collapsible="true">
@@ -170,7 +166,7 @@
                 <entryLink import="true" name="Hammer" hidden="false" id="ceaf-8146-eec4-c372" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
                 <entryLink import="true" name="Axe" hidden="false" id="d8a9-b539-92ba-3cf6" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
                 <entryLink import="true" name="Dwarf Axe" hidden="false" id="5d76-3e76-cfda-9fef" type="selectionEntry" targetId="5208-f70c-664-e36e" sortIndex="7"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="50a3-f610-2d19-1542" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="50a3-f610-2d19-1542" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Spear" hidden="false" id="b0f7-61f7-e60d-4c61" type="selectionEntry" targetId="005e-e397-8108-f198" sortIndex="9"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="2e98-b996-5eb6-e687" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="10"/>
               </entryLinks>
@@ -198,7 +194,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66d3-af6f-34aa-6a7b" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="c191-8f39-ab65-c7c5" collective="false" sortIndex="6" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="c191-8f39-ab65-c7c5" collective="false" sortIndex="6">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -216,7 +212,7 @@
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -377,7 +373,7 @@
           <costs>
             <cost name=" gc" typeId="points" value="40"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="b764-a5d4-2a27-63c5"/>
@@ -402,7 +398,7 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="2bdb-58ef-d399-b183" collective="false" sortIndex="6" page="0">
+        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="2bdb-58ef-d399-b183" collective="false" sortIndex="6">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -420,10 +416,10 @@
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Dwarf Warrior)" hidden="false" id="d680-c66a-689d-4224" sortIndex="5" collapsible="true" page="0">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Dwarf Warrior)" hidden="false" id="d680-c66a-689d-4224" sortIndex="5" collapsible="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Armour" id="e9fd-c89a-017c-ebcf" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
@@ -440,14 +436,14 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Hand-to-hand Weapons" id="6ad5-8208-76d0-18e1" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Mace" hidden="false" id="e586-3cf4-fd53-1077" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
+                <entryLink import="true" name="Mace" hidden="false" id="e586-3cf4-fd53-1077" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="1044-2924-01f7-45ee" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
                 <entryLink import="true" name="Free Dagger" hidden="false" id="98bb-b11d-a63d-02e4" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
                 <entryLink import="true" name="Sword" hidden="false" id="ce46-d9c1-caa3-439f" collective="false" targetId="34fd-d6a3-50ee-ee06" type="selectionEntry" sortIndex="6"/>
                 <entryLink import="true" name="Hammer" hidden="false" id="43b2-ed9e-ce6e-5fad" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
                 <entryLink import="true" name="Axe" hidden="false" id="a523-5f78-9a62-8c6a" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
                 <entryLink import="true" name="Dwarf Axe" hidden="false" id="dcbc-e58e-6d24-8f2e" type="selectionEntry" targetId="5208-f70c-664-e36e" sortIndex="7"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="4519-db43-7e6a-9ba0" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="4519-db43-7e6a-9ba0" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Spear" hidden="false" id="5368-055b-9fa7-0248" type="selectionEntry" targetId="005e-e397-8108-f198" sortIndex="9"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="545d-b2d4-b5ad-c6e3" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="10"/>
               </entryLinks>
@@ -461,21 +457,6 @@
                   </conditions>
                 </modifier>
               </modifiers>
-              <profiles>
-                <profile name="Hand-to-hand Weapons" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model" hidden="false" id="a62c-bd5f-29af-9985">
-                  <characteristics>
-                    <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92"/>
-                    <characteristic name="WS" typeId="d5aca8ba-0204-b324-b976-c2b536e09924"/>
-                    <characteristic name="BS" typeId="5b4d181b-23ae-5ed7-9262-c1d2f79246a8"/>
-                    <characteristic name="S" typeId="7f1f0a4d-68dc-b0df-5703-c4d0d91a93b9"/>
-                    <characteristic name="T" typeId="54f4796b-dedb-c296-8b1a-ff7f8043293a"/>
-                    <characteristic name="W" typeId="3172c8dc-ebe4-0c40-72ab-8fd0076b9442"/>
-                    <characteristic name="I" typeId="a6fd52b0-be0a-655e-6314-87b392c9c90e"/>
-                    <characteristic name="A" typeId="bf393c37-9d10-fc85-c147-62b1c01a89fe"/>
-                    <characteristic name="LD" typeId="e234eaea-a02a-2fb7-3e1f-605392aabb89"/>
-                  </characteristics>
-                </profile>
-              </profiles>
             </selectionEntryGroup>
             <selectionEntryGroup name="Missile Weapons" id="dbba-54db-86d5-623f" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
@@ -484,9 +465,6 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="56af-7a2a-39a1-14b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
-              <modifiers>
-                <modifier type="decrement" value="1" field="56af-7a2a-39a1-14b2"/>
-              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
@@ -666,12 +644,12 @@
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Thunderers)" hidden="false" id="09da-14b3-2b35-6563" sortIndex="3" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Thunderers)" hidden="false" id="09da-14b3-2b35-6563" sortIndex="3" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="b3d7-0568-b446-8da4" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="b3d7-0568-b446-8da4" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="7a32-cbd4-1928-775b" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="4">
                   <constraints>
@@ -687,7 +665,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="1311-9f25-c7b4-6c05" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="1311-9f25-c7b4-6c05" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="e335-7e6f-9968-d584" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="e6df-8232-d92d-9411" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -707,7 +685,7 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="c7c8-ae5f-ed9d-3baf" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="c7c8-ae5f-ed9d-3baf" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Crossbow" hidden="false" id="9ea6-96c7-a69e-b207" type="selectionEntry" targetId="38cc-bc0b-7f19-8039" sortIndex="2"/>
                 <entryLink import="true" name="Pistol" hidden="false" id="f993-9b02-b0ae-2a6a" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="1"/>
@@ -903,7 +881,7 @@
         <categoryLink id="b463eea6-c00c-2a2e-4538-087cf51cf5ae-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="5533-dc3d-32d0-2386" collective="false" sortIndex="5" page="0" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="5533-dc3d-32d0-2386" collective="false" sortIndex="5">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ddb3-2e05-b1df-b281" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7670-d637-1214-0709" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -914,10 +892,10 @@
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Dwarf Warrior)" hidden="false" id="9077-a021-3086-b7c0" sortIndex="4" collapsible="true" page="0">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Dwarf Warrior)" hidden="false" id="9077-a021-3086-b7c0" sortIndex="4" collapsible="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Armour" id="9d53-c562-a555-e997" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
@@ -941,7 +919,7 @@
                 <entryLink import="true" name="Hammer" hidden="false" id="80b7-bbf1-d0c4-627b" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
                 <entryLink import="true" name="Axe" hidden="false" id="3d9c-5f59-2c0d-41e9" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
                 <entryLink import="true" name="Dwarf Axe" hidden="false" id="d408-2024-9af2-c8e3" type="selectionEntry" targetId="5208-f70c-664-e36e" sortIndex="7"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="7243-911b-8d12-b7b0" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="7243-911b-8d12-b7b0" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Spear" hidden="false" id="acde-514b-8510-0517" type="selectionEntry" targetId="005e-e397-8108-f198" sortIndex="9"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="cb93-28d3-f469-00d0" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="10"/>
               </entryLinks>
@@ -963,9 +941,6 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c5d6-28c5-454b-5a32" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
-              <modifiers>
-                <modifier type="decrement" value="0" field="c5d6-28c5-454b-5a32"/>
-              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
@@ -992,7 +967,7 @@
           <entryLinks>
             <entryLink import="true" name="Speed Skills" hidden="true" id="182f-0543-85cd-0642" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5"/>
             <entryLink import="true" name="Shooting Skills" hidden="false" id="d882-8015-2a63-e609" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1" sortIndex="2"/>
-            <entryLink import="true" name="Strength Skills" hidden="false" id="3e5a-8348-7bbb-c326" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4"/>
+            <entryLink import="true" name="Strength Skills" hidden="false" id="3e5a-8348-7bbb-c326" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4" collapsible="true"/>
             <entryLink import="true" name="Special Skills (Dwarven)" hidden="false" id="b033-9688-3ce4-cdb3" type="selectionEntryGroup" targetId="15a59018-e588-319b-6ce2-450c80998e97" collapsible="true" sortIndex="6"/>
             <entryLink import="true" name="Combat Skills" hidden="false" id="c781-9882-54e1-d410" collective="false" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup" collapsible="true" sortIndex="1">
               <modifiers>
@@ -1037,50 +1012,6 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry id="83ade99f-e9ef-d25a-59ac-ca3f3def011c" name="Stash" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="83ade99f-e9ef-d25a-59ac-ca3f3def011c-a31acb39-8ce9-d6d7-bcc9-f3144d63db48" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true" name="Stash"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5f07-20e8-34d1-e340" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="e836-d819-149f-0c3f" collective="false" page="0">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="47db-25d1-4272-5e8a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c32e-fc88-3ca9-8cc1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="0b7f-0d1d-b7c1-fbca" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" gc" typeId="points" value="0"/>
-            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="Equipment" field="name"/>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="c01c-6528-e9dd-1a80" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry" page="0">
-          <modifiers>
-            <modifier type="set" value="Gold" field="name"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="16763088-15c1-4f72-fdfe-153003be4a24" name="Thunderers" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1198,7 +1129,7 @@
           <costs>
             <cost name=" gc" typeId="points" value="40"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="bd5a-67f5-a870-3eea"/>
@@ -1224,7 +1155,7 @@
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Thunderers)" hidden="false" id="04e5-d6b6-d8d3-ec63" sortIndex="5" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Thunderers)" hidden="false" id="04e5-d6b6-d8d3-ec63" sortIndex="5" collapsible="false">
           <selectionEntryGroups>
             <selectionEntryGroup name="Armour" id="76fb-88f1-e932-ec90" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
@@ -1277,7 +1208,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="621c-fd97-daf8-7de3" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="6eeb-b40e-7517-9d59" collective="false" sortIndex="6" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="6eeb-b40e-7517-9d59" collective="false" sortIndex="6">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -1295,7 +1226,7 @@
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1455,15 +1386,12 @@
         <rule id="3b3019fc-ab69-2ae2-8d8d-b253b1516358" name="Deathwish" page="0" hidden="false">
           <description>Troll Slayers seek an honourable death in combat. They are completely immune to all psychology and never need to test if fighting alone</description>
         </rule>
-        <rule name="Equipment Restriction" id="38f2-7247-2bfe-63a0" hidden="false">
-          <description>Slayers may never carry or use missile weapons or any form of armour.</description>
-        </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="83ab8692-01da-65c5-af52-a55d4800f012-a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true" name="Heroes"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="3795-b0a5-6506-f397" collective="false" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="3795-b0a5-6506-f397" collective="false">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ffe3-0236-8e71-72f9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3249-d706-8769-7582" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1474,11 +1402,24 @@
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Dwarf Warrior)" hidden="false" id="8a8e-d46a-5a21-240a" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Dwarf Warrior)" hidden="false" id="8a8e-d46a-5a21-240a" collapsible="false">
           <selectionEntryGroups>
+            <selectionEntryGroup name="Armour" id="d9cd-1ecf-cab5-aaa6" hidden="false" sortIndex="3" collapsible="true">
+              <entryLinks>
+                <entryLink import="true" name="Helmet" hidden="false" id="62e5-9662-c8e2-441b" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5481-cd0c-806e-a6e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shield" hidden="false" id="b3aa-c4c6-ec78-596e" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="4"/>
+                <entryLink import="true" name="Light Armour" hidden="false" id="03e7-d036-3d08-eccd" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="86f4-e10a-5b82-1e8b" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
+                <entryLink import="true" name="Gromril Armour" hidden="false" id="8989-ce25-2045-6665" type="selectionEntry" targetId="4c6d-eb92-53a7-a6d3" sortIndex="3"/>
+              </entryLinks>
+            </selectionEntryGroup>
             <selectionEntryGroup name="Hand-to-hand Weapons" id="af20-2147-e69c-7882" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="84fb-b6fc-218a-b534" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
@@ -1488,7 +1429,7 @@
                 <entryLink import="true" name="Hammer" hidden="false" id="621f-bcd1-2707-9059" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
                 <entryLink import="true" name="Axe" hidden="false" id="58d8-bda8-2431-203e" type="selectionEntry" targetId="5d01-06b9-3a86-73c9" sortIndex="5"/>
                 <entryLink import="true" name="Dwarf Axe" hidden="false" id="3391-7b03-518d-6050" type="selectionEntry" targetId="5208-f70c-664-e36e" sortIndex="7"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="a7be-6579-c9fa-8013" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="a7be-6579-c9fa-8013" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Spear" hidden="false" id="79e9-1d3f-a826-9481" type="selectionEntry" targetId="005e-e397-8108-f198" sortIndex="9"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="565b-f1fe-466d-0392" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="10"/>
               </entryLinks>
@@ -1502,6 +1443,14 @@
                   </conditions>
                 </modifier>
               </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Missile Weapons" id="3553-b765-47f5-093d" hidden="false" sortIndex="2" collapsible="true">
+              <entryLinks>
+                <entryLink import="true" name="Pistol" hidden="false" id="066d-4269-d61b-aa1a" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="2"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ab0b-9104-5ae3-e3d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
@@ -1527,7 +1476,7 @@
           <entryLinks>
             <entryLink import="true" name="Speed Skills" hidden="true" id="c5a5-a835-eae6-3a46" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5"/>
             <entryLink import="true" name="Shooting Skills" hidden="true" id="007d-4afd-60cc-125b" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1" sortIndex="2"/>
-            <entryLink import="true" name="Strength Skills" hidden="false" id="0803-b973-966f-f3cc" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4"/>
+            <entryLink import="true" name="Strength Skills" hidden="false" id="0803-b973-966f-f3cc" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4" collapsible="true"/>
             <entryLink import="true" name="Special Skills (Dwarven)" hidden="false" id="e927-0f10-d80b-6d8a" type="selectionEntryGroup" targetId="15a59018-e588-319b-6ce2-450c80998e97" collapsible="true" sortIndex="6"/>
             <entryLink import="true" name="Special Skills (Troll Slayer)" hidden="false" id="d1bc-30dd-567b-dc28" type="selectionEntryGroup" targetId="faa680e5-6367-a85f-790f-7a9369481ec5" collapsible="true" sortIndex="7"/>
             <entryLink import="true" name="Combat Skills" hidden="false" id="b3f2-a3b1-4b8b-add5" collective="false" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup" collapsible="true" sortIndex="1">
@@ -1574,39 +1523,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="075f-adcf-7fd0-5c41" page="0">
-      <categoryLinks>
-        <categoryLink targetId="4852-c4cb-82b0-b7fa" id="b839-ae6d-8b05-be44" primary="true" name="Configuration"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="9ada-cc39-d78d-f23c-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9ada-cc39-d78d-f23c-max" includeChildSelections="false"/>
-      </constraints>
-      <rules>
-        <rule name="Armour Use" id="f5d2-69d6-58e2-fb76" hidden="false" page="0">
-          <description>Dwarfs never suffer movement penalties for wearing armour.</description>
-        </rule>
-        <rule name="Grudgebearers" id="e1c4-6a34-a230-df47" hidden="false" page="0">
-          <description>Dwarfs hold an ancient grudge against Elves from the days when the two races fought for supremacy in the Old World. A Dwarf warband may never include any kind of Elven Hired Sword or Dramatis Personae.</description>
-        </rule>
-        <rule name="Hard Head" id="0327-afbe-2027-434d" hidden="false" page="0">
-          <description>Dwarfs ignore the special rules for maces, clubs,etc. used against them.</description>
-        </rule>
-        <rule name="Hard to Kill" id="27d7-0654-ad2b-78cb" hidden="false" page="0">
-          <description>Dwarfs are tough, resilient individuals who can only be taken out of action on a roll of 6 instead of 5-6 when rolling on the Injury chart. Treat a roll of 1-2 as knocked down, 3-5 as stunned, and 6 as out of action.</description>
-        </rule>
-        <rule name="Hate Orcs and Goblins" id="7a56-e9a4-3ee1-518c" hidden="false" page="0">
-          <description>All Dwarfs hate Orcs and Goblins</description>
-        </rule>
-        <rule name="Incomparable Miners" id="3235-282d-a280-2356" hidden="false" page="0">
-          <description>Dwarfs spend much of their lives underground searching for precious minerals, and they are the best in the world at this kind of work. In the city of Mordheim they apply similar skills to the search for wyrdstone. When checking for wyrdstone at the end of a game, add +1 to the number of pieces found for a Dwarf warband.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="EXP advancement" id="d5ea-23d1-fdae-7583" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
-        <infoLink name="Hatred" id="9e78-1b0a-4a78-252f" hidden="false" targetId="3ebe96a5-ad6a-b51d-0d99-f62dfb2a807c" type="rule"/>
-      </infoLinks>
-    </selectionEntry>
   </selectionEntries>
   <rules>
     <rule id="61761c75-b111-0d47-7fca-d1a50f33ef93" name="Hard Head" page="0" hidden="false">
@@ -1622,7 +1538,7 @@
       <description>Dwarfs hold an ancient grudge against Elves from the days when the two races fought for supremacy in the Old World. A Dwarf warband may never include any kind of Elven Hired Sword or Dramatis Personae.</description>
     </rule>
     <rule id="ad55c7ef-733a-f6b2-749a-63b57b7bb65d" name="Incomparable Miners" page="0" hidden="false">
-      <description>Dwarfs spend much of their lives underground searching for precious minerals, and they are the best in the world at this kind of work. In the city of Mordheim they apply similar skills to the search for wyrdstone. When checking for wyrdstone at the end of a game, add +1 to the number of pieces found for a Dwarf warband.</description>
+      <description>Dwarfs spend much of their lives underground searching for precious minerals, and they are the best in the world at this kind of wOrc. In the city of Mordheim they apply similar skills to the search for wyrdstone. When checking for wyrdstone at the end of a game, add +1 to the number of pieces found for a Dwarf warband.</description>
     </rule>
     <rule id="e2228155-6616-b14b-7441-073ea07ce3af" name="Hard to Kill" page="0" hidden="false">
       <description>Dwarfs are tough, resilient individuals who can only be taken out of action on a roll of 6 instead of 5-6 when rolling on the Injury chart. Treat a roll of 1-2 as knocked down, 3-5 as stunned, and 6 as out of action.</description>
@@ -1630,7 +1546,7 @@
   </rules>
   <infoLinks>
     <infoLink id="f98676e7-07fd-7cea-03c3-483ac99b0435" hidden="false" targetId="3ebe96a5-ad6a-b51d-0d99-f62dfb2a807c" type="rule" name="Hatred"/>
-    <infoLink id="21dc314b-01d7-9a0e-3606-fc4b640d9271" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule" name="EXP advancement"/>
+    <infoLink id="21dc314b-01d7-9a0e-3606-fc4b640d9271" hidden="false" targetId="dc466bee-0dd9-eaa2-db68-d16f58af2521" type="rule" name="EXP Advancement"/>
   </infoLinks>
   <sharedSelectionEntries>
     <selectionEntry id="8acf5ee1-3430-be22-ec94-15b12e15e497" name="+1 A" page="0" hidden="false" collective="true" import="true" type="upgrade">
@@ -2052,6 +1968,6 @@ combat, roll a D6.
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="36bf-97da-1cb4-3e58" targetId="e020-c282-277b-b173" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="data" id="36bf-97da-1cb4-3e58" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

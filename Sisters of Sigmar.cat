@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c6b6bbc1-2d97-0206-16d1-5845aabffac4" name="Sisters of Sigmar (1a)" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c6b6bbc1-2d97-0206-16d1-5845aabffac4" name="Sisters of Sigmar (1a)" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="83ab8692-01da-65c5-af52-a55d4800f012" name="Augur" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -134,12 +134,12 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment" hidden="false" id="4dfc-b916-c1cb-fd4a" sortIndex="3" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment" hidden="false" id="4dfc-b916-c1cb-fd4a" sortIndex="3" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="6368-d86c-8d84-4f52" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="6368-d86c-8d84-4f52" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="b4b4-3832-4a47-fa53" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -156,14 +156,14 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
                 <entryLink import="true" name="Light Armour" hidden="false" id="90df-fef5-7e8c-4f9c" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="dc6a-2dff-3395-ada7" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="dc6a-2dff-3395-ada7" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="db54-0036-a099-16a8" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="8876-aab9-9ab2-599f" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
                 <entryLink import="true" name="Free Dagger" hidden="false" id="f3d0-713d-5e99-34f5" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
                 <entryLink import="true" name="Flail" hidden="false" id="1fcd-6d17-493e-780a" collective="false" targetId="fea6-684b-02c4-6c62" type="selectionEntry" sortIndex="6"/>
                 <entryLink import="true" name="Hammer" hidden="false" id="a2c3-6d33-b991-2540" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="2e29-8e34-d916-d4a7" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="2e29-8e34-d916-d4a7" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
                 <entryLink import="true" name="Sigmarite Warhammer" hidden="false" id="b65e-792a-39cf-615f" type="selectionEntry" targetId="1478-15cf-1d4e-3e13" sortIndex="5"/>
                 <entryLink import="true" name="Steel Whip" hidden="false" id="8a43-93da-1a15-20d4" type="selectionEntry" sortIndex="7" targetId="1ce7-1431-21fc-6d18"/>
               </entryLinks>
@@ -178,7 +178,7 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="a8de-3cfd-5e95-53ad" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="a8de-3cfd-5e95-53ad" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Sling" hidden="false" id="a5c2-1b58-ed65-5084" type="selectionEntry" targetId="87c7-49b5-f1e7-6662" sortIndex="2"/>
               </entryLinks>
@@ -186,7 +186,7 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b46d-98b1-3932-9d81" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Miscellaneous" id="f784-22ce-5705-14a7" hidden="false">
+            <selectionEntryGroup name="Miscellaneous" id="f784-22ce-5705-14a7" hidden="false" collapsible="true">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -201,7 +201,7 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
                   </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Blessed Water" hidden="false" id="34e4-ef2b-0330-7a7c" type="selectionEntry" targetId="a654-7424-2e41-2f41" sortIndex="2"/>
-                <entryLink import="true" name="Holy (Unholy) Relic" hidden="false" id="3332-133b-ff15-4fe1" type="selectionEntry" targetId="f122-5313-bc4d-97fa" sortIndex="3"/>
+                <entryLink import="true" name="Holy Relic" hidden="false" id="3332-133b-ff15-4fe1" type="selectionEntry" targetId="f122-5313-bc4d-97fa" sortIndex="3"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -230,7 +230,7 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
       <selectionEntryGroups>
         <selectionEntryGroup name="Skills" id="6094-0dd8-63ee-5dab" hidden="false" sortIndex="5">
           <entryLinks>
-            <entryLink import="true" name="Speed Skills" hidden="false" id="e4e6-8827-664f-f518" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5"/>
+            <entryLink import="true" name="Speed Skills" hidden="false" id="e4e6-8827-664f-f518" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" collapsible="true" sortIndex="5"/>
             <entryLink import="true" name="Special Skills (Sisters)" hidden="false" id="3be0-0b6a-f292-0a41" type="selectionEntryGroup" targetId="bf3da9bd-6711-12b2-2e23-5167d3c0d321" collapsible="true" sortIndex="6"/>
             <entryLink import="true" name="Academic Skills" hidden="false" id="b94b-01b5-3f41-e2db" collective="false" targetId="df9d-8724-d362-9d7c" type="selectionEntryGroup" collapsible="true" sortIndex="3">
               <modifiers>
@@ -251,7 +251,7 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Shooting Skills" hidden="true" id="51ef-f818-d1b8-b6b0" type="selectionEntryGroup" targetId="0073-d2d6-15c0-45b1" sortIndex="2"/>
-            <entryLink import="true" name="Strength Skills" hidden="true" id="4385-8f8a-eaf8-331a" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4"/>
+            <entryLink import="true" name="Strength Skills" hidden="true" id="4385-8f8a-eaf8-331a" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" collapsible="true" sortIndex="4"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Alchemist’s notebook" hidden="true" id="f756-ba55-6b35-4b7a" sortIndex="7">
@@ -279,9 +279,6 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" name="Novices" page="0" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="roster" value="10" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-      </constraints>
       <profiles>
         <profile id="03db3be8-cefc-ad94-7afb-227b97cb7434" name="Novices" page="0" hidden="false" typeId="e1beaa44-e54d-dd6b-d1f2-446b333c9bb9" typeName="Model">
           <modifiers>
@@ -397,7 +394,7 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
           <costs>
             <cost name=" gc" typeId="points" value="15"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="bdeb-350c-f6bd-bfd0"/>
@@ -441,79 +438,61 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment" hidden="false" id="c222-1fad-383b-cf92" sortIndex="5" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment" hidden="false" id="2fcd-e4c4-804c-404b" collapsible="false" sortIndex="5">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="9608-6205-cd62-61e7" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="981b-f331-3dd8-436e" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Helmet" hidden="false" id="6616-fe0f-cce8-0686" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
+                <entryLink import="true" name="Helmet" hidden="false" id="c65f-011d-f58a-2342" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5de1-81bf-4c25-69ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24f8-4df5-af34-e998" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Buckler" hidden="false" id="7ed9-8741-e013-b7bb" collective="false" targetId="0871-44c2-f0f0-c27a" type="selectionEntry" sortIndex="4">
+                <entryLink import="true" name="Buckler" hidden="false" id="4d85-7db4-42f8-8257" collective="false" targetId="0871-44c2-f0f0-c27a" type="selectionEntry" sortIndex="4">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a34e-ee00-0836-5721" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26d5-54a4-dfac-4936" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Shield" hidden="false" id="c49e-ea10-bbc7-ffc5" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
-                <entryLink import="true" name="Heavy Armour" hidden="false" id="38a3-8aec-e0ac-c6a3" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
-                <entryLink import="true" name="Light Armour" hidden="false" id="822c-b90e-9b69-0737" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+                <entryLink import="true" name="Shield" hidden="false" id="bbc2-fdb6-6dcd-8383" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="c6c2-6fe9-41d1-8fae" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
+                <entryLink import="true" name="Light Armour" hidden="false" id="b710-acb3-21cb-7472" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="2c9a-441a-32fb-df4a" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="7362-0ec5-3e88-0c68" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Mace" hidden="false" id="74c3-e823-33d9-1e00" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
-                <entryLink import="true" name="Dagger" hidden="false" id="e82d-d329-c85b-5a6e" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
-                <entryLink import="true" name="Free Dagger" hidden="false" id="1fbf-a92f-4035-5c58" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
-                <entryLink import="true" name="Flail" hidden="false" id="ad28-849d-3d89-5384" collective="false" targetId="fea6-684b-02c4-6c62" type="selectionEntry" sortIndex="6"/>
-                <entryLink import="true" name="Hammer" hidden="false" id="a791-1d43-1c0d-83e1" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="9b54-82fb-038f-6001" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
-                <entryLink import="true" name="Sigmarite Warhammer" hidden="false" id="0053-de75-a4db-139b" type="selectionEntry" targetId="1478-15cf-1d4e-3e13" sortIndex="5"/>
-                <entryLink import="true" name="Steel Whip" hidden="false" id="f40b-cf20-8943-9b4d" type="selectionEntry" sortIndex="7" targetId="1ce7-1431-21fc-6d18"/>
+                <entryLink import="true" name="Mace" hidden="false" id="dacc-63a6-188d-90ed" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
+                <entryLink import="true" name="Dagger" hidden="false" id="9146-3c9d-add4-7bac" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
+                <entryLink import="true" name="Free Dagger" hidden="false" id="956d-be22-1052-cca9" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
+                <entryLink import="true" name="Flail" hidden="false" id="8fd3-e931-2f67-e209" collective="false" targetId="fea6-684b-02c4-6c62" type="selectionEntry" sortIndex="6"/>
+                <entryLink import="true" name="Hammer" hidden="false" id="d5e7-da2d-8c52-8b00" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="6e5c-0ac4-271c-84e4" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Sigmarite Warhammer" hidden="false" id="cf81-3b5b-1ae3-ac3b" type="selectionEntry" targetId="1478-15cf-1d4e-3e13" sortIndex="5"/>
+                <entryLink import="true" name="Steel Whip" hidden="false" id="6615-b79d-7495-4e50" type="selectionEntry" sortIndex="7" targetId="1ce7-1431-21fc-6d18"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5d80-ed66-1f2c-d1f5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d797-0e47-347d-7145" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="3" field="5d80-ed66-1f2c-d1f5">
+                <modifier type="set" value="3" field="d797-0e47-347d-7145">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="c302-a3ed-322a-71db" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="1e43-3c4a-5ff6-00e2" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Sling" hidden="false" id="7863-9070-adec-903e" type="selectionEntry" targetId="87c7-49b5-f1e7-6662" sortIndex="2"/>
+                <entryLink import="true" name="Sling" hidden="false" id="5553-2adb-fb0a-d563" type="selectionEntry" targetId="87c7-49b5-f1e7-6662" sortIndex="2"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4c45-b469-cf8c-9da2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ec12-df03-1cd2-fa36" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Miscellaneous" id="da42-9a39-b8d8-759a" hidden="false">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <entryLinks>
-                <entryLink import="true" name="Holy Tome" hidden="false" id="6116-7bf0-2582-3fd1" type="selectionEntry" targetId="42a9-c5a8-7147-0e7a" sortIndex="1">
-                  <modifiers>
-                    <modifier type="increment" value="20" field="points"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Blessed Water" hidden="false" id="1fb7-d4e8-d9ca-b682" type="selectionEntry" targetId="a654-7424-2e41-2f41" sortIndex="2"/>
-                <entryLink import="true" name="Holy (Unholy) Relic" hidden="false" id="2ce3-9acd-1133-fd55" type="selectionEntry" targetId="f122-5313-bc4d-97fa" sortIndex="3"/>
-              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f13-ca7d-a4dc-735e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9381-3731-9128-8c16" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -551,7 +530,7 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" Rarity" typeId="rarity" value="0"/>
+        <cost name="Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
         <modifier type="prepend" value="Hero" field="name">
@@ -701,59 +680,59 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment" hidden="false" id="3ccd-67c8-f3e8-3711" sortIndex="5" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment" hidden="false" id="024c-7414-8bf7-f012" collapsible="false" sortIndex="5">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="8282-2f6b-b7c1-5d47" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="cf37-20d0-80af-2cdd" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Helmet" hidden="false" id="e8a1-a865-2d48-1e94" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
+                <entryLink import="true" name="Helmet" hidden="false" id="8fe7-6839-2fef-72c0" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e6e-4c4e-2604-d7a3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d6f-a24a-b468-a26d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Buckler" hidden="false" id="df0a-98fa-5c9e-c55e" collective="false" targetId="0871-44c2-f0f0-c27a" type="selectionEntry" sortIndex="4">
+                <entryLink import="true" name="Buckler" hidden="false" id="5f6b-627c-6c02-ca6f" collective="false" targetId="0871-44c2-f0f0-c27a" type="selectionEntry" sortIndex="4">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fc8-b1ee-e7bd-0c51" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c06-2418-0f1b-a6f6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Shield" hidden="false" id="5639-b0c1-02eb-7817" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
-                <entryLink import="true" name="Heavy Armour" hidden="false" id="b7f3-e21e-ffd2-4dcd" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
-                <entryLink import="true" name="Light Armour" hidden="false" id="6345-5099-4f1d-8e44" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+                <entryLink import="true" name="Shield" hidden="false" id="cdea-e3cf-d36a-5c25" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="358c-52fa-1f54-c0a7" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
+                <entryLink import="true" name="Light Armour" hidden="false" id="b506-5fde-9b75-debe" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="06ea-53b8-ad8b-4bbe" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="b77f-81b9-fe34-b6c9" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Mace" hidden="false" id="68e9-06b5-42e0-263d" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
-                <entryLink import="true" name="Dagger" hidden="false" id="19f0-8829-5ee2-45b0" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
-                <entryLink import="true" name="Free Dagger" hidden="false" id="140c-5aa7-23a0-de72" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
-                <entryLink import="true" name="Flail" hidden="false" id="1184-f08d-9bf7-f489" collective="false" targetId="fea6-684b-02c4-6c62" type="selectionEntry" sortIndex="6"/>
-                <entryLink import="true" name="Hammer" hidden="false" id="9288-c9bb-4626-0933" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="7cdf-e5d2-4a02-b1ad" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
-                <entryLink import="true" name="Sigmarite Warhammer" hidden="false" id="b861-79d7-84d6-c12c" type="selectionEntry" targetId="1478-15cf-1d4e-3e13" sortIndex="5"/>
-                <entryLink import="true" name="Steel Whip" hidden="false" id="631d-a910-496c-9f95" type="selectionEntry" sortIndex="7" targetId="1ce7-1431-21fc-6d18"/>
+                <entryLink import="true" name="Mace" hidden="false" id="b6c2-c00c-1602-f162" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
+                <entryLink import="true" name="Dagger" hidden="false" id="7d44-acbd-f5c6-eff3" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
+                <entryLink import="true" name="Free Dagger" hidden="false" id="a48c-84f6-9b0a-26bb" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
+                <entryLink import="true" name="Flail" hidden="false" id="5cca-58c8-9e73-e5f8" collective="false" targetId="fea6-684b-02c4-6c62" type="selectionEntry" sortIndex="6"/>
+                <entryLink import="true" name="Hammer" hidden="false" id="7a0d-be90-b3bb-4e6b" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="fbe5-c84d-2398-bb74" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Sigmarite Warhammer" hidden="false" id="f5fd-b4c1-f57d-a327" type="selectionEntry" targetId="1478-15cf-1d4e-3e13" sortIndex="5"/>
+                <entryLink import="true" name="Steel Whip" hidden="false" id="b495-abcd-b59a-343d" type="selectionEntry" sortIndex="7" targetId="1ce7-1431-21fc-6d18"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="44de-6dae-4065-0edb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2fe4-4129-7384-4c0a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="3" field="44de-6dae-4065-0edb">
+                <modifier type="set" value="3" field="2fe4-4129-7384-4c0a">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="58d3-e779-3183-6a59" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="3298-3e3c-6cfb-a956" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Sling" hidden="false" id="447e-ec38-b5f8-ef8c" type="selectionEntry" targetId="87c7-49b5-f1e7-6662" sortIndex="2"/>
+                <entryLink import="true" name="Sling" hidden="false" id="bc46-2408-d796-cc7f" type="selectionEntry" targetId="87c7-49b5-f1e7-6662" sortIndex="2"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bf17-d55e-15bc-88ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1a07-19bb-60ae-5436" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Miscellaneous" id="5128-7806-098b-616d" hidden="false">
+            <selectionEntryGroup name="Miscellaneous" id="dc09-9874-54d9-2f65" hidden="false" collapsible="true">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -762,18 +741,18 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
                 </modifier>
               </modifiers>
               <entryLinks>
-                <entryLink import="true" name="Holy Tome" hidden="false" id="f0b6-1f54-442b-cdda" type="selectionEntry" targetId="42a9-c5a8-7147-0e7a" sortIndex="1">
+                <entryLink import="true" name="Holy Tome" hidden="false" id="9744-7bd4-4f0f-803d" type="selectionEntry" targetId="42a9-c5a8-7147-0e7a" sortIndex="1">
                   <modifiers>
                     <modifier type="increment" value="20" field="points"/>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Blessed Water" hidden="false" id="e962-8c9b-a2c6-68d7" type="selectionEntry" targetId="a654-7424-2e41-2f41" sortIndex="2"/>
-                <entryLink import="true" name="Holy (Unholy) Relic" hidden="false" id="1f49-701b-2a2f-e896" type="selectionEntry" targetId="f122-5313-bc4d-97fa" sortIndex="3"/>
+                <entryLink import="true" name="Blessed Water" hidden="false" id="172d-1662-6fb3-a27f" type="selectionEntry" targetId="a654-7424-2e41-2f41" sortIndex="2"/>
+                <entryLink import="true" name="Holy Relic" hidden="false" id="adca-0b57-a39a-0321" type="selectionEntry" targetId="f122-5313-bc4d-97fa" sortIndex="3"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1c1-eb40-c0cb-7ec1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a42-574e-7be1-75f5" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -799,8 +778,8 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
       <selectionEntryGroups>
         <selectionEntryGroup name="Skills" id="8ffa-806b-02fb-718c" hidden="false" sortIndex="7">
           <entryLinks>
-            <entryLink import="true" name="Speed Skills" hidden="false" id="373a-f939-b4cb-7546" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5"/>
-            <entryLink import="true" name="Strength Skills" hidden="false" id="6b9c-51c2-8502-57ce" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4"/>
+            <entryLink import="true" name="Speed Skills" hidden="false" id="373a-f939-b4cb-7546" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" collapsible="true" sortIndex="5"/>
+            <entryLink import="true" name="Strength Skills" hidden="false" id="6b9c-51c2-8502-57ce" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" collapsible="true" sortIndex="4"/>
             <entryLink import="true" name="Special Skills (Sisters)" hidden="false" id="a0c1-02ed-7672-37a8" type="selectionEntryGroup" targetId="bf3da9bd-6711-12b2-2e23-5167d3c0d321" collapsible="true" sortIndex="6"/>
             <entryLink import="true" name="Combat Skills" hidden="false" id="effb-924b-0cab-2de6" collective="false" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup" collapsible="true" sortIndex="1">
               <modifiers>
@@ -973,59 +952,59 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment" hidden="false" id="c202-6b59-d34e-182c" sortIndex="3" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment" hidden="false" id="a47b-56f4-afcc-dae0" collapsible="false" sortIndex="3">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="5693-0d92-cff8-c085" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="7047-02db-c9e2-22af" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Helmet" hidden="false" id="6a41-86ef-02f1-823f" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
+                <entryLink import="true" name="Helmet" hidden="false" id="83af-fd99-e935-ac32" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74c6-6380-0257-b343" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89d7-c2cb-bf01-df49" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Buckler" hidden="false" id="4b62-986b-4562-bc77" collective="false" targetId="0871-44c2-f0f0-c27a" type="selectionEntry" sortIndex="4">
+                <entryLink import="true" name="Buckler" hidden="false" id="fbc1-f7d3-1973-a0fd" collective="false" targetId="0871-44c2-f0f0-c27a" type="selectionEntry" sortIndex="4">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a61-6ef2-f0f8-2544" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed5c-772e-11a8-0372" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Shield" hidden="false" id="c0bb-7b42-7920-2a71" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
-                <entryLink import="true" name="Heavy Armour" hidden="false" id="3048-dd1e-0b2d-6424" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
-                <entryLink import="true" name="Light Armour" hidden="false" id="7f33-e353-8de7-8b4e" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+                <entryLink import="true" name="Shield" hidden="false" id="ceee-8a09-7091-76c4" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="c501-9a70-157b-f8db" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
+                <entryLink import="true" name="Light Armour" hidden="false" id="d0ae-20c5-869b-036a" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="33cc-82ab-04de-5711" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="692e-7f88-cd1d-3247" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Mace" hidden="false" id="0bfb-ecec-15ac-e74d" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
-                <entryLink import="true" name="Dagger" hidden="false" id="6daf-bb82-94de-e3e6" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
-                <entryLink import="true" name="Free Dagger" hidden="false" id="12bb-1ea3-3b3c-5800" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
-                <entryLink import="true" name="Flail" hidden="false" id="28e1-8e1b-ce53-6d0b" collective="false" targetId="fea6-684b-02c4-6c62" type="selectionEntry" sortIndex="6"/>
-                <entryLink import="true" name="Hammer" hidden="false" id="4870-a4f1-2501-1944" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="27a4-56fc-63f9-7fc4" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
-                <entryLink import="true" name="Sigmarite Warhammer" hidden="false" id="e99e-5b0b-e26e-e7e2" type="selectionEntry" targetId="1478-15cf-1d4e-3e13" sortIndex="5"/>
-                <entryLink import="true" name="Steel Whip" hidden="false" id="7543-1332-b132-d2a8" type="selectionEntry" sortIndex="7" targetId="1ce7-1431-21fc-6d18"/>
+                <entryLink import="true" name="Mace" hidden="false" id="ca52-da95-b63e-99a9" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
+                <entryLink import="true" name="Dagger" hidden="false" id="d47a-e8f7-2f4e-3d58" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
+                <entryLink import="true" name="Free Dagger" hidden="false" id="d592-23ea-e105-3e4d" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
+                <entryLink import="true" name="Flail" hidden="false" id="d09d-7050-1900-81b7" collective="false" targetId="fea6-684b-02c4-6c62" type="selectionEntry" sortIndex="6"/>
+                <entryLink import="true" name="Hammer" hidden="false" id="eb24-d093-ff1d-441d" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="2c0b-cdd9-4754-6158" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Sigmarite Warhammer" hidden="false" id="dc94-5c00-0e7b-f42d" type="selectionEntry" targetId="1478-15cf-1d4e-3e13" sortIndex="5"/>
+                <entryLink import="true" name="Steel Whip" hidden="false" id="38ba-618b-cd01-7b41" type="selectionEntry" sortIndex="7" targetId="1ce7-1431-21fc-6d18"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="851c-daa8-a184-0b69" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7041-b79e-7cff-2f68" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="3" field="851c-daa8-a184-0b69">
+                <modifier type="set" value="3" field="7041-b79e-7cff-2f68">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="7e96-756b-2aed-bc1b" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="2992-fd8a-adca-2861" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Sling" hidden="false" id="7b1d-37a1-f250-eeba" type="selectionEntry" targetId="87c7-49b5-f1e7-6662" sortIndex="2"/>
+                <entryLink import="true" name="Sling" hidden="false" id="34da-cf41-6bb1-9c3f" type="selectionEntry" targetId="87c7-49b5-f1e7-6662" sortIndex="2"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0fee-7927-3527-21b1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="797c-456d-b979-b71e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Miscellaneous" id="05a1-910f-9296-0d16" hidden="false">
+            <selectionEntryGroup name="Miscellaneous" id="97a4-25d9-4579-15aa" hidden="false" collapsible="true">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -1034,18 +1013,18 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
                 </modifier>
               </modifiers>
               <entryLinks>
-                <entryLink import="true" name="Holy Tome" hidden="false" id="c718-ddbb-30ba-6bc6" type="selectionEntry" targetId="42a9-c5a8-7147-0e7a" sortIndex="1">
+                <entryLink import="true" name="Holy Tome" hidden="false" id="4cbb-2db2-96b6-7820" type="selectionEntry" targetId="42a9-c5a8-7147-0e7a" sortIndex="1">
                   <modifiers>
                     <modifier type="increment" value="20" field="points"/>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Blessed Water" hidden="false" id="64c5-254a-0958-c191" type="selectionEntry" targetId="a654-7424-2e41-2f41" sortIndex="2"/>
-                <entryLink import="true" name="Holy (Unholy) Relic" hidden="false" id="ed80-a449-9853-7aa9" type="selectionEntry" targetId="f122-5313-bc4d-97fa" sortIndex="3"/>
+                <entryLink import="true" name="Blessed Water" hidden="false" id="0b86-bb59-d754-a4e0" type="selectionEntry" targetId="a654-7424-2e41-2f41" sortIndex="2"/>
+                <entryLink import="true" name="Holy Relic" hidden="false" id="42ee-f17a-954f-8f9c" type="selectionEntry" targetId="f122-5313-bc4d-97fa" sortIndex="3"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9352-ba2c-cf8c-1a4f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1191-5902-9282-4952" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -1069,8 +1048,8 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
       <selectionEntryGroups>
         <selectionEntryGroup name="Skills" id="41b7-1bb0-9a3c-01d8" hidden="false" sortIndex="5">
           <entryLinks>
-            <entryLink import="true" name="Speed Skills" hidden="false" id="dead-b4b3-dd93-4667" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" sortIndex="5"/>
-            <entryLink import="true" name="Strength Skills" hidden="false" id="dec6-5a04-dab3-5851" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" sortIndex="4"/>
+            <entryLink import="true" name="Speed Skills" hidden="false" id="dead-b4b3-dd93-4667" collective="false" targetId="e134-0fdf-67a2-4684" type="selectionEntryGroup" collapsible="true" sortIndex="5"/>
+            <entryLink import="true" name="Strength Skills" hidden="false" id="dec6-5a04-dab3-5851" type="selectionEntryGroup" targetId="e5ac-cd5b-9057-e096" collapsible="true" sortIndex="4"/>
             <entryLink import="true" name="Special Skills (Sisters)" hidden="false" id="936d-ed9b-d1d4-1634" type="selectionEntryGroup" targetId="bf3da9bd-6711-12b2-2e23-5167d3c0d321" collapsible="true" sortIndex="6"/>
             <entryLink import="true" name="Combat Skills" hidden="false" id="bb7a-68bb-b268-73c8" collective="false" targetId="ee2c-89e3-489b-d0cb" type="selectionEntryGroup" collapsible="true" sortIndex="1">
               <modifiers>
@@ -1233,7 +1212,7 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
           <costs>
             <cost name=" gc" typeId="points" value="25"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="20f3-648b-597b-b485"/>
@@ -1258,78 +1237,6 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment" hidden="false" id="d688-bcd9-623c-35ad" sortIndex="5" collapsible="true">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="b5a4-d3ab-a47a-c52c" hidden="false" sortIndex="3">
-              <entryLinks>
-                <entryLink import="true" name="Helmet" hidden="false" id="0856-0a36-37d5-38f4" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20b8-824d-1650-c5e1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Buckler" hidden="false" id="df6f-ce59-846a-5a48" collective="false" targetId="0871-44c2-f0f0-c27a" type="selectionEntry" sortIndex="4">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5683-d5b7-433a-f7cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Shield" hidden="false" id="6681-d8f6-52c4-c47b" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
-                <entryLink import="true" name="Heavy Armour" hidden="false" id="7efc-182e-e3ee-51af" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
-                <entryLink import="true" name="Light Armour" hidden="false" id="addf-f134-ae63-16b6" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="b091-871f-03da-6343" hidden="false" sortIndex="1">
-              <entryLinks>
-                <entryLink import="true" name="Mace" hidden="false" id="6d37-0f41-f143-c999" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
-                <entryLink import="true" name="Dagger" hidden="false" id="4b41-24f0-98fe-9732" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
-                <entryLink import="true" name="Free Dagger" hidden="false" id="0c80-448e-396f-304e" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
-                <entryLink import="true" name="Flail" hidden="false" id="bdab-cf02-0922-a15a" collective="false" targetId="fea6-684b-02c4-6c62" type="selectionEntry" sortIndex="6"/>
-                <entryLink import="true" name="Hammer" hidden="false" id="0a3c-1ae3-232e-83fe" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="a4ec-fa51-a577-ea29" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
-                <entryLink import="true" name="Sigmarite Warhammer" hidden="false" id="8894-24c5-f25c-ca78" type="selectionEntry" targetId="1478-15cf-1d4e-3e13" sortIndex="5"/>
-                <entryLink import="true" name="Steel Whip" hidden="false" id="5b5d-c4a8-d171-aac9" type="selectionEntry" sortIndex="7" targetId="1ce7-1431-21fc-6d18"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="31f6-4ed5-aa5b-d212" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="3" field="31f6-4ed5-aa5b-d212">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="0ce3-35d8-6337-beb1" hidden="false" sortIndex="2">
-              <entryLinks>
-                <entryLink import="true" name="Sling" hidden="false" id="54fd-525f-9c7e-819e" type="selectionEntry" targetId="87c7-49b5-f1e7-6662" sortIndex="2"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3f28-b05e-8c3c-0754" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Miscellaneous" id="ec19-0824-ba1c-e070" hidden="false">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <entryLinks>
-                <entryLink import="true" name="Holy Tome" hidden="false" id="dccc-1951-475d-abcc" type="selectionEntry" targetId="42a9-c5a8-7147-0e7a" sortIndex="1">
-                  <modifiers>
-                    <modifier type="increment" value="20" field="points"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Blessed Water" hidden="false" id="e1e0-fb44-8319-388e" type="selectionEntry" targetId="a654-7424-2e41-2f41" sortIndex="2"/>
-                <entryLink import="true" name="Holy (Unholy) Relic" hidden="false" id="2db3-e7a1-eb1f-a030" type="selectionEntry" targetId="f122-5313-bc4d-97fa" sortIndex="3"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf05-ffe5-889e-36ff" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="7f48-7be4-583e-5d51" collective="false" sortIndex="6">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1348,8 +1255,62 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment" hidden="false" id="f76e-a8ff-51ff-fc95" collapsible="false" sortIndex="5">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armour" id="960a-a426-c0ad-bea5" hidden="false" sortIndex="3" collapsible="true">
+              <entryLinks>
+                <entryLink import="true" name="Helmet" hidden="false" id="0083-544c-54c6-9b6a" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e071-2186-c56b-82ba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Buckler" hidden="false" id="189e-6b96-976e-6f75" collective="false" targetId="0871-44c2-f0f0-c27a" type="selectionEntry" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a327-6b9b-2832-4ff1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shield" hidden="false" id="c2ec-a019-2289-7d7a" type="selectionEntry" targetId="74fb-cc90-1361-df26" sortIndex="3"/>
+                <entryLink import="true" name="Heavy Armour" hidden="false" id="c922-ae90-e195-3e13" type="selectionEntry" targetId="4e34-bbc5-c7ef-6bd6" sortIndex="2"/>
+                <entryLink import="true" name="Light Armour" hidden="false" id="a533-b50a-73b5-d087" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="86e3-616d-eb78-1571" hidden="false" sortIndex="1" collapsible="true">
+              <entryLinks>
+                <entryLink import="true" name="Mace" hidden="false" id="1f4d-062d-8d2b-0bca" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
+                <entryLink import="true" name="Dagger" hidden="false" id="3ad6-94b6-f262-5d8a" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
+                <entryLink import="true" name="Free Dagger" hidden="false" id="8882-e895-8326-916c" collective="false" targetId="0d0b-ed37-d8b0-4cbf" type="selectionEntry" sortIndex="1"/>
+                <entryLink import="true" name="Flail" hidden="false" id="6387-79fe-ed7b-eb99" collective="false" targetId="fea6-684b-02c4-6c62" type="selectionEntry" sortIndex="6"/>
+                <entryLink import="true" name="Hammer" hidden="false" id="1138-6fc2-3d7c-2041" collective="false" targetId="cfcc-39fd-aeb4-876a" type="selectionEntry" sortIndex="4"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="b624-9244-a405-0996" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="8"/>
+                <entryLink import="true" name="Sigmarite Warhammer" hidden="false" id="b010-7563-a799-5e22" type="selectionEntry" targetId="1478-15cf-1d4e-3e13" sortIndex="5"/>
+                <entryLink import="true" name="Steel Whip" hidden="false" id="1a4d-04d8-600e-e045" type="selectionEntry" sortIndex="7" targetId="1ce7-1431-21fc-6d18"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d97d-79b7-2f79-a9c7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="3" field="d97d-79b7-2f79-a9c7">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="0d0b-ed37-d8b0-4cbf" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Missile Weapons" id="eca5-e86b-d832-4263" hidden="false" sortIndex="2" collapsible="true">
+              <entryLinks>
+                <entryLink import="true" name="Sling" hidden="false" id="63a9-33a4-9c6c-45be" type="selectionEntry" targetId="87c7-49b5-f1e7-6662" sortIndex="2"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ff30-aa1d-9cbd-43fd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4ab-ec99-a0ab-48cd" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1386,7 +1347,7 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" Rarity" typeId="rarity" value="0"/>
+        <cost name="Rarity" typeId="rarity" value="0"/>
       </costs>
       <modifiers>
         <modifier type="prepend" value="Hero" field="name">
@@ -1395,63 +1356,6 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
           </conditions>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry id="83ade99f-e9ef-d25a-59ac-ca3f3def011c" name="Stash" page="0" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster-min" type="min"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster-max" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="83ade99f-e9ef-d25a-59ac-ca3f3def011c-a31acb39-8ce9-d6d7-bcc9-f3144d63db48" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true" name="Stash"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="8953-7ec3-b19d-864f" name="Wyrdstone" hidden="false" collective="false" import="true" type="upgrade">
-          <costs>
-            <cost name="pts" typeId="points" value="0"/>
-            <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="fa4f-c4b9-a593-f62e" collective="false">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="220d-b944-df83-f8dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2109-6944-f6c9-685d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="7ea2-d7fe-2960-afcb" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" gc" typeId="points" value="0"/>
-            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="Equipment" field="name"/>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="503d-1c5c-0e45-c52d" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="Gold" field="name"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="d6c8-4c8a-3b18-94f4" page="0">
-      <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="c783-3972-a093-a719" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="b2da-519c-8b41-a965-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b2da-519c-8b41-a965-max" includeChildSelections="false"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="EXP advancement" id="93f8-5736-60dd-df49" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
-      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <infoLinks>
@@ -1664,7 +1568,7 @@ In addition, an Augur can use her Blessed Sight to help the Sisterhood when they
         <entryLink id="5be5042d-302f-7f79-20d6-ece5316b53b7" hidden="false" collective="false" import="true" targetId="a3c87526-fae5-8945-97c3-057d97df69e7" type="selectionEntry" name="+1 W"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b0afb938-d196-2de3-dfdf-f4224536f4f8" name="Prayers of Sigmar" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="b0afb938-d196-2de3-dfdf-f4224536f4f8" name="Prayers of Sigmar" hidden="false" collective="false" import="true" collapsible="true">
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -1957,6 +1861,6 @@ combat, roll a D6.
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="common-data" id="f054-a3e3-3361-14e0" targetId="e020-c282-277b-b173" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="data" id="f054-a3e3-3361-14e0" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

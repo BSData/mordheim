@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="49df-928f-1fa4-ff5b" name="Averlanders (1a)" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="49df-928f-1fa4-ff5b" name="Averlanders (1a)" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="692a-ce2e-7624-f850" name="Averlander Mercenary Rules" shortName="Averlander Mercenary Rules" publisher="https://broheim.net/downloads/warbands/official/Averland%20Mercenaries.pdf" publisherUrl="https://broheim.net"/>
   </publications>
@@ -123,9 +123,9 @@
         <categoryLink id="7558-4b90-f7fc-36bb" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Mountain Guard)" hidden="false" id="2629-bff0-621b-9e3d" collapsible="true" sortIndex="4">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Mountain Guard)" hidden="false" id="2629-bff0-621b-9e3d" collapsible="false" sortIndex="4">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="afad-7304-3f35-fe81" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="afad-7304-3f35-fe81" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="2ec1-67cc-a4a1-3900" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="a9c9-0992-813b-f25d" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -136,7 +136,7 @@
                 <entryLink import="true" name="Spear" hidden="false" id="c478-dfc7-0940-a99f" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="5"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="e202-a178-b077-9439" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="8"/>
                 <entryLink import="true" name="Morning Star" hidden="false" id="52a6-c927-a9ce-c210" type="selectionEntry" targetId="d5f3-1906-da91-4e8f" sortIndex="9"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="2b55-3766-4cfe-0138" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="10"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="2b55-3766-4cfe-0138" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="10"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9366-71f3-a848-9212" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -149,7 +149,7 @@
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="756b-849c-d035-ec6f" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="756b-849c-d035-ec6f" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="e970-96b4-f5f4-4b3d" type="selectionEntry" targetId="311a-bf3f-67ff-46e7" sortIndex="4"/>
                 <entryLink import="true" name="Crossbow" hidden="false" id="ce0e-03c6-bce7-2aa4" type="selectionEntry" targetId="38cc-bc0b-7f19-8039" sortIndex="3"/>
@@ -172,7 +172,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8bce-453e-c010-5fe3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Armour" id="75d3-96b9-5ca7-c9c8" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="75d3-96b9-5ca7-c9c8" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="c089-c522-786c-13a1" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -212,7 +212,7 @@
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -413,9 +413,9 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
         <categoryLink id="fee2-f472-c36f-fc13" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Scouts)" hidden="false" id="9df9-2f3c-2a39-6a71" sortIndex="3" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Scouts)" hidden="false" id="9df9-2f3c-2a39-6a71" sortIndex="3" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="07d8-ad26-4d3c-4374" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="07d8-ad26-4d3c-4374" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="7a3c-eef9-bfe1-688e" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -430,7 +430,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
                 <entryLink import="true" name="Light Armour" hidden="false" id="5a84-6594-6d7a-e98c" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="014e-bc7e-ff9f-03b0" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="014e-bc7e-ff9f-03b0" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="7c82-e3f1-ff36-0522" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="d072-cdaf-a647-5ad9" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -450,7 +450,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="a0fb-4352-4a9c-ebdc" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="a0fb-4352-4a9c-ebdc" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="4fa2-a843-183d-ced1" type="selectionEntry" targetId="311a-bf3f-67ff-46e7" sortIndex="1"/>
                 <entryLink import="true" name="Longbow" hidden="false" id="3cfe-220b-2db1-4b98" type="selectionEntry" targetId="afa2-2d5c-54dd-d435" sortIndex="2"/>
@@ -459,7 +459,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9348-6e14-2f2d-623f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Miscellaneous" id="30a5-a2ee-cbdb-7d15" hidden="false">
+            <selectionEntryGroup name="Miscellaneous" id="30a5-a2ee-cbdb-7d15" hidden="false" collapsible="true">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -498,7 +498,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -683,9 +683,9 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
         <categoryLink id="311f-b4f9-6f21-12be" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Mountain Guard)" hidden="false" id="0339-e28c-8fc6-943b" collapsible="true" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Mountain Guard)" hidden="false" id="0339-e28c-8fc6-943b" collapsible="false" sortIndex="3">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="d496-7731-dd81-8c19" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="d496-7731-dd81-8c19" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="b75e-8b81-2334-15c8" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="8921-20cc-54bf-7711" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -696,7 +696,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
                 <entryLink import="true" name="Spear" hidden="false" id="f273-8ffa-ee87-b614" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="5"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="c950-6724-537f-9532" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="8"/>
                 <entryLink import="true" name="Morning Star" hidden="false" id="b617-1918-66fe-dcbe" type="selectionEntry" targetId="d5f3-1906-da91-4e8f" sortIndex="9"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="9125-d4e8-6fab-ef36" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="10"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="9125-d4e8-6fab-ef36" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="10"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e0da-a94c-b5ac-5332" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -709,7 +709,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="61f1-ebf7-b0e4-ca3c" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="61f1-ebf7-b0e4-ca3c" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="fb51-5e2f-d77e-4de8" type="selectionEntry" targetId="311a-bf3f-67ff-46e7" sortIndex="4"/>
                 <entryLink import="true" name="Crossbow" hidden="false" id="68a0-ded9-a941-81d3" type="selectionEntry" targetId="38cc-bc0b-7f19-8039" sortIndex="3"/>
@@ -732,7 +732,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9a55-f52d-770f-499e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Armour" id="e2dd-9421-f6f7-7f84" hidden="false">
+            <selectionEntryGroup name="Armour" id="e2dd-9421-f6f7-7f84" hidden="false" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="39f7-c516-90e3-e621" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -772,7 +772,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -957,9 +957,9 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
         <categoryLink id="c3ec-84a6-4bff-cd17" name="Heroes" hidden="false" targetId="a0fce0bc-02e0-a064-7a39-5b97ff8a9c94" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Mountain Guard)" hidden="false" id="2e81-e0bc-2a65-aaf1" collapsible="true" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Mountain Guard)" hidden="false" id="2e81-e0bc-2a65-aaf1" collapsible="false" sortIndex="3">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="7015-2e60-091c-8dfa" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="7015-2e60-091c-8dfa" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="7add-387a-eb52-3c6a" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="7d1f-3c38-75e7-b9fe" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -970,7 +970,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
                 <entryLink import="true" name="Spear" hidden="false" id="7c5a-595b-10b9-2a79" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="5"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="cd8d-f88a-bfb1-2dcb" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="8"/>
                 <entryLink import="true" name="Morning Star" hidden="false" id="ffc1-80be-ea99-f3f6" type="selectionEntry" targetId="d5f3-1906-da91-4e8f" sortIndex="9"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="6c21-c432-11b7-5340" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="10"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="6c21-c432-11b7-5340" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="10"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4ba3-0b87-94b2-7d1f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -983,7 +983,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="0273-3f39-412b-6f04" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="0273-3f39-412b-6f04" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="ed45-9397-e042-9c1e" type="selectionEntry" targetId="311a-bf3f-67ff-46e7" sortIndex="4"/>
                 <entryLink import="true" name="Crossbow" hidden="false" id="7f41-b1b4-70b7-b112" type="selectionEntry" targetId="38cc-bc0b-7f19-8039" sortIndex="3"/>
@@ -1006,7 +1006,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="860b-b671-1313-121f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Armour" id="9c48-55b7-6612-0683" hidden="false">
+            <selectionEntryGroup name="Armour" id="9c48-55b7-6612-0683" hidden="false" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="1136-2621-b5be-2714" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -1046,7 +1046,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1242,14 +1242,14 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Mountainguard" hidden="false" id="8d66-94a4-896c-17f7" sortIndex="1">
           <costs>
             <cost name=" gc" typeId="points" value="30"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="9e0a-2b07-31e5-4124"/>
@@ -1274,9 +1274,9 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Mountain Guard)" hidden="false" id="c914-9220-329b-c601" collapsible="true" sortIndex="5">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Mountain Guard)" hidden="false" id="c914-9220-329b-c601" collapsible="false" sortIndex="5">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="c73a-c7df-fef9-0ba6" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="c73a-c7df-fef9-0ba6" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="8dde-2028-9ddb-9838" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="a32c-5493-8db9-dd5d" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -1287,7 +1287,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
                 <entryLink import="true" name="Spear" hidden="false" id="6372-86cd-14e7-ba18" collective="false" targetId="005e-e397-8108-f198" type="selectionEntry" sortIndex="5"/>
                 <entryLink import="true" name="Halberd" hidden="false" id="7ebb-d2e0-c285-02ed" type="selectionEntry" targetId="3c52-9e92-25ec-1939" sortIndex="8"/>
                 <entryLink import="true" name="Morning Star" hidden="false" id="1c0e-a716-5052-5726" type="selectionEntry" targetId="d5f3-1906-da91-4e8f" sortIndex="9"/>
-                <entryLink import="true" name="Double Handed Weapon" hidden="false" id="8bda-aae8-f3ad-eed0" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="10"/>
+                <entryLink import="true" name="Double-handed weapon" hidden="false" id="8bda-aae8-f3ad-eed0" type="selectionEntry" targetId="a0a1-b311-e3aa-6c3b" sortIndex="10"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3403-f7f4-07fc-c216" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1300,7 +1300,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="5638-d15a-4b4b-7c15" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="5638-d15a-4b4b-7c15" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="1d54-3ce5-16ea-4367" type="selectionEntry" targetId="311a-bf3f-67ff-46e7" sortIndex="4"/>
                 <entryLink import="true" name="Crossbow" hidden="false" id="b6a9-5031-ad3f-1a60" type="selectionEntry" targetId="38cc-bc0b-7f19-8039" sortIndex="3"/>
@@ -1323,7 +1323,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7bb5-59a5-34ed-c018" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Armour" id="6682-45d4-bfb6-3864" hidden="false">
+            <selectionEntryGroup name="Armour" id="6682-45d4-bfb6-3864" hidden="false" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="5ac4-890a-5d2c-357a" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -1510,14 +1510,14 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Marksmen" hidden="false" id="f4e2-c798-33d4-4d2f" sortIndex="1">
           <costs>
             <cost name=" gc" typeId="points" value="25"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="5ef5-e872-fa83-fdd7"/>
@@ -1542,14 +1542,14 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Marksmen)" hidden="false" id="3d69-5f47-6987-bf2f" collapsible="true" sortIndex="5">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Marksmen)" hidden="false" id="3d69-5f47-6987-bf2f" collapsible="false" sortIndex="5">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="9b8c-e42c-a739-eabb" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="9b8c-e42c-a739-eabb" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Light Armour" hidden="false" id="e9c8-e7a5-58f7-1d6c" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="ae44-acea-3f5c-72d8" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="ae44-acea-3f5c-72d8" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="4643-223d-6536-6042" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="b6ac-4268-c36a-bbfa" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -1569,7 +1569,7 @@ Regardless whether the trap was triggered or not, the marker is removed.</descri
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="0a6f-1f6e-8982-fc93" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="0a6f-1f6e-8982-fc93" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="cfe8-9386-d5e7-d7b1" type="selectionEntry" targetId="311a-bf3f-67ff-46e7" sortIndex="3"/>
                 <entryLink import="true" name="Longbow" hidden="true" id="bb71-01ce-cb7c-aba9" type="selectionEntry" targetId="afa2-2d5c-54dd-d435" sortIndex="4"/>
@@ -1763,14 +1763,14 @@ Halflings are not known for their great strength!</description>
           <costs>
             <cost name=" gc" typeId="points" value="0"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Halflings Scouts" hidden="false" id="438b-abe9-9ef2-aa48" sortIndex="1">
           <costs>
             <cost name=" gc" typeId="points" value="20"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
+            <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
           <constraints>
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="3f7c-c4cc-72c2-21e3"/>
@@ -1796,9 +1796,9 @@ Halflings are not known for their great strength!</description>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Scouts)" hidden="false" id="3754-280e-a310-a513" sortIndex="5" collapsible="true">
+        <selectionEntry type="upgrade" import="true" name="Starting Equipment (Scouts)" hidden="false" id="3754-280e-a310-a513" sortIndex="5" collapsible="false">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Armour" id="b597-595a-0f22-ad77" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Armour" id="b597-595a-0f22-ad77" hidden="false" sortIndex="3" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Helmet" hidden="false" id="71aa-88c9-0bb9-16b4" collective="false" targetId="d0e5-ca89-5f0d-f5d2" type="selectionEntry" sortIndex="5">
                   <constraints>
@@ -1813,7 +1813,7 @@ Halflings are not known for their great strength!</description>
                 <entryLink import="true" name="Light Armour" hidden="false" id="12e7-a9de-4c77-5ab7" type="selectionEntry" targetId="3d2a-426a-c350-2a03" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Hand-to-hand Weapons" id="5fe0-9000-112b-24a3" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Hand-to-hand Weapons" id="5fe0-9000-112b-24a3" hidden="false" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Mace" hidden="false" id="1ce9-851f-9589-9c2a" collective="false" targetId="2cbb-013b-3ebf-0459" type="selectionEntry" sortIndex="3"/>
                 <entryLink import="true" name="Dagger" hidden="false" id="69c2-27a0-1152-af70" collective="false" targetId="64e0-0bb6-542b-4beb" type="selectionEntry" sortIndex="2"/>
@@ -1833,7 +1833,7 @@ Halflings are not known for their great strength!</description>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Missile Weapons" id="7c84-f8e8-f7cc-9ceb" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Missile Weapons" id="7c84-f8e8-f7cc-9ceb" hidden="false" sortIndex="2" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Bow" hidden="false" id="5718-cf0e-6de4-dd3a" type="selectionEntry" targetId="311a-bf3f-67ff-46e7" sortIndex="1"/>
                 <entryLink import="true" name="Longbow" hidden="true" id="34a0-c402-8413-454f" type="selectionEntry" targetId="afa2-2d5c-54dd-d435" sortIndex="2"/>
@@ -1842,7 +1842,7 @@ Halflings are not known for their great strength!</description>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="db49-306c-d42c-7df9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Miscellaneous" id="8fe3-7939-120f-e314" hidden="true">
+            <selectionEntryGroup name="Miscellaneous" id="8fe3-7939-120f-e314" hidden="true" collapsible="true">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -1894,58 +1894,6 @@ Halflings are not known for their great strength!</description>
           </conditions>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry id="2a41-d2d2-990c-feeb" name="Stash" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f87-1e4a-1d03-1963" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78b7-fbd2-ba37-e591" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="b97a-2480-292c-95a1" name="Stash" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="82de-cc9a-d394-b590" name="Wyrdstone" hidden="false" collective="false" import="true" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="c176-3f62-c29c-ab3c" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="Gold" field="name"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="d843-a37f-6216-5fb7" collective="false">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="79b1-da42-be93-2c00" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1527-e11a-23a7-e686" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="8758-285e-071e-9689" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" gc" typeId="points" value="0"/>
-            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="Equipment" field="name"/>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="607b-5b35-42ad-b64b" page="0">
-      <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="85aa-f1d8-ea4b-cb11" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="f4a3-19d1-f855-06a2-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f4a3-19d1-f855-06a2-max" includeChildSelections="false"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="EXP advancement" id="dc48-ffb5-9872-0106" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
-      </infoLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -2007,6 +1955,6 @@ Halflings are not known for their great strength!</description>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
-    <catalogueLink id="286e-63a8-7c65-016b" name="common-data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="286e-63a8-7c65-016b" name="data" targetId="e020-c282-277b-b173" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
