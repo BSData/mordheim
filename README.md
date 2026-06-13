@@ -13,14 +13,16 @@ For a very long time this repo has been an absolute mess. With a gigantic contri
 All of the __Grade 1a (Official) Warbands__ have been fully fixed and should all be working perfectly.
 Unfortunately these fixes have broken every other outdated, non Grade 1a Warbands, so they have been temporarily removed while we restore them to working order. Please do not fret or panic, they will be added once more as soon as possible, I just ask that you be patient while we do our best, in what little free time we have to dedicate to data entry.
 I sincerely apologise for the inconvenience and thank you for your understanding.
-Posted on 13/06/2026, by theoakenfig.
+
+__Posted on 13/06/2026, by theoakenfig.__
 
 ## Overview ##
 
 __What's this?__
 
 This is the GitHub repository of Mordheim data files created free by BSData.
-By the community, for the community, currently lead by yours truly theoakenfig, with the help of UncleMel.
+By the community, for the community, currently lead by yours truly theoakenfig.
+Enourmous shoutout to UncleMel and Tomek.
 
 __I found a bug!__
 
