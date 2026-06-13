@@ -1,11 +1,11 @@
 Mordheim
 ========
 
-__Mordheim Discord__ [![Chat on Discord](https://img.shields.io/badge/Discord-Join!-5865F2?style=for-the-badge&logo=Discord)](https://discord.gg/q952v3w6X9)
+[![Chat on Discord](https://img.shields.io/badge/Discord-Mordheim-5865F2?style=for-the-badge&logo=Discord)](https://discord.gg/q952v3w6X9)
 
-__BSData Developers Discord__ [![Chat on Discord](https://img.shields.io/badge/Discord-Join!-5865F2?style=for-the-badge&logo=Discord)](https://discord.gg/pMXqCqWJRE)
+[![Chat on Discord](https://img.shields.io/badge/Discord-BSData%20Developers-5865F2?style=for-the-badge&logo=Discord)](https://discord.gg/pMXqCqWJRE)
 
-__New Recruit Discord__ [![Chat on Discord](https://img.shields.io/badge/Discord-Join!-5865F2?style=for-the-badge&logo=Discord)](https://discord.gg/muFFTpQy37)
+[![Chat on Discord](https://img.shields.io/badge/Discord-New%20Recruit-5865F2?style=for-the-badge&logo=Discord)](https://discord.gg/muFFTpQy37)
 
 ## Notice Board ##
 
