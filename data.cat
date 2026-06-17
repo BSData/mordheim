@@ -4767,7 +4767,7 @@ A blessed hide bestows unchallenged grace to the wearer allowing the re-roll of 
       </profiles>
       <rules>
         <rule id="5d68-1ea0-f4fb-cae6" name="Toughened Leathers" hidden="false">
-          <description>Toughened leathers wOrc exactly like light Armour, giving the wearer a 6+ Armour save, but cannot be combined with the effects of any other Armour except a helmet or buckler.
+          <description>Toughened leathers Work exactly like light Armour, giving the wearer a 6+ Armour save, but cannot be combined with the effects of any other Armour except a helmet or buckler.
 
 
 Toughened leathers cannot be sold back at the Trading Posts; the stench alone is enough to drive away even the most desperate of buyers!</description>
@@ -6440,7 +6440,7 @@ This counts as an academic skill.</description>
             <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4508-3918-e8bb-7a54" name="Strike To Inure" page="0" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
+        <selectionEntry id="4508-3918-e8bb-7a54" name="Strike To Injure" page="0" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4519-a6b1-44c4-795b" type="max"/>
           </constraints>
@@ -6840,7 +6840,7 @@ Strength is used for close combat weapons, the bonus applies to all such weapons
           </constraints>
           <rules>
             <rule id="ed15-f754-5be6-c494" name="Strongman" page="0" hidden="false">
-              <description>He may use a double-handed weapon without the usual penalty of always striking last. WOrc out order of battle as you would with other weapons</description>
+              <description>He may use a double-handed weapon without the usual penalty of always striking last. Work out order of battle as you would with other weapons</description>
             </rule>
           </rules>
           <costs>
@@ -8350,7 +8350,7 @@ no longer frenzied. He continues to fight as normal for the rest of the battle.<
       <description>You may not move and fire a  in the same turn, other than to pivot on the spot to face your target or stand up.</description>
     </rule>
     <rule id="17dc-9c49-08e1-af45" name="Parry" page="0" hidden="false">
-      <description>The two prongs used to trap an opponent&apos;s weapon are snapped out when the warrior parries. Whenever you make a successful parry attempt roll a D6. If you score a 4+ you break the weapon your opponent was using. The weapon is now useless and they must use another one, or if they have no other weapon, resort to unarmed combat.</description>
+      <description>A model equipped with a parry weapon may parry the first blow in each round of Hand-to-hand combat. When his opponent scores a hit, a model with a may roll 1D6. If the score is greater than the highest to hit score of his opponent, the model has parried the blow, and that attack is discarded. A model may not parry attacks made with double or more its own Strength – they are simply too powerful to be stopped.</description>
     </rule>
     <rule id="4f7f-29ec-a9da-82fc" name="Prepare shot" page="0" hidden="false">
       <description>Takes a whole turn to reload, so you may only fire every other turn. If you have a brace of pistols (ie, two) you may fire every turn.</description>
