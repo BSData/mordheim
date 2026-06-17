@@ -900,7 +900,7 @@
       </profiles>
       <rules>
         <rule id="2a87-d0d1-c6b8-677c" name="Drunken" hidden="false">
-          <description>Centigor are inclined to drink vast quantities of noxious beer and looted wine and spirits before battle, wOrcing themselves up into a drunken frenzy.
+          <description>Centigor are inclined to drink vast quantities of noxious beer and looted wine and spirits before battle, Working themselves up into a drunken frenzy.
 
 Roll 1D6 at the start of each turn. 
 
@@ -1185,20 +1185,13 @@ This counts as an additional attack, which does not benefit from weapon bonuses 
 If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</description>
         </rule>
       </rules>
-      <infoLinks>
-        <infoLink id="9cdc-45b0-5a8f-888b" name="Gor max" hidden="false" targetId="19a9-69f3-c83a-0203" type="profile">
-          <modifiers>
-            <modifier type="set" field="2a0bcc4c-8266-418f-13d6-a6b44def5e92" value="5"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="c0ad-305d-bb96-4e76" name="Henchmen" hidden="false" targetId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Ungor" hidden="false" id="a8c6-e886-2d6f-c6cf" sortIndex="1">
           <costs>
-            <cost name=" gc" typeId="points" value="15"/>
+            <cost name=" gc" typeId="points" value="25"/>
             <cost name=" Warband Rating" typeId="wb-rating" value="5"/>
             <cost name="Rarity" typeId="rarity" value="0"/>
           </costs>
@@ -1265,10 +1258,6 @@ If an Ungor rolls ‘That lad’s got talent’ it must be re-rolled.</descripti
         <entryLink id="899c-3685-b711-83b2" name="Characteristic Increases" hidden="false" collective="false" import="true" targetId="7879-46ac-5598-aa00" type="selectionEntryGroup" sortIndex="3"/>
         <entryLink import="true" name="Experience" hidden="false" id="d105-3c03-7e49-5260" type="selectionEntry" targetId="d769-0d85-e810-df60" sortIndex="2"/>
       </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="25"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="5"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="f882-12d0-ce5c-f7c1" name="Gor" hidden="false" collective="false" import="true" type="unit">
       <profiles>
