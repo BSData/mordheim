@@ -893,7 +893,7 @@
         <cost name="Rarity" typeId="rarity" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9ca77bf6-d4b6-5676-7f61-5cbe7bfb78f8" name="Night Runners" page="0" hidden="false" collective="false" import="true" type="model">
+	<selectionEntry id="9ca77bf6-d4b6-5676-7f61-5cbe7bfb78f8" name="Night Runners" page="0" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="2" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
@@ -985,6 +985,11 @@
                 <repeat field="selections" scope="9ca77bf6-d4b6-5676-7f61-5cbe7bfb78f8" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="043d62b3-76f8-822e-3d67-9c3806889918" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" field="54f4796b-dedb-c296-8b1a-ff7f8043293a" value="1">
+              <repeats>
+                <repeat field="selections" scope="9ca77bf6-d4b6-5676-7f61-5cbe7bfb78f8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4b94626-ea08-5302-d7a8-7783f7e1fdc8" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="M" typeId="2a0bcc4c-8266-418f-13d6-a6b44def5e92">6</characteristic>
@@ -1070,7 +1075,7 @@
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Serious Injuries" hidden="false" id="60b9-71b7-456f-983b" collective="false" targetId="313b-a816-0a89-926c" type="selectionEntryGroup" sortIndex="6"/>
-        <entryLink import="true" name="Characteristic Increases" hidden="false" id="b5d5-94d4-f9c1-1a19" collective="false" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" collapsible="true" sortIndex="2"/>
+        <entryLink import="true" name="Characteristic Increases" hidden="false" id="8caf-8fab-6a4e-eb6b" collective="false" targetId="36e117d8-419f-59b9-e337-512db3c6c990" type="selectionEntryGroup" collapsible="true" sortIndex="2"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="20"/>
@@ -1972,7 +1977,7 @@ no longer frenzied. He continues to fight as normal for the rest of the battle.<
       <description>A warrior with Strike First strikes first in the first turn of hand-to-hand combat</description>
     </rule>
     <rule id="a9f238c7-bf82-807c-f964-888f9c9d0f26" name="Strike Last" page="0" hidden="false">
-      <description>weapons are so heavy that the model using them always strikes last, even when charging.</description>
+      <description>This weapon is so heavy that the model using it always strikes last, even when charging.</description>
     </rule>
     <rule id="cd0edb82-a80c-4679-2376-f34a11dc840e" name="Stupidity" page="0" hidden="false">
       <description>Models that are stupid test leadership (2d6) at the start of their turn to see if they overcome their stupidity. 
@@ -1987,7 +1992,7 @@ combat, roll a D6.
 4-6 The warrior stands inactive and drools a bit during this turn.</description>
     </rule>
     <rule id="58c7eaa3-75c5-8aad-7374-f0275b30848d" name="Two Handed" page="0" hidden="false">
-      <description>model armed with a 2handed weapon may not use a shield, buckler or additional weapon in close combat. If the model has a shield he still gets a +1 bonus to his armour save against shooting.</description>
+      <description>A model armed with a two handed weapon may not use a shield, buckler or additional weapon in close combat. If the model has a shield he still gets a +1 bonus to his armour save against shooting.</description>
     </rule>
     <rule id="be37b096-f38b-d3f0-0c72-f18572a56f1d" name="Unwieldy:" page="0" hidden="false">
       <description>A weapon with Unwieldy may only use a shield or a buckler in his other hand. He may not use a second weapon.</description>
@@ -2003,3 +2008,4 @@ combat, roll a D6.
     <catalogueLink type="catalogue" name="data" id="cf86-c742-e1b3-77e0" targetId="e020-c282-277b-b173" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
+
