@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9632-7414-5d8a-43cd" name="Kislevites (1a)" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="9632-7414-5d8a-43cd" name="Kislevites (1a)" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5164-95fd-8401-79b9" name="Kislevites Rules" shortName="Kislevites" publisher="https://broheim.net/downloads/warbands/official/Kislevites.pdf" publisherUrl="https://broheim.net/downloads/warbands/official/Kislevites.pdf"/>
   </publications>
@@ -242,7 +242,7 @@
                     <cost name=" gc" typeId="points" value="30"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cff-9783-8899-415e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1cff-9783-8899-415e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Inheritance" hidden="false" id="32c0-7c8b-0705-fa41" type="selectionEntry" targetId="054e-708c-6d78-a766"/>
@@ -2019,46 +2019,6 @@ If any of these results are rolled for the Bear Tamer, treat the result as a &ap
         <cost name="Warband Rating" typeId="wb-rating" value="5"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fd14-8b66-a0b8-ae76" name="Stash" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5138-8d79-c8e5-7127" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e2-44d9-af31-f882" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="09a2-73bd-34f9-5a15" name="Stash" hidden="false" targetId="a31acb39-8ce9-d6d7-bcc9-f3144d63db48" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="5a62-1c52-6bb8-add3" name="Wyrdstone" hidden="false" collective="false" import="true" targetId="60f8-e6e7-c2ea-0dad" type="selectionEntry"/>
-        <entryLink import="true" name="Variable Gold Cost" hidden="false" id="41f2-8219-cc42-a0ac" collective="false" targetId="deca-5737-6234-23a1" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" value="Gold" field="name"/>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-        <cost name="Warband Rating" typeId="wb-rating" value="0"/>
-      </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Trading Post" hidden="false" id="0638-1780-ee12-fa9b" collective="false">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9e89-cdc6-bbe7-1fc5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa59-3762-4f9f-2492" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Equipment" hidden="false" id="2a26-56c7-7e17-e0ea" collective="false" targetId="2247-1f56-bc59-0ead" type="selectionEntryGroup"/>
-          </entryLinks>
-          <costs>
-            <cost name=" gc" typeId="points" value="0"/>
-            <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
-            <cost name=" Rarity" typeId="rarity" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="Equipment" field="name"/>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Warband Rules" hidden="false" id="5f0d-1a51-0c34-91a9" page="0">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="9857-230c-19b6-3374" targetId="4852-c4cb-82b0-b7fa" primary="true"/>
@@ -2083,7 +2043,7 @@ and any other warbands the players judge to be sufficiently &apos;Chaotic&apos;<
         </rule>
       </rules>
       <infoLinks>
-        <infoLink name="EXP advancement" id="65b8-bf8a-53c5-3ecf" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
+        <infoLink name="Advancements" id="65b8-bf8a-53c5-3ecf" hidden="false" targetId="525a-8370-3dd1-ff3d" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </selectionEntries>
