@@ -2560,12 +2560,12 @@ If the model fires twice then each shot is at -1 to hit.</description>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f697-12a0-fc3f-4019" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="increment" value="5" field="points">
+        <modifier type="increment" value="2" field="points">
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </repeats>
         </modifier>
-        <modifier type="decrement" value="5" field="points">
+        <modifier type="decrement" value="2" field="points">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
           </conditions>
