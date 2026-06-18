@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" name="Cult of the Possessed (1a)" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="39bde8be-ab13-2d3c-098b-1d52b4cbbf63" name="Cult of the Possessed (1a)" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="9481a749-7900-614b-1695-bdc2899069c1" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="074d9cc5-ab18-5302-91eb-29f4f9d61bcc" name="Beastmen" page="0" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1183,9 +1183,9 @@ They automatically pass any Leadership tests they are required to take.</descrip
                   </conditions>
                 </modifier>
                 <modifier type="increment" value="1" field="31da-b43c-649b-8a4b">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="root-entry" shared="true" includeChildSelections="true" childId="cabf-7cb0-6359-5aa2" childName="Extra Arm"/>
-                  </conditions>
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="cabf-7cb0-6359-5aa2" shared="true" roundUp="false" childName="Extra Arm" includeChildSelections="true"/>
+                  </repeats>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
