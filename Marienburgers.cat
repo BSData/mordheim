@@ -690,10 +690,11 @@
                 </entryLink>
                 <entryLink import="true" name="Crossbow" hidden="false" id="4f64-ee60-a4b3-5e72" type="selectionEntry" targetId="38cc-bc0b-7f19-8039" sortIndex="1"/>
                 <entryLink import="true" name="Pistol" hidden="false" id="2383-17a5-3baf-a86f" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="2"/>
-                <entryLink import="true" name="Duelling Pistol" hidden="false" id="026c-e192-207c-933d" type="selectionEntry" targetId="da24-6a7f-725b-5bcb" sortIndex="3"/>
+                <entryLink import="true" name="Duelling Pistol" hidden="false" id="026c-e192-207c-933d" type="selectionEntry" targetId="da24-6a7f-725b-5bcb" sortIndex="3">
                   <costs>
                     <cost name=" gc" typeId="points" value="25"/>
                   </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="405c-e35e-c635-6bef" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1499,11 +1500,12 @@
                 </entryLink>
                 <entryLink import="true" name="Crossbow" hidden="false" id="d734-115f-31b1-6be0" type="selectionEntry" targetId="38cc-bc0b-7f19-8039" sortIndex="1"/>
                 <entryLink import="true" name="Pistol" hidden="false" id="845f-e4ee-7eec-95a3" type="selectionEntry" targetId="67e9-a4f5-8f76-168c" sortIndex="2"/>
-                <entryLink import="true" name="Duelling Pistol" hidden="false" id="8d7c-6633-2326-7d3b" type="selectionEntry" targetId="da24-6a7f-725b-5bcb" sortIndex="3"/>
+                <entryLink import="true" name="Duelling Pistol" hidden="false" id="8d7c-6633-2326-7d3b" type="selectionEntry" targetId="da24-6a7f-725b-5bcb" sortIndex="3">
                   <costs>
                     <cost name=" gc" typeId="points" value="25"/>
                   </costs>
-              </entryLinks>
+                </entryLink>
+			  </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ff02-2553-beb5-6223" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
