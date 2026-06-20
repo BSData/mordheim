@@ -1452,7 +1452,7 @@ ignores the special rules for Animosity.</description>
       </rules>
       <infoLinks>
         <infoLink id="3199-95e9-e684-ab68" name="Cavalry bonus" hidden="false" targetId="ef77-8d02-8707-afc4" type="rule"/>
-        <infoLink id="0c3d-a4da-6abc-80ef" name="Cavalry Weapon" hidden="false" targetId="033a-b64b-4bfc-e285" type="rule"/>
+        <infoLink id="0c3d-a4da-6abc-80ef" name="Cavalry weapon" hidden="false" targetId="033a-b64b-4bfc-e285" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="9c8e-6817-4b06-c1b4" name="Gromril Weapon" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -8334,19 +8334,19 @@ Warriors without Ride may not use this skill.</description>
 result as knocked down instead. This save is not modified by the opponent’s Strength.</description>
     </rule>
     <rule id="ef77-8d02-8707-afc4" name="Cavalry bonus" page="0" hidden="false">
-      <description>If using the rules for mounted models, a mounted warrior armed with a &apos;cavalry weapon&apos; receives a +1 Strength bonus when he charges. This bonus only applies for that turn.</description>
+      <description>If using the rules for mounted models, a mounted warrior armed with a &apos;Cavalry weapon&apos; receives a +2 Strength bonus when he charges. This bonus only applies for that turn.</description>
     </rule>
-    <rule id="033a-b64b-4bfc-e285" name="Cavalry Weapon" page="0" hidden="false">
-      <description>A warrior must own a warhorse to use , as it can only be used whilst he is on horseback.</description>
+    <rule id="033a-b64b-4bfc-e285" name="Cavalry weapon" page="0" hidden="false">
+      <description>A warrior must own a warhorse to use a Cavalry weapon, as it can only be used whilst he is on horseback.</description>
     </rule>
     <rule id="f08e-fc7a-fca1-6a49" name="Concussion" page="0" hidden="false">
       <description>Hammers and other bludgeoning weapons are excellent to use for striking your enemy senseless. When using a hammer, club or mace, a roll of 2-4 is treated as stunned when rolling to see the extent of a model’s injuries.</description>
     </rule>
     <rule id="4b68-6905-29fd-e549" name="Cutting edge" page="0" hidden="false">
-      <description>A Cutting edgee has an extra save modifier of -1, so a model with Strength 4 using an Cutting edge has a -2 save modifier when he hits an opponent in hand-to-hand combat.</description>
+      <description>A Cutting edge weapon has an extra save modifier of -1, so a model with Strength 4 using a Cutting edge weapon has a -2 save modifier when he hits an opponent in hand-to-hand combat.</description>
     </rule>
     <rule id="14b3-65c8-02c4-ae65" name="Difficult to use" page="0" hidden="false">
-      <description>A model with a Difficult to use weapon  may not use a second weapon or buckler in his other hand because it requires all his skill to wield it. He may carry a shield as normal though.</description>
+      <description>A model with a Difficult to use weapon may not use a second weapon or buckler in his other hand because it requires all his skill to wield it. He may carry a shield as normal though.</description>
     </rule>
     <rule id="525a-8370-3dd1-ff3d" name="Advancements" page="0" hidden="false">
       <description>Heroes get new advances at 2, 4, 6, 8, 11, 14, 17, 20, 24, 28, 32, 36, 41, 46, 51, 57, 63, 69, 76, 83 and 90 experience.
@@ -8367,7 +8367,7 @@ Attacks have 4, etc. If a warrior is carrying a weapon in each hand, he receives
 no longer frenzied. He continues to fight as normal for the rest of the battle.</description>
     </rule>
     <rule id="fad2-ae3b-6e41-c8b3" name="Gromril weapon" page="0" hidden="false">
-      <description>A gromril weapon has an extra -1 save modifier, and costs four times the price of a normal weapon of its kind.</description>
+      <description>A Gromril weapon has an extra -1 save modifier, and costs four times the price of a normal weapon of its kind.</description>
     </rule>
     <rule id="fcb5-1485-5135-40ff" name="Hatred" page="0" hidden="false">
       <description>Warriors who fight enemies they hate in hand-to-hand combat may re-roll any misses when they attack in the first turn of each hand-to-hand combat. This bonus applies only in the first turn of each combat</description>
@@ -8376,13 +8376,13 @@ no longer frenzied. He continues to fight as normal for the rest of the battle.<
       <description>The weapon is extremely tiring to use, so its +1 Strength bonus applies only in the first turn of each hand-to-hand combat.</description>
     </rule>
     <rule id="2c05-eef1-5b96-cc14" name="Ithilmar weapon" page="0" hidden="false">
-      <description>An ithilmar weapon gives its user +1 Initiative in hand-to-hand combat, and costs three times the price of a normal weapon of its kind.</description>
+      <description>An Ithilmar weapon gives its user +1 Initiative in hand-to-hand combat, and costs three times the price of a normal weapon of its kind.</description>
     </rule>
     <rule id="8712-d0f2-fe64-07bd" name="Leader" page="0" hidden="false">
       <description>All Models within 6&quot; of leader can use the leaders leadership when taking leadership tests.</description>
     </rule>
     <rule id="3984-543f-6873-12c0" name="Move or fire" page="0" hidden="false">
-      <description>You may not move and fire a  in the same turn, other than to pivot on the spot to face your target or stand up.</description>
+      <description>You may not move and fire this weapon in the same turn, other than to pivot on the spot to face your target or stand up.</description>
     </rule>
     <rule id="f1630f42-6b8b-0d73-b6a6-d2626cd8839b" name="Parry" page="0" hidden="false">
       <description>A model equipped with a parry weapon may parry the first blow in each round of hand-to-hand combat. When his opponent scores a hit, a model with a may roll 1D6. If the score is greater than the highest to hit score of his opponent, the model has parried the blow, and that attack is discarded. A model may not parry attacks made with double or more its own Strength – they are simply too powerful to be stopped.</description>
@@ -8459,7 +8459,7 @@ You may continue attacking as long as you hit and it is possible to strike your 
       <description>A Skaven equipped with Fighting Claws can add +1 to his Initiative when making Climbing tests.</description>
     </rule>
     <rule id="2185-cae1-51b5-3a0e" name="Cumbersome" hidden="false">
-      <description>A model armed with this weapon  may not use any other weapons in the entire battle.</description>
+      <description>A model armed with this weapon may not use any other weapons in the entire battle.</description>
     </rule>
     <rule id="f053-2d68-666e-727a" name="Pair" hidden="false">
       <description>The venom of Weeping Blades will enter the blood of the victim and ravage his organs and muscles. These weapons count as being permanently coated in black lotus. No additional poison may be applied to Weeping Blades.</description>

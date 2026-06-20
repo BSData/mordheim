@@ -78,20 +78,6 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
-  <comment>added config grades/stash, doesn&apos;t count stash as warrior. 
-trading post limited to warband access. seperated club/mace/hammer
-added henchmen grouping (currently no grom/ithil). 
-cleaned up export layout dramatically
-
-
-
-
-
-
-
-
-
-
-
+  <comment>
 </comment>
 </gameSystem>
