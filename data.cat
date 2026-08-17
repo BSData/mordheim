@@ -246,12 +246,47 @@ Warhorses only.</description>
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry id="4c6d-eb92-53a7-a6d2" name="Gromril Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="dda4-b2d8-d680-6abe" name="Gromril Armour" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armour">
+          <characteristics>
+            <characteristic name="Armour Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">4+</characteristic>
+            <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">Not Slowed By Shield</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1b75-aa5a-1668-10c0" name="Rarity" hidden="false">
+          <description>Rarity 11</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" gc" typeId="points" value="75"/>
+        <cost name=" Warband Rating" typeId="wb-rating" value="0"/>
+        <cost name="Rarity" typeId="rarity" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a39e-fa6e-c246-f4e6" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="75" field="points">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="75" field="points">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9b08d8e-4922-78d5-78ad-2047bff52dc8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
     <selectionEntry id="4c6d-eb92-53a7-a6d3" name="Gromril Armour" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="dda4-b2d8-d680-6abe" name="Gromril Armour" page="0" hidden="false" typeId="94239014-ea28-23eb-4142-f492dc4caf17" typeName="Armour">
           <characteristics>
             <characteristic name="Armour Save" typeId="26f1ea4e-6017-a8fa-db2b-5c2a83aea46b">4+</characteristic>
-            <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">Not Showed By Shield</characteristic>
+            <characteristic name="Special" typeId="ff797ec4-8d7e-cab1-656e-896ae3ed005f">Not Slowed By Shield</characteristic>
           </characteristics>
         </profile>
       </profiles>
